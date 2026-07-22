@@ -1,0 +1,29 @@
+#	music		[path] [loop]		# BOR file to play
+#	animation	[path] [x] [y]		# GIF animation to play
+#	silence					# Stop music
+
+	silence
+animation	data/scenes/Aviso/00.gif 0 0 1 0
+animation	data/scenes/Aviso/01.gif 0 0 1 0
+animation	data/scenes/Aviso/02.gif 0 0 1 0
+animation	data/scenes/Aviso/03.gif 0 0 1 0
+animation	data/scenes/Aviso/04.gif 0 0 1 0
+music           data/music/Ending.bor 1
+animation	data/scenes/intro/00.gif 0 0 1 0
+animation	data/scenes/intro/01.gif 0 0 1 0
+animation	data/scenes/intro/02.gif 0 0 1 0
+animation	data/scenes/intro/ff01.gif 0 0 1 0
+animation	data/scenes/intro/ff02.gif 0 0 1 0
+animation	data/scenes/intro/SF01.gif 0 0 1 0
+animation	data/scenes/intro/SF02.gif 0 0 1 0
+animation	data/scenes/intro/SF03.gif 0 0 1 0
+animation	data/scenes/intro/TTN01.gif 0 0 1 0
+animation	data/scenes/intro/TTN02.gif 0 0 1 0
+animation	data/scenes/intro/03.gif 0 0 1 0
+
+
+
+
+
+
+

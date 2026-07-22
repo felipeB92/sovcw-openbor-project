@@ -1,0 +1,28 @@
+# Do not forget to name your character.
+# Health is optional.
+
+name	Bau
+health	1
+type	obstacle
+gfxshadow	1
+nolife 1
+noname 1
+#icon	data/chars/misc/charicon.gif
+diesound		data/sounds/Iron.wav
+noatflash	
+
+anim idle
+	loop	0
+	delay	100
+	offset	105 170
+	bbox	84 103 31 67
+	platform 74 84 116 126 5 52
+	frame	data/chars/Objetos/Box06.gif
+
+
+anim fall
+	loop	1
+	delay	1000
+	offset	105 170
+	frame	data/chars/Objetos/Box07.gif
+

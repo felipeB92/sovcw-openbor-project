@@ -1,0 +1,21 @@
+name	Nivel01
+type	text
+subtype	noskip
+setlayer 10000
+
+
+
+anim	idle
+	loop	0
+	delay	3
+	offset	0 0
+	frame	data/text/Level01.gif
+	frame	data/text/Level02.gif
+	frame	data/text/Level03.gif
+	frame	data/text/Level04.gif
+	frame	data/text/Nivel01.gif
+	frame	data/text/Level04.gif
+	frame	data/text/Level03.gif
+	frame	data/text/Level02.gif
+	frame	data/text/Level01.gif
+

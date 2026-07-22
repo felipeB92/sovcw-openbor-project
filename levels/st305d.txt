@@ -1,0 +1,313 @@
+music		data/Bgs/st305/Lv305b.bor
+bossmusic	data/music/boss1.bor
+scrollspeed 0.5#1
+stagenumber 5
+background	data/bgs/st305/back01.gif	0.8 1 0 0 0 0 -1 1 1
+bglayer		data/bgs/st305/bg00.gif		0.4 1 0 0 0 0 -1 1 1
+panel		data/bgs/St305/pn03.gif		none	none
+frontpanel      data/bgs/st05/Front02.gif
+cameratype 1
+cameraoffset 0 -30
+#levelscript @script
+#void main() {
+#	changelevelproperty("camerazoffset", 0);
+#	changelevelproperty("cameraxoffset", 0);
+#}
+#@end_script
+#settime         90
+notime          1
+noslow          1
+order		a
+spawn1  	50 20 50
+spawn2  	55 35 50 
+spawn3  	60 50 50
+
+
+
+spawn  LuzB06
+Flip 1
+	coords  0  0
+	at  0
+
+
+spawn  estatua01
+Item   Apple
+	coords  200  220
+	at  0
+
+spawn  estatua01
+2pItem   Apple
+	coords  210  270
+	at  0
+
+spawn  galsia
+map    4
+       health 80
+	coords  500  260
+	at  50
+
+spawn  Donovan
+       health 50
+	coords  -100  240
+	at  50
+
+spawn  galsia
+map    4
+       health 80
+	coords  500  220
+	at  100
+
+spawn  galsia_
+map    1
+       health 50
+	coords  500  260
+	at  100
+
+wait
+at 200
+
+Group 4  4
+at 200
+
+spawn  Bigben
+map    3
+       health 150
+	coords  300  220 150
+	at  200
+
+spawn  Donovan
+       health 50
+	coords  -100  240
+	at  200
+
+spawn  galsia
+map    4
+       health 80
+	coords  500  220
+	at  200
+
+spawn  galsia
+map    4
+       health 80
+	coords  500  260
+	at  200
+
+spawn  Donovan
+       health 50
+	coords  -100  220
+	at  200
+
+spawn  galsia
+map    4
+       health 80
+	coords  500  220
+	at  200
+
+
+spawn  Donovan
+map    1
+       health 70
+	coords  -100  220
+	at  200
+
+spawn  Knife
+	coords  200  220 140
+	at  100
+
+spawn  galsia
+map    4
+       health 80
+	coords  200  220 200
+	at  200
+
+Group 1  4
+at 200
+
+spawn  Donovan
+map    1
+       health 70
+	coords  -100  220
+	at  200
+
+spawn  Bigben
+       health 100
+	coords  500  250 150
+	at  200
+
+Group 5  5
+at 200
+
+spawn  galsia
+map    5
+       health 90
+	coords  500  220
+	at  200
+
+spawn  galsia
+map    5
+       health 90
+	coords  500  260
+	at  200
+
+spawn  galsia
+map    5
+       health 90
+	coords  -100  220
+	at  200
+
+spawn  galsia
+map    5
+       health 90
+	coords  -100  260
+	at  200
+
+spawn  Donovan
+map    4
+       health 90
+	coords  -100  220
+	at  200
+
+spawn  Donovan
+map    4
+       health 90
+	coords  500  260
+	at  200
+
+spawn  Donovan
+map    4
+       health 90
+	coords  -100  220
+	at  200
+
+spawn  estatua01
+Item   Chicken
+	coords  500  220
+	at  201
+
+spawn  estatua01
+2pItem   Chicken
+	coords  470  220
+	at  201
+
+
+spawn  Tiger
+map    2
+       health 90
+	coords  -100  220
+	at  300
+
+spawn  Tiger
+map    2
+       health 90
+	coords  -50  220
+	at  300
+
+spawn  Tiger
+map    2
+       health 90
+	coords  -50  240
+	at  300
+
+spawn  Tiger
+map    2
+       health 90
+	coords  -50  260
+	at  300
+
+spawn  Tiger
+       health 70
+	coords  300  240 150
+	at  300
+
+Group 1  5
+at 500
+
+
+spawn  Tiger
+map    2
+       health 90
+	coords  -500  260
+	at  500
+
+Group 4  4
+at 500
+
+spawn  Signal
+       health 60
+	coords  500 220
+	at  500
+
+spawn  Signal
+map    2
+       health 80
+	coords  500 240
+	at  500
+
+spawn  Tiger
+       health 70
+	coords  300  260 150
+	at  500
+
+Group 5  5
+at 500
+
+spawn  Signal
+map    2
+       health 80
+	coords  500 240
+	at  500
+
+spawn  Signal
+map    2
+       health 80
+	coords  -100 220
+	at  500
+
+
+spawn  Signal
+map    2
+       health 80
+	coords  -100 260
+	at  500
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

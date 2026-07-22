@@ -1,0 +1,30 @@
+
+name			MustaphaP04 #THROWNED
+type			none
+speed 12
+candamage			enemy obstacle
+alpha 1
+nolife			1
+lifespan		4
+remove			1
+gfxshadow		0 0
+flash			Forte
+#antigravity 100
+
+anim idle
+	drawmethod tintmode 6
+	drawmethod tintcolor -255
+	loop	0
+	offset	237 165
+		delay  6
+	frame	data/chars/players/Mustapha/fs101.gif
+	frame	data/chars/players/Mustapha/fs102.gif
+	frame	data/chars/players/Mustapha/fs103.gif
+	frame	data/chars/players/Mustapha/fs104.gif
+	frame	data/chars/players/Mustapha/fs105.gif
+	frame	data/chars/players/Mustapha/fs106.gif
+	frame  data/chars/players/Mustapha/fs107.gif
+	frame  data/chars/players/Mustapha/fs108.gif
+	@cmd killentity getlocalvar("self")
+	frame	data/chars/players/Mustapha/fs108.gif
+

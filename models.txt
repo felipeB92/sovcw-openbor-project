@@ -1,0 +1,372 @@
+colourselect 1
+#nodropen 
+nolost 1 
+versusdamage 1
+nocost    0
+autoland  2
+maxfreespecials 19
+maxattacks 20
+maxattacktypes 19
+maxups  2
+maxdowns  2
+maxwalks  2
+maxidles  2
+maxfollows 90
+maxfreespecials 50
+spdirection 1 1 1 1
+lifescore 30000
+credscore 80000
+noaircancel 2
+#nocheats 1 
+
+
+
+# Players
+know	T00	data/chars/Players/T00.txt
+
+load	Terry		data/chars/Players/Terry/Terry.txt
+load	Terry_		data/chars/Players/Terry/Terry_.txt
+load	Terry__		data/chars/Players/Terry/Terry__.txt
+know	TerryP01	data/chars/Players/Terry/TerryP01.txt
+know	TerryP02	data/chars/Players/Terry/TerryP02.txt
+know	TerryP03	data/chars/Players/Terry/TerryP03.txt
+know	Terry_Knife	data/chars/Players/Terry/Terry_Knife.txt
+know	Terry_Pipe	data/chars/Players/Terry/Terry_Pipe.txt
+
+load	Joe_Higashi	data/chars/Players/Joe/Joe_Higashi.txt
+know	Joe_Higashi_	data/chars/Players/Joe/Joe_Higashi_.txt
+know	Joe_HigashiP01	data/chars/Players/Joe/Joe_HigashiP01.txt
+know	Joe_HigashiP02	data/chars/Players/Joe/Joe_HigashiP02.txt
+know	Joe_HigashiP03	data/chars/Players/Joe/Joe_HigashiP03.txt
+know	Joe_Higashi_Knife	data/chars/Players/Joe/Joe_Higashi_Knife.txt
+know	Joe_Higashi_Pipe	data/chars/Players/Joe/Joe_Higashi_Pipe.txt
+
+
+
+#Boss
+
+know	Biggar data/chars/Boss/Biggar/Biggar.txt
+know	Biggar_ data/chars/Boss/Biggar/Biggar_.txt
+
+know	Bongo data/chars/Boss/Bongo/Bongo.txt
+know	Bongo_ data/chars/Boss/Bongo/Bongo_.txt
+know	BongoP01 data/chars/Boss/Bongo/BongoP01.txt
+know	BongoP02 data/chars/Boss/Bongo/BongoP02.txt
+know	BongoP03 data/chars/Boss/Bongo/BongoP03.txt
+know	BongoP04 data/chars/Boss/Bongo/BongoP04.txt
+know	BongoP05 data/chars/Boss/Bongo/BongoP05.txt
+know	BongoP06 data/chars/Boss/Bongo/BongoP06.txt
+
+
+know	Joe data/chars/Boss/Joe/Joe.txt
+know	Joe_ data/chars/Boss/Joe/Joe_.txt
+know	JoeP01 data/chars/Boss/Joe/JoeP01.txt
+know	JoeP02 data/chars/Boss/Joe/JoeP02.txt
+
+know	Abadede data/chars/Boss/Abadede/Abadede.txt
+know	Abadede_ data/chars/Boss/Abadede/Abadede_.txt
+know	Abadede__ data/chars/Boss/Abadede/Abadede__.txt
+
+know	Kurt data/chars/Boss/Kurt/Kurt.txt
+know	Kurt_ data/chars/Boss/Kurt/Kurt_.txt
+know	Kurt__ data/chars/Boss/Kurt/Kurt__.txt
+
+know	Barbon data/chars/Boss/Barbon/Barbon.txt
+know	BarbonP01 data/chars/Boss/Barbon/BarbonP01.txt
+know	Barbon_ data/chars/Boss/Barbon/Barbon_.txt
+know	Barbon__ data/chars/Boss/Barbon/Barbon__.txt
+
+know	Harakiri data/chars/Boss/Harakiri/Harakiri.txt
+know	Harakiri_ data/chars/Boss/Harakiri/Harakiri_.txt
+know	Harakiri__ data/chars/Boss/Harakiri/Harakiri__.txt
+know	HarakiriP01 data/chars/Boss/Harakiri/HarakiriP01.txt
+know	HarakiriP02 data/chars/Boss/Harakiri/HarakiriP02.txt
+know	HarakiriP03 data/chars/Boss/Harakiri/HarakiriP03.txt
+know	HarakiriP04 data/chars/Boss/Harakiri/HarakiriP04.txt
+know	HarakiriP05 data/chars/Boss/Harakiri/HarakiriP05.txt
+
+
+know	MRX data/chars/Boss/MRX/MRX.txt
+know	MRX_ data/chars/Boss/MRX/MRX_.txt
+know	ShotX00 data/chars/Boss/MRX/ShotX00.txt
+know	ShotX01 data/chars/Boss/MRX/ShotX01.txt
+know	ShotX02 data/chars/Boss/MRX/ShotX02.txt
+know	ShotX03 data/chars/Boss/MRX/ShotX03.txt
+know	ShotX04 data/chars/Boss/MRX/ShotX04.txt
+know	ShotX05 data/chars/Boss/MRX/ShotX05.txt
+know	ShotX06 data/chars/Boss/MRX/ShotX06.txt
+
+know	Faust data/chars/Boss/Faust/faust.txt
+know	Faust_ data/chars/Boss/Faust/faust_.txt
+know	Faustp01 data/chars/Boss/Faust/faustp01.txt
+
+know	Shiva data/chars/Boss/Shiva/Shiva.txt
+know	ShivaR data/chars/Boss/ShivaR/ShivaR.txt
+know	Shiva_ data/chars/Boss/Shiva/Shiva_.txt
+know	Shiva__ data/chars/Boss/Shiva/Shiva__.txt
+know	ShivaS data/chars/Boss/ShivaS/ShivaS.txt
+know	ShivaS_ data/chars/Boss/ShivaS/ShivaS_.txt
+know	ShivaS__ data/chars/Boss/ShivaS/ShivaS__.txt
+know	ShivaSP01 data/chars/Boss/ShivaS/ShivaSP01.txt
+know	ShivaSP01a data/chars/Boss/ShivaS/ShivaSP01a.txt
+know	ShivaSP02 data/chars/Boss/ShivaS/ShivaSP02.txt
+know	ShivaSP02_ data/chars/Boss/ShivaS/ShivaSP02_.txt
+
+#Inimigos
+
+know	Galsia	data/chars/Enemys/Galsia/Galsia.txt
+know	_Galsia	data/chars/Enemys/Galsia/_Galsia.txt
+know	Galsia_	data/chars/Enemys/Galsia/Galsia_.txt
+know	Galsia_A data/chars/Enemys/Galsia/Galsia_A.txt
+know	Galsia_knife	data/chars/Enemys/Galsia/Galsia_Knife.txt
+know	_Galsia_knife	data/chars/Enemys/Galsia/_Galsia_Knife.txt
+know	Donovan 	data/chars/Enemys/Donovan/Donovan.txt
+know	_Donovan 	data/chars/Enemys/Donovan/_Donovan.txt
+know	Donovan_	data/chars/Enemys/Donovan/Donovan_.txt
+know	Donovan_E00	data/chars/Enemys/Donovan/Donovan_E00.txt
+know	Donovan_E01	data/chars/Enemys/Donovan/Donovan_E01.txt
+know	Donovan_pipe	data/chars/Enemys/Donovan/Donovan_Pipe.txt
+know	_Donovan_pipe	data/chars/Enemys/Donovan/_Donovan_Pipe.txt
+know	Thug	data/chars/Enemys/Thug/Thug.txt
+know	_Thug	data/chars/Enemys/Thug/_Thug.txt
+know	Thug_	data/chars/Enemys/Thug/Thug_.txt
+know	ThugP01	data/chars/Enemys/Thug/ThugP01.txt
+know	Signal	data/chars/Enemys/Signal/Signal.txt
+know	Signal_	data/chars/Enemys/Signal/Signal_.txt
+know	Crakito	data/chars/Enemys/Crakito/Crakito.txt
+know	Crakito_ data/chars/Enemys/Crakito/Crakito_.txt
+know	_Crakito_ data/chars/Enemys/Crakito/_Crakito_.txt
+know	Crakito__ data/chars/Enemys/Crakito/Crakito__.txt
+know	Balu	data/chars/Enemys/Balu/Balu.txt
+know	Balu_	data/chars/Enemys/Balu/Balu_.txt
+know	_Balu_	data/chars/Enemys/Balu/_Balu_.txt
+know	Balu__	data/chars/Enemys/Balu/Balu__.txt
+know	Jake	data/chars/Enemys/Jake/Jake.txt
+know	Jake_	data/chars/Enemys/Jake/Jake_.txt
+know	Jake_Knife data/chars/Enemys/Jake/Jake_Knife.txt
+know	Costa	data/chars/Enemys/Costa/Costa.txt
+know	Costa_	data/chars/Enemys/Costa/Costa_.txt
+know	Chan	data/chars/Enemys/Chan/Chan.txt
+know	Chan_	data/chars/Enemys/Chan/Chan_.txt
+know	Slum	data/chars/Enemys/Slum/Slum.txt
+know	Slum_	data/chars/Enemys/Slum/Slum_.txt
+know	Slum__	data/chars/Enemys/Slum/Slum__.txt
+know	Diga	data/chars/Enemys/Diga/Diga.txt
+know	Diga_	data/chars/Enemys/Diga/Diga_.txt
+know	Diga__	data/chars/Enemys/Diga/Diga__.txt
+know	Jhonny	data/chars/Enemys/Jhonny/Jhonny.txt
+know	Jhonny_	data/chars/Enemys/Jhonny/Jhonny_.txt
+know	Ralf	data/chars/Enemys/Ralf/Ralf.txt
+know	Ralf_	data/chars/Enemys/Ralf/Ralf_.txt
+know	Fog	data/chars/Enemys/Fog/Fog.txt
+know	_Fog	data/chars/Enemys/Fog/_Fog.txt
+know	Fog_	data/chars/Enemys/Fog/Fog_.txt
+know	Fog__	data/chars/Enemys/Fog/Fog__.txt
+know	Fog_B	data/chars/Enemys/Fog/Fog_B.txt
+know	Fog_Pipe	data/chars/Enemys/Fog/Fog_Pipe.txt
+know	_Fog_Pipe	data/chars/Enemys/Fog/_Fog_Pipe.txt
+know	macleod 	data/chars/Enemys/macleod/macleod.txt
+know	macleod_ 	data/chars/Enemys/macleod/macleod_.txt
+know	macleod_Sniper	data/chars/Enemys/macleod/macleod_sniper.txt
+know	macleod_Sniper_	data/chars/Enemys/macleod/macleod_sniper_.txt
+know	maclean	data/chars/Enemys/maclean/maclean.txt
+know	maclean_	data/chars/Enemys/maclean/maclean_.txt
+know	macBride data/chars/Enemys/macBride/macBride.txt
+know	macBride_ data/chars/Enemys/macBride/macBride_.txt
+know	Shot 	data/chars/Enemys/macleod/Shot.txt
+know	Ruy	data/chars/Enemys/Ruy/Ruy.txt
+know	Ruy_	data/chars/Enemys/Ruy/Ruy_.txt
+know	Ruy_B	data/chars/Enemys/Ruy/Ruy_B.txt
+know	RuyP01	data/chars/Enemys/Ruy/RuyP01.txt
+know	Vice	data/chars/Enemys/Vice/Vice.txt
+know	Vice_	data/chars/Enemys/Vice/Vice_.txt
+know	Vice__	data/chars/Enemys/Vice/Vice__.txt
+know	Garnet	data/chars/Enemys/Garnet/Garnet.txt
+know	_Garnet	data/chars/Enemys/Garnet/_Garnet.txt
+know	Garnet_	data/chars/Enemys/Garnet/Garnet_.txt
+know	Garnet__ data/chars/Enemys/Garnet/Garnet__.txt
+know	Electra data/chars/Enemys/Electra/Electra.txt
+know	Electra_ data/chars/Enemys/Electra/Electra_.txt
+know	Nora     data/chars/Enemys/Nora/Nora.txt
+know	Nora_     data/chars/Enemys/Nora/Nora_.txt
+know	Bigben     data/chars/Enemys/Bigben/Bigben.txt
+know	Bigben_     data/chars/Enemys/Bigben/Bigben_.txt
+know	_Bigben     data/chars/Enemys/Bigben/_Bigben.txt
+know	_Bigben_     data/chars/Enemys/Bigben/_Bigben_.txt
+know	Bigben__     data/chars/Enemys/Bigben/Bigben__.txt
+know	BigbenP01     data/chars/Enemys/Bigben/BigbenP01.txt
+know	BigbenP02     data/chars/Enemys/Bigben/BigbenP02.txt
+know	BigbenP03     data/chars/Enemys/Bigben/BigbenP03.txt
+know	BigbenP04     data/chars/Enemys/Bigben/BigbenP04.txt
+know	BigbenP05     data/chars/Enemys/Bigben/BigbenP05.txt
+know	BigbenP06     data/chars/Enemys/Bigben/BigbenP06.txt
+know	BigbenP07     data/chars/Enemys/Bigben/BigbenP07.txt
+know	BigbenP08     data/chars/Enemys/Bigben/BigbenP08.txt
+know	Raven         data/chars/Enemys/Raven/Raven.txt
+know	Raven_         data/chars/Enemys/Raven/Raven_.txt
+know	Howk        data/chars/Enemys/Raven/Howk.txt
+know	Howk_        data/chars/Enemys/Raven/Howk_.txt
+know	Agamenon     data/chars/Enemys/Agamenon/Agamenon.txt
+know	Agamenon_     data/chars/Enemys/Agamenon/Agamenon_.txt
+know	P1          data/chars/Enemys/P1/P1.txt
+know	P1_          data/chars/Enemys/P1/P1_.txt
+know	P1__          data/chars/Enemys/P1/P1__.txt
+know	LAser       data/chars/Enemys/P1/Laser.txt
+know	PArticle    data/chars/Enemys/Particle/PArticle.txt
+know	PArticle_    data/chars/Enemys/Particle/PArticle_.txt
+know	PArticle__   data/chars/Enemys/Particle/PArticle__.txt
+know	LAser02    data/chars/Enemys/Particle/LAser02.txt
+know	Skiner     data/chars/Enemys/Skiner/Skiner.txt
+know	_Skiner     data/chars/Enemys/Skiner/_Skiner.txt
+know	Skiner_     data/chars/Enemys/Skiner/Skiner_.txt
+know	Skiner_B    data/chars/Enemys/Skiner/Skiner_B.txt
+know	HAkuyo      data/chars/Enemys/Hakuyo/Hakuyo.txt
+know	HAkuyoP01     data/chars/Enemys/Hakuyo/HakuyoP01.txt
+know	HAkuyoP02     data/chars/Enemys/Hakuyo/HakuyoP02.txt
+know	HAkuyo_     data/chars/Enemys/Hakuyo/Hakuyo_.txt
+know	_HAkuyo      data/chars/Enemys/Hakuyo/_Hakuyo.txt
+know	Tiger       data/chars/Enemys/Tiger/Tiger.txt
+know	Tigerp01       data/chars/Enemys/Tiger/Tigerp01.txt
+know	Tigerp02       data/chars/Enemys/Tiger/Tigerp02.txt
+know	Tigerp03       data/chars/Enemys/Tiger/Tigerp03.txt
+know	Tigerp04       data/chars/Enemys/Tiger/Tigerp04.txt
+know	Tiger_       data/chars/Enemys/Tiger/Tiger_.txt
+know	_Tiger       data/chars/Enemys/Tiger/_Tiger.txt
+know	Kusanagi    data/chars/Enemys/Kusanagi/Kusanagi.txt
+know	Kusanagi_S  data/chars/Enemys/Kusanagi/Kusanagi_S.txt
+know	Kusanagi_    data/chars/Enemys/Kusanagi/Kusanagi.txt
+know	Kusanagi_S_  data/chars/Enemys/Kusanagi/Kusanagi_S.txt
+know	_Kusanagi    data/chars/Enemys/Kusanagi/_Kusanagi.txt
+know	_Kusanagi_S  data/chars/Enemys/Kusanagi/_Kusanagi_S.txt
+know	KusanagiP01 data/chars/Enemys/Kusanagi/KusanagiP01.txt
+know	_KusanagiP01 data/chars/Enemys/Kusanagi/_KusanagiP01.txt
+
+
+#Efeitos
+know	ACT	data/chars/ACt.txt
+know	ACTp	data/chars/ACtp.txt
+know	ACTE	data/chars/ACtE.txt
+know	ACTN	data/chars/ACtN.txt
+know	ACTN2	data/chars/ACtN2.txt
+know	Super	data/chars/Efeitos/Super.txt
+know	Super2	data/chars/Efeitos/Super2.txt
+Load	Fraco	data/chars/Efeitos/Fraco.txt
+Load	Medio	data/chars/Efeitos/Medio.txt
+Load	Forte	data/chars/Efeitos/Forte.txt
+Load	Shock	data/chars/Efeitos/Shock.txt
+Load	Corte	data/chars/Efeitos/Corte.txt
+know	eX	data/chars/Efeitos/EX.txt
+know	eX02	data/chars/Efeitos/EX02.txt
+know	tel00	data/chars/Efeitos/Tel00.txt
+know	Special00 data/chars/Efeitos/Special00.txt
+know	Special01 data/chars/Efeitos/Special01.txt
+
+
+# Intens
+
+know	Tag		data/chars/Itens/TAg.txt
+know	Apple		data/chars/Itens/apple.txt
+know	chicken		data/chars/Itens/chicken.txt
+know	cash		data/chars/Itens/cash.txt
+know	Gold		data/chars/Itens/Gold.txt
+know	1up		data/chars/Itens/1up.txt
+
+#Cenarios
+
+know	Car          data/Bgs/00/CAr.txt
+know	Train01          data/Bgs/01/Train01.txt
+know	Luz00         data/Bgs/02/Luz00.txt
+know	Luz01         data/Bgs/06/Luz01.txt
+know	Postes         data/Bgs/06/Postes.txt
+know	Porta00         data/Bgs/02/Porta00.txt
+know	Sombra00         data/Bgs/02/Sombra00.txt
+know	Sombra01         data/Bgs/02/Sombra01.txt
+know	Elevador00        data/Bgs/04/Elevador00.txt
+know	Elevador01        data/Bgs/04/Elevador01.txt
+know	Elevador02        data/Bgs/04/Elevador02.txt
+know	Elevador03        data/Bgs/04/Elevador03.txt
+know	Elevador04        data/Bgs/04/Elevador04.txt
+know	Truck00        data/Bgs/04/Truck00.txt
+know	Porta01        data/Bgs/04/Porta01.txt
+know	Porta02        data/Bgs/04/Porta02.txt
+know	Porta03        data/Bgs/05/Porta03.txt
+know	Chuva01        data/Bgs/05/Chuva01.txt
+know	Chuva02        data/Bgs/05/Chuva02.txt
+know	Chuva03        data/Bgs/05/Chuva03.txt
+know	Chuva04        data/Bgs/05/Chuva04.txt
+know	Chuva05        data/Bgs/05/Chuva05.txt
+know	Chuva06        data/Bgs/05/Chuva06.txt
+know	HEli01        data/Bgs/06/Heli01.txt
+know	HEli02        data/Bgs/06/Heli02.txt
+know	Boat00        data/Bgs/06/Boat00.txt
+know	Boat01        data/Bgs/06/Boat01.txt
+know	Fire00        data/Bgs/06/Fire00.txt
+know	Fire01        data/Bgs/06/Fire01.txt
+know	Porta04         data/Bgs/00/Porta04.txt
+
+
+
+know	DeleyX1  	data/chars/Boss/DelayX1.txt
+
+# armas
+
+know	Nada		data/chars/Armas/NAda.txt
+know	Pipe		data/chars/Armas/Pipe.txt
+know	Pipet		data/chars/Armas/Pipet.txt
+know	Knife		data/chars/Armas/Knife.txt
+know	Knifet		data/chars/Armas/Knifet.txt
+know	Kunai		data/chars/Armas/Kunai.txt
+know	KunaiT		data/chars/Armas/KunaiT.txt
+know	sword		data/chars/Armas/sword.txt
+know	swordt		data/chars/Armas/swordt.txt
+know	SniperG		data/chars/Armas/SniperG.txt
+know	Snipert 	data/chars/Armas/Snipert.txt
+
+#Objetos
+
+know	cabine		data/chars/Objetos/Cabine.txt
+know	Lata		data/chars/Objetos/Lata.txt
+know	Lata02		data/chars/Objetos/Lata02.txt
+know	Lata03		data/chars/Objetos/Lata03.txt
+know	Tires		data/chars/Objetos/Tires.txt
+know	Tires02		data/chars/Objetos/Tires02.txt
+know	Cone		data/chars/Objetos/Cone.txt
+know	Bloqueio	data/chars/Objetos/Bloqueio.txt
+know	Bloqueio02	data/chars/Objetos/Bloqueio02.txt
+know	Pino		data/chars/Objetos/Pino.txt
+know	Duto		data/chars/Objetos/Duto.txt
+know	Box		data/chars/Objetos/Box.txt
+know	Box02		data/chars/Objetos/Box02.txt
+know	Box03		data/chars/Objetos/Box03.txt
+know	Box04		data/chars/Objetos/Box04.txt
+know	Kart01		data/chars/Objetos/Kart01.txt
+know	Kart02		data/chars/Objetos/Kart02.txt
+know	Lixo01		data/chars/Objetos/Lixo01.txt
+know	Lixo02		data/chars/Objetos/Lixo02.txt
+know	Lixo03		data/chars/Objetos/Lixo03.txt
+know	menu		data/chars/Objetos/menu.txt
+know	Cadeira		data/chars/Objetos/cadeira.txt
+know	Mesa		data/chars/Objetos/Mesa.txt
+know	Mesa02		data/chars/Objetos/Mesa02.txt
+know	arcade		data/chars/Objetos/arcade.txt
+know	Ovo		data/chars/Objetos/Ovo.txt
+know	Boom01		data/chars/Objetos/Boom01.txt
+know	Boom02		data/chars/Objetos/Boom02.txt
+know	Granada		data/chars/Objetos/granada.txt
+know	Sandbag		data/chars/Objetos/sandbag.txt
+know	Vaso 		data/chars/Objetos/VAso.txt
+know	Lanterna	data/chars/Objetos/Lanterna.txt
+know	Bau 		data/chars/Objetos/Bau.txt
+know	Estatua01 	data/chars/Objetos/Estatua01.txt
+know	Estatua02 	data/chars/Objetos/Estatua02.txt
+know	Painel  	data/chars/Objetos/Painel.txt
+know	Axe		data/chars/Objetos/Axe.txt
+know	Radio		data/chars/Objetos/Radio.txt
+
+
+
+
+
+
+
+

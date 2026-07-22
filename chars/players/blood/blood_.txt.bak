@@ -1,0 +1,656 @@
+name	BlooD_
+health	100
+mp 10
+chargerate 2
+mprate 1
+#secret 1
+Falldie 2
+Grabdistance 18
+riseinv				0.4 1
+speed	8
+type	NPC
+Subtype Follow
+iconposition 322 4
+lifeposition 322 23
+Nameposition 343 4
+MPposition 406 14
+lifebarstatus 126 5 1 1 0 -500 -500 1 -500
+MPbarstatus 42 5 1 1 0 -500 -500 1 -500
+hostile ENEMY
+subject_to_screen 1
+gfxshadow	1
+candamage			enemy obstacle
+JUMPHEIGHT 4
+#Jumpheight 3
+antigrab 2
+atchain   1 2 3 4 5
+#weapons Blood_Knife Blood_Sword Blood_pipe Blood_Kunai
+icon	data/chars/players/blood/icon2.gif 1
+diesound data/chars/players/blood/Death.wav
+running	20	3	2	1	1
+onblockwscript	data/scripts/bounceF.c
+#animationscript 	data/scripts/ani0020.h
+animationscript		data/scripts/drago.c
+#ondrawscript 		data/scripts/player_ondrawscript.c
+
+Load BloodP01
+Load BloodP02
+Load BloodP03
+Load BloodP04
+
+
+Load HAwk_
+LOAD Boomer_
+
+Load BlooD_Knife
+Load BlooD_Pipe
+#Load Adam_Kunai
+#Load Adam_Sword
+
+remap data/chars/players/blood/idle00.gif data/chars/players/blood/MAp01.gif
+remap data/chars/players/blood/idle00.gif data/chars/players/blood/MAp02.gif
+remap data/chars/players/blood/idle00.gif data/chars/players/blood/MAp03.gif
+remap data/chars/players/blood/idle00.gif data/chars/players/blood/MAp04.gif
+
+anim Spawn
+	loop	0
+	delay	26
+	offset	72 115
+	bbox	58 41 24 79
+	frame   data/chars/players/blood/idle00.gif
+	frame   data/chars/players/blood/idle01.gif
+	frame   data/chars/players/blood/idle00.gif
+	frame   data/chars/players/blood/idle01.gif
+
+
+anim Death
+	loop	0
+	delay	12
+	offset	72 115
+	bbox	58 41 24 79
+	frame   data/chars/players/blood/Fall02.gif
+	@cmd  spawn01  "Blood_"  -5  0  10
+	frame   data/chars/players/blood/Fall02.gif
+	frame   data/chars/players/blood/Fall02.gif
+
+anim Pain5
+	loop	0
+	delay	12
+	offset	72 115
+	bbox	58 41 24 79
+	frame   data/chars/players/blood/idle00.gif
+
+anim idle
+	loop	1
+	delay	25
+	offset	72 115
+	bbox	58 41 24 79
+	frame   data/chars/players/blood/idle00.gif
+	@cmd	depost 0
+	@cmd	throw 15 0.7 0.7 1 0 -1
+	@cmd	clearL
+	frame   data/chars/players/blood/idle01.gif
+
+
+
+anim walk
+	loop	1
+	delay	12
+	offset	72 115
+	bbox	63 25 28 77
+	frame	data/chars/players/blood/walk00.gif
+	frame	data/chars/players/blood/walk01.gif
+	frame	data/chars/players/blood/walk02.gif
+	frame	data/chars/players/blood/walk03.gif
+	frame	data/chars/players/blood/walk04.gif
+	frame	data/chars/players/blood/walk05.gif
+	frame	data/chars/players/blood/walk06.gif
+		offset  67  115
+	frame	data/chars/players/blood/walk07.gif
+
+
+anim get
+	loop	0
+	delay	20
+	offset	72 115
+	frame	data/chars/players/blood/Get.gif
+
+
+anim jump
+	loop	0
+	delay	15
+	offset	74 115
+	bbox	62 35 36 74
+	frame	data/chars/players/blood/Jump00.gif
+	frame	data/chars/players/blood/Jump00.gif
+	frame	data/chars/players/blood/Jump00.gif
+
+anim attack1
+	loop	0
+	delay	6
+	offset	72 115
+        Range 0 40
+        RangeZ -10 10
+        hitflash	Fraco
+	bbox	58 38 30 82
+		Attack1  0
+        Sound	data/sounds/golpes/Soco.wav
+        hitfx	data/sounds/golpes/Fraco.wav
+	frame	data/chars/players/blood/a100.gif
+		attack1  59  47  62  17  5  0  0  0  0  10
+		delay  7
+	frame	data/chars/players/blood/a101.gif
+		delay  3
+		Attack1  0
+	frame	data/chars/players/blood/a100.gif
+
+
+anim attack2
+	loop	0
+	delay	8
+	offset	72 115
+        hitflash	MEdio
+	bbox	63 55 25 64
+		Attack1  0
+        hitfx	data/sounds/golpes/MEdio.wav
+	Sound	data/chars/players/blood/a1.wav
+	frame	data/chars/players/blood/a200.gif
+		attack2  75  51  35  37  5  0  0  0  0  10
+		delay  7
+	frame	data/chars/players/blood/a201.gif
+		delay  8
+		attack2  62  60  71  19  5  0  0  0  0  10
+	frame	data/chars/players/blood/a202.gif
+		Attack1  0
+		delay  4
+	frame	data/chars/players/blood/a201.gif
+
+anim attack3
+	loop	0
+	delay	6
+	offset	72 115
+	bbox	61 40 32 77
+        hitflash	Forte
+        Sound	data/sounds/golpes/Chut.wav
+        hitfx	data/sounds/golpes/Forte.wav
+	Sound	data/chars/players/blood/a2.wav
+	frame	data/chars/players/blood/a300.gif
+		Attack1  0
+	frame	data/chars/players/blood/a301.gif
+		attack3  67  53  49  30  5  0  0  0  0  10
+		delay  8
+	frame	data/chars/players/blood/a302.gif
+		delay  20
+		attack1  78  31  40  57  5  0  0  0  0  10
+	frame  data/chars/players/blood/a303.gif
+
+anim attack4
+	loop	0
+	delay	6
+	offset	72 115
+	bbox	61 40 32 77
+        hitflash	Forte
+        Sound	data/sounds/golpes/Chut.wav
+        hitfx	data/sounds/golpes/Forte.wav
+	Sound	data/chars/players/blood/a3.wav
+	frame	data/chars/players/blood/a400.gif
+	frame	data/chars/players/blood/a401.gif
+		delay  25
+		attack2  78  55  47  29  7  1  0  0  0  10
+		offset  72  117
+	frame	data/chars/players/blood/a402.gif
+		Attack1  0
+	frame	data/chars/players/blood/a403.gif
+
+
+anim Follow1
+	loop	0
+	delay	25
+	offset	73 118
+        hitflash	MEdio
+        hitfx	data/sounds/Silencio.wav
+		Attack1  0
+        @cmd dasher 0 0 0
+	@cmd	slamstart
+	@cmd	position 0 20 0 1 -1
+        frame	data/chars/players/blood/ga300.gif
+	@cmd	position 6 10 0 1 -1
+	@cmd  spawn01  "Fraco"  10  2  2
+        Sound	data/sounds/golpes/Fraco.wav
+		delay  15
+        frame	data/chars/players/blood/ga301.gif
+	@cmd	position 3 10 0 1 -1
+        frame	data/chars/players/blood/ga302.gif
+	@cmd	position 6 10 0 1 -1
+	@cmd  spawn01  "MEdio"  10  2  2
+        Sound	data/sounds/golpes/MEdio.wav
+        frame	data/chars/players/blood/ga303.gif
+	@cmd	position 6 10 0 1 -1
+	@cmd  spawn01  "Fraco"  10  2  2
+        Sound	data/sounds/golpes/Fraco.wav
+        frame	data/chars/players/blood/ga301.gif
+	@cmd	position 3 10 0 1 -1
+	@cmd  spawn01  "Forte"  10  2  2
+        Sound	data/sounds/golpes/Forte.wav
+        frame	data/chars/players/blood/ga302.gif
+	@cmd	position 6 10 0 1 -1
+        frame	data/chars/players/blood/ga303.gif
+	@cmd	position 9 10 0 1 -1
+	@cmd	depost 0
+	@cmd	throw 15 5 -1 1 0 -1
+	@cmd	clearL
+       frame	data/chars/players/blood/ga300.gif
+
+
+
+anim Freespecial
+        Range 100 150
+        RangeZ -10 10
+        loop    0
+        delay  10
+                Followcond 1
+                followanim 1
+	offset	72 119
+	bbox	58 48 44 67
+        hitfx	data/sounds/Grab.wav
+        @cmd dasher 2 0 0
+		attack1  74  46  18  70  1  0  1  0  0  15
+        frame	data/chars/players/blood/run00.gif
+        frame	data/chars/players/blood/run01.gif
+        Sound	data/sounds/Run.wav
+        frame	data/chars/players/blood/run02.gif
+        frame	data/chars/players/blood/run03.gif
+        frame	data/chars/players/blood/run04.gif
+        Sound	data/sounds/Run.wav
+        frame	data/chars/players/blood/run05.gif
+
+anim Freespecial5
+        Range 150 170
+        RangeZ -10 10
+        loop    0
+        delay  10
+	offset	72 119
+                Followcond 1
+                followanim 2
+	bbox	58 48 44 67
+        hitfx	data/sounds/Grab.wav
+        @cmd dasher 2 0 0
+		attack1  72  47  19  71  1  0  0  0  0  15
+        frame	data/chars/players/blood/run00.gif
+        frame	data/chars/players/blood/run01.gif
+        Sound	data/sounds/Run.wav
+        frame	data/chars/players/blood/run02.gif
+        frame	data/chars/players/blood/run03.gif
+        frame	data/chars/players/blood/run04.gif
+        Sound	data/sounds/Run.wav
+        frame	data/chars/players/blood/run05.gif
+        frame	data/chars/players/blood/run00.gif
+        frame	data/chars/players/blood/run01.gif
+        Sound	data/sounds/Run.wav
+        frame	data/chars/players/blood/run02.gif
+        frame	data/chars/players/blood/run03.gif
+        frame	data/chars/players/blood/run04.gif
+
+
+anim grab
+	loop	0
+	delay	100
+	offset	72 115
+	bbox	63 39 23 79
+        cancel	0 3 0 J freespecial
+	frame	data/chars/players/blood/GrAB.gif
+
+anim Follow2
+	loop	0
+	delay	5
+	offset	72 115
+        hitflash	Forte
+        hitfx	data/sounds/golpes/Forte.wav
+		Attack1  0
+        @cmd dasher 0 0 0
+	frame	data/chars/players/blood/T00.gif
+	Sound	data/chars/players/blood/a2.wav
+	delay	10
+	@cmd	slamstart
+	@cmd	position 0 20 0 0 -1
+	frame	data/chars/players/blood/T01.gif
+	@cmd	position 4 20 80 0 -1
+		delay  20
+		attack1  65  54  35  63  7  1  0  0  0  10
+	frame	data/chars/players/blood/T02.gif
+	@cmd	position 4 18 80 0 -1
+		attack1  39  55  74  20  7  1  0  0  0  10
+		delay  10
+	frame	data/chars/players/blood/T03.gif
+	@cmd	position 5 -40 50 0 -1
+		attack1  7  40  47  62  7  1  0  0  0  10
+		offset  77  119
+	frame	data/chars/players/blood/T04.gif
+	@cmd	position 8 -60 40 0 -1
+	@cmd	depost 0
+	@cmd	throw 15 5 2 2 0 -1
+	@cmd	clearL
+		attack1  -17  36  59  72  7  1  0  0  0  10
+		delay  20
+	frame	data/chars/players/blood/t04.gif
+		attack1  -64  33  63  55  7  1  0  0  0  10
+	frame  data/chars/players/blood/t04.gif
+
+
+
+
+
+
+
+
+
+anim pain
+	loop	0
+	offset	72 115
+	bbox	61 54 26 66
+	delay	5
+	frame	data/chars/players/blood/pain01.gif
+		delay  25
+		offset  74  115
+	frame	data/chars/players/blood/pain01.gif
+
+anim pain3
+	loop	0
+	offset	72 115
+	bbox	61 54 26 66
+	delay	5
+	jumpframe  0  2  0  0
+	frame	data/chars/players/blood/pain01.gif
+		delay  25
+		offset  70  115
+	frame	data/chars/players/blood/pain01.gif
+
+anim pain4
+	loop	0
+	offset	72 115
+	bbox	61 54 26 66
+	delay	5
+	frame	data/chars/players/blood/pain01.gif
+		delay  900
+		offset  70  115
+	frame	data/chars/players/blood/pain01.gif
+
+
+anim grabbed
+	loop	0
+	offset	72 115
+	bbox	59 31 26 84
+	delay	40
+	frame	data/chars/players/blood/pain02.gif
+
+
+
+anim pain2
+	loop	0
+	offset	72 115
+	bbox	59 44 31 73
+	delay	5
+	frame	data/chars/players/blood/pain02.gif
+		delay  25
+		offset  70  115
+	frame	data/chars/players/blood/pain02.gif
+
+
+
+
+
+anim fall2
+	loop	0
+	offset	72 115
+	jumpframe  0  3  -3  0
+	delay	20
+        hitfx	data/sounds/golpes/Forte.wav
+		attack  0
+	frame	data/chars/players/blood/fall00.gif
+		Attack1  0
+		offset  52  120
+	frame	data/chars/players/blood/fall01.gif
+		delay  10
+		offset  64  113
+	frame	data/chars/players/blood/fall02.gif
+
+anim fall
+	loop	0
+	offset	72 115
+	delay	20
+        hitfx	data/sounds/golpes/Forte.wav
+		attack  0
+	frame	data/chars/players/blood/fall00.gif
+		Attack1  0
+	frame	data/chars/players/blood/fall01.gif
+		delay  10
+	frame	data/chars/players/blood/fall02.gif
+
+anim fall6 #Shok
+	loop	0
+	offset	80 108
+	delay	5
+        hitfx	data/sounds/golpes/Forte.wav
+		attack  0
+	frame	data/chars/players/blood/fall201.gif
+	frame	data/chars/players/blood/fall200.gif
+	frame	data/chars/players/blood/fall201.gif
+	frame	data/chars/players/blood/fall200.gif
+	frame	data/chars/players/blood/fall01.gif
+		offset  66  117
+	frame	data/chars/players/blood/fall02.gif
+
+
+anim fall7 #Burn
+	loop	0
+	offset	65 97
+	delay	10
+        hitfx	data/sounds/golpes/Forte.wav
+		attack  0
+	frame	data/chars/players/blood/FALL300.gif
+	frame	data/chars/players/blood/FALL301.gif
+	frame	data/chars/players/blood/FALL302.gif
+	frame	data/chars/players/blood/FALL300.gif
+	frame	data/chars/players/blood/FALL301.gif
+		offset  67  115
+	frame	data/chars/players/blood/FALL02.gif
+
+
+anim rise
+	loop	0
+	offset	72 115
+	delay	20
+	frame	data/chars/players/blood/Rise00.gif
+	frame	data/chars/players/blood/Rise01.gif
+	frame	data/chars/players/blood/Rise02.gif
+
+
+
+
+anim Freespecial2
+        Range 80 100
+        RangeZ -10 10
+        energycost 10 1
+        MpOnly 1
+	loop	0
+	offset	72 115
+        hitflash	fORTE
+        hitfx	data/sounds/golpes/forte.wav
+		Attack1  0
+		delay  8
+	Sound	data/chars/players/blood/fs01.wav
+		move  0
+	@cmd  spawn01  "BloodP01"  0  0  1
+	frame	data/chars/players/blood/a300.gif
+	frame	data/chars/players/blood/a301.gif
+	@cmd  spawn01  "BloodP02"  0  0  1
+	frame	data/chars/players/blood/a302.gif
+		delay  10
+		attack1  99  -1  78  117  5  0  1  0  0  20
+	frame	data/chars/players/blood/a303.gif
+		Attack1  0
+	frame  data/chars/players/blood/a303.gif
+		attack1  99  -1  78  117  5  0  1  0  0  20
+	frame  data/chars/players/blood/a303.gif
+		Attack1  0
+	frame	data/chars/players/blood/a303.gif
+		attack2  99  -1  78  117  15  1  1  0  0  20
+	frame  data/chars/players/blood/a303.gif
+	frame  data/chars/players/blood/a303.gif
+
+
+
+
+anim Freespecial3
+        energycost 10 1
+        MpOnly 1
+	loop	0
+	offset	72 115
+        Range 40 60
+        RangeZ -10 10
+        hitflash	fORTE
+        hitfx	data/sounds/golpes/forte.wav
+		delay  12
+	Sound	data/chars/players/blood/fs02.wav
+	@cmd  spawn01  "BloodP04"  0  0  1
+		Attack1  0
+	frame	data/chars/players/blood/SP100.gif
+		delay  60
+		attack2  30  -44  72  166  20  1  1  0  0  20
+	frame	data/chars/players/blood/SP101.gif
+
+
+
+
+anim freespecial4
+ 	loop	0
+ 	delay	8
+        Range 60 80
+        RangeZ -10 10
+ 	offset	73 119
+        Fastattack 1
+ 	bbox	62 48 36 44
+		move  0
+        hitflash	MEdio
+        hitfx	data/sounds/golpes/MEdio.wav
+	Sound	data/chars/players/blood/Ra.wav
+ 	frame	data/chars/players/blood/ra100.gif
+        @cmd dasher 1 0 0
+ 	frame	data/chars/players/blood/ra101.gif
+		attack1  63  53  73  27  3  0  0  0  0  15
+ 	frame	data/chars/players/blood/ra102.gif
+		Attack1  0
+	frame  data/chars/players/blood/ra102.gif
+		attack1  62  55  74  27  3  0  0  0  0  15
+	frame  data/chars/players/blood/ra102.gif
+		Attack1  0
+	frame  data/chars/players/blood/ra102.gif
+        @cmd dasher 0 0 0
+		attack1  62  55  74  27  7  1  0  0  0  15
+		delay  15
+	frame  data/chars/players/blood/ra102.gif
+
+
+
+
+
+anim grabattack
+	loop	0
+	offset	72 115
+	bbox	63 39 24 80
+	delay	4
+        hitflash	fRACO
+        hitfx	data/sounds/golpes/fRACO.wav
+		Attack1  0
+	frame	data/chars/players/blood/ga100.gif
+		delay  12
+		attack1  72  45  38  71  5  0  0  0  0  10
+	frame	data/chars/players/blood/ga101.gif
+		delay  5
+	frame	data/chars/players/blood/ga100.gif
+
+
+anim grabattack2
+	loop	0
+	offset	72 115
+	bbox	58 39 27 79
+	delay	7
+        cancel	0 3 0 d A2 freespecial
+        cancel	0 3 0 f A2 freespecial3
+        cancel	0 3 0 u A2 freespecial2
+        hitflash	Forte
+        hitfx	data/sounds/golpes/Forte.wav
+		Attack1  0
+	frame	data/chars/players/blood/ga200.gif
+	Sound	data/chars/players/blood/a2.wav
+		attack1  67  46  52  37  5  0  0  0  0  10
+		delay  15
+	frame	data/chars/players/blood/ga201.gif
+		Sound  data/chars/players/blood/a2.wav
+		Attack1  0
+	frame  data/chars/players/blood/ga201.gif
+		attack1  78  8  39  84  5  1  0  0  0  10
+		delay  25
+	frame	data/chars/players/blood/ga202.gif
+
+
+
+
+anim land
+	loop	0
+	delay	15
+	offset	72 115
+	bbox	58 54 36 67
+	frame	data/chars/players/blood/Land.gif
+
+
+anim Fall9
+	loop	0
+	offset	70 117
+	delay	999
+	frame	data/chars/players/blood/pain01.gif #0
+		offset  74  118
+	frame	data/chars/players/blood/pain02.gif #1
+		offset  74  111
+	frame	data/chars/players/blood/fall01.gif #2
+		offset  72  115
+	frame	data/chars/players/blood/fall02.gif #3
+		offset  81  97
+	frame	data/chars/players/blood/fall400.gif #4
+		offset  77  106
+	frame	data/chars/players/blood/fall401.gif #5
+		offset  67  85
+	frame	data/chars/players/blood/fall402.gif #6
+		offset  87  111
+	frame  data/chars/players/blood/fall403.gif
+		offset  76  107
+		delay  20
+	frame  data/chars/players/blood/fall401.gif
+		offset  96  113
+		delay  30
+	frame  data/chars/players/blood/fall404.gif
+		offset  68  114
+	frame  data/chars/players/blood/fall405.gif
+
+
+anim Fall8
+	loop	0
+	flipframe  0
+	offset	62 106
+	delay	30
+	frame	data/chars/players/blood/fall01.gif #0
+	offset	68 115
+	delay	15
+	frame	data/chars/players/blood/fall02.gif #1
+
+
+anim Fall5
+	loop	0
+	flipframe  1
+	offset	72 115
+	delay	30
+	frame	data/chars/players/blood/fall01.gif #0
+	offset	68 115
+	delay	15
+	frame	data/chars/players/blood/fall02.gif #1
+

@@ -1,0 +1,29 @@
+
+name			JackP02 #THROWNED
+type			none
+speed 12
+candamage			enemy obstacle
+alpha 1
+nolife			1
+lifespan		4
+remove			1
+gfxshadow		0 0
+flash			Forte
+#antigravity 100
+
+anim idle
+	drawmethod tintmode 6
+	drawmethod tintcolor -255
+	loop	0
+	offset	214 159
+		Attack1  0
+		delay  6
+	frame  data/chars/players/Jack/P01/P201.gif
+		delay  35
+	frame  data/chars/players/Jack/P01/P02.gif
+		delay  6
+	frame  data/chars/players/Jack/P01/P201.gif
+	frame  data/chars/players/Jack/P01/P202.gif
+	@cmd killentity getlocalvar("self")
+	frame  data/chars/players/Jack/P01/P02.gif
+

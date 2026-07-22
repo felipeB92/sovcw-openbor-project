@@ -1,0 +1,94 @@
+name			Truck00 #GROUND
+type			None
+Speed 0
+#setlayer 5
+#noquake 	1 1
+#offscreenkill	1000
+#Alpha 1
+animationscript		data/scripts/drago.c
+
+
+Load Vice
+Load Fog
+Load Slum
+Load Ralf
+
+anim idle
+	loop	0
+	offset	193 322
+		delay  8
+        hitflash	Forte
+        hitfx	data/sounds/golpes/Forte.wav
+	frame	data/Bgs/04/Truck/Truck203.gif
+	frame	data/Bgs/04/Truck/Truck204.gif
+	Sound	data/sounds/BeepD.wav
+	frame	data/Bgs/04/Truck/Truck203.gif
+	frame	data/Bgs/04/Truck/Truck204.gif
+	frame	data/Bgs/04/Truck/Truck203.gif
+	frame	data/Bgs/04/Truck/Truck204.gif
+	Sound	data/sounds/BeepD.wav
+	frame	data/Bgs/04/Truck/Truck203.gif
+	frame	data/Bgs/04/Truck/Truck204.gif
+	frame	data/Bgs/04/Truck/Truck203.gif
+	frame	data/Bgs/04/Truck/Truck204.gif
+	Sound	data/sounds/BeepD.wav
+	frame	data/Bgs/04/Truck/Truck203.gif
+	frame	data/Bgs/04/Truck/Truck204.gif
+	frame	data/Bgs/04/Truck/Truck203.gif
+	frame	data/Bgs/04/Truck/Truck204.gif
+	Sound	data/sounds/BeepD.wav
+	frame	data/Bgs/04/Truck/Truck203.gif
+	frame	data/Bgs/04/Truck/Truck204.gif
+	frame	data/Bgs/04/Truck/Truck203.gif
+	frame	data/Bgs/04/Truck/Truck204.gif
+	Sound	data/sounds/BeepD.wav
+	frame	data/Bgs/04/Truck/Truck203.gif
+	frame	data/Bgs/04/Truck/Truck204.gif
+	frame	data/Bgs/04/Truck/Truck203.gif
+	frame	data/Bgs/04/Truck/Truck204.gif
+		delay  12
+        @cmd dasher 2 0 0
+		attack1  223  235  140  89  15  1  0  0  0  15
+	frame	data/Bgs/04/Truck/Truck202.gif
+	frame	data/Bgs/04/Truck/Truck203.gif
+	frame	data/Bgs/04/Truck/Truck202.gif
+	frame	data/Bgs/04/Truck/Truck203.gif
+	frame	data/Bgs/04/Truck/Truck202.gif
+	Sound	data/sounds/car1.wav
+	frame	data/Bgs/04/Truck/Truck203.gif
+        @cmd dasher 0 0 0
+		delay  50
+		Attack1  0
+	frame	data/Bgs/04/Truck/Truck203.gif
+	@cmd  spawn01  "Slum"  -40  40  1
+	@cmd  spawn01  "Fog"  -133  60  1
+	@cmd  spawn01  "Ralf" -85  132  1
+	@cmd  spawn01  "Vice" -113  132  1
+	frame	data/Bgs/04/Truck/Truck200.gif
+		delay  12
+        @cmd dasher 2 0 0
+		attack1  223  235  140  89  15  1  0  0  0  15
+	frame	data/Bgs/04/Truck/Truck201.gif
+	Sound	data/sounds/car2.wav
+	frame	data/Bgs/04/Truck/Truck200.gif
+	frame	data/Bgs/04/Truck/Truck201.gif
+	frame	data/Bgs/04/Truck/Truck200.gif
+	frame	data/Bgs/04/Truck/Truck201.gif
+	frame	data/Bgs/04/Truck/Truck200.gif
+	frame	data/Bgs/04/Truck/Truck201.gif
+	frame	data/Bgs/04/Truck/Truck200.gif
+	frame	data/Bgs/04/Truck/Truck201.gif
+	frame	data/Bgs/04/Truck/Truck200.gif
+	frame	data/Bgs/04/Truck/Truck201.gif
+	frame	data/Bgs/04/Truck/Truck200.gif
+	frame	data/Bgs/04/Truck/Truck201.gif
+	frame	data/Bgs/04/Truck/Truck200.gif
+	frame	data/Bgs/04/Truck/Truck201.gif
+	frame	data/Bgs/04/Truck/Truck200.gif
+	frame	data/Bgs/04/Truck/Truck201.gif
+	frame	data/Bgs/04/Truck/Truck200.gif
+	frame	data/Bgs/04/Truck/Truck201.gif
+	frame	data/Bgs/04/Truck/Truck200.gif
+	@cmd killentity getlocalvar("self")
+	frame	data/Bgs/04/Truck/Truck201.gif
+

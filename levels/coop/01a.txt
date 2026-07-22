@@ -1,0 +1,277 @@
+music		data/music/02a.bor
+bossmusic	data/music/Boss2.bor
+scrollspeed 0.5#1
+#direction Left
+stagenumber 2
+background	data/bgs/01/baCK00.gif 	0.675 1 0 0 0 0 -1 1 1
+#bglayer		data/bgs/00/b02.gif	0.575 1 0 0 0 0 -1 1 1
+#bglayer		data/bgs/00/b01.gif	0.475 1 0 0 0 0 -1 1 1
+#water		data/bgs/01/Mar01.gif		0.5
+#fglayer         data/bgs/00/FOG.gif              0.5 1 0 0 0 0 -1 1 1 0 1 3 10 0.3
+panel		data/bgs/01/pn01.gif		none	none
+#frontpanel	data/bgs/00/Front00.gif		
+cameratype 1
+cameraoffset 0 -30
+#levelscript @script
+#void main() {
+#	changelevelproperty("camerazoffset", 0);
+#	changelevelproperty("cameraxoffset", 0);
+#}
+#@end_script
+settime         99
+notime          0
+noslow          1
+order		a
+spawn1  	50 20 50
+spawn2  	55 35 50 
+spawn3  	60 50 50
+
+light		128 -128
+at			0
+
+wait
+at       0
+
+spawn  Train01
+Flip 1
+	coords  0 0
+	at  0
+
+spawn  ActP
+	coords  250 250
+	at  0
+
+
+
+spawn  Costa_
+MAp 3
+health 70
+	coords  330 240
+	at  0
+
+
+spawn  Act
+	coords  300 250
+	at  0
+
+spawn  Costa_
+Map 1
+health 70
+	coords  300 260
+	at  0
+
+spawn  ActN
+	coords  250 250
+	at  1
+
+
+group 4 4
+at  1
+
+
+spawn  Signal
+MAp 3
+health 50
+	coords  500 240 1
+	at  100
+
+spawn  Thug
+Map 1
+health 50
+	coords  500 260 1
+	at  200
+
+wait
+at       400
+
+
+spawn  Chan
+MAp 3
+health 70
+	coords  -100 240
+	at  400
+
+spawn  Galsia
+Map 1
+health 50
+	coords  -100 260
+	at  400
+
+
+spawn  Costa
+MAp 3
+health 70
+	coords  -100 240
+	at  400
+
+
+spawn  Costa
+Map 3
+health 70
+	coords  600 260
+	at  400
+
+spawn  ActE
+	coords  250 240
+	at  400
+
+spawn  ActN
+	coords  250 250
+	at  401
+
+spawn  Lixo01
+Item Apple
+	coords  550 260
+	at  401
+
+
+spawn  Galsia_
+Map 3
+health 50
+	coords  600 250
+	at  401
+
+spawn  Act
+	coords  650 260
+	at  401
+
+spawn  Donovan_
+Map 3
+health 50
+	coords  650 260
+	at  401
+
+spawn  Donovan_
+Map 2
+health 50
+	coords  625 240
+	at  401
+
+wait
+at       600
+
+
+spawn  Costa
+MAp 1
+health 70
+	coords  -100 240
+	at  600
+
+
+spawn  Costa
+Map 2
+health 70
+	coords  600 260
+	at  600
+
+
+spawn  Chan
+MAp 1
+health 70
+	coords  -100 240
+	at  600
+
+
+spawn  Chan
+Map 2
+health 70
+	coords  600 260
+	at  600
+
+
+spawn  ActE
+	coords  250 240
+	at  600
+
+spawn  ActN
+	coords  250 250
+	at  601
+
+spawn  Lixo01
+Item   Apple
+	coords  560 260
+	at  601
+
+spawn  Lixo01
+Item   cash
+	coords  650 250
+	at  601
+
+
+group 4 4
+at  900
+
+wait
+at       900
+
+
+spawn  Costa
+health 70
+	coords  -100 260
+	at  900
+
+
+spawn  Costa
+Map 1
+health 70
+	coords  600 260
+	at  900
+
+
+spawn  Costa
+map 2
+health 70
+	coords  -100 240
+	at  900
+
+
+spawn  Costa
+Map 4
+health 70
+	coords  600 240
+	at  900
+
+spawn  Signal
+Map 2
+health 70
+	coords  430 225 1
+	at  900
+
+
+spawn  galsia
+Map 2
+health 50
+	coords  430 225 1
+	at  900
+
+
+spawn  Thug
+Map 2
+health 50
+	coords  430 225 1
+	at  900
+
+spawn  DonovaN
+Map 2
+health 50
+	coords  430 225 1
+	at  900
+
+spawn  ActE
+	coords  250 240
+	at  900
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

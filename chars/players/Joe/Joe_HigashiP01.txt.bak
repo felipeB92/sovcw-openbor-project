@@ -1,0 +1,51 @@
+
+name			Joe_HigashiP01 #THROWNED
+type			none
+speed 12
+candamage			enemy obstacle
+alpha 1
+nolife			1
+lifespan		4
+remove			1
+gfxshadow		0 0
+flash			Forte
+antigravity 100
+animationscript		data/scripts/Felipe.c
+
+anim idle
+	loop	0
+	offset	17 75
+		delay  4
+		attack2  3  2  39  74  25  1  0  0  0  15
+	frame	data/chars/players/Joe/P100.gif
+        @cmd dasher 1 0 0
+	frame	data/chars/players/Joe/P101.gif
+	frame	data/chars/players/Joe/P102.gif
+	frame	data/chars/players/Joe/P103.gif
+	frame	data/chars/players/Joe/P104.gif
+	frame	data/chars/players/Joe/P105.gif
+	frame	data/chars/players/Joe/P106.gif
+	frame	data/chars/players/Joe/P107.gif
+	frame	data/chars/players/Joe/P108.gif
+	frame	data/chars/players/Joe/P109.gif
+	frame	data/chars/players/Joe/P110.gif
+	frame	data/chars/players/Joe/P111.gif
+	frame	data/chars/players/Joe/P112.gif
+	frame	data/chars/players/Joe/P113.gif
+	frame	data/chars/players/Joe/P114.gif
+		Attack1  0
+        @cmd dasher 0.5 0 0
+	frame	data/chars/players/Joe/P300.gif
+	frame	data/chars/players/Joe/00.gif
+	frame	data/chars/players/Joe/P300.gif
+	frame	data/chars/players/Joe/00.gif
+	frame	data/chars/players/Joe/P301.gif
+	frame	data/chars/players/Joe/00.gif
+	frame	data/chars/players/Joe/P301.gif
+	frame	data/chars/players/Joe/00.gif
+	frame	data/chars/players/Joe/P302.gif
+	frame	data/chars/players/Joe/00.gif
+	frame	data/chars/players/Joe/P302.gif
+	@cmd killentity getlocalvar("self")
+	frame	data/chars/players/Joe/p114.gif
+

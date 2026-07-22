@@ -1,0 +1,64 @@
+name			Elevador03 #GROUND
+type			None
+Speed 0
+#setlayer 5
+#noquake 	1 1
+#offscreenkill	1000
+#Alpha 1
+animationscript		data/scripts/drago.c
+
+
+Load JAke
+
+
+anim idle
+	loop	0
+	offset	43 112
+		delay  1
+	frame	data/Bgs/04/eLEVADOR/E00.gif
+		delay  12
+	Sound	data/sounds/Gate.wav
+	frame	data/Bgs/04/eLEVADOR/E00.gif
+	frame	data/Bgs/04/eLEVADOR/E01.gif
+	frame	data/Bgs/04/eLEVADOR/E02.gif
+	frame	data/Bgs/04/eLEVADOR/E03.gif
+	frame	data/Bgs/04/eLEVADOR/E04.gif
+	frame	data/Bgs/04/eLEVADOR/E05.gif
+	frame	data/Bgs/04/eLEVADOR/E06.gif
+	frame	data/Bgs/04/eLEVADOR/E07.gif
+	frame	data/Bgs/04/eLEVADOR/E08.gif
+		delay  25
+	frame	data/Bgs/04/eLEVADOR/E09.gif
+	frame	data/Bgs/04/eLEVADOR/E10.gif
+	frame	data/Bgs/04/eLEVADOR/E11.gif
+	frame	data/Bgs/04/eLEVADOR/E10.gif
+	frame	data/Bgs/04/eLEVADOR/E12.gif
+	frame	data/Bgs/04/eLEVADOR/E10.gif
+	frame	data/Bgs/04/eLEVADOR/E13.gif
+	frame	data/Bgs/04/eLEVADOR/E10.gif
+		delay  80
+	frame	data/Bgs/04/eLEVADOR/E15.gif
+		delay  25
+	frame	data/Bgs/04/eLEVADOR/E10.gif
+	frame	data/Bgs/04/eLEVADOR/E14.gif
+	frame	data/Bgs/04/eLEVADOR/E13.gif
+	frame	data/Bgs/04/eLEVADOR/E10.gif
+	frame	data/Bgs/04/eLEVADOR/E12.gif
+	frame	data/Bgs/04/eLEVADOR/E10.gif
+	frame	data/Bgs/04/eLEVADOR/E11.gif
+	frame	data/Bgs/04/eLEVADOR/E10.gif
+	frame	data/Bgs/04/eLEVADOR/E09.gif
+	Sound	data/sounds/Gate.wav
+		delay  12
+	frame	data/Bgs/04/eLEVADOR/J00.gif
+	frame	data/Bgs/04/eLEVADOR/J01.gif
+	frame	data/Bgs/04/eLEVADOR/J02.gif
+	frame	data/Bgs/04/eLEVADOR/J03.gif
+	frame	data/Bgs/04/eLEVADOR/J04.gif
+	frame	data/Bgs/04/eLEVADOR/J05.gif
+	frame	data/Bgs/04/eLEVADOR/J06.gif
+	frame	data/Bgs/04/eLEVADOR/J07.gif
+	@cmd  spawn01  "JaKE"  0  1  1
+	@cmd killentity getlocalvar("self")
+	frame	data/Bgs/04/eLEVADOR/E00.gif
+

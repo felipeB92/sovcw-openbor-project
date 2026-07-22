@@ -1,0 +1,16 @@
+name			BAck00 #GROUND
+type			None
+setlayer -57
+noquake 	1 1
+#offscreenkill	1000
+
+
+anim idle
+	loop	1
+	offset	0 0
+		delay  15
+	frame	data/Bgs/00/b00.gif
+	frame	data/Bgs/00/b01.gif
+	frame	data/Bgs/00/b02.gif
+	frame	data/Bgs/00/b01.gif
+

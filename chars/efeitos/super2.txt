@@ -1,0 +1,39 @@
+name	Super2
+type	text
+antigravity 100
+Alpha 1
+subtype	noskip
+setlayer 99
+
+
+
+anim	idle
+	loop	0
+	offset	145 197
+		delay  3
+	frame	data/Chars/efeitos/Super00.gif
+	Sound	data/Chars/efeitos/super.Wav
+	frame	data/Chars/efeitos/Super01.gif
+	frame	data/Chars/efeitos/Super02.gif
+	frame	data/Chars/efeitos/Super03.gif
+	frame	data/Chars/efeitos/Super04.gif
+	frame	data/Chars/efeitos/Super05.gif
+	frame	data/Chars/efeitos/Super06.gif
+	frame	data/Chars/efeitos/Super07.gif
+	frame	data/Chars/efeitos/Super08.gif
+	frame	data/Chars/efeitos/Super09.gif
+	frame	data/Chars/efeitos/Super10.gif
+	frame	data/Chars/efeitos/Super11.gif
+	frame	data/Chars/efeitos/Super12.gif
+	frame	data/Chars/efeitos/Super13.gif
+	frame	data/Chars/efeitos/Super14.gif
+	frame	data/Chars/efeitos/Super15.gif
+	frame	data/Chars/efeitos/Super16.gif
+	frame	data/Chars/efeitos/Super17.gif
+	frame	data/Chars/efeitos/Super18.gif
+	frame	data/Chars/efeitos/Super19.gif
+	frame	data/Chars/efeitos/Super20.gif
+	frame	data/Chars/efeitos/Super21.gif
+	@cmd killentity getlocalvar("self")
+	frame	data/Chars/efeitos/Super21.gif
+

@@ -1,0 +1,14 @@
+# Hit flash
+
+name	Flash
+type	none
+shadow	0
+
+
+
+anim idle
+	loop	0
+	delay	2
+	offset	36 51
+	frame	data/chars/Objetos/Hide00.gif
+

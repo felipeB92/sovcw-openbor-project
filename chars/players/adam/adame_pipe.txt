@@ -1,0 +1,477 @@
+name	AdamE_Pipe
+health	100
+MP 10
+#secret 1
+Falldie 2
+Grabdistance 18
+riseinv				0.4 1
+speed	8
+type	None
+gfxshadow	1
+candamage			enemy obstacle
+JUMPHEIGHT 4
+#Jumpheight 3
+antigrab 2
+atchain   1
+#weapons Blaze_Pipe Blaze_Sword Blaze_pipe Blaze_Kunai
+icon	data/chars/players/Adam/icon.gif 1
+diesound data/chars/players/Adam/Death.wav
+running	20	3	2	1	1
+onblockwscript	data/scripts/bounceF.c
+#animationscript 	data/scripts/ani0020.h
+animationscript		data/scripts/drago.c
+ondrawscript 		data/scripts/player_ondrawscript.c
+
+Load Pipet
+
+
+#Load Blaze_Pipe
+#Load Blaze_Pipe
+#Load Blaze_Kunai
+#Load Blaze_Sword
+
+remap data/chars/players/Adam/idle00.gif data/chars/players/Adam/MAp01.gif
+remap data/chars/players/Adam/idle00.gif data/chars/players/Adam/MAp02.gif
+remap data/chars/players/Adam/idle00.gif data/chars/players/Adam/MAp03.gif
+remap data/chars/players/Adam/idle00.gif data/chars/players/Adam/MAp04.gif
+
+
+
+anim idle
+	loop	1
+	delay	20
+	offset	81 107
+	bbox	68 31 22 65
+	frame   data/chars/players/Adam/Pipe/idle00.gif
+
+
+
+anim walk
+	loop	1
+	delay	12
+	offset	75 102
+	bbox	63 25 28 77
+	frame	data/chars/players/Adam/Pipe/walk00.gif
+	frame	data/chars/players/Adam/Pipe/walk01.gif
+	frame	data/chars/players/Adam/Pipe/walk02.gif
+	frame	data/chars/players/Adam/Pipe/walk03.gif
+	frame	data/chars/players/Adam/Pipe/walk04.gif
+	frame	data/chars/players/Adam/Pipe/walk05.gif
+
+
+
+anim get
+	loop	0
+	delay	20
+	offset	74 92
+	frame	data/chars/players/Adam/Get.gif
+
+
+anim jump
+	loop	0
+	delay	15
+	offset	74 117
+	bbox	62 35 36 74
+	frame	data/chars/players/Adam/Pipe/Jump00.gif
+	frame	data/chars/players/Adam/Pipe/Jump01.gif
+	frame	data/chars/players/Adam/Pipe/Jump02.gif
+
+
+
+
+anim attack1
+	loop	0
+	delay	6
+	offset	82 99
+        Range 0 40
+        Rangez -5 5
+        hitflash	Forte
+	bbox	68 26 25 72
+		Attack1  0
+        Sound	data/sounds/golpes/Soco.wav
+        hitfx	data/sounds/golpes/Forte.wav
+	frame	data/chars/players/Adam/Pipe/a100.gif
+		attack1  60  60  78  21  15  1  0  0  0  10
+	frame	data/chars/players/Adam/Pipe/a101.gif
+		delay  12
+		attack2  102  45  76  18  15  1  0  0  0  15
+	frame	data/chars/players/Adam/Pipe/a102.gif
+		Attack1  0
+	frame	data/chars/players/Adam/Pipe/a103.gif
+
+
+
+
+anim run
+        loop    1
+        delay  10
+	offset	70 118
+	bbox	66 57 33 63
+        frame	data/chars/players/Adam/Pipe/run00.gif
+        frame	data/chars/players/Adam/Pipe/run01.gif
+        Sound	data/sounds/Run.wav
+        frame	data/chars/players/Adam/Pipe/run02.gif
+        frame	data/chars/players/Adam/Pipe/run03.gif
+        frame	data/chars/players/Adam/Pipe/run04.gif
+        Sound	data/sounds/Run.wav
+        frame	data/chars/players/Adam/Pipe/run05.gif
+
+
+anim grab
+	loop	0
+	delay	100
+	offset	71 119
+	bbox	63 39 23 79
+        cancel	0 3 0 J freespecial
+	frame	data/chars/players/Adam/GrAB.gif
+
+
+
+
+anim pain
+	loop	0
+	offset	68 118
+	bbox	61 54 26 66
+	delay	5
+	frame	data/chars/players/Adam/pain01.gif
+		delay  25
+		offset  70  118
+	frame	data/chars/players/Adam/pain01.gif
+
+anim pain3
+	loop	0
+	offset	68 118
+	bbox	61 54 26 66
+	delay	5
+	jumpframe  0  2  0  0
+	frame	data/chars/players/Adam/pain01.gif
+		delay  25
+		offset  70  118
+	frame	data/chars/players/Adam/pain01.gif
+
+anim pain4
+	loop	0
+	offset	68 118
+	bbox	61 54 26 66
+	delay	5
+	frame	data/chars/players/Adam/pain01.gif
+		delay  900
+		offset  70  118
+	frame	data/chars/players/Adam/pain01.gif
+
+
+anim grabbed
+	loop	0
+	offset	74 118
+	bbox	63 52 23 67
+	delay	40
+	frame	data/chars/players/Adam/pain01.gif
+
+
+
+anim pain2
+	loop	0
+	offset	76 117
+	bbox	59 44 31 73
+	delay	5
+	frame	data/chars/players/Adam/pain02.gif
+		delay  25
+		offset  78  117
+	frame	data/chars/players/Adam/pain02.gif
+
+
+
+
+
+anim fall2
+	loop	0
+	offset	69 113
+	jumpframe  0  3  -3  0
+	delay	20
+        hitfx	data/sounds/golpes/Forte.wav
+		attack  0
+	frame	data/chars/players/Adam/fall00.gif
+		Attack1  0
+		offset  52  120
+	frame	data/chars/players/Adam/fall01.gif
+		offset  66  88
+		delay  10
+	frame	data/chars/players/Adam/fall02.gif
+
+anim fall
+	loop	0
+	offset	69 113
+	delay	20
+        hitfx	data/sounds/golpes/Forte.wav
+		attack  0
+	frame	data/chars/players/Adam/fall00.gif
+		Attack1  0
+		offset  52  120
+	frame	data/chars/players/Adam/fall01.gif
+		offset  66  88
+		delay  10
+	frame	data/chars/players/Adam/fall02.gif
+
+anim fall6 #Shok
+	loop	0
+	offset	80 108
+	delay	5
+        hitfx	data/sounds/golpes/Forte.wav
+		attack  0
+	frame	data/chars/players/Adam/fall01.gif
+	frame	data/chars/players/Adam/fall200.gif
+	frame	data/chars/players/Adam/fall01.gif
+	frame	data/chars/players/Adam/fall200.gif
+	frame	data/chars/players/Adam/fall01.gif
+		offset  67  89
+	frame	data/chars/players/Adam/fall02.gif
+
+
+anim fall7 #Burn
+	loop	0
+	offset	65 97
+	delay	10
+        hitfx	data/sounds/golpes/Forte.wav
+		attack  0
+	frame	data/chars/players/Adam/FALL300.gif
+	frame	data/chars/players/Adam/FALL301.gif
+	frame	data/chars/players/Adam/FALL302.gif
+	frame	data/chars/players/Adam/FALL300.gif
+	frame	data/chars/players/Adam/FALL301.gif
+		offset  69  89
+	frame	data/chars/players/Adam/FALL02.gif
+
+
+anim rise
+	loop	0
+	offset	70 91
+	delay	20
+	frame	data/chars/players/Adam/Rise00.gif
+	frame	data/chars/players/Adam/Rise01.gif
+	frame	data/chars/players/Adam/Rise02.gif
+
+
+
+anim Freespecial
+        loop    0
+        delay  10
+	offset	70 118
+        Range 130 150
+        Rangez -10 10
+	bbox	66 57 33 63
+    Followcond 1
+    followanim 1
+        @cmd dasher 2 0 0
+		attack1  67  51  31  58  1  0  0  0  0  10
+        frame	data/chars/players/Adam/Pipe/run00.gif
+        frame	data/chars/players/Adam/Pipe/run01.gif
+        Sound	data/sounds/Run.wav
+        frame	data/chars/players/Adam/Pipe/run02.gif
+        frame	data/chars/players/Adam/Pipe/run03.gif
+        frame	data/chars/players/Adam/Pipe/run04.gif
+        Sound	data/sounds/Run.wav
+        frame	data/chars/players/Adam/Pipe/run05.gif
+
+
+
+
+anim Freespecial3
+        energycost 10 1
+        MpOnly 1
+        Range 80 100
+        Rangez -10 10
+	loop	0
+	offset	76 118
+        hitflash	fORTE
+        hitfx	data/sounds/golpes/forte.wav
+		Attack1  0
+		delay  15
+	Sound	data/chars/players/Adam/Sp01.wav
+		move  0
+	frame	data/chars/players/Adam/a400.gif
+	@cmd  spawn01  "AdamP03"  0  0  -1
+	frame	data/chars/players/Adam/a401.gif
+		delay  20
+		attack1  29  42  103  76  10  0  1  0  5  10
+	frame	data/chars/players/Adam/a402.gif
+		delay  5
+		Attack1  0
+	frame	data/chars/players/Adam/Sp106.gif
+	frame	data/chars/players/Adam/a403.gif
+		delay  30
+		attack2  53  49  99  55  15  1  1  0  25  10
+	frame	data/chars/players/Adam/a404.gif
+		delay  8
+		Attack1  0
+	frame  data/chars/players/Adam/a403.gif
+
+anim Freespecial3
+        energycost 10 1
+        MpOnly 1
+	loop	0
+        Range 60 80
+        Rangez -10 10
+	offset	61 125
+        hitflash	fORTE
+        hitfx	data/sounds/golpes/forte.wav
+		delay  12
+	Sound	data/chars/players/Adam/Sp02.wav
+	@cmd  spawn01  "AdamP01"  0  0  1
+		Attack1  0
+	frame	data/chars/players/Adam/Sp202.gif
+		attack1  22  63  103  63  20  1  1  0  10  20
+		delay  6
+	frame  data/chars/players/Adam/Sp203b.gif
+	frame	data/chars/players/Adam/Sp203.gif
+	frame	data/chars/players/Adam/Sp200.gif
+		delay  6
+	frame	data/chars/players/Adam/Sp201b.gif
+	frame  data/chars/players/Adam/Sp201.gif
+		delay  12
+		attack1  22  63  103  63  25  1  1  0  10  20
+	frame	data/chars/players/Adam/Sp202.gif
+		delay  6
+	frame  data/chars/players/Adam/Sp203b.gif
+	frame	data/chars/players/Adam/Sp203.gif
+		Attack1  0
+		delay  12
+	frame	data/chars/players/Adam/Sp204.gif
+
+
+anim Freespecial4
+        loop    0
+        delay  10
+	offset	70 118
+        Range 100 130
+        Rangez -10 10
+        hitflash	fORTE
+        hitfx	data/sounds/golpes/forte.wav
+	jumpframe  1  3  2  0
+        frame	data/chars/players/Adam/Land.gif
+        frame	data/chars/players/Adam/Jump00.gif
+		offset  70  106
+        frame	data/chars/players/Adam/Ja100.gif
+		delay  40
+		attack1  38  54  89  37  10  1  0  0  0  10
+        frame	data/chars/players/Adam/Ja101.gif
+
+
+anim Freespecial5
+        energycost 10 1
+        MpOnly 1
+	loop	0
+        Range 150 200
+        Rangez -10 10
+	offset	81 131
+        hitflash	fORTE
+        hitfx	data/sounds/golpes/forte.wav
+		delay  12
+	Sound	data/chars/players/Adam/A3.wav
+	frame	data/chars/players/Adam/Pipe/ra100.gif
+		delay  6
+		sound  data/SOUNDS/WHOOSH2.WAV
+	frame	data/chars/players/Adam/Pipe/ra101.gif
+		offset  81  100
+		attack1  48  22  131  80  25  1  0  0  0  15
+		delay  10
+	frame	data/chars/players/Adam/Pipe/ra102.gif
+		delay  6
+	frame	data/chars/players/Adam/Pipe/ra103.gif
+		attack1  44  -4  139  107  25  1  0  0  0  15
+	frame	data/chars/players/Adam/Pipe/ra104.gif
+	frame	data/chars/players/Adam/Pipe/ra105.gif
+		delay  25
+		Attack1  0
+	frame	data/chars/players/Adam/Pipe/a103.gif
+
+
+
+anim follow1
+ 	loop	0
+ 	delay	4
+ 	offset	83 131
+        FASTATTACK 1
+ 	bbox	62 48 36 44
+		move  0
+        hitflash	MEdio
+        hitfx	data/sounds/golpes/MEdio.wav
+	Sound	data/chars/players/Adam/Ra.wav
+        @cmd dasher 2 0 0
+ 	frame	data/chars/players/Adam/pIPE/RA200.gif
+ 	frame	data/chars/players/Adam/pIPE/RA201.gif
+		attack1  77  46  84  89  5  0  0  0  0  15
+ 	frame	data/chars/players/Adam/pIPE/RA202.gif
+		bbox  0
+		Attack1  0
+	frame  data/chars/players/Adam/pIPE/RA202.gif
+		attack2  78  63  83  67  5  0  0  0  0  15
+ 	frame	data/chars/players/Adam/pIPE/RA203.gif
+        @cmd dasher 0 0 0
+		Attack1  0
+		delay  25
+	frame  data/chars/players/Adam/pIPE/RA203.gif
+		offset  79  100
+		attack2  79  39  100  30  10  1  0  0  0  15
+		sound  data/chars/players/Adam/A2.WAV
+ 	frame	data/chars/players/Adam/pIPE/A102.gif
+
+
+
+
+
+
+anim land
+	loop	0
+	delay	15
+	offset	74 119
+	bbox	58 54 36 67
+	frame	data/chars/players/Adam/Land.gif
+
+
+anim Fall9
+	loop	0
+	offset	70 117
+	delay	999
+	frame	data/chars/players/Adam/pain01.gif #0
+		offset  74  118
+	frame	data/chars/players/Adam/pain02.gif #1
+		offset  74  111
+	frame	data/chars/players/Adam/fall01.gif #2
+		offset  72  90
+	frame	data/chars/players/Adam/fall02.gif #3
+	frame	data/chars/players/Adam/fall400.gif #4
+	frame	data/chars/players/Adam/fall401.gif #5
+	frame	data/chars/players/Adam/fall402.gif #6
+		offset  77  120
+	frame  data/chars/players/Adam/fall403.gif
+		offset  76  96
+		delay  20
+	frame  data/chars/players/Adam/fall401.gif
+		offset  78  113
+		delay  30
+	frame  data/chars/players/Adam/fall404.gif
+		offset  69  89
+	frame  data/chars/players/Adam/fall405.gif
+
+
+anim Fall8
+	loop	0
+	flipframe  0
+	offset	62 106
+	delay	30
+	frame	data/chars/players/Adam/fall01.gif #0
+	offset	68 91
+	delay	15
+	frame	data/chars/players/Adam/fall02.gif #1
+
+
+anim Fall5
+	loop	0
+	flipframe  1
+	offset	62 106
+	delay	30
+	frame	data/chars/players/Adam/fall01.gif #0
+	offset	68 91
+	delay	15
+	frame	data/chars/players/Adam/fall02.gif #1
+

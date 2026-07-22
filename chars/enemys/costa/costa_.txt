@@ -1,0 +1,452 @@
+name	Costa_
+health	100
+mp 30
+mprate 1
+#secret 1
+blockodds 1
+Falldie 2
+Grabdistance 18
+riseinv				0.4 1
+speed	9
+type	Enemy
+gfxshadow	1
+candamage			Player npc obstacle
+JUMPHEIGHT 4
+hostile Player NPC
+#antigrab 2
+atchain   1 1 2 3 4 5
+#weapons Costa_Knife Costa_Sword Costa_pipe Costa_Kunai
+icon	data/chars/Enemys/Costa/icon.gif 1
+diesound data/Sounds/Die1.wav
+running	20	3	2	1	1
+onblockwscript	data/scripts/bounceF.c
+#animationscript 	data/scripts/ani0020.h
+animationscript		data/scripts/drago.c
+ondrawscript 		data/scripts/Enemy_ondrawscript.c
+
+
+
+#Load Costa_Knife
+#Load Costa_Pipe
+#Load Costa_Kunai
+#Load Costa_Sword
+
+remap data/chars/Enemys/Costa/idle00.gif data/chars/Enemys/Costa/MAp01.gif
+remap data/chars/Enemys/Costa/idle00.gif data/chars/Enemys/Costa/MAp02.gif
+remap data/chars/Enemys/Costa/idle00.gif data/chars/Enemys/Costa/MAp03.gif
+remap data/chars/Enemys/Costa/idle00.gif data/chars/Enemys/Costa/MAp04.gif
+
+
+
+anim spawn
+	loop	0
+	delay	12
+	offset	37 85
+	bbox	22 13 28 72
+	frame   data/chars/Enemys/Costa/idle00.gif
+	frame   data/chars/Enemys/Costa/idle01.gif
+	frame   data/chars/Enemys/Costa/idle00.gif
+	frame   data/chars/Enemys/Costa/idle01.gif
+	frame   data/chars/Enemys/Costa/idle00.gif
+	frame   data/chars/Enemys/Costa/idle01.gif
+	frame   data/chars/Enemys/Costa/idle00.gif
+	frame   data/chars/Enemys/Costa/idle01.gif
+	frame   data/chars/Enemys/Costa/idle00.gif
+	frame   data/chars/Enemys/Costa/idle01.gif
+	frame   data/chars/Enemys/Costa/idle00.gif
+	frame   data/chars/Enemys/Costa/idle01.gif
+	frame   data/chars/Enemys/Costa/idle00.gif
+	frame   data/chars/Enemys/Costa/idle01.gif
+	frame   data/chars/Enemys/Costa/idle00.gif
+	frame   data/chars/Enemys/Costa/idle01.gif
+	frame   data/chars/Enemys/Costa/idle00.gif
+	frame   data/chars/Enemys/Costa/idle01.gif
+	frame   data/chars/Enemys/Costa/idle00.gif
+	frame   data/chars/Enemys/Costa/idle01.gif
+	frame   data/chars/Enemys/Costa/idle00.gif
+	frame   data/chars/Enemys/Costa/idle01.gif
+	frame   data/chars/Enemys/Costa/idle00.gif
+	frame   data/chars/Enemys/Costa/idle01.gif
+	frame   data/chars/Enemys/Costa/idle00.gif
+	frame   data/chars/Enemys/Costa/idle01.gif
+	frame   data/chars/Enemys/Costa/idle00.gif
+	frame   data/chars/Enemys/Costa/idle01.gif
+	frame   data/chars/Enemys/Costa/idle00.gif
+	frame   data/chars/Enemys/Costa/idle01.gif
+	frame   data/chars/Enemys/Costa/idle00.gif
+	frame   data/chars/Enemys/Costa/idle01.gif
+	frame   data/chars/Enemys/Costa/idle00.gif
+	frame   data/chars/Enemys/Costa/idle01.gif
+	frame   data/chars/Enemys/Costa/idle00.gif
+	frame   data/chars/Enemys/Costa/idle01.gif
+	frame   data/chars/Enemys/Costa/idle00.gif
+	frame   data/chars/Enemys/Costa/idle01.gif
+	frame   data/chars/Enemys/Costa/idle00.gif
+	frame   data/chars/Enemys/Costa/idle01.gif
+	frame   data/chars/Enemys/Costa/idle00.gif
+	frame   data/chars/Enemys/Costa/idle01.gif
+	frame   data/chars/Enemys/Costa/idle00.gif
+	frame   data/chars/Enemys/Costa/idle01.gif
+	frame   data/chars/Enemys/Costa/idle00.gif
+	frame   data/chars/Enemys/Costa/idle01.gif
+	frame   data/chars/Enemys/Costa/idle00.gif
+	frame   data/chars/Enemys/Costa/idle01.gif
+	frame   data/chars/Enemys/Costa/idle00.gif
+	frame   data/chars/Enemys/Costa/idle01.gif
+	frame   data/chars/Enemys/Costa/idle00.gif
+	frame   data/chars/Enemys/Costa/idle01.gif
+	frame   data/chars/Enemys/Costa/idle00.gif
+	frame   data/chars/Enemys/Costa/idle01.gif
+	frame   data/chars/Enemys/Costa/idle00.gif
+	frame   data/chars/Enemys/Costa/idle01.gif
+	frame   data/chars/Enemys/Costa/idle00.gif
+	frame   data/chars/Enemys/Costa/idle01.gif
+	frame   data/chars/Enemys/Costa/idle00.gif
+	frame   data/chars/Enemys/Costa/idle01.gif
+	frame   data/chars/Enemys/Costa/idle00.gif
+	frame   data/chars/Enemys/Costa/idle01.gif
+	frame   data/chars/Enemys/Costa/idle00.gif
+	frame   data/chars/Enemys/Costa/idle01.gif
+	frame   data/chars/Enemys/Costa/idle00.gif
+	frame   data/chars/Enemys/Costa/idle01.gif
+	frame   data/chars/Enemys/Costa/idle00.gif
+	frame   data/chars/Enemys/Costa/idle01.gif
+	frame   data/chars/Enemys/Costa/idle00.gif
+	frame   data/chars/Enemys/Costa/idle01.gif
+	frame   data/chars/Enemys/Costa/idle00.gif
+	frame   data/chars/Enemys/Costa/idle01.gif
+	frame   data/chars/Enemys/Costa/idle00.gif
+	frame   data/chars/Enemys/Costa/idle01.gif
+	frame   data/chars/Enemys/Costa/idle00.gif
+	frame   data/chars/Enemys/Costa/idle01.gif
+	frame   data/chars/Enemys/Costa/idle00.gif
+	frame   data/chars/Enemys/Costa/idle01.gif
+	frame   data/chars/Enemys/Costa/idle00.gif
+	delay	999
+	frame   data/chars/Enemys/Costa/idle01.gif
+
+anim Pain5
+	loop	0
+	delay	12
+	offset	37 85
+	bbox	22 13 28 72
+	frame   data/chars/Enemys/Costa/idle00.gif
+
+
+anim idle
+	loop	1
+	delay	12
+	offset	37 85
+	bbox	22 13 28 72
+	frame   data/chars/Enemys/Costa/idle00.gif
+	@cmd	depost 0
+	@cmd	throw 15 0.7 0.7 1 0 -1
+	@cmd	clearL
+	frame   data/chars/Enemys/Costa/idle01.gif
+
+
+
+anim walk
+	loop	1
+	delay	14
+	offset	31 83
+	bbox	22 13 30 70
+	frame	data/chars/Enemys/Costa/walk02.gif
+	frame	data/chars/Enemys/Costa/walk01.gif
+	frame	data/chars/Enemys/Costa/walk00.gif
+	frame	data/chars/Enemys/Costa/walk01.gif
+
+
+
+
+
+anim jump
+	loop	0
+	delay	15
+	offset	60 66
+	bbox	56 5 22 56
+	frame	data/chars/Enemys/Costa/Jump00.gif
+	frame	data/chars/Enemys/Costa/Jump00.gif
+	frame	data/chars/Enemys/Costa/Jump00.gif
+
+
+anim jumpattack
+	loop	0
+	delay	17
+        Range 60 70
+        RangeZ -5 5
+	offset	57 65
+	bbox	50 1 36 67
+        hitflash	MEdio
+        hitfx	data/sounds/golpes/medio.wav
+	frame	data/chars/Enemys/Costa/ja100.gif
+		delay  12
+		hitflash  MEdio
+		hitfx  data/sounds/golpes/medio.wav
+	Sound  data/sounds/golpes/Chut.wav
+		attack1  34  25  115  24  10  1  0  0  0  10
+	frame  data/chars/Enemys/Costa/Ja101.gif
+	frame	data/chars/Enemys/Costa/Ja102.gif
+
+anim JumpLAnd
+	loop	0
+	delay	30
+	offset	59 67
+	bbox	44 0 30 66
+        hitflash	Corte
+        hitfx	data/sounds/golpes/corte.wav
+	frame	data/chars/Enemys/Costa/LAnd.gif
+
+
+anim Block
+	loop	0
+	delay	6
+	offset	27 72
+        hitflash	Corte
+        hitfx	data/sounds/golpes/corte.wav
+		move  -5
+	frame	data/chars/Enemys/Costa/Rise01.gif
+		hitflash  Corte
+		hitfx  data/sounds/golpes/corte.wav
+	frame  data/chars/Enemys/Costa/Rise01.gif
+		hitflash  Corte
+		hitfx  data/sounds/golpes/corte.wav
+	frame  data/chars/Enemys/Costa/Rise01.gif
+		hitflash  Corte
+		hitfx  data/sounds/golpes/corte.wav
+	frame  data/chars/Enemys/Costa/Rise01.gif
+		hitflash  Corte
+		hitfx  data/sounds/golpes/corte.wav
+	frame  data/chars/Enemys/Costa/Rise01.gif
+
+anim attack1
+	loop	0
+	delay	12
+	offset	65 81
+        Range 0 40
+        RangeZ -5 5
+        hitflash	Fraco
+	bbox	49 5 31 76
+		Attack1  0
+        Sound	data/sounds/golpes/Soco.wav
+        hitfx	data/sounds/golpes/Fraco.wav
+	frame	data/chars/Enemys/Costa/a100.gif
+		shock  33  18  111  24  5  1  0  0  0  10
+		delay  7
+	frame	data/chars/Enemys/Costa/a101.gif
+		delay  8
+	frame	data/chars/Enemys/Costa/a102.gif
+
+
+anim Upper
+	loop	0
+	delay	12
+	offset	31 92
+        Range 0 60
+        RangeZ -10 10
+        hitflash	Fraco
+	bbox	14 19 31 74
+		Attack1  0
+        Sound	data/sounds/golpes/Soco.wav
+        hitfx	data/sounds/golpes/Fraco.wav
+	frame	data/chars/Enemys/Costa/a200.gif
+		attack1  32  -1  35  58  5  1  0  0  0  10
+		delay  7
+	frame	data/chars/Enemys/Costa/a201.gif
+		delay  40
+	frame	data/chars/Enemys/Costa/a202.gif
+		Attack1  0
+	frame	data/chars/Enemys/Costa/a200.gif
+
+
+
+
+
+
+anim pain
+	loop	0
+	offset	29 76
+	bbox	12 1 30 75
+	delay	5
+	frame	data/chars/Enemys/Costa/pain01.gif
+		delay  25
+		offset  31  76
+	frame	data/chars/Enemys/Costa/pain01.gif
+
+anim pain3
+	loop	0
+	offset	33 76
+	bbox	14 0 34 76
+	delay	5
+	jumpframe  0  2  0  0
+	frame	data/chars/Enemys/Costa/pain01.gif
+		delay  25
+		offset  35  76
+	frame	data/chars/Enemys/Costa/pain01.gif
+
+anim pain4
+	loop	0
+	offset	33 76
+	bbox	9 0 36 76
+	delay	5
+	frame	data/chars/Enemys/Costa/pain01.gif
+		delay  900
+		offset  35  76
+	frame	data/chars/Enemys/Costa/pain01.gif
+
+
+anim grabbed
+	loop	0
+	offset	31 80
+	bbox	14 12 36 64
+	delay	40
+	frame	data/chars/Enemys/Costa/pain02.gif
+
+
+
+anim pain2
+	loop	0
+	offset	30 81
+	bbox	13 14 36 68
+	delay	5
+	frame	data/chars/Enemys/Costa/pain02.gif
+		delay  25
+		offset  32  81
+	frame	data/chars/Enemys/Costa/pain02.gif
+
+
+
+
+
+anim fall2
+	loop	0
+	offset	22 74
+	jumpframe  0  3  -3  0
+	delay	20
+        hitfx	data/sounds/golpes/Forte.wav
+		attack  0
+	frame	data/chars/Enemys/Costa/fall00.gif
+		Attack1  0
+		offset  33  75
+	frame	data/chars/Enemys/Costa/fall01.gif
+		offset  44  20
+		delay  10
+	frame	data/chars/Enemys/Costa/fall02.gif
+
+anim fall
+	loop	0
+	offset	29 76
+	delay	20
+        hitfx	data/sounds/golpes/Forte.wav
+		attack  0
+	frame	data/chars/Enemys/Costa/fall00.gif
+		Attack1  0
+		offset  36  73
+	frame	data/chars/Enemys/Costa/fall01.gif
+		offset  49  19
+		delay  10
+	frame	data/chars/Enemys/Costa/fall02.gif
+
+anim fall6 #Shok
+	loop	0
+	offset	67 79
+	delay	5
+        hitfx	data/sounds/golpes/Forte.wav
+		attack  0
+	frame	data/chars/Enemys/Costa/fall201.gif
+	frame	data/chars/Enemys/Costa/fall200.gif
+	frame	data/chars/Enemys/Costa/fall201.gif
+	frame	data/chars/Enemys/Costa/fall200.gif
+	frame	data/chars/Enemys/Costa/fall201.gif
+		offset  42  20
+	frame	data/chars/Enemys/Costa/fall02.gif
+
+
+anim fall7 #Burn
+	loop	0
+	offset	62 80
+	delay	10
+        hitfx	data/sounds/golpes/Forte.wav
+		attack  0
+	frame	data/chars/Enemys/Costa/FALL300.gif
+	frame	data/chars/Enemys/Costa/FALL301.gif
+	frame	data/chars/Enemys/Costa/FALL302.gif
+	frame	data/chars/Enemys/Costa/FALL300.gif
+	frame	data/chars/Enemys/Costa/FALL301.gif
+		offset  38  18
+	frame	data/chars/Enemys/Costa/FALL02.gif
+
+
+anim rise
+	loop	0
+	offset	31 71
+	delay	20
+	frame	data/chars/Enemys/Costa/Rise00.gif
+	frame	data/chars/Enemys/Costa/Rise02.gif
+		offset  27  71
+	frame	data/chars/Enemys/Costa/Rise01.gif
+
+
+
+
+
+
+
+anim land
+	loop	0
+	delay	15
+	offset	59 68
+	bbox	46 -1 26 68
+	frame	data/chars/Enemys/Costa/Land.gif
+
+
+anim Fall9
+	loop	0
+	offset	33 74
+	delay	999
+	frame	data/chars/Enemys/Costa/pain01.gif #0
+		offset  27  80
+	frame	data/chars/Enemys/Costa/pain02.gif #1
+		offset  42  75
+	frame	data/chars/Enemys/Costa/fall01.gif #2
+		offset  41  20
+	frame	data/chars/Enemys/Costa/fall02.gif #3
+		offset  78  88
+	frame	data/chars/Enemys/Costa/fall400.gif #4
+		offset  89  101
+	frame	data/chars/Enemys/Costa/fall401.gif #5
+		offset  71  103
+	frame	data/chars/Enemys/Costa/fall402.gif #6
+		offset  70  110
+	frame  data/chars/Enemys/Costa/fall403.gif #7
+		offset  87  103
+	delay	20
+	frame	data/chars/Enemys/Costa/fall401.gif #8
+	delay	30
+		offset  69  93
+	frame	data/chars/Enemys/Costa/fall404.gif #9
+	offset	68 83
+	frame	data/chars/Enemys/Costa/Fall405.gif #10
+
+
+anim Fall8
+	loop	0
+	flipframe  0
+	offset	40 72
+	delay	30
+	frame	data/chars/Enemys/Costa/fall01.gif #0
+	offset	32 18
+	delay	15
+	frame	data/chars/Enemys/Costa/fall02.gif #1
+
+
+anim Fall5
+	loop	0
+	flipframe  1
+	offset	26 74
+	delay	30
+	frame	data/chars/Enemys/Costa/fall01.gif #0
+	offset	36 19
+	delay	15
+	frame	data/chars/Enemys/Costa/fall02.gif #1
+

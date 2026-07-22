@@ -1,0 +1,66 @@
+name			eX #GROUND
+type			Panel
+Speed 10
+Alpha 1
+setlayer -58
+noquake 	1 1
+
+
+anim	idle
+	loop	1
+	delay	5
+        quakeframe 4 2 2
+		sound  data/SOUNDS/explosion.wav
+		offset  4  149
+	frame	data/Chars/efeitos/EX00.gif
+	frame	data/Chars/efeitos/EX01.gif
+	frame	data/Chars/efeitos/EX02.gif
+	frame	data/Chars/efeitos/EX03.gif
+	frame	data/Chars/efeitos/EX04.gif
+	frame	data/Chars/efeitos/EX05.gif
+	frame	data/Chars/efeitos/EX06.gif
+	frame	data/Chars/efeitos/EX07.gif
+	frame	data/Chars/efeitos/EX08.gif
+	frame	data/Chars/efeitos/EX09.gif
+		offset  -216  214
+	frame	data/Chars/efeitos/EX10.gif
+		sound  data/SOUNDS/explosion2.wav
+	frame	data/Chars/efeitos/EX00.gif
+	frame	data/Chars/efeitos/EX01.gif
+	frame	data/Chars/efeitos/EX02.gif
+	frame	data/Chars/efeitos/EX03.gif
+	frame	data/Chars/efeitos/EX04.gif
+	frame	data/Chars/efeitos/EX05.gif
+	frame	data/Chars/efeitos/EX06.gif
+	frame	data/Chars/efeitos/EX07.gif
+	frame	data/Chars/efeitos/EX08.gif
+	frame	data/Chars/efeitos/EX09.gif
+		offset  -100  196
+	frame	data/Chars/efeitos/EX10.gif
+		sound  data/SOUNDS/explosion.wav
+	frame	data/Chars/efeitos/EX00.gif
+	frame	data/Chars/efeitos/EX01.gif
+	frame	data/Chars/efeitos/EX02.gif
+	frame	data/Chars/efeitos/EX03.gif
+	frame	data/Chars/efeitos/EX04.gif
+	frame	data/Chars/efeitos/EX05.gif
+	frame	data/Chars/efeitos/EX06.gif
+	frame	data/Chars/efeitos/EX07.gif
+	frame	data/Chars/efeitos/EX08.gif
+	frame	data/Chars/efeitos/EX09.gif
+		delay  200
+	frame	data/Chars/efeitos/EX10.gif
+		offset  4  149
+	frame	data/Chars/efeitos/EX00.gif
+	frame	data/Chars/efeitos/EX01.gif
+	frame	data/Chars/efeitos/EX02.gif
+	frame	data/Chars/efeitos/EX03.gif
+	frame	data/Chars/efeitos/EX04.gif
+	frame	data/Chars/efeitos/EX05.gif
+	frame	data/Chars/efeitos/EX06.gif
+	frame	data/Chars/efeitos/EX07.gif
+	frame	data/Chars/efeitos/EX08.gif
+	frame	data/Chars/efeitos/EX09.gif
+		delay  200
+	frame	data/Chars/efeitos/EX10.gif
+

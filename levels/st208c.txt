@@ -1,0 +1,186 @@
+music		data/music/boss2.bor
+bossmusic	data/bgs/St208/bossX.bor
+scrollspeed 0.5#1
+stagenumber 8
+background	data/bgs/St208/Back01.gif
+panel		data/bgs/St208/empty.gif		none	none
+#fglayer			data/bgs/st201/fpn00.gif 0 -0.8 0.6 0 0 0 0 1 1 1
+frontpanel      data/bgs/st05/Front02.gif
+cameratype 1
+cameraoffset 	0 -60
+settime         99
+notime          0
+noslow          1
+order		a
+spawn1  	235 58
+spawn2  	240 58
+spawn3  	245 58
+
+spawn  Mx200
+flip   1
+	coords  0  0 
+	at  0
+
+wait
+at    0
+
+Group  4  4
+at    0
+
+
+
+
+spawn  Galsia
+map    5
+health 90
+	coords  600  220 
+	at  0
+
+spawn  Donovan
+map    4
+health 90
+	coords  600  260 
+	at  0
+
+spawn  Galsia
+map    5
+health 90
+	coords  -200  260 
+	at  0
+
+spawn  Donovan
+map    4
+health 90
+	coords  -200  220 
+	at  0
+
+
+
+
+wait
+at    1
+
+Group  1  1
+at    1
+
+
+spawn  Mx201
+flip   1
+	coords  203  103 
+	at  1
+
+spawn  sh200
+flip   1
+	coords  312 111 
+	at  1
+
+spawn  SHIVA
+	coords  311  139
+	at  1
+
+
+Group  4  4
+at    2
+
+
+spawn  MRx_
+boss   1
+alias  MR.x
+        coords  243  216
+	at  2
+
+
+spawn  Galsia
+map    5
+health 90
+	coords  600  220 
+	at  2
+
+spawn  Donovan
+map    4
+health 90
+	coords  600  260 
+	at  2
+
+spawn  Galsia
+map    5
+health 90
+	coords  -200  260 
+	at  2
+
+spawn  Donovan
+map    4
+health 90
+	coords  -200  220 
+	at  2
+
+
+spawn  Galsia
+map    5
+health 90
+	coords  600  220 
+	at  2
+
+spawn  Donovan
+map    4
+health 90
+	coords  600  260 
+	at  2
+
+spawn  Galsia
+map    5
+health 90
+	coords  -200  260 
+	at  2
+
+spawn  Donovan
+map    4
+health 90
+	coords  -200  220 
+	at  2
+
+
+spawn  Galsia
+map    5
+health 90
+	coords  600  220 
+	at  2
+
+spawn  Donovan
+map    4
+health 90
+	coords  600  260 
+	at  2
+
+spawn  Galsia
+map    5
+health 90
+	coords  -200  260 
+	at  2
+
+spawn  Donovan
+map    4
+health 90
+	coords  -200  220 
+	at  2
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

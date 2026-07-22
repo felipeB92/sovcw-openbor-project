@@ -1,0 +1,185 @@
+music		data/music/05a.bor
+bossmusic	data/music/BossR.bor
+scrollspeed 0.5#1
+#direction Left
+stagenumber 5
+background	data/bgs/04/back01d.gif	0.7 1 0 0 0 0 -1 1 0 0 0 0 0 0 0
+bglayer 	data/bgs/04/back01c.gif	0.45 1 0 0 0 0 -1 1 1 0 0 0 0 0 6
+bglayer 	data/bgs/04/back01b.gif	0.4 1 0 0 0 0 -1 1 1 0 1 3 10 0.3
+bglayer 	data/bgs/04/back03a.gif 0.45 1 0 0 0 0 -1 1 1 0 0 0 0 0 6
+bglayer 	data/bgs/04/back03b.gif 0 1 0 0 0 0 -1 1 1 0 0 0 0 0 6
+#water		data/bgs/01/Mar01.gif		0.5
+#fglayer         data/bgs/00/FOG.gif              0.5 1 0 0 0 0 -1 1 1 0 1 3 10 0.3
+panel		data/bgs/04/pn03.gif		none	none
+#frontpanel	data/bgs/00/Front00.gif		
+cameratype 1
+cameraoffset 0 -30
+#levelscript @script
+#void main() {
+#	changelevelproperty("camerazoffset", 0);
+#	changelevelproperty("cameraxoffset", 0);
+#}
+#@end_script
+settime         99
+notime          0
+noslow          1
+order		a
+spawn1  	50 20 50
+spawn2  	55 35 50
+spawn3  	60 50 50
+
+light		128 -128
+at			0
+
+Wall  900  218  -71  0  161  188  14  86
+Wall  985  128  -73  0  85  106  9  85
+
+spawn  ActP
+	coords  400 295
+	at  0
+
+
+
+group 4 4
+at  0
+
+spawn  Tires02
+Item Cash
+	coords  200 210
+	at  0
+
+spawn  Tires02
+Item Gold
+	coords  240 210
+	at  0
+
+spawn  Bloqueio
+Flip 1
+	coords  600 220
+	at  0
+
+spawn  Bloqueio
+Flip 1
+Item Chicken
+	coords  620 240
+	at  0
+
+spawn  Bloqueio
+Flip 1
+Item Cash
+	coords  647 265
+	at  0
+
+
+spawn  Kurt__
+health 400
+Boss 1
+Map 3
+	coords  550 210 200
+	at  360
+
+spawn  Kurt
+health 400
+Map 2
+Boss 1
+	coords  -100 250
+	at  500
+
+spawn  GAlsia
+health 50
+Map 3
+	coords  550 250
+	at  500
+
+
+spawn  Costa
+health 70
+Map 4
+	coords  -100 250
+	at  500
+
+spawn  Act
+	coords  350 220
+	at  500
+
+spawn  Donovan
+health 50
+Map 3
+	coords  -100 210
+	at  500
+
+spawn  Bigben
+health 70
+Map 3
+	coords  550 250
+	at  500
+
+spawn  Slum
+health 50
+Map 3
+	coords  550 250
+	at  500
+
+
+spawn  Vice
+health 70
+Map 3
+	coords  -100 250
+	at  500
+
+spawn  Garnet
+health 50
+Map 3
+	coords  -100 210
+	at  500
+
+spawn  Bigben
+health 70
+Map 4
+	coords  550 250
+	at  500
+
+spawn  Signal
+health 50
+Map 3
+	coords  550 250
+	at  500
+
+
+spawn  Chan
+health 70
+Map 4
+	coords  -100 250
+	at  500
+
+spawn  Jhonny
+health 50
+Map 3
+	coords  -100 210
+	at  500
+
+spawn  Bigben
+health 70
+Map 1
+	coords  550 250
+	at  500
+
+spawn  Ralf
+health 50
+Map 3
+	coords  550 250
+	at  500
+
+
+spawn  GAlsia
+health 70
+Map 4
+	coords  -100 250
+	at  500
+
+spawn  Donovan
+health 50
+Map 4
+	coords  -100 210
+	at  500
+

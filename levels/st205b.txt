@@ -1,0 +1,128 @@
+music		data/bgs/St205/Lv205a.bor
+bossmusic	data/music/boss1.bor
+rock		1
+scrollspeed 0.5
+stagenumber 5
+background	data/bgs/st205/Back01.gif
+bglayer		data/bgs/St205/bg00.gif		0.8 1 0 0 0 0 -1 1 1 0 1 0 0 0 1
+bglayer		data/bgs/St205/bg01.gif		0.6 1 0 0 0 0 -1 1 1 0 3 0.1 1.2 0 3
+panel		data/bgs/St205/Pn01.gif
+frontpanel      data/bgs/St205/fpn00.gif
+#bglayer           data/bgs/11lvl/liberty_statue.gif 0.3 0.1   60    -40 180 1 1 1 1  0
+#bglayer           data/bgs/11lvl/0x.gif 0.5 0.1   60    -40 180 1 1 1 1  0
+#fglayer         data/bgs/11lvl/fondo3.gif 1500 -0.1 0 0 0 0 0 1 1 1
+#fglayer         data/bgs/11lvl/sun.gif 500 0 0 0 -5 1 1 1 1 1 1
+#fglayer         data/bgs/11lvl/light2.gif 2500 0 0 0 -5 1 1 1 1 1 1
+cameratype 1
+#cameraoffset 0 -30
+#levelscript @script
+#void main() {
+#	changelevelproperty("camerazoffset", 0);
+#	changelevelproperty("cameraxoffset", 0);
+#}
+#@end_script
+#settime         90
+notime          1
+noslow          1
+order		a
+spawn1  	45 20 50
+spawn2  	50 25 50
+spawn3  	55 30 50
+
+wall		660 251 0 107 1107 1107 53 10000
+
+spawn  Alm02
+Flip   1
+	coords  0  10
+	at  0
+
+spawn  Box03
+item   Chicken
+	coords  450  220
+	at  0
+
+spawn  Box03
+	coords  500  220
+	at  0
+
+
+
+spawn  galsia
+map    1
+health 40
+	coords  500  220
+	at  50
+
+spawn  Raven
+	coords  350  250 200
+	at  50
+
+spawn  Donovan_
+health 40
+	coords  475  250
+	at  50
+
+spawn  Donovan
+health 40
+	coords  -100  250
+	at  100
+
+wait  
+at         100
+
+group  5  5
+at   220
+
+
+spawn  Barbon
+map    1
+health 250
+	coords  475  250
+	at  215
+
+spawn  Galsia
+map    1
+health 40
+	coords  -100  220
+	at  220
+
+spawn  Donovan
+health 40
+	coords  -100  240
+	at  100
+
+spawn  Galsia
+map    1
+health 40
+	coords  -100  260
+	at  220
+
+spawn  Donovan
+health 40
+	coords  -100  270
+	at  100
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

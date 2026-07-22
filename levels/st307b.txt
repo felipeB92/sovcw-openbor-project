@@ -1,0 +1,220 @@
+music		data/bgs/St307/Lv307a.bor
+bossmusic	data/music/boss1.bor
+scrollspeed 0.5#1
+stagenumber 7
+background	data/bgs/st307/back01.gif	1 1 0 0 0 0 -1 1 1
+panel		data/bgs/st307/pn01.gif		none	none
+frontpanel	data/bgs/st307/fpn01.gif
+fglayer		data/bgs/st05/Front02.gif			1000 1 1 0 0 0 0 -1 -1 1 2
+cameratype 1
+cameraoffset 0 -30
+#levelscript @script
+#void main() {
+#	changelevelproperty("camerazoffset", 0);
+#	changelevelproperty("cameraxoffset", 0);
+#}
+#@end_script
+#settime         90
+notime          1
+noslow          1
+order		a
+spawn1  	50 70  50
+spawn2  	55 85  50
+spawn3  	60 105 50
+
+
+
+spawn  1up
+	coords  5 270
+	at  0
+
+spawn  estatua02
+Item   Knife
+	coords  200 165
+	at  0
+
+spawn  estatua02
+2pItem   Kunai
+	coords  250 165
+	at  0
+
+spawn  Vice
+health 50
+	coords  500 180
+	at  0
+
+spawn  Vice
+Map    2
+health 75
+	coords  500 240
+	at  0
+
+
+
+spawn  slum
+map    2
+health 80
+	coords  -100 260
+	at  50
+
+spawn  slum
+health 50
+	coords  500 260
+	at  100
+
+
+spawn  estatua02
+Item   Pipe
+	coords  500 165
+	at  100
+
+spawn  estatua02
+2pItem  Pipe
+	coords  550 165
+	at  100
+
+spawn  Vice
+health 50
+	coords  -100 240
+	at  150
+
+wait 
+at     250
+
+Group 1  5
+at     250
+
+spawn  maclean
+health 150
+	coords  -100 260
+	at  250
+
+spawn  slum
+map    2
+health 80
+	coords  -100 260
+	at  250
+
+spawn  macleod
+health 150
+	coords  500 260
+	at  250
+
+Group 4  4
+at     250
+
+spawn  mcbride
+health 150
+	coords  500 260
+	at  250
+
+spawn  Vice
+health 50
+	coords  -100 260
+	at  250
+
+spawn  Vice
+map    3
+health 80
+	coords  -100 260
+	at  250
+
+spawn  Vice
+map    3
+health 80
+	coords  -100 190
+	at  250
+
+spawn  Vice
+map    3
+health 80
+	coords  -100 220
+	at  250
+
+spawn  Vice
+map    3
+health 80
+	coords  -100 220
+	at  250
+
+
+spawn  estatua02
+Item   Chicken
+	coords  500 165
+	at  300
+
+spawn  estatua02
+2pItem Chicken
+	coords  550 165
+	at  300
+
+spawn  mcbride_
+health 150
+	coords  500 190
+	at  400
+
+spawn  maclean_
+health 150
+	coords  480 220
+	at  400
+
+spawn  macleod_
+health 150
+	coords  500 260
+	at  400
+
+
+wait 
+at     500
+
+Group 5  5
+at     500
+
+spawn  BigBen
+health 100
+	coords  300 190 150
+	at  500
+
+spawn  Bigben
+map    1
+health 120
+	coords  350 240 150
+	at  500
+
+Group 4  4
+at     500
+
+spawn  Bigben
+map    1
+health 120
+	coords  600 240
+	at  500
+
+spawn  Bigben
+health 100
+	coords  350 240 150
+	at  500
+
+spawn  Bigben
+health 100
+	coords  -100 240 150
+	at  500
+
+spawn  Bigben
+health 100
+	coords  -100 190 150
+	at  500
+
+
+spawn  Bigben
+health 100
+	coords  -100 270 150
+	at  500
+
+
+
+
+
+
+
+

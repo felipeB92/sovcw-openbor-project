@@ -1,0 +1,150 @@
+music		data/bgs/St206/Lv206a.bor
+bossmusic	data/music/boss2.bor
+scrollspeed 0.5#1
+stagenumber 6
+background	data/bgs/st206/back00.gif	0.8 1 0 0 0 0 1 1 1
+bglayer		data/bgs/st206/bg00.gif		0.3 1 -100 0 0 0 1 1 1 0 1 5 50 0.5
+bglayer		data/bgs/st206/bg01.gif		0.7 1 0 0 0 0 1 1 1
+panel		data/bgs/st206/pn00.gif		none	none
+#fglayer			data/bgs/st201/fpn00.gif 0 -0.8 0.6 0 0 0 0 1 1 1
+frontpanel      data/bgs/st05/Front02.gif
+cameratype 1
+cameraoffset 	0 -60
+settime         99
+notime          0
+noslow          1
+order		a
+spawn1  	50 20
+spawn2  	55 35
+spawn3  	60 50
+
+
+
+spawn  Praia
+flip   1
+	coords  0  0
+	at  0
+
+
+
+spawn  Kusanagi
+health 70
+	coords  -50  220
+	at  50
+
+spawn  Galsia
+map    1
+health 40
+	coords  500  230
+	at  100
+
+
+
+spawn  Galsia
+map    4
+health 70
+	coords  500  250
+	at  150
+
+spawn  Galsia
+map    1
+health 40
+	coords  500  200
+	at  150
+
+wait
+        at   200
+
+
+Group  5  5
+        at   200
+
+spawn  Donovan
+map    3
+health 70
+	coords  -100  250
+	at  200
+
+spawn  Kunai
+	coords  500  250
+	at  200
+
+
+spawn  Kusanagi
+map    3
+health 150
+	coords  550  250
+	at  200
+
+Group  9  9
+        at   201
+
+
+spawn  Galsia
+map    1
+health 40
+	coords  500  200
+	at  300
+
+
+spawn  Donovan
+health 40
+	coords  500  250
+	at  450
+
+spawn  Galsia
+map    1
+health 40
+	coords  500  200
+	at  500
+
+spawn  Donovan
+map    4
+health 90
+	coords  550  250
+	at  500
+
+
+spawn  Donovan
+map    4
+health 90
+	coords  550  250
+	at  650
+wait 
+        at 700
+
+spawn  Galsia
+map    1
+health 40
+	coords  500  200
+	at  700
+
+
+spawn  Raven
+health 90
+	coords  -100  250
+	at  1200
+
+
+spawn  Raven
+health 90
+	coords  -100  200
+	at  1200
+
+spawn  Raven
+map    1
+health 130
+	coords  500  200
+	at  1200
+
+
+
+
+
+
+
+
+
+
+
+

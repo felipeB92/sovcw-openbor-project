@@ -1,0 +1,103 @@
+name	 Granada
+health   1
+nomove 1 1
+#type	pshot#npc#pshot
+subtype  weapon
+
+type    enemy
+cantgrab 1
+antigrab 5
+nopain 1
+speed 10
+falldie 1
+candamage player
+
+Load Boom
+
+onblockwscript	data/scripts/bounceF.c
+animationscript 	data/scripts/ani0020.h
+ondrawscript 		data/scripts/player_ondrawscript.c
+
+anim	idle#follow1#attack1
+	loop	0
+	delay	7
+	offset	13 16
+        sound	data/sounds/golpes/Soco.wav
+	frame	data/chars/objetos/grenade00.gif
+	frame	data/chars/objetos/grenade01.gif
+	frame	data/chars/objetos/grenade02.gif
+	frame	data/chars/objetos/grenade03.gif
+	frame	data/chars/objetos/grenade04.gif
+	frame	data/chars/objetos/grenade05.gif
+	frame	data/chars/objetos/grenade06.gif
+	frame	data/chars/objetos/grenade07.gif
+        @cmd spawn01 "Boom" 0 0 0
+	frame	data/chars/objetos/empty.gif
+	@cmd killentity getlocalvar("self")
+	frame	data/chars/objetos/empty.gif
+
+anim  pain
+	loop  0
+		delay  15
+		offset  13  16
+	sound  data/sounds/glass3.wav
+	frame	data/chars/objetos/grenade07.gif
+	@cmd killentity getlocalvar("self")
+	frame	data/chars/objetos/grenade07.gif
+
+anim	spawn#idle
+	loop	0
+	#jumpframe  0  1.9  0.6  0
+	landframe  16
+	offset	13 16
+	delay	8
+	bbox  8  5  13  12
+	frame	data/chars/objetos/grenade00.gif
+	frame	data/chars/objetos/grenade01.gif
+	frame	data/chars/objetos/grenade02.gif
+	frame	data/chars/objetos/grenade03.gif
+	frame	data/chars/objetos/grenade04.gif
+	frame	data/chars/objetos/grenade05.gif
+	frame	data/chars/objetos/grenade06.gif
+	frame	data/chars/objetos/grenade07.gif
+	frame	data/chars/objetos/grenade00.gif
+	frame	data/chars/objetos/grenade01.gif
+	frame	data/chars/objetos/grenade02.gif
+	frame	data/chars/objetos/grenade03.gif
+	frame	data/chars/objetos/grenade04.gif
+	frame	data/chars/objetos/grenade05.gif
+	frame	data/chars/objetos/grenade06.gif
+	frame	data/chars/objetos/grenade07.gif
+	frame	data/chars/objetos/grenade00.gif
+	frame	data/chars/objetos/grenade01.gif
+	frame	data/chars/objetos/grenade02.gif
+	frame	data/chars/objetos/grenade03.gif
+	frame	data/chars/objetos/grenade04.gif
+	frame	data/chars/objetos/grenade05.gif
+	frame	data/chars/objetos/grenade06.gif
+	frame	data/chars/objetos/grenade07.gif
+	@cmd    anichange "ANI_idle"
+	frame	data/chars/objetos/empty.gif
+anim  death
+	loop  0
+		delay  15
+		offset  13  16
+		sound  data/sounds/glass3.wav
+	frame	data/chars/objetos/grenade05.gif
+	frame	data/chars/objetos/grenade06.gif
+ 	frame	data/chars/objetos/grenade07.gif
+        @cmd killentity getlocalvar("self")
+	frame	data/chars/objetos/grenade05.gif
+
+anim  fall
+	loop  0
+		delay  15
+		offset  13  16
+		sound  data/sounds/glass3.wav
+	frame	data/chars/objetos/grenade00.gif
+	frame	data/chars/objetos/grenade05.gif
+	frame	data/chars/objetos/grenade06.gif
+	frame	data/chars/objetos/grenade07.gif
+@cmd killentity getlocalvar("self")
+	frame	data/chars/objetos/grenade00.gif
+

@@ -1,0 +1,24 @@
+name			HarakiriP01
+type			none
+speed 15
+candamage			Player NPC
+#alpha 1
+nolife			1
+lifespan		4
+remove			1
+gfxshadow		1 1
+flash			Forte
+subject_to_gravity 0
+
+anim idle
+	loop	1
+	offset	-15 3
+        hitflash	Corte
+        hitfx	data/sounds/golpes/Corte.wav
+		delay  3
+		attack1  6  8  33  36  15  1  0  0  0  15
+	frame	data/chars/Boss/Harakiri/p01/P00.gif
+	frame	data/chars/Boss/Harakiri/p01/P01.gif
+	frame	data/chars/Boss/Harakiri/p01/P02.gif
+	frame	data/chars/Boss/Harakiri/p01/P03.gif
+

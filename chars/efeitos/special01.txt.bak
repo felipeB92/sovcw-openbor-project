@@ -1,0 +1,59 @@
+name			Special01 #GROUND
+type			None
+Speed 10
+Alpha 1
+candamage			Enemy npc obstacle
+onblockwscript	data/scripts/bounceF.c
+#animationscript 	data/scripts/ani0020.h
+animationscript		data/scripts/drago.c
+ondrawscript 		data/scripts/Enemy_ondrawscript.c
+
+Load special00
+
+
+anim	idle
+	loop	1
+        quakeframe 4 2 2
+	delay	40
+		offset  72  89
+	frame	data/Chars/efeitos/special/p01.gif
+	frame	data/Chars/efeitos/special/p02.gif
+		offset  72  89
+		delay  12
+	frame	data/Chars/efeitos/special/p03.gif
+	frame	data/Chars/efeitos/special/p04.gif
+	sound  data/SOUNDS/explosion.wav
+	frame	data/Chars/efeitos/special/p05.gif
+	frame	data/Chars/efeitos/special/p06.gif
+		attack1  -772  -211  1594  620  999  1  1  1  0  999
+	frame	data/Chars/efeitos/special/p07.gif
+	@cmd  spawn01  "Special00"  0  0  50
+	frame	data/Chars/efeitos/special/p08.gif
+	@cmd  spawn01  "Special00"  -30  0  40
+	@cmd  spawn01  "Special00"  30  0  40
+		Attack1  0
+	frame	data/Chars/efeitos/special/p09.gif
+	@cmd  spawn01  "Special00"  -60  0  30
+	@cmd  spawn01  "Special00"  60  0  30
+	frame	data/Chars/efeitos/special/p10.gif
+	@cmd  spawn01  "Special00"  -90  0  20
+	@cmd  spawn01  "Special00"  90 0  20
+	frame	data/Chars/efeitos/special/00.gif
+	@cmd  spawn01  "Special00"  -100  0  0
+	@cmd  spawn01  "Special00" 100 0  0
+	frame	data/Chars/efeitos/special/00.gif
+	@cmd  spawn01  "Special00"  -90  0  -20
+	@cmd  spawn01  "Special00" 90 0  -20
+		attack1  -772  -211  1594  620  999  1  1  1  0  999
+	frame	data/Chars/efeitos/special/00.gif
+	@cmd  spawn01  "Special00"  -60  0  -30
+	@cmd  spawn01  "Special00" 60 0  -30
+	frame	data/Chars/efeitos/special/00.gif
+	@cmd  spawn01  "Special00"  -30  0  -40
+	@cmd  spawn01  "Special00" 30 0  -40
+	frame	data/Chars/efeitos/special/00.gif
+	@cmd  spawn01  "Special00"  0  0  -50
+	frame	data/Chars/efeitos/special/00.gif
+	@cmd killentity getlocalvar("self")
+	frame	data/Chars/efeitos/special/p10.gif
+

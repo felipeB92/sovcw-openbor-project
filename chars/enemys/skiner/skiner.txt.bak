@@ -1,0 +1,347 @@
+name	Skiner
+health	50
+mp 30
+mprate 1
+#secret 1
+Falldie 2
+Grabdistance 18
+riseinv				0.4 1
+speed	6
+type	Enemy
+gfxshadow	1
+candamage			Player npc obstacle
+JUMPHEIGHT 4
+hostile Player NPC
+#antigrab 2
+atchain    1 2 3 4 5
+weapons Skiner_Knife Skiner_Sword Skiner_pipe Skiner_Kunai
+icon	data/chars/Enemys/Skiner/icon.gif 1
+diesound data/Sounds/Die5.wav
+running	20	3	2	1	1
+onblockwscript	data/scripts/bounceF.c
+#animationscript 	data/scripts/ani0020.h
+animationscript		data/scripts/drago.c
+ondrawscript 		data/scripts/Enemy_ondrawscript.c
+
+
+
+#Load Skiner_Knife
+#Load Skiner_Pipe
+#Load Skiner_Kunai
+#Load Skiner_Sword
+
+remap data/chars/Enemys/Skiner/idle00.gif data/chars/Enemys/Skiner/MAp01.gif
+remap data/chars/Enemys/Skiner/idle00.gif data/chars/Enemys/Skiner/MAp02.gif
+remap data/chars/Enemys/Skiner/idle00.gif data/chars/Enemys/Skiner/MAp03.gif
+remap data/chars/Enemys/Skiner/idle00.gif data/chars/Enemys/Skiner/MAp04.gif
+
+anim Spawn
+	loop	0
+	delay	12
+	offset	80 118
+	bbox	67 44 34 78
+	frame   data/chars/Enemys/Skiner/idle00.gif
+
+
+anim Pain5
+	loop	0
+	delay	12
+	offset	80 118
+	bbox	67 44 34 78
+	frame   data/chars/Enemys/Skiner/idle00.gif
+
+anim idle
+	loop	1
+	delay	25
+	offset	80 118
+	bbox	67 44 34 78
+	frame   data/chars/Enemys/Skiner/idle00.gif
+	@cmd	depost 0
+	@cmd	throw 15 0.7 0.7 1 0 -1
+	@cmd	clearL
+	frame   data/chars/Enemys/Skiner/idle01.gif
+
+
+
+anim walk
+	loop	1
+	delay	16
+	offset	82 122
+	bbox	71 45 31 77
+	frame	data/chars/Enemys/Skiner/walk00.gif
+		offset  82  120
+	frame	data/chars/Enemys/Skiner/walk01.gif
+		offset  81  119
+	frame	data/chars/Enemys/Skiner/walk02.gif
+		offset  82  121
+	frame  data/chars/Enemys/Skiner/walk03.gif
+	frame  data/chars/Enemys/Skiner/walk04.gif
+	frame  data/chars/Enemys/Skiner/walk05.gif
+	frame  data/chars/Enemys/Skiner/walk06.gif
+
+
+
+
+
+anim jump
+	loop	0
+	delay	15
+	offset	79 133
+	bbox	62 35 36 74
+	frame	data/chars/Enemys/Skiner/fall403.gif
+	frame	data/chars/Enemys/Skiner/fall403.gif
+	frame	data/chars/Enemys/Skiner/fall403.gif
+
+
+
+
+
+anim attack1
+	loop	0
+	delay	6
+	offset	77 119
+        Range 0 40
+        RangeZ -5 5
+        hitflash	Fraco
+	bbox	63 44 31 76
+		Attack1  0
+        Sound	data/sounds/golpes/Soco.wav
+        hitfx	data/sounds/golpes/Fraco.wav
+	frame	data/chars/Enemys/Skiner/a100.gif
+		attack1  70  52  64  22  5  0  0  0  0  10
+		delay  7
+	frame	data/chars/Enemys/Skiner/a101.gif
+		delay  12
+		attack1  70  52  64  22  3  0  0  0  0  10
+	frame	data/chars/Enemys/Skiner/a102.gif
+		Attack1  0
+	frame  data/chars/Enemys/Skiner/a100.gif
+
+anim attack2
+	loop	0
+	delay	6
+	offset	77 119
+        Range 0 40
+        RangeZ -5 5
+        hitflash	Medio
+	bbox	63 44 31 76
+		Attack1  0
+        Sound	data/sounds/golpes/Soco.wav
+        hitfx	data/sounds/golpes/MEdio.wav
+	frame	data/chars/Enemys/Skiner/a200.gif
+		attack1  70  52  64  22  3  0  0  0  0  10
+		delay  7
+	frame	data/chars/Enemys/Skiner/a201.gif
+		delay  12
+	frame	data/chars/Enemys/Skiner/a202.gif
+
+anim attack3
+	loop	0
+	delay	6
+	offset	77 119
+        Range 0 40
+        RangeZ -5 5
+        hitflash	Forte
+	bbox	63 44 31 76
+		Attack1  0
+        Sound	data/sounds/golpes/Soco.wav
+        hitfx	data/sounds/golpes/Forte.wav
+	frame	data/chars/Enemys/Skiner/a300.gif
+		attack1  71  67  68  24  5  1  0  0  0  10
+		delay  30
+	frame	data/chars/Enemys/Skiner/a301.gif
+
+
+
+anim pain
+	loop	0
+	offset	80 118
+	bbox	70 45 25 73
+	delay	5
+	frame	data/chars/Enemys/Skiner/pain01.gif
+		delay  25
+		offset  78  118
+	frame	data/chars/Enemys/Skiner/pain01.gif
+
+anim pain3
+	loop	0
+	offset	80 119
+	bbox	73 44 22 76
+	delay	5
+	jumpframe  0  2  0  0
+	frame	data/chars/Enemys/Skiner/pain01.gif
+		delay  25
+		offset  82  119
+	frame	data/chars/Enemys/Skiner/pain01.gif
+
+anim pain4
+	loop	0
+	offset	80 118
+	bbox	61 54 26 66
+	delay	5
+	frame	data/chars/Enemys/Skiner/pain01.gif
+		delay  900
+		offset  78  118
+		bbox  71  41  25  77
+	frame	data/chars/Enemys/Skiner/pain01.gif
+
+
+anim grabbed
+	loop	0
+	offset	81 118
+	bbox	75 53 26 67
+	delay	40
+	frame	data/chars/Enemys/Skiner/pain02.gif
+
+
+
+anim pain2
+	loop	0
+	offset	80 120
+	bbox	78 49 24 71
+	delay	5
+	frame	data/chars/Enemys/Skiner/pain02.gif
+		delay  25
+		offset  78  120
+	frame	data/chars/Enemys/Skiner/pain02.gif
+
+
+
+
+
+anim fall2
+	loop	0
+	offset	81 115
+	jumpframe  0  3  -3  0
+	delay	20
+        hitfx	data/sounds/golpes/Forte.wav
+		attack  0
+	frame	data/chars/Enemys/Skiner/fall00.gif
+		Attack1  0
+		offset  52  120
+	frame	data/chars/Enemys/Skiner/fall01.gif
+		offset  78  121
+		delay  10
+	frame	data/chars/Enemys/Skiner/fall02.gif
+
+anim fall
+	loop	0
+	offset	77 121
+	delay	20
+        hitfx	data/sounds/golpes/Forte.wav
+		attack  0
+	frame	data/chars/Enemys/Skiner/fall00.gif
+		Attack1  0
+		offset  52  120
+	frame	data/chars/Enemys/Skiner/fall01.gif
+		offset  78  119
+		delay  10
+	frame	data/chars/Enemys/Skiner/fall02.gif
+
+anim fall6 #Shok
+	loop	0
+	offset	88 120
+	delay	5
+        hitfx	data/sounds/golpes/Forte.wav
+		attack  0
+	frame	data/chars/Enemys/Skiner/fall01.gif
+	frame	data/chars/Enemys/Skiner/fall200.gif
+	frame	data/chars/Enemys/Skiner/fall01.gif
+	frame	data/chars/Enemys/Skiner/fall200.gif
+	frame	data/chars/Enemys/Skiner/fall01.gif
+		offset  74  120
+	frame	data/chars/Enemys/Skiner/fall02.gif
+
+
+anim fall7 #Burn
+	loop	0
+	offset	65 97
+	delay	10
+        hitfx	data/sounds/golpes/Forte.wav
+		attack  0
+	frame	data/chars/Enemys/Skiner/FALL300.gif
+	frame	data/chars/Enemys/Skiner/FALL301.gif
+	frame	data/chars/Enemys/Skiner/FALL302.gif
+	frame	data/chars/Enemys/Skiner/FALL300.gif
+	frame	data/chars/Enemys/Skiner/FALL301.gif
+		offset  78  119
+	frame	data/chars/Enemys/Skiner/FALL02.gif
+
+
+anim rise
+	loop	0
+	offset	80 119
+	delay	20
+	frame	data/chars/Enemys/Skiner/Rise00.gif
+	frame	data/chars/Enemys/Skiner/Rise01.gif
+	frame	data/chars/Enemys/Skiner/Rise02.gif
+
+
+
+
+anim jUMPland
+	loop	0
+	delay	15
+	offset	94 118
+	bbox	78 71 39 48
+	frame	data/chars/Enemys/Skiner/Rise02.gif
+
+
+anim land
+	loop	0
+	delay	15
+	offset	97 119
+	bbox	87 75 32 44
+	frame	data/chars/Enemys/Skiner/Rise02.gif
+
+
+anim Fall9
+	loop	0
+	offset	78 120
+	delay	999
+	frame	data/chars/Enemys/Skiner/pain01.gif #0
+		offset  83  118
+	frame	data/chars/Enemys/Skiner/pain02.gif #1
+		offset  74  119
+	frame	data/chars/Enemys/Skiner/fall01.gif #2
+		offset  81  119
+	frame	data/chars/Enemys/Skiner/fall02.gif #3
+		offset  93  92
+	frame	data/chars/Enemys/Skiner/fall400.gif #4
+		offset  111  114
+	frame	data/chars/Enemys/Skiner/fall401.gif #5
+		offset  81  118
+	frame	data/chars/Enemys/Skiner/fall402.gif #6
+		offset  83  132
+	frame  data/chars/Enemys/Skiner/fall403.gif #7
+		offset  109  114
+	delay	20
+	frame	data/chars/Enemys/Skiner/fall401.gif #8
+	delay	30
+		offset  82  97
+	frame	data/chars/Enemys/Skiner/fall404.gif #9
+	offset	73 120
+	frame	data/chars/Enemys/Skiner/Fall405.gif #10
+
+
+anim Fall8
+	loop	0
+	flipframe  0
+	offset	85 119
+	delay	30
+	frame	data/chars/Enemys/Skiner/fall01.gif #0
+	offset	73 120
+	delay	15
+	frame	data/chars/Enemys/Skiner/fall02.gif #1
+
+
+anim Fall5
+	loop	0
+	flipframe  1
+	offset	63 120
+	delay	30
+	frame	data/chars/Enemys/Skiner/fall01.gif #0
+	offset	71 119
+	delay	15
+	frame	data/chars/Enemys/Skiner/fall02.gif #1
+

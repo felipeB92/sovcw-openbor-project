@@ -1,0 +1,313 @@
+music		data/bgs/St303/Lv303c.bor
+bossmusic	data/music/boss1.bor
+scrollspeed 0.5#1
+stagenumber 3
+background	 data/bgs/st303/Back02.gif
+panel		 data/bgs/st303/pn02.gif		none	none
+frontpanel      data/bgs/st05/Front02.gif
+cameratype 1
+cameraoffset 0 -30
+#levelscript @script
+#void main() {
+#	changelevelproperty("camerazoffset", 0);
+#	changelevelproperty("cameraxoffset", 0);
+#}
+#@end_script
+#settime         90
+direction Up
+notime          1
+noslow          1
+order		a
+spawn1  	50 20 50
+spawn2  	55 35 50 
+spawn3  	60 50 50
+
+
+
+hole 0 276 329 200 1000 1000 64
+
+
+spawn  Lata
+item   Chicken
+	coords  198 220
+	at  0
+
+spawn  Lata
+2pitem   Chicken
+	coords  158 220
+	at  0
+
+wait 
+at 0
+
+spawn  GArnet
+health 50
+	coords  198 241 200
+	at  0
+
+spawn  slum
+map    1
+health 70
+	coords  -100 241 
+	at  0
+
+spawn  vice
+map    1
+health 70
+	coords  -150 220 
+	at  0
+
+spawn  vice
+map    1
+health 70
+	coords  -150 270 
+	at  0
+
+
+spawn  GArnet
+health 50
+	coords  198 241 200
+	at  50
+
+spawn  GArnet
+map    1
+health 70
+	coords  150 260 200
+	at  50
+
+wait 
+at 300
+
+Group 4  4
+at  300
+
+
+spawn  slum
+health 50
+	coords  -100 241 
+	at  300
+
+spawn  GArnet
+map    1
+health 70
+	coords  150 260 200
+	at  300
+
+spawn  vice
+health 50
+	coords  -150 270 
+	at  300
+
+
+spawn  GArnet
+health 50
+	coords  -100 241
+	at  300
+
+spawn  Galsia
+map    2
+health 70
+	coords  -100 260
+	at  350
+
+spawn  Pipe
+	coords  -50 220 
+	at  350
+
+spawn  Donovan
+health 50
+	coords  -100 220 
+	at  350
+
+
+wait 
+at 500
+
+Group 4  4
+at  500
+
+spawn  GArnet
+map    1
+health 70
+	coords  150 260 200
+	at  500
+
+spawn  Donovan
+health 50
+	coords  -100 220 
+	at  500
+
+spawn  GArnet
+map    1
+health 70
+	coords  190 240 200
+	at  500
+
+wait 
+at 700
+
+Group 4  4
+at  700
+
+spawn  Donovan
+health 50
+	coords  190 220 200
+	at  700
+
+
+spawn  Donovan
+health 50
+	coords  190 260 200
+	at  700
+
+
+spawn  Galsia
+map    1
+health 50
+	coords  160 220 200
+	at  700
+
+
+spawn  Galsia
+map    1
+health 50
+	coords  150 260 200
+	at  700
+
+spawn  Electra
+health 70
+	coords  150 260 200
+	at  750
+
+
+spawn  Donovan
+health 50
+	coords  150 230 200
+	at  750
+
+spawn  Electra
+health 70
+	coords  150 220 200
+	at  800
+
+wait 
+at 900
+
+Group 4  4
+at  900
+
+
+spawn  Galsia
+map    1
+health 50
+	coords  -100 230
+	at  900
+
+
+spawn  Electra
+health 70
+	coords  150 220 200
+	at  900
+
+
+spawn  Donovan
+map    2
+health 75
+	coords  180 230
+	at  900
+
+spawn  Electra
+health 70
+	coords  -100 220
+	at  900
+
+spawn  Electra
+health 70
+	coords  -100 260
+	at  900
+
+
+spawn  Tiger
+health 70
+	coords  190 260 200
+	at  950
+
+
+wait 
+at 1000
+
+Group 4  4
+at  1000
+
+spawn  Knife
+	coords  -50 230
+	at  1000
+
+
+spawn  Galsia
+map    1
+health 50
+	coords  -100 230
+	at  1000
+
+spawn  Pipe
+	coords  -50 260
+	at  1000
+
+
+spawn  Donovan
+health 50
+	coords  -100 260
+	at  1000
+
+spawn  Tiger
+health 50
+	coords  150 230 200
+	at  1000
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,99 @@
+music		data/bgs/st201/Lv201c.bor
+#bossmusic	data/music/boss1.bor
+scrollspeed 0.5#1
+stagenumber 1
+background	data/bgs/st201/back00.gif
+panel		data/bgs/St201/pn02.gif
+frontpanel      data/bgs/St201/Front02.gif
+cameratype 1
+cameraoffset 0 -60
+#levelscript @script
+#void main() {
+#	changelevelproperty("camerazoffset", 0);
+#	changelevelproperty("cameraxoffset", 0);
+#}
+#@end_script
+settime         99
+notime          0
+noslow          1
+order		a
+spawn1  	50 20
+spawn2  	55 35
+spawn3  	60  50
+
+
+
+wall		0 260 -500 -500 230 0 100 10000
+
+wall		290 260 0 291 791 791 100 10000
+
+
+
+spawn  Chuva02
+flip   1
+	coords  0  0 
+	at  0
+
+spawn  Gotas02
+flip   1
+	coords  0  7 
+	at  0
+
+
+
+spawn  Lixo02
+2pitem Chicken
+	coords  233  218 
+	at  0
+
+spawn  Lixo02
+item Chicken
+	coords  267  218 
+	at  0
+
+
+
+group 4  4
+at     0
+
+
+spawn  Donovan_
+health 40
+	coords  319 218 
+	at  0
+
+spawn  galsia_
+map    1
+health 40
+	coords  370 255 
+	at  0
+
+spawn  Signal_
+health 40
+	coords  401 218 
+	at  0
+
+spawn  Barbon
+boss   1
+	coords  357 233 
+	at  0
+
+spawn  galsia
+map    1
+health 40
+	coords  550 267 
+	at  0
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,14 @@
+name	cash
+score			2500
+type	item
+shadow	0
+#icon	data/chars/misc/meaticon.gif
+nolife 1
+
+anim idle
+	loop	0
+	delay	1000
+	offset	53 63
+	bbox	41 47 20 17
+	frame	data/chars/Itens/cash00.gif
+

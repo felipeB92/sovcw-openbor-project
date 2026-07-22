@@ -1,0 +1,32 @@
+name			alerta #GROUND
+type			Panel
+Speed 2
+Alpha 1
+setlayer 100
+noquake 	1 1
+#offscreenkill	1000
+
+
+anim idle
+	loop	1
+	offset	0 0
+		delay  10
+	frame	data/Bgs/07/a100.gif
+	frame	data/Bgs/07/a101.gif
+	frame	data/Bgs/07/a102.gif
+	frame	data/Bgs/07/a103.gif
+	frame	data/Bgs/07/a104.gif
+	frame	data/Bgs/07/a105.gif
+	frame	data/Bgs/07/a106.gif
+	frame	data/Bgs/07/a107.gif
+	frame	data/Bgs/07/a108.gif
+	frame	data/Bgs/07/a109.gif
+	frame	data/Bgs/07/a108.gif
+	frame	data/Bgs/07/a107.gif
+	frame	data/Bgs/07/a106.gif
+	frame	data/Bgs/07/a105.gif
+	frame	data/Bgs/07/a104.gif
+	frame	data/Bgs/07/a103.gif
+	frame	data/Bgs/07/a102.gif
+	frame	data/Bgs/07/a101.gif
+

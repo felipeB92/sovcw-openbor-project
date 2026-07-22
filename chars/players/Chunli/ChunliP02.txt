@@ -1,0 +1,43 @@
+
+name			ChunliP02 #THROWNED
+type			none
+speed 12
+candamage			enemy obstacle
+alpha 1
+nolife			1
+lifespan		4
+remove			1
+gfxshadow		0 0
+flash			Forte
+antigravity 100
+
+
+anim idle
+
+	loop	0
+	offset	61 102
+		delay  5
+	drawmethod tintmode 6
+	drawmethod tintcolor -255
+	frame	data/chars/players/Chunli/SP200.gif
+	frame	data/chars/players/Chunli/SP201.gif
+	frame	data/chars/players/Chunli/SP202.gif
+	frame	data/chars/players/Chunli/SP203.gif
+	frame	data/chars/players/Chunli/SP204.gif
+	frame	data/chars/players/Chunli/SP205.gif
+	frame	data/chars/players/Chunli/SP206.gif
+	frame	data/chars/players/Chunli/SP207.gif
+	frame	data/chars/players/Chunli/SP208.gif
+	frame	data/chars/players/Chunli/SP209.gif
+	frame	data/chars/players/Chunli/SP210.gif
+	frame	data/chars/players/Chunli/SP211.gif
+	frame	data/chars/players/Chunli/SP212.gif
+	frame	data/chars/players/Chunli/SP213.gif
+	frame	data/chars/players/Chunli/SP214.gif
+	frame	data/chars/players/Chunli/SP215.gif
+	frame	data/chars/players/Chunli/SP216.gif
+	frame	data/chars/players/Chunli/SP217.gif
+	@cmd killentity getlocalvar("self")
+	frame	data/chars/players/Chunli/SP218.gif
+
+

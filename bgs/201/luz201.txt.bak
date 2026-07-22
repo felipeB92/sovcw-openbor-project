@@ -1,0 +1,14 @@
+name			Luz201 #GROUND
+type			None
+#setlayer -57
+#noquake 	1 1
+#offscreenkill	1000
+
+
+anim idle
+	loop	1
+	offset	24 100
+		delay  15
+	frame	data/Bgs/201/L00.gif
+	frame	data/Bgs/201/L01.gif
+

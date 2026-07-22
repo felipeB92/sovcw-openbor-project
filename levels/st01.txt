@@ -1,0 +1,416 @@
+music		data/bgs/St01/Lv01.bor
+bossmusic	data/music/boss1.bor
+scrollspeed 0.5#1
+stagenumber 1
+background	data/bgs/st01/Back01.gif
+panel		data/bgs/St01/Pn01.gif
+frontpanel      data/bgs/St01/Front01.gif
+#bglayer           data/bgs/11lvl/liberty_statue.gif 0.3 0.1   60    -40 180 1 1 1 1  0
+#bglayer           data/bgs/11lvl/0x.gif 0.5 0.1   60    -40 180 1 1 1 1  0
+#fglayer         data/bgs/11lvl/fondo3.gif 1500 -0.1 0 0 0 0 0 1 1 1
+#fglayer         data/bgs/11lvl/sun.gif 500 0 0 0 -5 1 1 1 1 1 1
+#fglayer         data/bgs/11lvl/light2.gif 2500 0 0 0 -5 1 1 1 1 1 1
+cameratype 1
+cameraoffset 0 -30
+#levelscript @script
+#void main() {
+#	changelevelproperty("camerazoffset", 0);
+#	changelevelproperty("cameraxoffset", 0);
+#}
+#@end_script
+settime         99
+notime          0
+noslow          1
+order		a
+spawn1  	125 20
+spawn2  	130 35
+spawn3  	135  50
+
+spawn  L01
+	coords  0  28
+        Flip 1
+	at  0
+
+spawn  L02
+	coords  497  28
+        Flip 1
+	at  0
+
+spawn  L07
+	coords  497  28
+        Flip 1
+	at  0
+
+
+
+
+spawn  Blaze_E
+health 200
+	coords  300  191
+	at  0
+
+
+spawn  _Galsia
+health 30
+	coords  390  138
+	at  0
+
+
+
+spawn  L03
+	coords  413  28
+        Flip 1
+	at  600
+
+spawn  BArL
+	coords  728  28
+        Flip 1
+	at  600
+
+spawn  cafe
+	coords  864  30
+        Flip 1
+	at  600
+
+
+spawn  Galsia
+health 30
+	coords  560  191
+	at  560
+
+spawn  Galsia
+health 30
+	coords  560  191
+	at  745
+
+
+
+spawn  signal
+health 60
+	coords  560  191
+	at  900
+
+spawn  Galsia
+health 30
+	coords  -100  191
+	at  1070
+
+spawn  Galsia
+health 30
+	coords  560  191
+	at  1070
+
+
+spawn  Galsia
+health 60
+	coords  -400  191
+	at  1070
+
+spawn  L04
+	coords  503  28
+        Flip 1
+	at  1100
+
+
+
+
+
+wait
+	at  1170
+
+spawn  Galsia_
+health 50
+	coords  560  180
+	at  1171
+
+
+spawn  L05
+	coords  826  28
+        Flip 1
+	at  1226
+
+spawn  L06
+	coords  1093  28
+        Flip 1
+	at  1226
+
+spawn  cabine
+	coords  805 158
+        Item Apple
+        Flip 1
+	at  1226
+
+spawn  cabine
+	coords  972  158
+        Item knife
+        Flip 1
+	at  1226
+
+spawn  BArL
+	coords  608  28
+        Flip 1
+	at  1226
+
+spawn  cafe
+	coords  636  94
+        Flip 1
+	at  1226
+
+
+
+spawn  _Galsia
+health 50
+	coords  328  136
+	at  1399
+
+spawn  Porta
+	coords  224  28
+        Flip 1
+	at  1399
+
+
+
+
+spawn  Signal
+health 40
+	coords  560  191
+	at  1400
+
+
+
+spawn  Galsia
+health 50
+	coords  -100  180
+	at  1900
+
+spawn  Galsia
+health 50
+	coords  600  180
+	at  1990
+
+spawn  Signal
+health 50
+	coords  600  180
+	at  1990
+
+Wait
+	at  1990
+
+spawn  cabine
+	coords  575  166
+        Item Pipe
+        Flip 1
+	at  1991
+
+spawn  cabine
+        2pItem Apple
+	coords  935  167
+        Flip 1
+	at  1991
+
+spawn  cabine
+	coords  992  168
+        Item Apple
+        Flip 1
+	at  1991
+
+spawn  cabine
+	coords  1050  168
+        Flip 1
+	at  1991
+
+spawn  _Galsia
+       health 50
+	coords  257  136
+	at  2440
+
+
+spawn  Porta
+       Flip 1
+	coords  159  28
+	at  2440
+
+
+spawn  Galsia
+       health 50
+	coords  -100  180
+	at  2450
+
+spawn  Galsia
+       health 50
+	coords  600  180
+	at  2450
+
+
+spawn  L07
+	coords  305  28
+        Flip 1
+	at  2500
+
+spawn  haku_oh
+	coords  600  180
+	at  2650
+
+spawn  cafe
+	coords  424  45
+        Flip 1
+	at  2700
+
+spawn  cafe
+	coords  520  45
+        Flip 1
+	at  2700
+
+
+spawn  Galsia
+       health 50
+	coords  600  180
+	at  2750
+
+spawn  Knife
+	coords  350  180
+	at  2750
+
+Wait
+	at  2780
+
+group		4 4
+at			2780
+
+spawn  Galsia
+       health 50
+	coords  600  180
+	at  2780
+
+spawn  Galsia
+       health 50
+	coords  -100  180
+	at  2780
+
+spawn  Galsia
+       health 50
+	coords  700  180
+	at  2780
+
+spawn  Galsia
+       health 50
+	coords  -100  180
+	at  2780
+
+spawn haku_oh
+	coords  600  180
+	at  2780
+
+
+spawn  cabine
+       Item  chicken
+       Flip 1
+	coords  905  168
+	at  2781
+
+
+
+spawn  Galsia_
+       health 50
+	coords  560  180
+	at  2781
+
+spawn  Galsia
+       health 50
+	coords  560  190
+	at  2900
+
+spawn  Porta
+	coords  183  28
+        Flip 1
+	at  3200
+
+
+spawn  _Nora
+	coords  274  136
+	at  3200
+
+spawn  Knife
+	coords  500  180
+	at  3200
+
+spawn  L02
+	coords  128  28
+        Flip 1
+	at  3200
+
+
+spawn  cafe
+	coords  402  92
+        Flip 1
+	at  3200
+
+spawn  cafe
+	coords  580  92
+        Flip 1
+	at  3200
+
+group		4 4
+at			3201
+
+wait
+at			3550
+
+
+
+
+
+spawn  Galsia
+       health 50
+	coords  -100  190
+	at  3300
+
+spawn  Galsia
+       health 50
+	coords  600  180
+	at  3400
+
+
+spawn  Nora
+	coords  560  190
+	at  3500
+
+
+spawn  Galsia
+       health 50
+	coords  -100  180
+	at  3550
+
+
+
+
+wait
+at			3551
+
+group		2 2
+at			3551
+
+
+spawn  Antonio
+       Boss 1
+	coords  600  180
+	at  3551
+
+spawn  Antonio
+alias  Antoonio_Jr
+       Map 2
+       Boss 1
+	coords  -100  200
+	at  3551
+
+
+
+
+
+
+
+
+
+
+
+

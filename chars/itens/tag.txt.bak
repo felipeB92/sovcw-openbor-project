@@ -1,0 +1,28 @@
+name	Tag
+
+nolife 1
+type			item
+subtype	touch
+nolife			1
+typeshot 		0
+weapnum			1
+shootnum 		1
+counter			4
+gfxshadow		1 1
+offscreenkill	1000
+
+anim spawn
+	loop	0
+	delay	1
+	offset	50 62
+	frame	data/chars/Itens/1up.gif
+
+anim idle
+	loop	1
+	delay	155
+	offset	50 62
+	bbox	44 47 15 16
+	frame	data/chars/Itens/1up.gif
+	@cmd killentity getlocalvar("self")
+	frame	data/chars/Itens/1up.gif
+

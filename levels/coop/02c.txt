@@ -1,0 +1,377 @@
+music		data/music/03a.bor
+bossmusic	data/music/BossR.bor
+scrollspeed 0.5#1
+#direction Left
+stagenumber 3
+background	data/bgs/02/baCK03C.gif 	0.550 1 0 0 0 0 -1 1 1
+bglayer		data/bgs/02/bAck03B.gif 	0.500 1 0 0 0 0 -1 1 1
+bglayer		data/bgs/02/bAck03D.gif 	0.480 1 0 0 0 0 -1 1 1
+bglayer		data/bgs/02/BAck03.gif	        0.490 1 0 0 0 0 -1 1 1
+#water		data/bgs/01/Mar01.gif		0.5
+#fglayer         data/bgs/00/FOG.gif              0.5 1 0 0 0 0 -1 1 1 0 1 3 10 0.3
+panel		data/bgs/02/pn03.gif		none	none
+#frontpanel	data/bgs/00/Front00.gif		
+cameratype 1
+cameraoffset 0 -30
+#levelscript @script
+#void main() {
+#	changelevelproperty("camerazoffset", 0);
+#	changelevelproperty("cameraxoffset", 0);
+#}
+#@end_script
+settime         99
+notime          0
+noslow          1
+order		a
+spawn1  	50 20 50
+spawn2  	55 35 50 
+spawn3  	60 50 50
+
+light		128 -128
+at			0
+
+
+spawn Sombra01
+Flip 1
+	coords  0 188
+	at  0
+
+spawn  ActP
+	coords  250 250
+	at  0
+
+wait
+at       0
+
+group 4 4
+at  0
+
+spawn Knife
+	coords  450 210
+	at  0
+
+spawn Knife
+	coords  475 250
+	at  0
+
+spawn Act
+	coords  400 230
+	at  0
+
+spawn Jake_
+Map 1
+health 150
+	coords  400 230
+	at  0
+
+spawn Galsia_
+Map 1
+health 50
+	coords  450 210
+	at  0
+
+spawn Galsia_
+health 50
+	coords  475 250
+	at  0
+
+spawn  Pipe	
+	coords  -50 230
+	at  0
+
+spawn  Fog
+health 70
+	coords  -100 220
+	at  0
+
+
+spawn  SniperG
+	coords  500 220
+	at  0
+
+spawn  MacLeod
+health 100
+	coords  600 230
+	at  0
+
+spawn  Signal
+Map  1
+health 70
+	coords  600 220
+	at  0
+
+
+spawn  Donovan
+Map  1
+health 50
+	coords  600 220
+	at  0
+
+spawn  Ralf
+Map  1
+health 70
+	coords  600 220
+	at  0
+
+
+
+spawn  Jhonny
+health 70
+	coords  -100 220
+	at  0
+
+spawn  ActE
+	coords  250 240
+	at  0
+
+spawn  ActN
+	coords  250 250
+	at  1
+
+
+
+spawn  Box03
+Item Apple
+	coords  700 210
+	at  1
+
+spawn  Box03
+	coords  650 225
+	at  1
+
+spawn  Fog
+health 70
+Map 3
+	coords  557 240
+	at  100
+
+spawn  Fog
+health 70
+Map 2
+	coords  -100 220
+	at  200
+
+spawn  Skiner
+health 70
+Map 4
+	coords  557 250
+	at  300
+
+
+wait
+at       400
+
+group 4 4
+at  400
+
+
+
+spawn  Signal
+MAp 1
+health 70
+	coords  600 200
+	at  400
+
+spawn  Signal
+Map  2
+health 70
+	coords  550 250
+	at  400
+
+spawn  Signal
+MAp 3
+health 70
+	coords  -50 200
+	at  400
+
+spawn  Signal
+Map  4
+health 70
+	coords  -100 250
+	at  400
+
+spawn  ActE
+	coords  250 240
+	at  400
+
+spawn  ActN
+	coords  250 250
+	at  401
+
+spawn  Box03
+Item Chicken
+	coords  550 220
+	at  401
+
+wait
+at       500
+
+group 4 4
+at  500
+
+spawn  Signal
+MAp 1
+health 70
+	coords  600 200
+	at  500
+
+spawn  Skiner
+Map  1
+health 70
+	coords  550 250
+	at  500
+
+spawn  Thug
+MAp 1
+health 70
+	coords  -50 200
+	at  500
+
+spawn  Galsia
+Map  1
+health 70
+	coords  -100 250
+	at  500
+
+spawn  Joe
+Map  2
+health 250
+Boss 1
+	coords  600 250
+	at  500
+
+spawn  Joe
+Map  3
+health 250
+Boss 1
+	coords  -100 250
+	at  500
+
+spawn  Fog
+MAp 1
+health 70
+	coords  600 200
+	at  500
+
+spawn  Jhonny
+Map  1
+health 70
+	coords  550 250
+	at  500
+
+spawn  Ralf
+MAp 1
+health 70
+	coords  -50 200
+	at  500
+
+spawn  Donovan
+Map  1
+health 70
+	coords  -100 250
+	at  500
+
+spawn  Signal
+MAp 2
+health 70
+	coords  600 200
+	at  500
+
+spawn  Donovan
+Map  2
+health 70
+	coords  550 250
+	at  500
+
+spawn  Thug
+MAp 2
+health 70
+	coords  -50 200
+	at  500
+
+spawn  Galsia
+Map  2
+health 70
+	coords  -100 250
+	at  500
+
+
+spawn  Fog
+MAp 2
+health 70
+	coords  600 200
+	at  500
+
+spawn  Jhonny
+Map  2
+health 70
+	coords  550 250
+	at  500
+
+spawn  Ralf
+MAp 2
+health 70
+	coords  -50 200
+	at  500
+
+spawn  Signal
+Map  1
+health 70
+	coords  -100 250
+	at  500
+
+spawn  Signal
+MAp 3
+health 70
+	coords  600 200
+	at  500
+
+spawn  Donovan
+Map  3
+health 70
+	coords  550 250
+	at  500
+
+spawn  Thug
+MAp 3
+health 70
+	coords  -50 200
+	at  500
+
+spawn  Galsia
+Map  3
+health 70
+	coords  -100 250
+	at  500
+
+
+spawn  Fog
+MAp 3
+health 70
+	coords  600 200
+	at  500
+
+spawn  Jhonny
+Map  3
+health 70
+	coords  550 250
+	at  500
+
+spawn  Ralf
+MAp 3
+health 70
+	coords  -50 200
+	at  500
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,441 @@
+music		data/bgs/St02/Lv02.bor
+bossmusic	data/music/boss1.bor
+scrollspeed 0.5#1
+stagenumber 2
+background	data/bgs/st02/Back01.gif
+panel		data/bgs/St02/Pn01.gif
+#frontpanel      data/bgs/St01/Front01.gif
+#bglayer           data/bgs/11lvl/liberty_statue.gif 0.3 0.1   60    -40 180 1 1 1 1  0
+#bglayer           data/bgs/11lvl/0x.gif 0.5 0.1   60    -40 180 1 1 1 1  0
+#fglayer         data/bgs/11lvl/fondo3.gif 1500 -0.1 0 0 0 0 0 1 1 1
+#fglayer         data/bgs/11lvl/sun.gif 500 0 0 0 -5 1 1 1 1 1 1
+#fglayer         data/bgs/11lvl/light2.gif 2500 0 0 0 -5 1 1 1 1 1 1
+cameratype 1
+cameraoffset 0 -30
+#levelscript @script
+#void main() {
+#	changelevelproperty("camerazoffset", 0);
+#	changelevelproperty("cameraxoffset", 0);
+#}
+#@end_script
+#settime         90
+notime          1
+noslow          1
+order		a
+spawn1  	190 20 50
+spawn2  	210 35 50 
+spawn3  	220 50 50
+
+spawn  Lata
+	coords  292  255
+	at  0
+
+spawn  Lata
+item   cash
+	coords 327  222
+	at  0
+
+spawn  Lata
+	coords 360  190
+	at  0
+
+spawn  Gota
+       flip 1
+	coords  435  75
+	at  0
+
+spawn  poster
+       flip 1
+	coords  606  59
+	at  0
+
+spawn  Vento
+       flip 1
+	coords  500  0
+	at  0
+
+
+
+
+
+
+spawn  Galsia
+health 50
+	coords  560  191
+	at  0
+
+
+
+spawn  signal
+health 50
+	coords  650  191
+	at  0
+
+spawn  Galsia
+health 50
+	coords  -10  260
+	at  600
+
+spawn  Signal
+health 50
+	coords  560  220
+	at  600
+
+spawn  poster
+       flip 1
+	coords  607  43
+	at  640
+
+spawn  Lata
+item   cash
+	coords  560  180
+	at  682
+
+
+spawn  Vento
+       flip 1
+	coords  500  0
+	at  786
+
+spawn  Kunai
+	coords  480  192
+	at  940
+
+
+
+
+
+
+Wait
+	at  1050
+
+
+spawn  Vento
+       flip 1
+	coords  500  0
+	at  1050
+
+spawn  Galsia
+health 50
+	coords  -100  250
+	at  1050
+
+spawn  Knife
+	coords  -50  250
+	at  1050
+
+spawn  galsia
+health 50
+	coords  650  191
+	at  1050
+
+
+spawn  galsia
+health 50
+	coords  -100  190
+	at  1050
+
+spawn  Vento
+       flip 1
+	coords  500  0
+	at  1051
+
+
+spawn  Lata
+item   Kunai
+	coords  491 180
+	at  1300
+
+spawn  Vento
+       flip 1
+	coords  500  0
+	at  1300
+
+
+spawn  Lata
+item   Apple
+	coords  534  180
+	at  1300
+
+spawn  galsia
+health 50
+	coords  534  220
+	at  1300
+
+spawn  Knife
+	coords  500  220
+	at  1300
+
+
+spawn  galsia
+health 50
+	coords  -100  220
+	at  1350
+
+spawn  galsia
+health 50
+	coords  534  220
+	at  1300
+
+spawn  poster
+       flip 1
+	coords  607  45
+	at  1376
+
+spawn  poster
+       flip 1
+	coords  751  59
+	at  1376
+
+spawn  Lata
+item   Kunai
+	coords  491 180
+	at  1467
+
+
+
+spawn  Lata
+item   1up
+	coords  534  180
+	at  1570
+
+spawn  Vento
+       flip 1
+	coords  500  0
+	at  1600
+
+
+
+spawn  Nora
+	coords  534  220
+	at  1800
+
+spawn  Vento
+       flip 1
+	coords  500  0
+	at  1840
+
+
+
+spawn  Nora
+	coords  -100  220
+	at  1840
+
+spawn  galsia
+health 50
+	coords  -200  240
+	at  1840
+
+spawn  signal
+health 50
+	coords  634  220
+	at  1840
+
+
+Wait
+	at  1840
+
+spawn  Vento
+       flip 1
+	coords  500  0
+	at  1841
+
+
+
+
+spawn  Knife
+	coords  450  240
+	at  1900
+
+spawn  galsia
+health 50
+	coords  500  240
+	at  1900
+
+spawn  Gota
+       flip 1
+	coords  435  70
+	at  1935
+
+spawn  poster
+       flip 1
+	coords  607  27
+	at  2000
+
+
+
+spawn  Haku_oh
+	coords  600  240
+	at  2000
+
+spawn  Vento
+       flip 1
+	coords  500  0
+	at  2000
+
+
+
+spawn  Lata
+item   Pipe
+	coords  534  180
+	at  2063
+
+spawn  poster
+       flip 1
+	coords  587  44
+	at  2228
+
+
+spawn  Lata
+item   apple
+	coords  534  180
+	at  2327
+
+
+spawn  Haku_oh
+	coords  600  240
+	at  2500
+
+spawn  Vento
+       flip 1
+	coords  500  0
+	at  2580
+
+spawn  Haku_oh
+	coords  -100  240
+	at  2590
+
+spawn  galsia
+health 50
+	coords  560  180
+	at  2590
+
+spawn  galsia
+health 50
+	coords  600  240
+	at  2590
+
+Wait
+	at  2590
+
+spawn  Vento
+       flip 1
+	coords  500  0
+	at  2591
+
+spawn  galsia
+health 50
+	coords  500  240
+	at  2591
+
+spawn  Lata
+item   Knife
+	coords  687  180
+	at  2591
+
+spawn  poster
+       flip 1
+	coords  607  60
+	at  3072
+
+spawn  Gota
+       flip 1
+	coords  435  75
+	at  3073
+
+spawn  Haku_oh
+	coords  600  240
+	at  3100
+
+spawn  Vento
+       flip 1
+	coords  500  0
+	at  3100
+
+spawn  galsia
+health 50
+	coords  -100  180
+	at  3100
+
+spawn  Lata
+item   chicken
+	coords  500  180
+	at  3125
+
+
+spawn  galsia
+health 50
+	coords  500  220
+	at  3300
+
+Wait
+	at  3360
+
+
+group		4 4
+at			3360
+
+
+
+spawn  Clown
+	coords  -100  180
+	at  3360
+
+spawn  Clown_
+	coords  550  180
+	at  3360
+
+spawn  galsia
+health 50
+	coords  -200  220
+	at  3360
+
+
+spawn  galsia
+health 50
+	coords  500  220
+	at  3360
+
+
+spawn  Nora
+	coords  500  220
+	at  3360
+
+spawn  fred
+       boss 1
+	coords  500  220
+	at  3361
+
+spawn  fred
+alias  bounge
+       map 1
+       boss 1
+	coords  -100  220
+	at  3361
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

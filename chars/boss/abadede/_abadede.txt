@@ -1,0 +1,557 @@
+name	_Abadede
+health	100
+mp 10
+mprate 1
+#secret 1
+blockodds 7
+Falldie 2
+Grabdistance 18
+riseinv				0.4 1
+speed	9
+type	Player
+gfxshadow	1
+candamage			Enemy obstacle
+JUMPHEIGHT 4
+hostile Enemy
+#antigrab 2
+atchain   1 1 2 3 4 5
+#weapons Abadede_Knife Abadede_Sword Abadede_pipe Abadede_Kunai
+icon	data/chars/Boss/Abadede/icon2.gif 1
+diesound data/Sounds/Die4.wav
+running	20	3	2	1	1
+onblockwscript	data/scripts/bounceF.c
+#animationscript 	data/scripts/ani0020.h
+animationscript		data/scripts/drago.c
+ondrawscript 		data/scripts/Enemy_ondrawscript.c
+
+Load _Fog
+Load _Garnet
+
+remap data/chars/Boss/Abadede/idle00.gif data/chars/Boss/Abadede/MAp01.gif
+remap data/chars/Boss/Abadede/idle00.gif data/chars/Boss/Abadede/MAp02.gif
+remap data/chars/Boss/Abadede/idle00.gif data/chars/Boss/Abadede/MAp03.gif
+remap data/chars/Boss/Abadede/idle00.gif data/chars/Boss/Abadede/MAp04.gif
+
+anim	waiting
+	loop	1
+	offset	1 -542
+	delay	12
+	frame   data/chars/Boss/Abadede/Select01.gif
+
+anim	Select
+	loop	0
+	offset	1 -542
+	delay	3
+	frame   data/chars/Boss/Abadede/Select00.gif
+	frame   data/chars/Boss/Abadede/Select01.gif
+	frame   data/chars/Boss/Abadede/Select00.gif
+	frame   data/chars/Boss/Abadede/Select01.gif
+	frame   data/chars/Boss/Abadede/Select00.gif
+	frame   data/chars/Boss/Abadede/Select01.gif
+	frame   data/chars/Boss/Abadede/Select00.gif
+	frame   data/chars/Boss/Abadede/Select01.gif
+	frame   data/chars/Boss/Abadede/Select00.gif
+	frame   data/chars/Boss/Abadede/Select01.gif
+
+anim get
+	loop	0
+	delay	12
+	offset	149 201
+	bbox	132 110 38 91
+	frame   data/chars/Boss/Abadede/Rise02.gif
+
+anim Pain5
+	loop	0
+	delay	12
+	offset	149 201
+	bbox	132 110 38 91
+	frame   data/chars/Boss/Abadede/idle00.gif
+	@cmd  spawn01  "_Garnet"  10  0  -10
+	@cmd  spawn01  "_Fog"  15  0  10
+	frame   data/chars/Boss/Abadede/idle00.gif
+
+anim idle
+	loop	1
+	delay	12
+	offset	149 201
+	bbox	132 110 38 91
+	frame   data/chars/Boss/Abadede/idle00.gif
+	@cmd	depost 0
+	@cmd	throw 1 0.7 0.7 1 0 -1
+	@cmd	clearL
+	frame   data/chars/Boss/Abadede/idle01.gif
+	frame   data/chars/Boss/Abadede/idle02.gif
+	frame   data/chars/Boss/Abadede/idle03.gif
+
+anim Grab
+	loop	0
+	delay	12
+	offset	152 202
+	bbox	135 104 32 80
+	frame	data/chars/Boss/Abadede/Ga101.gif
+
+
+anim GrabAttack
+	loop	0
+	delay	12
+	offset	152 202
+	bbox	135 104 32 80
+        hitflash	Forte
+        hitfx	data/sounds/golpes/Forte.wav
+	frame	data/chars/Boss/Abadede/Ga100.gif
+	frame	data/chars/Boss/Abadede/Ga101.gif
+	frame	data/chars/Boss/Abadede/Ga102.gif
+		attack1  150  107  55  54  12  1  0  0  0  15
+		delay  25
+	frame	data/chars/Boss/Abadede/Ga103.gif
+
+
+anim walk
+	loop	1
+	delay	12
+	offset	152 202
+	bbox	135 104 32 80
+	frame	data/chars/Boss/Abadede/walk00.gif
+	frame	data/chars/Boss/Abadede/walk01.gif
+	frame	data/chars/Boss/Abadede/walk02.gif
+	frame   data/chars/Boss/Abadede/walk03.gif
+	frame   data/chars/Boss/Abadede/walk04.gif
+
+
+
+anim jump
+	loop	0
+	delay	45
+	offset	160 203
+	bbox	127 119 49 85
+		burn  109  112  103  62  10  1  0  0  0  10
+	frame	data/chars/Boss/Abadede/JA100.gif
+
+anim jumpLanD
+	loop	0
+	delay	15
+	offset	150 199
+	bbox	130 128 44 77
+	frame	data/chars/Boss/Abadede/Land.gif
+
+
+
+
+
+
+anim attack1
+	loop	0
+	delay	6
+	offset	149 200
+        Range 30 50
+        RangeZ -10 10
+        hitflash	Forte
+        hitfx	data/sounds/golpes/Forte.wav
+	bbox	131 109 35 92
+		Attack1  0
+        Sound	data/chars/Boss/Abadede/A2.WAV
+	frame	data/chars/Boss/Abadede/a100.gif
+		delay  12
+		attack1  144  129  56  23  5  0  0  0  0  15
+		bbox  0
+        Sound	data/sounds/golpes/Soco.wav
+	frame	data/chars/Boss/Abadede/a101.gif
+		delay  5
+		Attack1  0
+	frame	data/chars/Boss/Abadede/a102.gif
+
+anim Attack2
+	loop	0
+	delay	6
+	offset	168 202
+        Range 50 80
+        RangeZ -10 10
+        hitflash	Forte
+		Attack1  0
+        Sound	data/sounds/golpes/Soco.wav
+        hitfx	data/sounds/golpes/Forte.wav
+	frame	data/chars/Boss/Abadede/a200.gif
+	frame	data/chars/Boss/Abadede/a201.gif
+		attack1  151  130  90  32  5  0  0  0  0  15
+	frame	data/chars/Boss/Abadede/a202.gif
+		Attack1  0
+	frame	data/chars/Boss/Abadede/a203.gif
+
+
+anim Attack3
+	loop	0
+	delay	12
+	offset	166 201
+        Range 0 80
+        RangeZ -10 10
+        hitflash	Forte
+        Sound	data/sounds/golpes/Soco.wav
+        hitfx	data/sounds/golpes/Forte.wav
+	frame	data/chars/Boss/Abadede/upper00.gif
+		attack1  194  128  35  41  10  1  0  0  0  15
+	frame	data/chars/Boss/Abadede/upper01.gif
+		delay  5
+		Attack1  0
+	frame	data/chars/Boss/Abadede/upper02.gif
+		attack1  171  72  45  129  1  0  1  1  0  15
+		delay  25
+	frame  data/chars/Boss/Abadede/upper02.gif
+
+anim GrabAttack2
+	loop	0
+	delay	1
+	offset	162 200
+        hitflash	Forte
+		Attack1  0
+        Sound	data/sounds/golpes/Soco.wav
+        hitfx	data/sounds/golpes/Forte.wav
+	frame	data/chars/Boss/Abadede/upper01.gif
+	delay	30
+	@cmd	slamstart
+	@cmd	position 1 35 0 1 -1
+	frame	data/chars/Boss/Abadede/upper01.gif
+	@cmd	position 0 -25 1 1 1
+	frame	data/chars/Boss/Abadede/Throw00.gif
+	@cmd	position 0 -30 35 1 1
+		attack1  121  95  50  46  7  1  0  0  0  15
+	frame	data/chars/Boss/Abadede/Throw01.gif
+	@cmd	position 4 30 35 1 1
+		attack1  198  112  51  50  7  1  0  0  0  15
+	frame	data/chars/Boss/Abadede/Throw02.gif
+	@cmd	position 8 45 35 1 1
+	@cmd	depost 0
+	@cmd	throw 20 5 2 2 0 -1
+	@cmd  clearL
+		delay  80
+		attack1  247  126  69  43  7  1  0  0  0  15
+	frame	data/chars/Boss/Abadede/Throw02.gif
+
+
+
+
+anim throw
+	loop	0
+	delay	20
+	offset	152 202
+        Range 50 80
+        RangeZ -10 10
+        hitflash	Forte
+		Attack1  0
+        Sound	data/sounds/golpes/Soco.wav
+        hitfx	data/sounds/golpes/Forte.wav
+        @cmd dasher 0 0 0
+	@cmd	slamstart
+	@cmd	position 1 35 0 1 -1
+	frame	data/chars/Boss/Abadede/slam00.gif
+	@cmd	position 0 10 25 1 -1
+	frame	data/chars/Boss/Abadede/slam01.gif
+	@cmd	position 4 -40 40 1 -1
+	frame	data/chars/Boss/Abadede/slam02.gif
+	@cmd	position 5 -60 1 -1 -1
+		attack1  42  175  119  27  10  1  0  0  0  15
+	frame	data/chars/Boss/Abadede/slam03.gif
+	@cmd	position 10 -55 1 1 1
+	@cmd	depost 0
+	@cmd	throw 20 5 1 1 0 -1
+	@cmd  clearL
+		Attack1  0
+	frame	data/chars/Boss/Abadede/slam04.gif
+
+anim Freespecial2
+	loop	0
+	delay	12
+	offset	151 201
+        Range 80 100
+        RangeZ -10 10
+		Followcond  1
+		followanim  2
+        hitflash	Forte
+		Attack1  0
+        @cmd dasher 3 0 0
+        Sound	data/sounds/golpes/Soco.wav
+        hitfx	data/sounds/golpes/Grab.wav
+	frame	data/chars/Boss/Abadede/ga100.gif
+		attack1  123  127  59  27  1  0  0  0  0  10
+	frame	data/chars/Boss/Abadede/ga101.gif
+	frame	data/chars/Boss/Abadede/ga101.gif
+
+anim Runattack
+	loop	0
+	delay	12
+	offset	146 200
+        hitflash	Forte
+		Attack1  0
+        Sound	data/sounds/golpes/Soco.wav
+        hitfx	data/sounds/golpes/Forte.wav
+        @cmd dasher 1 0 0
+	frame	data/chars/Boss/Abadede/fs100.gif
+	sound	data/Sounds/Abadede1.wav
+	frame	data/chars/Boss/Abadede/fs101.gif
+		attack1  146  98  72  90  5  0  0  0  0  15
+	frame	data/chars/Boss/Abadede/fs102.gif
+		Attack1  0
+        @cmd dasher 0 0 0
+	frame	data/chars/Boss/Abadede/fs103.gif
+		attack2  146  98  72  90  15  1  0  0  0  15
+	frame	data/chars/Boss/Abadede/fs104.gif
+
+
+
+anim Run
+	loop	1
+	delay	9
+	offset	147 200
+        hitflash	Forte
+        Sound	data/sounds/golpes/Soco.wav
+        hitfx	data/sounds/golpes/Forte.wav
+        @cmd dasher 3 0 0
+		bbox  141  115  36  60
+	frame	data/chars/Boss/Abadede/Run00.gif
+	frame	data/chars/Boss/Abadede/Run01.gif
+	frame	data/chars/Boss/Abadede/Run02.gif
+	frame	data/chars/Boss/Abadede/Run03.gif
+	frame	data/chars/Boss/Abadede/Run04.gif
+
+anim 	Follow3
+	loop	0
+	delay	12
+	offset	146 200
+        Range 100 120
+        RangeZ -10 10
+        hitflash	Forte
+		Attack1  0
+        Sound	data/sounds/golpes/Soco.wav
+        hitfx	data/sounds/golpes/Forte.wav
+        @cmd dasher 0 0 0
+	frame	data/chars/Boss/Abadede/fs100.gif
+	sound	data/Sounds/Abadede1.wav
+	frame	data/chars/Boss/Abadede/fs101.gif
+		attack1  146  98  72  90  5  0  0  0  0  15
+	frame	data/chars/Boss/Abadede/fs102.gif
+		Attack1  0
+	frame	data/chars/Boss/Abadede/fs103.gif
+		attack2  146  98  72  90  15  1  0  0  0  15
+	frame	data/chars/Boss/Abadede/fs104.gif
+
+
+anim Special
+	loop	0
+        energycost 10 1
+        MpOnly 1
+	delay	12
+	offset	150 202
+        hitflash	Forte
+		Attack1  0
+        Sound	data/sounds/golpes/Soco.wav
+        hitfx	data/sounds/golpes/Forte.wav
+	frame	data/chars/Boss/Abadede/special00.gif
+	sound	data/Sounds/Abadede1.wav
+	frame	data/chars/Boss/Abadede/special01.gif
+	frame	data/chars/Boss/Abadede/special02.gif
+		attack2  106  112  85  91  15  1  0  0  0  15
+		delay  35
+	frame	data/chars/Boss/Abadede/special03.gif
+
+anim Special2
+	loop	0
+	delay	12
+        energycost 10 1
+        MpOnly 1
+	offset	150 202
+        hitflash	Forte
+		Attack1  0
+        Sound	data/sounds/golpes/Soco.wav
+        hitfx	data/sounds/golpes/Forte.wav
+	frame	data/chars/Boss/Abadede/special00.gif
+	sound	data/Sounds/Abadede1.wav
+	frame	data/chars/Boss/Abadede/special01.gif
+	frame	data/chars/Boss/Abadede/special02.gif
+		attack2  110  113  85  90  15  1  0  0  0  15
+		delay  35
+	frame	data/chars/Boss/Abadede/special03.gif
+
+
+
+
+
+anim pain
+	loop	0
+	offset	146 201
+	bbox	118 107 50 83
+	delay	5
+	frame	data/chars/Boss/Abadede/pain01.gif
+		delay  25
+		offset  142  201
+	frame	data/chars/Boss/Abadede/pain01.gif
+
+anim pain3
+	loop	0
+	offset	145 201
+	bbox	135 104 35 82
+	delay	5
+	jumpframe  0  2  0  0
+	frame	data/chars/Boss/Abadede/pain01.gif
+		delay  25
+		offset  141  201
+	frame	data/chars/Boss/Abadede/pain01.gif
+
+anim pain4
+	loop	0
+	offset	143 202
+	bbox	123 106 45 97
+	delay	5
+	frame	data/chars/Boss/Abadede/pain01.gif
+		delay  900
+		offset  140  202
+	frame	data/chars/Boss/Abadede/pain01.gif
+
+
+anim grabbed
+	loop	0
+	offset	154 202
+	bbox	139 110 34 77
+	delay	40
+	frame	data/chars/Boss/Abadede/pain02.gif
+
+
+
+anim pain2
+	loop	0
+	offset	154 198
+	bbox	141 109 29 78
+	delay	5
+	frame	data/chars/Boss/Abadede/pain02.gif
+		delay  25
+		offset  150  198
+	frame	data/chars/Boss/Abadede/pain02.gif
+
+
+
+
+
+anim fall2
+	loop	0
+	offset	152 195
+	jumpframe  0  3  -3  0
+	delay	20
+        hitfx	data/sounds/golpes/Forte.wav
+		attack  0
+	frame	data/chars/Boss/Abadede/fall00.gif
+		Attack1  0
+	frame	data/chars/Boss/Abadede/fall01.gif
+		offset  148  199
+		delay  10
+	frame	data/chars/Boss/Abadede/fall02.gif
+
+anim fall
+	loop	0
+	offset	153 188
+	delay	20
+        hitfx	data/sounds/golpes/Forte.wav
+		attack  0
+	frame	data/chars/Boss/Abadede/fall00.gif
+		Attack1  0
+	frame	data/chars/Boss/Abadede/fall01.gif
+		delay  10
+		offset  146  201
+	frame	data/chars/Boss/Abadede/fall02.gif
+
+anim fall6 #Shok
+	loop	0
+	offset	245 181
+	delay	5
+        hitfx	data/sounds/golpes/Forte.wav
+		attack  0
+	frame	data/chars/Boss/Abadede/fall201.gif
+	frame	data/chars/Boss/Abadede/fall200.gif
+	frame	data/chars/Boss/Abadede/fall201.gif
+	frame	data/chars/Boss/Abadede/fall200.gif
+		offset  145  186
+	frame	data/chars/Boss/Abadede/fall01.gif
+		offset  147  200
+	frame	data/chars/Boss/Abadede/fall02.gif
+
+
+anim fall7 #Burn
+	loop	0
+	offset	233 162
+	delay	10
+        hitfx	data/sounds/golpes/Forte.wav
+		attack  0
+	frame	data/chars/Boss/Abadede/FALL300.gif
+	frame	data/chars/Boss/Abadede/FALL301.gif
+	frame	data/chars/Boss/Abadede/FALL302.gif
+	frame	data/chars/Boss/Abadede/FALL300.gif
+	frame	data/chars/Boss/Abadede/FALL301.gif
+		offset  148  198
+	frame	data/chars/Boss/Abadede/FALL02.gif
+
+
+anim rise
+	loop	0
+	offset	148 199
+	delay	20
+	frame	data/chars/Boss/Abadede/Rise00.gif
+	frame	data/chars/Boss/Abadede/Rise01.gif
+	frame	data/chars/Boss/Abadede/Rise02.gif
+
+
+
+
+anim land
+	loop	0
+	delay	40
+	offset	149 201
+	bbox	135 132 43 54
+	frame	data/chars/Boss/Abadede/Land.gif
+
+
+anim Fall9
+	loop	0
+	offset	148 200
+	delay	999
+	frame	data/chars/Boss/Abadede/pain01.gif #0
+	frame	data/chars/Boss/Abadede/pain02.gif #1
+		offset  135  200
+	frame	data/chars/Boss/Abadede/fall01.gif #2
+		offset  147  200
+	frame	data/chars/Boss/Abadede/fall02.gif #3
+		offset  175  163
+	frame	data/chars/Boss/Abadede/fall400.gif #4
+		offset  158  185
+	frame	data/chars/Boss/Abadede/fall401.gif #5
+		offset  143  170
+	frame	data/chars/Boss/Abadede/fall402.gif #6
+		offset  152  200
+	frame  data/chars/Boss/Abadede/fall403.gif #7
+		offset  155  185
+	delay	20
+	frame	data/chars/Boss/Abadede/fall401.gif #8
+	delay	30
+		offset  139  191
+	frame	data/chars/Boss/Abadede/fall404.gif #9
+	offset	150 201
+	frame	data/chars/Boss/Abadede/Fall405.gif #10
+
+
+anim Fall8
+	loop	0
+	flipframe  0
+	offset	156 198
+	delay	30
+	frame	data/chars/Boss/Abadede/fall01.gif #0
+	offset	151 200
+	delay	15
+	frame	data/chars/Boss/Abadede/fall02.gif #1
+
+
+anim Fall5
+	loop	0
+	flipframe  1
+	offset	134 185
+	delay	30
+	frame	data/chars/Boss/Abadede/fall01.gif #0
+	offset	148 199
+	delay	15
+	frame	data/chars/Boss/Abadede/fall02.gif #1
+

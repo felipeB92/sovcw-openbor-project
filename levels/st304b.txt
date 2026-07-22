@@ -1,0 +1,216 @@
+music	data/bgs/st304/Lv304b.bor
+bossmusic	data/music/boss3.bor
+scrollspeed 0.5#1
+stagenumber 4
+background	data/bgs/st304/back00.gif	0.8 1 0 0 0 0 -1 1 0
+panel		data/bgs/st304/pn01.gif		none	none
+frontpanel	data/bgs/st304/fpn01.gif
+#frontpanel      data/bgs/st05/Front02.gif
+cameratype 1
+cameraoffset 0 -30
+#levelscript @script
+#void main() {
+#	changelevelproperty("camerazoffset", 0);
+#	changelevelproperty("cameraxoffset", 0);
+#}
+#@end_script
+#settime         90
+notime          1
+noslow          1
+order		a
+spawn1  	50 20 50
+spawn2  	55 35 50 
+spawn3  	60 50 50
+
+
+wall		10 248 0 100 251 151 50 10000
+
+wall		235 248 0 100 458 358 50 10000
+
+wall		764 248 0 100 390 290 50 10000
+
+wall		1162 248 0 100 200 200 50 10000
+
+
+spawn  Trilho02
+flip   1
+	coords  0 0
+	at  0
+
+
+
+spawn  Kusanagi_
+health 80
+	coords  451 214
+	at  0
+
+spawn  Kusanagi
+health 80
+	coords  229 251 150
+	at  0
+
+wait
+at 500
+
+group 2 2
+at 500
+
+spawn  Kusanagi
+health 80
+	coords  -100 250
+	at  500
+
+spawn  Kusanagi
+health 80
+	coords  500 251
+	at  500
+
+group 3 3
+at 500
+
+
+spawn  Kunai
+	coords  -100 250
+	at  500
+
+spawn  Kusanagi
+map    1
+health 100
+	coords  -150 250
+	at  500
+
+spawn  Kusanagi
+map    1
+health 100
+	coords  500 250
+	at  500
+
+spawn  Kusanagi
+health 80
+	coords  -100 251
+	at  500
+
+spawn  Kusanagi
+health 80
+	coords  500 251
+	at  500
+
+spawn  Sword
+	coords  -100 251
+	at  500
+
+
+spawn  Kusanagi
+map    4
+health 150
+	coords  -150 251
+	at  500
+
+spawn  Kusanagi
+map    4
+health 150
+	coords  -100 251
+	at  500
+
+
+spawn  Kusanagi
+map    4
+health 150
+	coords  500 251
+	at  500
+
+spawn  Kusanagi
+map    2
+health 120
+	coords  600 251
+	at  501
+
+group 4 4
+at 950
+
+spawn  Kusanagi
+map    2
+health 120
+	coords  600 251
+	at  950
+
+spawn  Sword
+	coords  550 251
+	at  950
+
+
+spawn  Kusanagi
+health 80
+	coords  -100 251
+	at  950
+
+spawn  Kusanagi
+health 80
+	coords  500 251
+	at  950
+
+spawn  Kusanagi
+map    2
+health 120
+	coords  600 251
+	at  950
+
+spawn  Kusanagi
+map    2
+health 120
+	coords  600 251
+	at  950
+
+spawn  Kusanagi
+health 80
+	coords  500 251
+	at  950
+
+spawn  Kusanagi
+map    2
+health 120
+	coords  600 251
+	at  950
+
+spawn  Kusanagi
+map    2
+health 120
+	coords  -100 251
+	at  950
+
+spawn  Sword
+	coords  550 251
+	at  950
+
+spawn  Kusanagi
+map    2
+health 120
+	coords  600 251
+	at  950
+
+spawn  Kusanagi
+map    2
+health 120
+	coords  -100 251
+	at  950
+
+spawn  Kusanagi
+map    2
+health 120
+	coords  600 251
+	at  950
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

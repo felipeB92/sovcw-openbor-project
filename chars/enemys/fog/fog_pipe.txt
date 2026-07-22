@@ -1,0 +1,316 @@
+name	Fog_pipe
+health	100
+mp 30
+mprate 1
+#secret 1
+Falldie 2
+Grabdistance 18
+riseinv				0.4 1
+speed	5
+type	None
+gfxshadow	1
+candamage			Player npc obstacle
+JUMPHEIGHT 4
+hostile Player NPC
+#antigrab 2
+atchain   1 1 2 3 4 5
+weapons Fog_Knife Fog_Sword Fog_pipe Fog_Kunai
+icon	data/chars/Enemys/Fog/icon.gif 1
+diesound data/Sounds/Die1.wav
+running	20	3	2	1	1
+onblockwscript	data/scripts/bounceF.c
+#animationscript 	data/scripts/ani0020.h
+animationscript		data/scripts/drago.c
+ondrawscript 		data/scripts/Enemy_ondrawscript.c
+
+
+
+#Load Fog_Knife
+Load Fog_Pipe
+#Load Fog_Kunai
+#Load Fog_Sword
+
+remap data/chars/Enemys/Fog/idle00.gif data/chars/Enemys/Fog/MAp01.gif
+remap data/chars/Enemys/Fog/idle00.gif data/chars/Enemys/Fog/MAp02.gif
+remap data/chars/Enemys/Fog/idle00.gif data/chars/Enemys/Fog/MAp03.gif
+remap data/chars/Enemys/Fog/idle00.gif data/chars/Enemys/Fog/MAp04.gif
+
+
+anim idle
+	loop	1
+	delay	12
+	offset	146 182
+	bbox	133 113 27 69
+	frame   data/chars/Enemys/Fog/Pipe/idle00.gif
+	@cmd	depost 0
+	@cmd	throw 15 0.7 0.7 1 0 -1
+	@cmd	clearL
+	frame   data/chars/Enemys/Fog/Pipe/idle00.gif
+
+
+
+
+anim walk
+	loop	1
+	delay	12
+	offset	145 181
+	bbox	128 106 34 78
+	frame	data/chars/Enemys/Fog/Pipe/walk00.gif
+	frame	data/chars/Enemys/Fog/Pipe/walk01.gif
+	frame	data/chars/Enemys/Fog/Pipe/walk02.gif
+	frame  data/chars/Enemys/Fog/Pipe/walk03.gif
+
+
+
+
+
+anim jump
+	loop	0
+	delay	15
+	offset	138 182
+	bbox	122 112 36 72
+	frame	data/chars/Enemys/Fog/Pipe/Jump00.gif
+	frame	data/chars/Enemys/Fog/Pipe/Jump00.gif
+	frame	data/chars/Enemys/Fog/Pipe/Jump00.gif
+
+anim Get
+	loop	0
+	delay	15
+	offset	144 181
+	bbox	118 133 53 50
+	frame	data/chars/Enemys/Fog/Pipe/Land.gif
+
+anim FreeSpecial
+	loop	0
+	delay	8
+	offset	145 181
+        Range 60 80
+        RangeZ -7 7
+	bbox	131 112 23 72
+		Attack1  0
+        hitflash	Forte
+        hitfx	data/sounds/golpes/Forte.wav
+		move  5
+	frame	data/chars/Enemys/Fog/Pipe/walk00.gif
+	frame	data/chars/Enemys/Fog/Pipe/walk01.gif
+	frame	data/chars/Enemys/Fog/Pipe/walk02.gif
+	frame  data/chars/Enemys/Fog/Pipe/walk03.gif
+		move  0
+	frame	data/chars/Enemys/Fog/Pipe/a100.gif
+		attack1  130  135  93  18  15  1  0  0  0  10
+		delay  30
+	frame	data/chars/Enemys/Fog/Pipe/a101.gif
+		delay 7
+		Attack1  0
+	frame  data/chars/Enemys/Fog/Pipe/a102.gif
+
+
+anim attack1
+	loop	0
+	delay	12
+	offset	145 182
+        Range 0 60
+        RangeZ -7 7
+	bbox	131 112 23 72
+		Attack1  0
+        hitflash	Forte
+        hitfx	data/sounds/golpes/Forte.wav
+        Sound	data/sounds/golpes/Soco.wav
+	frame	data/chars/Enemys/Fog/Pipe/a100.gif
+		attack1  130  135  93  18  15  1  0  0  0  10
+		delay  20
+	frame	data/chars/Enemys/Fog/Pipe/a101.gif
+		delay 7
+		Attack1  0
+	frame  data/chars/Enemys/Fog/Pipe/a102.gif
+
+
+
+anim pain
+	loop	0
+	offset	143 181
+	bbox	123 107 34 74
+	delay	5
+	frame	data/chars/Enemys/Fog/pain01.gif
+		delay  25
+		offset  136  184
+	frame	data/chars/Enemys/Fog/pain01.gif
+
+anim pain3
+	loop	0
+	offset	142 181
+	bbox	127 113 28 69
+	delay	5
+	jumpframe  0  2  0  0
+	frame	data/chars/Enemys/Fog/pain01.gif
+		delay  25
+		offset  141  184
+	frame	data/chars/Enemys/Fog/pain01.gif
+
+anim pain4
+	loop	0
+	offset	143 182
+	bbox	131 111 24 72
+	delay	5
+	frame	data/chars/Enemys/Fog/pain01.gif
+		delay  900
+		offset  137  183
+	frame	data/chars/Enemys/Fog/pain01.gif
+
+
+anim grabbed
+	loop	0
+	offset	151 179
+	bbox	124 116 36 68
+	delay	40
+	frame	data/chars/Enemys/Fog/pain02.gif
+
+
+
+anim pain2
+	loop	0
+	offset	148 180
+	bbox	128 116 36 65
+	delay	5
+	frame	data/chars/Enemys/Fog/pain02.gif
+		delay  25
+		offset  141  183
+	frame	data/chars/Enemys/Fog/pain02.gif
+
+
+
+
+
+anim fall2
+	loop	0
+	offset	149 182
+	jumpframe  0  3  -3  0
+	delay	20
+        hitfx	data/sounds/golpes/Forte.wav
+		attack  0
+	frame	data/chars/Enemys/Fog/fall00.gif
+		Attack1  0
+	frame	data/chars/Enemys/Fog/fall01.gif
+		offset  146  182
+		delay  10
+	frame	data/chars/Enemys/Fog/fall02.gif
+
+anim fall
+	loop	0
+	offset	150 182
+	delay	20
+        hitfx	data/sounds/golpes/Forte.wav
+		attack  0
+	frame	data/chars/Enemys/Fog/fall00.gif
+		Attack1  0
+	frame	data/chars/Enemys/Fog/fall01.gif
+		offset  144  180
+		delay  10
+	frame	data/chars/Enemys/Fog/fall02.gif
+
+anim fall6 #Shok
+	loop	0
+	offset	145 184
+	delay	5
+        hitfx	data/sounds/golpes/Forte.wav
+		attack  0
+	frame	data/chars/Enemys/Fog/fall01.gif
+		offset  88  114
+	frame	data/chars/Enemys/Fog/fall200.gif
+		offset  141  184
+	frame	data/chars/Enemys/Fog/fall01.gif
+		offset  88  114
+	frame	data/chars/Enemys/Fog/fall200.gif
+		offset  143  184
+	frame	data/chars/Enemys/Fog/fall01.gif
+		offset  143  182
+	frame	data/chars/Enemys/Fog/fall02.gif
+
+
+anim fall7 #Burn
+	loop	0
+	offset	65 97
+	delay	10
+        hitfx	data/sounds/golpes/Forte.wav
+		attack  0
+	frame	data/chars/Enemys/Fog/FALL300.gif
+	frame	data/chars/Enemys/Fog/FALL301.gif
+	frame	data/chars/Enemys/Fog/FALL302.gif
+	frame	data/chars/Enemys/Fog/FALL300.gif
+	frame	data/chars/Enemys/Fog/FALL301.gif
+		offset  140  183
+	frame	data/chars/Enemys/Fog/FALL02.gif
+
+
+anim rise
+	loop	0
+	offset	145 181
+	delay	20
+	frame	data/chars/Enemys/Fog/Rise00.gif
+	frame	data/chars/Enemys/Fog/Rise01.gif
+	frame	data/chars/Enemys/Fog/Rise02.gif
+
+
+
+
+
+
+
+anim land
+	loop	0
+	delay	15
+	offset	143 182
+	bbox	131 138 30 46
+	frame	data/chars/Enemys/Fog/Land.gif
+
+
+anim Fall9
+	loop	0
+	offset	142 181
+	delay	999
+	frame	data/chars/Enemys/Fog/pain01.gif #0
+		offset  149  180
+	frame	data/chars/Enemys/Fog/pain02.gif #1
+		offset  150  178
+	frame	data/chars/Enemys/Fog/fall01.gif #2
+		offset  143  181
+	frame	data/chars/Enemys/Fog/fall02.gif #3
+		offset  155  169
+	frame	data/chars/Enemys/Fog/fall400.gif #4
+		offset  151  181
+	frame	data/chars/Enemys/Fog/fall401.gif #5
+		offset  147  168
+	frame	data/chars/Enemys/Fog/fall402.gif #6
+		offset  161  182
+	frame  data/chars/Enemys/Fog/fall403.gif #7
+		offset  151  181
+	delay	20
+	frame	data/chars/Enemys/Fog/fall401.gif #8
+	delay	30
+		offset  149  163
+	frame	data/chars/Enemys/Fog/fall404.gif #9
+	offset	141 155
+	frame	data/chars/Enemys/Fog/Fall405.gif #10
+
+
+anim Fall8
+	loop	0
+	flipframe  0
+	offset	138 184
+	delay	30
+	frame	data/chars/Enemys/Fog/fall01.gif #0
+	offset	142 181
+	delay	15
+	frame	data/chars/Enemys/Fog/fall02.gif #1
+
+
+anim Fall5
+	loop	0
+	flipframe  1
+	offset	127 179
+	delay	30
+	frame	data/chars/Enemys/Fog/fall01.gif #0
+	offset	141 180
+	delay	15
+	frame	data/chars/Enemys/Fog/fall02.gif #1
+

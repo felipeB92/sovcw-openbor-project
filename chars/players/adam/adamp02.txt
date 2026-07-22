@@ -1,0 +1,35 @@
+
+name			AdamP02 #THROWNED
+type			none
+speed 12
+candamage			enemy obstacle
+alpha 1
+nolife			1
+lifespan		4
+remove			1
+gfxshadow		0 0
+flash			Forte
+antigravity 100
+
+anim idle
+	loop	0
+	offset	123 138
+		drawmethod  150  150  0  0  0  -1  -1
+		delay  4
+	frame	data/chars/players/Adam/P200.gif
+	frame	data/chars/players/Adam/P201.gif
+	frame	data/chars/players/Adam/P202.gif
+	frame	data/chars/players/Adam/P203.gif
+	frame	data/chars/players/Adam/P204.gif
+	frame	data/chars/players/Adam/P205.gif
+		delay  5
+	frame	data/chars/players/Adam/P206.gif
+	frame	data/chars/players/Adam/P207.gif
+	frame	data/chars/players/Adam/P208.gif
+	frame	data/chars/players/Adam/P209.gif
+	frame	data/chars/players/Adam/P210.gif
+	frame	data/chars/players/Adam/P211.gif
+	frame	data/chars/players/Adam/P212.gif
+	@cmd killentity getlocalvar("self")
+	frame	data/chars/players/Adam/P212.gif
+

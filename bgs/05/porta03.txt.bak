@@ -1,0 +1,17 @@
+name			PORTA03 #GROUND
+type			None
+Speed 0
+#setlayer 5
+#noquake 	1 1
+#offscreenkill	1000
+#Alpha 1
+
+
+
+anim idle
+	loop	0
+	offset	20 109
+		delay  999
+	frame	data/Bgs/05/Porta00.gif
+
+

@@ -1,0 +1,64 @@
+music		data/bgs/St307/Lv307a.bor
+bossmusic	data/music/boss3.bor
+scrollspeed 0.5#1
+stagenumber 7
+background	data/bgs/st307/back01.gif	1 1 0 0 0 0 -1 1 1
+panel		data/bgs/st307/pn02.gif		none	none
+fglayer		data/bgs/st05/Front02.gif			1000 1 1 0 0 0 0 -1 -1 1 2
+cameratype 1
+cameraoffset 0 -30
+#levelscript @script
+#void main() {
+#	changelevelproperty("camerazoffset", 0);
+#	changelevelproperty("cameraxoffset", 0);
+#}
+#@end_script
+#settime         90
+notime          1
+noslow          1
+order		a
+spawn1  	50 70  50
+spawn2  	55 85  50
+spawn3  	60 105 50
+
+wall 		0 278 -100 -100 168 47 121 10000
+
+wall 		293 278 51 172 300 300 121 10000
+
+spawn  Tv
+flip 1
+	coords  0 0
+	at  0
+
+
+spawn  Pessoas02
+flip 1
+	coords  60 0
+	at  0
+
+
+
+spawn  Stage
+flip 1
+	coords  0 0
+	at  0
+
+
+
+
+spawn  shiva
+map    2
+health 600
+BOss 1
+	coords  400 220 200
+	at  100
+
+
+
+
+
+
+
+
+
+

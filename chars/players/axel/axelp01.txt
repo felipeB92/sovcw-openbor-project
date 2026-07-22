@@ -1,0 +1,28 @@
+
+name			AxelP01 #THROWNED
+type			none
+speed 12
+candamage			enemy obstacle
+alpha 1
+nolife			1
+lifespan		4
+remove			1
+gfxshadow		0 0
+flash			Forte
+#antigravity 100
+
+anim idle
+	loop	0
+	offset	394 602
+		delay  5
+		drawmethod  75  75  0  0  0  -1  -1
+	frame	data/chars/players/Axel/p01/P00.gif
+	frame	data/chars/players/Axel/p01/P01.gif
+	frame	data/chars/players/Axel/p01/P02.gif
+	frame	data/chars/players/Axel/p01/P03.gif
+	frame	data/chars/players/Axel/p01/P04.gif
+	frame	data/chars/players/Axel/p01/P05.gif
+	frame	data/chars/players/Axel/p01/P06.gif
+	@cmd killentity getlocalvar("self")
+	frame	data/chars/players/Axel/p01/P06.gif
+

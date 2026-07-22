@@ -1,0 +1,37 @@
+name    	DelayX1
+health	 	10
+type    	Enemy
+nomove  	1
+gfxshadow			1 1
+falldie    1
+Notgrab 1
+hostile player
+candamage player
+subject_to_platform 0
+subject_to_wall 0
+subject_to_obstacle 0
+subject_to_hole 0
+subject_to_screen 0
+subject_to_gravity 0
+#setlayer 800
+#offscreenkill	500
+nolife 1
+animationscript 	data/scripts/ani0020.h
+onblockwscript	data/scripts/bounceF.c
+ondrawscript 		data/scripts/player_ondrawscript.c
+diesound data/sounds/vozes/Man5.wav
+
+
+anim	spawn
+		offset  31  56
+		delay  400
+	frame	data/chars/Boss/00.GIF
+		delay  4
+	frame	data/chars/Boss/00.GIF
+	@cmd killentity getlocalvar("self")
+	frame	data/chars/Boss/00.GIF
+
+
+
+
+

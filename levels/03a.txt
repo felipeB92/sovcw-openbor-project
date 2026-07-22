@@ -1,0 +1,664 @@
+music		data/music/04a.bor
+bossmusic	data/music/BossR.bor
+scrollspeed 0.5#1
+#direction Left
+stagenumber 4
+background	data/bgs/03/baCK01D.gif 	1 1 0 0 0 0 -1 1 1
+bglayer		data/bgs/03/bAck01C.gif 	0.800 1 0 0 0 0 -1 1 1
+bglayer		data/bgs/03/bAck01b.gif 	0.750 1 0 0 0 0 -1 1 1
+bglayer		data/bgs/03/BAck01a.gif	        0.700 1 0 0 0 0 -1 1 1
+#water		data/bgs/01/Mar01.gif		0.5
+#fglayer         data/bgs/00/FOG.gif              0.5 1 0 0 0 0 -1 1 1 0 1 3 10 0.3
+panel		data/bgs/03/pn01.gif		none	none
+#frontpanel	data/bgs/00/Front00.gif		
+cameratype 1
+cameraoffset 0 -30
+#levelscript @script
+#void main() {
+#	changelevelproperty("camerazoffset", 0);
+#	changelevelproperty("cameraxoffset", 0);
+#}
+#@end_script
+settime         99
+notime          0
+noslow          1
+order		a
+spawn1  	50 20 50
+spawn2  	55 35 50 
+spawn3  	60 50 50
+
+light		128 -128
+at			0
+
+spawn  Lixo02
+Item 1Up
+	coords  15 270
+	at  0
+
+spawn  Lixo02
+	coords  50 270
+	at  0
+
+
+spawn  Slum_
+MAp 4
+health 70
+	coords  378 175
+	at  0
+
+spawn  Act
+	coords  400 175
+	at  0
+
+spawn  Vice__
+MAp 3
+health 70
+	coords  474 152
+	at  0
+
+spawn  Garnet
+MAp 3
+health 70
+	coords  600 220
+	at  150
+
+wait
+at       244
+
+group 4 4
+at 244
+
+spawn  Balu
+MAp 3
+health 50
+	coords  600 220
+	at  244
+
+
+spawn  Donovan
+MAp 3
+health 50
+	coords  -100 250
+	at  244
+
+
+spawn  Galsia
+MAp 3
+health 50
+	coords  600 250
+	at  244
+
+
+spawn  Signal
+MAp 3
+health 70
+	coords  -100 220
+	at  244
+
+
+spawn  Balu
+MAp 3
+health 50
+	coords  600 220
+	at  244
+
+
+spawn  Donovan
+MAp 2
+health 50
+	coords  -100 250
+	at  244
+
+
+spawn  Galsia
+MAp 2
+health 50
+	coords  600 250
+	at  244
+
+spawn  Knife
+	coords  -50 220
+	at  244
+
+spawn  Galsia
+MAp 1
+health 50
+	coords  -100 220
+	at  244
+
+spawn  Signal
+MAp 4
+health 70
+	coords  -100 220
+	at  244
+
+spawn  ActE
+	coords  250 240
+	at  244
+
+spawn  Lixo01
+Item Cash
+	coords  600 220
+	at  245
+
+spawn  Lixo01
+Item Gold
+	coords  650 240
+	at  245
+
+
+spawn  Skiner_B
+health 70
+	coords  600 205
+	at  400
+
+wait
+at       500
+
+group 2 2
+at 500
+
+spawn  Fog_B
+health 1
+Map 2
+	coords  600 250
+	at  500
+
+spawn  Fog_B
+health 70
+	coords  -100 220
+	at  500
+
+
+spawn  Fog_B
+health 1
+Map 3
+	coords  600 210
+	at  500
+
+
+spawn  Skiner_B
+health 1
+Map 1
+	coords  -100 250
+	at  500
+
+spawn  Fog_B
+health 70
+	coords  600 220
+	at  500
+
+
+spawn  Skiner_B
+health 1
+Map 4
+	coords  -100 210
+	at  500
+
+spawn  ActE
+	coords  250 240
+	at  500
+
+group 6 6
+at 501
+
+spawn  Vice__
+health 70
+	coords  563 152
+	at  501
+
+spawn  Slum_
+health 70
+	coords  608 176
+	at  501
+
+spawn  Fog__
+MAp 1
+health 70
+	coords  680 160
+	at  501
+
+spawn  Garnet_
+MAp 1
+health 70
+	coords  740 159
+	at  501
+
+wait
+at       1000
+
+group 6 6
+at 1000
+
+
+spawn  Ruy
+MAp 1
+health 150
+	coords  -100 250
+	at  1000
+
+spawn  Ruy
+Alias Kenny
+MAp 2
+health 150
+	coords  600 220
+	at  1000
+
+spawn  Act
+Coords 160 165
+	at  1000
+
+spawn  Garnet
+health 70
+	coords  -100 250
+	at  1000
+
+spawn  Slum
+MAp 1
+health 70
+	coords  -100 220
+	at  1000
+
+spawn  Vice
+MAp 1
+health 70
+	coords  600 220
+	at  1000
+
+spawn  Balu
+MAp 4
+health 70
+	coords  600 250
+	at  1000
+
+spawn  ActE
+	coords  250 240
+	at  1000
+
+
+
+spawn  Lixo01
+Item Apple
+	coords  600 220
+	at  1001
+
+spawn  Lixo01
+Item Apple
+	coords  650 240
+	at  1001
+
+
+spawn  Costa
+MAp 1
+health 70
+	coords  600 220
+	at  1300
+
+spawn  Costa
+MAp 2
+health 70
+	coords  600 220
+	at  1350
+
+spawn  Chan
+MAp 1
+health 70
+	coords  600 220
+	at  1400
+
+spawn  Chan
+MAp 2
+health 70
+	coords  600 220
+	at  1450
+
+wait
+at       1550
+
+group 5 5
+at 1550
+
+
+spawn  Pipe
+	coords  600 220
+	at  1550
+
+spawn  Fog
+MAp 2
+health 70
+	coords  -100 220
+	at  1550
+
+spawn  Jhonny
+MAp 2
+health 70
+	coords  600 250
+	at  1550
+
+
+spawn  Knife
+	coords  -100 250
+	at  1550
+
+spawn  Galsia
+MAp 2
+health 50
+	coords  -100 250
+	at  1550
+
+
+spawn  Pipe
+	coords  550 250
+	at  1550
+
+spawn  Donovan
+MAp 2
+health 50
+	coords  600 250
+	at  1550
+
+
+spawn  Fog_b
+health 70
+	coords  600 250
+	at  1550
+
+
+spawn  Signal
+MAp 2
+health 70
+	coords  600 250
+	at  1550
+
+spawn  Ralf
+MAp 2
+health 70
+	coords  600 250
+	at  1550
+
+
+spawn  ActE
+	coords  250 240
+	at  1550
+
+group 6 6
+at 1551
+
+spawn  Radio
+Flip 1
+Item Cash
+	coords  885 192
+	at  1551
+
+spawn  Garnet__
+MAp 1
+health 70
+	coords  670 167
+	at  1551
+
+spawn  Garnet__
+Flip 1
+MAp 2
+health 70
+	coords  735 178
+	at  1551
+
+spawn  Garnet__
+Flip 1
+MAp 3
+health 150
+	coords  794 167
+	at  1551
+
+spawn  Nora_
+MAp 2
+health 150
+	coords  904 213
+	at  1551
+
+spawn  Act
+	coords  886 220
+	at  1551
+
+spawn  Electra_
+MAp 2
+health 70
+	coords  886 241
+	at  1551
+
+wait
+at       2100
+
+group 5 5
+at 2100
+
+spawn  Garnet
+MAp 2
+health 70
+	coords  600 241
+	at  2100
+
+spawn  Act
+	coords  142 178
+	at  2100
+
+spawn  Balu
+MAp 2
+health 70
+	coords  -100 241
+	at  2100
+
+spawn  Garnet
+MAp 2
+health 70
+	coords  -100 221
+	at  2100
+
+spawn  Balu
+MAp 2
+health 70
+	coords  600 220
+	at  2100
+
+spawn  ActE
+	coords  250 240
+	at  2100
+
+spawn  Slum_
+Flip 1
+MAp 2
+health 70
+	coords  565 178
+	at  2101
+
+spawn  Slum_
+MAp 3
+health 70
+	coords  640 178
+	at  2101
+
+
+wait
+at       2500
+
+group 5 5
+at 2500
+
+
+spawn  ActE
+	coords  250 240
+	at  2500
+
+spawn  Galsia
+MAp 2
+health 50
+	coords  600 250
+	at  2500
+
+spawn  Skiner
+MAp 1
+health 50
+	coords  600 220
+	at  2500
+
+spawn  Galsia
+MAp 2
+health 50
+	coords  -100 250
+	at  2500
+
+spawn  Act
+	coords  240 178
+	at  2500
+
+spawn  Vice
+MAp 2
+health 50
+	coords  -100 220
+	at  2500
+
+
+spawn  Galsia
+MAp 2
+health 50
+	coords  600 250
+	at  2500
+
+spawn  Skiner
+MAp 1
+health 50
+	coords  600 220
+	at  2500
+
+spawn  Galsia
+MAp 2
+health 50
+	coords  -100 250
+	at  2500
+
+
+spawn  Vice
+MAp 2
+health 50
+	coords  -100 220
+	at  2500
+
+spawn  ActE
+	coords  250 240
+	at  2500
+
+spawn  Tires02
+Item Chicken
+	coords  525 230
+	at  2501
+
+spawn  Tires02
+Item Cash
+	coords  545 205
+	at  2501
+
+spawn  Tires02
+Item Cash
+	coords  540 254
+	at  2501
+
+
+group 3 3
+at 2600
+
+
+spawn  Abadede__
+MAp 4
+health 350
+Boss 1
+	coords  550 205
+	at  2600
+
+spawn  Vice
+MAp 2
+health 50
+	coords  -100 250
+	at  2600
+
+spawn  Slum
+MAp 1
+health 50
+	coords  -100 220
+	at  2600
+
+spawn  Signal
+MAp 2
+health 50
+	coords  550 250
+	at  2600
+
+spawn  GArnet
+MAp 1
+health 50
+	coords  550 220
+	at  2600
+
+
+spawn  Nora
+MAp 3
+health 50
+	coords  -100 250
+	at  2600
+
+spawn  Electra
+MAp 1
+health 50
+	coords  -100 220
+	at  2600
+
+spawn  Balu
+MAp 2
+health 50
+	coords  550 250
+	at  2600
+
+spawn  Fog
+MAp 1
+health 50
+	coords  550 220
+	at  2600
+
+spawn  Donovan
+MAp 3
+health 50
+	coords  -100 250
+	at  2600
+
+spawn  Galsia
+MAp 1
+health 50
+	coords  -100 220
+	at  2600
+
+spawn  Jhonny
+MAp 2
+health 50
+	coords  550 250
+	at  2600
+
+spawn  Costa
+MAp 1
+health 50
+	coords  550 220
+	at  2600
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

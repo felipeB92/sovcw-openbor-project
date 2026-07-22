@@ -1,0 +1,17 @@
+name			ArenaB #GROUND
+type			None
+setlayer -57
+noquake 	1 1
+#offscreenkill	1000
+
+
+anim idle
+	loop	1
+	offset	0 0
+		delay  15
+	frame	data/Bgs/Arena/bAck00.gif
+	frame	data/Bgs/Arena/bAck01.gif
+	frame	data/Bgs/Arena/bAck02.gif
+	frame	data/Bgs/Arena/bAck01.gif
+
+

@@ -1,0 +1,22 @@
+name			Common_Shot
+type			none
+health			1
+nolife			1
+lifespan		2
+remove			1
+shadow			0
+antigravity		100
+didhitscript	data/scripts/didhit/default.c
+animationscript	data/scripts/animation/default.c
+
+anim idle
+	fastattack 1
+	jugglecost 15
+	forcedirection -1
+	hitflash blood
+	loop	0
+	delay	2
+	offset	25 27
+	sound	data/sounds/Shot2.wav
+	attack 20 25 8 3 12 1 1 0 0 12
+	frame	data/chars/macleod/shot/shot00.gif

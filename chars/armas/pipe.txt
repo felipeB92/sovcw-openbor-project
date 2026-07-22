@@ -1,0 +1,32 @@
+name			pipe #GROUND
+type			item
+subtype			weapon
+nolife			1
+typeshot 		0
+weapnum			3
+shootnum 		1
+counter			4
+gfxshadow		1 1
+offscreenkill	1000
+
+anim spawn
+	loop	0
+	delay	5
+	jumpframe  0  3  0  0
+	offset	50 52
+	frame	data/chars/armas/pipe00.gif
+	frame	data/chars/armas/pipe01.gif
+	frame	data/chars/armas/pipe02.gif
+	frame	data/chars/armas/pipe03.gif
+	frame	data/chars/armas/pipe04.gif
+	frame	data/chars/armas/pipe05.gif
+	frame	data/chars/armas/pipe06.gif
+	frame	data/chars/armas/pipe07.gif
+	frame	data/chars/armas/pipe08.gif
+
+anim idle
+	loop	1
+	delay	200
+	offset	51 55
+	bbox 	25 48 51 7
+	frame	data/chars/armas/pipe08.gif

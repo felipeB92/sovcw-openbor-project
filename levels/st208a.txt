@@ -1,0 +1,93 @@
+music		data/bgs/St208/Lv208a.bor
+bossmusic	data/music/boss2.bor
+scrollspeed 0.5#1
+stagenumber 8
+background	data/bgs/st208/back00.gif	0.8 1 0 0 0 0 1 1 1
+#bglayer	data/bgs/st208/bg00.gif		0.3 1 -100 0 0 0 1 1 1 0 1 5 50 0.5
+#bglayer	data/bgs/st208/bg01.gif		0.7 1 0 0 0 0 1 1 1
+panel		data/bgs/st208/pn00.gif		none	none
+#fglayer			data/bgs/st201/fpn00.gif 0 -0.8 0.6 0 0 0 0 1 1 1
+frontpanel      data/bgs/st05/Front02.gif
+cameratype 1
+cameraoffset 	0 -60
+settime         99
+notime          0
+noslow          1
+order		a
+spawn1  	50 20
+spawn2  	55 35
+spawn3  	60 50
+
+
+
+spawn  Vaso
+Item   apple
+	coords  500  210
+	at  50
+
+
+spawn  Particle
+map    1
+health 200
+	coords  500  240
+	at  50
+
+
+spawn  Knife
+	coords  500  230
+	at  50
+
+
+spawn  Galsia
+map    1
+health 40
+	coords  550  230
+	at  50
+
+spawn  Galsia
+map    1
+health 40
+	coords  -100  230
+	at  50
+
+spawn  Pipe
+	coords  -50  250
+	at  100
+
+spawn  Donovan
+health 40
+	coords  -100  250
+	at  100
+
+spawn  Donovan
+health 40
+	coords  500  250
+	at  150
+
+spawn  Vaso
+2pItem   apple
+	coords  500  210
+	at  200
+
+
+
+
+spawn  Bear
+map    3
+	coords  250  230 200
+	at  500
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

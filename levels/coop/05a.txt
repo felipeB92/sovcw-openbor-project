@@ -1,0 +1,248 @@
+music		data/music/06a.bor
+bossmusic	data/music/boss1.bor
+rock		1
+scrollspeed 0.5
+stagenumber 6
+background	data/bgs/05/Back01.gif
+bglayer		data/bgs/05/Sky2.gif		0.8 1 0 0 0 0 -1 1 1 0 1 0 0 0 1
+bglayer		data/bgs/05/bg01.gif		0.6 1 0 0 0 0 -1 1 1 0 3 0.1 1.2 0 3
+panel		data/bgs/05/Pn00.gif
+cameratype 1
+cameraoffset 0 -30
+#levelscript @script
+#void main() {
+#	changelevelproperty("camerazoffset", 0);
+#	changelevelproperty("cameraxoffset", 0);
+#}
+#@end_script
+settime         99
+notime          0
+noslow          1
+order		a
+spawn1  	64 98 300
+spawn2  	66 98 300
+spawn3  	68 98 300
+
+light		128 -128
+at			0
+
+Wall  -220  303  -10  0  768  638  39  87
+Wall  -229  272  10  0  788  783  94  300
+Wall  667  255  -70  0  448  449  22  88
+Wall  1505  287  -113  0  900  900  62  300
+
+spawn  ActP
+	coords  250 250 88
+	at  0
+
+spawn  Chuva01
+Flip 1
+	coords  0 290
+	at  0
+
+spawn  Chuva01
+Flip 1
+	coords  504 290
+	at  0
+
+
+spawn  Chuva03
+Flip 1
+	coords  0 295
+	at  0
+
+
+spawn  Chuva04
+Flip 1
+	coords  1012 245
+	at  0
+
+
+spawn  Chuva02
+Flip 1
+	coords  551 295
+	at  0
+
+
+spawn  Chuva05
+Flip 1
+	coords 675 295
+	at  0
+
+spawn  Chuva01
+Flip 1
+	coords  1008 290
+	at  0
+
+spawn  Vice_
+health 50
+	coords  320 280 88
+	at  0
+
+spawn  Act
+	coords  268 284 0
+	at  0
+
+spawn  Donovan_
+health 50
+	coords  268 290 88
+	at  0
+
+spawn  Act
+	coords  372 275 0
+	at  0
+
+spawn  galsia_
+health 50
+	coords  372 275 88
+	at  0
+
+spawn  Bigben_
+health 70
+	coords  457 276 88
+	at  0
+
+spawn  Slum__
+health 50
+	coords  645 276 0
+	at  0
+
+spawn  Act
+	coords  650 280 0
+	at  0
+
+spawn  Signal_
+health 70
+	coords  700 265 0
+	at  0
+
+spawn  Act
+	coords  850 285 0
+	at  0
+
+spawn  Raven_
+health 70
+	coords  850 285 0
+	at  0
+
+spawn  Box
+Item Apple
+	coords  756 285 0
+	at  300
+
+spawn  Box
+Item Gold
+	coords  600 265 0
+	at  300
+
+
+wait
+at       675
+
+group 4 4
+at  675
+
+spawn  Raven
+MAp 1
+health 70
+	coords  600 265 0
+	at  675
+
+spawn  Raven
+MAp 2
+health 70
+	coords  -100 265 0
+	at  675
+
+spawn  Porta03
+Flip 1
+	coords  62 151 0
+	at  675
+
+spawn  Diga
+MAp 3
+health 50
+	coords  85 246 89
+	at  675
+
+
+spawn  Crakito
+MAp 3
+health 50
+	coords  85 246 89
+	at  675
+
+spawn  Garnet
+MAp 2
+health 70
+	coords  -100 265 0
+	at  675
+
+spawn  Thug
+MAp 2
+health 70
+	coords  600 265 0
+	at  675
+
+spawn  ActE
+	coords  250 240
+	at  675
+
+spawn  ActN
+	coords  250 250
+	at  676
+
+spawn  Raven_
+MAp 1
+health 100
+	coords  680 240 0
+	at  676
+
+spawn  Act
+	coords  680 240 0
+	at  676
+
+spawn  Howk_
+MAp 2
+health 150
+	coords  714 265 0
+	at  676
+
+
+
+spawn  Raven_
+MAp 3
+health 100
+	coords  690 280 0
+	at  676
+
+wait
+at       900
+
+group 4 4
+at  900
+
+spawn  Galsia
+MAp 3
+health 50
+	coords  -100 280 0
+	at  900
+
+spawn  Knife
+	coords  -70 280 0
+	at  900
+
+spawn  Donovan
+MAp 3
+health 50
+	coords  -100 260 0
+	at  900
+
+spawn  Pipe
+	coords  -70 260 0
+	at  900
+
+spawn  ActE
+	coords  250 240
+	at  900
+

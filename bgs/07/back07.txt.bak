@@ -1,0 +1,94 @@
+name			BAck07 #GROUND
+type			Enemy
+mp 50
+mprate 2
+nomove  	1 1
+health	999
+setlayer -57
+noquake 	1 1
+#offscreenkill	1000
+onblockwscript	data/scripts/bounceF.c
+animationscript 	data/scripts/ani0020.h
+
+
+
+
+Load Super
+Load Super2
+Load ZHP01
+
+anim spawn
+	loop	0
+		delay  300
+	offset	253 100
+	frame   data/chars/enemys/zh/Boddy.gif
+		delay  10
+		offset  253  110
+	frame   data/chars/enemys/zh/Boddy.gif
+		offset  253  120
+	frame   data/chars/enemys/zh/Boddy.gif
+		offset  253  130
+	frame   data/chars/enemys/zh/Boddy.gif
+		offset  253  140
+	frame   data/chars/enemys/zh/Boddy.gif
+		offset  253  150
+	frame   data/chars/enemys/zh/Boddy.gif
+		offset  253  160
+	frame   data/chars/enemys/zh/Boddy.gif
+		offset  253  170
+	frame   data/chars/enemys/zh/Boddy.gif
+		offset  253  180
+	frame   data/chars/enemys/zh/Boddy.gif
+		offset  253  190
+	frame   data/chars/enemys/zh/Boddy.gif
+		offset  253  200
+	frame   data/chars/enemys/zh/Boddy.gif
+	offset	253 207
+	frame   data/chars/enemys/zh/Boddy.gif
+
+anim idle
+	loop	1
+	offset	253 209
+		delay  15
+		movea  0
+		move  0
+	frame   data/chars/enemys/zh/Boddy.gif
+	frame  data/chars/enemys/zh/Boddy.gif
+		offset  254  209
+	frame  data/chars/enemys/zh/Boddy.gif
+		offset  255  209
+	frame  data/chars/enemys/zh/Boddy.gif
+		movea  0
+		offset  256  209
+	frame  data/chars/enemys/zh/Boddy.gif
+		offset  257  209
+	frame  data/chars/enemys/zh/Boddy.gif
+		offset  258  209
+	frame  data/chars/enemys/zh/Boddy.gif
+		move  0
+		movea  0
+	frame  data/chars/enemys/zh/Boddy.gif
+	frame  data/chars/enemys/zh/Boddy.gif
+	frame  data/chars/enemys/zh/Boddy.gif
+		movea  0
+	frame  data/chars/enemys/zh/Boddy.gif
+	frame  data/chars/enemys/zh/Boddy.gif
+	frame  data/chars/enemys/zh/Boddy.gif
+
+
+anim Freespecial
+	loop	0
+	offset	253 207
+        Range   0 500
+        Rangez  0  300
+        energycost 50 1
+        MpOnly 1
+		delay  15
+	frame   data/chars/enemys/zh/Boddy.gif
+	@cmd  spawn01  "Super2"  0  0  0
+	frame   data/chars/enemys/zh/Boddy.gif
+	@cmd  spawn01  "Super"  0  0  0
+	frame   data/chars/enemys/zh/Boddy.gif
+	@cmd  spawn01  "ZHP01"  0  0  0
+	frame   data/chars/enemys/zh/Boddy.gif
+

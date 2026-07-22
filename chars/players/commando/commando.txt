@@ -1,0 +1,685 @@
+name	Commando
+health	100
+mp 10
+chargerate 2
+mprate 1
+#secret 1
+Falldie 2
+Grabdistance 18
+riseinv				0.4 1
+speed	8
+type	player
+candamage			enemy obstacle
+gfxshadow	1
+JUMPHEIGHT 4
+#Jumpheight 3
+antigrab 2
+atchain   1 2 3 4 5
+weapons Commando_Knife Adam_Sword Commando_pipe Adam_Kunai None Blaze
+icon	data/chars/players/Commando/icon.gif 1
+diesound data/chars/players/Commando/Death.wav
+running	20	3	2	1	1
+onblockwscript	data/scripts/bounceF.c
+onblockwscript	data/scripts/bounceF.c
+#animationscript 	data/scripts/ani0020.h
+animationscript		data/scripts/drago.c
+#ondrawscript 		data/scripts/player_ondrawscript.c
+
+Load CommandoP01
+Load CommandoP02
+Load CommandoP03
+Load CommandoP04
+
+
+Load Ginzo_
+LOAD Baby_
+
+Load Commando_Knife
+Load Commando_Pipe
+#Load Adam_Kunai
+#Load Adam_Sword
+
+remap data/chars/players/Commando/idle00.gif data/chars/players/Commando/MAp01.gif
+remap data/chars/players/Commando/idle00.gif data/chars/players/Commando/MAp02.gif
+remap data/chars/players/Commando/idle00.gif data/chars/players/Commando/MAp03.gif
+remap data/chars/players/Commando/idle00.gif data/chars/players/Commando/MAp04.gif
+
+anim	waiting
+	loop	1
+	offset	1 -542
+	delay	16
+	frame   data/chars/players/Commando/select01.gif
+	frame   data/chars/players/Commando/select02.gif
+	frame   data/chars/players/Commando/select03.gif
+	frame   data/chars/players/Commando/select02.gif
+
+
+anim	Select
+	loop	0
+	offset	1 -542
+	delay	3
+	frame   data/chars/players/Commando/select00.gif
+	frame   data/chars/players/Commando/select03.gif
+	frame   data/chars/players/Commando/select00.gif
+	frame   data/chars/players/Commando/select03.gif
+	frame   data/chars/players/Commando/select00.gif
+	frame   data/chars/players/Commando/select03.gif
+	frame   data/chars/players/Commando/select00.gif
+	frame   data/chars/players/Commando/select03.gif
+	frame   data/chars/players/Commando/select00.gif
+	frame   data/chars/players/Commando/select03.gif
+	frame   data/chars/players/Commando/select00.gif
+	frame   data/chars/players/Commando/select03.gif
+
+anim Pain5
+	loop	0
+	delay	12
+	offset	235 167
+        Range 0 40
+        Rangez -10 10
+	bbox	220 99 37 68
+	frame   data/chars/players/Commando/idle00.gif
+	@cmd  spawn01  "Ginzo_"  -5  0  10
+	@cmd  spawn01  "BAby_"  5  0  -10
+	frame   data/chars/players/Commando/idle00.gif
+
+anim idle
+	loop	1
+	delay	16
+	offset	235 167
+	bbox	221 96 30 74
+	frame   data/chars/players/Commando/idle00.gif
+	@cmd	depost 0
+	@cmd	throw 15 0.7 0.7 1 0 -1
+	@cmd	clearL
+	frame   data/chars/players/Commando/idle01.gif
+	frame   data/chars/players/Commando/idle02.gif
+	frame   data/chars/players/Commando/idle03.gif
+
+
+anim Run
+	loop	1
+	delay	8
+	offset	242 168
+	bbox	222 100 41 60
+	frame   data/chars/players/Commando/run00.gif
+	frame   data/chars/players/Commando/run01.gif
+        Sound	data/sounds/Run.wav
+	frame   data/chars/players/Commando/run02.gif
+	frame   data/chars/players/Commando/run03.gif
+        Sound	data/sounds/Run.wav
+	frame   data/chars/players/Commando/run04.gif
+	frame   data/chars/players/Commando/run05.gif
+
+anim RunAttack
+	loop	0
+	delay	12
+	offset	209 144
+        Fastattack 1
+        hitflash	MEdio
+        hitfx	data/sounds/golpes/Medio.wav
+	bbox	181 86 42 44
+      @cmd dasher 1 0 0
+	frame   data/chars/players/Commando/ra100.gif
+	Sound	data/chars/players/Commando/ra.wav
+	@cmd  spawn01  "CommandoP03"  0  0  1
+	frame   data/chars/players/Commando/ra101.gif
+		attack7  189  105  82  24  5  0  0  0  0  15
+	frame   data/chars/players/Commando/ra102.gif
+      @cmd dasher 0 0 0
+		Attack1  0
+		move  0
+		delay  6
+	frame   data/chars/players/Commando/ra103.gif
+      @cmd dasher 1 0 0
+	frame   data/chars/players/Commando/ra101.gif
+	@cmd  spawn01  "CommandoP03"  0  0  1
+	frame   data/chars/players/Commando/ra101.gif
+		attack7  174  108  94  26  10  1  0  0  0  15
+		delay  12
+	frame   data/chars/players/Commando/ra102.gif
+      @cmd dasher 0 0 0
+	frame   data/chars/players/Commando/ra102.gif
+
+
+anim walk
+	loop	1
+	delay	10
+	offset	229 165
+	bbox	216 94 36 50
+	frame	data/chars/players/Commando/walk00.gif
+	frame	data/chars/players/Commando/walk01.gif
+	frame	data/chars/players/Commando/walk02.gif
+	frame	data/chars/players/Commando/walk03.gif
+	frame	data/chars/players/Commando/walk04.gif
+	frame	data/chars/players/Commando/walk05.gif
+	frame	data/chars/players/Commando/walk06.gif
+	frame	data/chars/players/Commando/walk07.gif
+	frame	data/chars/players/Commando/walk08.gif
+	frame	data/chars/players/Commando/walk09.gif
+	frame	data/chars/players/Commando/walk10.gif
+
+anim get
+	loop	0
+	delay	20
+	offset	246 163
+	frame	data/chars/players/Commando/Get.gif
+
+
+anim jump
+	loop	0
+	delay	15
+	offset	228 175
+	bbox	205 90 41 77
+	frame	data/chars/players/Commando/Jump00.gif
+	frame	data/chars/players/Commando/Jump01.gif
+	frame	data/chars/players/Commando/Jump01.gif
+
+
+anim jumpattack
+	loop	0
+	delay	8
+	offset	232 149
+	bbox	207 89 38 46
+        hitflash	MEdio
+        hitfx	data/sounds/golpes/medio.wav
+        Sound	data/sounds/golpes/Chut.wav
+		attack1  208  94  64  29  10  1  0  0  0  15
+	frame	data/chars/players/Commando/Ja100.gif
+	Sound	data/chars/players/Commando/a2.wav
+		attack1  207  96  67  60  10  1  0  0  0  15
+	frame	data/chars/players/Commando/Ja101.gif
+	frame	data/chars/players/Commando/Ja102.gif
+
+
+anim jumpattack2
+	loop	0
+	delay	5
+	offset	234 169
+	bbox	216 89 40 53
+        hitflash	MEdio
+        hitfx	data/sounds/golpes/medio.wav
+        Sound	data/sounds/golpes/Chut.wav
+	frame	data/chars/players/Commando/ja200.gif
+		attack1  205  105  64  50  8  0  0  0  0  10
+		delay  7
+	Sound	data/chars/players/Commando/a1.wav
+		bbox  211  98  55  49
+	frame	data/chars/players/Commando/Ja201.gif
+
+anim jumpforward
+	loop	0
+	delay	5
+	offset	224 160
+	bbox	190 93 57 43
+        hitflash	MEdio
+        hitfx	data/sounds/golpes/medio.wav
+        Sound	data/sounds/golpes/Chut.wav
+	frame	data/chars/players/Commando/Ja300.gif
+		delay  7
+	Sound	data/chars/players/Commando/a2.wav
+		Attack1  200  110  73  30  10  1  0  0  0  10
+	frame	data/chars/players/Commando/Ja301.gif
+		attack1  205  111  85  28  10  1  0  0  0  10
+	frame	data/chars/players/Commando/Ja302.gif
+	frame	data/chars/players/Commando/Ja303.gif
+
+anim runjumpattack
+	loop	0
+	delay	6
+	offset	229 148
+	bbox	214 96 35 39
+        hitflash	MEdio
+        hitfx	data/sounds/golpes/medio.wav
+        Sound	data/sounds/golpes/Chut.wav
+		Attack1  0
+	frame	data/chars/players/Commando/JA100.gif
+	Sound	data/chars/players/Commando/a1.wav
+		attack1  208  98  66  60  10  1  0  0  0  10
+	frame	data/chars/players/Commando/JA101.gif
+		delay  30
+	frame	data/chars/players/Commando/JA101.gif
+	frame	data/chars/players/Commando/JA102.gif
+
+
+anim attack1
+	loop	0
+	delay	6
+	offset	209 167
+        hitflash	Fraco
+	bbox	195 87 28 76
+		Attack1  0
+        Sound	data/sounds/golpes/Soco.wav
+        hitfx	data/sounds/golpes/Fraco.wav
+	frame	data/chars/players/Commando/a100.gif
+		attack1  198  100  83  18  5  0  0  0  0  10
+		delay  7
+	frame	data/chars/players/Commando/a101.gif
+		delay  3
+		Attack1  0
+	frame	data/chars/players/Commando/a100.gif
+
+
+anim attack2
+	loop	0
+	delay	4
+	offset	224 165
+        hitflash	Fraco
+	bbox	208 104 32 63
+		Attack1  0
+        hitfx	data/sounds/golpes/FRACO.wav
+	Sound	data/chars/players/Commando/a1.wav
+	frame	data/chars/players/Commando/a200.gif
+	frame	data/chars/players/Commando/a201.gif
+		attack2  226  100  53  42  3  0  0  0  0  10
+	frame	data/chars/players/Commando/a202.gif
+		attack2  220  97  68  41  3  0  0  0  0  10
+	frame	data/chars/players/Commando/a203.gif
+
+anim attack3
+	loop	0
+	delay	5
+	offset	239 176
+	bbox	229 104 36 41
+        hitflash	Medio
+        Sound	data/sounds/golpes/Chut.wav
+        hitfx	data/sounds/golpes/MEdio.wav
+	frame	data/chars/players/Commando/a300.gif
+		Attack1  0
+	frame	data/chars/players/Commando/a301.gif
+		delay  5
+	frame	data/chars/players/Commando/a302.gif
+		delay  10
+		attack1  259  106  26  42  3  0  0  0  0  15
+	frame	data/chars/players/Commando/a303.gif
+		attack1  246  84  37  95  3  0  0  0  0  15
+	frame	data/chars/players/Commando/a304.gif
+
+anim attack4
+	loop	0
+	delay	5
+	offset	230 175
+	bbox	210 111 36 50
+        hitflash	Medio
+        Sound	data/sounds/golpes/Chut.wav
+        hitfx	data/sounds/golpes/Medio.wav
+	Sound	data/chars/players/Commando/a2.wav
+	frame	data/chars/players/Commando/a400.gif
+		Attack1  0
+	frame	data/chars/players/Commando/a401.gif
+		attack2  216  91  68  84  3  0  0  0  0  15
+		delay  5
+	frame	data/chars/players/Commando/a402.gif
+	frame	data/chars/players/Commando/a403.gif
+		Attack1  0
+	frame	data/chars/players/Commando/a404.gif
+
+anim attack5
+	loop	0
+	delay	5
+	offset	226 178
+	bbox	229 104 36 41
+        hitflash	Forte
+        Sound	data/sounds/golpes/Chut.wav
+        hitfx	data/sounds/golpes/Forte.wav
+	Sound	data/chars/players/Commando/a3.wav
+	frame	data/chars/players/Commando/a500.gif
+		Attack1  0
+	frame	data/chars/players/Commando/a501.gif
+		attack2  230  100  51  77  8  1  0  0  0  15
+		delay  5
+	frame	data/chars/players/Commando/a502.gif
+		delay  20
+		attack2  222  95  71  86  8  1  0  0  0  15
+	frame	data/chars/players/Commando/a503.gif
+		Attack1  0
+		delay  5
+	frame	data/chars/players/Commando/a504.gif
+	frame	data/chars/players/Commando/a505.gif
+
+
+
+anim grab
+	loop	0
+	delay	100
+	offset	238 171
+	bbox	223 100 33 84
+        cancel	0 3 0 J freespecial
+	frame	data/chars/players/Commando/GrAB.gif
+
+anim throw
+	loop	0
+	delay	20
+	offset	235 172
+        hitflash	Forte
+        hitfx	data/sounds/golpes/Forte.wav
+		Attack1  0
+	@cmd	slamstart
+	@cmd	position 1 20 0 0 -1
+	frame	data/chars/players/Commando/Grab.gif
+	Sound	data/chars/players/Commando/a1.wav
+		attack1  220  107  28  45  7  1  0  0  0  10
+		delay  10
+	@cmd	position 1 20 1 0 -1
+		offset  255  169
+	frame	data/chars/players/Commando/T00.gif
+	@cmd	position 7 5 20 0 -1
+		attack1  210  81  38  35  7  1  0  0  0  15
+	frame  data/chars/players/Commando/T01.gif
+		delay  12
+		attack1  162  97  40  36  7  1  1  0  0  15
+	@cmd	position 4 -15 50 1 -1
+	frame	data/chars/players/Commando/T02.gif
+	@cmd	position 8 -30 35 1 -1
+	@cmd	depost 0
+	@cmd	throw 15 5 2 2 0 -1
+	@cmd	clearL
+		attack1  141  99  52  32  7  1  0  0  0  15
+	frame	data/chars/players/Commando/T03.gif
+		attack1  115  106  39  28  7  1  0  0  0  15
+	frame  data/chars/players/Commando/T04.gif
+
+
+
+
+
+
+
+
+anim pain
+	loop	0
+	offset	237 165
+	bbox	205 84 43 83
+	delay	5
+	frame	data/chars/players/Commando/pain01.gif
+		delay  25
+		offset  234  165
+	frame	data/chars/players/Commando/pain01.gif
+
+anim pain3
+	loop	0
+	offset	234 165
+	bbox	216 94 42 75
+	delay	5
+	jumpframe  0  2  0  0
+	frame	data/chars/players/Commando/pain01.gif
+		delay  25
+		offset  231  165
+	frame	data/chars/players/Commando/pain01.gif
+
+anim pain4
+	loop	0
+	offset	239 165
+	bbox	221 92 32 82
+	delay	5
+	frame	data/chars/players/Commando/pain01.gif
+		delay  900
+		offset  237  165
+	frame	data/chars/players/Commando/pain01.gif
+
+
+anim grabbed
+	loop	0
+	offset	237 167
+	bbox	221 93 32 77
+	delay	40
+	frame	data/chars/players/Commando/pain01.gif
+
+
+
+anim pain2
+	loop	0
+	offset	244 164
+	bbox	208 93 36 61
+	delay	5
+	frame	data/chars/players/Commando/pain02.gif
+		delay  25
+		offset  242  164
+	frame	data/chars/players/Commando/pain02.gif
+
+
+
+
+
+anim fall2
+	loop	0
+	offset	228 164
+	jumpframe  0  3  -3  0
+	delay	20
+        hitfx	data/sounds/golpes/Forte.wav
+		attack  0
+	frame	data/chars/players/Commando/fall00.gif
+		Attack1  0
+		offset  241  155
+	frame	data/chars/players/Commando/fall01.gif
+		delay  10
+		offset  240  143
+	frame	data/chars/players/Commando/fall02.gif
+
+anim fall
+	loop	0
+	offset	233 170
+	delay	20
+        hitfx	data/sounds/golpes/Forte.wav
+		attack  0
+	frame	data/chars/players/Commando/fall00.gif
+		Attack1  0
+		offset  234  151
+	frame	data/chars/players/Commando/fall01.gif
+		delay  10
+		offset  241  144
+	frame	data/chars/players/Commando/fall02.gif
+
+anim fall6 #Shok
+	loop	0
+	offset	81 111
+	delay	5
+        hitfx	data/sounds/golpes/Forte.wav
+		attack  0
+	frame	data/chars/players/Commando/fall201.gif
+	frame	data/chars/players/Commando/fall200.gif
+	frame	data/chars/players/Commando/fall201.gif
+	frame	data/chars/players/Commando/fall200.gif
+	frame	data/chars/players/Commando/fall201.gif
+		offset  242  140
+	frame	data/chars/players/Commando/fall02.gif
+
+
+anim fall7 #Burn
+	loop	0
+	offset	61 99
+	delay	10
+        hitfx	data/sounds/golpes/Forte.wav
+		attack  0
+	frame	data/chars/players/Commando/FALL300.gif
+	frame	data/chars/players/Commando/FALL301.gif
+	frame	data/chars/players/Commando/FALL302.gif
+	frame	data/chars/players/Commando/FALL300.gif
+	frame	data/chars/players/Commando/FALL301.gif
+		offset  238  142
+	frame	data/chars/players/Commando/FALL02.gif
+
+
+anim rise
+	loop	0
+	offset	231 141
+	delay	12
+	frame	data/chars/players/Commando/Fall02.gif
+		offset  232  166
+	frame	data/chars/players/Commando/Rise00.gif
+	frame	data/chars/players/Commando/Rise01.gif
+	frame	data/chars/players/Commando/Rise02.gif
+		offset  247  166
+	frame	data/chars/players/Commando/Rise03.gif
+		offset  237  166
+	frame  data/chars/players/Commando/land.gif
+
+
+
+
+anim Special2
+        energycost 10 1
+        MpOnly 1
+	loop	0
+	offset	233 165
+        hitflash	Forte
+        hitfx	data/sounds/golpes/Forte.wav
+		Attack1  0
+		delay  12
+		move  0
+	frame	data/chars/players/Commando/fs200.gif
+	@cmd  spawn01  "CommandoP01"  0  0  1
+		delay  2
+	frame	data/chars/players/Commando/FS201.gif
+	Sound	data/chars/players/Commando/SP02.wav
+	frame	data/chars/players/Commando/FS202.gif
+		delay  35
+		attack7  227  105  193  27  20  1  1  0  0  15
+	frame  data/chars/players/Commando/FS203.gif
+		delay  10
+		Attack1  0
+	frame  data/chars/players/Commando/FS204.gif
+
+
+
+
+anim Special
+        energycost 10 1
+        MpOnly 1
+	loop	0
+	offset	235 166
+        hitflash	Shock
+        hitfx	data/sounds/golpes/forte.wav
+		delay  8
+		Attack1  0
+	frame	data/chars/players/Commando/fs100.gif
+		delay  6
+	frame	data/chars/players/Commando/fs101.gif
+	Sound	data/chars/players/Commando/Sp01.wav
+		Attack1  0
+	frame	data/chars/players/Commando/fs102.gif
+	@cmd  spawn01  "CommandoP02"  0  0  1
+                delay  35
+		attack6  162  -4  154  172  20  1  1  0  0  20
+	frame	data/chars/players/Commando/fs103.gif
+		Attack1  0
+	frame	data/chars/players/Commando/fs104.gif
+
+anim jumpspecial
+        energycost 10 1
+        MpOnly 1
+	loop	0
+	offset	237 165
+        hitflash	fORTE
+        hitfx	data/sounds/golpes/forte.wav
+	Sound	data/chars/players/Commando/Sp02.wav
+		delay  3
+	frame	data/chars/players/Commando/fs300.gif
+	frame	data/chars/players/Commando/fs301.gif
+	frame	data/chars/players/Commando/fs302.gif
+	frame	data/chars/players/Commando/fs303.gif
+		attack7  224  102  222  41  20  1  1  0  0  15
+		delay  20
+	@cmd  spawn01  "CommandoP04"  0  0  1
+	frame	data/chars/players/Commando/fs304.gif
+		Attack1  0
+	frame	data/chars/players/Commando/fs305.gif
+
+
+
+
+anim grabattack
+	loop	0
+	offset	238 171
+	bbox	220 102 37 78
+	delay	8
+        hitflash	fRACO
+        hitfx	data/sounds/golpes/fRACO.wav
+		Attack1  0
+	frame	data/chars/players/Commando/ga100.gif
+		delay  6
+	frame	data/chars/players/Commando/ga101.gif
+		delay  20
+		attack2  228  110  42  33  5  0  0  0  0  10
+	frame	data/chars/players/Commando/Ga102.gif
+
+
+anim grabattack2
+	loop	0
+	offset	226 165
+	bbox	214 90 29 68
+	delay	7
+        hitflash	Forte
+        hitfx	data/sounds/golpes/Forte.wav
+		Attack1  0
+	frame	data/chars/players/Commando/Ga200.gif
+		delay  8
+		offset  229  165
+	frame	data/chars/players/Commando/Ga200.gif
+		attack1  222  103  57  45  12  1  0  0  0  15
+	frame	data/chars/players/Commando/Ga201.gif
+		delay  30
+	frame	data/chars/players/Commando/Ga201.gif
+
+
+
+
+
+anim land
+	loop	0
+	delay	15
+	offset	241 167
+	bbox	228 105 33 63
+	frame	data/chars/players/Commando/Land.gif
+
+
+anim Fall9
+	loop	0
+	offset	235 165
+	delay	999
+	frame	data/chars/players/Commando/pain01.gif #0
+		offset  242  165
+	frame	data/chars/players/Commando/pain02.gif #1
+		offset  230  143
+	frame	data/chars/players/Commando/fall01.gif #2
+		offset  233  140
+	frame	data/chars/players/Commando/fall02.gif #3
+		offset  244  141
+	frame	data/chars/players/Commando/fall400.gif #4
+		offset  236  161
+	frame	data/chars/players/Commando/fall401.gif #5
+		offset  238  142
+	frame	data/chars/players/Commando/fall402.gif #6
+		offset  241  162
+	frame  data/chars/players/Commando/fall403.gif
+		offset  239  162
+		delay  20
+	frame  data/chars/players/Commando/fall401.gif
+		offset  230  141
+		delay  30
+	frame  data/chars/players/Commando/fall404.gif
+		offset  238  143
+	frame  data/chars/players/Commando/fall405.gif
+
+
+anim Fall8
+	loop	0
+	flipframe  0
+	offset	225 143
+	delay	30
+	frame	data/chars/players/Commando/fall01.gif #0
+	delay	15
+		offset  232  142
+	frame	data/chars/players/Commando/fall02.gif #1
+
+
+anim Fall5
+	loop	0
+	flipframe  1
+	offset	232 153
+	delay	30
+	frame	data/chars/players/Commando/fall01.gif #0
+	delay	15
+		offset  228  150
+	frame	data/chars/players/Commando/fall02.gif #1
+

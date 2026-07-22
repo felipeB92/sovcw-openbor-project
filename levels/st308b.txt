@@ -1,0 +1,280 @@
+music		data/bgs/St308/Lv308b.bor
+bossmusic	data/music/boss1.bor
+scrollspeed 0.5#1
+stagenumber 8
+background	data/bgs/st308/back01.gif	0.6 1 0 0 0 0 -1 1 1
+panel		data/bgs/st308/pn01.gif		none	none
+fglayer		data/bgs/st05/Front02.gif 			1000 1 1 0 0 0 0 -1 -1 1 2
+cameratype 1
+cameraoffset 0 -30
+#levelscript @script
+#void main() {
+#	changelevelproperty("camerazoffset", 0);
+#	changelevelproperty("cameraxoffset", 0);
+#}
+#@end_script
+#settime         90
+notime          1
+noslow          1
+order		a
+spawn1  	50 70  50
+spawn2  	55 85  50
+spawn3  	60 105 50
+
+spawn		LuzB08
+flip		1
+coords		0 0
+at			0
+
+
+
+spawn		esteira04 1
+flip		1
+coords		286 276 0
+at			0
+
+
+spawn		esteira05 1
+flip		1
+coords		800 276 0
+at			0
+
+wait
+at  0
+
+Group 2  2
+at  0
+
+
+spawn  Robot
+flip   1
+health 80
+	coords  -100 190
+	at  0
+
+spawn  Robot
+health 80
+	coords  500 260
+	at  0
+
+spawn  Robot
+flip   1
+health 80
+	coords  -100 190
+	at  0
+
+spawn  Robot
+health 80
+	coords  500 260
+	at  0
+spawn  Robot
+flip   1
+health 80
+	coords  -100 190
+	at  0
+
+spawn  Robot
+health 80
+	coords  500 260
+	at  0
+spawn  Robot
+flip   1
+health 80
+	coords  -100 190
+	at  0
+
+spawn  Robot
+health 80
+	coords  500 260
+	at  0
+spawn  Robot
+flip   1
+health 80
+	coords  -100 190
+	at  0
+
+spawn  Robot
+health 80
+	coords  500 260
+	at  0
+
+
+Group 9  9
+at  1
+
+spawn  P1
+health 100
+	coords  500 260
+	at  150
+
+spawn  P1
+map    2
+health 100
+	coords  500 180
+	at  150
+
+spawn  P1
+map    2
+health 100
+	coords  -100 240
+	at  200
+
+spawn  P1
+health 100
+	coords  500 260
+	at  250
+
+wait
+at  400
+
+Group 4  4
+at  400
+
+spawn  maclean
+map    1
+health 100
+	coords  -100 240 5
+	at  400
+
+spawn  macleod
+health 100
+	coords  500 260 5
+	at  400
+
+spawn  P1
+map    2
+health 100
+	coords  -100 240 5
+	at  400
+
+spawn  P1
+map    2
+health 100
+	coords  -100 190 5
+	at  400
+
+spawn  P1
+map    2
+health 100
+	coords  -100 260 5
+	at  400
+
+
+Group 9  9
+at  401
+
+spawn  maclean
+map    2
+health 100
+	coords  550 240 5
+	at  600
+
+spawn  macleod
+health 100
+	coords  500 260 5
+	at  600
+
+spawn  mcbride
+health 100
+	coords  500 190 5
+	at  600
+
+
+
+wait
+at  900
+
+Group 4  4
+at  900
+
+spawn  P1
+health 100
+	coords  -100 190 5
+	at  900
+
+spawn  P1
+health 100
+	coords  500 190 5
+	at  900
+
+
+spawn  P1
+health 100
+	coords  -100 190 5
+	at  900
+
+spawn  P1
+health 100
+	coords  500 190 5
+	at  900
+
+spawn  P1
+health 100
+	coords  500 190 5
+	at  900
+
+Group 9  9
+at  901
+
+spawn  Box03
+item   Chicken
+	coords  510 190 5
+	at  901
+
+spawn  Box03
+2pitem   Chicken
+	coords  560 190 5
+	at  901
+
+
+spawn  Box03
+3pitem   Chicken
+	coords  610 190 5
+	at  901
+
+spawn  Jet_jr
+health 50
+	coords  500 240 5
+	at  901
+
+wait
+at  1200
+
+Group 3  3
+at  1200
+
+
+spawn  P1
+health 100
+	coords  500 190 5
+	at  1200
+
+spawn  P1
+health 100
+	coords  500 190 5
+	at  1200
+
+health 100
+	coords  500 190 5
+	at  1200
+
+spawn  P1
+health 100
+	coords  500 190 5
+	at  1200
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

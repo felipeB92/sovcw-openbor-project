@@ -1,0 +1,111 @@
+music		data/bgs/St203/Lv203b.bor
+bossmusic	data/music/boss2.bor
+scrollspeed 0.5#1
+stagenumber 3
+background	data/bgs/st203/bg00.gif
+panel		data/bgs/St203/Pn14.gif
+#fglayer			data/bgs/st201/fpn00.gif 0 -0.8 0.6 0 0 0 0 1 1 1
+frontpanel      data/bgs/St203/fpn03.gif
+cameratype 1
+cameraoffset 	0 -60
+settime         99
+notime          0
+noslow          1
+order		a
+spawn1  	45 20
+spawn2  	50 35
+spawn3  	55 50
+
+wall		0 275 -500 -500 210 50 80 10000
+
+spawn  Luz07
+flip   1
+	coords  0  0
+	at  0
+
+
+
+
+
+spawn  Kunai
+	coords  605  265
+	at  0
+
+spawn  Sword
+	coords  727  252
+	at  0
+
+spawn  Box03
+item   apple
+	coords  346  250
+	at  0
+
+
+spawn  Box03
+item   1up
+	coords  508  250
+	at  0
+
+
+
+spawn  Galsia
+map  1
+health 40
+	coords  500  230
+	at  60
+
+
+spawn  Galsia
+map  1
+health 40
+	coords  500  250
+	at  60
+
+spawn  Donovan
+health 40
+	coords  -50  250
+	at  100
+
+spawn  Kusanagi_
+health 150
+	coords  500  142
+	at  110
+
+
+spawn  Kusanagi_
+health 150
+map    1
+	coords  500  164 
+	at  170
+
+group   5  5
+at      200
+
+
+spawn  Donovan
+health 40
+	coords  500  250
+	at  200
+
+
+
+spawn  Galsia
+map  2
+health 70
+	coords  500  230
+	at  200
+
+
+spawn  Galsia
+map  2
+health 70
+	coords  500  250
+	at  200
+
+
+
+
+
+
+
+

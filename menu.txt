@@ -1,0 +1,22 @@
+#instrucciones----------------------------------------------------------#
+#renamekey {key} {newname} moveup, movedown, moveright, moveleft,attack,# 
+#attack2, attack3, attack4, jump, special, start, screenshot            #
+#disablekey {key}                                                       #
+#-----------------------------------------------------------------------#
+renamekey moveup    cima
+renamekey movedown  Baixo
+renamekey moveright Direita
+renamekey moveleft  Esquerda
+
+renamekey attack    ataque
+disablekey attack2   ataque2
+ 
+disablekey attack3   ataque3 ###desconectado###
+disablekey attack4   ataque4 ###desconectado###
+
+renamekey jump      salto
+renamekey special   especial
+
+disablekey freespecial
+
+renamekey screenshot capturar_imagem

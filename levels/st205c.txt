@@ -1,0 +1,352 @@
+music		data/bgs/St205/Lv205a.bor
+bossmusic	data/music/boss1.bor
+rock		1
+scrollspeed 0.5
+stagenumber 5
+background	data/bgs/st205/Back01.gif
+bglayer		data/bgs/St205/bg00.gif		0.8 1 0 0 0 0 -1 1 1 0 1 0 0 0 1
+bglayer		data/bgs/St205/bg01.gif		0.6 1 0 0 0 0 -1 1 1 0 3 0.1 1.2 0 3
+panel		data/bgs/St205/Pn02.gif
+frontpanel      data/bgs/St205/fpn01.gif
+#bglayer           data/bgs/11lvl/liberty_statue.gif 0.3 0.1   60    -40 180 1 1 1 1  0
+#bglayer           data/bgs/11lvl/0x.gif 0.5 0.1   60    -40 180 1 1 1 1  0
+#fglayer         data/bgs/11lvl/fondo3.gif 1500 -0.1 0 0 0 0 0 1 1 1
+#fglayer         data/bgs/11lvl/sun.gif 500 0 0 0 -5 1 1 1 1 1 1
+#fglayer         data/bgs/11lvl/light2.gif 2500 0 0 0 -5 1 1 1 1 1 1
+cameratype 1
+#cameraoffset 0 -30
+#levelscript @script
+#void main() {
+#	changelevelproperty("camerazoffset", 0);
+#	changelevelproperty("cameraxoffset", 0);
+#}
+#@end_script
+#settime         90
+notime          1
+noslow          1
+order		a
+spawn1  	60 20 50
+spawn2  	65 25 50
+spawn3  	70 30 50
+
+wall		0 285 -1000 -1000 65 65 80 10000
+
+wall		2115 285 0 160 1160 1160 80 10000
+
+
+
+
+
+spawn  Box03
+item   cash
+	coords  270  240
+	at  0
+
+spawn  Box03
+item   Sword
+	coords  300  240
+	at  0
+
+
+
+spawn  Galsia
+map    1
+health 40
+	coords  500  220
+	at  0
+
+spawn  Donovan
+map    4
+health 90
+	coords  550  250
+	at  0
+
+spawn  Donovan
+map    4
+health 90
+	coords  600  270
+	at 0
+
+
+spawn  Galsia
+map    1
+health 40
+	coords  500  220
+	at  100
+
+spawn  Galsia
+map    1
+health 40
+	coords  500  250
+	at  200
+
+spawn  Donovan
+map    4
+health 90
+	coords  600  270
+	at  200
+
+spawn  Box03
+item   apple
+	coords  500  270
+	at  200
+
+wait 
+        at    250
+
+group  5    5
+        at    250
+
+
+spawn  jet
+map    1
+health 200
+	coords  500  270
+	at  250
+
+
+spawn  Donovan
+map    4
+health 90
+	coords  -100  270
+	at  250
+
+
+
+spawn  galsia
+map    1
+health 40
+	coords  -100  270
+	at  250
+
+
+
+spawn  Donovan
+map    4
+health 90
+	coords  500  270
+	at  250
+
+
+
+spawn  galsia
+map    1
+health 40
+	coords  500  270
+	at  250
+
+
+spawn  galsia
+map    1
+health 40
+	coords  -100  270
+	at  250
+
+group  9    9
+        at    251
+
+
+
+
+spawn  fog
+map    1
+health 70
+	coords  -100  270
+	at  300
+
+spawn  fog
+health 50
+	coords  500  220
+	at 300
+
+spawn  fog
+health 50
+	coords  500  220
+	at 450
+
+
+spawn  G_Fog
+	coords  350  220
+	at  475
+
+spawn  fog
+map    1
+health 70
+	coords  -100  270
+	at  500
+
+
+spawn  Kusanagi
+health 80
+	coords  -100  220
+	at 600
+
+spawn  Kunai
+	coords  -80  220
+	at 600
+
+spawn  Kusanagi_
+map   2
+health 100
+	coords  525  180
+	at 600
+
+spawn  Sword
+	coords  525  220
+	at 600
+
+spawn  fog
+health 50
+	coords  500  220
+	at 650
+
+spawn  G_Fog
+	coords  360  220
+	at  700
+
+
+wait 
+at     800
+
+group 5  5
+at     800
+
+
+
+
+spawn  G_Fog
+	coords  380  220
+	at  800
+
+spawn  fog
+map    1
+health 70
+	coords  -100  270
+	at  800
+
+spawn  Kusanagi
+health 80
+	coords  500  220
+	at 800
+
+
+spawn  G_Fog
+	coords  360  220
+	at  800
+
+group 9  9
+at     801
+
+
+spawn  Donovan
+health 40
+	coords  500  230
+	at  1300
+
+
+
+spawn  galsia
+map    1
+health 40
+	coords  500  270
+	at  1300
+
+
+spawn  Bigben
+health 100
+	coords  500  270 150
+	at  1400
+
+spawn  Donovan
+health 40
+	coords  -100  230
+	at  1450
+
+
+
+spawn  galsia
+map    1
+health 40
+	coords  -100  270
+	at  1450
+
+
+spawn  Box03
+item   Chicken
+	coords  500  270
+	at  1600
+
+spawn  Box03
+2pitem   Chicken
+	coords  530  270
+	at  1600
+
+spawn  Bear_
+boss   1
+	coords  475  240
+	at  1700
+
+Group   3  3
+at     1700
+
+
+spawn  galsia
+map    1
+health 40
+	coords  -100  270
+	at  1700
+
+spawn  galsia
+map    1
+health 40
+	coords  -100  230
+	at  1700
+
+spawn  galsia
+map    1
+health 40
+	coords  -100  270
+	at  1700
+
+spawn  galsia
+map    1
+health 40
+	coords  -100  230
+	at  1700
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

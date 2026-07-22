@@ -1,0 +1,27 @@
+name			ShotX02
+type			none
+subtype			project
+health			1
+nolife			1
+lifespan		2
+candamage			Player npc obstacle
+remove			1
+shadow			0
+antigravity		100
+onblockwscript	data/scripts/bounceF.c
+#animationscript 	data/scripts/ani0020.h
+animationscript		data/scripts/drago.c
+ondrawscript 		data/scripts/Enemy_ondrawscript.c
+
+anim idle
+	loop	0
+	delay	1
+	offset	13 56
+	hitflash Forte
+        hitfx	data/sounds/golpes/Forte.wav
+	sound	data/sounds/Shot.wav
+	frame	data/chars/Boss/mrx/shot/shot02.gif
+	attack 20 25 8 3 10 1 1 0 0 12
+        @cmd dasher 0 0 3
+	frame	data/chars/Boss/mrx/shot/shot02.gif
+

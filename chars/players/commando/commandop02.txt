@@ -1,0 +1,43 @@
+
+name			CommandoP02 #THROWNED
+type			none
+speed 12
+candamage			enemy obstacle
+alpha 1
+nolife			1
+lifespan		4
+remove			1
+gfxshadow		0 0
+flash			Forte
+antigravity 100
+
+anim idle
+	loop	0
+	offset	166 483
+		delay  2
+        quakeframe 2 2 2
+	frame	data/chars/players/Commando/P02/P100.gif
+	frame	data/chars/players/Commando/P02/P101.gif
+	frame	data/chars/players/Commando/P02/P102.gif
+	Sound	data/chars/players/Commando/p01.WAV
+	frame	data/chars/players/Commando/P02/P103.gif
+	frame	data/chars/players/Commando/P02/P104.gif
+	frame	data/chars/players/Commando/P02/P105.gif
+	frame	data/chars/players/Commando/P02/P106.gif
+	frame	data/chars/players/Commando/P02/P107.gif
+	frame	data/chars/players/Commando/P02/P108.gif
+	frame	data/chars/players/Commando/P02/P109.gif
+	frame	data/chars/players/Commando/P02/P110.gif
+	frame	data/chars/players/Commando/P02/P111.gif
+	frame	data/chars/players/Commando/P02/P112.gif
+	frame	data/chars/players/Commando/P02/P113.gif
+	frame	data/chars/players/Commando/P02/P114.gif
+	frame	data/chars/players/Commando/P02/P115.gif
+	frame	data/chars/players/Commando/P02/P116.gif
+	frame	data/chars/players/Commando/P02/P117.gif
+	frame	data/chars/players/Commando/P02/P118.gif
+	frame	data/chars/players/Commando/P02/P119.gif
+	frame	data/chars/players/Commando/P02/P120.gif
+	@cmd killentity getlocalvar("self")
+	frame	data/chars/players/Commando/P02/P120.gif
+

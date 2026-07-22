@@ -1,0 +1,33 @@
+name			Boat00 #GROUND
+type			None
+Speed .5
+setlayer -10
+noquake 	1 1
+offscreenkill	1000
+#Alpha 1
+onblockwscript	data/scripts/bounceF.c
+#animationscript 	data/scripts/ani0020.h
+animationscript		data/scripts/drago.c
+ondrawscript 		data/scripts/Enemy_ondrawscript.c
+
+Load Boat01
+
+anim idle
+	loop	0
+	offset	69 103
+		delay  150
+        @cmd dasher 1 0 0
+	frame	data/Bgs/06/Boat00.gif
+        @cmd dasher 0 0 0
+		delay  20
+	frame	data/Bgs/06/Boat01.gif
+	Sound	data/Sounds/Nitro.wav
+	@cmd  spawn01  "Boat01"  0  0  0
+		delay  100
+	frame	data/Bgs/06/Boat01.gif
+	Sound	data/Sounds/explosion2.wav
+		delay  125
+        @cmd dasher 1 0 0
+	frame	data/Bgs/06/Boat00.gif
+	frame	data/Bgs/06/Boat00.gif
+

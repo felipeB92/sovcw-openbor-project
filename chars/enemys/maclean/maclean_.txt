@@ -1,0 +1,369 @@
+name	MaClean_
+health	100
+mp 30
+mprate 1
+#secret 1
+Falldie 2
+Grabdistance 18
+riseinv				0.4 1
+speed	6
+type	Enemy
+gfxshadow	1
+candamage			Player npc obstacle
+JUMPHEIGHT 4
+hostile Player NPC
+#antigrab 2
+atchain   1 1 2 3 4 5
+weapons None None None None MaClean_Sniper_
+icon	data/chars/Enemys/MaClean/icon.gif 1
+diesound data/Sounds/Die8.wav
+running	20	3	2	1	1
+onblockwscript	data/scripts/bounceF.c
+#animationscript 	data/scripts/ani0020.h
+animationscript		data/scripts/drago.c
+ondrawscript 		data/scripts/Enemy_ondrawscript.c
+
+
+
+Load Shot
+#Load MaClean_Kunai
+#Load MaClean_Sword
+
+remap data/chars/Enemys/MaClean/idle00.gif data/chars/Enemys/MaClean/MAp01.gif
+remap data/chars/Enemys/MaClean/idle00.gif data/chars/Enemys/MaClean/MAp02.gif
+remap data/chars/Enemys/MaClean/idle00.gif data/chars/Enemys/MaClean/MAp03.gif
+remap data/chars/Enemys/MaClean/idle00.gif data/chars/Enemys/MaClean/MAp04.gif
+
+
+anim Spawn
+	loop	0
+	delay	999
+	offset	147 183
+	bbox	134 104 31 81
+	frame   data/chars/Enemys/MaClean/idle00.gif
+	frame   data/chars/Enemys/MaClean/idle00.gif
+
+anim Pain5
+	loop	0
+	delay	12
+	offset	147 183
+	bbox	134 104 31 81
+	frame   data/chars/Enemys/MaClean/idle00.gif
+
+anim idle
+	loop	1
+	delay	12
+	offset	147 183
+	bbox	134 104 31 81
+	frame   data/chars/Enemys/MaClean/idle00.gif
+	@cmd	depost 0
+	@cmd	throw 15 0.7 0.7 1 0 -1
+	@cmd	clearL
+	frame   data/chars/Enemys/MaClean/idle00.gif
+
+
+anim walk
+	loop	1
+	delay	16
+	offset	147 183
+	bbox	135 104 31 80
+	frame	data/chars/Enemys/MaClean/walk00.gif
+	frame	data/chars/Enemys/MaClean/walk01.gif
+	frame	data/chars/Enemys/MaClean/walk02.gif
+	frame  data/chars/Enemys/MaClean/walk03.gif
+
+
+
+
+
+anim jump
+	loop	0
+	delay	15
+	offset	135 184
+	bbox	118 113 38 70
+	frame	data/chars/Enemys/MaClean/Jump00.gif
+	frame	data/chars/Enemys/MaClean/Jump00.gif
+	frame	data/chars/Enemys/MaClean/Jump00.gif
+
+
+
+anim get
+	loop	0
+	delay	12
+	offset	142 182
+	bbox	124 128 39 54
+        hitflash	Corte
+        hitfx	data/sounds/golpes/corte.wav
+	frame	data/chars/Enemys/MaClean/LAnd.gif
+
+anim attack1
+	loop	0
+	delay	12
+	offset	147 183
+        Range 30 60
+        RangeZ -5 5
+        hitflash	Fraco
+	bbox	133 103 29 80
+		Attack1  0
+        Sound	data/sounds/golpes/Soco.wav
+        hitfx	data/sounds/golpes/Fraco.wav
+	frame	data/chars/Enemys/MaClean/a100.gif
+		delay  7
+	frame	data/chars/Enemys/MaClean/a101.gif
+		attack1  152  122  53  20  5  1  0  0  0  10
+	frame	data/chars/Enemys/MaClean/a102.gif
+	frame  data/chars/Enemys/MaClean/a103.gif
+	frame  data/chars/Enemys/MaClean/a104.gif
+		Attack1  0
+	frame  data/chars/Enemys/MaClean/a105.gif
+	frame  data/chars/Enemys/MaClean/a106.gif
+
+
+anim Freespecial
+	loop	0
+	delay	12
+	offset	147 183
+        Range 0 30
+        RangeZ -5 5
+	bbox	133 103 29 80
+		Attack1  0
+		Followcond  1
+		followanim  1
+        Sound	data/sounds/golpes/Soco.wav
+        hitfx	data/sounds/golpes/Grab.wav
+	frame	data/chars/Enemys/MaClean/a200.gif
+		delay  7
+		attack1  135  134  58  20  1  0  0  0  0  15
+	frame	data/chars/Enemys/MaClean/a201.gif
+	frame	data/chars/Enemys/MaClean/a202.gif
+	frame  data/chars/Enemys/MaClean/a203.gif
+		Attack1  0
+	frame  data/chars/Enemys/MaClean/a204.gif
+
+
+anim Freespecial2
+	loop	0
+	delay	12
+	offset	147 183
+        Range 200 300
+        RangeZ -7 7
+        custknife Shot
+        throwframe 2 60
+	bbox	133 103 29 80
+		Attack1  0
+	frame	data/chars/Enemys/MaClean/IDle00.gif
+		delay  25
+	frame	data/chars/Enemys/MaClean/shot00.gif
+		delay  10
+	frame	data/chars/Enemys/MaClean/shot01.gif
+	frame  data/chars/Enemys/MaClean/Idle00.gif
+
+
+anim Follow1
+	loop	0
+	delay	1
+	offset	146 182
+	frame	data/chars/Enemys/MaClean/throw00.gif
+	@cmd	slamstart
+	@cmd	position 0 20 0 0 -1
+        frame	data/chars/Enemys/MaClean/throw00.gif
+	@cmd	position 0 20 1 0 -1
+	delay	25
+	frame	data/chars/Enemys/MaClean/throw00.gif
+	@cmd	position 1 20 1 0 -1
+	frame	data/chars/Enemys/MaClean/throw01.gif
+	frame	data/chars/Enemys/MaClean/throw02.gif
+	@cmd	position 4 -10 30 0 -1
+	frame	data/chars/Enemys/MaClean/throw03.gif
+	@cmd	position 8 -40 30 0 -1
+	@cmd	depost 0
+	@cmd	throw 15 5 2 2 0 -1
+	@cmd	clearL
+	frame	data/chars/Enemys/MaClean/throw04.gif
+	delay	40
+	frame	data/chars/Enemys/MaClean/throw04.gif
+
+
+
+
+anim pain
+	loop	0
+	offset	143 183
+	bbox	123 113 38 73
+	delay	5
+	frame	data/chars/Enemys/MaClean/pain01.gif
+		delay  25
+		offset  145  183
+	frame	data/chars/Enemys/MaClean/pain01.gif
+
+anim pain3
+	loop	0
+	offset	144 183
+	bbox	128 113 32 70
+	delay	5
+	jumpframe  0  2  0  0
+	frame	data/chars/Enemys/MaClean/pain01.gif
+		delay  25
+		offset  142  183
+	frame	data/chars/Enemys/MaClean/pain01.gif
+
+anim pain4
+	loop	0
+	offset	144 183
+	bbox	126 100 35 82
+	delay	5
+	frame	data/chars/Enemys/MaClean/pain01.gif
+		delay  900
+		offset  142  183
+	frame	data/chars/Enemys/MaClean/pain01.gif
+
+
+anim grabbed
+	loop	0
+	offset	139 184
+	bbox	131 118 30 68
+	delay	40
+	frame	data/chars/Enemys/MaClean/pain02.gif
+
+
+
+anim pain2
+	loop	0
+	offset	137 182
+	bbox	128 116 33 66
+	delay	5
+	frame	data/chars/Enemys/MaClean/pain02.gif
+		delay  25
+		offset  139  182
+	frame	data/chars/Enemys/MaClean/pain02.gif
+
+
+
+
+
+anim fall2
+	loop	0
+	offset	137 183
+	jumpframe  0  3  -3  0
+	delay	20
+        hitfx	data/sounds/golpes/Forte.wav
+		attack  0
+	frame	data/chars/Enemys/MaClean/fall00.gif
+		Attack1  0
+		offset  130  183
+	frame	data/chars/Enemys/MaClean/fall01.gif
+		offset  144  182
+		delay  10
+	frame	data/chars/Enemys/MaClean/fall02.gif
+
+anim fall
+	loop	0
+	offset	139 181
+	delay	20
+        hitfx	data/sounds/golpes/Forte.wav
+		attack  0
+	frame	data/chars/Enemys/MaClean/fall00.gif
+		Attack1  0
+		offset  133  183
+	frame	data/chars/Enemys/MaClean/fall01.gif
+		offset  143  181
+		delay  10
+	frame	data/chars/Enemys/MaClean/fall02.gif
+
+anim fall6 #Shok
+	loop	0
+	offset	88 120
+	delay	5
+        hitfx	data/sounds/golpes/Forte.wav
+		attack  0
+	frame	data/chars/Enemys/MaClean/fall201.gif
+	frame	data/chars/Enemys/MaClean/fall200.gif
+	frame	data/chars/Enemys/MaClean/fall201.gif
+	frame	data/chars/Enemys/MaClean/fall200.gif
+	frame	data/chars/Enemys/MaClean/fall201.gif
+		offset  142  183
+	frame	data/chars/Enemys/MaClean/fall02.gif
+
+
+anim fall7 #Burn
+	loop	0
+	offset	65 97
+	delay	10
+        hitfx	data/sounds/golpes/Forte.wav
+		attack  0
+	frame	data/chars/Enemys/MaClean/FALL300.gif
+	frame	data/chars/Enemys/MaClean/FALL301.gif
+	frame	data/chars/Enemys/MaClean/FALL302.gif
+	frame	data/chars/Enemys/MaClean/FALL300.gif
+	frame	data/chars/Enemys/MaClean/FALL301.gif
+		offset  144  183
+	frame	data/chars/Enemys/MaClean/FALL02.gif
+
+
+anim rise
+	loop	0
+	offset	145 180
+	delay	20
+	frame	data/chars/Enemys/MaClean/Rise00.gif
+	frame	data/chars/Enemys/MaClean/Rise01.gif
+	frame	data/chars/Enemys/MaClean/Rise02.gif
+
+
+
+
+
+
+
+anim land
+	loop	0
+	delay	15
+	offset	139 183
+	bbox	124 135 44 52
+	frame	data/chars/Enemys/MaClean/Land.gif
+
+
+anim Fall9
+	loop	0
+	offset	144 183
+	delay	999
+	frame	data/chars/Enemys/MaClean/pain01.gif #0
+	frame	data/chars/Enemys/MaClean/pain02.gif #1
+	frame	data/chars/Enemys/MaClean/fall01.gif #2
+	frame	data/chars/Enemys/MaClean/fall02.gif #3
+	frame	data/chars/Enemys/MaClean/fall400.gif #4
+	frame	data/chars/Enemys/MaClean/fall401.gif #5
+		offset  148  162
+	frame	data/chars/Enemys/MaClean/fall402.gif #6
+		offset  166  185
+	frame  data/chars/Enemys/MaClean/fall403.gif #7
+		offset  144  179
+	delay	20
+	frame	data/chars/Enemys/MaClean/fall401.gif #8
+	delay	30
+		offset  126  193
+	frame	data/chars/Enemys/MaClean/fall404.gif #9
+	offset	144 183
+	frame	data/chars/Enemys/MaClean/Fall405.gif #10
+
+
+anim Fall8
+	loop	0
+	flipframe  0
+	offset	141 181
+	delay	30
+	frame	data/chars/Enemys/MaClean/fall01.gif #0
+	offset	144 183
+	delay	15
+	frame	data/chars/Enemys/MaClean/fall02.gif #1
+
+
+anim Fall5
+	loop	0
+	flipframe  1
+	offset	116 187
+	delay	30
+	frame	data/chars/Enemys/MaClean/fall01.gif #0
+	offset	144 183
+	delay	15
+	frame	data/chars/Enemys/MaClean/fall02.gif #1
+

@@ -1,0 +1,21 @@
+name	St01
+type	text
+subtype	noskip
+setlayer 10000
+
+
+
+anim	idle
+	loop	0
+	delay	400
+	offset	0 0
+	frame	data/text/St01/D101.gif
+	delay	300
+	frame	data/text/St01/D102.gif
+	frame	data/text/St01/D103.gif
+	delay	400
+	frame	data/text/St01/D104.gif
+	delay	200
+	frame	data/text/St01/D105.gif
+
+

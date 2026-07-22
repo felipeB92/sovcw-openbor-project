@@ -1,0 +1,108 @@
+bossmusic	data/music/boss3.bor
+scrollspeed 0.5#1
+stagenumber 3
+background	 data/bgs/st303/Back03.gif
+panel		 data/bgs/st303/pn04.gif		none	none
+frontpanel      data/bgs/st05/Front02.gif
+cameratype 1
+cameraoffset 0 -30
+#levelscript @script
+#void main() {
+#	changelevelproperty("camerazoffset", 0);
+#	changelevelproperty("cameraxoffset", 0);
+#}
+#@end_script
+#settime         90
+notime          1
+noslow          1
+order		a
+spawn1  	50 20 50
+spawn2  	55 35 50 
+spawn3  	60 50 50
+
+
+
+
+
+spawn  Lata
+item   Chicken
+	coords  500 220
+	at  0
+
+spawn  Lata
+2pitem   Chicken
+	coords  550 220
+	at  0
+
+
+
+spawn  Axel_E
+boss   1
+map    1
+health 400
+	coords  500 230
+	at  700
+
+
+spawn  Blaze_E
+boss   1
+map    1
+health 400
+	coords  -100 220
+	at  700
+
+
+spawn  Adam_E
+boss   1
+map    1
+health 400
+	coords  -100 260
+	at  700
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

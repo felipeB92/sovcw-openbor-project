@@ -1,0 +1,193 @@
+music	data/music/Boss.bor
+bossmusic	data/music/Boss.bor
+scrollspeed 0.5#1
+stagenumber 1
+background	data/bgs/BossRush/b02.gif 	      0.675 1 0 0 0 0 -1 1 1
+bglayer		data/bgs/BossRush/b00.gif         0.575 1 0 0 0 0 -1 1 1 
+bglayer		data/bgs/BossRush/b01.gif         0.575 1 0 0 0 0 -1 1 1 1
+Fglayer		data/bgs/BossRush/Front.gif                0.575 1 0 0 0 0 -1 1 1 1 1
+#water		data/bgs/01/Mar01.gif		0.5
+#fglayer         data/bgs/Front.gif              0 -0.4 0 0 0 0 1 -1 1 1 0
+panel		data/bgs/BossRush/b00.gif		none	none
+#frontpanel	data/bgs/t00/Front02.gif		
+cameratype 1
+cameraoffset 0 -30
+#levelscript @script
+#void main() {
+#	changelevelproperty("camerazoffset", 0);
+#	changelevelproperty("cameraxoffset", 0);
+#}
+#@end_script
+#settime         90
+notime          1
+noslow          1
+order		a
+spawn1  	50 20 50
+spawn2  	55 35 50 
+spawn3  	60 50 50
+
+spawn  BAck200
+Flip 1
+	coords  -95 -40
+	at  0
+
+spawn  BAck201
+Flip 1
+	coords  0 0
+	at  0
+
+spawn  IntroST
+Flip 1
+	coords  0 4
+	at  0
+
+spawn  Time01
+Flip 1
+	coords  0 0
+	at  0
+
+spawn  carne
+	coords  200 210 300
+	at  1
+
+
+spawn  Apple
+	coords  300 220 300
+	at  0
+
+
+
+group 1 1
+at  0
+
+
+spawn  Hunter_
+map 2
+health 300
+	coords  600 215
+	at  0
+
+
+
+spawn  Hamburger
+	coords  250 220 300
+	at  0
+
+
+
+group 2 2
+at  1
+
+spawn  MAno
+Boss 1
+health 100
+	coords  230 0
+	at  1
+
+
+spawn  coisa02
+	coords  350 235
+	at  1
+
+
+
+spawn  DelayX1
+	coords  600 220
+	at  1
+
+
+spawn  DelayX1
+	coords  600 220
+	at  1
+spawn  raio01
+	coords  -100 220
+	at  1
+
+spawn  DelayX1
+	coords  600 220
+	at  1
+
+spawn  mAO01
+	coords  -100 220
+	at  1
+
+spawn  DelayX1
+	coords  600 220
+	at  1
+
+spawn  mAO02
+	coords  400 220
+	at  1
+
+
+
+spawn  Coisa02
+	coords  350 220
+	at  1
+
+
+
+spawn  Coisa02
+	coords  100 250
+	at  1
+
+
+spawn  Coisa02
+	coords  400 250
+	at  1
+
+
+spawn  Coisa02
+	coords  50 235
+	at  1
+
+
+
+spawn  Coisa02
+	coords  300 235
+	at  1
+
+
+
+spawn  Coisa02
+	coords  150 235
+	at  1
+
+
+
+spawn  Coisa02
+	coords  380 235
+	at  1
+
+
+
+spawn  Coisa02
+	coords  250 235
+	at  1
+
+
+
+spawn  Coisa02
+	coords  200 235
+	at  1
+
+spawn  DelayX1
+	coords  600 220
+	at  1
+
+spawn  Alerta
+       Flip 1
+	coords  0 35
+	at  1
+
+
+
+
+
+
+
+
+
+
+
+

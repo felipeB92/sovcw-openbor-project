@@ -1,0 +1,20 @@
+name			Porta200 #GROUND
+type			None
+#setlayer -57
+#noquake 	1 1
+#offscreenkill	1000
+
+
+anim idle
+	loop	0
+	offset	27 104
+		delay  15
+	frame	data/Bgs/200/p07.gif
+	frame	data/Bgs/200/p06.gif
+	frame	data/Bgs/200/p05.gif
+	frame	data/Bgs/200/p04.gif
+	frame	data/Bgs/200/p03.gif
+	frame	data/Bgs/200/p02.gif
+	frame	data/Bgs/200/p01.gif
+	frame	data/Bgs/200/p00.gif
+

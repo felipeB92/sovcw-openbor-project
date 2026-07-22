@@ -1,0 +1,128 @@
+name			Helli #GROUND
+type			None
+setlayer -55
+noquake 	1 1
+#offscreenkill	1000
+
+
+anim spawn
+	loop	0
+	offset	490 65
+		delay  5
+	frame   data/BGS/07/H100.gif
+		offset  490  70
+	frame   data/BGS/07/H101.gif
+		offset  490  75
+	frame   data/BGS/07/H100.gif
+		offset  490  80
+	frame   data/BGS/07/H101.gif
+		offset  490  85
+	frame   data/BGS/07/H100.gif
+	frame   data/BGS/07/H101.gif
+		offset  490  90
+	frame   data/BGS/07/H100.gif
+		offset  490  95
+	frame   data/BGS/07/H101.gif
+		offset  490  100
+	frame   data/BGS/07/H101.gif
+		offset  490  105
+	frame   data/BGS/07/H100.gif
+		offset  490  110
+	frame   data/BGS/07/H100.gif
+		offset  490  115
+	frame   data/BGS/07/H101.gif
+		offset  490  120
+	frame   data/BGS/07/H100.gif
+		offset  490  125
+	frame  data/BGS/07/H100.gif
+		offset  490  130
+	frame   data/BGS/07/H101.gif
+		offset  490  135
+	frame   data/BGS/07/H100.gif
+		offset  490  140
+	frame   data/BGS/07/H101.gif
+		offset  490  145
+	frame   data/BGS/07/H100.gif
+		offset  490  150
+	frame   data/BGS/07/H101.gif
+		offset  490  155
+	frame   data/BGS/07/H100.gif
+		offset  490  160
+	frame   data/BGS/07/H101.gif
+		offset  490  165
+	frame   data/BGS/07/H100.gif
+		offset  490  170
+	frame   data/BGS/07/H101.gif
+		offset  490  175
+	frame   data/BGS/07/H100.gif
+		offset  490  180
+	frame   data/BGS/07/H101.gif
+		offset  490  185
+	frame   data/BGS/07/H100.gif
+		offset  490  190
+	frame   data/BGS/07/H101.gif
+		offset  490  195
+	frame   data/BGS/07/H100.gif
+		offset  490  200
+	frame   data/BGS/07/H101.gif
+		offset  490  205
+	frame   data/BGS/07/H100.gif
+		offset  490  210
+	frame   data/BGS/07/H101.gif
+		offset  490  215
+	frame   data/BGS/07/H100.gif
+		offset  490  220
+	frame   data/BGS/07/H101.gif
+		offset  490  225
+	frame   data/BGS/07/H100.gif
+		offset  490  230
+	frame   data/BGS/07/H101.gif
+		offset  490  235
+	frame   data/BGS/07/H100.gif
+		offset  490  240
+	frame   data/BGS/07/H101.gif
+		offset  490  245
+	frame   data/BGS/07/H100.gif
+		offset  490  250
+	frame   data/BGS/07/H101.gif
+		offset  490  255
+	frame   data/BGS/07/H100.gif
+		offset  490  260
+	frame   data/BGS/07/H101.gif
+	frame   data/BGS/07/H100.gif
+	frame   data/BGS/07/H101.gif
+	frame   data/BGS/07/H102.gif
+	frame   data/BGS/07/H103.gif
+	frame   data/BGS/07/H104.gif
+	frame   data/BGS/07/H105.gif
+	frame   data/BGS/07/H106.gif
+	frame   data/BGS/07/H107.gif
+	frame   data/BGS/07/H108.gif
+	frame   data/BGS/07/H109.gif
+	frame   data/BGS/07/H110.gif
+	frame   data/BGS/07/H111.gif
+	frame   data/BGS/07/H112.gif
+	frame   data/BGS/07/H113.gif
+	frame   data/BGS/07/H114.gif
+	frame   data/BGS/07/H115.gif
+	frame   data/BGS/07/H116.gif
+	frame   data/BGS/07/H117.gif
+	frame   data/BGS/07/H118.gif
+	frame   data/BGS/07/H119.gif
+	frame  data/BGS/07/H118.gif
+	frame  data/BGS/07/H119.gif
+
+anim idle
+	loop	1
+	offset	490 260
+		delay  5
+	frame   data/BGS/07/H120.gif
+	frame   data/BGS/07/H121.gif
+		delay  5
+	frame  data/BGS/07/H120.gif
+	frame  data/BGS/07/H121.gif
+	frame   data/BGS/07/H122.gif
+	frame   data/BGS/07/H123.gif
+	frame  data/BGS/07/H122.gif
+	frame  data/BGS/07/H123.gif
+

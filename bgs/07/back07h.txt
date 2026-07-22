@@ -1,0 +1,44 @@
+name			BAck07h #GROUND
+type			None
+setlayer -55
+noquake 	1 1
+#offscreenkill	1000
+
+
+anim idle
+	loop	1
+	offset	30 65
+		delay  200
+	frame   data/chars/enemys/zh/H00.gif
+		delay  20
+	frame   data/chars/enemys/zh/H01.gif
+		delay  5
+		move  0
+		movea  5
+	frame   data/chars/enemys/zh/H02.gif
+	frame   data/chars/enemys/zh/H02.gif
+	frame   data/chars/enemys/zh/H02.gif
+	frame   data/chars/enemys/zh/H02.gif
+	frame   data/chars/enemys/zh/H02.gif
+		movea  -5
+		delay  3
+	frame   data/chars/enemys/zh/H02.gif
+	frame   data/chars/enemys/zh/H02.gif
+	frame   data/chars/enemys/zh/H02.gif
+	frame   data/chars/enemys/zh/H02.gif
+	frame   data/chars/enemys/zh/H02.gif
+	frame   data/chars/enemys/zh/H02.gif
+	frame   data/chars/enemys/zh/H02.gif
+	frame   data/chars/enemys/zh/H02.gif
+	frame   data/chars/enemys/zh/H02.gif
+	frame   data/chars/enemys/zh/H02.gif
+	frame  data/chars/enemys/zh/H02.gif
+	frame  data/chars/enemys/zh/H02.gif
+	frame  data/chars/enemys/zh/H02.gif
+	frame  data/chars/enemys/zh/H02.gif
+	frame  data/chars/enemys/zh/H02.gif
+	frame  data/chars/enemys/zh/H02.gif
+	frame  data/chars/enemys/zh/H02.gif
+		@cmd  killentity  getlocalvar("self")
+	frame  data/chars/enemys/zh/H02.gif
+

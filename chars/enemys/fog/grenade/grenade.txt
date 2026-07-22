@@ -1,0 +1,49 @@
+name			Fog_Grenade #THROWNED
+type			none
+nolife			1
+lifespan		3
+noquake 		1
+gfxshadow		1 1
+bounce 			1
+animationscript	data/scripts/animation/default.c
+
+anim idle
+	bouncefactor 2
+	loop	1 1 9
+	delay	4
+	offset	25 22
+	sound	data/sounds/Grenade.wav
+	frame	data/chars/fog/grenade/grenade00.gif
+	frame	data/chars/fog/grenade/grenade00.gif
+	frame	data/chars/fog/grenade/grenade01.gif
+	frame	data/chars/fog/grenade/grenade02.gif
+	frame	data/chars/fog/grenade/grenade03.gif
+	frame	data/chars/fog/grenade/grenade04.gif
+	frame	data/chars/fog/grenade/grenade05.gif
+	frame	data/chars/fog/grenade/grenade06.gif
+	frame	data/chars/fog/grenade/grenade07.gif
+	
+anim follow1
+	bouncefactor 2
+	loop	1 1 9
+	delay	4
+	offset	25 22
+	sound	data/sounds/Grenade.wav
+	frame	data/chars/fog/grenade/grenade00.gif
+	frame	data/chars/fog/grenade/grenade00.gif
+	frame	data/chars/fog/grenade/grenade07.gif
+	frame	data/chars/fog/grenade/grenade06.gif
+	frame	data/chars/fog/grenade/grenade05.gif
+	frame	data/chars/fog/grenade/grenade04.gif
+	frame	data/chars/fog/grenade/grenade03.gif
+	frame	data/chars/fog/grenade/grenade02.gif
+	frame	data/chars/fog/grenade/grenade01.gif
+	
+anim fall #EXPLOSION
+	loop	0
+	delay	2
+	offset	25 22
+	@cmd spawnBind "explosion" 0 0 1
+	frame	data/chars/fog/grenade/empty.gif
+	@cmd suicide
+	frame	data/chars/fog/grenade/empty.gif

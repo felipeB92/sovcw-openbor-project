@@ -1,0 +1,349 @@
+name	Thug_
+health	60
+mp 30
+mprate 1
+#secret 1
+Falldie 2
+Grabdistance 18
+riseinv				0.4 1
+speed	6
+type	Enemy
+gfxshadow	1
+candamage			Player npc obstacle
+JUMPHEIGHT 4
+hostile Player NPC
+#antigrab 2
+atchain   1 1 2 3 4 5
+#weapons Blaze_Knife Blaze_Sword Blaze_pipe Blaze_Kunai
+icon	data/chars/Enemys/Thug/icon.gif 1
+diesound data/Sounds/Die1.wav
+running	20	3	2	1	1
+animationscript		data/scripts/felipe.c
+
+Load ThugP01
+Load Knife
+
+#Load Blaze_Knife
+#Load Blaze_Pipe
+#Load Blaze_Kunai
+#Load Blaze_Sword
+
+remap data/chars/Enemys/Thug/idle00.gif data/chars/Enemys/Thug/MAp01.gif
+remap data/chars/Enemys/Thug/idle00.gif data/chars/Enemys/Thug/MAp02.gif
+remap data/chars/Enemys/Thug/idle00.gif data/chars/Enemys/Thug/MAp03.gif
+remap data/chars/Enemys/Thug/idle00.gif data/chars/Enemys/Thug/MAp04.gif
+
+
+anim spawn
+	loop	0
+	delay	999
+	offset	82 119
+	bbox	63 76 35 43
+	frame   data/chars/Enemys/Thug/Sit00.gif
+	frame   data/chars/Enemys/Thug/Sit00.gif
+
+
+anim Pain5
+	loop	0
+	delay	12
+	offset	82 119
+	bbox	67 44 34 78
+	frame   data/chars/Enemys/Thug/Sit00.gif
+	frame   data/chars/Enemys/Thug/Sit01.gif
+	frame   data/chars/Enemys/Thug/Idle00.gif
+
+anim idle
+	loop	1
+	delay	12
+	offset	83 121
+	bbox	67 44 34 78
+	frame   data/chars/Enemys/Thug/idle00.gif
+	@cmd	depost 0
+	@cmd	throw 15 0.7 0.7 1 0 -1
+	@cmd	clearL
+	frame   data/chars/Enemys/Thug/idle00.gif
+
+
+
+anim walk
+	loop	1
+	delay	12
+	offset	75 119
+	bbox	71 45 31 77
+	frame	data/chars/Enemys/Thug/walk00.gif
+	frame	data/chars/Enemys/Thug/walk01.gif
+	frame	data/chars/Enemys/Thug/walk02.gif
+	frame	data/chars/Enemys/Thug/walk03.gif
+	frame	data/chars/Enemys/Thug/walk04.gif
+	frame	data/chars/Enemys/Thug/walk05.gif
+	frame	data/chars/Enemys/Thug/walk06.gif
+
+anim Death
+	loop	0
+	delay	12
+	offset	87 95
+		move  -5
+	frame   data/chars/Enemys/Thug/fall00.gif
+	@cmd  spawn01  "Knife"  0  0  -1
+	frame   data/chars/Enemys/Thug/fall01.gif
+		offset  85  73
+	frame   data/chars/Enemys/Thug/fall02.gif
+
+
+
+
+
+anim jump
+	loop	0
+	delay	15
+	offset	82 120
+	bbox	62 35 36 74
+	frame	data/chars/Enemys/Thug/PAin02.gif
+	frame	data/chars/Enemys/Thug/PAin02.gif
+	frame	data/chars/Enemys/Thug/PAin02.gif
+
+
+anim Freespecial
+	loop	0
+	delay	10
+        Range 40 70
+        RangeZ -5 5
+	offset	78 119
+	bbox	67 41 28 80
+        hitflash	MEdio
+        hitfx	data/sounds/golpes/medio.wav
+	frame	data/chars/Enemys/Thug/a200.gif
+		delay  30
+		bbox  0
+	frame  data/chars/Enemys/Thug/a201.gif
+		delay  20
+	frame  data/chars/Enemys/Thug/a202.gif
+	frame  data/chars/Enemys/Thug/a203.gif
+	frame  data/chars/Enemys/Thug/a204.gif
+		delay  20
+	@cmd  spawn01  "ThugP01"  0  0  -1
+		sound  data/Sounds/fire.wav
+	frame  data/chars/Enemys/Thug/a205.gif
+		attack7  96  57  45  20  15  1  0  0  0  10
+	frame  data/chars/Enemys/Thug/a205.gif
+		attack7  94  42  72  33  15  1  0  0  0  10
+		delay  40
+	frame  data/chars/Enemys/Thug/a205.gif
+
+
+
+
+anim attack1
+	loop	0
+	delay	12
+	offset	77 121
+        Range 0 40
+        RangeZ -5 5
+        hitflash	Corte
+	bbox	63 44 31 76
+		Attack1  0
+        Sound	data/sounds/whoosh.wav
+        hitfx	data/sounds/golpes/Corte.wav
+	frame	data/chars/Enemys/Thug/a100.gif
+		delay  7
+	frame	data/chars/Enemys/Thug/a101.gif
+		delay  3
+		attack1  84  32  48  53  5  1  0  0  0  10
+	frame	data/chars/Enemys/Thug/a102b.gif
+		delay  5
+	frame	data/chars/Enemys/Thug/a102.gif
+		Attack1  0
+	frame	data/chars/Enemys/Thug/a103.gif
+	frame  data/chars/Enemys/Thug/a102.gif
+
+
+
+
+anim pain
+	loop	0
+	offset	74 118
+	bbox	61 54 26 66
+	delay	5
+	frame	data/chars/Enemys/Thug/pain01.gif
+		delay  25
+		offset  72  118
+	frame	data/chars/Enemys/Thug/pain01.gif
+
+anim pain3
+	loop	0
+	offset	74 119
+	bbox	61 54 26 66
+	delay	5
+	jumpframe  0  2  0  0
+	frame	data/chars/Enemys/Thug/pain01.gif
+		delay  25
+		offset  77  119
+	frame	data/chars/Enemys/Thug/pain01.gif
+
+anim pain4
+	loop	0
+	offset	75 118
+	bbox	61 54 26 66
+	delay	5
+	frame	data/chars/Enemys/Thug/pain01.gif
+		delay  900
+		offset  74  119
+	frame	data/chars/Enemys/Thug/pain01.gif
+
+
+anim grabbed
+	loop	0
+	offset	81 118
+	bbox	75 53 26 67
+	delay	40
+	frame	data/chars/Enemys/Thug/pain02.gif
+
+
+
+anim pain2
+	loop	0
+	offset	83 120
+	bbox	72 55 28 65
+	delay	5
+	frame	data/chars/Enemys/Thug/pain02.gif
+		delay  25
+		offset  80  120
+	frame	data/chars/Enemys/Thug/pain02.gif
+
+
+
+
+
+anim fall2
+	loop	0
+	offset	71 92
+	jumpframe  0  3  -3  0
+	delay	20
+        hitfx	data/sounds/golpes/Forte.wav
+		attack  0
+	frame	data/chars/Enemys/Thug/fall00.gif
+		Attack1  0
+	frame	data/chars/Enemys/Thug/fall01.gif
+		offset  81  72
+		delay  10
+	frame	data/chars/Enemys/Thug/fall02.gif
+
+anim fall
+	loop	0
+	offset	71 93
+	delay	20
+        hitfx	data/sounds/golpes/Forte.wav
+		attack  0
+	frame	data/chars/Enemys/Thug/fall00.gif
+		Attack1  0
+	frame	data/chars/Enemys/Thug/fall01.gif
+		offset  82  71
+		delay  10
+	frame	data/chars/Enemys/Thug/fall02.gif
+
+anim fall6 #Shok
+	loop	0
+	offset	93 96
+	delay	8
+        hitfx	data/sounds/golpes/Forte.wav
+		attack  0
+	frame	data/chars/Enemys/Thug/fall00.gif
+		offset  85  107
+	frame	data/chars/Enemys/Thug/fall200.gif
+		offset  89  97
+	frame	data/chars/Enemys/Thug/fall00.gif
+		offset  85  107
+	frame	data/chars/Enemys/Thug/fall200.gif
+		offset  89  97
+	frame	data/chars/Enemys/Thug/fall00.gif
+		offset  84  72
+	frame	data/chars/Enemys/Thug/fall02.gif
+
+
+anim fall7 #Burn
+	loop	0
+	offset	65 97
+	delay	10
+        hitfx	data/sounds/golpes/Forte.wav
+		attack  0
+	frame	data/chars/Enemys/Thug/FALL300.gif
+	frame	data/chars/Enemys/Thug/FALL301.gif
+	frame	data/chars/Enemys/Thug/FALL302.gif
+	frame	data/chars/Enemys/Thug/FALL300.gif
+	frame	data/chars/Enemys/Thug/FALL301.gif
+		offset  82  73
+	frame	data/chars/Enemys/Thug/FALL02.gif
+
+
+anim rise
+	loop	0
+	offset	82 72
+	delay	20
+	frame	data/chars/Enemys/Thug/Rise00.gif
+	frame	data/chars/Enemys/Thug/Rise01.gif
+	frame	data/chars/Enemys/Thug/Rise02.gif
+
+
+
+
+
+
+
+anim land
+	loop	0
+	delay	15
+	offset	80 119
+	bbox	58 54 36 67
+	frame	data/chars/Enemys/Thug/a103.gif
+
+
+anim Fall9
+	loop	0
+	offset	78 120
+	delay	999
+	frame	data/chars/Enemys/Thug/pain01.gif #0
+		offset  83  118
+	frame	data/chars/Enemys/Thug/pain02.gif #1
+		offset  81  78
+	frame	data/chars/Enemys/Thug/fall01.gif #2
+		offset  81  72
+	frame	data/chars/Enemys/Thug/fall02.gif #3
+		offset  112  99
+	frame	data/chars/Enemys/Thug/fall400.gif #4
+		offset  105  138
+	frame	data/chars/Enemys/Thug/fall401.gif #5
+		offset  81  118
+	frame	data/chars/Enemys/Thug/fall402.gif #6
+		offset  78  124
+	frame  data/chars/Enemys/Thug/fall403.gif #7
+		offset  99  138
+	delay	20
+	frame	data/chars/Enemys/Thug/fall401.gif #8
+	delay	30
+		offset  66  124
+	frame	data/chars/Enemys/Thug/fall404.gif #9
+	offset	81 73
+	frame	data/chars/Enemys/Thug/Fall405.gif #10
+
+
+anim Fall8
+	loop	0
+	flipframe  0
+	offset	83 72
+	delay	30
+	frame	data/chars/Enemys/Thug/fall01.gif #0
+	offset	85 72
+	delay	15
+	frame	data/chars/Enemys/Thug/fall02.gif #1
+
+
+anim Fall5
+	loop	0
+	flipframe  1
+	offset	80 73
+	delay	30
+	frame	data/chars/Enemys/Thug/fall01.gif #0
+	offset	83 73
+	delay	15
+	frame	data/chars/Enemys/Thug/fall02.gif #1
+

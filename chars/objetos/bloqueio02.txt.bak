@@ -1,0 +1,27 @@
+# Do not forget to name your character.
+# Health is optional.
+
+name	Bloqueio02
+health	1
+nolife 1
+noname 1
+type	obstacle
+gfxshadow	1
+#icon	data/chars/misc/charicon.gif
+diesound		data/sounds/Iron.wav
+noatflash	1
+
+anim idle
+	loop	0
+	delay	100
+	offset	105 170
+	bbox	88 116 26 55
+	frame	data/chars/Objetos/roadblock02.gif
+
+
+anim fall
+	loop	1
+	delay	1000
+	offset	105 170
+	frame	data/chars/Objetos/roadblock03.gif
+

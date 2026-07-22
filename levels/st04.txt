@@ -1,0 +1,434 @@
+music		data/bgs/St04/Lv04.bor
+bossmusic	data/music/boss1.bor
+scrollspeed 0.5#1
+stagenumber 4
+background	data/bgs/st04/Back01.gif
+panel		data/bgs/St04/Pn01.gif
+#frontpanel      data/bgs/St01/Front01.gif
+#bglayer           data/bgs/11lvl/liberty_statue.gif 0.3 0.1   60    -40 180 1 1 1 1  0
+#bglayer           data/bgs/11lvl/0x.gif 0.5 0.1   60    -40 180 1 1 1 1  0
+#fglayer         data/bgs/11lvl/fondo3.gif 1500 -0.1 0 0 0 0 0 1 1 1
+#fglayer         data/bgs/11lvl/sun.gif 500 0 0 0 -5 1 1 1 1 1 1
+#fglayer         data/bgs/11lvl/light2.gif 2500 0 0 0 -5 1 1 1 1 1 1
+cameratype 1
+cameraoffset 0 -30
+#levelscript @script
+#void main() {
+#	changelevelproperty("camerazoffset", 0);
+#	changelevelproperty("cameraxoffset", 0);
+#}
+#@end_script
+#settime         90
+notime          1
+noslow          1
+order		a
+spawn1  	190 20 50
+spawn2  	210 25 50
+spawn3  	220 30 50
+
+
+Hole  1243  278  -53  0  89  120  45
+Hole  1767  276  33  0  99  223  66
+Hole  2276  274  -29  0  83  126  40
+Hole  2472  278  28  0  622  729  55
+
+
+
+
+
+spawn  Galsia
+map    2
+health 70
+	coords  -100  191
+	at  300
+
+spawn  Signal
+map    2
+health 70
+	coords  500 230
+	at  300
+
+spawn  galsia
+map    2
+health 70
+	coords  500 245
+	at  450
+
+spawn  galsia
+map    2
+health 70
+	coords  -200 245
+	at  450
+
+
+spawn  Nora
+map    4
+	coords  500 230
+	at  550
+
+
+Wait
+	at  600
+
+
+group		4 4
+at		600
+
+
+spawn  Galsia
+map    2
+health 70
+	coords  500  191
+	at  600
+
+spawn  Nora
+map    4
+	coords  500 230
+	at  600
+
+spawn  Signal
+health 50
+	coords  550 190
+	at  600
+
+spawn  Galsia
+health 50
+	coords  600  191
+	at  600
+
+group		9 9
+at		601
+
+spawn  Cone
+item   Kunai
+	coords  564  256
+	at  601
+
+
+spawn  Buraco
+       Flip 1
+	coords  479  225
+	at  712
+
+spawn  Knife
+	coords  600  191
+	at  750
+
+
+
+spawn  Galsia
+map    2
+health 70
+	coords  600  191
+	at  800
+
+spawn  Bloqueio
+flip   1
+item   Cash
+	coords  574  256
+	at  800
+
+spawn  Galsia
+map    2
+health 70
+	coords  600  200
+	at  1050
+
+spawn  Galsia
+map    2
+health 70
+	coords  -50  191
+	at  1265
+
+spawn  Galsia
+map    2
+health 70
+	coords  600  190
+	at  1265
+
+
+spawn  Pino
+item   apple
+	coords  482  194
+	at  1265
+
+spawn  Galsia
+map    2
+health 70
+	coords  -100  190
+	at  1265
+
+
+Wait
+	at  1350
+
+group		4 4
+at		1350
+
+
+
+
+spawn  Galsia
+map    2
+health 70
+	coords  -100  190
+	at  1350
+
+spawn  Knife
+	coords  550  190
+	at  1350
+
+spawn  Galsia
+map    2
+health 70
+	coords  600  190
+	at  1350
+
+spawn  Galsia
+health 50
+	coords  600  195
+	at  1350
+
+spawn  Nora
+map    4
+	coords  -100 190
+	at  1350
+
+group		10 10
+at		1351
+
+spawn  Cone
+Item   1up
+	coords  635 254
+	at  1351
+
+
+
+spawn  signal
+	coords  500 250
+	at  1614
+
+
+spawn  pino
+	coords  500 193
+	at  1700
+
+
+
+spawn  Buraco
+       Flip 1
+	coords  479  225
+	at  1767
+
+spawn  Bloqueio
+flip   1
+item   Cash
+	coords  500  228
+	at  1885
+
+spawn  Bloqueio
+flip   1
+item   apple
+	coords  500  200
+	at  1835
+
+spawn  Cone
+Item   Kunai
+	coords  500 195
+	at  2200
+
+spawn  signal
+	coords  550 190
+	at  2300
+
+
+
+spawn  signal
+	coords  500 215
+	at  2300
+
+spawn  Cone
+item   Chicken
+	coords  564  200
+	at  2491
+
+spawn  Haku_oh
+map    1
+	coords  500 195
+	at  2500
+
+spawn  signal
+	coords  -50 190
+	at  2600
+
+
+
+
+Wait
+	at  2700
+
+group		4 4
+at		2700
+
+spawn  signal
+health 70
+	coords  500 190
+	at  2700
+
+spawn  Knife
+	coords  -100  195
+	at  2700
+
+
+spawn  Galsia
+health 50
+	coords  -50  195
+	at  2700
+
+
+spawn  signal
+map    2
+	coords  500 190
+	at  2700
+
+spawn  Knife
+	coords  -50  195
+	at  2900
+
+spawn  Galsia
+map    2
+health 70
+	coords  -50  195
+	at  2900
+
+spawn  Knife
+	coords  500  195
+	at  2950
+
+spawn  signal
+map    2
+	coords  -50 190
+	at  2950
+
+spawn  Galsia
+map    2
+health 70
+	coords  550  195
+	at  2950
+
+spawn  Galsia
+map    2
+health 70
+	coords  550  200
+	at  2950
+
+spawn  Knife
+	coords  500  195
+	at  3300
+
+
+spawn  Galsia
+map    2
+health 70
+	coords  550  250
+	at  3300
+
+Wait
+	at  3400
+
+group		4 4
+at		3400
+
+spawn  Galsia
+map    2
+health 70
+	coords  550  250
+	at  3400
+
+
+spawn  Knife
+	coords  500  190
+	at  3400
+
+spawn  Galsia
+map    2
+health 70
+	coords  550  190
+	at  3400
+
+spawn  signal
+map    2
+	coords  -100 190
+	at  3400
+
+spawn  Galsia
+health 50
+	coords  -100  250
+	at  3400
+
+spawn  signal
+health 90
+map    1
+	coords  -100 190
+	at  3400
+
+
+group		3 3
+at		3550
+
+Wait
+	at  3550
+
+
+
+
+spawn  Bob
+alias  Bongo
+map    1
+boss   1
+	coords  500 250
+	at  3550
+
+spawn  Bob
+alias  Fuba
+boss   1
+	coords  -100 190
+	at  3550
+
+spawn  Galsia
+map    2
+health 70
+	coords  550  190
+	at  3550
+
+spawn  Galsia
+map    2
+health 70
+	coords -100  250
+	at  3550
+
+
+spawn  Galsia
+map    2
+health 70
+	coords  550  190
+	at  3550
+
+spawn  Galsia
+map    2
+health 70
+	coords  -100  250
+	at  3550
+
+
+
+
+
+
+
+
+
+
+
+
+

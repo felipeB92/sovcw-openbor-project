@@ -1,0 +1,732 @@
+name	_Shiva__
+health	100
+mp 10
+#Alpha 1
+mprate 1
+#secret 1
+blockodds 1
+Falldie 2
+Grabdistance 18
+riseinv				0.4 1
+speed	13
+type	NPC
+Subtype Follow
+iconposition 322 4
+lifeposition 322 23
+Nameposition 343 4
+MPposition 406 14
+lifebarstatus 126 5 1 1 0 -500 -500 1 -500
+MPbarstatus 42 5 1 1 0 -500 -500 1 -500
+hostile ENEMY
+subject_to_screen 1
+gfxshadow	1
+candamage			ENEMy obstacle
+JUMPHEIGHT 4
+hostile Enemy
+#antigrab 2
+atchain    1 2 3 4 5
+weapons Shiva_Knife Shiva_Sword Shiva_pipe Shiva_Kunai
+icon	data/chars/Boss/ShivaR/icon.gif 1
+diesound data/Sounds/Die4.wav
+running	20	3	2	1	1
+onblockwscript	data/scripts/bounceF.c
+#animationscript 	data/scripts/ani0020.h
+animationscript		data/scripts/drago.c
+ondrawscript 		data/scripts/Enemy_ondrawscript.c
+
+
+
+remap data/chars/Boss/ShivaR/idle00.gif data/chars/Boss/ShivaR/MAp01.gif
+remap data/chars/Boss/ShivaR/idle00.gif data/chars/Boss/ShivaR/MAp02.gif
+remap data/chars/Boss/ShivaR/idle00.gif data/chars/Boss/ShivaR/MAp03.gif
+remap data/chars/Boss/ShivaR/idle00.gif data/chars/Boss/ShivaR/MAp04.gif
+
+anim Pain5
+	loop	0
+	delay	14
+	offset	138 193
+	bbox	126 112 31 80
+	frame	data/chars/Boss/ShivaR/walk00.gif
+        @cmd dasher 1.2 0 0
+	frame	data/chars/Boss/ShivaR/walk01.gif
+	frame	data/chars/Boss/ShivaR/walk02.gif
+	frame   data/chars/Boss/ShivaR/walk03.gif
+	frame   data/chars/Boss/ShivaR/walk04.gif
+	frame   data/chars/Boss/ShivaR/walk05.gif
+	frame	data/chars/Boss/ShivaR/walk00.gif
+	frame	data/chars/Boss/ShivaR/walk01.gif
+	frame	data/chars/Boss/ShivaR/walk02.gif
+	frame   data/chars/Boss/ShivaR/walk03.gif
+	frame   data/chars/Boss/ShivaR/walk04.gif
+	frame   data/chars/Boss/ShivaR/walk05.gif
+	frame	data/chars/Boss/ShivaR/walk00.gif
+	frame	data/chars/Boss/ShivaR/walk01.gif
+	frame	data/chars/Boss/ShivaR/walk02.gif
+	frame   data/chars/Boss/ShivaR/walk03.gif
+	frame   data/chars/Boss/ShivaR/walk04.gif
+	frame   data/chars/Boss/ShivaR/walk05.gif
+	frame	data/chars/Boss/ShivaR/walk00.gif
+	frame	data/chars/Boss/ShivaR/walk01.gif
+	frame	data/chars/Boss/ShivaR/walk02.gif
+	frame   data/chars/Boss/ShivaR/walk03.gif
+	frame   data/chars/Boss/ShivaR/walk04.gif
+	frame   data/chars/Boss/ShivaR/walk05.gif
+
+anim Spawn
+	loop	0
+	delay	35
+	offset	138 193
+	bbox	121 115 38 79
+	drawmethod tintmode 6
+	drawmethod tintcolor 255
+        @cmd dasher 1 0 -2
+	frame   data/chars/Boss/ShivaR/idle00.gif
+        @cmd dasher 0 0 0
+	delay	12
+	frame   data/chars/Boss/ShivaR/idle00.gif
+        Nodrawmethod
+	frame   data/chars/Boss/ShivaR/idle01.gif
+	frame   data/chars/Boss/ShivaR/idle02.gif
+	frame   data/chars/Boss/ShivaR/idle01.gif
+	frame   data/chars/Boss/ShivaR/idle00.gif
+	frame   data/chars/Boss/ShivaR/idle01.gif
+	frame   data/chars/Boss/ShivaR/idle02.gif
+	frame   data/chars/Boss/ShivaR/idle01.gif
+	frame   data/chars/Boss/ShivaR/idle00.gif
+	frame   data/chars/Boss/ShivaR/idle01.gif
+	frame   data/chars/Boss/ShivaR/idle02.gif
+	frame   data/chars/Boss/ShivaR/idle01.gif
+	frame   data/chars/Boss/ShivaR/idle00.gif
+	frame   data/chars/Boss/ShivaR/idle01.gif
+	frame   data/chars/Boss/ShivaR/idle02.gif
+	frame   data/chars/Boss/ShivaR/idle01.gif
+
+
+
+
+
+anim Death
+	loop	0
+	delay	20
+	offset	138 193
+	bbox	121 115 38 79
+	#drawmethod tintmode 6
+	#drawmethod tintcolor 255
+	frame   data/chars/Boss/ShivaR/fall02.gif
+	@cmd  spawn01  "_Shiva__"  5  0  0
+	frame   data/chars/Boss/ShivaR/fall02.gif
+	frame   data/chars/Boss/ShivaR/fall02.gif
+
+anim idle
+	loop	1
+	delay	12
+	offset	138 193
+	bbox	121 115 38 79
+	#drawmethod tintmode 6
+	#drawmethod tintcolor 255
+	frame   data/chars/Boss/ShivaR/idle00.gif
+	@cmd	depost 0
+	@cmd	throw 1 0.7 0.7 1 0 -1
+	@cmd	clearL
+	frame   data/chars/Boss/ShivaR/idle01.gif
+	frame   data/chars/Boss/ShivaR/idle02.gif
+	frame   data/chars/Boss/ShivaR/idle01.gif
+
+
+
+anim walk
+	loop	1
+	delay	14
+	offset	138 193
+	bbox	126 112 31 80
+	#drawmethod tintmode 6
+	#drawmethod tintcolor 255
+	frame	data/chars/Boss/ShivaR/walk00.gif
+	frame	data/chars/Boss/ShivaR/walk01.gif
+	frame	data/chars/Boss/ShivaR/walk02.gif
+	frame   data/chars/Boss/ShivaR/walk03.gif
+	frame   data/chars/Boss/ShivaR/walk04.gif
+	frame   data/chars/Boss/ShivaR/walk05.gif
+
+
+anim jump
+	loop	0
+	delay	15
+	offset	138 193
+	bbox	115 119 55 69
+	#drawmethod tintmode 6
+	#drawmethod tintcolor 255
+	frame	data/chars/Boss/ShivaR/Jump00.gif
+	frame	data/chars/Boss/ShivaR/Jump00.gif
+	frame	data/chars/Boss/ShivaR/Jump00.gif
+
+anim jumpLanD
+	loop	0
+	delay	15
+	offset	138 193
+	bbox	120 147 41 49
+		move  0
+	#drawmethod tintmode 6
+	#drawmethod tintcolor 255
+	frame	data/chars/Boss/ShivaR/Land.gif
+
+
+
+
+anim attack1
+	loop	0
+	delay	12
+	offset	138 193
+        Range 0 60
+        RangeZ -10 10
+        hitflash	Fraco
+	bbox	126 107 44 89
+		Attack1  0
+	#drawmethod tintmode 6
+	#drawmethod tintcolor 255
+        hitfx	data/sounds/golpes/Fraco.wav
+	frame	data/chars/Boss/ShivaR/a100.gif
+		delay  6
+		bbox  0
+        Sound	data/sounds/golpes/Soco.wav
+		attack1  125  122  92  34  5  0  0  0  0  10
+	frame	data/chars/Boss/ShivaR/a101.gif
+		delay  5
+		Attack1  0
+	frame	data/chars/Boss/ShivaR/a102.gif
+	frame	data/chars/Boss/ShivaR/a103.gif
+
+anim attack2
+	loop	0
+	delay	8
+	offset	138 193
+        hitflash	MEdio
+		Attack1  0
+	#drawmethod tintmode 6
+	#drawmethod tintcolor 255
+        Sound	data/sounds/golpes/Soco.wav
+	Sound  data/chars/Boss/ShivaR/a1.wav
+        hitfx	data/sounds/golpes/Medio.wav
+	frame	data/chars/Boss/ShivaR/a200.gif
+		delay  15
+		move  5
+		attack2  144  132  83  35  5  0  0  0  0  15
+	frame	data/chars/Boss/ShivaR/a201.gif
+		move  0
+		delay  6
+		Attack1  0
+	frame	data/chars/Boss/ShivaR/a202.gif
+
+
+anim attack3
+	loop	0
+	delay	6
+	offset	138 193
+        hitflash	MEdio
+		Attack1  0
+	#drawmethod tintmode 6
+	#drawmethod tintcolor 255
+        Sound	data/sounds/golpes/Soco.wav
+	Sound  data/chars/Boss/ShivaR/a1.wav
+        hitfx	data/sounds/golpes/Medio.wav
+		move  5
+	frame	data/chars/Boss/ShivaR/a300.gif
+		delay  8
+	frame	data/chars/Boss/ShivaR/a301.gif
+		attack2  147  88  38  101  10  1  0  0  0  10
+	frame	data/chars/Boss/ShivaR/a302.gif
+		delay  25
+		move  0
+	frame	data/chars/Boss/ShivaR/a303.gif
+	frame	data/chars/Boss/ShivaR/a304.gif
+
+anim Block
+	loop	0
+	delay	10
+	offset	138 193
+		Attack1  0
+        hitfx	data/sounds/golpes/Grab.wav
+		move  -3
+	#drawmethod tintmode 6
+	#drawmethod tintcolor 255
+	frame	data/chars/Boss/ShivaR/Block.gif
+	frame  data/chars/Boss/ShivaR/Block.gif
+	frame  data/chars/Boss/ShivaR/Block.gif
+
+
+anim Freespecial
+	loop	0
+	delay	25
+	offset	138 193
+        Range 60 100
+        RangeZ -5 5
+		Followcond  1
+		followanim  2
+        hitflash	Forte
+	#drawmethod tintmode 6
+	#drawmethod tintcolor 255
+		Attack1  144  150  35  44  1  0  0  0  0  15
+        Sound	data/sounds/golpes/Soco.wav
+	Sound  data/chars/Boss/ShivaR/a2.wav
+        hitfx	data/sounds/golpes/GRab.wav
+	frame	data/chars/Boss/ShivaR/LAnd.gif
+        @cmd dasher 3 0 0
+		delay  10
+		Attack1  0
+	frame	data/chars/Boss/ShivaR/Jump01.gif
+		attack4  144  150  35  44  1  0  1  1  0  15
+		offset  138  213
+		delay  25
+	frame	data/chars/Boss/ShivaR/ja200.gif
+        @cmd dasher 0 0 0
+		Attack1  0
+		offset  138  194
+	frame	data/chars/Boss/ShivaR/Land.gif
+
+
+anim Freespecial2
+	loop	0
+	delay	25
+	offset	138 193
+        Range 60 100
+        RangeZ -30 -5
+        hitflash	Forte
+		Attack1  0
+	#drawmethod tintmode 6
+	#drawmethod tintcolor 255
+        Sound	data/sounds/golpes/Soco.wav
+	Sound  data/chars/Boss/ShivaR/a2.wav
+        hitfx	data/sounds/golpes/Forte.wav
+	frame	data/chars/Boss/ShivaR/special00.gif
+		delay  7
+        @cmd dasher 3 0 -1
+	frame	data/chars/Boss/ShivaR/special01.gif
+		attack1  81  135  59  46  15  1  0  0  0  15
+	frame	data/chars/Boss/ShivaR/special02.gif
+		attack1  78  104  84  64  15  1  0  0  0  15
+	frame	data/chars/Boss/ShivaR/special03.gif
+		attack1  116  94  71  62  15  1  0  0  0  15
+	frame	data/chars/Boss/ShivaR/special04.gif
+		attack1  100  104  106  68  15  1  0  0  0  15
+	frame	data/chars/Boss/ShivaR/special05.gif
+        @cmd dasher 0 0 0
+		Attack1  114  100  88  92
+	frame	data/chars/Boss/ShivaR/special06.gif
+		Attack1  0
+	frame	data/chars/Boss/ShivaR/special07.gif
+
+anim Freespecial3
+	loop	0
+	delay	8
+	offset	138 193
+        Range 100 150
+        RangeZ 1 30
+	#drawmethod tintmode 6
+	#drawmethod tintcolor 255
+        hitflash	Forte
+		Attack1  144  150  35  44  1  0  0  0  0  15
+		Followcond  1
+		followanim  1
+        Sound	data/sounds/golpes/Soco.wav
+        hitfx	data/sounds/golpes/Forte.wav
+        @cmd dasher 3 0 0
+	frame	data/chars/Boss/ShivaR/Run00.gif
+	frame	data/chars/Boss/ShivaR/Run01.gif
+	frame	data/chars/Boss/ShivaR/Run00.gif
+	frame	data/chars/Boss/ShivaR/Run01.gif
+	frame	data/chars/Boss/ShivaR/Run00.gif
+	@cmd	anichange "ANI_FOLLOW1"
+        @cmd dasher 0 0 0
+	frame	data/chars/Boss/ShivaR/Run01.gif
+
+
+anim Freespecial4
+	loop	0
+	delay	25
+	offset	138 193
+        Range 60 100
+	jumpframe  1  3 1  1
+        RangeZ 5 30
+        hitflash	Forte
+		Attack1  0
+	#drawmethod tintmode 6
+	#drawmethod tintcolor 255
+        Sound	data/sounds/golpes/Soco.wav
+	Sound  data/chars/Boss/ShivaR/a2.wav
+        hitfx	data/sounds/golpes/Forte.wav
+	frame	data/chars/Boss/ShivaR/Land.gif
+		delay  10
+	frame	data/chars/Boss/ShivaR/Jump00.gif
+		delay  40
+		attack1  118  140  86  36  15  1  0  0  0  15
+	frame	data/chars/Boss/ShivaR/Ja100.gif
+
+
+anim Freespecial5
+	loop	0
+	delay	8
+	offset	138 193
+        Range 150 300
+        RangeZ -30 30
+        hitflash	Forte
+	#drawmethod tintmode 6
+	#drawmethod tintcolor 255
+        hitfx	data/sounds/golpes/Forte.wav
+        @cmd dasher 3 0 0
+	frame	data/chars/Boss/ShivaR/Run00.gif
+	frame	data/chars/Boss/ShivaR/Run01.gif
+	frame	data/chars/Boss/ShivaR/Run00.gif
+	frame	data/chars/Boss/ShivaR/Run01.gif
+	frame	data/chars/Boss/ShivaR/Run00.gif
+        @cmd dasher 0 0 0
+	frame	data/chars/Boss/ShivaR/Run01.gif
+
+
+
+
+anim Upper
+	loop	0
+	delay	12
+	offset	138 193
+        Range 0 100
+        RangeZ -15 15
+        hitflash	forte
+		Attack1  0
+	jumpframe  5  3 1  0
+	#drawmethod tintmode 6
+	#drawmethod tintcolor 255
+        hitfx	data/sounds/golpes/Forte.wav
+        @cmd dasher 0 0 0
+	frame	data/chars/Boss/ShivaR/finalcrash00.gif
+	Sound  data/chars/Boss/ShivaR/FS.wav
+	frame	data/chars/Boss/ShivaR/finalcrash01.gif
+	frame	data/chars/Boss/ShivaR/finalcrash02.gif
+		attack1  119  148  91  51  5  0  0  0  0  15
+	frame	data/chars/Boss/ShivaR/finalcrash03.gif
+		Attack1  0
+	frame	data/chars/Boss/ShivaR/finalcrash04.gif
+		attack1  109  81  102  114  5  0  0  0  0  15
+	frame	data/chars/Boss/ShivaR/finalcrash05.gif
+		Attack1  0
+	frame	data/chars/Boss/ShivaR/finalcrash06.gif
+		attack2  108  83  85  114  15  1  0  0  0  15
+	frame	data/chars/Boss/ShivaR/finalcrash07.gif
+		Attack1  0
+	frame	data/chars/Boss/ShivaR/finalcrash08.gif
+
+
+
+
+anim Follow1
+	loop	0
+	delay	12
+	offset	138 193
+        hitflash	forte
+		Attack1  0
+	jumpframe  5  3 1  0
+	#drawmethod tintmode 6
+	#drawmethod tintcolor 255
+        hitfx	data/sounds/golpes/Forte.wav
+        @cmd dasher 0 0 0
+	Sound  data/chars/Boss/ShivaR/FS.wav
+	frame	data/chars/Boss/ShivaR/finalcrash00.gif
+	frame	data/chars/Boss/ShivaR/finalcrash01.gif
+	frame	data/chars/Boss/ShivaR/finalcrash02.gif
+		attack1  119  148  91  51  5  0  0  0  0  15
+	frame	data/chars/Boss/ShivaR/finalcrash03.gif
+		Attack1  0
+	frame	data/chars/Boss/ShivaR/finalcrash04.gif
+		attack1  109  81  102  114  5  0  0  0  0  15
+	frame	data/chars/Boss/ShivaR/finalcrash05.gif
+		Attack1  0
+	frame	data/chars/Boss/ShivaR/finalcrash06.gif
+		attack2  108  83  85  114  15  1  0  0  0  15
+	frame	data/chars/Boss/ShivaR/finalcrash07.gif
+		Attack1  0
+	frame	data/chars/Boss/ShivaR/finalcrash08.gif
+
+
+anim Follow2
+	loop	0
+	delay	12
+	offset	87 242
+        hitflash	forte
+		Attack1  0
+        @cmd dasher 0 0 0
+        quakeframe 8 3 3
+	#drawmethod tintmode 6
+	#drawmethod tintcolor 255
+	frame	data/chars/Boss/ShivaR/vault00.gif
+	frame	data/chars/Boss/ShivaR/vault01.gif
+	frame	data/chars/Boss/ShivaR/vault02.gif
+		move  0
+	frame	data/chars/Boss/ShivaR/vault03.gif
+		offset  177  252
+		move  75
+	frame	data/chars/Boss/ShivaR/vault04.gif
+		offset  167  194
+		move  0
+	@cmd	slamstart
+	@cmd	position 0 -30 0 0 1
+	frame	data/chars/Boss/ShivaR/SLam200.gif
+	@cmd	position 1 -10 10 0 1
+	frame	data/chars/Boss/ShivaR/SLam201.gif
+	@cmd	position 0 0 9 0 1
+	frame	data/chars/Boss/ShivaR/SLam202.gif
+	@cmd	position 3 40 0 0 1
+		@cmd  depost  0
+		@cmd  throw  20  5  1  1  0  -1
+		@cmd  clearL
+	frame	data/chars/Boss/ShivaR/SLam203.gif
+	frame	data/chars/Boss/ShivaR/SLam204.gif
+	frame	data/chars/Boss/ShivaR/SLam205.gif
+
+
+
+
+anim Special
+	loop	0
+	delay	10
+	offset	138 193
+        hitflash	Forte
+		Attack1  0
+	jumpframe  1  3 1  1
+	#drawmethod tintmode 6
+	#drawmethod tintcolor 255
+        Sound	data/sounds/golpes/Soco.wav
+	Sound  data/chars/Boss/ShivaR/a2.wav
+        hitfx	data/sounds/golpes/Forte.wav
+	frame	data/chars/Boss/ShivaR/LAnd.gif
+	frame	data/chars/Boss/ShivaR/Jump00.gif
+	delay	40
+	frame	data/chars/Boss/ShivaR/Jump01.gif
+
+
+anim Special2
+	loop	0
+	delay	10
+	offset	138 193
+        hitflash	Forte
+		Attack1  0
+	jumpframe  1  3 1  1
+	#drawmethod tintmode 6
+	#drawmethod tintcolor 255
+        Sound	data/sounds/golpes/Soco.wav
+	Sound  data/chars/Boss/ShivaR/a2.wav
+        hitfx	data/sounds/golpes/Forte.wav
+	frame	data/chars/Boss/ShivaR/LAnd.gif
+	frame	data/chars/Boss/ShivaR/Jump00.gif
+	delay	40
+	frame	data/chars/Boss/ShivaR/Jump01.gif
+
+
+
+
+
+
+
+
+
+anim pain
+	loop	0
+	offset	138 193
+	bbox	122 102 42 92
+	delay	5
+	#drawmethod tintmode 6
+	#drawmethod tintcolor 255
+	frame	data/chars/Boss/ShivaR/pain01.gif
+		delay  35
+		offset  136  193
+	frame	data/chars/Boss/ShivaR/pain01.gif
+
+anim pain3
+	loop	0
+	offset	129 193
+	bbox	113 110 34 84
+	delay	5
+	jumpframe  0  2  0  0
+	#drawmethod tintmode 6
+	#drawmethod tintcolor 255
+	frame	data/chars/Boss/ShivaR/pain01.gif
+		delay  25
+		offset  127  193
+	frame	data/chars/Boss/ShivaR/pain01.gif
+
+anim pain4
+	loop	0
+	offset	134 193
+	bbox	113 111 39 81
+	delay	5
+	#drawmethod tintmode 6
+	#drawmethod tintcolor 255
+	frame	data/chars/Boss/ShivaR/pain01.gif
+		delay  900
+		offset  131  193
+	frame	data/chars/Boss/ShivaR/pain01.gif
+
+
+anim grabbed
+	loop	0
+	offset	138 193
+	bbox	123 112 44 81
+	delay	900
+	#drawmethod tintmode 6
+	#drawmethod tintcolor 255
+	frame	data/chars/Boss/ShivaR/pain02.gif
+
+
+
+anim pain2
+	loop	0
+	offset	138 193
+	bbox	124 114 39 76
+	delay	5
+	#drawmethod tintmode 6
+	#drawmethod tintcolor 255
+	frame	data/chars/Boss/ShivaR/pain02.gif
+		delay  25
+		offset  136  193
+	frame	data/chars/Boss/ShivaR/pain02.gif
+
+
+
+
+
+anim fall2
+	loop	0
+	offset	138 193
+	jumpframe  0  3  -3  0
+	delay	20
+	#drawmethod tintmode 6
+	#drawmethod tintcolor 255
+        hitfx	data/sounds/golpes/Forte.wav
+		attack  0
+	frame	data/chars/Boss/ShivaR/fall00.gif
+		Attack1  0
+	frame	data/chars/Boss/ShivaR/fall01.gif
+		delay  10
+	frame	data/chars/Boss/ShivaR/fall02.gif
+
+anim fall
+	loop	0
+	offset	138 193
+	delay	20
+	#drawmethod tintmode 6
+	#drawmethod tintcolor 255
+        hitfx	data/sounds/golpes/Forte.wav
+		attack  0
+	frame	data/chars/Boss/ShivaR/fall00.gif
+		Attack1  0
+	frame	data/chars/Boss/ShivaR/fall01.gif
+		delay  10
+	frame	data/chars/Boss/ShivaR/fall02.gif
+
+anim fall6 #Shok
+	loop	0
+	offset	161 196
+	delay	5
+	#drawmethod tintmode 6
+	#drawmethod tintcolor 255
+        hitfx	data/sounds/golpes/Forte.wav
+		attack  0
+	frame	data/chars/Boss/ShivaR/fall201.gif
+	frame	data/chars/Boss/ShivaR/fall200.gif
+	frame	data/chars/Boss/ShivaR/fall201.gif
+	frame	data/chars/Boss/ShivaR/fall200.gif
+		offset  146  193
+	frame	data/chars/Boss/ShivaR/fall01.gif
+	frame	data/chars/Boss/ShivaR/fall02.gif
+
+
+anim fall7 #Burn
+	loop	0
+	offset	147 204
+	delay	10
+	#drawmethod tintmode 6
+	#drawmethod tintcolor 255
+        hitfx	data/sounds/golpes/Forte.wav
+		attack  0
+	frame	data/chars/Boss/ShivaR/FALL300.gif
+	frame	data/chars/Boss/ShivaR/FALL301.gif
+	frame	data/chars/Boss/ShivaR/FALL302.gif
+	frame	data/chars/Boss/ShivaR/FALL300.gif
+	frame	data/chars/Boss/ShivaR/FALL301.gif
+		offset  146  193
+	frame	data/chars/Boss/ShivaR/FALL02.gif
+
+
+anim rise
+	loop	0
+	offset	138 193
+	delay	12
+	#drawmethod tintmode 6
+	#drawmethod tintcolor 255
+	frame	data/chars/Boss/ShivaR/Rise00.gif
+	frame	data/chars/Boss/ShivaR/Rise01.gif
+	frame	data/chars/Boss/ShivaR/Rise02.gif
+	frame  data/chars/Boss/ShivaR/Rise03.gif
+	frame  data/chars/Boss/ShivaR/Rise04.gif
+
+
+
+
+anim land
+	loop	0
+	delay	40
+	offset	138 193
+	bbox	111 143 50 49
+	#drawmethod tintmode 6
+	#drawmethod tintcolor 255
+	frame	data/chars/Boss/ShivaR/Land.gif
+
+
+anim Fall9
+	loop	0
+	offset	138 193
+	delay	999
+	#drawmethod tintmode 6
+	#drawmethod tintcolor 255
+	frame	data/chars/Boss/ShivaR/pain01.gif #0
+	frame	data/chars/Boss/ShivaR/pain02.gif #1
+	frame	data/chars/Boss/ShivaR/fall01.gif #2
+	frame	data/chars/Boss/ShivaR/fall02.gif #3
+		offset  165  172
+	frame	data/chars/Boss/ShivaR/fall400.gif #4
+		offset  151  187
+	frame	data/chars/Boss/ShivaR/fall401.gif #5
+		offset  139  174
+	frame	data/chars/Boss/ShivaR/fall402.gif #6
+		offset  148  179
+	frame  data/chars/Boss/ShivaR/fall403.gif #7
+	delay	20
+		offset  154  188
+	frame	data/chars/Boss/ShivaR/fall401.gif #8
+	delay	30
+	frame	data/chars/Boss/ShivaR/fall404.gif #9
+		offset  136  192
+	frame	data/chars/Boss/ShivaR/Fall405.gif #10
+
+
+anim Fall8
+	loop	0
+	flipframe  0
+	offset	138 193
+	delay	30
+	#drawmethod tintmode 6
+	#drawmethod tintcolor 255
+	frame	data/chars/Boss/ShivaR/fall01.gif #0
+	delay	15
+	frame	data/chars/Boss/ShivaR/fall02.gif #1
+
+
+anim Fall5
+	loop	0
+	flipframe  1
+	offset	138 193
+	delay	30
+	#drawmethod tintmode 6
+	#drawmethod tintcolor 255
+	frame	data/chars/Boss/ShivaR/fall01.gif #0
+	delay	15
+	frame	data/chars/Boss/ShivaR/fall02.gif #1
+

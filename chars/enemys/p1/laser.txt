@@ -1,0 +1,24 @@
+name			Laser
+type			none
+health			1
+nolife			1
+lifespan		2
+remove			1
+shadow			0
+antigravity		100
+
+anim idle
+	hitflash shock
+	loop	0
+	delay	4
+	offset	141 114
+        hitfx	data/sounds/golpes/Forte.wav
+	attack6 158 127 7 1 16 3 0 0 0 12
+	frame	data/chars/enemys/p1/laser/laser00.gif
+	attack6 158 127 16 1 16 3 0 0 0 12
+	frame	data/chars/enemys/p1/laser/laser01.gif
+	attack6 158 127 24 1 16 3 0 0 0 12
+	frame	data/chars/enemys/p1/laser/laser02.gif
+	attack6 158 127 32 1 16 3 0 0 0 12
+	frame	data/chars/enemys/p1/laser/laser03.gif
+

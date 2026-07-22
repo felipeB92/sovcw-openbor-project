@@ -1,0 +1,39 @@
+name			Porta00 #GROUND
+type			None
+Speed 0
+#setlayer 5
+#noquake 	1 1
+#offscreenkill	1000
+#Alpha 1
+
+
+anim idle
+	loop	0
+	offset	75 79
+		delay  1
+	frame	data/Bgs/02/p00.gif
+		delay  5
+	Sound	data/sounds/Gate.wav
+	frame	data/Bgs/02/p01.gif
+	frame	data/Bgs/02/p02.gif
+	frame	data/Bgs/02/p04.gif
+	frame	data/Bgs/02/p05.gif
+	frame	data/Bgs/02/p06.gif
+	frame	data/Bgs/02/p07.gif
+	frame	data/Bgs/02/p08.gif
+	frame	data/Bgs/02/p09.gif
+	frame	data/Bgs/02/p10.gif
+	frame	data/Bgs/02/p11.gif
+	frame	data/Bgs/02/p12.gif
+	frame	data/Bgs/02/p13.gif
+	frame	data/Bgs/02/p14.gif
+	frame	data/Bgs/02/p15.gif
+	frame	data/Bgs/02/p16.gif
+	frame	data/Bgs/02/p17.gif
+	frame	data/Bgs/02/p18.gif
+	frame	data/Bgs/02/p19.gif
+	frame	data/Bgs/02/p20.gif
+	frame	data/Bgs/02/p21.gif
+	frame	data/Bgs/02/p22.gif
+	frame	data/Bgs/02/p23.gif
+

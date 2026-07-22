@@ -1,0 +1,20 @@
+name	Fraco
+type	none
+Alpha 1
+#subtype	noskip
+#setlayer -1
+
+
+
+anim	idle
+	loop	0
+	delay	1
+	offset	27 27
+		drawmethod  180  180  0  0  0  -1  -1
+	frame	data/Chars/efeitos/F100.gif
+	frame	data/Chars/efeitos/F101.gif
+	frame	data/Chars/efeitos/F102.gif
+	frame	data/Chars/efeitos/F103.gif
+	frame	data/Chars/efeitos/F104.gif
+	frame	data/Chars/efeitos/F105.gif
+

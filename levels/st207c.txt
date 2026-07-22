@@ -1,0 +1,71 @@
+music		data/bgs/St207/Lv207b.bor
+bossmusic	data/music/boss2.bor
+scrollspeed 0.5#1
+stagenumber 7
+background	data/bgs/st207/back03.gif
+panel		data/bgs/st207/pn02.gif		none	none
+#fglayer			data/bgs/st201/fpn00.gif 0 -0.8 0.6 0 0 0 0 1 1 1
+frontpanel      data/bgs/st05/Front02.gif
+cameratype 1
+cameraoffset 	0 -60
+settime         99
+notime          0
+noslow          1
+order		a
+spawn1  	50 20
+spawn2  	55 35
+spawn3  	60 50
+
+
+
+
+
+
+spawn  Elevador206
+flip   1
+	coords  0  10
+	at  0
+
+
+
+spawn  Particle
+boss   1
+flip   1
+	coords  -100  230
+	at  150
+
+spawn  PArticle
+boss   1
+map    3
+	coords  500  260
+	at  150
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,48 @@
+name			Balao #GROUND
+type			Panel
+Speed 1
+setlayer -57
+noquake 	1 1
+#offscreenkill	1000
+subject_to_platform 0
+subject_to_wall 0
+subject_to_obstacle 0
+subject_to_hole 0
+subject_to_screen 0
+subject_to_gravity 0
+
+anim idle
+	loop	1
+	offset	79 42
+		delay  15
+		movea  1
+		move  0
+	frame	data/Bgs/Arena/D00.gif
+	frame	data/Bgs/Arena/D01.gif
+	frame	data/Bgs/Arena/D02.gif
+	frame	data/Bgs/Arena/D03.gif
+	frame	data/Bgs/Arena/D04.gif
+	frame	data/Bgs/Arena/D05.gif
+	frame	data/Bgs/Arena/D06.gif
+	frame	data/Bgs/Arena/D07.gif
+	frame	data/Bgs/Arena/D08.gif
+	frame	data/Bgs/Arena/D09.gif
+		move  0
+		movea  -1
+	frame	data/Bgs/Arena/D10.gif
+	frame	data/Bgs/Arena/D11.gif
+	frame	data/Bgs/Arena/D12.gif
+	frame	data/Bgs/Arena/D13.gif
+	frame	data/Bgs/Arena/D14.gif
+	frame	data/Bgs/Arena/D15.gif
+	frame	data/Bgs/Arena/D16.gif
+	frame	data/Bgs/Arena/D17.gif
+	frame	data/Bgs/Arena/D18.gif
+		movea  0
+	frame	data/Bgs/Arena/D19.gif
+	frame	data/Bgs/Arena/D20.gif
+		move  0
+		movea  0
+	frame	data/Bgs/Arena/D21.gif
+	frame	data/Bgs/Arena/D22.gif
+

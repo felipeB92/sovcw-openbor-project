@@ -1,0 +1,27 @@
+name			pipeT #THROWNED
+type			none
+subtype			weapon
+nolife			1
+lifespan		4
+#remove			1
+gfxshadow		1 1
+noatflash 		1
+flash			noflash
+
+anim idle
+	loop	1
+	delay	7
+	offset	-25 27
+	bbox 	16 25 19 3
+        hitfx	data/sounds/Armas/Pipe.wav
+	attack 16 25 19 3 25 1 0 0 0 12
+	frame	data/chars/armas/pipe00.gif
+	frame	data/chars/armas/pipe01.gif
+	frame	data/chars/armas/pipe02.gif
+	frame	data/chars/armas/pipe03.gif
+	frame	data/chars/armas/pipe04.gif
+	frame	data/chars/armas/pipe05.gif
+	frame	data/chars/armas/pipe06.gif
+	frame	data/chars/armas/pipe07.gif
+	frame	data/chars/armas/pipe08.gif
+

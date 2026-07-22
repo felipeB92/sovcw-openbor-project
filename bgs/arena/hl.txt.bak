@@ -1,0 +1,19 @@
+name			HL #GROUND
+type			None
+setlayer -57
+noquake 	1 1
+#offscreenkill	1000
+
+
+anim idle
+	loop	1
+	offset	79 42
+		delay  10
+		movea  1
+	frame	data/Bgs/Arena/H00.gif
+	frame	data/Bgs/Arena/H01.gif
+	frame	data/Bgs/Arena/H02.gif
+	frame	data/Bgs/Arena/H03.gif
+
+
+

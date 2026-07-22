@@ -1,0 +1,34 @@
+
+name			DonatelloP02 #THROWNED
+type			none
+speed 12
+candamage			enemy obstacle
+alpha 1
+nolife			1
+lifespan		4
+remove			1
+gfxshadow		0 0
+flash			Forte
+antigravity 100
+
+anim idle
+	loop	0
+	drawmethod tintmode 6
+	drawmethod tintcolor -255
+	offset	38 70
+		delay  6
+	frame	data/chars/players/Donatello/SP200.gif
+	frame	data/chars/players/Donatello/SP201.gif
+	frame	data/chars/players/Donatello/SP202.gif
+	frame	data/chars/players/Donatello/SP203.gif
+	frame	data/chars/players/Donatello/SP204.gif
+	frame	data/chars/players/Donatello/SP205.gif
+	frame	data/chars/players/Donatello/SP206.gif
+	frame	data/chars/players/Donatello/SP207.gif
+	frame	data/chars/players/Donatello/SP208.gif
+	frame	data/chars/players/Donatello/SP209.gif
+	frame	data/chars/players/Donatello/SP210.gif
+	frame	data/chars/players/Donatello/SP211.gif
+	@cmd killentity getlocalvar("self")
+	frame	data/chars/players/Donatello/SP211.gif
+

@@ -1,0 +1,318 @@
+music		data/bgs/St206/Lv206b.bor
+bossmusic	data/music/boss2.bor
+scrollspeed 0.5#1
+stagenumber 6
+background		data/bgs/st206/back01.gif	1 0 0 0 0 0 1 1 0
+panel			data/bgs/st206/pn01.gif		none	none
+fglayer			data/bgs/st206/fpn00.gif		0 -0.5 0 0 0 0 0 -1 1 1
+#fglayer			data/bgs/st201/fpn00.gif 0 -0.8 0.6 0 0 0 0 1 1 1
+#frontpanel      data/bgs/St203/fpn00.gif
+cameratype 1
+cameraoffset 	0 -60
+settime         99
+notime          0
+noslow          1
+order		a
+spawn1  	50 20
+spawn2  	55 35
+spawn3  	60 50
+
+
+wall		230 409 0 600 5000 5000 300 10000
+
+
+spawn  sandbag
+Item   Chicken
+	coords  220 180
+	at  0
+
+
+spawn  sandbag
+2pItem   Chicken
+	coords  160 220
+	at  0
+
+
+spawn  sandbag
+Item   cash
+	coords  574 354
+	at  0
+
+spawn  Hakuyo
+health 110
+	coords  250  230 200
+	at  100
+
+spawn  Hakuyo
+map    1
+health 110
+	coords  250  262 200
+	at  230
+
+spawn  Signal
+health 50
+	coords  -100  262 
+	at  230
+
+spawn  Signal
+map    2
+health 70
+	coords  -150  280 
+	at  230
+
+spawn  Signal
+health 50
+	coords  -200  300 
+	at  230
+
+wait 
+at      250
+
+Group   4  4
+at      250
+
+
+spawn  Signal
+map    2
+health 70
+	coords  -150  280 
+	at  250
+
+spawn  Signal
+health 50
+	coords  -200  300 
+	at  250
+
+Group   9  9
+at      251
+
+
+spawn  sandbag
+	coords  500 417
+	at  370
+
+
+spawn  sandbag
+Item   cash
+	coords  500 458
+	at  370
+
+
+spawn  sandbag
+Item   cash
+	coords  545 443
+	at  370
+
+spawn  Hakuyo
+health 110
+	coords  261  395 200
+	at  480
+
+spawn  Fog
+health 70
+	coords  530  418
+	at  800
+
+spawn  Fog
+health 70
+	coords  500  460
+	at  800
+
+spawn  Bigben
+map    2
+health 100
+	coords  500  440 150
+	at  900
+
+spawn  Fog
+map    3
+health 90
+	coords  -100  460
+	at  900
+
+
+wait
+at        1000
+
+Group   4  4
+at        1000
+
+spawn  Fog
+health 70
+	coords  -100  418
+	at  1000
+
+spawn  Fog
+map    3
+health 90
+	coords  -100  460
+	at  1000
+
+
+spawn  Fog
+map    3
+health 90
+	coords  -100  460
+	at  1000
+
+spawn  Moto02
+map    2
+flip   1
+	coords  -100  418
+	at  1200
+
+spawn  Moto02
+Map   3
+	coords  500  460
+	at  1300
+
+spawn  Moto02
+	coords  500  430
+	at  1350
+
+spawn  Moto02
+Map   3
+	coords  500  450
+	at  1400
+
+spawn  Moto02
+Map   3
+	coords  500  437
+	at  1450
+
+
+spawn  Moto02
+Map 2
+flip   1
+	coords  -100  430
+	at  1500
+
+spawn  Moto02
+Flip   1
+	coords  -100  437
+	at  1550
+
+spawn  sandbag
+Item   Knife
+	coords  500 440
+	at  1560
+
+spawn  sandbag
+2pItem Apple
+	coords  550 440
+	at  1560
+
+spawn  sandbag
+Item Apple
+	coords  600 440
+	at  1560
+
+Group 5  5
+        at  1800 
+
+wait 
+        at  1800   
+
+spawn  Fog_B
+Map   3
+	coords  500  437
+	at  1800
+
+spawn  Pipe
+	coords  -70  450
+	at  1800
+
+spawn  Fog
+health 60
+	coords  -100  450
+	at  1800
+
+spawn  Electra
+health 70
+	coords  500 450
+	at  1800
+
+
+spawn  Fog
+health 60
+	coords  -100  470
+	at  1800
+
+spawn  Electra
+map    4
+health 100
+	coords  500 470
+	at  1800
+
+spawn  Fog
+map    2
+health 90
+	coords  -100  450
+	at  1800
+
+spawn  Fog
+health 70
+	coords  -100  470
+	at  1800
+
+spawn  Fog
+map    2
+health 90
+	coords  -100  470
+	at  1800
+
+spawn  sandbag
+Item   cash
+	coords  500 420
+	at  1801
+
+spawn  sandbag
+Item   Gold
+	coords  550 460
+	at  1801
+
+
+spawn  sandbag
+Item   Chicken
+	coords  650 420
+	at  1801
+
+spawn  sandbag
+2pItem   Chicken
+	coords  700 450
+	at  1801
+
+
+spawn  Jet
+Flip   1
+boss   1
+Map    3
+	coords  -100  450
+	at  2700
+
+spawn  Zamza
+boss   1
+map    1
+	coords  500 450 200
+	at  2700
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

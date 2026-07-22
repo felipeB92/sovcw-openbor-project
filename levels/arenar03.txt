@@ -1,0 +1,365 @@
+music		data/music/03a.bor
+bossmusic	data/music/01a.bor
+scrollspeed 0.5#1
+stagenumber 1
+background	data/bgs/Arena/Back04.gif	#0.85 1 0 0 0 0 -1 1 0 0 0 0 0 0 0
+#bglayer		data/bgs/01/MAr01.gif		0.5 1 0 0 0 0 -1 1 1 0 1 3 10 0.3
+#water		data/bgs/01/Mar01.gif		0.5
+#fglayer         data/bgs/Front.gif              0 -0.4 0 0 0 0 1 -1 1 1 0
+panel		data/bgs/Arena/pn03.gif		none	none
+frontpanel	data/bgs/Arena/Front03.gif		
+cameratype 1
+cameraoffset 0 -30
+#levelscript @script
+#void main() {
+#	changelevelproperty("camerazoffset", 0);
+#	changelevelproperty("cameraxoffset", 0);
+#}
+#@end_script
+#settime         90
+notime          1
+noslow          1
+order		a
+spawn1  	50 20 50
+spawn2  	55 35 50 
+spawn3  	60 50 50
+
+
+spawn  	Hamburger
+	coords  225 200
+	at  0
+
+wait 
+at  0
+
+Group 4 4
+at 0
+
+spawn  	Ninja_
+MAP    1
+health 130
+	coords  280 210 1
+	at  0
+
+spawn  KAsumi_
+MAP    2
+health 130
+	coords  330 190 1
+	at  0
+
+spawn  Ninja_
+MAP    3
+health 130
+	coords  200 190 1
+	at  0
+
+spawn  	KAsumi_
+health 130
+	coords  250 210 1
+	at  0
+
+
+wait 
+at  1
+
+Group 2 2
+at 1
+
+spawn  Hunter
+Item   Carne
+map    1
+health 200
+	coords  -100 200 1
+	at  1
+
+spawn  Hunter_U12
+Item   RefriB
+health 200
+	coords  600 200 1
+	at  1
+
+wait 
+at  2
+
+
+Group 4 4
+at 2
+
+spawn  	Shen
+MAP    1
+health 100
+	coords  -100 210 1
+	at  2
+
+spawn Shen
+map   2
+health 100
+	coords  50 190 1
+	at  2
+
+spawn  Shen
+map    3
+health 100
+	coords  300 200 1
+	at  2
+
+spawn  	sHEN
+MAP    4
+health 100
+	coords  300 210 1
+	at  2
+
+wait 
+at  3
+
+Group 2 2
+at 3
+
+spawn  Mike
+Item   Chocolate
+health 200
+	coords  600 200 1
+	at  3
+
+spawn  Mike
+Item   51
+map    1
+health 200
+	coords  -100 200 1
+	at  3
+
+wait 
+at  4
+
+Group 4 4
+at 4
+
+spawn  	Jay
+MAP    1
+health 100
+	coords  -100 210 1
+	at  4
+
+spawn  Gilson
+health 100
+	coords  600 190 1
+	at  4
+
+spawn  Jay
+health 100
+	coords  -100 200 1
+	at  4
+
+spawn  	Gilson
+MAP    2
+health 100
+	coords  600 210 1
+	at  4
+
+spawn  Gilson
+health 100
+	coords  -100 190 1
+	at  4
+
+wait 
+at  5
+
+Group 2 2
+at 5
+
+spawn  Hattori
+Item   Carne
+health 200
+	coords  600 200 1
+	at  5
+
+spawn  Hattori
+Item   Pao
+map    1
+health 200
+	coords  -100 200 1
+	at  5
+wait 
+at  6
+
+
+Group 4 4
+at 6
+
+spawn  	Edy
+MAP    1
+health 130
+	coords  -100 210 1
+	at  6
+
+spawn  Bucky
+MAP    1
+health 150
+	coords  550 190 1
+	at  6
+
+spawn  Sara
+MAP    1
+health 150
+	coords  600 200 1
+	at  6
+
+spawn  	Charlie
+MAP    1
+health 130
+	coords  -100 210 1
+	at  6
+
+spawn  	Edy
+MAP    4
+health 130
+	coords  -100 210 1
+	at  6
+
+wait 
+at  7
+
+Group 2 2
+at 7
+
+spawn  MAx
+Item   Apple
+health 200
+	coords  300 200 1
+	at  7
+
+spawn  MAx
+Item   Refri
+map    1
+health 200
+	coords  100 200 1
+	at  7
+wait 
+at  8
+
+Group 4 4
+at 8
+
+spawn  Mina
+MAP    4
+health 130
+	coords  -100 210 1
+	at  8
+
+spawn  Lisa
+MAP    4
+health 150
+	coords  550 190 1
+	at  8
+
+spawn  Kasumi
+MAP    4
+health 150
+	coords  600 200 1
+	at  8
+
+spawn  Sara
+MAP    1
+health 130
+	coords  -100 210 1
+	at  8
+
+spawn  Nita
+MAP    1
+health 130
+	coords  -100 210 1
+	at  8
+
+wait 
+at  9
+
+Group 2 2
+at 9
+
+
+spawn  Megan
+Item   Pao
+health 200
+	coords  600 220 1
+	at  9
+
+spawn  Tracy
+Item   Carne
+health 200
+	coords  -100 220 1
+	at  9
+
+spawn  Megan
+Item   Apple
+map 1
+health 200
+	coords  600 190 1
+	at  9
+
+spawn  Tracy
+Item   refri
+map   1
+health 200
+	coords  -100 190 1
+	at  9
+wait 
+at  10
+
+Group 4 4
+at 10
+
+spawn  Montanha
+MAP    4
+health 130
+	coords  -100 210 1
+	at  10
+
+spawn  Montanha
+MAP    4
+health 150
+	coords  550 190 1
+	at  10
+
+spawn  Montanha_
+MAP    4
+health 150
+	coords  600 200 1
+	at  10
+
+spawn  Montanha_
+MAP    1
+health 130
+	coords  -100 210 1
+	at  10
+
+spawn  Montanha
+MAP    1
+health 130
+	coords  -100 210 1
+	at  10
+
+Group 2 2
+at 11
+
+
+spawn  H_Jr
+Item   Carne
+health 200
+	coords  600 220 1
+	at  11
+
+spawn  H_Jr
+Item   Chocolate
+health 200
+	coords  -100 220 1
+	at  11
+
+
+
+
+
+
+
+
+
+

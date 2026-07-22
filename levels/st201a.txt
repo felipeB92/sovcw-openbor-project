@@ -1,0 +1,346 @@
+music		data/bgs/St201/Lv201a.bor
+bossmusic	data/music/boss1.bor
+scrollspeed 0.5#1
+stagenumber 1
+background	data/bgs/st201/drop00.gif
+panel		data/bgs/St201/Pn00.gif
+fglayer			data/bgs/st201/fpn00.gif 0 -0.8 0.6 0 0 0 0 1 1 1
+#frontpanel      data/bgs/St01/Front01.gif
+cameratype 1
+cameraoffset 	0 -60
+settime         99
+notime          0
+noslow          1
+order		a
+spawn1  	125 20
+spawn2  	130 35
+spawn3  	135  50
+
+
+
+Wall            2  476  0  0  697  922  250  1000
+
+
+wall		700 404 0 570 3000 3000 285 1000
+
+wall		2853 457 0 128 1000 1000 65 1000
+
+
+spawn  L201
+flip   1
+	coords  0  -51
+	at  0
+
+spawn  L202
+flip   1
+	coords  261  -51
+	at  0
+
+spawn  L203
+flip   1
+	coords  479  -12
+	at  0
+
+spawn  Lixo01
+flip   1
+item   cash
+	coords  352  155
+	at  0
+
+
+
+
+spawn  Galsia
+health 30
+map     1
+	coords  500  191
+	at  50
+
+wait
+at      250
+
+
+Group 5   5
+at      250
+
+
+
+spawn  Galsia
+health 30
+map     1
+	coords  500  230
+	at  250
+
+
+spawn  Galsia
+health 30
+map     1
+	coords  500  191
+	at  250
+
+spawn  Galsia
+health 30
+map     1
+	coords  -100  191
+	at  250
+
+spawn  signal
+health 50
+	coords  -100  191
+	at  250
+
+spawn  signal
+health 50
+map    3
+	coords  -100  191
+	at  250
+
+spawn  Galsia
+health 30
+map     1
+	coords  500  191
+	at  250
+
+
+Group 9   9
+at      251
+
+
+spawn  Donovan_
+health 50
+	coords  500  191
+	at  251
+
+spawn  Donovan
+health 50
+	coords  -100  191
+	at  351
+
+spawn  galsia
+map    1
+health 40
+	coords  -100  200
+	at  351
+
+
+spawn  Lixo01
+flip   1
+item   apple
+	coords  500  347
+	at  640
+
+spawn  Lixo01
+flip   1
+	coords  521  357
+	at  640
+
+
+spawn  galsia
+map    2
+health 50
+	coords  500  422
+	at  700
+
+spawn  signal
+health 50
+	coords  500  462
+	at  750
+
+
+spawn  Lixo01
+item   Knife
+flip   1
+	coords  519  405
+	at  860
+
+wait
+at      1150
+
+Group  5  5
+at      1150
+
+
+
+
+spawn  signal
+map    3
+health 50
+	coords  600  446
+	at  1150
+
+
+Group  9  9
+at      1351
+
+spawn  Pipe
+flip   1
+	coords  560  430
+	at  1351
+
+
+
+spawn  Lixo01
+item   cash
+flip   1
+	coords  500  405
+	at  1351
+
+spawn  Lixo01
+item   apple
+flip   1
+	coords  550  405
+	at  1351
+
+spawn  _donovan
+map    1
+health 40
+	coords 245  466
+	at  1400
+
+spawn  galsia
+map    1
+health 40
+	coords  500  440
+	at  1500
+
+spawn  galsia
+map    1
+health 40
+	coords  550  460
+	at  1500
+
+
+
+spawn  galsia
+map    1
+health 40
+	coords  550  460
+	at  1600
+
+spawn  _donovan
+map    1
+health 40
+	coords  258  465
+	at  1650
+
+wait
+at      1800
+
+Group  4  4
+at      1800
+
+
+
+
+
+spawn  Donovan
+health 40
+	coords  550  460
+	at  1800
+
+Group  6  6
+at      1801
+
+
+
+spawn  galsia
+map    2
+health 40
+	coords  600  460
+	at  1850
+
+spawn  galsia
+map    1
+health 40
+	coords  600  460
+	at  2000
+
+
+spawn  Signal
+health 50
+	coords  600  460
+	at  2150
+
+
+
+spawn  Donovan
+health 50
+	coords  600  460
+	at  2250
+
+wait
+at      2300
+
+Group  4  4
+at      2300
+
+
+spawn  galsia
+map    1
+health 40
+	coords  650  430
+	at  2300
+
+
+spawn  Signal
+health 50
+	coords  500  460
+	at  2300
+
+spawn  Signal
+health 50
+	coords  500  460
+	at  2300
+
+spawn  galsia
+map    1
+health 40
+	coords  -100  430
+	at  2300
+
+
+spawn  galsia
+map    1
+health 40
+	coords  -100  430
+	at  2300
+
+spawn  Donovan
+health 50
+	coords  -100  460
+	at  2300
+
+spawn  Luz01
+	coords  600  308
+	at  2330
+
+spawn  Menu
+flip   1
+item   Chicken
+	coords  552  413
+	at  2330
+
+spawn  Menu
+flip   1
+	coords  636  459
+	at  2330
+
+
+spawn  galsia_
+map    1
+health 40
+	coords  532  437
+	at  2400
+
+
+spawn  Donovan
+health 40
+	coords  -100  430
+	at  2400
+
+
+
+spawn  Jake
+	coords  418  410
+	at  2400
+

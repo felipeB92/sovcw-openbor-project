@@ -1,0 +1,39 @@
+name			cartridge
+type			npc
+health			1
+nolife			1
+lifespan		4
+remove			0
+nomove			1 1
+bounce 			1
+noquake 		1
+gfxshadow		1
+stealth			2
+animationscript	data/scripts/animation/default.c
+
+anim idle
+	bouncefactor 2
+	landframe  4
+	loop	1 0 4
+	delay	4
+	offset	25 28
+	frame	data/chars/weapons/cartridge00.gif
+	frame	data/chars/weapons/cartridge01.gif
+	frame	data/chars/weapons/cartridge02.gif
+	frame	data/chars/weapons/cartridge03.gif
+	sound	data/sounds/Cartridge.wav
+	@cmd hurtSelf 1
+	frame	data/chars/weapons/cartridge02.gif
+	
+anim fall
+	bouncefactor 2
+	landframe  4
+	loop	1 0 4
+	delay	4
+	offset	25 28
+	frame	data/chars/weapons/cartridge00.gif
+	frame	data/chars/weapons/cartridge01.gif
+	frame	data/chars/weapons/cartridge02.gif
+	frame	data/chars/weapons/cartridge03.gif
+	sound	data/sounds/Cartridge.wav
+	frame	data/chars/weapons/cartridge02.gif

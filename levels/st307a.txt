@@ -1,0 +1,215 @@
+music		data/bgs/St307/Lv307a.bor
+bossmusic	data/music/boss1.bor
+scrollspeed 0.5#1
+stagenumber 7
+background	data/bgs/st307/back00.gif	0.675 1 0 0 0 0 -1 1 1
+bglayer		data/bgs/st307/bg00.gif		0.475 1 0 0 0 0 -1 1 1
+bglayer		data/bgs/st307/bg01.gif		0.375 1 0 0 0 0 -1 1 1
+panel		data/bgs/st307/pn00.gif		none	none
+frontpanel      data/bgs/st05/Front02.gif
+cameratype 1
+cameraoffset 0 -30
+#levelscript @script
+#void main() {
+#	changelevelproperty("camerazoffset", 0);
+#	changelevelproperty("cameraxoffset", 0);
+#}
+#@end_script
+#settime         90
+notime          1
+noslow          1
+order		a
+spawn1  	50 70  50
+spawn2  	55 85  50
+spawn3  	60 105 50
+
+
+
+spawn  Fonte
+flip   1
+	coords  0 0
+	at  0
+
+
+
+spawn  mansao
+flip   1
+	coords  0 0
+	at  0
+
+spawn  Lixo03
+Item   Gold
+	coords  200 220
+	at  0
+
+spawn  Lixo03
+Item   Gold
+	coords  250 220
+	at  0
+
+
+
+spawn  Galsia
+Map    1
+health 50
+	coords  -100 220
+	at  0
+
+spawn  Donovan
+Map    2
+health 75
+	coords  500 240
+	at  0
+
+
+
+spawn  maclean_
+health 150
+	coords  350 220
+	at  0
+
+spawn  macleod_
+health 150
+	coords  380 260
+	at  0
+
+spawn  Donovan
+Map    2
+health 75
+	coords  500 240
+	at  100
+
+spawn  Galsia
+Map    1
+health 50
+	coords  -100 220
+	at  200
+
+
+spawn  Lixo03
+Item   Knife
+	coords  500 220
+	at  205
+
+spawn  Lixo03
+Item   Pipe
+	coords  550 220
+	at  205
+
+wait 
+at     500
+
+Group 5  5
+at     500
+
+spawn  Galsia
+Map    1
+health 50
+	coords  500 220
+	at  500
+
+spawn  Electra
+health 80
+	coords  500 220
+	at  500
+
+spawn  Electra
+health 80
+	coords  500 260
+	at  500
+
+spawn  Lixo03
+Item   apple
+	coords  500 220
+	at  525
+
+spawn  Lixo03
+2pItem   Apple
+	coords  550 220
+	at  525
+
+spawn  maclean
+health 150
+	coords  500 220
+	at  700
+
+spawn  macleod
+health 150
+	coords  500 260
+	at  700
+
+spawn  Electra
+map    1
+health 100
+	coords  600 240
+	at  900
+
+wait 
+at     1300
+
+Group 5  5
+at     1300
+
+spawn  Electra
+map    1
+health 100
+	coords  600 240
+	at  1300
+
+spawn  Electra
+health 80
+	coords  500 260
+	at  1300
+
+spawn  mcbride
+health 150
+	coords  500 260
+	at  1300
+
+spawn  Electra
+map    1
+health 100
+	coords  600 240
+	at  1300
+Group 1  5
+at     1300
+
+spawn  Electra
+map    1
+health 100
+	coords  -100 240
+	at  1300
+
+Group 4  4
+at     1300
+
+spawn  maclean
+health 150
+	coords  -100 240
+	at  1300
+
+spawn  macleod
+map    1
+health 150
+	coords  500 260
+	at  1300
+
+spawn  mcbride
+health 150
+	coords  500 260
+	at  1300
+
+spawn  Electra
+health 80
+	coords  -100 240
+	at  1300
+
+spawn  Electra
+health 80
+	coords  500 240
+	at  1300
+
+
+
+
+

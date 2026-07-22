@@ -1,0 +1,354 @@
+#levels
+
+#timeloc    150 11 180 320 1  
+#timeicon    data/chars/misc/tiempo/tiempo.gif 145 5
+#timeicon    data/sprites/Time.gif -80 0
+#rush	1	1.5	Combo	3	3	Max_Combo	1	1
+hiscorebg  1
+loadingbg  1 55 200 200 1000 1000
+loadingbg2 1 55 200 200 1000 1000
+completebg 1
+maxplayers 3
+
+#-------menu 
+
+Lbarsize 		126 5 1 1 0 -500 -500 1 -500
+Mpbarsize 		42 5 1 1 0 -500 -500 1 -500
+Rush			1 1 HIT 1 1 _
+Timeloc 		999 999 0 0 1
+Scoreformat 	0
+
+
+
+
+p1smenu			1     -542     71 	210
+p2smenu			1     -814   221	210
+p3smenu			1     -1086  371	210
+p4smenu			1     1      71         210
+
+p1icon			8   4
+p2icon			165 4
+p3icon			322 4
+p4icon			361 4
+
+p1namej 		29  4 29  10 19  4
+p2namej 		186 4 186 10 181 4
+p3namej 		343 4 343 10 338 4
+p4namej 		389 4 389 10 379 4
+
+p1score 		29  4 999 999 29  12
+p2score 		186 4 999 999 186 12
+p3score 		343 4 999 999 343 12
+p4score 		384 4 999 999 384 12
+
+p1life			8   23
+p2life			165 23
+p3life			322 23
+p4life			361 21
+
+p1lifex 		138 22 9
+p2lifex 		295 22 9
+p3lifex 		452 22 9
+p4lifex 		600 22 9
+
+p1lifen 		145 15 4
+p2lifen 		305 15 3
+p3lifen 		459 15 5
+p4lifen 		461 14 6
+
+p1mp			92  14
+p2mp			249 14 
+p3mp			406 14  
+p4mp			461 10 
+
+mp1icon			999 999
+mp2icon			999 999
+mp3icon			999 999
+mp4icon			999 999
+
+p1rush			20  66 8   66 999 999 999 999
+p2rush			177 66 165 66 999 999 999 999
+p3rush			334 66 322 66 999 999 999 999
+p4rush			362 66 390 66 999 999 999 999
+
+e1icon			8   32
+e2icon			165 32
+e3icon			322 32
+e4icon			361 29
+
+e1name			31  32
+e2name			188 32
+e3name			345 32
+e4name			384 32
+
+e1life			8   51
+e2life			165 51
+e3life			322 51
+e4life			361 51
+
+set	    T
+#Ifcomplete 1
+lives         5
+credits       99
+nosame	      1 1
+continuescore 2
+canSave       2
+maxplayers 3
+custfade 100
+
+
+
+
+#------------------
+
+
+z 207 270
+
+file	data/levels/T.txt
+
+#-------------------
+
+set	    Arcade
+#Ifcomplete 1
+lives         5
+credits       99
+nosame	      1 1
+continuescore 2
+canSave       2
+maxplayers 3
+custfade 100
+
+
+
+
+#------------------
+
+
+z 207 270
+
+file	data/levels/00a.txt
+
+
+next
+
+z 235 260
+
+file	data/levels/01a.txt
+
+z 240 270
+
+file	data/levels/01B.txt
+
+
+z 235 275
+
+file	data/levels/01c.txt
+
+
+next
+
+z 185 270
+
+file	data/levels/02a.txt
+
+z 215 270
+
+file	data/levels/02b.txt
+
+z 204 250
+
+file	data/levels/02c.txt
+
+next
+
+z 190 270
+
+file	data/levels/03a.txt
+
+next
+
+z 204 270
+
+file	data/levels/04a.txt
+
+z 170 270
+
+file	data/levels/04b.txt
+
+z 204 270
+
+file	data/levels/04c.txt
+
+next
+
+z 250 292
+
+file	data/levels/05a.txt
+
+z 210 275
+
+file	data/levels/05b.txt
+
+z 180 295
+
+file	data/levels/05c.txt
+
+z 200 292
+
+file	data/levels/05D.txt
+
+next
+
+z 220 274
+
+file	data/levels/06a.txt
+
+
+z 200 274
+
+file	data/levels/06b.txt
+
+z 210 274
+
+file	data/levels/06c.txt
+
+
+
+z 210 274
+
+file	data/levels/06D.txt
+
+Scene      data/scenes/Ending.txt
+
+set	    COOP_CPU
+#Ifcomplete 1
+lives         5
+credits       99
+nosame	      1 1
+continuescore 2
+canSave       2
+custfade 100
+maxplayers 1
+
+
+
+#------------------
+
+
+z 207 270
+
+file	data/levels/COOP/00a.txt
+
+
+next
+
+z 235 260
+
+file	data/levels/COOP/01a.txt
+
+z 240 270
+
+file	data/levels/COOP/01B.txt
+
+
+z 235 275
+
+file	data/levels/COOP/01c.txt
+
+
+next
+
+z 185 270
+
+file	data/levels/COOP/02a.txt
+
+z 215 270
+
+file	data/levels/COOP/02b.txt
+
+z 204 250
+
+file	data/levels/COOP/02c.txt
+
+next
+
+z 190 270
+
+file	data/levels/COOP/03a.txt
+
+next
+
+z 204 270
+
+file	data/levels/COOP/04a.txt
+
+z 170 270
+
+file	data/levels/COOP/04b.txt
+
+z 204 270
+
+file	data/levels/COOP/04c.txt
+
+next
+
+z 250 292
+
+file	data/levels/COOP/05a.txt
+
+z 210 275
+
+file	data/levels/COOP/05b.txt
+
+z 180 295
+
+file	data/levels/COOP/05c.txt
+
+z 200 292
+
+file	data/levels/COOP/05D.txt
+
+next
+
+z 220 274
+
+file	data/levels/COOP/06a.txt
+
+
+z 200 274
+
+file	data/levels/COOP/06b.txt
+
+z 210 274
+
+file	data/levels/COOP/06c.txt
+
+
+
+z 210 274
+
+file	data/levels/COOP/06D.txt
+
+Scene      data/scenes/Ending.txt
+
+end
+#------------------
+set	    tARINING
+#Ifcomplete 1
+lives         5
+credits       99
+nosame	      1 1
+continuescore 2
+canSave       2
+custfade 100
+maxplayers 1
+
+
+
+#------------------
+
+z 185 270
+
+file	data/levels/TRAINING.txt
+
+

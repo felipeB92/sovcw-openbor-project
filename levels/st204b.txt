@@ -1,0 +1,263 @@
+music		data/bgs/St204/Lv204a.bor
+bossmusic	data/music/boss2.bor
+scrollspeed 0.5#1
+stagenumber 4
+background	data/bgs/st204/back01.gif	0.8 1 0 0 0 0 1 1 0
+bglayer		data/bgs/st204/bg00.gif		0.6 1 0 0 0 0 -1 1 1 0
+bglayer		data/bgs/st204/bg01.gif		0.3 1 0 0 0 0 -1 1 1 0
+panel		data/bgs/st204/pn01.gif		none	none
+frontpanel      data/bgs/st05/front02.gif
+cameratype 1
+cameraoffset 	0 -60
+settime         99
+notime          0
+noslow          1
+order		a
+spawn1  	50 20
+spawn2  	55 35
+spawn3  	60 50
+
+wall		0 275 -1000 -1000 157 -3 80 10000
+
+
+
+spawn  Box03
+item   Cash
+	coords  293  230
+	at  0
+
+spawn  Box03
+item   Knife
+	coords  343  230
+	at  0
+
+
+
+spawn  Signal_
+map    2
+health 70
+	coords  386  240
+	at  0
+
+spawn  Signal_
+map    2
+health 70
+	coords  460  265
+	at  0
+
+spawn  Galsia_
+map    1
+health 40
+	coords  475  245
+	at  100
+
+spawn  Donovan_
+map    3
+health 70
+	coords  480  257
+	at  100
+
+spawn  Donovan
+map    3
+health 70
+	coords  -100  257
+	at  200
+
+spawn  Galsia
+map    1
+health 40
+	coords  -50  245
+	at  200
+
+spawn  Signal
+map    2
+health 70
+	coords  -100  240
+	at  250
+
+wait    
+at       350
+
+Group 4  4
+at       350
+
+spawn  Pipe
+	coords  500  257
+	at  350
+
+
+spawn  Donovan
+map    3
+health 70
+	coords  550  257
+	at  350
+
+spawn  Pipe
+	coords  -50  257
+	at  350
+
+spawn  Donovan
+health 40
+	coords  -100  257
+	at  350
+
+Group 9  9
+at       351
+
+
+spawn  Box03
+item   Cash
+	coords  500  250
+	at  351
+
+spawn  Box03
+item   Cash
+	coords  550  250
+	at  351
+
+spawn  Galsia
+map    1
+health 40
+	coords  500  245
+	at  400
+
+spawn  Galsia
+map    1
+health 40
+	coords  -100  245
+	at  450
+
+spawn  Donovan
+health 40
+	coords  500  245
+	at  450
+
+spawn  Donovan
+map    3
+health 70
+	coords  -50  230
+	at  450
+
+spawn  Donovan
+map    3
+health 70
+	coords  500  250
+	at  500
+
+spawn  Box03
+item   Apple
+	coords  500  230
+	at  500
+
+wait    
+at       550
+
+Group 4  4
+at       550
+
+spawn  Electra
+map    3
+health 150
+	coords  500  230
+	at  550
+
+
+spawn  Electra
+health 150
+	coords  500  220
+	at  550
+
+
+spawn  Galsia
+map    4
+health 70
+	coords  -100  245
+	at  550
+
+Group 9  9
+at       551
+
+
+spawn  Donovan
+map    3
+health 70
+	coords  -100  230
+	at  551
+
+spawn  Galsia
+map    1
+health 40
+	coords  -100  245
+	at  551
+
+spawn  Box03
+item   cash
+	coords  500  245
+	at  551
+
+spawn  Box03
+item   Apple
+	coords  530  245
+	at  551
+
+spawn  Box03
+	coords  560  245
+	at  551
+
+spawn  Donovan
+health 40
+	coords  500  230
+	at  600
+
+spawn  Galsia
+map    4
+health 70
+	coords  -100  245
+	at  800
+
+spawn  Galsia_
+map    1
+health 40
+	coords  475  241
+	at  845
+
+
+spawn  Galsia
+map    1
+health 40
+	coords  -100  245
+	at  950
+
+
+Group 4  4
+at       1200
+
+spawn  Donovan
+health 40
+	coords  500  245
+	at  1200
+
+spawn  Donovan
+map    3
+health 70
+	coords  -100  245
+	at  1200
+
+spawn  Bigben
+	coords  -100  245
+	at  1200
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

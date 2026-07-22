@@ -1,0 +1,15 @@
+name			Train01 #GROUND
+type			None
+Speed 0
+#setlayer 999
+noquake 	1 1
+#offscreenkill	1000
+#Alpha 1
+
+
+anim idle
+	loop	1
+	offset	0 0
+		delay  50
+	frame	data/Bgs/01/Train.gif
+

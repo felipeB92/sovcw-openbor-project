@@ -1,0 +1,776 @@
+name	Morph
+health	100
+mp 10
+chargerate 2
+mprate 1
+#secret 1
+Falldie 2
+Grabdistance 18
+riseinv				0.4 1
+speed	8
+type	player
+gfxshadow	1
+candamage			enemy obstacle
+JUMPHEIGHT 4
+#Jumpheight 3
+antigrab 2
+atchain   1 1 2 3 4 5
+#weapons Adam_Knife Adam_Sword Adam_pipe Adam_Kunai None Blaze
+icon	data/chars/players/Morph/icon.gif 1
+diesound data/chars/players/Morph/Death.wav
+running	20	3	2	1	1
+onblockwscript	data/scripts/bounceF.c
+#animationscript 	data/scripts/ani0020.h
+animationscript		data/scripts/drago.c
+#ondrawscript 		data/scripts/player_ondrawscript.c
+
+Load AdamP01
+Load AdamP02
+Load AdamP03
+Load MEdio
+
+
+Load AXEL_
+LOAD BLaze_
+
+Load MorphP01
+
+
+remap data/chars/players/Morph/idle00.gif data/chars/players/Morph/MAp01.gif
+remap data/chars/players/Morph/idle00.gif data/chars/players/Morph/MAp02.gif
+remap data/chars/players/Morph/idle00.gif data/chars/players/Morph/MAp03.gif
+remap data/chars/players/Morph/idle00.gif data/chars/players/Morph/MAp04.gif
+
+Com f f A freespecial
+Com f f  freespecial2
+
+
+anim	waiting
+	loop	1
+	offset	1 -542
+	delay	12
+	frame   data/chars/players/Morph/select01.gif
+	frame   data/chars/players/Morph/select02.gif
+	frame   data/chars/players/Morph/select03.gif
+	frame   data/chars/players/Morph/select04.gif
+	frame   data/chars/players/Morph/select05.gif
+	frame   data/chars/players/Morph/select06.gif
+
+
+anim	Select
+	loop	0
+	offset	1 -542
+	delay	3
+	frame   data/chars/players/Morph/select00.gif
+	frame   data/chars/players/Morph/select01.gif
+	frame   data/chars/players/Morph/select00.gif
+	frame   data/chars/players/Morph/select01.gif
+	frame   data/chars/players/Morph/select00.gif
+	frame   data/chars/players/Morph/select01.gif
+	frame   data/chars/players/Morph/select00.gif
+	frame   data/chars/players/Morph/select01.gif
+	frame   data/chars/players/Morph/select00.gif
+	frame   data/chars/players/Morph/select01.gif
+	frame   data/chars/players/Morph/select00.gif
+	frame   data/chars/players/Morph/select01.gif
+
+
+anim Pain5
+	loop	0
+	delay	12
+	offset	19 76
+        Range 0 40
+        Rangez -10 10
+	bbox	5 2 27 76
+	frame   data/chars/players/Morph/idle00.gif
+	@cmd  spawn01  "Joe_Higashi_"  -1  0  10
+	@cmd  spawn01  "Andy_"  1  0  -10
+	@cmd  spawn01  "Adam_"  -2  0  10
+	@cmd  spawn01  "Axel_"  2  0  -10
+	@cmd  spawn01  "Baby_"  -3  0  10
+	@cmd  spawn01  "Blaze_"  3  0  -10
+	@cmd  spawn01  "Boomer_"  -4  0  10
+	@cmd  spawn01  "Blood_"  4  0  -10
+	@cmd  spawn01  "Cody_"  -5  0  10
+	@cmd  spawn01  "Commando_"  5  0  -10
+	@cmd  spawn01  "Ginzo_"  -6  0  10
+	@cmd  spawn01  "Guy_"  6  0  -10
+	@cmd  spawn01  "HAggar_"  -7  0  10
+	@cmd  spawn01  "HAnnah_"  7  0  -10
+	@cmd  spawn01  "HAwk_"  -8  0  10
+	@cmd  spawn01  "JAck_"  8  0  -10
+	@cmd  spawn01  "mustapha_"  -8  0  10
+	@cmd  spawn01  "Terry_"  9  0  -10
+	@cmd  spawn01  "Leonardo_"  -9  0  -10
+	@cmd  spawn01  "Donatello_"  -10  0  10
+	@cmd  spawn01  "Raphael_"  10  0  -10
+	@cmd  spawn01  "Ryu_"  -11  0  -10
+	@cmd  spawn01  "Chunli_"  -11  0  10
+	@cmd  spawn01  "Zangief_"  12  0  -10
+	frame   data/chars/players/Morph/idle01.gif
+
+anim idle
+	loop	1
+	delay	12
+	offset	18 74
+	bbox	4 1 28 73
+	frame   data/chars/players/Morph/idle00.gif
+	@cmd	depost 0
+	@cmd	throw 15 0.7 0.7 1 0 -1
+	@cmd	clearL
+	frame   data/chars/players/Morph/idle01.gif
+	frame   data/chars/players/Morph/idle02.gif
+	frame   data/chars/players/Morph/idle03.gif
+	frame   data/chars/players/Morph/idle04.gif
+	frame   data/chars/players/Morph/idle05.gif
+
+
+anim Freespecial2
+	loop	0
+	delay	4
+	offset	21 97
+	bbox	14 36 18 62
+        cancel	0 3 0 A freespecial
+	frame   data/chars/players/Morph/dash00.gif
+	frame   data/chars/players/Morph/dash01.gif
+        @cmd dasher 2 0 0
+		bbox  0
+	frame   data/chars/players/Morph/dash02.gif
+		bbox  8  67  26  27
+	frame   data/chars/players/Morph/dash03.gif
+	frame   data/chars/players/Morph/dash04.gif
+	frame   data/chars/players/Morph/dash05.gif
+	frame   data/chars/players/Morph/dash03.gif
+	frame   data/chars/players/Morph/dash04.gif
+	frame   data/chars/players/Morph/dash05.gif
+		delay  4
+        @cmd dasher 0 0 0
+	frame   data/chars/players/Morph/dash06.gif
+	frame   data/chars/players/Morph/dash07.gif
+	frame   data/chars/players/Morph/dash08.gif
+	frame   data/chars/players/Morph/dash09.gif
+
+
+
+anim Freespecial
+	loop	0
+	delay	2
+	offset	39 93
+	frame	data/chars/players/Morph/00.gif
+	frame	data/chars/players/Morph/01.gif
+	frame	data/chars/players/Morph/02.gif
+	delay	4
+	offset	38 77
+	bbox	26 0 24 78
+                Followcond 1
+                followanim 1
+        hitflash	MEdio
+        hitfx	data/sounds/golpes/medio.wav
+	frame   data/chars/players/Morph/Ra00.gif
+	Sound	data/chars/players/Morph/RA.wav
+	frame   data/chars/players/Morph/Ra01.gif
+	frame   data/chars/players/Morph/Ra02.gif
+	frame   data/chars/players/Morph/Ra03.gif
+	frame   data/chars/players/Morph/Ra04.gif
+	frame   data/chars/players/Morph/Ra05.gif
+		attack1  42  14  15  43  1  0  0  0  0  15
+	frame   data/chars/players/Morph/Ra06.gif
+        @cmd dasher 2 0 0
+	delay	6
+	frame   data/chars/players/Morph/Ra07.gif
+	frame   data/chars/players/Morph/Ra08.gif
+	frame   data/chars/players/Morph/Ra09.gif
+	frame   data/chars/players/Morph/Ra10.gif
+        @cmd dasher 0 0 0
+		Attack1  0
+	frame   data/chars/players/Morph/Ra18.gif
+
+
+anim Follow1
+	loop	0
+	delay	8
+	offset	38 77
+	bbox	30 11 26 68
+        hitflash	Forte
+        hitfx	data/sounds/golpes/Forte.wav
+	frame   data/chars/players/Morph/Ra12.gif
+        @cmd dasher 0 0 0
+	frame   data/chars/players/Morph/Ra13.gif
+		attack2  20  8  61  39  10  1  0  0  0  15
+	frame   data/chars/players/Morph/Ra14.gif
+	frame   data/chars/players/Morph/Ra15.gif
+	frame   data/chars/players/Morph/Ra16.gif
+		delay  20
+	frame   data/chars/players/Morph/Ra17.gif
+		Attack1  0
+	frame   data/chars/players/Morph/Ra18.gif
+
+
+anim walk
+	loop	1
+	delay	12
+	offset	19 72
+	bbox	6 5 27 70
+	frame	data/chars/players/Morph/walk00.gif
+	frame	data/chars/players/Morph/walk01.gif
+	frame	data/chars/players/Morph/walk02.gif
+	frame	data/chars/players/Morph/walk03.gif
+	frame	data/chars/players/Morph/walk04.gif
+	frame	data/chars/players/Morph/walk05.gif
+
+
+anim get
+	loop	0
+	delay	10
+	offset	18 67
+	frame	data/chars/players/Morph/Get00.gif
+	frame	data/chars/players/Morph/Get01.gif
+
+
+anim jump
+	loop	0
+	delay	5
+	offset	15 84
+	bbox	7 4 22 73
+	frame	data/chars/players/Morph/Jump00.gif
+	frame	data/chars/players/Morph/Jump01.gif
+	frame	data/chars/players/Morph/Jump02.gif
+	frame	data/chars/players/Morph/Jump03.gif
+	frame	data/chars/players/Morph/Jump04.gif
+	frame	data/chars/players/Morph/Jump05.gif
+	frame	data/chars/players/Morph/Jump06.gif
+
+
+
+anim jumpattack
+	loop	0
+	delay	1
+	offset	39 93
+	frame	data/chars/players/Morph/00.gif
+	frame	data/chars/players/Morph/01.gif
+	frame	data/chars/players/Morph/02.gif
+	delay	5
+	offset	37 76
+	bbox	24 3 31 58
+        hitflash	MEdio
+        hitfx	data/sounds/golpes/medio.wav
+        Sound	data/sounds/golpes/Chut.wav
+	frame	data/chars/players/Morph/Ja300.gif
+	Sound	data/chars/players/Morph/a1.wav
+		attack1  52  34  65  61  10  1  0  0  0  10
+	frame	data/chars/players/Morph/Ja301.gif
+		attack1  46  32  50  50  10  1  0  0  0  10
+	frame	data/chars/players/Morph/Ja302.gif
+	frame	data/chars/players/Morph/Ja303.gif
+
+
+anim jumpattack2
+	loop	0
+	delay	1
+	offset	39 93
+	frame	data/chars/players/Morph/00.gif
+	frame	data/chars/players/Morph/01.gif
+	frame	data/chars/players/Morph/02.gif
+	delay	5
+	offset	45 93
+	bbox	31 20 38 60
+        hitflash	MEdio
+        hitfx	data/sounds/golpes/medio.wav
+        Sound	data/sounds/golpes/Chut.wav
+	frame	data/chars/players/Morph/Ja200.gif
+		attack1  57  37  38  37  8  0  0  0  0  10
+		delay  7
+	Sound	data/chars/players/Morph/a1.wav
+	frame	data/chars/players/Morph/Ja201.gif
+
+anim jumpforward
+	loop	0
+	delay	1
+	offset	39 93
+	frame	data/chars/players/Morph/00.gif
+	frame	data/chars/players/Morph/01.gif
+	frame	data/chars/players/Morph/02.gif
+	delay	5
+	offset	39 66
+	bbox	22 13 31 50
+        hitflash	MEdio
+        hitfx	data/sounds/golpes/medio.wav
+        Sound	data/sounds/golpes/Chut.wav
+	frame	data/chars/players/Morph/Ja100.gif
+		attack1  37  35  33  35  8  1  0  0  0  10
+		delay  7
+	Sound	data/chars/players/Morph/a1.wav
+	frame	data/chars/players/Morph/Ja101.gif
+		attack1  40  32  58  38  8  1  0  0  0  10
+	frame	data/chars/players/Morph/Ja102.gif
+
+
+anim attack1
+	loop	0
+	delay	6
+	offset	16 71
+        hitflash	Fraco
+	bbox	7 3 21 68
+		Attack1  0
+        Sound	data/sounds/golpes/Soco.wav
+        hitfx	data/sounds/golpes/Fraco.wav
+	frame	data/chars/players/Morph/a100.gif
+		attack1  4  11  54  11  7  0  0  0  0  10
+		delay  7
+	frame	data/chars/players/Morph/a101.gif
+		delay  3
+		Attack1  0
+	frame	data/chars/players/Morph/a100.gif
+
+
+anim attack2
+	loop	0
+	delay	2
+	offset	39 93
+	frame	data/chars/players/Morph/00.gif
+	frame	data/chars/players/Morph/01.gif
+	frame	data/chars/players/Morph/02.gif
+	delay	4
+	offset	36 78
+        hitflash	MEdio
+	bbox	23 6 26 56
+		Attack1  0
+        hitfx	data/sounds/golpes/MEdio.wav
+	Sound	data/chars/players/Morph/a2.wav
+	frame	data/chars/players/Morph/a200.gif
+	frame	data/chars/players/Morph/a201.gif
+		attack2  42  12  31  21  5  0  1  0  0  10
+	frame	data/chars/players/Morph/a202.gif
+		delay  4
+		attack1  39  16  55  20  5  0  1  0  0  10
+	frame	data/chars/players/Morph/a203.gif
+	frame	data/chars/players/Morph/a204.gif
+	frame	data/chars/players/Morph/a205.gif
+		Attack1  0
+	frame	data/chars/players/Morph/a206.gif
+
+anim attack3
+	loop	0
+	delay	2
+	offset	39 93
+	frame	data/chars/players/Morph/00.gif
+	frame	data/chars/players/Morph/01.gif
+	frame	data/chars/players/Morph/02.gif
+	delay	4
+	offset	36 91
+	bbox	26 16 23 76
+        hitflash	Forte
+        Sound	data/sounds/golpes/Chut.wav
+        hitfx	data/sounds/golpes/Forte.wav
+	Sound	data/chars/players/Morph/a3.wav
+	frame	data/chars/players/Morph/a300.gif
+		Attack1  0
+	frame	data/chars/players/Morph/a301.gif
+		delay  4
+		attack2  22  26  44  16  10  1  0  0  0  15
+	frame	data/chars/players/Morph/a302.gif
+		attack1  19  28  70  22  10  1  0  0  0  15
+	frame  data/chars/players/Morph/a303.gif
+		attack1  24  33  71  19  10  1  0  0  0  15
+	frame  data/chars/players/Morph/a304.gif
+	frame  data/chars/players/Morph/a305.gif
+		delay  15
+	frame  data/chars/players/Morph/a306.gif
+		delay  6
+		Attack1  0
+	frame  data/chars/players/Morph/a307.gif
+	frame  data/chars/players/Morph/a308.gif
+	frame  data/chars/players/Morph/a309.gif
+
+
+
+anim grab
+	loop	0
+	delay	100
+	offset	52 72
+	bbox	32 0 24 74
+        cancel	0 3 0 J freespecial
+	frame	data/chars/players/Morph/GrAB.gif
+
+anim throw
+	loop	0
+	delay	2
+	offset	39 93
+	@cmd	slamstart
+	@cmd	position 0 20 0 0 -1
+	frame	data/chars/players/Morph/00.gif
+	frame	data/chars/players/Morph/01.gif
+	frame	data/chars/players/Morph/02.gif
+	delay	5
+	offset	33 65
+        hitflash	Forte
+        hitfx	data/sounds/golpes/Forte.wav
+		Attack1  0
+	frame	data/chars/players/Morph/T00.gif
+	delay	10
+	@cmd	position 1 20 0 0 -1
+	frame	data/chars/players/Morph/T01.gif
+        @cmd dasher -1 0 0
+	@cmd	position 4 5 20 0 -1
+		delay  7
+		attack1  9  18  45  47  5  1  0  0  0  10
+	frame	data/chars/players/Morph/T02.gif
+	@cmd	position 5 -10 5 0 -1
+	frame	data/chars/players/Morph/T03.gif
+	@cmd	position 6 0 0 0 -1
+	frame	data/chars/players/Morph/T04.gif
+		delay  7
+	@cmd	position 4 5 20 0 -1
+	frame	data/chars/players/Morph/t05.gif
+	@cmd	position 5 -10 5 0 -1
+	Sound	data/chars/players/Morph/a1.wav
+	frame  data/chars/players/Morph/t06.gif
+        @cmd dasher 0 0 0
+	@cmd	position 8 -40 30 0 -1
+	@cmd	depost 0
+	@cmd	throw 15 5 2 2 0 -1
+	@cmd	clearL
+		attack1  -50  5  38  33  5  1  0  0  0  10
+	frame  data/chars/players/Morph/t07.gif
+		delay  20
+		attack1  -92  16  32  25  5  1  0  0  0  10
+	frame  data/chars/players/Morph/t08.gif
+		attack1  -108  39  19  21  5  1  0  0  0  10
+	frame  data/chars/players/Morph/t09.gif
+
+
+
+
+
+
+
+
+
+anim pain
+	loop	0
+	offset	26 65
+	bbox	9 5 29 54
+	delay	5
+	frame	data/chars/players/Morph/pain100.gif
+		delay  25
+	frame	data/chars/players/Morph/pain101.gif
+
+anim pain3
+	loop	0
+	offset	24 67
+	bbox	5 2 35 65
+	delay	5
+	jumpframe  0  2  0  0
+	frame	data/chars/players/Morph/pain100.gif
+		delay  25
+	frame	data/chars/players/Morph/pain101.gif
+
+anim pain4
+	loop	0
+	offset	24 67
+	bbox	9 1 27 68
+	delay	5
+	frame	data/chars/players/Morph/pain100.gif
+		delay  900
+	frame	data/chars/players/Morph/pain101.gif
+
+
+anim grabbed
+	loop	0
+	offset	26 68
+	bbox	16 1 19 67
+	delay	40
+	frame	data/chars/players/Morph/pain100.gif
+
+
+
+anim pain2
+	loop	0
+	offset	18 67
+	bbox	11 3 20 60
+	delay	5
+	frame	data/chars/players/Morph/pain200.gif
+		delay  25
+	frame	data/chars/players/Morph/pain201.gif
+
+
+
+
+
+anim fall2
+	loop	0
+	offset	33 42
+	jumpframe  0  3  -3  0
+	delay	20
+        hitfx	data/sounds/golpes/Forte.wav
+		attack  0
+	frame	data/chars/players/Morph/fall00.gif
+		Attack1  0
+	frame	data/chars/players/Morph/fall01.gif
+		delay  10
+		offset  33  22
+	frame	data/chars/players/Morph/fall03.gif
+
+anim fall
+	loop	0
+	offset	33 40
+	delay	20
+        hitfx	data/sounds/golpes/Forte.wav
+		attack  0
+	frame	data/chars/players/Morph/fall00.gif
+		Attack1  0
+	frame	data/chars/players/Morph/fall01.gif
+		delay  10
+		offset  34  23
+	frame	data/chars/players/Morph/fall03.gif
+
+anim fall6 #Shok
+	loop	0
+	offset	80 108
+	delay	5
+        hitfx	data/sounds/golpes/Forte.wav
+		attack  0
+	frame	data/chars/players/Morph/fall201.gif
+	frame	data/chars/players/Morph/fall200.gif
+	frame	data/chars/players/Morph/fall201.gif
+	frame	data/chars/players/Morph/fall200.gif
+	frame	data/chars/players/Morph/fall201.gif
+		offset  38  24
+	frame	data/chars/players/Morph/fall03.gif
+
+
+anim fall7 #Burn
+	loop	0
+	offset	65 97
+	delay	10
+        hitfx	data/sounds/golpes/Forte.wav
+		attack  0
+	frame	data/chars/players/Morph/FALL300.gif
+	frame	data/chars/players/Morph/FALL301.gif
+	frame	data/chars/players/Morph/FALL302.gif
+	frame	data/chars/players/Morph/FALL300.gif
+	frame	data/chars/players/Morph/FALL301.gif
+		offset  37  43
+	frame	data/chars/players/Morph/FALL02.gif
+
+
+anim rise
+	loop	0
+	offset	36 22
+	delay	15
+	frame	data/chars/players/Morph/fall03.gif
+		offset  22  98
+	frame  data/chars/players/Morph/dash01.gif
+	frame	data/chars/players/Morph/Dash00.gif
+		offset  22  96
+	frame	data/chars/players/Morph/Dash09.gif
+
+
+
+
+anim special2
+        energycost 10 1
+        MpOnly 1
+	loop	0
+	delay	2
+	offset	39 93
+	frame	data/chars/players/Morph/00.gif
+	frame	data/chars/players/Morph/01.gif
+	frame	data/chars/players/Morph/02.gif
+	offset	80 66
+        hitflash	fORTE
+        hitfx	data/sounds/golpes/forte.wav
+		Attack1  0
+		delay  8
+	Sound	data/chars/players/Morph/Sp01.wav
+		move  0
+	frame	data/chars/players/Morph/sp200.gif
+	frame	data/chars/players/Morph/sp201.gif
+	frame	data/chars/players/Morph/sp202.gif
+	frame	data/chars/players/Morph/sp203.gif
+		attack7  8  14  140  33  25  1  1  0  0  15
+		delay  4
+        @cmd dasher 2 0 0
+	frame	data/chars/players/Morph/sp204.gif
+	frame	data/chars/players/Morph/sp205.gif
+	frame	data/chars/players/Morph/sp206.gif
+	frame	data/chars/players/Morph/sp207.gif
+	frame	data/chars/players/Morph/sp204.gif
+	frame	data/chars/players/Morph/sp205.gif
+	frame	data/chars/players/Morph/sp206.gif
+	frame	data/chars/players/Morph/sp207.gif
+	frame	data/chars/players/Morph/sp204.gif
+	frame	data/chars/players/Morph/sp205.gif
+	frame	data/chars/players/Morph/sp206.gif
+	frame	data/chars/players/Morph/sp207.gif
+        @cmd dasher 0 0 0
+	frame	data/chars/players/Morph/sp208.gif
+		Attack1  0
+	frame	data/chars/players/Morph/sp209.gif
+	delay	2
+	offset	39 93
+	frame	data/chars/players/Morph/02.gif
+	frame	data/chars/players/Morph/01.gif
+	frame	data/chars/players/Morph/00.gif
+
+
+
+anim special
+        energycost 10 1
+        MpOnly 1
+	loop	0
+	delay	2
+	offset	39 93
+	frame	data/chars/players/Morph/00.gif
+	frame	data/chars/players/Morph/01.gif
+	frame	data/chars/players/Morph/02.gif
+	offset	50 118
+        hitflash	CORTE
+        hitfx	data/sounds/golpes/Corte.wav
+		delay  8
+	Sound	data/chars/players/Morph/Sp02.wav
+		Attack1  0
+	frame	data/chars/players/Morph/Sp100.gif
+	frame	data/chars/players/Morph/Sp101.gif
+	@cmd  spawn01  "MorphP01"  0  0  1
+		attack1  15  24  88  90  25  1  1  0  0  15
+	frame	data/chars/players/Morph/Sp102.gif
+	frame	data/chars/players/Morph/Sp103.gif
+	frame	data/chars/players/Morph/Sp104.gif
+		Attack1  0
+	frame	data/chars/players/Morph/Sp105.gif
+	delay	2
+	offset	39 93
+	frame	data/chars/players/Morph/02.gif
+	frame	data/chars/players/Morph/01.gif
+	frame	data/chars/players/Morph/00.gif
+
+anim jumpspecial
+        energycost 10 1
+        MpOnly 1
+	loop	0
+	delay	1
+	offset	39 93
+	frame	data/chars/players/Morph/00.gif
+	frame	data/chars/players/Morph/01.gif
+	frame	data/chars/players/Morph/02.gif
+	offset	61 119
+        hitflash	CORTE
+        hitfx	data/sounds/golpes/Corte.wav
+		Attack1  0
+		delay  8
+		Attack1  0
+	Sound	data/chars/players/Morph/SP02.wav
+	frame	data/chars/players/Morph/Sp101.gif
+	@cmd  spawn01  "MorphP01"  0  0  1
+		attack1  23  20  78  94  25  1  0  0  0  15
+	frame	data/chars/players/Morph/Sp102.gif
+	frame	data/chars/players/Morph/Sp103.gif
+	frame	data/chars/players/Morph/Sp104.gif
+	frame	data/chars/players/Morph/Sp105.gif
+
+
+
+
+anim grabattack
+	loop	0
+	delay	2
+	offset	39 93
+	frame	data/chars/players/Morph/00.gif
+	frame	data/chars/players/Morph/01.gif
+	frame	data/chars/players/Morph/02.gif
+	offset	54 72
+	bbox	33 1 25 72
+	delay	4
+        hitflash	fRACO
+        Fastattack 1
+        hitfx	data/sounds/golpes/fRACO.wav
+		Attack1  0
+	frame	data/chars/players/Morph/Grab.gif
+		offset  49  93
+		bbox  0
+	frame	data/chars/players/Morph/ga00.gif
+	frame	data/chars/players/Morph/ga01.gif
+	frame	data/chars/players/Morph/ga02.gif
+		Attack1  0
+	frame	data/chars/players/Morph/ga03.gif
+	frame	data/chars/players/Morph/ga04.gif
+	Sound	data/chars/players/Morph/a1.wav
+	frame	data/chars/players/Morph/ga05.gif
+		attack1  27  39  52  37  3  0  0  0  0  10
+	frame	data/chars/players/Morph/ga06.gif
+		Attack1  0
+	frame	data/chars/players/Morph/ga07.gif
+	Sound	data/chars/players/Morph/a1.wav
+	frame	data/chars/players/Morph/ga08.gif
+		attack1  31  35  46  41  3  0  0  0  0  10
+	frame	data/chars/players/Morph/ga09.gif
+		Attack1  0
+	frame	data/chars/players/Morph/ga10.gif
+	frame	data/chars/players/Morph/ga11.gif
+	Sound	data/chars/players/Morph/a1.wav
+	frame	data/chars/players/Morph/ga12.gif
+		attack1  36  46  42  29  5  1  0  0  0  10
+	frame	data/chars/players/Morph/ga13.gif
+		Attack1  0
+		offset  35  107
+	frame	data/chars/players/Morph/ga02.gif
+
+
+
+
+
+anim land
+	loop	0
+	delay	15
+	offset	18 65
+	bbox	11 21 23 45
+	frame	data/chars/players/Morph/get01.gif
+
+
+anim Fall9
+	loop	0
+	offset	27 65
+	delay	999
+	frame	data/chars/players/Morph/pain100.gif #0
+		offset  17  65
+	frame	data/chars/players/Morph/pain200.gif #1
+		offset  39  39
+	frame	data/chars/players/Morph/fall01.gif #2
+		offset  36  41
+	frame	data/chars/players/Morph/fall02.gif #3
+		offset  67  99
+	frame	data/chars/players/Morph/fall400.gif #4
+	frame	data/chars/players/Morph/fall401.gif #5
+	frame	data/chars/players/Morph/fall402.gif #6
+		offset  77  120
+	frame  data/chars/players/Morph/fall403.gif
+		offset  76  96
+		delay  20
+	frame  data/chars/players/Morph/fall401.gif
+		offset  78  113
+		delay  30
+	frame  data/chars/players/Morph/fall404.gif
+		offset  69  89
+	frame  data/chars/players/Morph/fall405.gif
+
+
+anim Fall8
+	loop	0
+	flipframe  0
+	offset	37 45
+	delay	30
+	frame	data/chars/players/Morph/fall01.gif #0
+	delay	15
+	frame	data/chars/players/Morph/fall02.gif #1
+
+
+anim Fall5
+	loop	0
+	flipframe  1
+	offset	33 42
+	delay	30
+	frame	data/chars/players/Morph/fall01.gif #0
+	delay	15
+	frame	data/chars/players/Morph/fall02.gif #1
+

@@ -1,0 +1,15 @@
+name			Heli02 #GROUND
+type			None
+Speed .5
+setlayer -10
+noquake 	1 1
+#offscreenkill	1000
+#Alpha 1
+
+anim idle
+	loop	1
+	offset	343 182
+		delay  25
+	frame	data/Bgs/06/hELI03.gif
+	frame	data/Bgs/06/hELI02.gif
+

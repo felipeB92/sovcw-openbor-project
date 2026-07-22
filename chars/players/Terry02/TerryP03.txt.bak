@@ -1,0 +1,28 @@
+
+name			TerryP03 #THROWNED
+type			none
+speed 12
+candamage			enemy obstacle
+alpha 1
+nolife			1
+lifespan		4
+remove			1
+gfxshadow		0 0
+flash			Forte
+antigravity 100
+
+anim idle
+	loop	0
+	offset	30 108
+		delay  4
+	frame	data/chars/players/Terry/P300.gif
+	frame	data/chars/players/Terry/P301.gif
+	frame	data/chars/players/Terry/P302.gif
+	frame	data/chars/players/Terry/P303.gif
+	frame	data/chars/players/Terry/P304.gif
+	frame	data/chars/players/Terry/P305.gif
+	frame	data/chars/players/Terry/P306.gif
+	frame	data/chars/players/Terry/P307.gif
+	@cmd killentity getlocalvar("self")
+	frame	data/chars/players/Terry/P307.gif
+

@@ -1,0 +1,312 @@
+name	Slum
+health	100
+mp 30
+mprate 1
+blockodds 1
+#secret 1
+Falldie 2
+Grabdistance 18
+riseinv				0.4 1
+speed	7
+type	Enemy
+gfxshadow	1
+candamage			Player npc obstacle
+JUMPHEIGHT 4
+hostile Player NPC
+#antigrab 2
+atchain   1 1 2 3 4 5
+weapons Slum_Knife Slum_Sword Slum_pipe Slum_Kunai
+icon	data/chars/Enemys/Slum/icon.gif 1
+diesound data/Sounds/Die2.wav
+running	20	3	2	1	1
+onblockwscript	data/scripts/bounceF.c
+#animationscript 	data/scripts/ani0020.h
+animationscript		data/scripts/drago.c
+ondrawscript 		data/scripts/Enemy_ondrawscript.c
+
+
+
+#Load Slum_Knife
+#Load Slum_Pipe
+#Load Slum_Kunai
+#Load Slum_Sword
+
+remap data/chars/Enemys/Slum/idle00.gif data/chars/Enemys/Slum/MAp01.gif
+remap data/chars/Enemys/Slum/idle00.gif data/chars/Enemys/Slum/MAp02.gif
+remap data/chars/Enemys/Slum/idle00.gif data/chars/Enemys/Slum/MAp03.gif
+remap data/chars/Enemys/Slum/idle00.gif data/chars/Enemys/Slum/MAp04.gif
+
+
+
+anim idle
+	loop	1
+	delay	12
+	offset	83 121
+	bbox	67 44 34 78
+	frame   data/chars/Enemys/Slum/idle00.gif
+	@cmd	depost 0
+	@cmd	throw 15 0.7 0.7 1 0 -1
+	@cmd	clearL
+	frame   data/chars/Enemys/Slum/idle01.gif
+	frame   data/chars/Enemys/Slum/idle02.gif
+	frame   data/chars/Enemys/Slum/idle03.gif
+
+
+
+anim walk
+	loop	1
+	delay	12
+	offset	83 119
+	bbox	71 45 31 77
+	frame	data/chars/Enemys/Slum/walk00.gif
+	frame	data/chars/Enemys/Slum/walk01.gif
+	frame	data/chars/Enemys/Slum/walk02.gif
+	frame  data/chars/Enemys/Slum/walk03.gif
+
+
+
+
+
+anim jump
+	loop	0
+	delay	15
+	offset	74 117
+	bbox	62 35 36 74
+	frame	data/chars/Enemys/Slum/Jump00.gif
+	frame	data/chars/Enemys/Slum/Jump00.gif
+	frame	data/chars/Enemys/Slum/Jump00.gif
+
+
+
+anim attack1
+	loop	0
+	delay	12
+	offset	77 119
+        Range 0 40
+        RangeZ -5 5
+        hitflash	Fraco
+	bbox	63 44 31 76
+		Attack1  0
+        Sound	data/sounds/golpes/Soco.wav
+        hitfx	data/sounds/golpes/Fraco.wav
+	frame	data/chars/Enemys/Slum/a100.gif
+		attack1  70  52  64  22  5  1  0  0  0  10
+		delay  7
+	frame	data/chars/Enemys/Slum/a101.gif
+		delay  20
+	frame	data/chars/Enemys/Slum/a102.gif
+		Attack1  0
+	frame  data/chars/Enemys/Slum/a102.gif
+
+
+anim attack2
+	loop	0
+	delay	12
+	offset	77 119
+        Range 0 40
+        RangeZ -5 5
+        hitflash	Fraco
+	bbox	63 44 31 76
+		Attack1  0
+        Sound	data/sounds/golpes/Soco.wav
+        hitfx	data/sounds/golpes/Fraco.wav
+	frame	data/chars/Enemys/Slum/a100.gif
+		attack1  70  52  64  22  5  1  0  0  0  10
+		delay  7
+	frame	data/chars/Enemys/Slum/a200.gif
+	frame	data/chars/Enemys/Slum/a102.gif
+
+
+
+
+anim pain
+	loop	0
+	offset	74 118
+	bbox	61 54 26 66
+	delay	5
+	frame	data/chars/Enemys/Slum/pain01.gif
+		delay  25
+		offset  72  118
+	frame	data/chars/Enemys/Slum/pain01.gif
+
+anim pain3
+	loop	0
+	offset	74 119
+	bbox	61 54 26 66
+	delay	5
+	jumpframe  0  2  0  0
+	frame	data/chars/Enemys/Slum/pain01.gif
+		delay  25
+		offset  77  119
+	frame	data/chars/Enemys/Slum/pain01.gif
+
+anim pain4
+	loop	0
+	offset	75 118
+	bbox	61 54 26 66
+	delay	5
+	frame	data/chars/Enemys/Slum/pain01.gif
+		delay  900
+		offset  74  119
+	frame	data/chars/Enemys/Slum/pain01.gif
+
+
+anim grabbed
+	loop	0
+	offset	81 118
+	bbox	75 53 26 67
+	delay	40
+	frame	data/chars/Enemys/Slum/pain02.gif
+
+
+
+anim pain2
+	loop	0
+	offset	83 120
+	bbox	72 55 28 65
+	delay	5
+	frame	data/chars/Enemys/Slum/pain02.gif
+		delay  25
+		offset  80  120
+	frame	data/chars/Enemys/Slum/pain02.gif
+
+
+
+
+
+anim fall2
+	loop	0
+	offset	81 115
+	jumpframe  0  3  -3  0
+	delay	20
+        hitfx	data/sounds/golpes/Forte.wav
+		attack  0
+	frame	data/chars/Enemys/Slum/fall00.gif
+		Attack1  0
+		offset  52  120
+	frame	data/chars/Enemys/Slum/fall01.gif
+		offset  78  121
+		delay  10
+	frame	data/chars/Enemys/Slum/fall02.gif
+
+anim fall
+	loop	0
+	offset	77 121
+	delay	20
+        hitfx	data/sounds/golpes/Forte.wav
+		attack  0
+	frame	data/chars/Enemys/Slum/fall00.gif
+		Attack1  0
+		offset  52  120
+	frame	data/chars/Enemys/Slum/fall01.gif
+		offset  78  119
+		delay  10
+	frame	data/chars/Enemys/Slum/fall02.gif
+
+anim fall6 #Shok
+	loop	0
+	offset	88 120
+	delay	5
+        hitfx	data/sounds/golpes/Forte.wav
+		attack  0
+	frame	data/chars/Enemys/Slum/fall01.gif
+	frame	data/chars/Enemys/Slum/fall200.gif
+	frame	data/chars/Enemys/Slum/fall01.gif
+	frame	data/chars/Enemys/Slum/fall200.gif
+	frame	data/chars/Enemys/Slum/fall01.gif
+		offset  74  120
+	frame	data/chars/Enemys/Slum/fall02.gif
+
+
+anim fall7 #Burn
+	loop	0
+	offset	65 97
+	delay	10
+        hitfx	data/sounds/golpes/Forte.wav
+		attack  0
+	frame	data/chars/Enemys/Slum/FALL300.gif
+	frame	data/chars/Enemys/Slum/FALL301.gif
+	frame	data/chars/Enemys/Slum/FALL302.gif
+	frame	data/chars/Enemys/Slum/FALL300.gif
+	frame	data/chars/Enemys/Slum/FALL301.gif
+		offset  78  119
+	frame	data/chars/Enemys/Slum/FALL02.gif
+
+
+anim rise
+	loop	0
+	offset	77 119
+	delay	20
+	frame	data/chars/Enemys/Slum/Rise00.gif
+	frame	data/chars/Enemys/Slum/Rise01.gif
+	frame	data/chars/Enemys/Slum/Rise02.gif
+
+
+
+anim Block
+	loop	0
+	delay	15
+	offset	80 119
+	bbox	58 54 36 67
+	frame	data/chars/Enemys/Slum/Block00.gif
+
+
+
+anim land
+	loop	0
+	delay	15
+	offset	80 119
+	bbox	58 54 36 67
+	frame	data/chars/Enemys/Slum/Land.gif
+
+
+anim Fall9
+	loop	0
+	offset	78 120
+	delay	999
+	frame	data/chars/Enemys/Slum/pain01.gif #0
+		offset  83  118
+	frame	data/chars/Enemys/Slum/pain02.gif #1
+		offset  74  119
+	frame	data/chars/Enemys/Slum/fall01.gif #2
+		offset  81  119
+	frame	data/chars/Enemys/Slum/fall02.gif #3
+		offset  112  99
+	frame	data/chars/Enemys/Slum/fall400.gif #4
+		offset  91  135
+	frame	data/chars/Enemys/Slum/fall401.gif #5
+		offset  81  118
+	frame	data/chars/Enemys/Slum/fall402.gif #6
+		offset  77  120
+	frame  data/chars/Enemys/Slum/fall403.gif #7
+		offset  91  135
+	delay	20
+	frame	data/chars/Enemys/Slum/fall401.gif #8
+	delay	30
+		offset  108  135
+	frame	data/chars/Enemys/Slum/fall404.gif #9
+	offset	73 120
+	frame	data/chars/Enemys/Slum/Fall405.gif #10
+
+
+anim Fall8
+	loop	0
+	flipframe  0
+	offset	85 119
+	delay	30
+	frame	data/chars/Enemys/Slum/fall01.gif #0
+	offset	73 120
+	delay	15
+	frame	data/chars/Enemys/Slum/fall02.gif #1
+
+
+anim Fall5
+	loop	0
+	flipframe  1
+	offset	63 120
+	delay	30
+	frame	data/chars/Enemys/Slum/fall01.gif #0
+	offset	71 119
+	delay	15
+	frame	data/chars/Enemys/Slum/fall02.gif #1
+

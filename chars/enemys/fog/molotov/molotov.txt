@@ -1,0 +1,53 @@
+name			Fog_Molotov #THROWNED
+type			none
+subtype			notgrab
+nolife			1
+remove			0
+gfxshadow		1 1
+noatflash		1
+flash			noflash
+death			1
+didhitscript	data/scripts/didhit/default.c
+animationscript	data/scripts/animation/default.c
+
+anim idle
+	followanim 1
+	followcond 1
+	landframe  4
+	fastattack 0
+	jugglecost 0
+	forcedirection 0
+	hitflash burn
+	loop	1 0 4
+	delay	6
+	offset	25 30
+	bbox 	18 22 15 15
+	hitfx	data/sounds/Glass2.wav
+	sound	data/sounds/HighAttack.wav
+	attack 18 22 15 15 50 0 0 0 0 12
+	frame	data/chars/fog/molotov/molotov00.gif
+	frame	data/chars/fog/molotov/molotov01.gif
+	frame	data/chars/fog/molotov/molotov02.gif
+	frame	data/chars/fog/molotov/molotov03.gif
+	@cmd hurtSelf 1
+	frame	data/chars/fog/molotov/molotov03.gif
+	
+anim follow1
+	loop	0
+	delay	2
+	offset	25 30
+	frame	data/chars/fog/molotov/empty.gif
+	@cmd suicide
+	frame	data/chars/fog/molotov/empty.gif
+	
+anim death
+	loop	0
+	delay	24
+	offset	25 30
+	sound	data/sounds/Glass2.wav
+	@cmd dashBg 0
+	@cmd spawnBind "burn" 20 20 1
+	@cmd antiWall 10 -10 -1
+	frame	data/chars/fog/molotov/empty.gif
+	@cmd suicide
+	frame	data/chars/fog/molotov/empty.gif

@@ -1,0 +1,31 @@
+name			eX02 #GROUND
+type			None
+Speed 10
+Alpha 1
+candamage			Player enemy npc obstacle
+#setlayer -58
+noquake 	1 1
+antigravity 100
+
+anim	idle
+	loop	0
+	delay	5
+        quakeframe 4 2 2
+		sound  data/SOUNDS/explosion.wav
+		offset  72  74
+	frame	data/Chars/efeitos/EX00.gif
+	frame	data/Chars/efeitos/EX01.gif
+		attack1  16  7  113  127  35  1  0  0  0  20
+	frame	data/Chars/efeitos/EX02.gif
+	frame	data/Chars/efeitos/EX03.gif
+	frame	data/Chars/efeitos/EX04.gif
+	frame	data/Chars/efeitos/EX05.gif
+	frame	data/Chars/efeitos/EX06.gif
+	frame	data/Chars/efeitos/EX07.gif
+	frame	data/Chars/efeitos/EX08.gif
+		Attack1  0
+	frame	data/Chars/efeitos/EX09.gif
+	frame	data/Chars/efeitos/EX10.gif
+	@cmd killentity getlocalvar("self")
+	frame	data/Chars/efeitos/EX10.gif
+

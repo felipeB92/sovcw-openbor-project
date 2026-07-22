@@ -1,0 +1,24 @@
+name			HarakiriP02
+type			none
+speed 15
+candamage			Player NPC
+#alpha 1
+nolife			1
+lifespan		4
+remove			1
+gfxshadow		1 1
+flash			Forte
+subject_to_gravity 0
+
+anim idle
+	loop	1
+	offset	-15 3
+        hitflash	Shock
+        hitfx	data/sounds/golpes/Forte.wav
+		delay  3
+		attack6  7  9  58  50  15  1  0  0  0  15
+	frame	data/chars/Boss/Harakiri/p02/P00.gif
+	frame	data/chars/Boss/Harakiri/p02/P01.gif
+	frame	data/chars/Boss/Harakiri/p02/P02.gif
+	frame	data/chars/Boss/Harakiri/p02/P03.gif
+

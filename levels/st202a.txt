@@ -1,0 +1,325 @@
+music		data/bgs/St203/Lv203a.bor
+bossmusic	data/music/boss2.bor
+scrollspeed 0.5#1
+stagenumber 2
+background	data/bgs/st202/city09.gif
+panel		data/bgs/St202/Pn00.gif
+#fglayer			data/bgs/st201/fpn00.gif 0 -0.8 0.6 0 0 0 0 1 1 1
+frontpanel      data/bgs/St201/Front02.gif
+cameratype 1
+cameraoffset 	0 -60
+settime         99
+notime          0
+noslow          1
+order		a
+spawn1  	125 20
+spawn2  	130 35
+spawn3  	135  50
+
+wall		2315 275 0 0 1000 1000 38 10000
+
+
+
+
+
+spawn  Cidade01
+flip   1
+	coords  0  0
+	at  0
+
+
+spawn  Lata02
+item   cash
+	coords  256  222
+	at  0
+
+
+spawn  Lata02
+	coords  288  242
+	at  0
+
+
+spawn  Lata02
+item   Gold
+	coords  296  259
+	at  0
+
+
+spawn  Lata02
+item   cash
+	coords  344 238
+	at  0
+
+spawn  Lata02
+item   Knife
+	coords  347  250
+	at  0
+
+spawn  Lata02
+	coords  384  262
+	at  0
+
+
+spawn  Galsia
+health 40
+map    1
+	coords  500  250
+	at  300
+
+wait 
+at  500
+
+group  4 4
+at  500
+
+spawn  Moto
+health 60
+alias  Fog
+	coords  500  250
+	at  500
+
+spawn  Galsia
+health 40
+map    1
+	coords  -100  250
+	at  500
+
+spawn  Donovan
+health 60
+map    2
+	coords  -100  220
+	at  500
+
+group  9 9
+at  501
+
+spawn  Donovan
+health 40
+	coords  500  220
+	at  600
+
+spawn  Donovan
+health 40
+	coords  -100  250
+	at  600
+
+spawn  Lata02
+item   apple
+	coords  500  258
+	at  600
+
+spawn  Lata02
+item   Pipe
+	coords  550  258
+	at  600
+
+spawn  Galsia
+health 40
+map    1
+	coords  600  220
+	at  700
+
+spawn  Galsia
+health 40
+map    1
+	coords  -100  250
+	at  700
+
+wait 
+at  800
+
+group  4 4
+at  800
+
+
+spawn  Moto
+health 60
+alias  Fog
+	coords  -100  220
+	at  800
+
+spawn  Moto02
+map    1
+health 60
+alias  Fog
+	coords  500  250
+	at  800
+
+
+
+
+
+spawn  Moto02
+map    1
+flip 1
+health 60
+alias  Fog
+	coords  -50  220
+	at  1000
+
+spawn  Moto02
+flip 1
+health 60
+alias  Fog
+	coords  -100  240
+	at  1050
+
+spawn  Moto02
+map    2
+flip 1
+health 60
+alias  Fog
+	coords  -100  260
+	at  1150
+
+wait 
+at  1200
+
+group  4 4
+at  1200
+
+spawn  Galsia
+health 40
+map    1
+	coords  -100  260
+	at  1200
+
+spawn  Fog_b
+health 60
+	coords  500  260
+	at  1200
+
+group  9 9
+at  1201
+
+spawn  Donovan
+health 40
+	coords  -100  260
+	at  1250
+
+spawn  Lata02
+item   apple
+	coords  500  242
+	at  1300
+
+spawn  Lata02
+item   Gold
+	coords  600  242
+	at  1300
+
+spawn  Moto
+health 60
+	coords  500  220
+	at  1300
+
+spawn  Fog_B
+health 60
+	coords  500 260
+	at  1300
+
+spawn  Donovan
+health 40
+	coords  500  240
+	at  1400
+
+spawn  Moto
+health 60
+	coords  500  240
+	at  1400
+
+spawn  Donovan
+health 40
+	coords  -100  240
+	at  1400
+
+spawn  Galsia
+health 40
+map    1
+	coords  -100  260
+	at  1400
+
+spawn  Moto02
+map    1
+flip 1
+health 60
+alias  Fog
+	coords  -50  250
+	at  1450
+
+spawn  Moto02
+map    3
+health 60
+alias  Fog
+	coords  500  220
+	at  1500
+
+spawn  Moto
+health 60
+alias  Fog
+	coords  500  245
+	at  1550
+
+wait 
+at  1600
+
+group  5 5
+at  1600
+
+
+spawn  Moto02
+health 60
+alias  Fog
+	coords  500  220
+	at  1600
+
+
+spawn  Fog_B
+health 60
+alias  Fog
+	coords  500  250
+	at  1600
+
+
+spawn  Lata02
+	coords  690  220
+	at  1601
+
+spawn  Lata02
+item   Chicken
+	coords  695  230
+	at  1601
+
+spawn  Lata02
+item   Cash
+	coords  700  250
+	at  1601
+
+
+
+
+
+spawn  Truck01
+flip   1
+	coords  250  0
+	at  1750
+
+
+spawn  Fog_
+map    2
+health 70
+alias  Fog
+	coords  500  200
+	at  1750
+
+spawn  Pipe
+	coords  500  220
+	at  1750
+
+
+
+spawn  Signal_
+health 60
+	coords  500  260
+	at  1750
+
+

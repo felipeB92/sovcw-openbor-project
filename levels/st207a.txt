@@ -1,0 +1,319 @@
+music		data/bgs/St207/Lv207a.bor
+bossmusic	data/music/boss2.bor
+scrollspeed 0.5#1
+stagenumber 7
+background	data/bgs/st207/back00.gif	        1 1 0 0 0 0 -1 1 0
+bglayer		data/bgs/st207/bg00.gif		0.6 1 0 0 0 0 -1 1 1 0  0 0 0 0 0
+bglayer		data/bgs/st207/bg01.gif		0.4 1 0 0 0 0 -1 1 1 0  0 0 0 0 1.5
+bglayer		data/bgs/st207/bg02.gif		0.2 1 0 0 0 0 -1 1 1 0  0 0 0 0 3
+panel		data/bgs/st207/pn00.gif		none	none
+#fglayer			data/bgs/st201/fpn00.gif 0 -0.8 0.6 0 0 0 0 1 1 1
+frontpanel      data/bgs/st05/Front02.gif
+cameratype 1
+cameraoffset 	0 -60
+settime         99
+notime          0
+noslow          1
+order		a
+spawn1  	50 20
+spawn2  	55 35
+spawn3  	60 50
+
+
+
+
+spawn  Esteira01
+flip   1
+	coords  219 244
+	at  0
+
+
+spawn  Donovan
+health 40
+	coords  500  230 2
+	at  50
+
+spawn  galsia
+map    5
+health 90
+	coords  500  260 2
+	at  70
+
+
+spawn  Lata03
+Item   apple
+	coords  500  220 2
+	at  100
+
+
+
+
+
+
+
+
+pawn  Donovan
+map    4
+health 90
+	coords  500  230 2
+	at  100
+
+spawn  Lata03
+Item   cash
+	coords  500  220 2
+	at  150
+
+pawn  Donovan
+map    4
+health 90
+	coords  500  260 2
+	at  150
+
+wait
+        at  250
+
+Group  5   5
+        at  250   
+
+spawn  Galsia
+map    1
+health 40
+	coords  500  230 2
+	at  250
+
+
+spawn  Bigben
+health 100
+	coords  300  230 150
+	at  250
+
+
+Group  9   9
+        at  251   
+
+spawn  Fog_
+health 60
+	coords  475  196
+	at  400
+
+spawn  Donovan
+health 40
+	coords  -100  230 2
+	at  400
+
+spawn  Lata03
+item   Gold
+	coords  500  220 2
+	at  407
+
+spawn  Esteira01
+flip   1
+	coords  500 244
+	at  445
+
+spawn  Lata03
+item   cash
+	coords  500  220 2
+	at  445
+
+
+spawn  galsia
+map    1
+health 40
+	coords  500  260 2
+	at  450
+
+
+
+spawn  Donovan
+map    4
+health 90
+	coords  -100  230 2
+	at  500
+
+spawn  Fog
+map    2
+health 90
+	coords  500  260
+	at  500
+
+spawn  G_fog
+map    2
+	coords  500  210 0
+	at  550
+
+
+spawn  Lata03
+Item   Apple
+	coords  500  260 2
+	at  585
+
+
+
+spawn  Galsia
+map    1
+health 40
+	coords  -100  230 2
+	at  650
+
+spawn  Fog
+health 70
+	coords  500  260
+	at  650
+
+spawn  Donovan
+health 40
+	coords  -100  260 2
+	at  650
+
+spawn  G_fog
+	coords  500  210 0
+	at  650
+
+
+spawn  Esteira01
+flip   1
+	coords  500 276
+	at  703
+
+
+
+spawn  Lata03
+2pItem   Apple
+	coords  500  220 2
+	at  849
+
+
+spawn  Esteira01
+flip   1
+	coords  500 244
+	at  925
+
+
+spawn  Pipe
+	coords  475  220
+	at  930
+
+
+
+
+spawn  Fog_
+map    2
+health 90
+	coords  475  196
+	at  950
+
+
+wait
+        at  1050
+
+Group  5   5
+        at  1050 
+
+spawn  G_fog
+map    2
+	coords  450  210 0
+	at  1050
+
+
+
+
+spawn  Galsia
+map    5
+health 90
+	coords  500  260
+	at  1050
+
+spawn  Donovan
+map    4
+health 90
+	coords  500  260
+	at  1050
+
+
+
+
+
+
+spawn  Esteira01
+flip   1
+	coords  500 276
+	at  1055
+
+spawn  Lata03
+Item   Knife
+	coords  500  220 2
+	at  1310
+
+spawn  Esteira02
+flip   1
+	coords  500 276
+	at  1359
+
+
+spawn  Lata03
+Item   Chicken
+	coords  500  255 2
+	at  1523
+
+spawn  Lata03
+2pItem  Chicken
+	coords  500  230 2
+	at  1565
+
+
+spawn  Esteira02
+flip   1
+	coords  500 276
+	at  1645
+
+spawn  electra
+health 90
+	coords  300  260 200
+	at  1700
+
+spawn  Kusanagi
+health 70
+	coords  500  260 150
+	at  1700
+
+spawn  electra
+map    4
+health 160
+	coords  300  260 200
+	at  2000
+
+spawn  Kunai
+	coords  250  230 140
+	at  2000
+
+
+spawn  Kusanagi
+map    4
+health 150
+	coords  250  230 150
+	at  2000
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

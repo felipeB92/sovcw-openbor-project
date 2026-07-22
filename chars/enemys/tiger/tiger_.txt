@@ -1,0 +1,519 @@
+name	Tiger_
+health	70
+mp 30
+mprate 1
+#secret 1
+Falldie 2
+Grabdistance 18
+riseinv				0.4 1
+speed	8
+type	Enemy
+gfxshadow	1
+candamage			Player npc obstacle
+JUMPHEIGHT 4
+hostile Player NPC
+#antigrab 2
+atchain   1 1 2 3 4 5
+#weapons Tiger_Knife Tiger_Sword Tiger_pipe Tiger_Kunai
+icon	data/chars/Enemys/Tiger/icon.gif 1
+diesound data/Sounds/Die5.wav
+running	20	3	2	1	1
+onblockwscript	data/scripts/bounceF.c
+#animationscript 	data/scripts/ani0020.h
+animationscript		data/scripts/drago.c
+ondrawscript 		data/scripts/Enemy_ondrawscript.c
+
+
+
+#Load Tiger_Knife
+#Load Tiger_Pipe
+#Load Tiger_Kunai
+#Load Tiger_Sword
+
+remap data/chars/Enemys/Tiger/idle00.gif data/chars/Enemys/Tiger/MAp01.gif
+remap data/chars/Enemys/Tiger/idle00.gif data/chars/Enemys/Tiger/MAp02.gif
+remap data/chars/Enemys/Tiger/idle00.gif data/chars/Enemys/Tiger/MAp03.gif
+remap data/chars/Enemys/Tiger/idle00.gif data/chars/Enemys/Tiger/MAp04.gif
+
+
+anim Spawn
+	loop	0
+	delay	12
+	offset	150 180
+	bbox	132 101 31 79
+	frame   data/chars/Enemys/Tiger/idle00.gif
+	frame   data/chars/Enemys/Tiger/idle01.gif
+	frame   data/chars/Enemys/Tiger/idle02.gif
+	frame   data/chars/Enemys/Tiger/idle03.gif
+	frame   data/chars/Enemys/Tiger/idle00.gif
+	frame   data/chars/Enemys/Tiger/idle01.gif
+	frame   data/chars/Enemys/Tiger/idle02.gif
+	frame   data/chars/Enemys/Tiger/idle03.gif
+	frame   data/chars/Enemys/Tiger/idle00.gif
+	frame   data/chars/Enemys/Tiger/idle01.gif
+	frame   data/chars/Enemys/Tiger/idle02.gif
+	frame   data/chars/Enemys/Tiger/idle03.gif
+	frame   data/chars/Enemys/Tiger/idle00.gif
+	frame   data/chars/Enemys/Tiger/idle01.gif
+	frame   data/chars/Enemys/Tiger/idle02.gif
+	frame   data/chars/Enemys/Tiger/idle03.gif
+	frame   data/chars/Enemys/Tiger/idle00.gif
+	frame   data/chars/Enemys/Tiger/idle01.gif
+	frame   data/chars/Enemys/Tiger/idle02.gif
+	frame   data/chars/Enemys/Tiger/idle03.gif
+	frame   data/chars/Enemys/Tiger/idle00.gif
+	frame   data/chars/Enemys/Tiger/idle01.gif
+	frame   data/chars/Enemys/Tiger/idle02.gif
+	frame   data/chars/Enemys/Tiger/idle03.gif
+	frame   data/chars/Enemys/Tiger/idle00.gif
+	frame   data/chars/Enemys/Tiger/idle01.gif
+	frame   data/chars/Enemys/Tiger/idle02.gif
+	frame   data/chars/Enemys/Tiger/idle03.gif
+	frame   data/chars/Enemys/Tiger/idle00.gif
+	frame   data/chars/Enemys/Tiger/idle01.gif
+	frame   data/chars/Enemys/Tiger/idle02.gif
+	frame   data/chars/Enemys/Tiger/idle03.gif
+	frame   data/chars/Enemys/Tiger/idle00.gif
+	frame   data/chars/Enemys/Tiger/idle01.gif
+	frame   data/chars/Enemys/Tiger/idle02.gif
+	frame   data/chars/Enemys/Tiger/idle03.gif
+	frame   data/chars/Enemys/Tiger/idle00.gif
+	frame   data/chars/Enemys/Tiger/idle01.gif
+	frame   data/chars/Enemys/Tiger/idle02.gif
+	frame   data/chars/Enemys/Tiger/idle03.gif
+	frame   data/chars/Enemys/Tiger/idle00.gif
+	frame   data/chars/Enemys/Tiger/idle01.gif
+	frame   data/chars/Enemys/Tiger/idle02.gif
+	frame   data/chars/Enemys/Tiger/idle03.gif
+	frame   data/chars/Enemys/Tiger/idle00.gif
+	frame   data/chars/Enemys/Tiger/idle01.gif
+	frame   data/chars/Enemys/Tiger/idle02.gif
+	frame   data/chars/Enemys/Tiger/idle03.gif
+	frame   data/chars/Enemys/Tiger/idle00.gif
+	frame   data/chars/Enemys/Tiger/idle01.gif
+	frame   data/chars/Enemys/Tiger/idle02.gif
+	frame   data/chars/Enemys/Tiger/idle03.gif
+	frame   data/chars/Enemys/Tiger/idle00.gif
+	frame   data/chars/Enemys/Tiger/idle01.gif
+	frame   data/chars/Enemys/Tiger/idle02.gif
+	frame   data/chars/Enemys/Tiger/idle03.gif
+	frame   data/chars/Enemys/Tiger/idle00.gif
+	frame   data/chars/Enemys/Tiger/idle01.gif
+	frame   data/chars/Enemys/Tiger/idle02.gif
+	frame   data/chars/Enemys/Tiger/idle03.gif
+	frame   data/chars/Enemys/Tiger/idle00.gif
+	frame   data/chars/Enemys/Tiger/idle01.gif
+	frame   data/chars/Enemys/Tiger/idle02.gif
+	frame   data/chars/Enemys/Tiger/idle03.gif
+	frame   data/chars/Enemys/Tiger/idle00.gif
+	frame   data/chars/Enemys/Tiger/idle01.gif
+	frame   data/chars/Enemys/Tiger/idle02.gif
+	frame   data/chars/Enemys/Tiger/idle03.gif
+	frame   data/chars/Enemys/Tiger/idle00.gif
+	frame   data/chars/Enemys/Tiger/idle01.gif
+	frame   data/chars/Enemys/Tiger/idle02.gif
+	frame   data/chars/Enemys/Tiger/idle03.gif
+	frame   data/chars/Enemys/Tiger/idle00.gif
+	frame   data/chars/Enemys/Tiger/idle01.gif
+	frame   data/chars/Enemys/Tiger/idle02.gif
+	frame   data/chars/Enemys/Tiger/idle03.gif
+	frame   data/chars/Enemys/Tiger/idle00.gif
+	frame   data/chars/Enemys/Tiger/idle01.gif
+	frame   data/chars/Enemys/Tiger/idle02.gif
+	frame   data/chars/Enemys/Tiger/idle03.gif
+	frame   data/chars/Enemys/Tiger/idle00.gif
+	frame   data/chars/Enemys/Tiger/idle01.gif
+	frame   data/chars/Enemys/Tiger/idle02.gif
+	frame   data/chars/Enemys/Tiger/idle03.gif
+	frame   data/chars/Enemys/Tiger/idle00.gif
+	frame   data/chars/Enemys/Tiger/idle01.gif
+	frame   data/chars/Enemys/Tiger/idle02.gif
+	frame   data/chars/Enemys/Tiger/idle03.gif
+	frame   data/chars/Enemys/Tiger/idle00.gif
+	frame   data/chars/Enemys/Tiger/idle01.gif
+	frame   data/chars/Enemys/Tiger/idle02.gif
+	frame   data/chars/Enemys/Tiger/idle03.gif
+	frame   data/chars/Enemys/Tiger/idle00.gif
+	frame   data/chars/Enemys/Tiger/idle01.gif
+	frame   data/chars/Enemys/Tiger/idle02.gif
+	frame   data/chars/Enemys/Tiger/idle03.gif
+	frame   data/chars/Enemys/Tiger/idle00.gif
+	frame   data/chars/Enemys/Tiger/idle01.gif
+	frame   data/chars/Enemys/Tiger/idle02.gif
+	frame   data/chars/Enemys/Tiger/idle03.gif
+	frame   data/chars/Enemys/Tiger/idle00.gif
+	frame   data/chars/Enemys/Tiger/idle01.gif
+	frame   data/chars/Enemys/Tiger/idle02.gif
+	frame   data/chars/Enemys/Tiger/idle03.gif
+	frame   data/chars/Enemys/Tiger/idle00.gif
+	frame   data/chars/Enemys/Tiger/idle01.gif
+	frame   data/chars/Enemys/Tiger/idle02.gif
+	frame   data/chars/Enemys/Tiger/idle03.gif
+	frame   data/chars/Enemys/Tiger/idle00.gif
+	frame   data/chars/Enemys/Tiger/idle01.gif
+	frame   data/chars/Enemys/Tiger/idle02.gif
+	frame   data/chars/Enemys/Tiger/idle03.gif
+	frame   data/chars/Enemys/Tiger/idle00.gif
+	frame   data/chars/Enemys/Tiger/idle01.gif
+	frame   data/chars/Enemys/Tiger/idle02.gif
+	frame   data/chars/Enemys/Tiger/idle03.gif
+	frame   data/chars/Enemys/Tiger/idle00.gif
+	frame   data/chars/Enemys/Tiger/idle01.gif
+	frame   data/chars/Enemys/Tiger/idle02.gif
+	frame   data/chars/Enemys/Tiger/idle03.gif
+	frame   data/chars/Enemys/Tiger/idle00.gif
+	frame   data/chars/Enemys/Tiger/idle01.gif
+	frame   data/chars/Enemys/Tiger/idle02.gif
+	frame   data/chars/Enemys/Tiger/idle03.gif
+	frame   data/chars/Enemys/Tiger/idle00.gif
+	frame   data/chars/Enemys/Tiger/idle01.gif
+	frame   data/chars/Enemys/Tiger/idle02.gif
+	frame   data/chars/Enemys/Tiger/idle03.gif
+	frame   data/chars/Enemys/Tiger/idle00.gif
+	frame   data/chars/Enemys/Tiger/idle01.gif
+	frame   data/chars/Enemys/Tiger/idle02.gif
+	frame   data/chars/Enemys/Tiger/idle03.gif
+	frame   data/chars/Enemys/Tiger/idle00.gif
+	frame   data/chars/Enemys/Tiger/idle01.gif
+	frame   data/chars/Enemys/Tiger/idle02.gif
+	frame   data/chars/Enemys/Tiger/idle03.gif
+	frame   data/chars/Enemys/Tiger/idle00.gif
+	frame   data/chars/Enemys/Tiger/idle01.gif
+	frame   data/chars/Enemys/Tiger/idle02.gif
+	frame   data/chars/Enemys/Tiger/idle03.gif
+	frame   data/chars/Enemys/Tiger/idle00.gif
+	frame   data/chars/Enemys/Tiger/idle01.gif
+	frame   data/chars/Enemys/Tiger/idle02.gif
+	frame   data/chars/Enemys/Tiger/idle03.gif
+	frame   data/chars/Enemys/Tiger/idle00.gif
+	frame   data/chars/Enemys/Tiger/idle01.gif
+	frame   data/chars/Enemys/Tiger/idle02.gif
+	frame   data/chars/Enemys/Tiger/idle03.gif
+	frame   data/chars/Enemys/Tiger/idle00.gif
+	frame   data/chars/Enemys/Tiger/idle01.gif
+	frame   data/chars/Enemys/Tiger/idle02.gif
+	frame   data/chars/Enemys/Tiger/idle03.gif
+	frame   data/chars/Enemys/Tiger/idle00.gif
+	frame   data/chars/Enemys/Tiger/idle01.gif
+	frame   data/chars/Enemys/Tiger/idle02.gif
+	frame   data/chars/Enemys/Tiger/idle03.gif
+	frame   data/chars/Enemys/Tiger/idle00.gif
+	frame   data/chars/Enemys/Tiger/idle01.gif
+        Delay 999
+	frame   data/chars/Enemys/Tiger/idle02.gif
+	frame   data/chars/Enemys/Tiger/idle03.gif
+
+
+
+
+anim idle
+	loop	1
+	delay	12
+	offset	150 180
+	bbox	122 100 48 82
+	frame   data/chars/Enemys/Tiger/idle00.gif
+	@cmd	depost 0
+	@cmd	throw 15 0.7 0.7 1 0 -1
+	@cmd	clearL
+	frame   data/chars/Enemys/Tiger/idle01.gif
+	frame   data/chars/Enemys/Tiger/idle02.gif
+	frame   data/chars/Enemys/Tiger/idle03.gif
+
+
+
+anim walk
+	loop	1
+	delay	12
+	offset	150 180
+	bbox	134 100 28 82
+	frame	data/chars/Enemys/Tiger/walk00.gif
+	frame	data/chars/Enemys/Tiger/walk01.gif
+	frame	data/chars/Enemys/Tiger/walk02.gif
+	frame   data/chars/Enemys/Tiger/walk03.gif
+
+
+
+
+
+anim jump
+	loop	0
+	delay	15
+	offset	152 180
+	bbox	136 93 35 89
+	frame	data/chars/Enemys/Tiger/Jump00.gif
+	frame	data/chars/Enemys/Tiger/Jump00.gif
+	frame	data/chars/Enemys/Tiger/Jump00.gif
+
+
+anim Freespecial
+	loop	0
+	delay	35
+        Range 50 100
+        RangeZ -7 7
+	jumpframe  1  3 2  0
+	offset	150 180
+        hitflash	MEdio
+        hitfx	data/sounds/golpes/medio.wav
+	frame	data/chars/Enemys/Tiger/LAnd.gif
+		delay  10
+	frame	data/chars/Enemys/Tiger/Jump00.gif
+		delay  15
+		hitflash  MEdio
+		hitfx  data/sounds/golpes/medio.wav
+	Sound  data/sounds/golpes/Chut.wav
+	frame  data/chars/Enemys/Tiger/Ja100.gif
+		attack1  121  126  88  29  10  1  0  0  0  10
+		delay  40
+		bbox  126  90  49  49
+		sound  data/chars/Enemys/Tiger/A1.WAV
+	frame	data/chars/Enemys/Tiger/Ja100.gif
+		Attack1  0
+		bbox  135  119  36  46
+	frame  data/chars/Enemys/Tiger/LAnd.gif
+
+
+
+anim Freespecial2
+	loop	0
+	delay	12
+        Range 100 150
+        RangeZ -7 7
+	offset	150 180
+        hitflash	Forte
+	bbox	135 115 33 67
+		Attack1  0
+        Sound	data/sounds/golpes/Soco.wav
+        hitfx	data/sounds/golpes/Forte.wav
+	frame	data/chars/Enemys/Tiger/kick00.gif
+        @cmd dasher 3 0 0
+	delay	40
+		attack1  121  149  88  35  10  1  0  0  0  10
+        Sound	data/sounds/whoosh2.wav
+	frame	data/chars/Enemys/Tiger/kick01.gif
+        @cmd dasher 0 0 0
+		Attack1  0
+	frame	data/chars/Enemys/Tiger/kick00.gif
+
+
+anim attack1
+	loop	0
+	delay	6
+	offset	145 180
+        Range 0 50
+        RangeZ -7 7
+        hitflash	Fraco
+	bbox	132 96 26 86
+		Attack1  0
+        Sound	data/sounds/golpes/Soco.wav
+        hitfx	data/sounds/golpes/Fraco.wav
+	frame	data/chars/Enemys/Tiger/a100.gif
+		delay  5
+	frame	data/chars/Enemys/Tiger/a101.gif
+		delay  4
+		attack1  128  109  68  47  5  0  0  0  0  10
+	frame	data/chars/Enemys/Tiger/a102.gif
+
+anim attack2
+	loop	0
+	delay	5
+	offset	130 181
+        hitflash	MEdio
+	bbox	120 108 28 75
+		Attack1  0
+        Sound	data/sounds/golpes/Soco.wav
+        hitfx	data/sounds/golpes/MEdio.wav
+	frame	data/chars/Enemys/Tiger/a200.gif
+		attack2  110  110  78  29  5  0  0  0  0  10
+	frame	data/chars/Enemys/Tiger/a201.gif
+		delay  9
+		attack1  130  106  66  46  7  1  0  0  0  10
+	frame	data/chars/Enemys/Tiger/a202.gif
+
+
+
+
+anim pain
+	loop	0
+	offset	144 180
+	bbox	128 104 32 79
+	delay	5
+	frame	data/chars/Enemys/Tiger/pain01.gif
+		delay  25
+		offset  142  180
+	frame	data/chars/Enemys/Tiger/pain01.gif
+
+anim pain3
+	loop	0
+	offset	145 180
+	bbox	129 101 26 81
+	delay	5
+	jumpframe  0  2  0  0
+	frame	data/chars/Enemys/Tiger/pain01.gif
+		delay  25
+		offset  143  180
+	frame	data/chars/Enemys/Tiger/pain01.gif
+
+anim pain4
+	loop	0
+	offset	144 180
+	bbox	128 105 29 74
+	delay	5
+	frame	data/chars/Enemys/Tiger/pain01.gif
+		delay  900
+		offset  142  180
+	frame	data/chars/Enemys/Tiger/pain01.gif
+
+
+anim grabbed
+	loop	0
+	offset	148 180
+	bbox	128 105 41 75
+	delay	40
+	frame	data/chars/Enemys/Tiger/pain02.gif
+
+
+
+anim pain2
+	loop	0
+	offset	146 180
+	bbox	135 105 29 75
+	delay	5
+	frame	data/chars/Enemys/Tiger/pain02.gif
+		delay  25
+		offset  144  180
+	frame	data/chars/Enemys/Tiger/pain02.gif
+
+
+
+
+
+anim fall2
+	loop	0
+	offset	150 180
+	jumpframe  0  3  -3  0
+	delay	20
+        hitfx	data/sounds/golpes/Forte.wav
+		attack  0
+	frame	data/chars/Enemys/Tiger/fall00.gif
+		Attack1  0
+	frame	data/chars/Enemys/Tiger/fall01.gif
+		delay  10
+	frame	data/chars/Enemys/Tiger/fall02.gif
+
+anim fall
+	loop	0
+	offset	150 180
+	delay	20
+        hitfx	data/sounds/golpes/Forte.wav
+		attack  0
+	frame	data/chars/Enemys/Tiger/fall00.gif
+		Attack1  0
+	frame	data/chars/Enemys/Tiger/fall01.gif
+		delay  10
+	frame	data/chars/Enemys/Tiger/fall02.gif
+
+anim fall6 #Shok
+	loop	0
+	offset	77 113
+	delay	5
+        hitfx	data/sounds/golpes/Forte.wav
+		attack  0
+	frame	data/chars/Enemys/Tiger/fall201.gif
+	frame	data/chars/Enemys/Tiger/fall200.gif
+	frame	data/chars/Enemys/Tiger/fall201.gif
+	frame	data/chars/Enemys/Tiger/fall200.gif
+		offset  150  180
+	frame	data/chars/Enemys/Tiger/fall01.gif
+		offset  150  179
+	frame	data/chars/Enemys/Tiger/fall02.gif
+
+
+anim fall7 #Burn
+	loop	0
+	offset	65 97
+	delay	10
+        hitfx	data/sounds/golpes/Forte.wav
+		attack  0
+	frame	data/chars/Enemys/Tiger/FALL300.gif
+	frame	data/chars/Enemys/Tiger/FALL301.gif
+	frame	data/chars/Enemys/Tiger/FALL302.gif
+	frame	data/chars/Enemys/Tiger/FALL300.gif
+	frame	data/chars/Enemys/Tiger/FALL301.gif
+		offset  150  180
+	frame	data/chars/Enemys/Tiger/FALL02.gif
+
+
+anim rise
+	loop	0
+	offset	150 180
+	delay	20
+	frame	data/chars/Enemys/Tiger/Rise00.gif
+	frame	data/chars/Enemys/Tiger/Rise01.gif
+		offset  141  180
+	frame	data/chars/Enemys/Tiger/Rise02.gif
+
+
+
+
+anim jUMPland
+	loop	0
+	delay	15
+	offset	149 180
+	bbox	131 120 39 59
+	frame	data/chars/Enemys/Tiger/Land.gif
+
+
+anim land
+	loop	0
+	delay	15
+	offset	149 180
+	bbox	133 116 40 67
+	frame	data/chars/Enemys/Tiger/Land.gif
+
+
+anim Fall9
+	loop	0
+	offset	144 179
+	delay	999
+	frame	data/chars/Enemys/Tiger/pain01.gif #0
+	frame	data/chars/Enemys/Tiger/pain02.gif #1
+	frame	data/chars/Enemys/Tiger/fall01.gif #2
+		offset  150  179
+	frame	data/chars/Enemys/Tiger/fall02.gif #3
+		offset  155  179
+	frame	data/chars/Enemys/Tiger/fall400.gif #4
+		offset  152  175
+	frame	data/chars/Enemys/Tiger/fall401.gif #5
+		offset  146  161
+	frame	data/chars/Enemys/Tiger/fall402.gif #6
+		offset  161  184
+	frame  data/chars/Enemys/Tiger/fall403.gif #7
+		offset  151  178
+	delay	20
+	frame	data/chars/Enemys/Tiger/fall401.gif #8
+	delay	30
+		offset  135  189
+	frame	data/chars/Enemys/Tiger/fall404.gif #9
+		offset  141  178
+	frame	data/chars/Enemys/Tiger/Fall405.gif #10
+
+
+anim Fall8
+	loop	0
+	flipframe  0
+	offset	150 180
+	delay	30
+	frame	data/chars/Enemys/Tiger/fall01.gif #0
+	delay	15
+	frame	data/chars/Enemys/Tiger/fall02.gif #1
+
+
+anim Fall5
+	loop	0
+	flipframe  1
+	offset	150 180
+	delay	30
+	frame	data/chars/Enemys/Tiger/fall01.gif #0
+	delay	15
+	frame	data/chars/Enemys/Tiger/fall02.gif #1
+

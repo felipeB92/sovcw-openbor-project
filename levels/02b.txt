@@ -1,0 +1,283 @@
+music		data/music/03a.bor
+bossmusic	data/music/BossR.bor
+scrollspeed 0.5#1
+#direction Left
+stagenumber 3
+background	data/bgs/01/baCK03b.gif 	0.675 1 0 0 0 0 -1 1 1
+bglayer		data/bgs/01/bAck03.gif	0.575 1 0 0 0 0 -1 1 1
+#bglayer		data/bgs/00/b01.gif	0.475 1 0 0 0 0 -1 1 1
+#water		data/bgs/01/Mar01.gif		0.5
+#fglayer         data/bgs/00/FOG.gif              0.5 1 0 0 0 0 -1 1 1 0 1 3 10 0.3
+panel		data/bgs/02/pn02.gif		none	none
+#frontpanel	data/bgs/00/Front00.gif		
+cameratype 1
+cameraoffset 0 -30
+#levelscript @script
+#void main() {
+#	changelevelproperty("camerazoffset", 0);
+#	changelevelproperty("cameraxoffset", 0);
+#}
+#@end_script
+settime         99
+notime          0
+noslow          1
+order		a
+spawn1  	50 20 50
+spawn2  	55 35 50 
+spawn3  	60 50 50
+
+light		128 -128
+at			0
+
+
+spawn  Sombra00
+Flip 1
+	coords  0 209
+	at  0
+
+spawn  Cadeira
+Flip 1
+	coords  130 247
+	at  0
+
+spawn  Mesa
+       Item Apple
+	coords  160 247
+	at  0
+
+spawn  Cadeira
+	coords  200 247
+	at  0
+
+
+
+spawn  Ruy_B
+Alias Ruy
+health 150
+	coords  95 209
+	at  0
+
+wait
+at       0
+
+group 4 4
+at  0
+
+spawn  Arcade
+Map 1
+Flip 1
+Item  Gold
+	coords  300 215
+	at  0
+
+spawn  Act
+	coords  405 216
+	at  0
+
+spawn  Galsia_A
+health 70
+Flip 1
+	coords  405 216
+	at  0
+
+spawn  Arcade
+Item  Knife
+Flip 1
+	coords  440 215
+	at  0
+
+spawn  Fog
+health 70
+	coords  600 220
+	at  0
+
+spawn  Signal
+Map  1
+health 70
+	coords  600 220
+	at  0
+
+
+spawn  Donovan
+Map  1
+health 50
+	coords  600 220
+	at  0
+
+spawn  Ralf
+Map  1
+health 70
+	coords  600 220
+	at  0
+
+spawn  Act
+	coords  95 209
+	at  0
+
+
+spawn  Jhonny
+health 70
+	coords  -100 220
+	at  0
+
+spawn  Signal
+Map  2
+health 70
+	coords  -100 240
+	at  0
+
+spawn  Pipe
+	coords  600 220
+	at  0
+
+spawn  Thug
+Map  3
+health 50
+	coords  -100 220
+	at  0
+
+
+
+spawn  Donovan
+Map  1
+health 50
+	coords  600 240
+	at  0
+
+spawn  Fog
+Map  3
+health 70
+	coords  600 240
+	at  0
+
+
+spawn  Galsia
+Map  3
+health 50
+	coords  -100 220
+	at  0
+
+spawn  ActE
+	coords  250 240
+	at  0
+
+spawn  Galsia_A
+health 70
+Map 3
+Flip 1
+	coords  557 255
+	at  1
+
+spawn  Arcade
+Item Cash
+Map  2
+Flip 1
+	coords  592 254
+	at  1
+
+spawn  Act
+	coords  585 260
+	at  1
+
+
+spawn  Galsia_A
+health 70
+Map 2
+Flip 1
+	coords  578 266
+	at  1
+
+spawn  Arcade
+Flip 1
+	coords  613 265
+	at  1
+
+
+wait
+at       130
+
+group 4 4
+at  130
+
+
+
+spawn  Fog
+MAp 4
+health 70
+	coords  456 200 1
+	at  130
+
+spawn  Signal
+Map  4
+health 70
+	coords  456 200 1
+	at  130
+
+
+spawn  Donovan
+Map  4
+health 50
+	coords  456 220 1
+	at  130
+
+spawn  Ralf
+Map  4
+health 70
+	coords  -100 220
+	at  130
+
+
+spawn  Jhonny
+health 70
+Map 4
+	coords  -100 220
+	at  130
+
+spawn  Signal
+Map  3
+health 70
+	coords  -100 240
+	at  130
+
+spawn  Galsia
+health 50
+	coords  456 200 1
+	at  130
+
+spawn  GAlsia
+Map  4
+health 50
+	coords  456 200 1
+	at  130
+
+
+spawn  Donovan
+Map  4
+health 50
+	coords  -100 220 1
+	at  130
+
+
+spawn  Donovan
+health 50
+	coords  456 220 1
+	at  130
+
+spawn  ActE
+	coords  250 240
+	at  130
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

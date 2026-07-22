@@ -1,0 +1,36 @@
+
+name			BoomerP01 #THROWNED
+type			none
+speed 12
+candamage			enemy obstacle
+alpha 1
+nolife			1
+lifespan		4
+remove			1
+gfxshadow		0 0
+flash			Forte
+antigravity 100
+
+anim idle
+	loop	0
+	offset	72 205
+		delay  5
+frame  data/chars/players/Boomer/p01/P00.gif
+Sound  data/chars/players/Boomer/p02.wav
+frame  data/chars/players/Boomer/p01/P00.gif
+frame  data/chars/players/Boomer/p01/p02.Gif
+frame  data/chars/players/Boomer/p01/p03.Gif
+frame  data/chars/players/Boomer/p01/P00.gif
+frame  data/chars/players/Boomer/p01/P00.gif
+frame  data/chars/players/Boomer/p01/p02.Gif
+frame  data/chars/players/Boomer/p01/p03.Gif
+frame  data/chars/players/Boomer/p01/p04.Gif
+Sound  data/chars/players/Boomer/p01a.wav
+frame  data/chars/players/Boomer/p01/p05.Gif
+		offset  72  272
+frame  data/chars/players/Boomer/p01/p06.Gif
+frame  data/chars/players/Boomer/p01/p07.Gif
+frame  data/chars/players/Boomer/p01/p08.Gif
+	@cmd killentity getlocalvar("self")
+frame  data/chars/players/Boomer/p01/p08.Gif
+

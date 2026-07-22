@@ -1,0 +1,643 @@
+name	Terry_knife
+health	100
+mp 10
+chargerate 2
+mprate 1
+#secret 1
+Falldie 2
+Grabdistance 18
+riseinv				0.4 1
+speed	8
+type	None
+gfxshadow	1
+candamage			enemy obstacle
+JUMPHEIGHT 4
+#Jumpheight 3
+antigrab 2
+atchain   1 1 2 3 4 5
+weapons Terry_Knife Adam_Sword Terry_pipe Adam_Kunai None Blaze
+icon	data/chars/players/Terry/icon.gif 1
+diesound data/chars/players/Terry/Death.wav
+running	20	3	2	1	1
+onblockwscript	data/scripts/bounceF.c
+#animationscript 	data/scripts/ani0020.h
+animationscript		data/scripts/drago.c
+#ondrawscript 		data/scripts/player_ondrawscript.c
+
+Com f f A freespecial
+Com f f  freespecial2
+
+Load TerryP01
+Load TerryP02
+Load TerryP03
+
+Load MEdio
+
+
+Load KnifeT
+
+
+#Load Adam_Kunai
+#Load Adam_Sword
+
+remap data/chars/players/Terry/idle00.gif data/chars/players/Terry/MAp01.gif
+remap data/chars/players/Terry/idle00.gif data/chars/players/Terry/MAp02.gif
+remap data/chars/players/Terry/idle00.gif data/chars/players/Terry/MAp03.gif
+remap data/chars/players/Terry/idle00.gif data/chars/players/Terry/MAp04.gif
+
+
+anim	waiting
+	loop	1
+	offset	1 -542
+	delay	12
+	frame   data/chars/players/Terry/select01.gif
+	frame   data/chars/players/Terry/select02.gif
+	frame   data/chars/players/Terry/select03.gif
+	frame   data/chars/players/Terry/select04.gif
+
+anim	Select
+	loop	0
+	offset	1 -542
+	delay	3
+	frame   data/chars/players/Terry/select00.gif
+	frame   data/chars/players/Terry/select01.gif
+	frame   data/chars/players/Terry/select00.gif
+	frame   data/chars/players/Terry/select01.gif
+	frame   data/chars/players/Terry/select00.gif
+	frame   data/chars/players/Terry/select01.gif
+	frame   data/chars/players/Terry/select00.gif
+	frame   data/chars/players/Terry/select01.gif
+	frame   data/chars/players/Terry/select00.gif
+	frame   data/chars/players/Terry/select01.gif
+
+anim Pain5
+	loop	0
+	delay	12
+	offset	26 79
+        Range 0 40
+        Rangez -10 10
+	bbox	4 -1 40 77
+	frame   data/chars/players/Terry/idle00.gif
+	@cmd  spawn01  "Blaze_"  -5  0  10
+	@cmd  spawn01  "AXEL_"  5  0  -10
+	frame   data/chars/players/Terry/idle01.gif
+
+anim idle
+	loop	1
+	delay	16
+	offset	22 79
+	bbox	11 7 30 69
+	frame   data/chars/players/Terry/Knife/idle00.gif
+	@cmd	depost 0
+	@cmd	throw 15 0.7 0.7 1 0 -1
+	@cmd	clearL
+	frame   data/chars/players/Terry/Knife/idle01.gif
+	frame   data/chars/players/Terry/Knife/idle02.gif
+	frame   data/chars/players/Terry/Knife/idle03.gif
+
+
+
+anim walk
+	loop	1
+	delay	16
+	offset	30 78
+	bbox	14 8 32 72
+	frame	data/chars/players/Terry/Knife/walk00.gif
+	frame	data/chars/players/Terry/Knife/walk01.gif
+	frame	data/chars/players/Terry/Knife/walk02.gif
+	frame	data/chars/players/Terry/Knife/walk03.gif
+
+
+anim get
+	loop	0
+	delay	10
+	offset	25 65
+	frame	data/chars/players/Terry/Get00.gif
+	frame	data/chars/players/Terry/Get01.gif
+
+
+anim jump
+	loop	0
+	delay	10
+	offset	21 100
+	bbox	4 13 31 82
+	frame	data/chars/players/Terry/Knife/Jump00.gif
+	frame	data/chars/players/Terry/Knife/Jump01.gif
+	frame	data/chars/players/Terry/Knife/Jump02.gif
+	frame	data/chars/players/Terry/Knife/Jump03.gif
+
+
+anim jumpattack
+	loop	0
+	delay	5
+	offset	26 84
+	bbox	12 22 35 64
+        hitflash	MEdio
+        hitfx	data/sounds/golpes/medio.wav
+        Sound	data/sounds/golpes/Chut.wav
+	frame	data/chars/players/Terry/Ja200.gif
+	Sound	data/chars/players/Terry/a2.wav
+		Attack1  0
+	frame	data/chars/players/Terry/Ja201.gif
+		attack1  30  34  44  36  10  1  0  0  0  10
+	frame	data/chars/players/Terry/Ja202.gif
+
+
+anim jumpattack2
+	loop	0
+	delay	5
+	offset	33 63
+	bbox	21 0 40 45
+        hitflash	MEdio
+        hitfx	data/sounds/golpes/medio.wav
+        Sound	data/sounds/golpes/Chut.wav
+	frame	data/chars/players/Terry/Ja300.gif
+	frame	data/chars/players/Terry/Ja301.gif
+		attack1  32  4  46  61  12  1  0  0  0  15
+		delay  5
+	frame	data/chars/players/Terry/Ja302.gif
+	frame	data/chars/players/Terry/Ja303.gif
+		attack1  14  23  66  47  12  1  0  0  0  15
+		delay  20
+	frame	data/chars/players/Terry/Ja304.gif
+	frame	data/chars/players/Terry/Ja305.gif
+
+anim jumpforward
+	loop	0
+	delay	5
+	offset	23 79
+	bbox	5 20 48 52
+        hitflash	MEdio
+        hitfx	data/sounds/golpes/medio.wav
+        Sound	data/sounds/golpes/Chut.wav
+	frame	data/chars/players/Terry/Ja100.gif
+		delay  7
+	Sound	data/chars/players/Terry/a2.wav
+		Attack1  0
+	frame	data/chars/players/Terry/Ja101.gif
+		attack1  23  31  53  42  8  1  0  0  0  10
+	frame	data/chars/players/Terry/Ja102.gif
+
+anim attack1
+	loop	0
+	delay	6
+	offset	22 78
+        hitflash	Corte
+	bbox	14 4 24 70
+		Attack1  0
+        Sound	data/sounds/golpes/Soco.wav
+        hitfx	data/sounds/golpes/Corte.wav
+	frame	data/chars/players/Terry/Knife/a100.gif
+		delay  14
+		attack1  10  12  66  13  12  1  1  0  0  15
+		bbox  17  7  28  71
+	frame	data/chars/players/Terry/Knife/a101.gif
+		delay  5
+		Attack1  0
+	frame	data/chars/players/Terry/Knife/a102.gif
+
+
+anim attack2
+	loop	0
+	offset	24 74
+        hitflash	MEdio
+	bbox	14 6 30 69
+		Attack1  0
+        hitfx	data/sounds/golpes/MEdio.wav
+	Sound	data/chars/players/Terry/a2.wav
+		delay  6
+	frame	data/chars/players/Terry/a300.gif
+	frame	data/chars/players/Terry/a301.gif
+	frame	data/chars/players/Terry/a302.gif
+		attack2  37  19  34  24  7  0  0  0  0  15
+	frame	data/chars/players/Terry/a303.gif
+	frame	data/chars/players/Terry/a304.gif
+		Attack1  0
+	frame	data/chars/players/Terry/a305.gif
+
+anim attack3
+	loop	0
+	delay	7
+	offset	28 83
+	bbox	18 3 28 71
+        hitflash	Forte
+        Sound	data/sounds/golpes/Chut.wav
+        hitfx	data/sounds/golpes/Forte.wav
+	Sound	data/chars/players/Terry/a3.wav
+	frame	data/chars/players/Terry/a400.gif
+		attack2  20  4  53  37  12  1  0  0  0  15
+		delay  25
+	frame	data/chars/players/Terry/a401.gif
+		delay  10
+		Attack1  0
+	frame	data/chars/players/Terry/a402.gif
+
+
+
+anim grab
+	loop	0
+	delay	100
+	offset	22 72
+	bbox	10 4 36 68
+        cancel	0 3 0 J freespecial
+	frame	data/chars/players/Terry/Grab.gif
+
+anim throw
+	loop	0
+	delay	5
+	offset	33 76
+        hitflash	Forte
+        hitfx	data/sounds/golpes/Forte.wav
+		Attack1  0
+	frame	data/chars/players/Terry/T00.gif
+	delay	10
+	@cmd	slamstart
+	@cmd	position 0 20 0 0 -1
+		offset  64  76
+	frame	data/chars/players/Terry/T01.gif
+	@cmd	position 0 20 0 0 -1
+		delay  20
+		attack1  71  1  46  63  7  1  0  0  0  10
+	frame	data/chars/players/Terry/T02.gif
+	Sound	data/chars/players/Terry/a2.wav
+	@cmd	position 4 -10 30 0 -1
+		attack1  10  -1  64  30  7  1  0  0  0  10
+		delay  10
+	frame	data/chars/players/Terry/T03.gif
+	@cmd	position 5 -30 30 0 -1
+		attack1  -48  7  54  47  7  1  0  0  0  10
+	frame	data/chars/players/Terry/T05.gif
+	@cmd	position 8 -40 30 0 -1
+	@cmd	depost 0
+	@cmd	throw 15 5 2 2 0 -1
+	@cmd	clearL
+		attack1  -76  15  43  44  7  1  0  0  0  10
+		delay  20
+	frame	data/chars/players/Terry/t05.gif
+		attack1  -124  24  49  46  7  1  0  0  0  10
+		offset  26  79
+	frame  data/chars/players/Terry/idle00.gif
+		attack1  -128  56  42  30  7  1  0  0  0  10
+	frame  data/chars/players/Terry/Idle01.gif
+
+
+
+anim pain
+	loop	0
+	offset	28 74
+	bbox	14 1 34 65
+	delay	5
+	frame	data/chars/players/Terry/pain100.gif
+		delay  25
+	frame	data/chars/players/Terry/pain101.gif
+
+anim pain3
+	loop	0
+	offset	29 74
+	bbox	13 2 30 74
+	delay	5
+	jumpframe  0  2  0  0
+	frame	data/chars/players/Terry/pain100.gif
+		delay  25
+		bbox  9  2  39  74
+	frame	data/chars/players/Terry/pain101.gif
+
+anim pain4
+	loop	0
+	offset	29 74
+	bbox	14 1 30 73
+	delay	5
+	frame	data/chars/players/Terry/pain100.gif
+		delay  900
+		bbox  8  0  36  78
+	frame	data/chars/players/Terry/pain101.gif
+
+
+anim grabbed
+	loop	0
+	offset	28 74
+	bbox	17 0 26 71
+	delay	40
+	frame	data/chars/players/Terry/pain101.gif
+
+
+
+anim pain2
+	loop	0
+	offset	29 76
+	bbox	14 7 37 56
+	delay	5
+	frame	data/chars/players/Terry/pain200.gif
+		delay  25
+	frame	data/chars/players/Terry/pain201.gif
+
+
+
+
+
+anim fall2
+	loop	0
+	offset	52 74
+	jumpframe  0  3  -3  0
+	delay	20
+        hitfx	data/sounds/golpes/Forte.wav
+		attack  0
+	frame	data/chars/players/Terry/fall00.gif
+		Attack1  0
+		offset  33  47
+	frame	data/chars/players/Terry/fall01.gif
+		offset  32  59
+		delay  10
+	frame	data/chars/players/Terry/fall02.gif
+		offset  46  23
+	frame	data/chars/players/Terry/fall03.gif
+
+anim fall
+	loop	0
+	offset	49 73
+	delay	20
+        hitfx	data/sounds/golpes/Forte.wav
+		attack  0
+	frame	data/chars/players/Terry/fall00.gif
+		Attack1  0
+		offset  38  69
+	frame	data/chars/players/Terry/fall01.gif
+		delay  10
+		offset  28  59
+	frame	data/chars/players/Terry/fall02.gif
+		offset  44  22
+	frame	data/chars/players/Terry/fall03.gif
+
+anim fall6 #Shok
+	loop	0
+	offset	80 108
+	delay	5
+        hitfx	data/sounds/golpes/Forte.wav
+		attack  0
+	frame	data/chars/players/Terry/fall201.gif
+	frame	data/chars/players/Terry/fall200.gif
+	frame	data/chars/players/Terry/fall201.gif
+	frame	data/chars/players/Terry/fall200.gif
+	frame	data/chars/players/Terry/fall201.gif
+		offset  32  61
+	frame	data/chars/players/Terry/fall02.gif
+
+
+anim fall7 #Burn
+	loop	0
+	offset	38 65
+	delay	10
+        hitfx	data/sounds/golpes/Forte.wav
+		attack  0
+	frame	data/chars/players/Terry/FALL300.gif
+	frame	data/chars/players/Terry/FALL301.gif
+	frame	data/chars/players/Terry/FALL302.gif
+	frame	data/chars/players/Terry/FALL300.gif
+	frame	data/chars/players/Terry/FALL301.gif
+		offset  34  59
+	frame	data/chars/players/Terry/FALL02.gif
+
+
+anim rise
+	loop	0
+	offset	43 64
+	delay	8
+	frame	data/chars/players/Terry/Rise00.gif
+	frame	data/chars/players/Terry/Rise01.gif
+	frame	data/chars/players/Terry/Rise02.gif
+	frame	data/chars/players/Terry/Rise03.gif
+	frame	data/chars/players/Terry/Rise04.gif
+		offset  43  64
+	frame	data/chars/players/Terry/Rise05.gif
+
+
+
+
+anim special2
+	loop	0
+	offset	24 79
+        custknife Knifet
+        throwframe 1 60
+		Attack1  0
+		delay  6
+		move  0
+	frame	data/chars/players/Terry/Knife/a100.gif
+		offset  24  74
+		delay  25
+	frame	data/chars/players/Terry/a101.gif
+		delay  5
+	frame	data/chars/players/Terry/a102.gif
+
+
+anim special
+        energycost 10 1
+        MpOnly 1
+	loop	0
+	offset	31 105
+        hitflash	fORTE
+        hitfx	data/sounds/golpes/forte.wav
+		delay  5
+	Sound	data/chars/players/Terry/a1.wav
+		Attack1  0
+	jumpframe  4  4  0  0
+	frame	data/chars/players/Terry/Sp100.gif
+	@cmd  spawn01  "TerryP01"  0  0  -1
+		attack3  7  35  53  69  5  0  1  0  0  25
+	frame	data/chars/players/Terry/Sp101.gif
+	@cmd  spawn01  "TerryP01"  0  0  -1
+	frame  data/chars/players/Terry/Sp102.gif
+	@cmd  spawn01  "TerryP01"  0  0  -1
+	Sound	data/chars/players/Terry/SP01.wav
+		Attack1  0
+	frame	data/chars/players/Terry/Sp103.gif
+	frame	data/chars/players/Terry/Sp104.gif
+		attack2  11  8  72  94  20  1  0  0  0  25
+	frame	data/chars/players/Terry/Sp105.gif
+		attack2  11  8  72  94  15  1  0  0  0  15
+	frame  data/chars/players/Terry/Sp106.gif
+	frame	data/chars/players/Terry/Sp107.gif
+	frame  data/chars/players/Terry/Sp108.gif
+	frame	data/chars/players/Terry/Sp112.gif
+		Attack1  0
+	frame	data/chars/players/Terry/Sp113.gif
+	frame	data/chars/players/Terry/Sp114.gif
+	frame	data/chars/players/Terry/Sp114.gif
+
+anim jumpspecial
+        energycost 10 1
+        MpOnly 1
+	loop	0
+	offset	56 85
+        hitflash	fORTE
+        hitfx	data/sounds/golpes/forte.wav
+		attack2  0  0  95  86  25  1  0  0  0  25
+		delay  8
+	Sound	data/chars/players/Terry/JSP.wav
+	frame	data/chars/players/Terry/Sp300.gif
+	@cmd  spawn01  "TerryP03"  0  0  -1
+	frame	data/chars/players/Terry/Sp301.gif
+		delay  20
+	frame	data/chars/players/Terry/Sp304.gif
+	frame	data/chars/players/Terry/Sp305.gif
+
+
+anim Freespecial2
+	loop	0
+	delay	10
+	offset	54 91
+        cancel	0 3 0 A freespecial
+        @cmd dasher 1 0 0
+	frame	data/chars/players/Terry/sp306.gif
+        @cmd dasher 2 0 0
+		delay  8
+		offset  18  80
+	frame	data/chars/players/Terry/Knife/walk01.gif
+	frame	data/chars/players/Terry/Knife/walk02.gif
+	frame	data/chars/players/Terry/Knife/walk03.gif
+        @cmd dasher 0 0 0
+		delay  15
+		offset  53  91
+	frame	data/chars/players/Terry/Sp306.gif
+
+
+anim Freespecial
+ 	loop	0
+ 	delay	8
+ 	offset	38 93
+ 	bbox	25 21 34 63
+		move  0
+        hitflash	MEdio
+        hitfx	data/sounds/golpes/MEdio.wav
+ 	frame	data/chars/players/Terry/ra100.gif
+ 	frame	data/chars/players/Terry/ra101.gif
+		delay  3
+ 	frame	data/chars/players/Terry/ra102.gif
+ 	frame	data/chars/players/Terry/ra103.gif
+	Sound	data/chars/players/Terry/RA.wav
+ 	frame	data/chars/players/Terry/ra104.gif
+ 	frame	data/chars/players/Terry/ra105.gif
+        @cmd dasher 2 0 0
+		delay  4
+ 	frame	data/chars/players/Terry/ra106.gif
+		attack1  19  21  70  37  10  1  1  0  0  15
+ 	frame	data/chars/players/Terry/ra107.gif
+	frame	data/chars/players/Terry/ra106.gif
+ 	frame	data/chars/players/Terry/ra107.gif
+	frame	data/chars/players/Terry/ra106.gif
+ 	frame	data/chars/players/Terry/ra107.gif
+	frame	data/chars/players/Terry/ra106.gif
+ 	frame	data/chars/players/Terry/ra107.gif
+ 	frame	data/chars/players/Terry/ra108.gif
+        @cmd dasher 0 0 0
+		Attack1  0
+		delay  12
+ 	frame	data/chars/players/Terry/ra109.gif
+
+
+
+
+
+
+anim grabattack
+	loop	0
+	offset	26 78
+	bbox	13 4 35 68
+	delay	4
+        hitflash	fRACO
+        hitfx	data/sounds/golpes/fRACO.wav
+		Attack1  0
+	frame	data/chars/players/Terry/ga100.gif
+	frame	data/chars/players/Terry/ga101.gif
+		attack1  35  19  28  45  7  0  0  0  0  15
+		delay  8
+	frame	data/chars/players/Terry/ga102.gif
+		Attack1  0
+	frame	data/chars/players/Terry/ga101.gif
+
+
+
+
+anim grabattack2
+	loop	0
+	offset	25 77
+	bbox	9 1 32 78
+	delay	7
+        hitflash	Forte
+        hitfx	data/sounds/golpes/Forte.wav
+		Attack1  0
+	frame	data/chars/players/Terry/ga100.gif
+	Sound	data/chars/players/Terry/a2.wav
+		attack1  34  25  19  16  10  1  0  0  0  10
+		delay  6
+	frame	data/chars/players/Terry/ga101.gif
+		attack1  24  27  31  40  10  1  0  0  0  10
+	frame	data/chars/players/Terry/ga102.gif
+		delay  15
+		attack1  31  21  52  24  10  1  0  0  0  10
+	frame	data/chars/players/Terry/ga103.gif
+		delay  6
+	frame	data/chars/players/Terry/ga104.gif
+		Attack1  0
+	frame	data/chars/players/Terry/ga105.gif
+	frame	data/chars/players/Terry/ga106.gif
+
+
+
+
+anim land
+	loop	0
+	delay	15
+	offset	34 93
+	bbox	27 22 29 61
+	frame	data/chars/players/Terry/Ra109.gif
+
+
+anim Fall9
+	loop	0
+	offset	30 72
+	delay	999
+	frame	data/chars/players/Terry/pain100.gif #0
+	frame	data/chars/players/Terry/pain200.gif #1
+		offset  39  69
+	frame	data/chars/players/Terry/fall01.gif #2
+		offset  31  59
+	frame	data/chars/players/Terry/fall02.gif #3
+		offset  72  82
+	frame	data/chars/players/Terry/fall400.gif #4
+		offset  91  94
+	frame	data/chars/players/Terry/fall401.gif #5
+		offset  81  99
+	frame	data/chars/players/Terry/fall402.gif #6
+		offset  77  119
+	frame  data/chars/players/Terry/fall403.gif
+		offset  87  96
+		delay  20
+	frame  data/chars/players/Terry/fall401.gif
+		offset  87  99
+		delay  30
+	frame  data/chars/players/Terry/fall404.gif
+		offset  74  102
+	frame  data/chars/players/Terry/fall405.gif
+
+
+anim Fall8
+	loop	0
+	flipframe  0
+	offset	26 47
+	delay	30
+	frame	data/chars/players/Terry/fall01.gif #0
+	offset	29 59
+	delay	15
+	frame	data/chars/players/Terry/fall02.gif #1
+
+
+anim Fall5
+	loop	0
+	flipframe  1
+	offset	34 68
+	delay	30
+	frame	data/chars/players/Terry/fall01.gif #0
+	offset	27 60
+	delay	15
+	frame	data/chars/players/Terry/fall02.gif #1
+

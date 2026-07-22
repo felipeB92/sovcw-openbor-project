@@ -1,0 +1,18 @@
+name			Kunai #GROUND
+type			item
+subtype			weapon
+nolife			1
+typeshot 		0
+weapnum			1
+shootnum 		1
+counter			4
+gfxshadow		1 1
+offscreenkill	50
+
+anim idle
+	loop	1
+	delay	200
+	offset	24 28
+	bbox 	14 21 22 8
+	frame	data/chars/armas/Kunai08.gif
+

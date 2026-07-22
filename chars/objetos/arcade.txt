@@ -1,0 +1,33 @@
+# Do not forget to name your character.
+# Health is optional.
+
+name	Arcade
+health	1
+type	obstacle
+gfxshadow	1
+nolife 1
+noname 1
+#icon	data/chars/misc/charicon.gif
+diesound		data/sounds/Wood.wav
+noatflash	1
+
+remap		data/chars/Objetos/ARCADEmAP00.gif data/chars/Objetos/ARCADEmAP01.gif
+remap		data/chars/Objetos/ARCADEmAP00.gif data/chars/Objetos/ARCADEmAP02.gif
+remap		data/chars/Objetos/ARCADEmAP00.gif data/chars/Objetos/ARCADEmAP03.gif
+
+anim idle
+	loop	1
+	delay	10
+	offset	111 167
+	bbox	84 91 45 79
+	platform 74 84 116 126 5 52
+	frame	data/chars/Objetos/arcade00.gif
+	frame	data/chars/Objetos/arcade01.gif
+
+
+anim fall
+	loop	1
+	delay	1000
+	offset	111 167
+	frame	data/chars/Objetos/arcade02.gif
+

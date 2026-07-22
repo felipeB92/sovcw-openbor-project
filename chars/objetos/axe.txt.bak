@@ -1,0 +1,103 @@
+name	 Axe
+health   1
+nomove 1 1
+#type	pshot#npc#pshot
+subtype  weapon
+
+type    enemy
+cantgrab 1
+antigrab 5
+nopain 1
+speed 10
+falldie 1
+candamage player
+
+Load Boom02
+
+onblockwscript	data/scripts/bounceF.c
+animationscript 	data/scripts/ani0020.h
+ondrawscript 		data/scripts/player_ondrawscript.c
+
+anim	idle#follow1#attack1
+	loop	0
+	delay	5
+	offset	25 25
+        hitfx	data/sounds/Armas/Corte.wav
+	frame	data/chars/objetos/axe1.gif
+	frame	data/chars/objetos/axe2.gif
+	frame	data/chars/objetos/axe3.gif
+	frame	data/chars/objetos/axe4.gif
+	frame	data/chars/objetos/axe1.gif
+	frame	data/chars/objetos/axe2.gif
+	frame	data/chars/objetos/axe3.gif
+	frame	data/chars/objetos/axe4.gif
+	frame	data/chars/objetos/empty.gif
+	@cmd killentity getlocalvar("self")
+	frame	data/chars/objetos/axe4.gif
+
+anim  pain
+	loop  0
+		delay  15
+		offset  25  25
+	sound  data/sounds/glass3.wav
+	frame	data/chars/objetos/grenade07.gif
+	@cmd killentity getlocalvar("self")
+	frame	data/chars/objetos/grenade07.gif
+
+anim	spawn#idle
+	loop	0
+	#jumpframe  0  1.9  0.6  0
+	landframe  16
+	offset	25 25
+	delay	3
+	bbox  19  11  13  15
+        hitfx	data/sounds/Armas/Corte.wav
+	frame	data/chars/objetos/axe1.gif
+	frame	data/chars/objetos/axe2.gif
+	frame	data/chars/objetos/axe3.gif
+	frame	data/chars/objetos/axe4.gif
+	frame	data/chars/objetos/axe1.gif
+	frame	data/chars/objetos/axe2.gif
+	frame	data/chars/objetos/axe3.gif
+	frame	data/chars/objetos/axe4.gif
+		frame	data/chars/objetos/axe1.gif
+	frame	data/chars/objetos/axe2.gif
+	frame	data/chars/objetos/axe3.gif
+	frame	data/chars/objetos/axe4.gif
+	frame	data/chars/objetos/axe1.gif
+	frame	data/chars/objetos/axe2.gif
+	frame	data/chars/objetos/axe3.gif
+	frame	data/chars/objetos/axe4.gif
+	frame	data/chars/objetos/axe1.gif
+	frame	data/chars/objetos/axe2.gif
+	frame	data/chars/objetos/axe3.gif
+	frame	data/chars/objetos/axe4.gif
+	frame	data/chars/objetos/axe1.gif
+	frame	data/chars/objetos/axe2.gif
+	frame	data/chars/objetos/axe3.gif
+	frame	data/chars/objetos/axe4.gif
+	@cmd    anichange "ANI_idle"
+	frame	data/chars/objetos/empty.gif
+anim  death
+	loop  0
+		delay  15
+		offset  25  25
+	sound  data/sounds/Iron.wav
+	frame	data/chars/objetos/axe1.gif
+	frame	data/chars/objetos/axe2.gif
+	frame	data/chars/objetos/axe3.gif
+        @cmd killentity getlocalvar("self")
+	frame	data/chars/objetos/axe4.gif
+
+anim  fall
+	loop  0
+		delay  15
+		offset  25  25
+	sound  data/sounds/Iron.wav
+	frame	data/chars/objetos/axe1.gif
+	frame	data/chars/objetos/axe2.gif
+	frame	data/chars/objetos/axe3.gif
+	frame	data/chars/objetos/axe4.gif
+@cmd killentity getlocalvar("self")
+	frame	data/chars/objetos/axe4.gif
+

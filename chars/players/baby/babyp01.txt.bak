@@ -1,0 +1,35 @@
+
+name			BabyP01 #THROWNED
+type			none
+speed 12
+candamage			enemy obstacle
+alpha 1
+nolife			1
+lifespan		4
+remove			1
+gfxshadow		0 0
+flash			Forte
+antigravity 100
+
+anim idle
+	loop	0
+	offset	-14 75
+		delay  4
+	frame	data/chars/players/Baby/P100.gif
+	frame	data/chars/players/Baby/P101.gif
+	frame	data/chars/players/Baby/P102.gif
+	frame	data/chars/players/Baby/P103.gif
+	frame	data/chars/players/Baby/P104.gif
+	frame	data/chars/players/Baby/P105.gif
+	frame	data/chars/players/Baby/P106.gif
+	frame	data/chars/players/Baby/P107.gif
+	frame	data/chars/players/Baby/P108.gif
+	frame	data/chars/players/Baby/P109.gif
+	frame	data/chars/players/Baby/P110.gif
+	frame	data/chars/players/Baby/P111.gif
+	frame	data/chars/players/Baby/P112.gif
+	frame	data/chars/players/Baby/P113.gif
+	frame	data/chars/players/Baby/P114.gif
+	@cmd killentity getlocalvar("self")
+	frame	data/chars/players/Baby/P114.gif
+

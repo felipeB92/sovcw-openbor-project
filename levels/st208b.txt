@@ -1,0 +1,171 @@
+music		data/bgs/St207/Lv207b.bor
+bossmusic	data/music/boss2.bor
+direction Up
+scrollspeed 0.5#1
+stagenumber 8
+background	data/bgs/St208/Back02.gif
+panel		data/bgs/St208/pn01.gif		none	none
+#fglayer			data/bgs/st201/fpn00.gif 0 -0.8 0.6 0 0 0 0 1 1 1
+frontpanel      data/bgs/st05/Front02.gif
+cameratype 1
+cameraoffset 	0 -60
+settime         99
+notime          0
+noslow          1
+order		a
+spawn1  	150 20
+spawn2  	155 35
+spawn3  	160 50
+
+wall 0 275 -100 -100 156 40 58 10000
+
+wall 0 275 324 440 580 580 58 10000
+
+wall 0 230 0 0 480 480 10 10000
+
+
+spawn  Elevador01
+	coords  0 0
+	at  0
+
+wait
+at    748
+
+Group  3  3
+at    748
+
+
+
+spawn  Elevador02
+	coords  0 0
+	at  748
+
+
+spawn  Galsia
+map    1
+health 40
+	coords  200  230 200
+	at  748
+
+spawn  Donovan
+health 40
+	coords  380  260 250
+	at  748
+
+spawn  Hakuyo
+health 40
+	coords  250  250 150
+	at  748
+
+spawn  Barbon_
+map    2
+health 400
+	coords  250  250 230
+	at  748
+
+spawn  Elevador01
+	coords  0 0
+	at  749
+
+wait
+at    1260
+
+
+Group  3  3
+at    1260
+
+spawn  Elevador02
+	coords  0 0
+	at  1260
+
+spawn  Galsia
+map    1
+health 40
+	coords  200  230 200
+	at  1260
+
+spawn  Donovan
+health 40
+	coords  380  260 250
+	at  1260
+
+spawn  galsia
+map    1
+health 40
+	coords  250  250 230
+	at  1260
+
+
+
+spawn  Galsia
+map    1
+health 1
+	coords  200  230 200
+	at  1260
+
+
+
+spawn  zamza
+map    2
+health 400
+	coords  250  250 230
+	at  1260
+
+spawn  Elevador01
+	coords  0 0
+	at  1261
+
+
+wait
+at    1770
+
+
+Group  3  3
+at    1770
+
+
+spawn  Elevador02
+	coords  0 0
+	at  1770
+
+
+
+
+spawn  Galsia
+map    1
+health 40
+	coords  200  230 200
+	at  1770
+
+spawn  Donovan
+health 40
+	coords  380  260 250
+	at  1770
+
+spawn  Raven
+health 70
+	coords  130  250 230
+	at  1770
+
+spawn  Abadede
+map     3
+health 400
+	coords  250  250 230
+	at  1770
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

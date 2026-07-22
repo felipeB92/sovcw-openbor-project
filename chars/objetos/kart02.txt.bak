@@ -1,0 +1,39 @@
+# Do not forget to name your character.
+# Health is optional.
+
+name	Kart02
+nolife 1
+health	1
+type	obstacle
+gfxshadow	1
+#icon	data/chars/misc/charicon.gif
+candamage		player enemy npc obstacle
+diesound		data/sounds/Iron.wav
+noatflash	1
+offscreenkill	1000
+
+anim spawn
+	loop	0
+	delay	1
+	offset	38 69
+	bbox	16 22 41 46
+	sound	data/sounds/Wheel.wav
+	frame	data/chars/Objetos/Kart00.gif
+
+anim idle
+	loop	1
+	delay	6
+	offset	38 69
+	bbox	13 28 47 41
+        hitfx	data/sounds/Armas/Pipe.wav
+		attack3  10  31  54  36  15  1  0  0  0  20
+		move  10
+	frame	data/chars/Objetos/Kart00.gif
+
+
+anim fall
+	loop	1
+	delay	1000
+	offset	38 69
+	frame	data/chars/Objetos/Kart01.gif
+

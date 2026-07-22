@@ -1,0 +1,168 @@
+music		data/music/02a.bor
+bossmusic	data/music/BossR.bor
+scrollspeed 0.5#1
+#direction Left
+stagenumber 2
+background	data/bgs/01/baCK03B.gif 	0.675 1 0 0 0 0 -1 1 1
+bglayer		data/bgs/01/bAck03.gif	0.575 1 0 0 0 0 -1 1 1
+#bglayer		data/bgs/00/b01.gif	0.475 1 0 0 0 0 -1 1 1
+#water		data/bgs/01/Mar01.gif		0.5
+#fglayer         data/bgs/00/FOG.gif              0.5 1 0 0 0 0 -1 1 1 0 1 3 10 0.3
+panel		data/bgs/01/pn03.gif		none	none
+#frontpanel	data/bgs/00/Front00.gif		
+cameratype 1
+cameraoffset 0 -30
+#levelscript @script
+#void main() {
+#	changelevelproperty("camerazoffset", 0);
+#	changelevelproperty("cameraxoffset", 0);
+#}
+#@end_script
+settime         99
+notime          0
+noslow          1
+order		a
+spawn1  	50 20 50
+spawn2  	55 35 50 
+spawn3  	60 50 50
+
+light		128 -128
+at			0
+
+spawn  ActP
+	coords  400 295
+	at  0
+
+
+spawn  Train01
+	coords  600 0
+	at  0
+
+
+spawn  Lixo01
+Item   CHicken
+	coords  300 250
+	at  0
+
+spawn  Lixo01
+Item   Cash
+	coords  250 250
+	at  0
+
+group 4 4
+at  0
+
+spawn  Bongo_
+health 300
+Boss 1
+	coords  550 270
+	at  0
+
+spawn  Act
+	coords  529 250
+	at  0
+
+
+spawn  Bongo_
+health 300
+Boss 1
+map 4
+	coords  530 240
+	at  0
+wait
+at       130
+
+group 3 3
+at  130
+
+spawn  Jhonny
+health 70
+	coords  600 240
+	at  100
+
+spawn  Donovan
+MAp 1
+health 50
+	coords  -100 260
+	at  100
+
+spawn  Galsia
+MAp 1
+health 50
+	coords  -100 260
+	at  100
+
+spawn  Thug
+MAp 1
+health 50
+	coords  -100 260
+	at  100
+
+
+spawn  Jhonny
+MAp 1
+health 70
+	coords  600 240
+	at  100
+
+spawn  Signal
+MAp 2
+health 70
+	coords  -100 240
+	at  100
+
+
+spawn  Ralf
+health 70
+	coords  600 240
+	at  100
+
+spawn  Thug
+MAp 1
+health 50
+	coords  -100 260
+	at  100
+
+spawn  Donovan
+MAp 1
+health 50
+	coords  -100 260
+	at  100
+
+spawn  Chan
+MAp 1
+health 50
+	coords  -100 260
+	at  100
+
+
+spawn  Costa
+MAp 1
+health 70
+	coords  600 240
+	at  100
+
+spawn  Signal
+MAp 2
+health 70
+	coords  -100 240
+	at  100
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

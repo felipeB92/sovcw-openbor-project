@@ -1,0 +1,285 @@
+music		data/bgs/St204/Lv204b.bor
+bossmusic	data/music/boss1.bor
+scrollspeed 0.5
+vbgspeed	12 0
+stagenumber 4
+direction Down
+background	data/bgs/st204/bg02.gif
+panel		data/bgs/st204/pn02.gif	none	none
+frontpanel      data/bgs/St05/Front02.gif
+#bglayer           data/bgs/11lvl/liberty_statue.gif 0.3 0.1   60    -40 180 1 1 1 1  0
+#bglayer           data/bgs/11lvl/0x.gif 0.5 0.1   60    -40 180 1 1 1 1  0
+#fglayer         data/bgs/11lvl/fondo3.gif 1500 -0.1 0 0 0 0 0 1 1 1
+#fglayer         data/bgs/11lvl/sun.gif 500 0 0 0 -5 1 1 1 1 1 1
+#fglayer         data/bgs/11lvl/light2.gif 2500 0 0 0 -5 1 1 1 1 1 1
+cameratype 1
+cameraoffset 0 -30
+#levelscript @script
+#void main() {
+#	changelevelproperty("camerazoffset", 0);
+#	changelevelproperty("cameraxoffset", 0);
+#}
+#@end_script
+#settime         90
+notime          1
+noslow          1
+order		a
+spawn1  	190 20 50
+spawn2  	210 35 50
+spawn3  	220 50 50
+
+
+
+
+wall		0 285 -1000 -1000 240 65 80 10000
+
+wall		240 285 0 175 1175 1175 80 10000
+
+
+spawn  Elevador01
+flip   1
+	coords  0  0 0
+	at  0
+
+
+group 1 4
+at   100
+
+
+
+spawn  Galsia
+map    1
+health 40
+	coords  242  225 225
+	at  100
+
+spawn  Galsia
+map    1
+health 40
+	coords  339  267 210
+	at  100
+
+
+spawn  Donovan
+health 40
+	coords  291  248 250
+	at  100
+
+
+spawn  Donovan
+health 40
+	coords  145  266 230
+	at  100
+
+group 1 1
+at   100
+
+spawn  Hakuyo
+map    3
+health 100
+	coords  203  238 200
+	at  100
+
+
+
+group 5 5
+at   100
+
+
+
+spawn  Galsia
+map    1
+health 40
+	coords  242  225 225
+	at  100
+
+spawn  Galsia
+map    3
+health 80
+	coords  339  267 210
+	at  100
+
+
+spawn  Donovan
+health 40
+	coords  291  248 250
+	at  100
+
+
+spawn  Donovan
+map    3
+health 60
+	coords  145  266 230
+	at  100
+
+spawn  Donovan
+map    3
+health 80
+	coords  145  266 250
+	at  100
+
+
+spawn  Donovan
+map    3
+health 60
+	coords  145  266 250
+	at  100
+
+spawn  Donovan
+health 40
+	coords  291  248 250
+	at  100
+
+
+spawn  Galsia
+map    3
+health 60
+	coords  339  267 210
+	at  100
+
+
+
+group 1 5
+at   101
+
+
+
+spawn  Galsia
+map    1
+health 40
+	coords  242  225 225
+	at  101
+
+spawn  Hakuyo
+map    3
+health 150
+	coords  339  267 210
+	at  101
+
+
+spawn  Hakuyo
+map    2
+health 150
+	coords  291  248 250
+	at  101
+
+
+spawn  Donovan
+map    2
+health 80
+	coords  145  266 230
+	at  101
+
+spawn  Donovan
+map    2
+health 80
+	coords  145  266 250
+	at  101
+
+
+group 1 5
+at   102
+
+spawn  Galsia
+map    3
+health 80
+	coords  242  225 225
+	at  102
+
+spawn  Galsia
+map    2
+health 80
+	coords  339  267 210
+	at  102
+
+
+spawn  Donovan
+map    2
+health 80
+	coords  291  248 250
+	at  102
+
+
+spawn  Donovan
+map    2
+health 80
+	coords  145  266 230
+	at  102
+
+spawn  Donovan
+map    3
+health 80
+	coords  145  266 250
+	at  102
+
+
+
+group 1 5
+at   102
+
+spawn  Galsia
+map    3
+health 80
+	coords  242  225 225
+	at  102
+
+spawn  Galsia
+map    2
+health 80
+	coords  339  267 210
+	at  102
+
+
+spawn  Donovan
+map    2
+health 80
+	coords  291  248 250
+	at  102
+
+
+spawn  Donovan
+map    2
+health 80
+	coords  145  266 230
+	at  102
+
+spawn  Donovan
+map    3
+health 80
+	coords  145  266 250
+	at  102
+
+group 1 4
+at   103
+
+spawn  Galsia
+map    3
+health 80
+	coords  242  225 225
+	at  103
+
+spawn  Hakuyo
+map    2
+health 150
+	coords  339  267 210
+	at  103
+
+
+spawn  Donovan
+map    2
+health 80
+	coords  291  248 250
+	at  103
+
+
+spawn  Hakuyo
+map    2
+health 150
+	coords  145  266 230
+	at  103
+
+
+
+
+
+

@@ -1,0 +1,21 @@
+name			Painel07 #GROUND
+type			None
+#setlayer -20
+#noquake 	1 1
+#offscreenkill	1000
+
+
+anim idle
+	loop	1
+	offset	0 55
+		delay  25
+	frame	data/Bgs/07/Bg00.gif
+	frame	data/Bgs/07/Bg03.gif
+	frame	data/Bgs/07/Bg04.gif
+	frame	data/Bgs/07/Bg01.gif
+	frame	data/Bgs/07/Bg03.gif
+	frame	data/Bgs/07/Bg04.gif
+	frame	data/Bgs/07/Bg02.gif
+	frame	data/Bgs/07/Bg03.gif
+	frame	data/Bgs/07/Bg04.gif
+

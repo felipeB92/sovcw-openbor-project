@@ -1,0 +1,633 @@
+name	Ryu_knife
+health	100
+mp 10
+chargerate 2
+mprate 1
+#secret 1
+Falldie 2
+Grabdistance 18
+riseinv				0.4 1
+speed	8
+type	None
+gfxshadow	1
+candamage			enemy obstacle
+JUMPHEIGHT 4
+#Jumpheight 3
+antigrab 2
+atchain   1 1 2 3 4 5
+weapons Terry_Knife Adam_Sword Terry_pipe Adam_Kunai None Blaze
+icon	data/chars/players/Ryu/icon.gif 1
+diesound data/chars/players/Ryu/Death.wav
+running	20	3	2	1	1
+onblockwscript	data/scripts/bounceF.c
+#animationscript 	data/scripts/ani0020.h
+animationscript		data/scripts/drago.c
+#ondrawscript 		data/scripts/player_ondrawscript.c
+
+Com f f A freespecial
+Com f f  freespecial2
+
+Load RyuP01
+Load RyuP02
+Load KnifeT
+
+Load MEdio
+
+
+Load AXEL_
+LOAD BLaze_
+
+Load Terry_Knife
+Load Terry_Pipe
+Load Joe_Higashi_
+Load Andy_
+
+remap data/chars/players/Ryu/idle00.gif data/chars/players/Ryu/MAp01.gif
+remap data/chars/players/Ryu/idle00.gif data/chars/players/Ryu/MAp02.gif
+remap data/chars/players/Ryu/idle00.gif data/chars/players/Ryu/MAp03.gif
+remap data/chars/players/Ryu/idle00.gif data/chars/players/Ryu/MAp04.gif
+
+
+anim	waiting
+	loop	1
+	offset	1 -542
+	delay	12
+	frame   data/chars/players/Ryu/select01.gif
+	frame   data/chars/players/Ryu/select02.gif
+	frame   data/chars/players/Ryu/select03.gif
+	frame   data/chars/players/Ryu/select04.gif
+	frame   data/chars/players/Ryu/select05.gif
+	frame   data/chars/players/Ryu/select06.gif
+
+anim	Select
+	loop	0
+	offset	1 -542
+	delay	3
+	frame   data/chars/players/Ryu/select00.gif
+	frame   data/chars/players/Ryu/select01.gif
+	frame   data/chars/players/Ryu/select00.gif
+	frame   data/chars/players/Ryu/select01.gif
+	frame   data/chars/players/Ryu/select00.gif
+	frame   data/chars/players/Ryu/select01.gif
+	frame   data/chars/players/Ryu/select00.gif
+	frame   data/chars/players/Ryu/select01.gif
+	frame   data/chars/players/Ryu/select00.gif
+	frame   data/chars/players/Ryu/select01.gif
+
+anim Pain5
+	loop	0
+	delay	12
+	offset	26 79
+        Range 0 40
+        Rangez -10 10
+	bbox	4 -1 40 77
+	frame   data/chars/players/Ryu/idle00.gif
+	@cmd  spawn01  "Joe_Higashi_"  -5  0  10
+	@cmd  spawn01  "Andy_"  5  0  -10
+	frame   data/chars/players/Ryu/idle01.gif
+
+anim idle
+	loop	1
+	delay	14
+	offset	22 75
+	bbox	11 7 30 69
+	frame   data/chars/players/Ryu/knife/idle00.gif
+	@cmd	depost 0
+	@cmd	throw 15 0.7 0.7 1 0 -1
+	@cmd	clearL
+	frame   data/chars/players/Ryu/knife/idle01.gif
+	frame   data/chars/players/Ryu/knife/idle02.gif
+	frame   data/chars/players/Ryu/knife/idle03.gif
+	frame   data/chars/players/Ryu/knife/idle04.gif
+	frame   data/chars/players/Ryu/knife/idle05.gif
+
+
+
+anim walk
+	loop	1
+	delay	16
+	offset	30 77
+	bbox	14 8 32 72
+	frame	data/chars/players/Ryu/knife/walk00.gif
+	frame	data/chars/players/Ryu/knife/walk01.gif
+	frame	data/chars/players/Ryu/knife/walk02.gif
+	frame	data/chars/players/Ryu/knife/walk03.gif
+	frame	data/chars/players/Ryu/knife/walk04.gif
+
+
+anim get
+	loop	0
+	delay	10
+	offset	32 76
+	frame	data/chars/players/Ryu/Get00.gif
+	frame	data/chars/players/Ryu/Get01.gif
+
+
+anim jump
+	loop	0
+	delay	10
+	offset	22 89
+	bbox	9 9 28 59
+	frame	data/chars/players/Ryu/knife/Jump00.gif
+	frame	data/chars/players/Ryu/knife/Jump01.gif
+	frame	data/chars/players/Ryu/knife/Jump02.gif
+	frame	data/chars/players/Ryu/knife/Jump03.gif
+	frame	data/chars/players/Ryu/knife/Jump04.gif
+	frame	data/chars/players/Ryu/knife/Jump05.gif
+
+
+anim jumpattack2
+	loop	0
+	delay	5
+	offset	26 54
+	bbox	11 1 38 54
+        hitflash	MEdio
+        hitfx	data/sounds/golpes/medio.wav
+        Sound	data/sounds/golpes/Chut.wav
+	frame	data/chars/players/Ryu/Ja200.gif
+	Sound	data/chars/players/Ryu/a2.wav
+		Attack1  8  3  52  53  10  1  0  0  0  15
+		delay  25
+	frame	data/chars/players/Ryu/Ja201.gif
+
+
+anim jumpattack
+	loop	0
+	delay	5
+	offset	22 79
+	bbox	16 15 31 57
+        hitflash	MEdio
+        hitfx	data/sounds/golpes/medio.wav
+        Sound	data/sounds/golpes/Chut.wav
+	frame	data/chars/players/Ryu/Ja100.gif
+		offset  22  75
+		attack1  14  1  43  73  10  1  0  0  0  15
+		delay  25
+	frame	data/chars/players/Ryu/Ja300.gif
+
+anim jumpforward
+	loop	0
+	delay	5
+	offset	23 79
+	bbox	5 20 48 52
+        hitflash	MEdio
+        hitfx	data/sounds/golpes/medio.wav
+        Sound	data/sounds/golpes/Chut.wav
+	frame	data/chars/players/Ryu/Ja100.gif
+		delay  7
+	Sound	data/chars/players/Ryu/a1.wav
+		Attack1  0
+	frame	data/chars/players/Ryu/Ja101.gif
+		attack1  17  38  73  33  10  1  0  0  0  10
+	frame	data/chars/players/Ryu/Ja102.gif
+
+anim attack1
+	loop	0
+	delay	6
+	offset	22 74
+        hitflash	Corte
+	bbox	14 4 24 70
+		Attack1  0
+        Sound	data/sounds/golpes/Soco.wav
+        hitfx	data/sounds/golpes/Corte.wav
+	frame	data/chars/players/Ryu/knife/a100.gif
+		delay  20
+		attack1  8  12  75  14  15  1  0  0  0  15
+	frame	data/chars/players/Ryu/knife/a101.gif
+		delay  5
+		Attack1  0
+	frame	data/chars/players/Ryu/knife/a102.gif
+
+
+anim attack2
+	loop	0
+	offset	24 74
+        hitflash	MEdio
+	bbox	14 6 30 69
+		Attack1  0
+        hitfx	data/sounds/golpes/MEdio.wav
+	Sound	data/chars/players/Ryu/a2.wav
+		delay  6
+	frame	data/chars/players/Ryu/a200.gif
+	frame	data/chars/players/Ryu/a201.gif
+		attack2  19  14  68  14  5  0  0  0  0  15
+	frame	data/chars/players/Ryu/a202.gif
+		attack2  37  19  34  24  7  0  0  0  0  15
+	frame	data/chars/players/Ryu/a203.gif
+	frame	data/chars/players/Ryu/a204.gif
+
+anim attack3
+	loop	0
+	delay	7
+	offset	40 76
+	bbox	18 3 28 71
+        hitflash	Forte
+        Sound	data/sounds/golpes/Chut.wav
+        hitfx	data/sounds/golpes/Forte.wav
+	Sound	data/chars/players/Ryu/a1.wav
+	frame	data/chars/players/Ryu/a300.gif
+		attack2  24  2  57  72  12  1  0  0  0  15
+	frame	data/chars/players/Ryu/a301.gif
+		delay  10
+		attack1  41  0  49  77  12  1  0  0  0  15
+	frame	data/chars/players/Ryu/a302.gif
+	frame	data/chars/players/Ryu/a303.gif
+		Attack1  0
+	frame	data/chars/players/Ryu/a304.gif
+
+
+
+anim grab
+	loop	0
+	delay	100
+	offset	43 89
+	bbox	24 19 26 71
+        cancel	0 3 0 J freespecial
+	frame	data/chars/players/Ryu/Ga100.gif
+
+anim throw
+	loop	0
+	delay	5
+	offset	33 76
+        hitflash	Forte
+        hitfx	data/sounds/golpes/Forte.wav
+		Attack1  0
+	frame	data/chars/players/Ryu/T00.gif
+	delay	10
+	@cmd	slamstart
+	@cmd	position 0 20 0 0 -1
+		offset  64  76
+	frame	data/chars/players/Ryu/T01.gif
+	@cmd	position 4 -10 30 0 -1
+		delay  20
+		attack1  71  1  46  63  7  1  0  0  0  10
+	frame	data/chars/players/Ryu/T02.gif
+	Sound	data/chars/players/Ryu/a1.wav
+	@cmd	position 5 -30 30 0 -1
+		attack1  10  -1  64  30  7  1  0  0  0  10
+		delay  10
+	frame	data/chars/players/Ryu/T03.gif
+	@cmd	position 5 -50 40 0 -1
+		attack1  -48  7  54  47  7  1  0  0  0  10
+	frame	data/chars/players/Ryu/T03.gif
+	@cmd	position 8 -70 30 0 -1
+	@cmd	depost 0
+	@cmd	throw 15 5 2 2 0 -1
+	@cmd	clearL
+		attack1  -76  15  43  44  7  1  0  0  0  10
+		delay  20
+	frame	data/chars/players/Ryu/t04.gif
+		attack1  -124  24  49  46  7  1  0  0  0  10
+		offset  55  76
+	frame  data/chars/players/Ryu/t05.gif
+		attack1  -128  56  42  30  7  1  0  0  0  10
+		offset  31  76
+	frame  data/chars/players/Ryu/get00.gif
+
+
+
+anim pain
+	loop	0
+	offset	37 76
+	bbox	14 1 34 65
+	delay	5
+	frame	data/chars/players/Ryu/pain100.gif
+		delay  25
+	frame	data/chars/players/Ryu/pain101.gif
+
+anim pain3
+	loop	0
+	offset	33 74
+	bbox	13 2 30 74
+	delay	5
+	jumpframe  0  2  0  0
+	frame	data/chars/players/Ryu/pain100.gif
+		delay  25
+		bbox  9  2  39  74
+	frame	data/chars/players/Ryu/pain101.gif
+
+anim pain4
+	loop	0
+	offset	34 75
+	bbox	14 1 30 73
+	delay	5
+	frame	data/chars/players/Ryu/pain100.gif
+		delay  900
+		bbox  8  0  36  78
+	frame	data/chars/players/Ryu/pain101.gif
+
+
+anim grabbed
+	loop	0
+	offset	36 74
+	bbox	16 7 36 69
+	delay	40
+	frame	data/chars/players/Ryu/pain101.gif
+
+
+
+anim pain2
+	loop	0
+	offset	29 76
+	bbox	14 7 37 56
+	delay	5
+	frame	data/chars/players/Ryu/pain200.gif
+		delay  25
+	frame	data/chars/players/Ryu/pain201.gif
+
+
+
+
+
+anim fall2
+	loop	0
+	offset	52 74
+	jumpframe  0  3  -3  0
+	delay	20
+        hitfx	data/sounds/golpes/Forte.wav
+		attack  0
+	frame	data/chars/players/Ryu/fall00.gif
+		Attack1  0
+		offset  34  60
+	frame	data/chars/players/Ryu/fall01.gif
+		offset  35  76
+		delay  10
+	frame	data/chars/players/Ryu/fall02.gif
+		offset  45  40
+	frame	data/chars/players/Ryu/fall03.gif
+
+anim fall
+	loop	0
+	offset	49 73
+	delay	20
+        hitfx	data/sounds/golpes/Forte.wav
+		attack  0
+	frame	data/chars/players/Ryu/fall00.gif
+		Attack1  0
+		offset  38  69
+	frame	data/chars/players/Ryu/fall01.gif
+		delay  10
+		offset  35  77
+	frame	data/chars/players/Ryu/fall02.gif
+		offset  42  40
+	frame	data/chars/players/Ryu/fall03.gif
+
+anim fall6 #Shok
+	loop	0
+	offset	80 108
+	delay	5
+        hitfx	data/sounds/golpes/Forte.wav
+		attack  0
+	frame	data/chars/players/Ryu/fall201.gif
+	frame	data/chars/players/Ryu/fall200.gif
+	frame	data/chars/players/Ryu/fall201.gif
+	frame	data/chars/players/Ryu/fall200.gif
+	frame	data/chars/players/Ryu/fall201.gif
+		offset  40  42
+	frame	data/chars/players/Ryu/fall03.gif
+
+
+anim fall7 #Burn
+	loop	0
+	offset	38 65
+	delay	10
+        hitfx	data/sounds/golpes/Forte.wav
+		attack  0
+	frame	data/chars/players/Ryu/FALL300.gif
+	frame	data/chars/players/Ryu/FALL301.gif
+	frame	data/chars/players/Ryu/FALL302.gif
+	frame	data/chars/players/Ryu/FALL300.gif
+	frame	data/chars/players/Ryu/FALL301.gif
+		offset  43  40
+	frame	data/chars/players/Ryu/FALL03.gif
+
+
+anim rise
+	loop	0
+	offset	41 101
+	delay	8
+	frame	data/chars/players/Ryu/Rise00.gif
+	frame	data/chars/players/Ryu/Rise01.gif
+	frame	data/chars/players/Ryu/Rise02.gif
+	frame	data/chars/players/Ryu/Rise03.gif
+	frame	data/chars/players/Ryu/Rise04.gif
+
+
+
+
+anim special2
+	loop	0
+        custknife Knifet
+        throwframe 1 60
+	offset	23 74
+        hitflash	fORTE
+        hitfx	data/sounds/golpes/forte.wav
+		delay  5
+	frame	data/chars/players/Ryu/knife/a100.gif
+		delay  25
+		Attack1  0
+	frame	data/chars/players/Ryu/a101.gif
+		delay  5
+	frame	data/chars/players/Ryu/a102.gif
+
+anim special
+        energycost 10 1
+        MpOnly 1
+	loop	0
+	offset	46 93
+        hitflash	fORTE
+        hitfx	data/sounds/golpes/forte.wav
+		delay  5
+		Attack1  0
+	frame	data/chars/players/Ryu/Sp100.gif
+	@cmd  spawn01  "RyuP01"  0  0  -1
+	frame	data/chars/players/Ryu/Sp101.gif
+	@cmd  spawn01  "RyuP01"  0  0  -1
+	frame  data/chars/players/Ryu/Sp102.gif
+	@cmd  spawn01  "RyuP01"  0  0  -1
+	Sound	data/chars/players/Ryu/SP01.wav
+		Attack1  0
+	frame	data/chars/players/Ryu/Sp103.gif
+		attack2  34  33  66  22  25  1  0  0  0  25
+	frame	data/chars/players/Ryu/Sp104.gif
+		attack2  36  35  36  23  25  1  0  0  0  25
+	frame	data/chars/players/Ryu/Sp105.gif
+		attack2  2  32  63  17  25  1  0  0  0  25
+	frame  data/chars/players/Ryu/Sp106.gif
+		attack2  31  36  37  15  25  1  0  0  0  25
+	frame	data/chars/players/Ryu/Sp107.gif
+		attack2  29  34  71  21  25  1  0  0  0  25
+	frame	data/chars/players/Ryu/Sp104.gif
+		attack2  34  36  38  20  25  1  0  0  0  25
+	frame	data/chars/players/Ryu/Sp105.gif
+		attack2  1  33  63  19  25  1  0  0  0  25
+	frame  data/chars/players/Ryu/Sp106.gif
+		attack2  26  36  44  15  25  1  0  0  0  25
+	frame	data/chars/players/Ryu/Sp107.gif
+		Attack1  0
+	frame  data/chars/players/Ryu/Sp108.gif
+
+anim jumpspecial
+        energycost 10 1
+        MpOnly 1
+	loop	0
+	offset	44 93
+        hitflash	fORTE
+        hitfx	data/sounds/golpes/forte.wav
+		delay  6
+	frame	data/chars/players/Ryu/Sp100.gif
+	@cmd  spawn01  "RyuP01"  0  0  -1
+		Attack1  0
+	frame	data/chars/players/Ryu/Sp101.gif
+	frame  data/chars/players/Ryu/Sp102.gif
+	Sound	data/chars/players/Ryu/SP01.wav
+		Attack1  0
+	frame	data/chars/players/Ryu/Sp103.gif
+		attack1  30  32  67  32  25  1  0  0  0  15
+	frame	data/chars/players/Ryu/Sp104.gif
+		attack1  36  38  42  18  25  1  0  0  0  15
+	frame	data/chars/players/Ryu/Sp105.gif
+		attack1  2  35  65  17  25  1  0  0  0  15
+	frame  data/chars/players/Ryu/Sp106.gif
+		attack1  29  34  47  16  25  1  0  0  0  15
+	frame	data/chars/players/Ryu/Sp107.gif
+		Attack1  0
+	frame  data/chars/players/Ryu/Sp108.gif
+
+anim Freespecial2
+	loop	0
+	delay	10
+	offset	27 77
+        cancel	0 3 0 A freespecial
+        @cmd dasher 1 0 0
+	frame	data/chars/players/Ryu/knife/Walk00.gif
+        @cmd dasher 2 0 0
+		delay  24
+		offset  46  55
+	frame	data/chars/players/Ryu/knife/Dash00.gif
+        @cmd dasher 0 0 0
+		delay  15
+	frame	data/chars/players/Ryu/knife/Dash01.gif
+
+
+anim Freespecial
+ 	loop	0
+ 	delay	8
+ 	offset	38 97
+ 	bbox	25 21 34 63
+		move  0
+	jumpframe  2  2  2  0
+        hitflash	MEdio
+        hitfx	data/sounds/golpes/MEdio.wav
+ 	frame	data/chars/players/Ryu/Sp200.gif
+	Sound	data/chars/players/Ryu/Ra.wav
+ 	frame	data/chars/players/Ryu/Sp201.gif
+		attack1  27  0  34  98  12  1  0  0  0  15
+ 	frame	data/chars/players/Ryu/Sp202.gif
+ 	frame	data/chars/players/Ryu/Sp203.gif
+		Attack1  0
+ 	frame	data/chars/players/Ryu/Sp204.gif
+ 	frame	data/chars/players/Ryu/Sp205.gif
+
+
+anim grabattack
+	loop	0
+	offset	43 89
+	bbox	13 4 35 68
+	delay	4
+        hitflash	fRACO
+        hitfx	data/sounds/golpes/fRACO.wav
+		Attack1  0
+	frame	data/chars/players/Ryu/ga100.gif
+	frame	data/chars/players/Ryu/ga101.gif
+		attack1  38  28  35  50  7  0  0  0  0  15
+		delay  8
+	frame	data/chars/players/Ryu/ga102.gif
+		Attack1  0
+	frame	data/chars/players/Ryu/ga103.gif
+	frame	data/chars/players/Ryu/ga104.gif
+
+
+
+
+anim grabattack2
+	loop	0
+	offset	31 101
+	bbox	18 26 35 76
+	delay	7
+        hitflash	Forte
+        hitfx	data/sounds/golpes/Forte.wav
+		Attack1  0
+	frame	data/chars/players/Ryu/ga200.gif
+	Sound	data/chars/players/Ryu/a1.wav
+		attack1  42  29  36  29  10  1  0  0  0  10
+		delay  6
+	frame	data/chars/players/Ryu/ga201.gif
+		attack1  39  10  30  69  12  1  0  0  0  10
+		delay  20
+	frame	data/chars/players/Ryu/ga202.gif
+		delay  8
+		Attack1  0
+	frame	data/chars/players/Ryu/ga203.gif
+		delay  6
+	frame	data/chars/players/Ryu/ga204.gif
+
+
+
+anim land
+	loop	0
+	delay	15
+	offset	53 57
+	bbox	30 2 46 57
+	frame	data/chars/players/Ryu/Dash01.gif
+
+
+anim Fall9
+	loop	0
+	offset	30 72
+	delay	999
+	frame	data/chars/players/Ryu/pain100.gif #0
+	frame	data/chars/players/Ryu/pain200.gif #1
+		offset  39  69
+	frame	data/chars/players/Ryu/fall01.gif #2
+		offset  31  59
+	frame	data/chars/players/Ryu/fall02.gif #3
+		offset  72  82
+	frame	data/chars/players/Ryu/fall400.gif #4
+		offset  91  94
+	frame	data/chars/players/Ryu/fall401.gif #5
+		offset  81  99
+	frame	data/chars/players/Ryu/fall402.gif #6
+		offset  77  119
+	frame  data/chars/players/Ryu/fall403.gif
+		offset  87  96
+		delay  20
+	frame  data/chars/players/Ryu/fall401.gif
+		offset  87  99
+		delay  30
+	frame  data/chars/players/Ryu/fall404.gif
+		offset  74  102
+	frame  data/chars/players/Ryu/fall405.gif
+
+
+anim Fall8
+	loop	0
+	flipframe  0
+	offset	27 60
+	delay	30
+	frame	data/chars/players/Ryu/fall01.gif #0
+	offset	44 41
+	delay	15
+	frame	data/chars/players/Ryu/fall03.gif #1
+
+
+anim Fall5
+	loop	0
+	flipframe  1
+	offset	32 59
+	delay	30
+	frame	data/chars/players/Ryu/fall01.gif #0
+	offset	31 78
+	delay	15
+	frame	data/chars/players/Ryu/fall02.gif #1
+

@@ -1,0 +1,45 @@
+# Do not forget to name your character.
+# Health is optional.
+
+name	Ovo
+health	1
+nolife 1
+noname 1
+type	obstacle
+gfxshadow	1
+#icon	data/chars/misc/charicon.gif
+diesound data/sounds/glass.wav
+noatflash	1
+onblockwscript	data/scripts/bounceF.c
+animationscript 	data/scripts/ani0020.h
+ondrawscript 		data/scripts/player_ondrawscript.c
+
+Load Boom01
+
+anim idle
+	loop	1
+	delay	20
+	offset	100 165
+	bbox	84 117 33 49
+	frame	data/chars/Objetos/egg00.gif
+	frame	data/chars/Objetos/egg01.gif
+	frame	data/chars/Objetos/egg02.gif
+	frame  data/chars/Objetos/egg01.gif
+
+
+anim fall
+	loop	0
+	delay	2
+	offset	100 165
+	frame	data/chars/Objetos/egg03.gif
+	@cmd  spawn01  "Boom01"  0  1  0
+	frame	data/chars/Objetos/egg04.gif
+	delay	20
+	frame	data/chars/Objetos/egg05.gif
+	frame	data/chars/Objetos/egg03.gif
+	frame	data/chars/Objetos/egg04.gif
+	frame	data/chars/Objetos/egg05.gif
+	frame	data/chars/Objetos/egg03.gif
+	frame	data/chars/Objetos/egg04.gif
+	frame	data/chars/Objetos/egg05.gif
+

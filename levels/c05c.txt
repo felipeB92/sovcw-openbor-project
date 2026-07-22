@@ -1,0 +1,438 @@
+music		data/music/06b.bor
+bossmusic	data/music/boss1.bor
+rock		1
+scrollspeed 0.5
+stagenumber 6
+background	data/bgs/05/Back01.gif
+bglayer		data/bgs/05/Sky2b.gif		0.8 1 0 0 0 0 -1 1 1 0 1 0 0 0 1
+bglayer		data/bgs/05/bg01b.gif		0.6 1 0 0 0 0 -1 1 1 0 3 0.1 1.2 0 3
+panel		data/bgs/05/Pn03.gif
+cameratype 1
+cameraoffset 0 -30
+#levelscript @script
+#void main() {
+#	changelevelproperty("camerazoffset", 0);
+#	changelevelproperty("cameraxoffset", 0);
+#}
+#@end_script
+settime         99
+notime          0
+noslow          1
+order		a
+spawn1  	64 98 300
+spawn2  	66 98 300
+spawn3  	68 98 300
+
+Wall  -4  198  10  0  247  195  58  119
+
+light		128 -128
+at			0
+
+spawn  ActP
+	coords  400 295
+	at  0
+
+
+
+spawn  Chuva06
+Flip 1
+	coords  0 290
+        at	0
+
+spawn  Chuva06
+Flip 1
+	coords  504 290
+	at  0
+
+spawn  Chuva06
+Flip 1
+	coords  1008 290
+	at  0
+
+spawn  CAdeira
+	coords  375 196
+	at  0
+
+spawn  Mesa
+Item Gold
+Flip 1
+	coords  328 196
+	at  0
+
+spawn  CAdeira
+Flip 1
+	coords  290 196
+	at  0
+
+
+
+spawn  Menu
+Item Apple
+	coords  205 230
+	at  0
+
+spawn  Menu
+	coords  180 265
+	at  0
+
+wait
+at       0
+
+group 4 4
+at  0
+
+spawn  Slum_
+Map 1
+Flip 1
+health 70
+	coords  290 200
+	at  0
+
+spawn  Act
+	coords  290 197
+	at  0
+
+
+spawn  Ruy_B
+Map 4
+health 100
+	coords  114 199 0
+	at  0
+
+
+spawn  Agamenon
+MAp 1
+health 100
+	coords  600 230
+	at  0
+
+spawn  Agamenon
+health 100
+	coords  -100 230
+	at  0
+
+
+spawn  Fog
+MAp 1
+health 70
+	coords  600 180
+	at  0
+
+spawn  Signal
+MAp 1
+health 70
+	coords  -100 230
+	at  0
+
+spawn  Act
+	coords  114 199 0
+	at  0
+
+spawn  Raven
+MAp 1
+health 70
+	coords  600 180
+	at  0
+
+spawn  Raven
+MAp 2
+health 70
+	coords  -100 230
+	at  0
+
+
+spawn  KArt01
+Item Chicken
+Flip 1
+	coords  530 190
+	at  1
+
+
+spawn  CAdeira
+Flip 1
+	coords  530 260
+	at  1
+
+spawn  Mesa
+Flip 1
+	coords  580 260
+	at  1
+
+spawn  CAdeira
+Item Cash 
+	coords  630 260
+	at  1
+
+
+spawn  CAdeira
+Flip 1
+Item Cash
+	coords  700 195
+	at  1
+
+spawn  Mesa
+Flip 1
+	coords  750 195
+	at  1
+
+spawn  CAdeira
+	coords  800 195
+	at  1
+
+wait
+at       360
+
+group 5 5
+at  360
+
+
+spawn  Galsia
+Map 1
+health 50
+	coords  -100 260
+	at  360
+
+spawn  Donovan
+Map 1
+health 50
+	coords  600 195
+	at  360
+
+spawn  Slum
+Map 1
+health 50
+	coords  600 260
+	at  360
+
+spawn  Vice
+Map 1
+health 50
+	coords  -100 195
+	at  360
+
+spawn  Signal
+Map 1
+health 70
+	coords  600 230
+	at  360
+
+spawn  Jhonny
+Map 1
+health 70
+	coords  -100 230
+	at  360
+
+spawn  Ralf
+Map 1
+health 70
+	coords  -100 260
+	at  360
+
+spawn  Garnet
+Map 1
+health 70
+	coords  600 195
+	at  360
+
+spawn  Nora
+Map 1
+health 75
+	coords  600 260
+	at  360
+
+spawn  Electra
+Map 1
+health 75
+	coords  -100 195
+	at  360
+
+spawn  Fog
+Map 2
+health 50
+	coords  600 230
+	at  360
+
+spawn  Bigben
+Map 2
+health 75
+	coords  -100 230
+	at  360
+
+
+spawn  KArt02
+Item Knife
+	coords  600 230
+	at  700
+
+spawn  KArt02
+Flip 1
+Item Gold
+	coords  -100 190
+	at  800
+
+spawn  KArt02
+Flip 1
+Item Apple
+	coords  -100 260
+	at  900
+
+spawn  KArt02
+Item Pipe
+	coords  600 190
+	at  950
+
+wait
+at       1000
+
+group 4 4
+at  1000
+
+spawn  Garnet
+Map 1
+health 50
+	coords  -100 195
+	at  1000
+
+spawn  Garnet
+Map 2
+health 70
+	coords  600 230
+	at  1000
+
+spawn  Garnet
+Map 3
+health 70
+	coords  -100 230
+	at  1000
+
+spawn  Garnet
+Map 4
+health 70
+	coords  600 260
+	at  1000
+
+spawn  Nora
+Map 1
+health 70
+	coords  600 195
+	at  1000
+
+spawn  Nora
+Map 2
+health 75
+	coords  600 260
+	at  1000
+
+spawn  Nora
+Map 3
+health 75
+	coords  -100 195
+	at  1000
+
+spawn  Nora
+Map 4
+health 50
+	coords  -100 230
+	at  1000
+
+spawn  Electra
+Map 1
+health 70
+	coords  600 195
+	at  1000
+
+spawn  Electra
+Map 2
+health 75
+	coords  600 260
+	at  1000
+
+spawn  Electra
+Map 3
+health 75
+	coords  -100 195
+	at  1000
+
+spawn  Electra
+Map 4
+health 50
+	coords  -100 230
+	at  1000
+
+wait
+at       1200
+
+group 4 4
+at  1200
+
+spawn  Bigben
+Map 1
+health 70
+	coords  600 195
+	at  1200
+
+spawn  Howk
+Map 2
+health 75
+	coords  600 260
+	at  1200
+
+spawn  Bigben
+Map 3
+health 75
+	coords  -100 195
+	at  1200
+
+spawn  Howk
+Map 4
+health 70
+	coords  -100 230
+	at  1200
+
+spawn  KArt02
+Item Knife
+	coords  600 230
+	at  1200
+
+spawn  Raven
+Map 1
+health 60
+	coords  600 195
+	at  1200
+
+spawn  Jhonny
+Map 2
+health 60
+	coords  600 260
+	at  1200
+
+spawn  KArt02
+Flip 1
+Item Knife
+	coords  -100 240
+	at  1200
+
+spawn  Ralf
+Map 3
+health 60
+	coords  -100 195
+	at  1200
+
+
+spawn  KArt02
+Item Apple
+	coords  600 195
+	at  1200
+
+spawn  Jake
+Map 4
+health 75
+	coords  -100 230
+	at  1200
+
+
+
+
+
+
+

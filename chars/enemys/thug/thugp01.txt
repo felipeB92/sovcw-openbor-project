@@ -1,0 +1,45 @@
+
+name			ThugP01 #THROWNED
+type			none
+speed 12
+candamage			enemy npc obstacle
+alpha 1
+nolife			1
+lifespan		4
+remove			1
+gfxshadow		0 0
+flash			Forte
+antigravity 100
+
+anim idle
+	loop	0
+	offset	-38 196
+		drawmethod  150  150  0  0  0  -1  -1
+		delay  5
+		Attack1  0
+	frame	data/chars/Enemys/Thug/P100.gif
+	frame	data/chars/Enemys/Thug/P101.gif
+	frame	data/chars/Enemys/Thug/P102.gif
+	frame	data/chars/Enemys/Thug/P103.gif
+	frame	data/chars/Enemys/Thug/P104.gif
+	frame	data/chars/Enemys/Thug/P105.gif
+	frame	data/chars/Enemys/Thug/P106.gif
+	frame	data/chars/Enemys/Thug/P107.gif
+	frame	data/chars/Enemys/Thug/P108.gif
+	frame	data/chars/Enemys/Thug/P109.gif
+	frame	data/chars/Enemys/Thug/P110.gif
+	frame	data/chars/Enemys/Thug/P111.gif
+	frame	data/chars/Enemys/Thug/P112.gif
+	frame	data/chars/Enemys/Thug/P113.gif
+	frame	data/chars/Enemys/Thug/P114.gif
+	frame	data/chars/Enemys/Thug/P115.gif
+	frame	data/chars/Enemys/Thug/P116.gif
+	frame	data/chars/Enemys/Thug/P117.gif
+	frame	data/chars/Enemys/Thug/P118.gif
+	frame	data/chars/Enemys/Thug/P119.gif
+	frame	data/chars/Enemys/Thug/P120.gif
+	frame	data/chars/Enemys/Thug/P121.gif
+	frame	data/chars/Enemys/Thug/P122.gif
+	@cmd killentity getlocalvar("self")
+	frame	data/chars/Enemys/Thug/P122.gif
+

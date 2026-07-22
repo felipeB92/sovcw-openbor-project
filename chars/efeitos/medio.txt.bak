@@ -1,0 +1,23 @@
+name	MEdio
+type	none
+Alpha 1
+#subtype	noskip
+#setlayer -1
+
+
+
+anim	idle
+	loop	0
+	delay	1
+	offset	23 23
+		drawmethod  180  180  0  0  0  -1  -1
+	frame	data/Chars/efeitos/F200.gif
+	frame	data/Chars/efeitos/F201.gif
+	frame	data/Chars/efeitos/F202.gif
+	frame	data/Chars/efeitos/F203.gif
+	frame	data/Chars/efeitos/F204.gif
+	frame	data/Chars/efeitos/F205.gif
+	frame	data/Chars/efeitos/F206.gif
+	frame	data/Chars/efeitos/F207.gif
+	frame	data/Chars/efeitos/F208.gif
+

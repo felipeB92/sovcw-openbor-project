@@ -1,0 +1,474 @@
+music		data/music/05a.bor
+bossmusic	data/music/BossR.bor
+scrollspeed 0.5#1
+#direction Left
+stagenumber 5
+background	data/bgs/04/back01d.gif	0.7 1 0 0 0 0 -1 1 0 0 0 0 0 0 0
+bglayer 	data/bgs/04/back01c.gif	0.45 1 0 0 0 0 -1 1 1 0 0 0 0 0 6
+bglayer 	data/bgs/04/back01b.gif	0.4 1 0 0 0 0 -1 1 1 0 1 3 10 0.3
+#water		data/bgs/01/Mar01.gif		0.5
+#fglayer         data/bgs/00/FOG.gif              0.5 1 0 0 0 0 -1 1 1 0 1 3 10 0.3
+panel		data/bgs/04/pn01.gif		none	none
+#frontpanel	data/bgs/00/Front00.gif		
+cameratype 1
+cameraoffset 0 -30
+#levelscript @script
+#void main() {
+#	changelevelproperty("camerazoffset", 0);
+#	changelevelproperty("cameraxoffset", 0);
+#}
+#@end_script
+settime         99
+notime          0
+noslow          1
+order		a
+spawn1  	50 20 50
+spawn2  	55 35 50 
+spawn3  	60 50 50
+
+light		128 -128
+at			0
+
+spawn  ActP
+	coords  400 295
+	at  0
+
+
+
+spawn  Tires02
+Item Cash
+	coords  200 210
+	at  0
+
+spawn  Tires02
+Item Gold
+	coords  240 210
+	at  0
+
+wait
+at       0
+
+group 4 4
+at 0
+
+
+
+spawn  Crakito_
+health 50
+MAp 2
+	coords  460 220
+	at  0
+
+spawn  Diga_
+health 50
+MAp 2
+	coords  400 240
+	at  0
+
+spawn  Act
+	coords  400 240
+	at  0
+
+spawn  Balu_
+health 50
+MAp 2
+	coords  470 260
+	at  0
+
+spawn  Thug
+health 50
+MAp 2
+	coords  -100 220
+	at  0
+
+spawn  Galsia
+health 50
+MAp 2
+	coords  -100 220
+	at  0
+
+
+spawn  Donovan
+health 50
+MAp 2
+	coords  -100 260
+	at  0
+
+
+spawn  Truck00
+Flip 1
+	coords  -200 260
+	at  0
+
+
+spawn  Signal
+health 50
+MAp 2
+	coords  600 220
+	at  0
+
+
+spawn  Vice
+health 50
+MAp 2
+	coords  -100 260
+	at  0
+
+spawn  Slum
+health 50
+MAp 2
+	coords  600 220
+	at  0
+
+
+spawn  Fog
+health 50
+MAp 2
+	coords  -100 260
+	at  0
+
+spawn  Tires02
+Item Cash
+	coords  510 210
+	at  1
+
+spawn  Tires02
+Item Apple
+	coords  550 220
+	at  1
+
+spawn  Tires02
+	coords  580 210
+	at  1
+
+wait
+at       460
+
+group 4 4
+at 460
+
+spawn  Fog_B
+health 50
+MAp 2
+	coords  -100 260
+	at  460
+
+
+spawn  Costa
+health 70
+MAp 3
+	coords  600 260
+	at  460
+
+
+spawn  Costa
+health 70
+MAp 2
+	coords  600 220
+	at  460
+
+
+spawn  Chan
+health 70
+MAp 2
+	coords  -100 260
+	at  460
+
+spawn  Chan
+health 70
+MAp 2
+	coords  -100 220
+	at  460
+
+spawn  Electra
+health 70
+MAp 3
+	coords  600 260
+	at  460
+
+
+spawn  Electra
+health 70
+	coords  600 220
+	at  460
+
+
+spawn  Nora
+health 70
+	coords  -100 260
+	at  460
+
+spawn  Nora
+health 70
+MAp 4
+	coords  -100 220
+	at  460
+
+
+
+
+spawn  Bongo_
+health 250
+	coords  500 210
+	at  500
+
+spawn  Act
+	coords  500 210
+	at  500
+
+
+wait
+at       680
+
+group 3 3
+at 680
+
+spawn  Porta01
+	coords  236 168
+	at  680
+
+spawn  DelayX1
+	coords  240 166
+	at  680
+
+spawn  DelayX1
+	coords  240 166
+	at  680
+
+spawn  Bigben__
+health 70
+MAp 1
+	coords  250 210 300
+	at  680
+
+spawn  Bigben__
+health 70
+MAp 1
+	coords  50 210 300
+	at  680
+
+
+wait
+at       1000
+
+group 3 3
+at 1000
+
+
+spawn  Ralf
+health 70
+MAp 4
+	coords  -100 220
+	at  1000
+
+spawn  Jhonny
+health 70
+MAp 4
+	coords  -100 260
+	at  1000
+
+spawn  Porta02
+Flip 1
+	coords  164 187
+	at  1000
+
+spawn  delayX1
+	coords  41 203
+	at  1000
+
+spawn  MAcleod
+Map 1
+	coords  164 187 1
+	at  1000
+
+spawn  Garnet
+health 70
+MAp 4
+	coords  600 220
+	at  1000
+
+spawn  Fog
+health 70
+MAp 4
+	coords  600 220
+	at  1000
+
+spawn  Slum
+health 70
+MAp 4
+	coords  600 220
+	at  1000
+
+spawn  delayX1
+	coords  41 203
+	at  1000
+
+spawn  MAcleod
+Map 2
+	coords  164 187 1
+	at  1000
+
+spawn  MAcleod
+Map 3
+	coords  164 187 1
+	at  1000
+
+
+wait
+at       1456
+
+group 4 4
+at 1456
+
+spawn  Elevador00
+	coords  41 203
+Flip 1
+	at  1456
+
+spawn  Ralf
+health 70
+MAp 4
+	coords  -100 220
+	at  1456
+
+spawn  Jhonny
+health 70
+MAp 4
+	coords  -100 220
+	at  1456
+
+
+spawn  delayX1
+	coords  41 203
+	at  1456
+
+spawn  delayX1
+	coords  41 203
+	at  1456
+
+
+
+spawn  Elevador01
+	coords  41 203
+Flip 1
+	at  1456
+
+spawn  BAlu
+health 70
+MAp 4
+	coords  -100 220
+	at  1456
+
+spawn  Crakito
+health 70
+MAp 4
+	coords  600 220
+	at  1456
+
+spawn  delayX1
+	coords  41 203
+	at  1456
+
+spawn  delayX1
+	coords  41 203
+	at  1456
+
+spawn  Porta02
+	coords  182 203
+Flip 1
+	at  1456
+
+spawn  MAcleod
+Map 2
+	coords  182 203 1
+	at  1456
+
+spawn  Elevador02
+	coords  41 203
+Flip 1
+	at  1456
+
+spawn  Garnet
+health 70
+MAp 4
+	coords  600 220
+	at  1456
+
+spawn  Fog
+health 70
+MAp 4
+	coords  -100 220
+	at  1456
+
+spawn  delayX1
+	coords  41 203
+	at  1456
+
+spawn  delayX1
+	coords  41 203
+	at  1456
+
+spawn  Elevador03
+	coords  41 203
+Flip 1
+	at  1456
+
+spawn  MAcleod
+health 70
+Map 2
+	coords  182 203 1
+	at  1456
+
+spawn  BAlu
+health 70
+	coords  600 203
+Flip 1
+	at  1456
+
+spawn  delayX1
+	coords  41 203
+	at  1456
+
+spawn  delayX1
+	coords  41 203
+	at  1456
+
+spawn  Elevador04
+	coords  41 203
+Flip 1
+	at  1456
+
+spawn  BigBen__
+health 70
+Map 2
+	coords  100 220 300
+	at  1456
+
+spawn  Bigben__
+health 70
+Map 3
+	coords  300 240 300
+Flip 1
+	at  1456
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,630 @@
+music		data/bgs/St08/Lv08.bor
+bossmusic	data/music/boss1.bor
+scrollspeed 1#1
+#bgspeed 30 2
+stagenumber 8
+direction left
+background	data/bgs/st08/Back01.gif
+panel		data/bgs/St08/pn01.gif
+#frontpanel      data/bgs/St07/Front01.gif
+#bglayer           data/bgs/11lvl/liberty_statue.gif 0.3 0.1   60    -40 180 1 1 1 1  0
+#bglayer           data/bgs/11lvl/0x.gif 0.5 0.1   60    -40 180 1 1 1 1  0
+#fglayer         data/bgs/11lvl/fondo3.gif 1500 -0.1 0 0 0 0 0 1 1 1
+#fglayer         data/bgs/11lvl/sun.gif 500 0 0 0 -5 1 1 1 1 1 1
+#fglayer         data/bgs/11lvl/light2.gif 2500 0 0 0 -5 1 1 1 1 1 1
+cameratype 1
+cameraoffset 0 -30
+#levelscript @script
+#void main() {
+#	changelevelproperty("camerazoffset", 0);
+#	changelevelproperty("cameraxoffset", 0);
+#}
+#@end_script
+#settime         90
+notime          1
+noslow          1
+order		a
+spawn1  	190 20 50
+spawn2  	210 35 50
+spawn3  	220 50 50
+
+
+spawn  Kart02
+flip   1
+	coords  -100  200
+	at  50
+
+spawn  Galsia
+health 50
+	coords  -100  191
+	at  100
+
+
+spawn  Knife
+	coords  500  200
+	at  100
+
+
+
+spawn  Galsia
+health 50
+	coords  550  250
+	at  100
+
+spawn  Galsia
+health 50
+	coords  500 191
+	at  150
+
+spawn  Nora
+health 50
+	coords  550  200
+	at  200
+
+wait  
+at   300
+
+group 4 4
+at   300
+
+spawn  Galsia
+health 50
+	coords  500 250
+	at  300
+
+
+spawn  Galsia
+health 50
+	coords  -100 250
+	at  300
+
+spawn  Galsia
+health 50
+	coords  500 191
+	at  300
+
+
+spawn  Galsia
+health 50
+	coords  -100 200
+	at  300
+
+spawn  Kart01
+flip   1
+	coords  -206  200
+	at  301
+
+spawn  Kart01
+flip   1
+	coords  -319  240
+	at  301
+
+spawn  Kart01
+flip   1
+item   apple
+	coords  -97  186
+	at  767
+
+spawn  Kart02
+item   Kunai
+	coords  500  240
+	at  800
+
+spawn  Knife
+	coords  -100  200
+	at  800
+
+spawn  Galsia
+map    2
+health 70
+	coords  -150 191
+	at  800
+
+spawn  Pipe
+	coords  -150 191
+	at  800
+
+spawn  Kart02
+item   Kunai
+flip   1
+	coords  -100  200
+	at  1000
+
+spawn  Galsia
+map    2
+health 70
+	coords  500 191
+	at  1000
+
+spawn  Galsia
+map    2
+health 70
+	coords  500 250
+	at  1000
+
+wait  
+at   1100
+
+group 4 4
+at   1100
+
+spawn  signal
+map    2
+	coords  500 191
+	at  1100
+
+spawn  Signal
+map    2
+	coords  -100 250
+	at  1100
+
+spawn  signal
+map    2
+	coords  -100 191
+	at  1100
+
+
+wait  
+at   1101
+
+group 2 2
+at   1101
+
+spawn  Antonio
+map    1
+	coords  -100 191
+	at  1101
+
+spawn  Antonio
+alias  Antonio_jr
+map    4
+	coords  500 191
+	at  1101
+
+group 15 15
+at   1102
+
+
+
+spawn  Kart01
+item   chicken
+	coords  -500  190
+	at  1310
+
+spawn  Clown
+map    4
+	coords  600 200
+	at  1750
+
+
+spawn  galsia
+map    4
+health 90
+	coords  500 191
+	at  1800
+
+
+spawn  galsia
+map    4
+health 90
+	coords  500 191
+	at  1800
+
+spawn  galsia
+map    4
+health 90
+	coords  -100 191
+	at  1800
+
+spawn  galsia
+map    4
+health 90
+	coords  -100 250
+	at  1800
+
+
+spawn  Kart02
+item   pipe
+flip   1
+	coords  -100  200
+	at  2000
+
+spawn  galsia
+map    4
+health 90
+	coords  500 250
+	at  2000
+
+wait  
+at   2100
+
+group 5 5
+at   2100
+
+spawn  Kart02
+item   pipe
+flip   1
+	coords  -100  200
+	at  2100
+
+spawn  galsia
+map    4
+health 90
+	coords  500 250
+	at  2100
+
+spawn  Signal
+map    2
+	coords  -100 200
+	at  2100
+
+spawn  Signal
+map    2
+	coords  500 200
+	at  2100
+
+spawn  Signal
+map    2
+	coords  -100 200
+	at  2100
+
+wait  
+at   2101
+
+group 2 2
+at   2101
+
+spawn  fred
+map    2
+	coords 500 200
+	at  2101
+
+spawn  fred
+alias  Bounge
+map    4
+	coords  -100 200
+	at  2101
+
+group 15 15
+at   2102
+
+spawn  Kart01
+item   Kunai
+	coords  -430  190
+	at  2102
+
+spawn  Kart01
+item   Chicken
+	coords  -500  240
+	at  2300
+
+
+spawn  Signal
+map    2
+	coords  500 200
+	at  3000
+
+
+spawn  Signal
+map    1
+	coords  -100 200
+	at  3000
+
+wait  
+at   3100
+
+group 4 4
+at   3100
+
+
+spawn  Signal
+map    2
+	coords  500 200
+	at  3100
+
+spawn  Signal
+map    2
+	coords  -100 200
+	at  3100
+
+spawn  Signal
+map    2
+	coords  -100 200
+	at  3100
+
+wait  
+at   3101
+
+group 4 4
+at   3101
+
+spawn  Abadede
+map   3
+	coords  500 190
+	at  3101
+
+spawn  Abadede
+alias   Abadidi
+map    1
+	coords  -100 250
+	at  3101
+
+group 15 15
+at   3102
+
+spawn  Kart01
+item   chicken
+	coords  -300  190
+	at  3102
+
+spawn  Kart01
+item   Knife
+	coords  -300  250
+	at  3400
+
+spawn  Kart01
+item   Kunai
+	coords  -300 190
+	at  3600
+
+spawn  Kart01
+item   apple
+	coords  -300  250
+	at  3800
+
+spawn  Haku_oh
+map    2
+	coords  -100 250
+	at  3800
+
+wait  
+at   3900
+
+group 4 4
+at   3900
+
+spawn  nora
+map    4
+	coords  500 250
+	at  3900
+
+spawn  Haku_oh
+map    2
+	coords  500 250
+	at  3900
+
+spawn  Haku_oh
+map    2
+	coords  -100 250
+	at  3900
+
+spawn  Haku_oh
+map    2
+	coords  500 250
+	at  3900
+
+wait  
+at   3901
+
+group 2 2
+at   3901
+
+spawn  Bob
+map    3
+	coords  500 250
+	at  3901
+
+spawn  Bob
+alias  Bongo
+map    4
+	coords  -100 190
+	at  3901
+
+
+group 15 15
+at   3902
+
+spawn  Kart01
+	coords  -500  230
+	at  3902
+
+group 15 15
+at   3902
+
+spawn  Kart01
+item   chicken
+	coords  -700  200
+	at  3902
+
+spawn  nora
+map    3
+	coords  -100 190
+	at  4000
+
+
+
+
+spawn  Kart02
+item   Kunai
+	coords  500  200
+	at  4200
+
+spawn  Kart02
+item   Kunai
+flip   1
+	coords  -100  220
+	at  4200
+
+spawn  nora
+map    3
+	coords  -100 190
+	at  4250
+
+
+
+spawn  haku_oh
+map    4
+	coords  -50 190
+	at  4500
+
+spawn  haku_oh
+map    4
+	coords  -100 190
+	at  4500
+
+spawn  haku_oh
+map    4
+	coords  -150 220
+	at  4500
+
+spawn  haku_oh
+map    4
+	coords  -200 250
+	at  4500
+
+
+wait  
+at   4650
+
+group 4 4
+at   4650
+
+spawn  haku_oh
+map    4
+	coords  -100 250
+	at  4650
+
+spawn  Signal
+map    3
+	coords  -100 250
+	at  4650
+
+spawn  Galsia
+map    3
+health 90
+	coords  -100 250
+	at  4650
+
+
+spawn  Galsia
+map    3
+health 90
+	coords  -150 190
+	at  4650
+
+
+
+
+
+
+wait  
+at   4651
+
+group 2 2
+at   4651
+
+spawn  YAsha
+map    3
+	coords  -100  190 
+	at 4651
+
+spawn  YAsha
+alias  onihime
+map    4
+	coords  500  250 
+	at 4651
+
+wait  
+at   5386
+
+group 4 4
+at   5386
+
+spawn  Mx01
+flip   1
+	coords  0  0
+	at  5386
+
+spawn  Signal
+map    4
+	coords  500 200
+	at  5386
+
+spawn  Galsia
+map    5
+	coords  -100 200
+	at  5386
+
+spawn  signal
+map    4
+	coords  500 250
+	at  5386
+
+spawn  Galsia
+map    5
+	coords  -100 250
+	at  5386
+
+
+group 3 3
+at   5386
+
+
+spawn  MRx
+boss   1
+alias  MR.x
+        coords  215  190
+	at  5387
+
+
+spawn  Galsia
+map    5
+	coords  500 250
+	at  5387
+
+spawn  Galsia
+map    5
+	coords  -100 250
+	at  5387
+
+spawn  Galsia
+map    5
+	coords  500 250
+	at  5387
+
+spawn  Galsia
+map    5
+	coords  -100 250
+	at  5387
+
+spawn  Galsia
+map    5
+	coords  500 250
+	at  5387
+
+spawn  Galsia
+map    5
+	coords  -100 250
+	at  5387
+spawn  Galsia
+map    5
+	coords  500 250
+	at  5387
+
+spawn  Galsia
+map    5
+	coords  -100 250
+	at  5387
+
+
+
+
+
+
+
+
+
+
+
+
+

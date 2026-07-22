@@ -1,0 +1,25 @@
+# Do not forget to name your character.
+# Health is optional.
+
+name	Duto
+health	1
+type	obstacle
+gfxshadow	1
+#icon	data/chars/misc/charicon.gif
+diesound		data/sounds/Iron.wav
+noatflash	1
+
+anim idle
+	loop	0
+	delay	100
+	offset	33 54
+	bbox	5 5 42 47
+	frame	data/chars/Objetos/Duto00.gif
+
+
+anim fall
+	loop	1
+	delay	1000
+	offset	26 61
+	frame	data/chars/Objetos/Duto01.gif
+

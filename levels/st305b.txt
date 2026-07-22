@@ -1,0 +1,216 @@
+music		data/Bgs/st305/Lv305a.bor
+bossmusic	data/music/boss1.bor
+scrollspeed 0.5#1
+stagenumber 5
+background	data/bgs/st305/back00.gif	0.6 1 0 0 0 0 -1 1 0
+panel		data/bgs/st305/pn05.gif		none	none
+frontpanel      data/bgs/st05/Front02.gif
+cameratype 1
+cameraoffset 0 -30
+#levelscript @script
+#void main() {
+#	changelevelproperty("camerazoffset", 0);
+#	changelevelproperty("cameraxoffset", 0);
+#}
+#@end_script
+#settime         90
+notime          1
+noslow          1
+order		a
+spawn1  	50 20 50
+spawn2  	55 35 50 
+spawn3  	60 50 50
+
+
+wall		800 281 0 154 200 200 76 10000
+
+spawn  LuzB05
+flip   1
+	coords 0 0
+	at  0
+
+
+spawn  Bau
+Item   Gold
+	coords  150  220
+	at  0
+
+spawn  Cash
+	coords  200  220
+	at  0
+
+spawn  Bau
+Item   Gold
+	coords  185  240
+	at  0
+
+spawn  Bau
+Item   Gold
+	coords  240  220
+	at  0
+
+
+spawn  Tiger
+map    1
+       health 100
+	coords  250  220 150
+	at  150
+
+spawn  Kusanagi_
+       health 80
+	coords  480  200
+	at  150
+
+
+
+
+wait
+at 200
+
+
+Group 4  4
+at 200
+
+
+
+
+spawn  Kusanagi
+map    2
+       health 100
+	coords  500  240 150
+	at  200
+
+spawn  Kusanagi
+       health 80
+	coords  150  260 150
+	at  200
+
+
+spawn  Tiger
+       health 80
+	coords  -100  220 150
+	at  200
+
+
+spawn  Tiger
+       health 80
+	coords  260  260 150
+	at  200
+
+spawn  Tiger
+map    2
+       health 120
+	coords  500  240 150
+	at  200
+
+
+
+
+spawn  Kunai
+	coords  -100  240 140
+	at  200
+
+spawn  Kusanagi
+map    2
+       health 100
+	coords  -100  240 150
+	at  200
+
+
+
+spawn  Tiger
+       health 80
+	coords  500  260 150
+	at  200
+
+spawn  Tiger
+map    2
+       health 120
+	coords  250  240 150
+	at  200
+
+
+spawn  Bau
+Item   Chicken
+	coords  550  220
+	at  201
+
+spawn   Bau
+2pItem  Chicken
+	coords  500  260
+	at  201
+
+spawn  Tiger_
+map    3
+       health 150
+	coords  480  220
+	at  335
+
+spawn  Tiger_
+map    3
+       health 150
+	coords  480  260
+	at  350
+
+spawn  Kusanagi
+map    4
+       health 150
+	coords  -100  220 150
+	at  350
+
+spawn  Kusanagi
+map    4
+       health 150
+	coords  -100  260 150
+	at  350
+
+spawn  Tiger
+       health 80
+	coords  -100  260 150
+	at  350
+
+spawn  Tiger
+map    2
+       health 120
+	coords  -100  240 150
+	at  350
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

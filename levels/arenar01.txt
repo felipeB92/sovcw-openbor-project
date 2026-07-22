@@ -1,0 +1,290 @@
+music		data/music/01a.bor
+bossmusic	data/music/01a.bor
+scrollspeed 0.5#1
+stagenumber 1
+background	data/bgs/Arena/Back00.gif	#0.85 1 0 0 0 0 -1 1 0 0 0 0 0 0 0
+#bglayer		data/bgs/01/MAr01.gif		0.5 1 0 0 0 0 -1 1 1 0 1 3 10 0.3
+#water		data/bgs/01/Mar01.gif		0.5
+#fglayer         data/bgs/Front.gif              0 -0.4 0 0 0 0 1 -1 1 1 0
+panel		data/bgs/Arena/pn01.gif		none	none
+frontpanel	data/bgs/Arena/Front01.gif		
+cameratype 1
+cameraoffset 0 -30
+#levelscript @script
+#void main() {
+#	changelevelproperty("camerazoffset", 0);
+#	changelevelproperty("cameraxoffset", 0);
+#}
+#@end_script
+#settime         90
+notime          1
+noslow          1
+order		a
+spawn1  	50 20 50
+spawn2  	55 35 50 
+spawn3  	60 50 50
+
+
+spawn  ArenaB
+Flip 1
+	coords  0 0
+	at  0
+
+Group 3 3
+at 0
+
+spawn  	Jake
+MAP    1
+health 100
+	coords  600 210 1
+	at  0
+
+spawn  Zoi
+health 100
+	coords  330 190 1
+	at  0
+
+spawn  Mina
+health 100
+	coords  350 200 1
+	at  0
+
+spawn  	Jake
+MAP    2
+health 100
+	coords  -100 210 1
+	at  0
+
+spawn  Bil
+health 100
+	coords  600 190 1
+	at  0
+
+Group 1 1
+at 0
+
+spawn  Mike
+Item pao
+health 250
+	coords  700 200 1
+	at  0
+
+Group 3 3
+at 0
+
+spawn  	Ninja
+MAP    1
+health 100
+	coords  -100 210 1
+	at  0
+
+spawn  Gilson
+health 100
+	coords  600 190 1
+	at  0
+
+spawn  Jay
+health 100
+	coords  -100 200 1
+	at  0
+
+spawn  	Shen
+MAP    2
+health 100
+	coords  600 210 1
+	at  0
+
+spawn  Kasumi
+health 100
+	coords  -100 190 1
+	at  0
+
+
+Group 1 1
+at 0
+
+spawn  Hattori
+Item   APPLE
+health 250
+	coords  700 200 1
+	at  0
+
+Group 3 3
+at 0
+
+spawn  	Biker
+MAP    1
+health 100
+	coords  -100 210 1
+	at  0
+
+spawn  Bucky
+health 100
+	coords  600 190 1
+	at  0
+
+spawn  Charlie
+health 100
+	coords  -100 200 1
+	at  0
+
+spawn  	Edy
+MAP    2
+health 100
+	coords  600 210 1
+	at  0
+
+spawn  Sara
+health 100
+	coords  -100 190 1
+	at  0
+
+Group 1 1
+at 0
+
+spawn  MAx
+Item Carne
+health 250
+	coords  300 200 1
+	at  0
+
+Group 3 3
+at 0
+
+spawn  	Lisa
+MAP    1
+health 100
+	coords  -100 210 1
+	at  0
+
+spawn  Nita
+Map    1
+health 100
+	coords  600 190 1
+	at  0
+
+spawn  Betty
+health 100
+	coords  -100 200 1
+	at  0
+
+spawn  	Montanha
+MAP    2
+health 100
+	coords  600 210 1
+	at  0
+
+spawn  Jake
+map    4
+health 100
+	coords  -100 190 1
+	at  0
+
+Group 2 2
+at 1
+
+spawn  Megan
+Item  Chocolate
+health 250
+	coords  -100 200 1
+	at  1
+
+spawn  Tracy
+Item  refri
+health 250
+	coords  700 200 1
+	at  1
+
+Group 3 3
+at 1
+
+spawn  	Shen
+MAP    1
+health 100
+	coords  -100 210 1
+	at  1
+
+spawn  Montanha_
+Map    1
+health 100
+	coords  600 190 1
+	at  1
+
+spawn  Montanha
+health 100
+	coords  -100 200 1
+	at  1
+
+spawn  	Biker
+MAP    2
+health 100
+	coords  600 210 1
+	at  1
+
+spawn  Sara
+map    3
+health 100
+	coords  -100 190 1
+	at  1
+
+Group 1 1
+at 1
+
+spawn  H_jr
+Item   Apple
+health 250
+	coords  -100 200 1
+	at  1
+
+
+Group 4 4
+at 1
+
+spawn  	Montanha
+MAP    1
+health 100
+	coords  -100 210 1
+	at  1
+
+spawn  Montanha_
+Map    2
+health 100
+	coords  600 190 1
+	at  1
+
+spawn  Montanha
+health 100
+	coords  -100 200 1
+	at  1
+
+spawn  	Montanha_
+MAP    3
+health 100
+	coords  600 210 1
+	at  1
+
+spawn  Montanha
+map    4
+health 100
+	coords  -100 190 1
+	at  1
+
+Group 1 1
+at 1
+
+spawn  Hunter_u12
+health 250
+	coords  -100 200 1
+	at  1
+
+
+
+
+
+
+
+
+
+
+
+

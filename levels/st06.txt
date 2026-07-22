@@ -1,0 +1,504 @@
+music		data/bgs/St06/Lv06.bor
+bossmusic	data/music/boss1.bor
+scrollspeed 0.5#1
+stagenumber 6
+background	data/bgs/st06/Back01.gif
+panel		data/bgs/St06/Pn01.gif
+frontpanel      data/bgs/St06/Front01.gif
+#bglayer           data/bgs/11lvl/liberty_statue.gif 0.3 0.1   60    -40 180 1 1 1 1  0
+#bglayer           data/bgs/11lvl/0x.gif 0.5 0.1   60    -40 180 1 1 1 1  0
+#fglayer         data/bgs/11lvl/fondo3.gif 1500 -0.1 0 0 0 0 0 1 1 1
+#fglayer         data/bgs/11lvl/sun.gif 500 0 0 0 -5 1 1 1 1 1 1
+#fglayer         data/bgs/11lvl/light2.gif 2500 0 0 0 -5 1 1 1 1 1 1
+cameratype 1
+cameraoffset 0 -30
+#levelscript @script
+#void main() {
+#	changelevelproperty("camerazoffset", 0);
+#	changelevelproperty("cameraxoffset", 0);
+#}
+#@end_script
+#settime         90
+notime          1
+noslow          1
+order		a
+spawn1  	190 20 50
+spawn2  	210 35 50
+spawn3  	220 50 50
+
+Wall  1021  199  -66  0  96  102  45  155
+Wall  1830  201  -66  0  96  102  45  155
+Wall  4034  199  -66  0  273  269  45  155
+Wall  3773  202  -66  0  96  102  45  155
+Wall  2954  203  -66  0  96  102  45  155
+
+
+
+
+spawn  Esteira01
+flip   1
+	coords  244 211
+	at  0
+
+spawn  Esteira01
+flip   1
+	coords  169 255
+	at  0
+
+
+
+
+spawn  Box
+Item   Gold
+	coords  387  210 1
+	at  0
+
+spawn  Galsia
+health 90
+map    4
+	coords  540  191
+	at  100
+
+spawn  Galsia
+health 90
+map    4
+	coords  -50  230 2
+	at  100
+
+spawn  Galsia
+health 90
+map    4
+	coords  540  191
+	at  150
+
+wait 
+at 200
+
+Group 4 4
+at 200
+
+
+
+
+spawn  Galsia
+health 90
+map    4
+	coords  -100  230 2
+	at  200
+
+spawn  Signal
+map    2
+	coords  540  191
+	at  200
+
+spawn  Nora
+map    4
+	coords  540  250
+	at  200
+
+spawn  Knife
+	coords  500  230
+	at  200
+
+spawn  Galsia
+health 90
+map    4
+	coords  600  230
+	at  200
+
+spawn  Galsia
+health 50
+	coords  -100  200 2
+	at  200
+
+Group 9 9
+at 201
+
+spawn  Prensa01
+Flip   1
+	coords  598  282
+	at  400
+
+spawn  Prensa02
+Flip  1
+	coords  598  258
+	at  400
+
+spawn  Knife
+	coords  500  230
+	at  400
+
+spawn  Galsia
+health 90
+map    4
+	coords  600  230
+	at  400
+
+spawn  Galsia
+health 90
+map    4
+	coords  -50  230
+	at  500
+
+
+
+spawn  Box
+Item   apple
+	coords  580  230
+	at  720
+
+spawn  Signal
+map    2
+	coords  -50  230
+	at  800
+
+spawn  Galsia
+health 90
+map    4
+	coords  500  230
+	at  900
+
+
+spawn  Esteira01
+flip   1
+	coords  500 256
+	at  932
+
+spawn  Signal
+map    2
+	coords  500  200
+	at  950
+
+spawn  Esteira01
+flip   1
+	coords  500 212
+	at  1005
+
+wait 
+at 1100
+
+Group 4 4
+at 1100
+
+spawn  Galsia
+health 90
+map    4
+	coords  500  230
+	at  1100
+
+wait 
+at 1101
+
+Group 2 2
+at 1101
+
+
+spawn  Bob
+map    2
+	coords  -100  230 1
+	at  1101
+
+spawn  Bob
+alias  Bongo
+map    1
+	coords  500  265 1
+	at  1101
+
+
+Group 9 9
+at 1102
+
+spawn  Box
+Item   Chicken
+	coords  500  230 1
+	at  1189
+
+spawn  Prensa01
+Flip   1
+	coords  598  282
+	at  1210
+
+spawn  Prensa02
+Flip  1
+	coords  598  258
+	at  1210
+
+
+spawn  Galsia
+health 90
+map    4
+	coords  -50  230
+	at  1300
+
+spawn  Knife
+	coords  500  200
+	at  1700
+
+spawn  Galsia
+health 90
+map    4
+	coords  600  230
+	at  1700
+
+spawn  Galsia
+health 90
+map    4
+	coords  600  220
+	at  1750
+
+spawn  Galsia
+health 90
+map    4
+	coords  -50  230
+	at  1750
+
+wait 
+at 2000
+
+Group 4 4
+at 2000
+
+
+spawn  Signal
+	coords  -100  200
+	at  2000
+
+spawn  Haku_oh
+	coords  500  230
+	at  2000
+
+spawn  Nora
+map    4
+	coords  500 220
+	at  2001
+
+spawn  Nora
+map    4
+	coords  600 250
+	at  2001
+
+
+spawn  Box
+Item   Kunai
+	coords  500  200 1
+	at  2115
+
+spawn  Nora
+map    4
+	coords  600 250
+	at  2200
+
+spawn  Prensa01
+Flip   1
+	coords  598  282
+	at  2331
+
+spawn  Prensa02
+Flip  1
+	coords  598  258
+	at  2331
+
+spawn  Box
+	coords  500  250 1
+	at  2447
+
+spawn  Esteira01
+flip   1
+	coords  500 256
+	at  2788
+
+
+
+wait 
+at 2800
+
+Group 4 4
+at 2800
+
+spawn  Nora
+map    4
+	coords  500 250
+	at  2800
+
+spawn  Galsia
+health 90
+map    4
+	coords  650  230
+	at  2800
+
+spawn  Galsia
+health 90
+map    4
+	coords  600  250
+	at  2800
+
+spawn  Galsia
+health 50
+map    2
+	coords  600  200
+	at  2800
+
+spawn  Nora
+	coords  500 250
+	at  2800
+
+spawn  Haku_oh
+map    1
+	coords  500 250
+	at  2801
+
+
+spawn  Box
+item   Chicken
+	coords  500  210 1
+	at  2801
+
+spawn  Box
+item   1up
+	coords  600  210 1
+	at  2801
+
+
+spawn  Box
+item   Pipe
+	coords  650  260 2
+	at  2801
+
+spawn  Esteira01
+flip   1
+	coords  500 212
+	at  2860
+
+spawn  Prensa01
+Flip   1
+	coords  598  282
+	at  3146
+
+spawn  Prensa02
+Flip  1
+	coords  598  258
+	at  3146
+
+
+wait 
+at 3200
+
+Group 4 4
+at 3200
+
+
+spawn  Nora
+map    4
+	coords  -100 200
+	at  3200
+
+spawn  Nora
+map    4
+	coords  600 250
+	at  3200
+
+
+
+spawn  Knife
+	coords  -100  250
+	at  3200
+
+
+spawn  Galsia
+health 90
+map    4
+	coords  -150  250 5
+	at  3200
+
+spawn  Galsia
+health 50
+map    2
+	coords  -150  250 6
+	at  3200
+
+Group 9 9
+at 3201
+
+spawn  Prensa01
+Flip   1
+	coords  598  282
+	at  3426
+
+spawn  Prensa02
+Flip  1
+	coords  598  258
+	at  3426
+
+
+
+spawn  Prensa01
+Flip   1
+	coords  598  282
+	at  3579
+
+spawn  Prensa02
+Flip  1
+	coords  598  258
+	at  3579
+
+spawn  signal
+map    2
+	coords  500  250
+	at  3800
+
+spawn  Box
+Item   Chicken
+	coords  550 210 1
+	at  4000
+
+spawn  Haku_oh
+map    1
+	coords  -50 250
+	at  4000
+
+spawn  signal
+map    2
+	coords  500  250
+	at  4000
+
+wait 
+at 4300
+
+Group 4 4
+at 4300
+
+spawn  Galsia
+health 90
+map    4
+	coords  -150  250
+	at  4300
+
+spawn  Galsia
+health 50
+	coords  550  200
+	at  4300
+
+Group 4 4
+at 4301
+
+spawn  fred
+boss   1
+alias  Bounge
+map    1
+	coords  -150  250
+	at  4300
+
+spawn  fred
+boss   1
+	coords  550  200
+	at  4300
+
+
+
+
+
+
+
+
+
+

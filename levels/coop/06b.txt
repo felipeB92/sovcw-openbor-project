@@ -1,0 +1,485 @@
+music		data/music/07a.bor
+bossmusic	data/music/BossR.bor
+scrollspeed 0.5#1
+#direction Left
+stagenumber 7
+background	data/bgs/06/baCK00.gif  	0.650 1 0 0 0 0 -1 1 1
+bglayer		data/bgs/06/bAck00a.gif 	0.600 1 0 0 0 0 -1 1 1
+bglayer		data/bgs/06/bAck00b.gif 	0.550 1 0 0 0 0 -1 1 1
+bglayer		data/bgs/06/BAck00c.gif	        0.500 1 0 0 0 0 -1 1 1
+bglayer 	data/bgs/06/back00d.gif	        0.4 1 0 0 0 0 -1 1 1 0 1 3 10 0.3
+#water		data/bgs/01/Mar01.gif		0.5
+#fglayer         data/bgs/06/Luz00.gif           1 1 0 0 0 0 -1 1 1 1 1
+panel		data/bgs/06/pn01.gif		none	none
+#frontpanel	data/bgs/06/Front00b.gif		
+cameratype 1
+cameraoffset 0 -30
+#levelscript @script
+#void main() {
+#	changelevelproperty("camerazoffset", 0);
+#	changelevelproperty("cameraxoffset", 0);
+#}
+#@end_script
+settime         99
+notime          0
+noslow          1
+order		a
+spawn1  	50 20 50
+spawn2  	55 35 50 
+spawn3  	60 50 50
+
+light		128 -128
+at			0
+
+
+spawn  ActP
+	coords  250 250
+	at  0
+
+spawn  Box
+Item Apple
+	coords  145 200
+	at  0
+
+spawn  Lata
+Item Cash
+	coords  200 200
+	at  0
+
+spawn  Lata
+Item Apple
+	coords  250 200
+	at  0
+
+wait
+at       100
+
+group 4 4
+at  100
+
+spawn  Ruy
+Alias Roy
+MAp    4
+health 100
+	coords  -100 260
+	at  100
+
+spawn  Ruy
+Map 1
+health 100
+	coords  -100 220
+	at  100
+
+spawn  Ruy
+Alias Kenny
+Map 2
+health 100
+	coords  600 260
+	at  100
+
+spawn  Ruy
+Alias B.Belt
+Map 3
+health 150
+	coords  550 220
+	at  100
+
+spawn  ActE
+	coords  250 240
+	at  100
+
+spawn  ActN
+	coords  250 250
+	at  101
+
+wait
+at       150
+
+group 4 4
+at  150
+
+spawn  P1__
+MAp    1
+health 100
+Flip 1
+	coords  150 260
+	at  150
+
+spawn  P1__
+health 100
+Flip 1
+	coords  170 220
+	at  150
+
+spawn  PArticle__
+Map 1
+health 100
+	coords  400 260
+	at  150
+
+spawn  Particle__
+health 100
+	coords  380 220
+	at  150
+
+spawn  ActE
+	coords  250 240
+	at  150
+
+
+wait
+at       151
+
+group 4 4
+at  151
+
+spawn  Biggar
+MAp 1
+health 200
+	coords  600 240
+	at  151
+
+spawn  Crakito
+health 50
+	coords  700 220
+	at  151
+
+spawn  Balu
+health 50
+	coords  -200 220
+	at  151
+
+spawn  Diga
+health 50
+	coords  500 220
+	at  151
+
+
+spawn  Thug
+health 50
+	coords  -200 220
+	at  151
+
+
+spawn  Crakito
+Map 1
+health 50
+	coords  500 220
+	at  151
+
+spawn  Balu
+Map 1
+health 50
+	coords  -200 220
+	at  151
+
+spawn  Diga
+Map 1
+health 50
+	coords  500 220
+	at  151
+
+
+spawn  Thug
+Map 1
+health 50
+	coords  -200 220
+	at  151
+
+spawn  ActE
+	coords  250 240
+	at  151
+
+spawn  ActN
+	coords  250 250
+	at  152
+
+
+spawn  Box03
+Item Apple
+	coords  550 220
+	at  152
+
+
+spawn  Box03
+Item  Pipe
+	coords  600 230
+	at  152
+
+spawn  Box03
+Item   Chicken
+	coords  580 260
+	at  152
+
+spawn  ActE
+	coords  250 240
+	at  152
+
+spawn  Macleod
+Map 1
+health 70
+	coords  600 220
+	at  200
+
+spawn  Maclean
+Map 1
+health 70
+	coords  600 260
+	at  300
+
+spawn  MacBride
+Map 1
+health 70
+	coords  600 240
+	at  300
+
+wait
+at       500
+
+group 4 4
+at  500
+
+
+spawn  MacLeod
+Map 2
+health 70
+	coords  600 240
+	at  500
+
+spawn  Agamenon
+Map 1
+health 80
+	coords  -200 220
+	at  500
+
+spawn  Agamenon
+Map 2
+health 80
+	coords  500 260
+	at  500
+
+
+spawn  Agamenon
+Map 3
+health 80
+	coords  -200 260
+	at  500
+
+spawn  Agamenon
+Map 4
+health 80
+	coords  -100 200
+	at  500
+
+spawn  ActE
+	coords  250 240
+	at  500
+
+wait
+at       501
+
+group 4 4
+at  501
+
+
+spawn  Bongo
+Map 3
+health 175
+	coords  -100 260
+	at  501
+
+spawn  Bongo
+Map 4
+health 175
+	coords  500 200
+	at  501
+
+
+spawn  Bigben
+Map 4
+health 75
+	coords  500 200
+	at  501
+
+spawn  Bigben__
+Map 3
+health 75
+	coords  250 200 300
+	at  501
+
+spawn  Bigben
+Map 4
+health 75
+	coords  -100 200
+	at  501
+
+spawn  ActE
+	coords  250 240
+	at  501
+
+spawn  ActN
+	coords  250 250
+	at  502
+
+
+spawn  Lata03
+Item Apple
+	coords  550 220
+	at  502
+
+
+spawn  Lata03
+Item  Pipe
+	coords  540 235
+	at  502
+
+spawn  Lata03
+Item  Knife
+	coords  600 230
+	at  502
+
+spawn  LAta03
+Item   Apple
+	coords  580 260
+	at  502
+
+spawn  RAven
+Map 2
+health 70
+	coords  600 240
+	at  550
+
+spawn  Fog
+Map 2
+health 70
+	coords  600 200
+	at  650
+
+wait
+at       700
+
+group 4 4
+at  700
+
+spawn  Howk
+Map 1
+health 100
+	coords  -200 220
+	at  700
+
+spawn  Howk
+Map 2
+health 100
+	coords  500 200
+	at  700
+
+
+spawn  Howk
+Map 3
+health 100
+	coords  -200 260
+	at  700
+
+spawn  Howk
+Map 4
+health 100
+	coords  -100 200
+	at  700
+
+spawn  ActE
+	coords  250 240
+	at  700
+
+spawn  ActN
+	coords  250 250
+	at  701
+
+spawn  Box02
+Item   Chicken
+	coords  710 250
+	at  701
+
+spawn  Joe
+Map 2
+health 200
+	coords  600 200
+	at  850
+
+group 4 4
+at  900
+
+
+spawn  Jhonny
+Map 1
+health 70
+	coords  -200 220
+	at  900
+
+spawn  Ralf
+Map 2
+health 60
+	coords  500 200
+	at  900
+
+
+spawn  Raven
+Map 3
+health 70
+	coords  -200 260
+	at  900
+
+spawn  Signal
+Map 4
+health 70
+	coords  -100 200
+	at  900
+
+
+spawn  Donovan
+Map 1
+health 70
+	coords  -200 220
+	at  900
+
+spawn  Knife
+	coords  500 210
+	at  900
+
+spawn  Galsia
+Map 2
+health 60
+	coords  550 200
+	at  900
+
+
+spawn  Fog
+Map 3
+health 70
+	coords  -200 260
+	at  900
+
+spawn  Vice
+Map 4
+health 70
+	coords  -100 200
+	at  900
+
+spawn  Slum
+Map 4
+health 70
+	coords  -100 200
+	at  900
+
+spawn  ActE
+	coords  250 240
+	at  900
+
+
+
+
+
+
+
+
+
+

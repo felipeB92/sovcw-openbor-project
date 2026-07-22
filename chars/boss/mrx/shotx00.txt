@@ -1,0 +1,27 @@
+name			ShotX00
+type			none
+subtype			project
+health			1
+nolife			1
+lifespan		2
+candamage			Player npc obstacle
+remove			1
+shadow			0
+antigravity		100
+onblockwscript	data/scripts/bounceF.c
+#animationscript 	data/scripts/ani0020.h
+animationscript		data/scripts/drago.c
+ondrawscript 		data/scripts/Enemy_ondrawscript.c
+
+anim idle
+	loop	0
+	delay	1
+	offset	-8 91
+	hitflash Fraco
+        hitfx	data/sounds/golpes/fraco.wav
+	sound	data/sounds/Shot.wav
+	frame	data/chars/Boss/mrx/shot/shot00.gif
+	attack1 20 25 8 3 7 0 1 0 0 12
+        @cmd dasher 3 0 0
+	frame	data/chars/Boss/mrx/shot/shot00.gif
+

@@ -1,0 +1,19 @@
+name			NAda #THROWNED
+type			none
+nolife			1
+lifespan		4
+remove			1
+gfxshadow		1 1
+noatflash 		1
+flash			noflash
+
+anim idle
+	loop	1
+	delay	1
+	offset	-25 27
+	bbox 	16 25 19 3
+	hitfx	data/sounds/Cutter.wav
+	frame	data/chars/armas/empty.gif
+	@cmd killentity getlocalvar("self")
+	frame	data/chars/armas/empty.gif
+

@@ -1,0 +1,515 @@
+name	Faust
+health	300
+mp 10
+mprate 1
+#secret 1
+blockodds 1
+Noblink 1
+nodieblink 3
+Falldie 2
+Grabdistance 18
+riseinv				0.4 1
+speed	10
+type	Enemy
+gfxshadow	1
+candamage			Player npc obstacle
+JUMPHEIGHT 4
+hostile Player NPC
+#antigrab 2
+atchain    1 2 3 4 5
+weapons Faust_Knife Faust_Sword Faust_pipe Faust_Kunai
+icon	data/chars/Boss/Faust/icon.gif 1
+diesound data/Sounds/DieG.wav
+running	20	3	2	1	1
+onblockwscript	data/scripts/bounceF.c
+#animationscript 	data/scripts/ani0020.h
+animationscript		data/scripts/drago.c
+ondrawscript 		data/scripts/Enemy_ondrawscript.c
+
+Load ShotX00
+Load ShotX01
+Load ShotX02
+Load ShotX03
+Load ShotX04
+Load ShotX05
+Load ShotX06
+Load FaustP01
+
+remap data/chars/Boss/Faust/IDle00.gif data/chars/Boss/Faust/MAp01.gif
+remap data/chars/Boss/Faust/IDle00.gif data/chars/Boss/Faust/MAp02.gif
+remap data/chars/Boss/Faust/IDle00.gif data/chars/Boss/Faust/MAp03.gif
+remap data/chars/Boss/Faust/IDle00.gif data/chars/Boss/Faust/MAp04.gif
+
+
+anim Pain5
+	loop	0
+	delay	80
+	offset	140 200
+	bbox	120 109 41 92
+	frame   data/chars/Boss/Faust/idle00.gif
+
+anim Death
+	loop	0
+	delay	25
+	offset	139 174
+	frame   data/chars/Boss/Faust/Rise02.gif
+	frame   data/chars/Boss/Faust/Rise01.gif
+	frame   data/chars/Boss/Faust/Rise00.gif
+
+anim idle
+	loop	0
+	delay	80
+	offset	140 200
+	bbox	120 109 41 92
+	frame   data/chars/Boss/Faust/idle00.gif
+	@cmd	depost 0
+	@cmd	throw 1 0.7 0.7 1 0 -1
+	@cmd	clearL
+	delay	8
+	frame   data/chars/Boss/Faust/IDle00.gif
+
+
+
+anim walk
+	loop	1
+	delay	16
+	offset	140 200
+	bbox	134 110 31 80
+	frame	data/chars/Boss/Faust/walk01.gif
+	frame	data/chars/Boss/Faust/walk02.gif
+	frame   data/chars/Boss/Faust/walk03.gif
+	frame   data/chars/Boss/Faust/walk02.gif
+
+
+anim jump
+	loop	0
+	delay	15
+	offset	140 200
+	bbox	115 119 55 69
+	frame	data/chars/Boss/Faust/Jump00.gif
+	frame	data/chars/Boss/Faust/Jump00.gif
+	frame	data/chars/Boss/Faust/Jump00.gif
+
+anim jumpLanD
+	loop	0
+	delay	15
+	offset	134 175
+	bbox	114 93 55 78
+		move  0
+	frame	data/chars/Boss/Faust/Land.gif
+
+
+
+anim attack1
+	loop	0
+	delay	12
+	offset	140 200
+        Range 0 60
+        RangeZ -10 10
+        hitflash	Fraco
+	bbox	126 107 44 89
+		Attack1  0
+        hitfx	data/sounds/golpes/Fraco.wav
+	frame	data/chars/Boss/Faust/a100.gif
+		delay  6
+		bbox  0
+        Sound	data/sounds/golpes/Soco.wav
+		attack1  143  123  64  36  10  0  0  0  0  15
+	frame	data/chars/Boss/Faust/a101.gif
+		delay  5
+	frame	data/chars/Boss/Faust/a102.gif
+	frame	data/chars/Boss/Faust/a103.gif
+		Attack1  0
+	frame	data/chars/Boss/Faust/a104.gif
+
+anim attack2
+	loop	0
+	delay	12
+	offset	140 200
+        Range 0 60
+        RangeZ -10 10
+        hitflash	Fraco
+	bbox	126 107 44 89
+		Attack1  0
+        hitfx	data/sounds/golpes/Fraco.wav
+	frame	data/chars/Boss/Faust/a200.gif
+		delay  6
+		bbox  0
+        Sound	data/sounds/golpes/Soco.wav
+		attack1  143  123  64  36  15  1  0  0  0  15
+	frame	data/chars/Boss/Faust/a201.gif
+		delay  5
+		attack2  141  140  62  30  15  1  0  0  0  15
+	frame	data/chars/Boss/Faust/a202.gif
+		delay  25
+	frame	data/chars/Boss/Faust/a203.gif
+		Attack1  0
+	frame	data/chars/Boss/Faust/a202.gif
+
+
+
+
+anim Block
+	loop	0
+	delay	10
+	offset	140 200
+		Attack1  0
+        hitfx	data/sounds/golpes/Grab.wav
+		move  -3
+	frame	data/chars/Boss/Faust/Block.gif
+	frame  data/chars/Boss/Faust/Block.gif
+	frame  data/chars/Boss/Faust/Block.gif
+
+
+anim Freespecial
+	loop	0
+	delay	12
+	offset	140 200
+        Range 100 200
+        RangeZ -5 5
+        hitflash	Forte
+		Attack1  0
+        Sound	data/sounds/golpes/Soco.wav
+	Sound  data/chars/Boss/Faust/a2.wav
+        hitfx	data/sounds/golpes/Forte.wav
+		bbox  135  114  31  77
+	frame	data/chars/Boss/Faust/a400.gif
+		delay  25
+	frame	data/chars/Boss/Faust/a401.gif
+		delay  12
+	frame	data/chars/Boss/Faust/a402.gif
+		delay  49
+	@cmd  spawn01  "FaustP01"  0  0  1
+		attack7  156  114  140  36  15  1  0  0  0  15
+		bbox  0
+	frame	data/chars/Boss/Faust/a403.gif
+		delay  10
+		bbox  126  102  57  98
+		Attack1  0
+	frame  data/chars/Boss/Faust/a403.gif
+
+
+
+anim Freespecial2
+	loop	0
+	delay	8
+        energycost 10 1
+        MpOnly 1
+	offset	140 200
+        Range 60 150
+        RangeZ 1 30
+	frame	data/chars/Boss/Faust/Run00.gif
+	frame	data/chars/Boss/Faust/Run01.gif
+        @cmd dasher 2 0 -2
+	frame	data/chars/Boss/Faust/Run02.gif
+	frame	data/chars/Boss/Faust/Run03.gif
+	frame	data/chars/Boss/Faust/Run04.gif
+	frame	data/chars/Boss/Faust/Run02.gif
+	frame	data/chars/Boss/Faust/Run03.gif
+	frame	data/chars/Boss/Faust/Run04.gif
+        @cmd dasher 0 0 0
+	frame	data/chars/Boss/Faust/Run01.gif
+	frame	data/chars/Boss/Faust/Run00.gif
+		Attack1  0
+        hitfx	data/sounds/golpes/Forte.wav
+	offset	140 200
+	frame	data/chars/Boss/Faust/Shot00.gif
+	@cmd  spawn01  "ShotX06"  20  60  5
+	@cmd  spawn01  "ShotX03"  0  0  1
+	frame	data/chars/Boss/Faust/Shot01.gif
+	frame	data/chars/Boss/Faust/Shot00.gif
+	@cmd  spawn01  "ShotX06"  0  60  8
+	@cmd  spawn01  "ShotX02"  0  0  1
+	frame	data/chars/Boss/Faust/Shot02.gif
+	frame	data/chars/Boss/Faust/Shot03.gif
+	@cmd  spawn01  "ShotX06"  -20  60  5
+	@cmd  spawn01  "ShotX04"  0  0  1
+		offset  157  200
+	frame	data/chars/Boss/Faust/Shot04.gif
+	frame	data/chars/Boss/Faust/Shot05.gif
+	@cmd  spawn01  "ShotX06"  0  60  8
+	@cmd  spawn01  "ShotX02"  0  0  1
+		offset  140  200
+	frame	data/chars/Boss/Faust/Shot02.gif
+	frame	data/chars/Boss/Faust/Shot03.gif
+	@cmd  spawn01  "ShotX06"  20  60  5
+	@cmd  spawn01  "ShotX03"  0  0  1
+	frame	data/chars/Boss/Faust/Shot00.gif
+	frame	data/chars/Boss/Faust/Shot01.gif
+	frame	data/chars/Boss/Faust/Run00.gif
+	frame	data/chars/Boss/Faust/Run01.gif
+        @cmd dasher 2 0 0
+	frame	data/chars/Boss/Faust/Run02.gif
+	frame	data/chars/Boss/Faust/Run03.gif
+	frame	data/chars/Boss/Faust/Run04.gif
+	frame	data/chars/Boss/Faust/Run02.gif
+	frame	data/chars/Boss/Faust/Run03.gif
+	frame	data/chars/Boss/Faust/Run04.gif
+        @cmd dasher 0 0 0
+	frame	data/chars/Boss/Faust/Run01.gif
+	frame	data/chars/Boss/Faust/Run00.gif
+		Attack1  0
+        hitfx	data/sounds/golpes/Forte.wav
+	offset	140 200
+	frame	data/chars/Boss/Faust/Shot00.gif
+	@cmd  spawn01  "ShotX06"  20  60  5
+	@cmd  spawn01  "ShotX03"  0  0  1
+	frame	data/chars/Boss/Faust/Shot01.gif
+	frame	data/chars/Boss/Faust/Shot00.gif
+	@cmd  spawn01  "ShotX06"  0  60  8
+	@cmd  spawn01  "ShotX02"  0  0  1
+	frame	data/chars/Boss/Faust/Shot02.gif
+	frame	data/chars/Boss/Faust/Shot03.gif
+	@cmd  spawn01  "ShotX06"  -20  60  5
+	@cmd  spawn01  "ShotX04"  0  0  1
+		offset  157  200
+	frame	data/chars/Boss/Faust/Shot04.gif
+	frame	data/chars/Boss/Faust/Shot05.gif
+	@cmd  spawn01  "ShotX06"  0  60  8
+	@cmd  spawn01  "ShotX02"  0  0  1
+		offset  140  200
+	frame	data/chars/Boss/Faust/Shot02.gif
+	frame	data/chars/Boss/Faust/Shot03.gif
+	@cmd  spawn01  "ShotX06"  20  60  5
+	@cmd  spawn01  "ShotX03"  0  0  1
+	frame	data/chars/Boss/Faust/Shot00.gif
+	frame	data/chars/Boss/Faust/Shot01.gif
+        Sound	data/sounds/Reload.wav
+	delay	30
+		bbox  109  99  59  94
+	frame	data/chars/Boss/Faust/Reload.gif
+	frame	data/chars/Boss/Faust/Reload.gif
+	frame  data/chars/Boss/Faust/Reload.gif
+
+
+
+
+
+anim Freespecial4
+	loop	0
+	delay	12
+	offset	140 200
+        Range 60 100
+        RangeZ -10 10
+        Followcond 1
+        followanim 1
+        hitflash	Fraco
+	bbox	126 107 44 89
+		Attack1  0
+        hitfx	data/sounds/golpes/Fraco.wav
+        @cmd dasher 2 0 0
+	frame	data/chars/Boss/Faust/a300.gif
+		attack1  148  105  48  98  5
+	frame	data/chars/Boss/Faust/a301.gif
+	frame	data/chars/Boss/Faust/a302.gif
+	frame	data/chars/Boss/Faust/a303.gif
+        @cmd dasher 0 0 0
+	frame	data/chars/Boss/Faust/a302.gif
+	frame	data/chars/Boss/Faust/a301.gif
+
+anim Follow1
+	loop	0
+	delay	12
+	offset	156 200
+        hitflash	Fraco
+	bbox	126 107 44 89
+		Attack1  0
+        hitfx	data/sounds/golpes/Fraco.wav
+        @cmd dasher 0 0 0
+	frame	data/chars/Boss/Faust/a300.gif
+	frame	data/chars/Boss/Faust/a301.gif
+		attack2  152  83  41  119  15  1  0  0  0  15
+	frame	data/chars/Boss/Faust/a302.gif
+	frame	data/chars/Boss/Faust/a303.gif
+	frame	data/chars/Boss/Faust/a302.gif
+		Attack1  0
+	frame	data/chars/Boss/Faust/a301.gif
+
+
+
+
+
+
+
+
+anim pain
+	loop	0
+	offset	140 200
+	bbox	122 102 42 92
+	delay	5
+	frame	data/chars/Boss/Faust/pain01.gif
+		delay  25
+		offset  138  200
+	frame	data/chars/Boss/Faust/pain01.gif
+
+anim pain3
+	loop	0
+	offset	140 200
+	bbox	131 100 30 94
+	delay	5
+	jumpframe  0  2  0  0
+	frame	data/chars/Boss/Faust/pain01.gif
+		delay  25
+		offset  142  200
+	frame	data/chars/Boss/Faust/pain01.gif
+
+anim pain4
+	loop	0
+	offset	140 200
+	bbox	130 97 34 97
+	delay	5
+	frame	data/chars/Boss/Faust/pain01.gif
+		delay  900
+		offset  143  200
+	frame	data/chars/Boss/Faust/pain01.gif
+
+
+anim grabbed
+	loop	0
+	offset	140 200
+	bbox	123 112 44 81
+	delay	40
+	frame	data/chars/Boss/Faust/pain02.gif
+
+
+
+anim pain2
+	loop	0
+	offset	140 200
+	bbox	124 114 39 76
+	delay	5
+	frame	data/chars/Boss/Faust/pain02.gif
+		delay  25
+		offset  139  200
+	frame	data/chars/Boss/Faust/pain02.gif
+
+
+
+
+
+anim fall2
+	loop	0
+	offset	140 200
+	jumpframe  0  3  -3  0
+	delay	20
+        hitfx	data/sounds/golpes/Forte.wav
+		attack  0
+	frame	data/chars/Boss/Faust/fall00.gif
+		Attack1  0
+	frame	data/chars/Boss/Faust/fall01.gif
+		delay  10
+		offset  134  174
+	frame	data/chars/Boss/Faust/fall02.gif
+
+anim fall
+	loop	0
+	offset	140 200
+	delay	20
+        hitfx	data/sounds/golpes/Forte.wav
+		attack  0
+	frame	data/chars/Boss/Faust/fall00.gif
+		Attack1  0
+	frame	data/chars/Boss/Faust/fall01.gif
+		delay  10
+		offset  130  175
+	frame	data/chars/Boss/Faust/fall02.gif
+
+anim fall6 #Shok
+	loop	0
+	offset	144 205
+	delay	5
+        hitfx	data/sounds/golpes/Forte.wav
+		attack  0
+	frame	data/chars/Boss/Faust/fall201.gif
+	frame	data/chars/Boss/Faust/fall200.gif
+	frame	data/chars/Boss/Faust/fall201.gif
+	frame	data/chars/Boss/Faust/fall200.gif
+		offset  143  188
+	frame	data/chars/Boss/Faust/fall01.gif
+		offset  133  175
+	frame	data/chars/Boss/Faust/fall02.gif
+
+
+anim fall7 #Burn
+	loop	0
+	offset	232 164
+	delay	10
+        hitfx	data/sounds/golpes/Forte.wav
+		attack  0
+	frame	data/chars/Boss/Faust/FALL300.gif
+	frame	data/chars/Boss/Faust/FALL301.gif
+	frame	data/chars/Boss/Faust/FALL302.gif
+	frame	data/chars/Boss/Faust/FALL300.gif
+	frame	data/chars/Boss/Faust/FALL301.gif
+		offset  133  175
+	frame	data/chars/Boss/Faust/FALL02.gif
+
+
+anim rise
+	loop	0
+	offset	135 179
+	delay	20
+	frame	data/chars/Boss/Faust/Rise00.gif
+	frame	data/chars/Boss/Faust/Rise01.gif
+	frame	data/chars/Boss/Faust/Rise02.gif
+
+
+
+
+anim land
+	loop	0
+	delay	40
+	offset	137 177
+	bbox	114 95 51 82
+	frame	data/chars/Boss/Faust/Land.gif
+
+
+anim Fall9
+	loop	0
+	offset	140 200
+	delay	999
+	frame	data/chars/Boss/Faust/pain01.gif #0
+	frame	data/chars/Boss/Faust/pain02.gif #1
+		offset  140  189
+	frame	data/chars/Boss/Faust/fall01.gif #2
+		offset  134  177
+	frame	data/chars/Boss/Faust/fall02.gif #3
+		offset  148  180
+	frame	data/chars/Boss/Faust/fall400.gif #4
+		offset  159  175
+	frame	data/chars/Boss/Faust/fall401.gif #5
+		offset  159  187
+	frame	data/chars/Boss/Faust/fall402.gif #6
+		offset  140  201
+	frame  data/chars/Boss/Faust/fall403.gif #7
+	delay	20
+		offset  157  177
+	frame	data/chars/Boss/Faust/fall401.gif #8
+	delay	30
+		offset  152  201
+	frame	data/chars/Boss/Faust/fall404.gif #9
+		offset  132  174
+	frame	data/chars/Boss/Faust/Fall405.gif #10
+
+
+anim Fall8
+	loop	0
+	flipframe  0
+	offset	140 200
+	delay	30
+	frame	data/chars/Boss/Faust/fall01.gif #0
+	delay	15
+		offset  129  174
+	frame	data/chars/Boss/Faust/fall02.gif #1
+
+
+anim Fall5
+	loop	0
+	flipframe  1
+	offset	140 200
+	delay	30
+	frame	data/chars/Boss/Faust/fall01.gif #0
+	delay	15
+		offset  134  174
+	frame	data/chars/Boss/Faust/fall02.gif #1
+

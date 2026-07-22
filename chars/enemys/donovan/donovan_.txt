@@ -1,0 +1,326 @@
+name	Donovan_
+health	50
+mp 30
+mprate 1
+#secret 1
+Falldie 2
+Grabdistance 18
+riseinv				0.4 1
+speed	6
+type	Enemy
+gfxshadow	1
+candamage			Player npc obstacle
+JUMPHEIGHT 4
+hostile Player NPC
+#antigrab 2
+atchain   1 1 2 3 4 5
+weapons Donovan_Knife Donovan_Sword Donovan_pipe Donovan_Kunai
+icon	data/chars/Enemys/Donovan/icon.gif 1
+diesound data/Sounds/Die1.wav
+running	20	3	2	1	1
+animationscript		data/scripts/felipe.c
+
+
+
+#Load Donovan_Knife
+Load Donovan_Pipe
+#Load Donovan_Kunai
+#Load Donovan_Sword
+
+remap data/chars/Enemys/Donovan/idle00.gif data/chars/Enemys/Donovan/MAp01.gif
+remap data/chars/Enemys/Donovan/idle00.gif data/chars/Enemys/Donovan/MAp02.gif
+remap data/chars/Enemys/Donovan/idle00.gif data/chars/Enemys/Donovan/MAp03.gif
+remap data/chars/Enemys/Donovan/idle00.gif data/chars/Enemys/Donovan/MAp04.gif
+
+anim spawn
+	loop	0
+	delay	999
+	offset	140 183
+	bbox	123 109 33 77
+	frame   data/chars/Enemys/Donovan/Land.gif
+	frame   data/chars/Enemys/Donovan/Land.gif
+
+anim Pain5
+	loop	0
+	delay	12
+	offset	140 183
+	frame   data/chars/Enemys/Donovan/idle00.gif
+
+anim idle
+	loop	1
+	delay	12
+	offset	140 183
+	bbox	123 109 33 77
+	frame   data/chars/Enemys/Donovan/idle00.gif
+	@cmd	depost 0
+	@cmd	throw 15 0.7 0.7 1 0 -1
+	@cmd	clearL
+	frame   data/chars/Enemys/Donovan/idle01.gif
+	frame   data/chars/Enemys/Donovan/idle02.gif
+	frame   data/chars/Enemys/Donovan/idle01.gif
+
+
+
+anim walk
+	loop	1
+	delay	12
+	offset	141 183
+	bbox	128 106 34 78
+	frame	data/chars/Enemys/Donovan/walk00.gif
+	frame	data/chars/Enemys/Donovan/walk01.gif
+	frame	data/chars/Enemys/Donovan/walk02.gif
+	frame  data/chars/Enemys/Donovan/walk03.gif
+
+
+
+
+
+anim jump
+	loop	0
+	delay	15
+	offset	138 182
+	bbox	122 112 36 72
+	frame	data/chars/Enemys/Donovan/Jump00.gif
+	frame	data/chars/Enemys/Donovan/Jump00.gif
+	frame	data/chars/Enemys/Donovan/Jump00.gif
+
+anim Get
+	loop	0
+	delay	15
+	offset	138 182
+	bbox	122 112 36 72
+	frame	data/chars/Enemys/Donovan/Land.gif
+
+
+anim Upper
+	loop	0
+	delay	5
+        Range 0 80
+        RangeZ -8 8
+	offset	147 183
+	bbox	137 106 25 77
+        hitflash	MEdio
+        hitfx	data/sounds/golpes/medio.wav
+	frame	data/chars/Enemys/Donovan/A200.gif
+	frame	data/chars/Enemys/Donovan/A201.gif
+		attack1  149  84  22  59  5  1  0  0  0  5
+	frame	data/chars/Enemys/Donovan/A202.gif
+		delay  20
+	frame	data/chars/Enemys/Donovan/A203.gif
+		delay  10
+		Attack1  0
+	frame	data/chars/Enemys/Donovan/A204.gif
+
+anim attack1
+	loop	0
+	delay	12
+	offset	141 184
+        Range 0 40
+        RangeZ -5 5
+        hitflash	Fraco
+	bbox	131 112 23 72
+		Attack1  0
+        Sound	data/sounds/golpes/Soco.wav
+        hitfx	data/sounds/golpes/Fraco.wav
+	frame	data/chars/Enemys/Donovan/a100.gif
+		attack1  136  120  61  19  5  1  0  0  0  10
+		delay  7
+	frame	data/chars/Enemys/Donovan/a101.gif
+		delay  20
+	frame	data/chars/Enemys/Donovan/a102.gif
+		Attack1  0
+	frame  data/chars/Enemys/Donovan/a100.gif
+
+
+
+
+anim pain
+	loop	0
+	offset	138 184
+	bbox	120 117 32 65
+	delay	5
+	frame	data/chars/Enemys/Donovan/pain01.gif
+		delay  25
+		offset  136  184
+	frame	data/chars/Enemys/Donovan/pain01.gif
+
+anim pain3
+	loop	0
+	offset	139 184
+	bbox	119 114 33 71
+	delay	5
+	jumpframe  0  2  0  0
+	frame	data/chars/Enemys/Donovan/pain01.gif
+		delay  25
+		offset  141  184
+	frame	data/chars/Enemys/Donovan/pain01.gif
+
+anim pain4
+	loop	0
+	offset	138 183
+	bbox	120 117 29 67
+	delay	5
+	frame	data/chars/Enemys/Donovan/pain01.gif
+		delay  900
+		offset  137  183
+	frame	data/chars/Enemys/Donovan/pain01.gif
+
+
+anim grabbed
+	loop	0
+	offset	140 184
+	bbox	124 116 36 68
+	delay	40
+	frame	data/chars/Enemys/Donovan/pain02.gif
+
+
+
+anim pain2
+	loop	0
+	offset	139 183
+	bbox	126 119 30 65
+	delay	5
+	frame	data/chars/Enemys/Donovan/pain02.gif
+		delay  25
+		offset  141  183
+	frame	data/chars/Enemys/Donovan/pain02.gif
+
+
+
+
+
+anim fall2
+	loop	0
+	offset	142 182
+	jumpframe  0  3  -3  0
+	delay	20
+        hitfx	data/sounds/golpes/Forte.wav
+		attack  0
+	frame	data/chars/Enemys/Donovan/fall00.gif
+		Attack1  0
+		offset  127  185
+	frame	data/chars/Enemys/Donovan/fall01.gif
+		offset  134  182
+		delay  10
+	frame	data/chars/Enemys/Donovan/fall02.gif
+
+anim fall
+	loop	0
+	offset	141 184
+	delay	20
+        hitfx	data/sounds/golpes/Forte.wav
+		attack  0
+	frame	data/chars/Enemys/Donovan/fall00.gif
+		Attack1  0
+		offset  126  183
+	frame	data/chars/Enemys/Donovan/fall01.gif
+		offset  128  183
+		delay  10
+	frame	data/chars/Enemys/Donovan/fall02.gif
+
+anim fall6 #Shok
+	loop	0
+	offset	145 184
+	delay	5
+        hitfx	data/sounds/golpes/Forte.wav
+		attack  0
+	frame	data/chars/Enemys/Donovan/fall01.gif
+		offset  88  114
+	frame	data/chars/Enemys/Donovan/fall200.gif
+		offset  141  184
+	frame	data/chars/Enemys/Donovan/fall01.gif
+		offset  88  114
+	frame	data/chars/Enemys/Donovan/fall200.gif
+		offset  143  184
+	frame	data/chars/Enemys/Donovan/fall01.gif
+		offset  126  184
+	frame	data/chars/Enemys/Donovan/fall02.gif
+
+
+anim fall7 #Burn
+	loop	0
+	offset	65 97
+	delay	10
+        hitfx	data/sounds/golpes/Forte.wav
+		attack  0
+	frame	data/chars/Enemys/Donovan/FALL300.gif
+	frame	data/chars/Enemys/Donovan/FALL301.gif
+	frame	data/chars/Enemys/Donovan/FALL302.gif
+	frame	data/chars/Enemys/Donovan/FALL300.gif
+	frame	data/chars/Enemys/Donovan/FALL301.gif
+		offset  133  184
+	frame	data/chars/Enemys/Donovan/FALL02.gif
+
+
+anim rise
+	loop	0
+	offset	138 183
+	delay	20
+	frame	data/chars/Enemys/Donovan/Rise00.gif
+	frame	data/chars/Enemys/Donovan/Rise01.gif
+	frame	data/chars/Enemys/Donovan/Rise02.gif
+
+
+
+
+
+
+
+anim land
+	loop	0
+	delay	15
+	offset	139 182
+	bbox	123 139 35 45
+	frame	data/chars/Enemys/Donovan/Land.gif
+
+
+anim Fall9
+	loop	0
+	offset	139 184
+	delay	999
+	frame	data/chars/Enemys/Donovan/pain01.gif #0
+		offset  138  184
+	frame	data/chars/Enemys/Donovan/pain02.gif #1
+		offset  141  185
+	frame	data/chars/Enemys/Donovan/fall01.gif #2
+		offset  131  183
+	frame	data/chars/Enemys/Donovan/fall02.gif #3
+		offset  157  156
+	frame	data/chars/Enemys/Donovan/fall400.gif #4
+		offset  163  181
+	frame	data/chars/Enemys/Donovan/fall401.gif #5
+		offset  145  176
+	frame	data/chars/Enemys/Donovan/fall402.gif #6
+		offset  143  184
+	frame  data/chars/Enemys/Donovan/fall403.gif #7
+		offset  160  181
+	delay	20
+	frame	data/chars/Enemys/Donovan/fall401.gif #8
+	delay	30
+		offset  138  198
+	frame	data/chars/Enemys/Donovan/fall404.gif #9
+	offset	134 184
+	frame	data/chars/Enemys/Donovan/Fall405.gif #10
+
+
+anim Fall8
+	loop	0
+	flipframe  0
+	offset	138 184
+	delay	30
+	frame	data/chars/Enemys/Donovan/fall01.gif #0
+	offset	131 182
+	delay	15
+	frame	data/chars/Enemys/Donovan/fall02.gif #1
+
+
+anim Fall5
+	loop	0
+	flipframe  1
+	offset	119 184
+	delay	30
+	frame	data/chars/Enemys/Donovan/fall01.gif #0
+	offset	127 182
+	delay	15
+	frame	data/chars/Enemys/Donovan/fall02.gif #1
+

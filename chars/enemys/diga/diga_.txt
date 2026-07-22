@@ -1,0 +1,321 @@
+name	Diga_
+health	60
+mp 30
+mprate 1
+blockodds 1
+#secret 1
+Falldie 2
+Grabdistance 18
+riseinv				0.4 1
+speed	6
+type	Enemy
+gfxshadow	1
+candamage			Player npc obstacle
+JUMPHEIGHT 4
+hostile Player NPC
+#antigrab 2
+atchain   1 1 2 3 4 5
+weapons Diga_Knife Diga_Sword Diga_pipe Diga_Kunai
+icon	data/chars/Enemys/Diga/icon.gif 1
+diesound data/Sounds/Die1.wav
+running	20	3	2	1	1
+animationscript		data/scripts/felipe.c
+
+
+#Load Diga_Knife
+#Load Diga_Pipe
+#Load Diga_Kunai
+#Load Diga_Sword
+
+remap data/chars/Enemys/Diga/idle00.gif data/chars/Enemys/Diga/MAp01.gif
+remap data/chars/Enemys/Diga/idle00.gif data/chars/Enemys/Diga/MAp02.gif
+remap data/chars/Enemys/Diga/idle01.gif data/chars/Enemys/Diga/MAp03.gif
+remap data/chars/Enemys/Diga/idle01.gif data/chars/Enemys/Diga/MAp04.gif
+
+
+anim spawn
+	loop	0
+	delay	999
+	offset	27 52
+		bbox  3  15  68  36
+	frame   data/chars/Enemys/Diga/Rise01.gif
+	frame   data/chars/Enemys/Diga/Rise01.gif
+
+
+
+
+
+
+anim idle
+	loop	1
+	delay	12
+	offset	26 93
+	bbox	14 11 25 83
+	frame   data/chars/Enemys/Diga/idle00.gif
+	@cmd	depost 0
+	@cmd	throw 15 0.7 0.7 1 0 -1
+	@cmd	clearL
+	frame   data/chars/Enemys/Diga/idle01.gif
+
+
+
+anim walk
+	loop	1
+	delay	12
+	offset	22 96
+	bbox	13 13 20 84
+	frame	data/chars/Enemys/Diga/walk00.gif
+	frame	data/chars/Enemys/Diga/walk01.gif
+	frame	data/chars/Enemys/Diga/walk02.gif
+	frame  data/chars/Enemys/Diga/walk01.gif
+
+
+
+
+
+anim jump
+	loop	0
+	delay	15
+	offset	13 89
+	bbox	7 7 23 76
+	frame	data/chars/Enemys/Diga/Jump00.gif
+	frame	data/chars/Enemys/Diga/Jump00.gif
+	frame	data/chars/Enemys/Diga/Jump00.gif
+
+
+
+
+anim Block
+	loop	0
+	delay	5
+	offset	17 90
+	bbox	5 6 21 85
+        hitflash	Corte
+        hitfx	data/sounds/golpes/corte.wav
+		move  -5
+	frame	data/chars/Enemys/Diga/Block.gif
+		offset  17  91
+		hitflash  Corte
+		hitfx  data/sounds/golpes/corte.wav
+	frame  data/chars/Enemys/Diga/Block.gif
+		hitflash  Corte
+		hitfx  data/sounds/golpes/corte.wav
+	frame  data/chars/Enemys/Diga/Block.gif
+		hitflash  Corte
+		hitfx  data/sounds/golpes/corte.wav
+	frame  data/chars/Enemys/Diga/Block.gif
+
+anim attack1
+	loop	0
+	delay	12
+	offset	27 93
+        Range 0 40
+        RangeZ -5 5
+        hitflash	Fraco
+	bbox	14 11 27 82
+		Attack1  0
+        Sound	data/sounds/golpes/Soco.wav
+        hitfx	data/sounds/golpes/Fraco.wav
+	frame	data/chars/Enemys/Diga/a100.gif
+		attack1  9  27  59  15  5  1  0  0  0  10
+		delay  7
+		offset  23  94
+	frame	data/chars/Enemys/Diga/a101.gif
+		delay  20
+	frame	data/chars/Enemys/Diga/a102.gif
+		Attack1  0
+		offset  27  93
+	frame  data/chars/Enemys/Diga/a100.gif
+
+
+
+
+anim pain
+	loop	0
+	offset	28 98
+	bbox	5 9 34 90
+	delay	5
+	frame	data/chars/Enemys/Diga/pain01.gif
+		delay  25
+		offset  30  98
+	frame	data/chars/Enemys/Diga/pain01.gif
+
+anim pain3
+	loop	0
+	offset	25 96
+	bbox	7 6 31 93
+	delay	5
+	jumpframe  0  2  0  0
+	frame	data/chars/Enemys/Diga/pain01.gif
+		delay  25
+		offset  27  96
+	frame	data/chars/Enemys/Diga/pain01.gif
+
+anim pain4
+	loop	0
+	offset	26 97
+	bbox	13 13 24 85
+	delay	5
+	frame	data/chars/Enemys/Diga/pain01.gif
+		delay  900
+		offset  28  97
+	frame	data/chars/Enemys/Diga/pain01.gif
+
+
+anim grabbed
+	loop	0
+	offset	16 83
+	bbox	5 17 23 68
+	delay	40
+	frame	data/chars/Enemys/Diga/pain02.gif
+
+
+
+anim pain2
+	loop	0
+	offset	15 82
+	bbox	4 12 30 70
+	delay	5
+	frame	data/chars/Enemys/Diga/pain02.gif
+		delay  25
+		offset  17  82
+	frame	data/chars/Enemys/Diga/pain02.gif
+
+
+
+
+
+anim fall2
+	loop	0
+	offset	17 82
+	jumpframe  0  3  -3  0
+	delay	20
+        hitfx	data/sounds/golpes/Forte.wav
+		attack  0
+	frame	data/chars/Enemys/Diga/fall00.gif
+		Attack1  0
+		offset  39  78
+	frame	data/chars/Enemys/Diga/fall01.gif
+		offset  50  31
+		delay  10
+	frame	data/chars/Enemys/Diga/fall02.gif
+
+anim fall
+	loop	0
+	offset	18 82
+	delay	20
+        hitfx	data/sounds/golpes/Forte.wav
+		attack  0
+	frame	data/chars/Enemys/Diga/fall00.gif
+		Attack1  0
+		offset  47  78
+	frame	data/chars/Enemys/Diga/fall01.gif
+		offset  52  33
+		delay  10
+	frame	data/chars/Enemys/Diga/fall02.gif
+
+anim fall6 #Shok
+	loop	0
+	offset	38 64
+	delay	5
+        hitfx	data/sounds/golpes/Forte.wav
+		attack  0
+	frame	data/chars/Enemys/Diga/fall201.gif
+	frame	data/chars/Enemys/Diga/fall200.gif
+	frame	data/chars/Enemys/Diga/fall201.gif
+	frame	data/chars/Enemys/Diga/fall200.gif
+		offset  43  78
+	frame	data/chars/Enemys/Diga/fall01.gif
+		offset  50  32
+	frame	data/chars/Enemys/Diga/fall02.gif
+
+
+anim fall7 #Burn
+	loop	0
+	offset	31 53
+	delay	10
+        hitfx	data/sounds/golpes/Forte.wav
+		attack  0
+	frame	data/chars/Enemys/Diga/FALL300.gif
+	frame	data/chars/Enemys/Diga/FALL301.gif
+	frame	data/chars/Enemys/Diga/FALL302.gif
+	frame	data/chars/Enemys/Diga/FALL301.gif
+	frame	data/chars/Enemys/Diga/FALL302.gif
+		offset  47  32
+	frame	data/chars/Enemys/Diga/FALL02.gif
+
+
+anim rise
+	loop	0
+	offset	52 32
+	delay	20
+	frame	data/chars/Enemys/Diga/Rise00.gif
+		offset  24  51
+	frame	data/chars/Enemys/Diga/Rise01.gif
+		offset  26  64
+	frame	data/chars/Enemys/Diga/Rise02.gif
+
+
+
+
+
+
+
+anim land
+	loop	0
+	delay	15
+	offset	27 62
+	bbox	15 12 28 47
+	frame	data/chars/Enemys/Diga/Land.gif
+
+
+anim Fall9
+	loop	0
+	offset	29 97
+	delay	999
+	frame	data/chars/Enemys/Diga/pain01.gif #0
+		offset  16  84
+	frame	data/chars/Enemys/Diga/pain02.gif #1
+		offset  46  76
+	frame	data/chars/Enemys/Diga/fall01.gif #2
+		offset  51  31
+	frame	data/chars/Enemys/Diga/fall02.gif #3
+		offset  152  164
+	frame	data/chars/Enemys/Diga/fall400.gif #4
+		offset  156  178
+	frame	data/chars/Enemys/Diga/fall401.gif #5
+		offset  142  173
+	frame	data/chars/Enemys/Diga/fall402.gif #6
+		offset  143  186
+	frame  data/chars/Enemys/Diga/fall403.gif #7
+		offset  160  179
+	delay	20
+	frame	data/chars/Enemys/Diga/fall401.gif #8
+	delay	30
+		offset  142  178
+	frame	data/chars/Enemys/Diga/fall404.gif #9
+	offset	134 151
+	frame	data/chars/Enemys/Diga/Fall405.gif #10
+
+
+anim Fall8
+	loop	0
+	flipframe  0
+	offset	47 78
+	delay	30
+	frame	data/chars/Enemys/Diga/fall01.gif #0
+	offset	47 32
+	delay	15
+	frame	data/chars/Enemys/Diga/fall02.gif #1
+
+
+anim Fall5
+	loop	0
+	flipframe  1
+	offset	39 78
+	delay	30
+	frame	data/chars/Enemys/Diga/fall01.gif #0
+	offset	48 32
+	delay	15
+	frame	data/chars/Enemys/Diga/fall02.gif #1
+

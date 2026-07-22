@@ -1,0 +1,54 @@
+name			Kusanagi_Star #THROWNED
+type			none
+nolife			1
+lifespan		4
+remove			1
+gfxshadow		1 1
+noatflash 		1
+flash			noflash
+didhitscript	data/scripts/didhit/default.c
+animationscript	data/scripts/animation/default.c
+
+anim idle
+	landframe 2
+	attackone 1
+	fastattack 1
+	jugglecost 5
+	forcedirection -1
+	hitflash blood
+	loop	1 0 2
+	delay	8
+	offset	25 29
+	bbox 	21 25 8 8
+	hitfx	data/sounds/Cutter.wav
+	attack 21 25 8 8 8 1 0 0 0 12
+	frame	data/chars/kusanagi/star/star00.gif
+	frame	data/chars/kusanagi/star/star01.gif
+	@cmd aniChange 0 "ANI_FOLLOW1"
+	frame	data/chars/kusanagi/star/star00.gif
+
+anim follow1
+	loop	0
+	delay	64
+	offset	25 29
+	shadowcoords 25 33
+	@cmd stop
+	@cmd spawn01 "flash" 0 0 0
+	sound	data/sounds/Clash.wav
+	frame	data/chars/kusanagi/star/star00.gif
+	@cmd suicide
+	frame	data/chars/kusanagi/star/star00.gif
+
+anim fall
+	landframe 3
+	loop	1 1 3
+	delay	8
+	offset	25 29
+	shadowcoords 25 33
+	@cmd spawn01 "flash" 0 0 0
+	@cmd leaper -1 2 0
+	sound	data/sounds/Clash.wav
+	frame	data/chars/kusanagi/star/star00.gif
+	frame	data/chars/kusanagi/star/star00.gif
+	frame	data/chars/kusanagi/star/star01.gif
+	frame	data/chars/kusanagi/star/star00.gif

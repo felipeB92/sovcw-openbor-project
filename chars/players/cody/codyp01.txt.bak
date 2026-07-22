@@ -1,0 +1,29 @@
+
+name			CodyP01 #THROWNED
+type			none
+speed 12
+candamage			enemy obstacle
+alpha 1
+nolife			1
+lifespan		4
+remove			1
+gfxshadow		0 0
+flash			Forte
+antigravity 100
+
+anim idle
+	loop	0
+	offset	44 307
+		delay  5
+frame  data/chars/players/Cody/p01/P00.gif
+frame  data/chars/players/Cody/p01/p01.Gif
+frame  data/chars/players/Cody/p01/p02.Gif
+frame  data/chars/players/Cody/p01/p03.Gif
+frame  data/chars/players/Cody/p01/p04.Gif
+frame  data/chars/players/Cody/p01/p05.Gif
+frame  data/chars/players/Cody/p01/p06.Gif
+frame  data/chars/players/Cody/p01/p07.Gif
+frame  data/chars/players/Cody/p01/p08.Gif
+	@cmd killentity getlocalvar("self")
+frame  data/chars/players/Cody/p01/p08.Gif
+

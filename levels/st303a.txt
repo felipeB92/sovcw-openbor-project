@@ -1,0 +1,292 @@
+music		data/bgs/St303/Lv303a.bor
+bossmusic	data/music/boss1.bor
+scrollspeed 0.5#1
+stagenumber 3
+background	data/bgs/st303/back00.gif	0.6 1 0 0 0 0 -1 1 0
+panel		data/bgs/st303/pn00.gif		none	none
+frontpanel      data/bgs/st05/Front02.gif
+cameratype 1
+cameraoffset 0 -30
+#levelscript @script
+#void main() {
+#	changelevelproperty("camerazoffset", 0);
+#	changelevelproperty("cameraxoffset", 0);
+#}
+#@end_script
+#settime         90
+notime          1
+noslow          1
+order		a
+spawn1  	50 20 50
+spawn2  	55 35 50 
+spawn3  	60 50 50
+
+
+
+hole		963 278 0 1 92 120 30
+
+hole		1188 278 0 0 347 368 22
+
+hole		1763 278 0 1 1000 1000 63
+
+spawn  LuzB03
+Flip   1
+	coords  0 0
+	at  0
+
+spawn  LuzB04
+Flip   1
+	coords  0 0
+	at  0
+
+
+spawn  Bloqueio02
+Flip   1
+item   Knife
+	coords  198 241
+	at  0
+
+spawn  Bloqueio02
+Flip   1
+2pitem Pipe
+	coords  223 268
+	at  0
+
+
+
+wait
+at  250
+
+group 3  3
+at  250
+
+
+spawn  Donovan
+health 50
+	coords  500 260
+	at  250
+
+spawn  galsia
+map    1
+health 50
+	coords  -100 230
+	at  250
+
+spawn  BigBen
+map    1
+health 50
+	coords  200 230 200
+	at  250
+
+spawn  galsia
+map    2
+health 70
+	coords  -100 260
+	at  250
+
+
+spawn  galsia
+map    2
+health 70
+	coords  500 260
+	at  250
+
+spawn  Slum_
+health 50
+	coords  550 230
+	at  300
+
+
+spawn  Signal_
+map    2
+health 75
+	coords  500 250
+	at  300
+
+spawn  Bloqueio02
+Flip   1
+item   Kunai
+	coords  500 230
+	at  500
+
+
+wait
+at  600
+
+group 4  4
+at  600
+
+spawn  Vice
+map    3
+health 70
+	coords  -100 220
+	at  600
+
+spawn  Signal
+map    2
+health 75
+	coords  -100 220
+	at  600
+
+spawn  Signal
+health 50
+	coords  -100 220
+	at  600
+
+spawn  Signal
+map    2
+health 75
+	coords  500 220
+	at  600
+
+spawn  Vice
+health 50
+	coords  500 220
+	at  600
+
+group 9  9
+at  601
+
+spawn  Bloqueio02
+Flip   1
+item   Chicken
+	coords  500 265
+	at  630
+
+spawn  Bloqueio02
+Flip   1
+item   Knife
+	coords  569 220
+	at  900
+
+
+spawn  Electra_
+health 70
+	coords  500 240
+	at  966
+
+
+spawn  Electra
+health 70
+	coords  -100 220
+	at  1000
+
+
+spawn  Electra
+health 70
+	coords  -100 240
+	at  1000
+
+spawn  Galsia
+map    1
+health 50
+	coords  -150 230
+	at  1000
+
+spawn  Bloqueio02
+Flip   1
+2pitem   Chicken
+	coords  500 265
+	at  1162
+
+group 4  4
+at  1500
+
+spawn  Galsia
+map    3
+health 75
+	coords  -100 230
+	at  1500
+
+spawn  Electra
+health 75
+	coords  -150 220
+	at  1500
+
+
+spawn  Donovan
+health 50
+	coords  200 230 200
+	at  1500
+
+
+spawn  Electra
+health 75
+	coords  -150 220
+	at  1500
+
+spawn  Donovan
+map    3
+health 75
+	coords  150 230 200
+	at  1500
+
+spawn  Galsia
+map    1
+health 50
+	coords  -100 230
+	at  1500
+
+spawn  Electra
+health 75
+	coords  -150 220
+	at  1500
+
+spawn  Galsia
+map    5
+health 90
+	coords  -100 230
+	at  1500
+
+spawn  Electra
+map    4
+health 150
+	coords  150 220 200
+	at  1500
+
+spawn  Electra
+map    4
+health 150
+	coords  200 240 200
+	at  1500
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

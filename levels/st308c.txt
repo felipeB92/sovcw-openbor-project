@@ -1,0 +1,145 @@
+music		data/bgs/St308/Lv308b.bor
+bossmusic	data/music/boss1.bor
+scrollspeed 0.5#1
+background	data/bgs/st308/back01.gif	0.6 1 0 0 0 0 -1 1 1
+panel		data/bgs/st308/pn02.gif		none	none
+fglayer		data/bgs/st308/bg02.gif		-200 0.6 1 0 0 0 0 -1 1 1
+Frontpanel	data/bgs/st05/Front02.gif 	
+stagenumber 8
+cameratype 1
+cameraoffset 0 -30
+#levelscript @script
+#void main() {
+#	changelevelproperty("camerazoffset", 0);
+#	changelevelproperty("cameraxoffset", 0);
+#}
+#@end_script
+#settime         90
+notime          1
+noslow          1
+order		a
+spawn1  	50 70  50
+spawn2  	55 85  50
+spawn3  	60 105 50
+
+
+
+spawn  Fundo300
+flip   1
+	coords  0 0
+	at  0
+
+spawn  raio
+flip   1
+	coords  0 0
+	at  0
+
+spawn  zero300
+flip   1
+	coords  240 130
+	at  0
+
+spawn		esteira06
+flip		1
+coords		1 276 0
+at			0
+
+wait
+at  0
+
+Group 1  1
+at  0
+
+
+spawn  DELAY
+	coords  -100 190
+	at  0
+
+
+wait
+at  1
+
+
+
+Group 4  4
+at  1
+
+spawn  pZ
+MAP    4
+health 150
+	coords  445 220
+	at  1
+
+spawn  pZ
+MAP    4
+flip   1
+	coords  45 220
+	at  1
+
+spawn  pZ
+MAP    4
+health 150
+	coords  400 260
+	at  1
+
+spawn  pZ
+MAP    4
+flip   1
+	coords  100 265
+	at  1
+
+wait
+at  2
+
+Group 2  2
+at  2
+
+spawn  RobotZ
+MAP    1
+health 400
+	coords  445 245
+	at  2
+
+spawn  RobotZ
+MAP    1
+health 400
+flip   1
+	coords  45 245
+	at  2
+
+wait
+at  3
+
+Group 2  2
+at  3
+
+spawn  paRTICLEZ
+MAP    2
+health 400
+	coords  445 245
+	at  3
+
+spawn  paRTICLEZ
+MAP    3
+flip   1
+health 400
+	coords  45 245
+	at  3
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

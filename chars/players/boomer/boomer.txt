@@ -1,0 +1,664 @@
+name	Boomer
+health	100
+mp 10
+chargerate 2
+mprate 1
+#secret 1
+Falldie 2
+Grabdistance 18
+riseinv				0.4 1
+speed	9
+type	player
+gfxshadow	1
+candamage			enemy obstacle
+JUMPHEIGHT 4
+#Jumpheight 3
+antigrab 2
+atchain   1 1 2 3 4 5
+weapons Boomer_Knife Boomer_Sword Boomer_pipe Boomer_Kunai
+icon	data/chars/players/Boomer/icon.gif 1
+diesound data/chars/players/Boomer/Death.wav
+running	20	3	2	1	1
+onblockwscript	data/scripts/bounceF.c
+#animationscript 	data/scripts/ani0020.h
+animationscript		data/scripts/drago.c
+#ondrawscript 		data/scripts/player_ondrawscript.c
+
+Load BoomerP01
+Load BoomerP02
+Load BoomerP03
+Load BoomerP04
+
+
+Load Blood_
+LOAD Hawk_
+
+Load Boomer_Knife
+Load Boomer_Pipe
+#Load Adam_Kunai
+#Load Adam_Sword
+
+remap data/chars/players/Boomer/idle00.gif data/chars/players/Boomer/MAp01.gif
+remap data/chars/players/Boomer/idle00.gif data/chars/players/Boomer/MAp02.gif
+remap data/chars/players/Boomer/idle00.gif data/chars/players/Boomer/MAp03.gif
+remap data/chars/players/Boomer/idle00.gif data/chars/players/Boomer/MAp04.gif
+
+
+anim	waiting
+	loop	1
+	offset	1 -542
+	delay	25
+	frame   data/chars/players/Boomer/select01.gif
+	frame   data/chars/players/Boomer/select02.gif
+
+anim	Select
+	loop	0
+	offset	1 -542
+	delay	3
+	frame   data/chars/players/Boomer/select00.gif
+	frame   data/chars/players/Boomer/select02.gif
+	frame   data/chars/players/Boomer/select00.gif
+	frame   data/chars/players/Boomer/select02.gif
+	frame   data/chars/players/Boomer/select00.gif
+	frame   data/chars/players/Boomer/select02.gif
+	frame   data/chars/players/Boomer/select00.gif
+	frame   data/chars/players/Boomer/select02.gif
+	frame   data/chars/players/Boomer/select00.gif
+	frame   data/chars/players/Boomer/select02.gif
+
+anim Pain5
+	loop	0
+	delay	12
+	offset	72 115
+        Range 0 40
+        Rangez -10 10
+	bbox	64 39 22 77
+	frame   data/chars/players/Boomer/idle00.gif
+	@cmd  spawn01  "Blood_"  -5  0  10
+	@cmd  spawn01  "Hawk_"  5  0  -10
+	frame   data/chars/players/Boomer/idle01.gif
+
+anim idle
+	loop	1
+	delay	25
+	offset	72 115
+	bbox	58 41 24 79
+	frame   data/chars/players/Boomer/idle00.gif
+	@cmd	depost 0
+	@cmd	throw 15 0.7 0.7 1 0 -1
+	@cmd	clearL
+	frame   data/chars/players/Boomer/idle01.gif
+
+
+
+anim walk
+	loop	1
+	delay	12
+	offset	71 118
+	bbox	63 25 28 77
+	frame	data/chars/players/Boomer/walk00.gif
+		offset  71  117
+	frame	data/chars/players/Boomer/walk01.gif
+	frame	data/chars/players/Boomer/walk02.gif
+		offset  69  117
+	frame	data/chars/players/Boomer/walk03.gif
+	frame	data/chars/players/Boomer/walk04.gif
+		offset  70  117
+	frame	data/chars/players/Boomer/walk05.gif
+	frame	data/chars/players/Boomer/walk06.gif
+		offset  69  118
+	frame	data/chars/players/Boomer/walk07.gif
+
+
+anim get
+	loop	0
+	delay	20
+	offset	72 115
+	frame	data/chars/players/Boomer/Get.gif
+
+
+anim jump
+	loop	0
+	delay	15
+	offset	74 115
+	bbox	62 35 36 74
+	frame	data/chars/players/Boomer/Jump00.gif
+	frame	data/chars/players/Boomer/Jump00.gif
+	frame	data/chars/players/Boomer/Jump00.gif
+
+
+anim jumpattack
+	loop	0
+	delay	5
+	offset	72 115
+	bbox	59 40 28 78
+        hitflash	MEdio
+        hitfx	data/sounds/golpes/medio.wav
+        Sound	data/sounds/golpes/Chut.wav
+	frame	data/chars/players/Boomer/Ja100.gif
+	Sound	data/chars/players/Boomer/a1.wav
+		attack1  78  50  38  55  8  1  0  0  0  10
+	frame	data/chars/players/Boomer/JA101.gif
+	frame	data/chars/players/Boomer/JA102.gif
+
+
+anim jumpattack2
+	loop	0
+	delay	5
+	offset	70 116
+	bbox	54 32 32 61
+        hitflash	MEdio
+        hitfx	data/sounds/golpes/medio.wav
+        Sound	data/sounds/golpes/Chut.wav
+	Sound	data/chars/players/Boomer/a2.wav
+	frame	data/chars/players/Boomer/JUmp00.gif
+		attack1  73  48  33  51  7  0  0  0  0  10
+		delay  7
+	Sound	data/chars/players/Boomer/a3.wav
+		bbox  49  41  36  54
+		offset  70  98
+	frame	data/chars/players/Boomer/JA300.gif
+
+anim jumpforward
+	loop	0
+	delay	5
+	offset	72 115
+	bbox	54 32 32 61
+        hitflash	MEdio
+        hitfx	data/sounds/golpes/medio.wav
+        Sound	data/sounds/golpes/Chut.wav
+	Sound	data/chars/players/Boomer/a3.wav
+	frame	data/chars/players/Boomer/Ja200.gif
+		attack1  73  59  65  39  8  1  0  0  0  10
+		delay  7
+	Sound	data/chars/players/Boomer/a2.wav
+		bbox  49  41  36  54
+	frame	data/chars/players/Boomer/Ja201.gif
+
+anim runjumpattack
+	loop	0
+	delay	8
+	offset	70 116
+	bbox	61 59 36 39
+        hitflash	MEdio
+        hitfx	data/sounds/golpes/medio.wav
+        Sound	data/sounds/golpes/Chut.wav
+	Sound	data/chars/players/Boomer/a3.wav
+		attack1  74  65  43  34  7  1  0  0  0  10
+	frame	data/chars/players/Boomer/JA400.gif
+		attack1  24  67  56  30  7  1  0  0  0  10
+	frame	data/chars/players/Boomer/Ja403.gif
+		attack1  65  48  59  41  7  1  0  0  0  10
+		delay  8
+	frame	data/chars/players/Boomer/JA402.gif
+		delay  40
+	frame	data/chars/players/Boomer/Ja401.gif
+
+
+
+anim attack1
+	loop	0
+	delay	6
+	offset	72 115
+        hitflash	Fraco
+	bbox	58 38 30 82
+		Attack1  0
+        Sound	data/sounds/golpes/Soco.wav
+        hitfx	data/sounds/golpes/Fraco.wav
+	frame	data/chars/players/Boomer/a100.gif
+		attack1  59  47  62  17  5  0  0  0  0  10
+		delay  7
+	frame	data/chars/players/Boomer/a101.gif
+		delay  3
+		Attack1  0
+	frame	data/chars/players/Boomer/a100.gif
+
+
+anim attack2
+	loop	0
+	delay	8
+	offset	72 115
+        hitflash	MEdio
+	bbox	63 55 25 64
+		Attack1  0
+        hitfx	data/sounds/golpes/MEdio.wav
+	Sound	data/chars/players/Boomer/a1.wav
+	frame	data/chars/players/Boomer/a200.gif
+		attack2  75  51  35  37  5  0  0  0  0  10
+		delay  7
+	frame	data/chars/players/Boomer/a201.gif
+		delay  12
+		attack2  64  52  70  22  5  0  0  0  0  10
+	frame	data/chars/players/Boomer/a202.gif
+		Attack1  0
+		delay  4
+	frame	data/chars/players/Boomer/a201.gif
+
+anim attack3
+	loop	0
+	delay	6
+	offset	72 115
+	bbox	61 40 32 77
+        hitflash	Forte
+        Sound	data/sounds/golpes/Chut.wav
+        hitfx	data/sounds/golpes/Forte.wav
+	Sound	data/chars/players/Boomer/a2.wav
+	frame	data/chars/players/Boomer/a300.gif
+		Attack1  0
+	frame	data/chars/players/Boomer/a301.gif
+		attack1  72  48  64  34  5  1  0  0  0  10
+		delay  30
+	frame	data/chars/players/Boomer/a302.gif
+
+
+
+anim freespecial
+	loop	0
+	delay	25
+	offset	73 118
+        hitflash	MEdio
+        hitfx	data/sounds/Silencio.wav
+		Attack1  0
+	@cmd	slamstart
+	@cmd	position 0 20 0 0 -1
+        frame	data/chars/players/Boomer/t200.gif
+	@cmd	position 1 10 20 0 -1
+        frame	data/chars/players/Boomer/t01.gif
+	@cmd	position 4 5 60 0 1
+        frame	data/chars/players/Boomer/t201.gif
+	@cmd	position 4 4 60 0 1
+		attack1  57  18  58  31  7  1  0  0  0  10
+        frame	data/chars/players/Boomer/t202.gif
+	@cmd	position 8 22 30 0 1
+	@cmd	depost 0
+	@cmd	throw 15 5 2 2 0 -1
+	@cmd	clearL
+		attack1  92  39  34  50  7  1  0  0  0  10
+		delay  10
+       frame	data/chars/players/Boomer/t203.gif
+		attack1  114  42  42  45  7  1  0  0  0  10
+       frame	data/chars/players/Boomer/t203.gif
+		attack1  136  55  69  29  7  1  0  0  0  10
+       frame	data/chars/players/Boomer/t203.gif
+
+
+
+anim run
+        loop    1
+        delay  10
+	offset	72 119
+	bbox	58 48 44 67
+        frame	data/chars/players/Boomer/run00.gif
+        frame	data/chars/players/Boomer/run01.gif
+        Sound	data/sounds/Run.wav
+        frame	data/chars/players/Boomer/run02.gif
+        frame	data/chars/players/Boomer/run03.gif
+        frame	data/chars/players/Boomer/run04.gif
+        Sound	data/sounds/Run.wav
+        frame	data/chars/players/Boomer/run05.gif
+
+
+anim grab
+	loop	0
+	delay	100
+	offset	79 115
+	bbox	63 39 23 79
+        cancel	0 3 0 J freespecial
+	frame	data/chars/players/Boomer/GrAB.gif
+
+anim throw
+	loop	0
+	delay	5
+	offset	72 115
+        hitflash	Forte
+        hitfx	data/sounds/golpes/Forte.wav
+		Attack1  91  36  30  79  7  1  0  0  0  10
+	@cmd	slamstart
+	@cmd	position 0 20 0 0 -1
+	frame	data/chars/players/Boomer/T00.gif
+	Sound	data/chars/players/Boomer/a2.wav
+	delay	10
+	@cmd	position 1 20 10 0 -1
+		attack1  41  30  78  34  7  1  0  0  0  10
+	frame	data/chars/players/Boomer/T01.gif
+		delay  20
+	@cmd	position 4 -5 55 0 -1
+		attack1  18  16  43  51  7  1  0  0  0  10
+	frame	data/chars/players/Boomer/T02.gif
+	@cmd	position 8 -30 40 0 -1
+	@cmd	depost 0
+	@cmd	throw 15 5 2 2 0 -1
+	@cmd	clearL
+		attack1  -12  40  53  51  7  1  0  0  0  10
+	frame	data/chars/players/Boomer/t03.gif
+		attack1  -63  42  76  30  7  1  0  0  0  10
+	frame  data/chars/players/Boomer/t03.gif
+		attack1  -98
+	frame  data/chars/players/Boomer/t03.gif
+
+
+
+
+
+
+
+
+
+anim pain
+	loop	0
+	offset	72 115
+	bbox	61 54 26 66
+	delay	5
+	frame	data/chars/players/Boomer/pain01.gif
+		delay  25
+		offset  74  115
+	frame	data/chars/players/Boomer/pain01.gif
+
+anim pain3
+	loop	0
+	offset	72 115
+	bbox	61 54 26 66
+	delay	5
+	jumpframe  0  2  0  0
+	frame	data/chars/players/Boomer/pain01.gif
+		delay  25
+		offset  70  115
+	frame	data/chars/players/Boomer/pain01.gif
+
+anim pain4
+	loop	0
+	offset	72 115
+	bbox	61 54 26 66
+	delay	5
+	frame	data/chars/players/Boomer/pain01.gif
+		delay  900
+		offset  70  115
+	frame	data/chars/players/Boomer/pain01.gif
+
+
+anim grabbed
+	loop	0
+	offset	72 115
+	bbox	59 31 26 84
+	delay	40
+	frame	data/chars/players/Boomer/pain02.gif
+
+
+
+anim pain2
+	loop	0
+	offset	72 115
+	bbox	59 44 31 73
+	delay	5
+	frame	data/chars/players/Boomer/pain02.gif
+		delay  25
+		offset  70  115
+	frame	data/chars/players/Boomer/pain02.gif
+
+
+
+
+
+anim fall2
+	loop	0
+	offset	72 107
+	jumpframe  0  3  -3  0
+	delay	20
+        hitfx	data/sounds/golpes/Forte.wav
+		attack  0
+	frame	data/chars/players/Boomer/fall00.gif
+		Attack1  0
+		offset  52  102
+	frame	data/chars/players/Boomer/fall01.gif
+		delay  10
+		offset  64  97
+	frame	data/chars/players/Boomer/fall02.gif
+
+anim fall
+	loop	0
+	offset	72 111
+	delay	20
+        hitfx	data/sounds/golpes/Forte.wav
+		attack  0
+	frame	data/chars/players/Boomer/fall00.gif
+		Attack1  0
+	frame	data/chars/players/Boomer/fall01.gif
+		delay  10
+		offset  72  97
+	frame	data/chars/players/Boomer/fall02.gif
+
+anim fall6 #Shok
+	loop	0
+	offset	80 108
+	delay	5
+        hitfx	data/sounds/golpes/Forte.wav
+		attack  0
+	frame	data/chars/players/Boomer/fall201.gif
+	frame	data/chars/players/Boomer/fall200.gif
+	frame	data/chars/players/Boomer/fall201.gif
+	frame	data/chars/players/Boomer/fall200.gif
+	frame	data/chars/players/Boomer/fall01.gif
+		offset  66  99
+	frame	data/chars/players/Boomer/fall02.gif
+
+
+anim fall7 #Burn
+	loop	0
+	offset	65 97
+	delay	10
+        hitfx	data/sounds/golpes/Forte.wav
+		attack  0
+	frame	data/chars/players/Boomer/FALL300.gif
+	frame	data/chars/players/Boomer/FALL301.gif
+	frame	data/chars/players/Boomer/FALL302.gif
+	frame	data/chars/players/Boomer/FALL300.gif
+	frame	data/chars/players/Boomer/FALL301.gif
+		offset  67  96
+	frame	data/chars/players/Boomer/FALL02.gif
+
+
+anim rise
+	loop	0
+	offset	72 115
+	delay	20
+	frame	data/chars/players/Boomer/Rise00.gif
+	frame	data/chars/players/Boomer/Rise01.gif
+	frame	data/chars/players/Boomer/Rise02.gif
+
+
+
+
+anim special2
+        energycost 10 1
+        MpOnly 1
+	loop	0
+	offset	72 115
+        hitflash	Shock
+        hitfx	data/sounds/golpes/forte.wav
+		Attack1  0
+		delay  8
+	Sound	data/chars/players/Boomer/a2.wav
+		move  0
+	@cmd  spawn01  "BoomerP02"  0  0  1
+	frame	data/chars/players/Boomer/fs200.gif
+		attack6  27  -5  127  120  5  0  1  0  0  15
+	frame	data/chars/players/Boomer/fs201.gif
+		delay  10
+		Attack1  0
+	frame	data/chars/players/Boomer/fs202.gif
+		attack6  59  -3  93  118  5  0  1  0  0  15
+	frame  data/chars/players/Boomer/fs202.gif
+		Attack1  0
+	frame  data/chars/players/Boomer/fs202.gif
+		delay  20
+		attack6  59  -3  93  118  10  1  1  0  0  15
+	frame  data/chars/players/Boomer/fs202.gif
+
+
+
+
+
+anim special
+        energycost 10 1
+        MpOnly 1
+	loop	0
+	offset	72 115
+        hitflash	Shock
+        hitfx	data/sounds/golpes/forte.wav
+		delay  12
+	Sound	data/chars/players/Boomer/fs02.wav
+		Attack1  0
+	Sound	data/chars/players/Boomer/a3.wav
+	frame	data/chars/players/Boomer/fs100.gif
+	@cmd  spawn01  "BoomerP01"  0  0  1
+		delay  35
+	frame	data/chars/players/Boomer/fs101.gif
+		delay  60
+		attack6  29  -45  89  167  20  1  1  0  0  20
+	frame	data/chars/players/Boomer/FS101.gif
+
+
+anim jumpspecial
+        energycost 10 1
+        MpOnly 1
+	loop	0
+	offset	72 118
+        hitflash	Shock
+        hitfx	data/sounds/golpes/forte.wav
+		delay  4
+	Sound	data/chars/players/Boomer/fs02.wav
+	@cmd  spawn01  "BoomerP03"  0  0  1
+		Attack1  0
+	frame	data/chars/players/Boomer/Ja400.gif
+		attack6  37  35  86  87  20  1  1  1  0  15
+	frame	data/chars/players/Boomer/Ja401.gif
+	frame	data/chars/players/Boomer/Ja402.gif
+	@cmd  spawn01  "BoomerP04"  0  0  1
+	frame	data/chars/players/Boomer/Ja403.gif
+	frame	data/chars/players/Boomer/Ja400.gif
+	frame	data/chars/players/Boomer/Ja401.gif
+	frame	data/chars/players/Boomer/Ja402.gif
+	frame	data/chars/players/Boomer/Ja403.gif
+
+
+
+anim runattack
+ 	loop	0
+ 	delay	8
+ 	offset	65 108
+        Fastattack 1
+ 	bbox	62 48 36 44
+		move  0
+        hitflash	MEdio
+	jumpframe  1  2  2  0
+		delay  15
+ 	frame	data/chars/players/Boomer/ra102.gif
+        hitfx	data/sounds/golpes/MEdio.wav
+	Sound	data/chars/players/Boomer/Ra.wav
+ 	frame	data/chars/players/Boomer/ra100.gif
+		attack1  55  34  45  71  10  1  0  0  0  15
+		delay  35
+ 	frame	data/chars/players/Boomer/ra101.gif
+		Attack1  0
+		delay  15
+ 	frame	data/chars/players/Boomer/ra102.gif
+
+
+
+
+
+anim grabattack
+	loop	0
+	offset	79 115
+	bbox	63 39 24 80
+	delay	4
+        hitflash	fRACO
+        hitfx	data/sounds/golpes/fRACO.wav
+		Attack1  0
+	frame	data/chars/players/Boomer/ga100.gif
+		delay  12
+		attack1  72  45  38  71  5  0  0  0  0  10
+	frame	data/chars/players/Boomer/ga101.gif
+		delay  5
+	frame	data/chars/players/Boomer/ga100.gif
+
+
+anim grabattack2
+	loop	0
+	offset	79 115
+	bbox	58 39 27 79
+	delay	7
+        cancel	0 3 0 d A2 freespecial
+        cancel	0 3 0 f A2 freespecial3
+        cancel	0 3 0 u A2 freespecial2
+        hitflash	Forte
+        hitfx	data/sounds/golpes/Forte.wav
+		Attack1  0
+	frame	data/chars/players/Boomer/ga100.gif
+		delay  12
+	frame	data/chars/players/Boomer/ga101.gif
+		attack1  69  43  50  54  7  1  0  0  0  10
+		delay  30
+	frame	data/chars/players/Boomer/ga200.gif
+
+
+
+
+anim land
+	loop	0
+	delay	15
+	offset	72 115
+	bbox	58 54 36 67
+	frame	data/chars/players/Boomer/Land.gif
+
+
+anim Fall9
+	loop	0
+	offset	70 117
+	delay	999
+	frame	data/chars/players/Boomer/pain01.gif #0
+		offset  74  118
+	frame	data/chars/players/Boomer/pain02.gif #1
+		offset  74  99
+	frame	data/chars/players/Boomer/fall01.gif #2
+		offset  72  96
+	frame	data/chars/players/Boomer/fall02.gif #3
+		offset  81  97
+	frame	data/chars/players/Boomer/fall400.gif #4
+		offset  77  106
+	frame	data/chars/players/Boomer/fall401.gif #5
+		offset  69  86
+	frame	data/chars/players/Boomer/fall402.gif #6
+		offset  75  114
+	frame  data/chars/players/Boomer/fall403.gif
+		offset  81  100
+		delay  20
+	frame  data/chars/players/Boomer/fall401.gif
+		offset  62  109
+		delay  30
+	frame  data/chars/players/Boomer/fall404.gif
+		offset  71  96
+	frame  data/chars/players/Boomer/fall405.gif
+
+
+anim Fall8
+	loop	0
+	flipframe  0
+	offset	62 99
+	delay	30
+	frame	data/chars/players/Boomer/fall01.gif #0
+	offset	68 98
+	delay	15
+	frame	data/chars/players/Boomer/fall02.gif #1
+
+
+anim Fall5
+	loop	0
+	flipframe  1
+	offset	72 99
+	delay	30
+	frame	data/chars/players/Boomer/fall01.gif #0
+	offset	68 99
+	delay	15
+	frame	data/chars/players/Boomer/fall02.gif #1
+

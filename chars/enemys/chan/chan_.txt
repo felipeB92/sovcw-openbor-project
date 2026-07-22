@@ -1,0 +1,448 @@
+name	Chan_
+health	100
+mp 30
+mprate 1
+#secret 1
+blockodds 1
+Falldie 2
+Grabdistance 18
+riseinv				0.4 1
+speed	9
+type	Enemy
+gfxshadow	1
+candamage			Player npc obstacle
+JUMPHEIGHT 4
+hostile Player NPC
+#antigrab 2
+atchain   1 1 2 3 4 5
+#weapons Chan_Knife Chan_Sword Chan_pipe Chan_Kunai
+icon	data/chars/Enemys/Chan/icon.gif 1
+diesound data/Sounds/Die3.wav
+running	20	3	2	1	1
+onblockwscript	data/scripts/bounceF.c
+#animationscript 	data/scripts/ani0020.h
+animationscript		data/scripts/drago.c
+ondrawscript 		data/scripts/Enemy_ondrawscript.c
+
+
+
+#Load Chan_Knife
+#Load Chan_Pipe
+#Load Chan_Kunai
+#Load Chan_Sword
+
+remap data/chars/Enemys/Chan/idle00.gif data/chars/Enemys/Chan/MAp01.gif
+remap data/chars/Enemys/Chan/idle00.gif data/chars/Enemys/Chan/MAp02.gif
+remap data/chars/Enemys/Chan/idle00.gif data/chars/Enemys/Chan/MAp03.gif
+remap data/chars/Enemys/Chan/idle00.gif data/chars/Enemys/Chan/MAp04.gif
+
+
+
+anim spawn
+	loop	0
+	delay	999
+	offset	31 96
+	bbox	22 13 28 72
+	frame   data/chars/Enemys/Chan/LAnd.gif
+	frame   data/chars/Enemys/Chan/LAnd.gif
+
+anim Pain5
+	loop	0
+	delay	25
+	offset	31 96
+	frame   data/chars/Enemys/Chan/idle00.gif
+
+anim idle
+	loop	1
+	delay	25
+	offset	31 96
+	bbox	22 13 28 72
+	frame   data/chars/Enemys/Chan/idle00.gif
+	@cmd	depost 0
+	@cmd	throw 15 0.7 0.7 1 0 -1
+	@cmd	clearL
+	frame   data/chars/Enemys/Chan/idle01.gif
+
+
+
+anim walk
+	loop	1
+	delay	16
+	offset	33 96
+	bbox	23 26 20 70
+	frame	data/chars/Enemys/Chan/walk00.gif
+	frame	data/chars/Enemys/Chan/walk01.gif
+	frame	data/chars/Enemys/Chan/walk02.gif
+	frame	data/chars/Enemys/Chan/walk01.gif
+
+
+
+
+
+anim jump
+	loop	0
+	delay	15
+	offset	27 95
+	bbox	19 19 29 65
+	frame	data/chars/Enemys/Chan/Jump00.gif
+	frame	data/chars/Enemys/Chan/Jump00.gif
+	frame	data/chars/Enemys/Chan/Jump00.gif
+
+
+anim jumpattack
+	loop	0
+	delay	6
+        Range 80 90
+        RangeZ -5 5
+	offset	34 77
+	bbox	17 24 30 49
+        hitflash	MEdio
+        hitfx	data/sounds/golpes/medio.wav
+	frame	data/chars/Enemys/Chan/ja100.gif
+	frame  data/chars/Enemys/Chan/Ja101.gif
+	frame	data/chars/Enemys/Chan/Ja102.gif
+	frame	data/chars/Enemys/Chan/Ja103.gif
+		attack1  29  36  58  29
+		delay  25
+	frame	data/chars/Enemys/Chan/Ja104.gif
+
+anim JumpLAnd
+	loop	0
+	delay	30
+	offset	37 96
+	bbox	24 55 25 42
+        hitflash	Corte
+        hitfx	data/sounds/golpes/corte.wav
+	frame	data/chars/Enemys/Chan/LAnd.gif
+
+
+
+anim attack1
+	loop	0
+	delay	12
+	offset	35 96
+        Range 0 40
+        RangeZ -5 5
+        hitflash	Fraco
+	bbox	21 26 22 71
+		Attack1  0
+        Sound	data/sounds/golpes/Soco.wav
+        hitfx	data/sounds/golpes/Fraco.wav
+	frame	data/chars/Enemys/Chan/a100.gif
+		attack1  35  32  56  31  5  0  0  0  0  10
+		delay  7
+	frame	data/chars/Enemys/Chan/a101.gif
+		delay  8
+		Attack1  0
+	frame	data/chars/Enemys/Chan/a100.gif
+
+
+anim attack2
+	loop	0
+	delay	12
+	offset	31 96
+        hitflash	Fraco
+	bbox	14 19 31 74
+		Attack1  0
+        Sound	data/sounds/golpes/Soco.wav
+        hitfx	data/sounds/golpes/Fraco.wav
+	frame	data/chars/Enemys/Chan/a200.gif
+		attack1  32  44  51  25  5  1  0  0  0  10
+		delay  15
+	frame	data/chars/Enemys/Chan/a201.gif
+		delay  7
+		Attack1  0
+	frame	data/chars/Enemys/Chan/a200.gif
+
+
+anim freespecial
+	loop	0
+	delay	12
+	offset	35 96
+        Range 60 100
+        RangeZ -5 5
+        hitflash	Forte
+	bbox	21 26 22 71
+		Attack1  0
+        Sound	data/sounds/golpes/Soco.wav
+        hitfx	data/sounds/golpes/Forte.wav
+	frame	data/chars/Enemys/Chan/a100.gif
+       Sound   data/Sounds/mustapha_patada.wav
+		attack2  35  32  56  31  5  1  0  0  0  10
+		delay  40
+        @cmd dasher 3 0 0
+	frame	data/chars/Enemys/Chan/a101.gif
+		delay  8
+		Attack1  0
+        @cmd dasher 0 0 0
+	frame	data/chars/Enemys/Chan/a101.gif
+	frame	data/chars/Enemys/Chan/a100.gif
+
+
+anim freespecial2
+	loop	0
+	delay	12
+        Range 100 120
+        RangeZ -10 -5
+	offset	36 97
+	bbox	17 24 30 49
+        hitflash	MEdio
+	jumpframe  1  2  3  -2
+	frame	data/chars/Enemys/Chan/LAnd.gif
+        hitfx	data/sounds/golpes/medio.wav
+		offset  29  72
+		delay  8
+        Sound   data/Sounds/mustapha.wav
+	frame	data/chars/Enemys/Chan/ja100.gif
+	frame  data/chars/Enemys/Chan/Ja101.gif
+	frame	data/chars/Enemys/Chan/Ja102.gif
+	frame	data/chars/Enemys/Chan/Ja103.gif
+		attack1  24  39  64  26  10  1  0  0  0  10
+		delay  20
+	frame	data/chars/Enemys/Chan/JA104.gif
+
+anim freespecial3
+	loop	0
+	delay	20
+        Range 100 120
+        RangeZ 5 10
+	offset	36 96
+	bbox	17 24 30 49
+        hitflash	MEdio
+	jumpframe  1  2  3  2
+	frame	data/chars/Enemys/Chan/LAnd.gif
+        hitfx	data/sounds/golpes/medio.wav
+		offset  33  72
+		delay  8
+	frame	data/chars/Enemys/Chan/ja100.gif
+       Sound   data/Sounds/mustapha.wav
+	frame  data/chars/Enemys/Chan/Ja101.gif
+	frame	data/chars/Enemys/Chan/Ja102.gif
+	frame	data/chars/Enemys/Chan/Ja103.gif
+		attack1  40  43  46  22  7  1  0  0  0  10
+		delay  20
+	frame	data/chars/Enemys/Chan/ja104.gif
+
+anim freespecial4
+	loop	0
+	delay	20
+        Range 100 120
+        RangeZ -5 5
+	offset	37 96
+	bbox	23 55 25 41
+        hitflash	MEdio
+	jumpframe  1  2  3  0
+	frame	data/chars/Enemys/Chan/LAnd.gif
+        hitfx	data/sounds/golpes/medio.wav
+		offset  27  74
+		bbox  10  28  39  24
+		delay  8
+	frame	data/chars/Enemys/Chan/ja100.gif
+       Sound   data/Sounds/mustapha.wav
+	frame  data/chars/Enemys/Chan/Ja101.gif
+	frame	data/chars/Enemys/Chan/Ja102.gif
+	frame	data/chars/Enemys/Chan/Ja103.gif
+		offset  47  76
+		attack1  34  42  53  24  7  1  0  0  0  10
+		delay  20
+	frame	data/chars/Enemys/Chan/Ja104.gif
+
+
+
+anim pain
+	loop	0
+	offset	32 96
+	bbox	17 28 27 69
+	delay	5
+	frame	data/chars/Enemys/Chan/pain01.gif
+		delay  25
+		offset  34  96
+	frame	data/chars/Enemys/Chan/pain01.gif
+
+anim pain3
+	loop	0
+	offset	32 96
+	bbox	17 28 32 69
+	delay	5
+	jumpframe  0  2  0  0
+	frame	data/chars/Enemys/Chan/pain01.gif
+		delay  25
+		offset  34  96
+	frame	data/chars/Enemys/Chan/pain01.gif
+
+anim pain4
+	loop	0
+	offset	32 96
+	bbox	21 27 24 69
+	delay	5
+	frame	data/chars/Enemys/Chan/pain01.gif
+		delay  900
+		offset  30  96
+	frame	data/chars/Enemys/Chan/pain01.gif
+
+
+anim grabbed
+	loop	0
+	offset	33 96
+	bbox	15 26 37 73
+	delay	40
+	frame	data/chars/Enemys/Chan/pain02.gif
+
+
+
+anim pain2
+	loop	0
+	offset	32 96
+	bbox	17 25 27 71
+	delay	5
+	frame	data/chars/Enemys/Chan/pain02.gif
+		delay  25
+		offset  34  96
+	frame	data/chars/Enemys/Chan/pain02.gif
+
+
+
+
+
+anim fall2
+	loop	0
+	offset	32 96
+	jumpframe  0  3  -3  0
+	delay	20
+        hitfx	data/sounds/golpes/Forte.wav
+		attack  0
+	frame	data/chars/Enemys/Chan/fall00.gif
+		Attack1  0
+		offset  33  75
+	frame	data/chars/Enemys/Chan/fall01.gif
+		offset  40  94
+		delay  10
+	frame	data/chars/Enemys/Chan/fall02.gif
+
+anim fall
+	loop	0
+	offset	34 95
+	delay	20
+        hitfx	data/sounds/golpes/Forte.wav
+		attack  0
+	frame	data/chars/Enemys/Chan/fall00.gif
+		Attack1  0
+		offset  36  73
+	frame	data/chars/Enemys/Chan/fall01.gif
+		offset  40  95
+		delay  10
+	frame	data/chars/Enemys/Chan/fall02.gif
+
+anim fall6 #Shok
+	loop	0
+	offset	44 67
+	delay	5
+        hitfx	data/sounds/golpes/Forte.wav
+		attack  0
+	frame	data/chars/Enemys/Chan/fall201.gif
+	frame	data/chars/Enemys/Chan/fall200.gif
+	frame	data/chars/Enemys/Chan/fall201.gif
+	frame	data/chars/Enemys/Chan/fall200.gif
+	frame	data/chars/Enemys/Chan/fall201.gif
+		offset  41  92
+	frame	data/chars/Enemys/Chan/fall02.gif
+
+
+anim fall7 #Burn
+	loop	0
+	offset	36 65
+	delay	10
+        hitfx	data/sounds/golpes/Forte.wav
+		attack  0
+	frame	data/chars/Enemys/Chan/FALL300.gif
+	frame	data/chars/Enemys/Chan/FALL301.gif
+	frame	data/chars/Enemys/Chan/FALL302.gif
+	frame	data/chars/Enemys/Chan/FALL300.gif
+	frame	data/chars/Enemys/Chan/FALL301.gif
+		offset  39  90
+	frame	data/chars/Enemys/Chan/FALL02.gif
+
+
+anim rise
+	loop	0
+	offset	37 96
+	delay	20
+	frame	data/chars/Enemys/Chan/Land.gif
+		offset  29  70
+		delay  4
+		move  6
+	frame	data/chars/Enemys/Chan/JA100.gif
+		delay  6
+		move  5
+	frame  data/chars/Enemys/Chan/JA101.gif
+	frame  data/chars/Enemys/Chan/JA102.gif
+	frame  data/chars/Enemys/Chan/JA103.gif
+	frame  data/chars/Enemys/Chan/JA100.gif
+	frame  data/chars/Enemys/Chan/JA101.gif
+		offset  36  96
+		move  0
+	frame  data/chars/Enemys/Chan/LAnd.gif
+
+
+
+
+
+
+
+anim land
+	loop	0
+	delay	15
+	offset	39 97
+	bbox	19 53 28 45
+	frame	data/chars/Enemys/Chan/Land.gif
+
+
+anim Fall9
+	loop	0
+	offset	31 97
+	delay	999
+	frame	data/chars/Enemys/Chan/pain01.gif #0
+	frame	data/chars/Enemys/Chan/pain02.gif #1
+		offset  42  75
+	frame	data/chars/Enemys/Chan/fall01.gif #2
+		offset  40  93
+	frame	data/chars/Enemys/Chan/fall02.gif #3
+		offset  66  97
+	frame	data/chars/Enemys/Chan/fall400.gif #4
+		offset  89  101
+	frame	data/chars/Enemys/Chan/fall401.gif #5
+		offset  84  96
+	frame	data/chars/Enemys/Chan/fall402.gif #6
+		offset  76  119
+	frame  data/chars/Enemys/Chan/fall403.gif #7
+		offset  87  103
+	delay	20
+	frame	data/chars/Enemys/Chan/fall401.gif #8
+	delay	30
+		offset  103  113
+	frame	data/chars/Enemys/Chan/fall404.gif #9
+	offset	80 95
+	frame	data/chars/Enemys/Chan/Fall405.gif #10
+
+
+anim Fall8
+	loop	0
+	flipframe  0
+	offset	40 72
+	delay	30
+	frame	data/chars/Enemys/Chan/fall01.gif #0
+	offset	34 94
+	delay	15
+	frame	data/chars/Enemys/Chan/fall02.gif #1
+
+
+anim Fall5
+	loop	0
+	flipframe  1
+	offset	26 74
+	delay	30
+	frame	data/chars/Enemys/Chan/fall01.gif #0
+	offset	35 97
+	delay	15
+	frame	data/chars/Enemys/Chan/fall02.gif #1
+

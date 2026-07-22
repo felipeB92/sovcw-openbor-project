@@ -1,0 +1,274 @@
+music		data/bgs/St302/Lv302a.bor
+bossmusic	data/music/boss1.bor
+scrollspeed 0.5#1
+stagenumber 2
+background	data/bgs/st302/back00.gif	0.8 1 0 0 0 0 -1 1 0
+panel		data/bgs/st302/pn00.gif		none	none
+frontpanel      data/bgs/st05/Front02.gif
+cameratype 1
+cameraoffset 0 -30
+#levelscript @script
+#void main() {
+#	changelevelproperty("camerazoffset", 0);
+#	changelevelproperty("cameraxoffset", 0);
+#}
+#@end_script
+#settime         90
+notime          1
+noslow          1
+order		a
+spawn1  	50 20 50
+spawn2  	55 35 50 
+spawn3  	60 50 50
+
+
+
+
+
+
+
+
+
+spawn  L302
+Flip   1
+	coords  0 0
+	at  0
+
+
+
+spawn  Semaphore
+Flip   1
+	coords  0 0
+	at  0
+
+spawn  telefones
+Flip   1
+	coords  0 0
+	at  0
+
+spawn  Bloqueio02
+Flip   1
+item   Knife
+	coords  172 213
+	at  0
+
+
+spawn  Moto02
+	coords  500 213
+	at  100
+
+spawn  Moto02
+Flip   1
+	coords  -100 240
+	at  100
+
+
+spawn  Moto
+alias Fog
+health 50
+	coords  500 213
+	at  150
+
+spawn  Moto02
+	coords  500 213
+	at  250
+
+spawn  Moto02
+Flip   1
+	coords  -100 240
+	at  250
+
+wait 
+at 300
+
+Group 1 1
+at 300
+
+spawn  Moto
+alias Fog
+health 50
+	coords  500 213
+	at  300
+
+Group 4 4
+at 300
+
+spawn  Moto
+alias Fog
+health 50
+	coords  500 240
+	at  300
+
+
+spawn  Signal
+health 50
+	coords  500 210
+	at  300
+
+
+spawn  Signal
+health 50
+	coords  -100 210
+	at  300
+
+spawn  Signal
+map    1
+health 70
+	coords  500 210
+	at  300
+
+
+spawn  Signal
+map    1
+health 70
+	coords  -100 210
+	at  300
+
+spawn  Moto02
+	coords  500 213
+	at  300
+
+spawn  Moto02
+Flip   1
+	coords  -100 240
+	at  300
+
+spawn  Fog_B
+alias Fog
+health 50
+	coords  500 240
+	at  300
+
+
+
+spawn  Signal
+health 50
+	coords  500 210
+	at  400
+
+spawn  Galsia
+map    4
+health 70
+	coords  500 240
+	at  400
+
+spawn  Galsia
+map    4
+health 70
+	coords  -50 240
+	at  400
+
+spawn  Bloqueio02
+Flip   1
+item   Cash
+	coords  500 213
+	at  575
+
+
+
+
+wait 
+at 800
+
+Group 3 3
+at 800
+
+
+
+spawn  Donovan
+health 40
+	coords  -100 230
+	at  800
+
+
+
+spawn  signal
+health 50
+	coords  500 230
+	at  800
+
+spawn  signal
+health 50
+	coords  500 260
+	at  800
+
+
+spawn  Galsia
+map    4
+health 70
+	coords  -50 240
+	at  400
+
+spawn  signal
+map    2
+health 80
+	coords  500 230
+	at  800
+
+spawn  signal
+health 50
+	coords  500 260
+	at  800
+
+spawn  Bloqueio02
+Flip   1
+item   apple
+	coords  500 213
+	at  801
+
+spawn  Bloqueio02
+Flip   1
+2pitem   apple
+	coords  500 213
+	at  950
+
+spawn  Bruce
+health 250
+	coords  -100 230
+	at  1300
+
+spawn  Roo
+health 250
+	coords  500 260
+	at  1300
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

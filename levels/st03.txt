@@ -1,0 +1,352 @@
+music		data/bgs/St03/Lv03.bor
+bossmusic	data/music/boss1.bor
+scrollspeed 0.5#1
+stagenumber 3
+background	data/bgs/st03/Back01.gif
+panel		data/bgs/St03/Pn01a.gif
+#frontpanel      data/bgs/St01/Front01.gif
+#bglayer           data/bgs/11lvl/liberty_statue.gif 0.3 0.1   60    -40 180 1 1 1 1  0
+#bglayer           data/bgs/11lvl/0x.gif 0.5 0.1   60    -40 180 1 1 1 1  0
+#fglayer         data/bgs/11lvl/fondo3.gif 1500 -0.1 0 0 0 0 0 1 1 1
+#fglayer         data/bgs/11lvl/sun.gif 500 0 0 0 -5 1 1 1 1 1 1
+#fglayer         data/bgs/11lvl/light2.gif 2500 0 0 0 -5 1 1 1 1 1 1
+cameratype 1
+cameraoffset 0 -30
+#levelscript @script
+#void main() {
+#	changelevelproperty("camerazoffset", 0);
+#	changelevelproperty("cameraxoffset", 0);
+#}
+#@end_script
+#settime         90
+notime          1
+noslow          1
+order		a
+spawn1  	190 20 50
+spawn2  	210 35 50 
+spawn3  	220 50 50
+
+spawn  Onda
+       Flip 1
+	coords  0  10
+	at  0
+
+
+spawn  chuva
+       Flip 1
+	coords  0  10
+	at  0
+
+
+
+
+spawn  Galsia
+health 50
+	coords  560  191
+	at  0
+
+
+spawn  Tires
+Item   Sword
+	coords  450  210
+	at  0
+
+
+spawn  Galsia
+health 50
+	coords  -100  230
+	at  0
+
+spawn  signal
+health 50
+	coords  -100  191
+	at  100
+
+
+spawn  Galsia
+map    2
+health 70
+	coords  560  230
+	at  100
+
+spawn  chuva
+       Flip 1
+	coords  0  10
+	at  350
+
+
+Wait
+	at  350
+
+spawn  Onda
+       Flip 1
+	coords  500 10
+	at  465
+
+spawn  Tires
+Item   pipe
+	coords  500  210
+	at  630
+
+
+spawn  haku_oh
+	coords  -100  191
+	at  960
+
+spawn  Galsia
+map    2
+health 70
+	coords  480  230
+	at  980
+
+spawn  chuva
+       Flip 1
+	coords  0  10
+	at  1200
+
+
+
+spawn  haku_oh
+	coords  -300  191
+	at  1200
+
+spawn  Galsia
+map    2
+health 70
+	coords  660  230
+	at  1200
+
+
+spawn  Galsia
+health 50
+	coords  860  190
+	at  1200
+
+
+Wait
+	at  1200
+
+
+spawn  Knife
+	coords  560  230
+	at  1201
+
+spawn  Nora
+	coords  480  190
+	at  1210
+
+
+spawn  Galsia
+map    2
+health 70
+	coords  480  190
+	at  1250
+
+spawn  Onda
+       Flip 1
+	coords  500 10
+	at  1440
+
+spawn  Tires
+Item   apple
+	coords  500  210
+	at  1561
+
+spawn  Tires
+Item   cash
+	coords  500  210
+	at  1725
+
+
+spawn  Galsia
+map    2
+health 70
+	coords  -100  190
+	at  1970
+
+Group   4  4
+at      1979
+
+Wait
+	at  1979
+
+
+spawn  Galsia
+map    2
+health 70
+	coords  500  190
+	at  1979
+
+spawn  Galsia
+map    2
+health 70
+	coords  -100  230
+	at  1979
+
+spawn  Galsia
+map    2
+health 70
+	coords  -200  190
+	at  1979
+
+spawn  Galsia
+health 50
+	coords  700  230
+	at  1979
+
+spawn  Nora
+	coords  500  190
+	at  1980
+
+spawn  signal
+health 70
+	coords  550  230
+	at  2000
+
+spawn  Tires
+Item   chicken
+	coords  500  210
+	at  2100
+
+spawn  Onda
+       Flip 1
+	coords  500 10
+	at  2414
+
+spawn  haku_oh
+	coords  500  215
+	at  2600
+
+
+spawn  haku_oh
+	coords  525  215
+	at  2600
+
+
+
+spawn  haku_oh
+	coords  550  215
+	at  2600
+
+Group   4  4
+at      2750
+
+Wait
+	at  2750
+
+spawn  Nora
+	coords  500  190
+	at  2750
+
+spawn  chuva
+       Flip 1
+	coords  0  10
+	at  2750
+
+spawn  signal
+health 70
+	coords  550  230
+	at  2750
+
+spawn  knife
+health 50
+	coords  500  230
+	at  2750
+
+
+spawn  Galsia
+health 50
+	coords  550  230
+	at  2750
+
+spawn  Knife
+	coords  450  190
+	at  3300
+
+spawn  Galsia
+map    2
+health 70
+	coords  500  190
+	at  3300
+
+spawn  Galsia
+map    2
+health 70
+	coords  -100  230
+	at  3300
+
+Group   4  4
+at      3600
+
+Wait
+	at  3600
+
+spawn  Nora
+	coords  500  190
+	at  3600
+
+spawn  signal
+health 70
+	coords  550  230
+	at  3600
+
+Group   3  3
+at      3600
+
+spawn  abadede
+Alias  abaDidi
+boss   1
+Map    3
+	coords  -100  230
+	at  3601
+
+spawn  abadede
+boss   1
+	coords  550  230
+	at  3601
+
+
+spawn  Galsia
+health 50
+	coords  -100  230
+	at  2750
+
+spawn  Galsia
+health 50
+	coords  -100  190
+	at  2750
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

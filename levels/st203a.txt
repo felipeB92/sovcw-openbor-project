@@ -1,0 +1,115 @@
+music		data/bgs/St202/Lv202a.bor
+bossmusic	data/music/boss2.bor
+scrollspeed 0.5#1
+stagenumber 3
+background	data/bgs/st203/bg00.gif
+panel		data/bgs/St203/Pn00.gif
+#fglayer			data/bgs/st201/fpn00.gif 0 -0.8 0.6 0 0 0 0 1 1 1
+frontpanel      data/bgs/St203/fpn00.gif
+cameratype 1
+cameraoffset 	0 -60
+settime         99
+notime          0
+noslow          1
+order		a
+spawn1  	125 20
+spawn2  	130 35
+spawn3  	135  50
+
+wall		711 238 -12 0 1000 1000 31 10000
+
+spawn  parque01a
+flip   1
+	coords  0  0
+	at  0
+
+spawn  parque01b
+flip   1
+	coords  0  0
+	at  0
+
+spawn  parque01c
+flip   1
+	coords  0  0
+	at  0
+
+spawn  Lixo01
+item   Knife
+	coords  395  180
+	at  0
+
+spawn  Lixo01
+item   apple
+	coords  551  225
+	at  0
+
+
+spawn  Galsia_B
+map    1
+health 40
+	coords  237  170
+	at  0
+
+
+
+spawn  Galsia
+map    1
+health 40
+	coords  500  200
+	at  0
+
+spawn  Donovan_B
+map    2
+health 70
+	coords  500  170
+	at  20
+
+
+spawn  Fog
+map    1
+health 60
+	coords  -100  260
+	at  50
+
+spawn  Pipe
+	coords  50  260
+	at  50
+
+spawn  Donovan_
+map    2
+health 70
+	coords  500  185
+	at  175
+
+spawn  Donovan_
+health 50
+	coords  530  196
+	at  175
+
+Group 4  4
+at  350
+
+
+spawn  Fog
+health 50
+	coords  -100  260
+	at  350
+
+spawn  Pipe
+	coords  50  260
+	at  350
+
+spawn  Galsia
+map    3
+health 70
+	coords  500  190
+	at  350
+
+spawn  Galsia
+map    3
+health 70
+	coords  -100  190
+	at  350
+
+
+

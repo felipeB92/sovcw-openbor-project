@@ -1,0 +1,15 @@
+name			Dia #GROUND
+type			Panel
+Speed 1
+setlayer 100
+noquake 	1 1
+#offscreenkill	1000
+#Alpha 1
+
+
+anim idle
+	loop	1
+	offset	-109 81
+		delay  50
+	frame	data/Bgs/00/Car.gif
+

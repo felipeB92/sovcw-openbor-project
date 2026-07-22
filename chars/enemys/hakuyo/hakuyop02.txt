@@ -1,0 +1,47 @@
+name			HakuyoP02
+type			none
+speed 15
+candamage			Enemy
+alpha 1
+nolife			1
+lifespan		4
+remove			1
+gfxshadow		1 1
+flash			Forte
+subject_to_gravity 0
+
+anim idle
+	loop	1
+	offset	103 180
+		delay  5
+	frame	data/chars/enemys/Hakuyo/P01/P00.gif
+	frame	data/chars/enemys/Hakuyo/P01/P01.gif
+	frame	data/chars/enemys/Hakuyo/P01/P02.gif
+	frame	data/chars/enemys/Hakuyo/P01/P03.gif
+	frame	data/chars/enemys/Hakuyo/P01/P04.gif
+	frame	data/chars/enemys/Hakuyo/P01/P05.gif
+	frame	data/chars/enemys/Hakuyo/P01/P00.gif
+	frame	data/chars/enemys/Hakuyo/P01/P01.gif
+	frame	data/chars/enemys/Hakuyo/P01/P02.gif
+	frame	data/chars/enemys/Hakuyo/P01/P03.gif
+	frame	data/chars/enemys/Hakuyo/P01/P04.gif
+	frame	data/chars/enemys/Hakuyo/P01/P05.gif
+	frame	data/chars/enemys/Hakuyo/P01/P00.gif
+	frame	data/chars/enemys/Hakuyo/P01/P01.gif
+	frame	data/chars/enemys/Hakuyo/P01/P02.gif
+	frame	data/chars/enemys/Hakuyo/P01/P03.gif
+	frame	data/chars/enemys/Hakuyo/P01/P04.gif
+	frame	data/chars/enemys/Hakuyo/P01/P05.gif
+	frame	data/chars/enemys/Hakuyo/P01/P00.gif
+	frame	data/chars/enemys/Hakuyo/P01/P01.gif
+	frame	data/chars/enemys/Hakuyo/P01/P02.gif
+	frame	data/chars/enemys/Hakuyo/P01/P03.gif
+	frame	data/chars/enemys/Hakuyo/P01/P04.gif
+	frame	data/chars/enemys/Hakuyo/P01/P05.gif
+	frame	data/chars/enemys/Hakuyo/P01/P00.gif
+	frame	data/chars/enemys/Hakuyo/P01/P01.gif
+	frame	data/chars/enemys/Hakuyo/P01/P02.gif
+	frame	data/chars/enemys/Hakuyo/P01/P03.gif
+	@cmd killentity getlocalvar("self")
+	frame	data/chars/enemys/Hakuyo/P01/P04.gif
+

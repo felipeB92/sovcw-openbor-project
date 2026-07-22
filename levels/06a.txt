@@ -1,0 +1,667 @@
+music		data/music/07a.bor
+bossmusic	data/music/BossR.bor
+scrollspeed 0.5#1
+#direction Left
+stagenumber 7
+background	data/bgs/06/baCK00.gif  	0.650 1 0 0 0 0 -1 1 1
+bglayer		data/bgs/06/bAck00a.gif 	0.600 1 0 0 0 0 -1 1 1
+bglayer		data/bgs/06/bAck00b.gif 	0.550 1 0 0 0 0 -1 1 1
+bglayer		data/bgs/06/BAck00c.gif	        0.500 1 0 0 0 0 -1 1 1
+bglayer 	data/bgs/06/back00d.gif	        0.4 1 0 0 0 0 -1 1 1 0 1 3 10 0.3
+#water		data/bgs/01/Mar01.gif		0.5
+#fglayer         data/bgs/06/Luz00.gif           1 1 0 0 0 0 -1 1 1 1 1
+panel		data/bgs/06/pn00.gif		none	none
+frontpanel	data/bgs/06/Front00b.gif		
+cameratype 1
+cameraoffset 0 -30
+#levelscript @script
+#void main() {
+#	changelevelproperty("camerazoffset", 0);
+#	changelevelproperty("cameraxoffset", 0);
+#}
+#@end_script
+settime         99
+notime          0
+noslow          1
+order		a
+spawn1  	50 20 50
+spawn2  	55 35 50 
+spawn3  	60 50 50
+
+light		128 -128
+at			0
+
+spawn  Luz01
+Flip 1
+	coords  0 276
+	at  0
+
+spawn  Postes
+Flip 1
+	coords  0 277
+	at  0
+
+spawn  Heli02
+Flip 0
+	coords  1350 250
+	at  0
+
+spawn  Fire00
+Flip 0
+	coords  1316 185
+	at  0
+
+spawn  Fire00
+Flip 1
+	coords  1340 185
+	at  0
+
+spawn  Fire01
+Flip 1
+	coords  1360 155
+	at  0
+
+
+spawn  Fire01
+	coords  1450 196
+	at  0
+
+
+
+
+
+spawn  sandbag
+Flip 1
+	coords  255 235
+	at  0
+
+spawn  Tires
+Flip 1
+	coords  295 250
+	at  0
+
+spawn  sandbag
+Flip 1
+	coords  330 268
+	at  0
+
+spawn  Crakito_
+Map  3
+health 20
+	coords  375 270
+	at  0
+
+spawn  Crakito__
+Map  1
+health 20
+	coords  436 246
+	at  0
+
+spawn  Balu_
+Map  2
+health 20
+	coords  370 225
+	at  0
+
+
+spawn  Balu__
+Map  3
+health 20
+	coords  450 261
+	at  0
+
+spawn  Diga_
+Map  1
+health 20
+	coords  344 243
+	at  0
+
+spawn  ACt
+	coords  344 243
+	at  0
+
+spawn  Diga__
+Map  3
+health 20
+	coords  418 230
+	at  0
+
+spawn  Thug_
+Map  2
+health 20
+	coords  417 260
+	at  0
+
+spawn  Biggar_
+Map  4
+health 150
+	coords  411 248
+	at  0
+
+spawn  Fog__
+Map  2
+health 50
+	coords  311 225
+	at  0
+
+wait
+at       150
+
+group 10 10
+at  150
+
+spawn  Crakito
+Map  4
+health 20
+	coords  -100 270
+	at  150
+
+spawn  Crakito
+health 20
+	coords  600 246
+	at  150
+
+spawn  Balu
+Map  1
+health 20
+	coords  -100 225
+	at  150
+
+
+spawn  Balu
+Map  4
+health 20
+	coords  600 261
+	at  150
+
+spawn  Diga
+health 20
+	coords  -100 243
+	at  150
+
+
+spawn  Diga
+Map  2
+health 20
+	coords  600 230
+	at  150
+
+spawn  Thug
+Map  4
+health 20
+	coords  -100 260
+	at  150
+
+spawn  Jhonny
+health 50
+	coords  600 248
+	at  150
+
+spawn  Fog
+Map  3
+health 70
+	coords  -100 225
+	at  150
+
+
+spawn  Ralf
+MAp 3
+health 70
+	coords  -50 200
+	at  150
+
+spawn  sPECIAL01
+	coords  239 260 300
+	at  150
+
+spawn  Heli01
+Flip 1
+	coords  -100 180 0
+	at  150
+
+spawn  ActE
+	coords  250 240
+	at  150
+
+spawn  Lata
+Flip 1
+Item Cash
+	coords  550 220
+	at  151
+
+spawn  Lata
+Flip 1
+Item Apple
+	coords  600 225
+	at  151
+
+spawn  Lata
+Flip 1
+	coords  650 220
+	at  151
+
+wait
+at       650
+
+group 4 4
+at  650
+
+
+spawn  Ralf
+MAp 3
+health 70
+	coords  -100 220
+	at  650
+
+spawn  Donovan
+MAp 3
+health 50
+	coords  600 220
+	at  650
+
+spawn  Signal
+MAp 3
+health 70
+	coords  -100 270
+	at  650
+
+spawn  Galsia
+MAp 3
+health 50
+	coords  -100 270
+	at  650
+
+spawn  Fog_B
+MAp 3
+health 50
+	coords  -100 270
+	at  650
+
+
+spawn  Jhonny
+MAp 3
+health 70
+	coords  600 220
+	at  650
+
+spawn  Slum
+MAp 3
+health 60
+	coords  -100 270
+	at  650
+
+spawn  Vice
+MAp 3
+health 60
+	coords  -100 270
+	at  650
+
+spawn  ActE
+	coords  250 240
+	at  650
+
+wait
+at       651
+
+
+group 10 10
+at  651
+
+spawn  Crakito
+Map  1
+health 20
+	coords  -100 270
+	at  651
+
+spawn  Crakito
+Map  2
+health 20
+	coords  600 246
+	at  651
+
+spawn  Balu
+Map  2
+health 20
+	coords  -100 225
+	at  651
+
+
+spawn  Balu
+Map  1
+health 20
+	coords  600 261
+	at  651
+
+spawn  Diga
+MAp 1
+health 20
+	coords  -100 243
+	at  651
+
+
+spawn  Diga
+Map  2
+health 20
+	coords  600 230
+	at  651
+
+spawn  Thug
+Map  3
+health 20
+	coords  -100 260
+	at  651
+
+spawn  Bigben
+health 50
+	coords  600 248
+	at  651
+
+spawn  RAven
+Map  3
+health 70
+	coords  -100 225
+	at  651
+
+
+spawn  RAven
+MAp 4
+health 70
+	coords  -50 200
+	at  651
+
+spawn  sPECIAL01
+	coords  239 260 300
+	at  651
+
+spawn  Heli01
+	coords  600 180 0
+	at  651
+
+
+spawn  ActE
+	coords  250 240
+	at  651
+
+wait
+at       652
+
+group 4 4
+at  652
+
+
+spawn  Fog_B
+health 70
+	coords  -100 220
+	at  652
+
+spawn  Fog_B
+MAp 3
+health 50
+	coords  600 270
+	at  652
+
+spawn  RAven
+MAp 3
+health 70
+	coords  -100 270
+	at  652
+
+spawn  Bigben
+MAp 3
+health 70
+	coords  600 270
+	at  652
+
+spawn  Slum
+health 60
+	coords  -100 220
+	at  652
+
+spawn  Costa
+MAp 3
+health 50
+	coords  600 270
+	at  652
+
+spawn  Chan
+MAp 3
+health 70
+	coords  -100 270
+	at  652
+
+spawn  Knife
+	coords  550 270
+	at  652
+
+spawn  GAlsia
+MAp 3
+health 50
+	coords  600 270
+	at  652
+
+spawn  ActE
+	coords  250 240
+	at  652
+
+wait
+at       653
+
+
+group 10 10
+at  653
+
+spawn  Crakito
+Map  2
+health 20
+	coords  -100 270
+	at  653
+
+spawn  Crakito
+Map  3
+health 20
+	coords  600 246
+	at  653
+
+spawn  Balu
+Map  3
+health 20
+	coords  -100 225
+	at  653
+
+
+spawn  Balu
+Map  2
+health 20
+	coords  600 261
+	at  653
+
+spawn  Diga
+MAp 3
+health 20
+	coords  -100 243
+	at  653
+
+
+spawn  Diga
+Map  4
+health 20
+	coords  600 230
+	at  653
+
+spawn  Thug
+Map  4
+health 20
+	coords  -100 260
+	at  653
+
+spawn  Slum
+health 50
+	coords  600 248
+	at  653
+
+spawn  Donovan
+Map  3
+health 70
+	coords  -100 225
+	at  653
+
+
+spawn  Galsia
+MAp 4
+health 70
+	coords  -50 200
+	at  653
+
+spawn  sPECIAL01
+	coords  239 260 300
+	at  653
+
+spawn  Heli01
+Flip   1
+	coords  -100 180 0
+	at  653
+
+spawn  ActE
+	coords  250 240
+	at  653
+
+wait
+at       654
+
+spawn  Boat00
+Flip   1
+	coords  -100 183 0
+	at  654
+
+spawn  DelayX1
+Flip   1
+	coords  -100 183 0
+	at  654
+
+spawn  DelayX1
+Flip   1
+	coords  -100 183 0
+	at  654
+
+spawn  sandbag
+Item Chicken
+Flip 1
+	coords  555 235
+	at  655
+
+
+spawn  sandbag
+Item 1Up
+Flip 1
+	coords  630 268
+	at  655
+
+
+spawn  Agamenon_
+MAp 4
+health 100
+	coords  650 235
+	at  655
+
+spawn  Act
+	coords  640 250
+	at  655
+
+spawn  Agamenon_
+MAp 3
+health 100
+	coords  680 268
+	at  655
+
+
+group 4 4
+at  943
+
+
+spawn  Bigben
+MAp 4
+health 70
+	coords  -100 220
+	at  943
+
+spawn  Donovan
+health 50
+	coords  600 270
+	at  943
+
+spawn  Galsia
+health 50
+	coords  600 220
+	at  943
+
+spawn  Slum
+health 50
+	coords  -100 270
+	at  943
+
+spawn  Vice
+health 50
+	coords  -100 220
+	at  943
+
+spawn  Crakito
+health 50
+	coords  600 270
+	at  943
+
+spawn  Balu
+health 50
+	coords  600 220
+	at  943
+
+spawn  Garnet
+health 50
+	coords  -100 270
+	at  943
+
+spawn  Electra
+health 70
+	coords  -100 220
+	at  943
+
+
+spawn  Bigben
+MAp 1
+health 70
+	coords  600 270
+	at  943
+
+spawn  Bigben
+health 70
+	coords  600 220
+	at  943
+
+spawn  Raven
+health 70
+	coords  -100 270
+	at  943
+
+spawn  Signal
+health 70
+	coords  -100 220
+	at  943
+
+spawn  ActE
+	coords  250 240
+	at  943
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

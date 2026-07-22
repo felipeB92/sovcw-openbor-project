@@ -1,0 +1,20 @@
+name			KusanagiP01
+type			none
+health			1
+nolife			1
+lifespan		2
+remove			1
+shadow			0
+antigravity		100
+candamage		Player npc obstacle
+
+anim idle
+	hitflash Corte
+	loop	1
+	delay	4
+	offset	17 29
+        hitfx	data/sounds/golpes/Corte.wav
+		attack1  20  25  10  9  10  1  0  0  0  10
+	frame   data/chars/Enemys/Kusanagi/P01.gif
+	frame   data/chars/Enemys/Kusanagi/P02.gif
+

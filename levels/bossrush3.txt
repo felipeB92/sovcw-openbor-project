@@ -1,0 +1,188 @@
+music	data/music/Boss.bor
+bossmusic	data/music/FBoss.bor
+scrollspeed 0.5#1
+stagenumber 1
+background	data/bgs/BossRush/b02.gif 	      0.675 1 0 0 0 0 -1 1 1
+bglayer		data/bgs/BossRush/b00.gif         0.575 1 0 0 0 0 -1 1 1 
+bglayer		data/bgs/BossRush/b01.gif         0.575 1 0 0 0 0 -1 1 1 1
+#Fglayer		data/bgs/BossRush/Front.gif                0.575 1 0 0 0 0 -1 1 1 1 1
+#water		data/bgs/01/Mar01.gif		0.5
+#fglayer         data/bgs/Front.gif              0 -0.4 0 0 0 0 1 -1 1 1 0
+panel		data/bgs/BossRush/pn01.gif		none	none
+#frontpanel	data/bgs/t00/Front02.gif		
+cameratype 1
+cameraoffset 0 -30
+#levelscript @script
+#void main() {
+#	changelevelproperty("camerazoffset", 0);
+#	changelevelproperty("cameraxoffset", 0);
+#}
+#@end_script
+#settime         90
+notime          1
+noslow          1
+order		a
+spawn1  	50 20 50
+spawn2  	55 35 50 
+spawn3  	60 50 50
+
+spawn  Alerta
+Flip 1
+	coords  0 20
+	at  0
+
+spawn  BAck300
+Flip 1
+	coords  -95 -40
+	at  0
+
+spawn  BAck201
+Flip 1
+	coords  0 0
+	at  0
+
+spawn  IntroST
+Flip 1
+	coords  0 4
+	at  0
+
+spawn  Time01
+Flip 1
+	coords  0 0
+	at  0
+
+
+
+spawn  Hamburger
+	coords  250 220 300
+	at  0
+
+wait
+at       0
+
+group 3 3
+at  0
+
+
+spawn  Orochigniz
+map 1
+health 250
+	coords  600 215
+	at  0
+
+
+
+spawn  Korochi
+map 1
+health 250
+	coords  -100 215
+	at  0
+
+
+spawn  Zerochi
+map 2
+health 250
+	coords  600 215
+	at  0
+
+
+group 2 2
+at  1
+
+
+spawn  51
+	coords  200 210 300
+	at  1
+
+
+spawn  Chicken
+	coords  250 220 300
+	at  0
+
+spawn  1Up
+	coords  300 210 300
+	at  1
+
+spawn  Gustab
+map 3
+health 400
+Boss 1
+	coords  250 215 300
+	at  1
+
+spawn  Reiji_
+map 3
+health 100
+	coords  -100 215
+	at  1
+
+spawn  51
+	coords  240 220 300
+	at  0
+
+
+spawn  Hunter_
+map 2
+health 100
+	coords  600 215
+	at  1
+
+
+spawn  Domino_
+map 2
+health 100
+	coords  -100 215
+	at  1
+
+spawn  1Up
+	coords  270 220 300
+	at  0
+
+
+spawn  CEO_
+map 2
+health 100
+	coords  600 215
+	at  1
+
+
+spawn  Reiji_
+map 2
+health 100
+	coords  -100 215
+	at  1
+
+
+spawn  Hunter_
+map 2
+health 100
+	coords  600 215
+	at  1
+
+
+spawn  Domino_
+map 2
+health 100
+	coords  -100 215
+	at  1
+
+
+spawn  CEO_
+map 2
+health 100
+	coords  600 215
+	at  1
+
+
+
+
+
+
+
+
+
+
+
+
+
+

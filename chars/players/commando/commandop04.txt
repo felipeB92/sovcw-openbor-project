@@ -1,0 +1,33 @@
+
+name			CommandoP04 #THROWNED
+type			none
+speed 12
+candamage			enemy obstacle
+alpha 1
+nolife			1
+lifespan		4
+remove			1
+gfxshadow		0 0
+flash			Forte
+#antigravity 100
+
+anim idle
+	loop	0
+	offset	-14 75
+		delay  2
+	frame	data/chars/players/Commando/P01/P100.gif
+	frame	data/chars/players/Commando/P01/P101.gif
+	frame	data/chars/players/Commando/P01/P102.gif
+	frame	data/chars/players/Commando/P01/P103.gif
+	frame	data/chars/players/Commando/P01/P104.gif
+	frame	data/chars/players/Commando/P01/P105.gif
+	frame	data/chars/players/Commando/P01/P106.gif
+	frame	data/chars/players/Commando/P01/P107.gif
+	frame	data/chars/players/Commando/P01/P108.gif
+	frame	data/chars/players/Commando/P01/P109.gif
+	frame	data/chars/players/Commando/P01/P110.gif
+	frame	data/chars/players/Commando/P01/P111.gif
+	frame	data/chars/players/Commando/P01/P112.gif
+	@cmd killentity getlocalvar("self")
+	frame	data/chars/players/Commando/P01/P112.gif
+

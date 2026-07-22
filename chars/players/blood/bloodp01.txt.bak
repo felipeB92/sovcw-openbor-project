@@ -1,0 +1,37 @@
+
+name			BloodP01 #THROWNED
+type			none
+speed 12
+candamage			enemy obstacle
+alpha 1
+nolife			1
+lifespan		4
+remove			1
+gfxshadow		0 0
+flash			Forte
+antigravity 100
+
+anim idle
+	loop	0
+	offset	44 307
+		drawmethod  150  150  0  0  0  -1  -1
+		delay  5
+frame  data/chars/players/Blood/p01/P00.gif
+frame  data/chars/players/Blood/p01/p01.Gif
+frame  data/chars/players/Blood/p01/p02.Gif
+frame  data/chars/players/Blood/p01/p03.Gif
+frame  data/chars/players/Blood/p01/p04.Gif
+frame  data/chars/players/Blood/p01/p05.Gif
+frame  data/chars/players/Blood/p01/p06.Gif
+frame  data/chars/players/Blood/p01/p07.Gif
+frame  data/chars/players/Blood/p01/p08.Gif
+frame  data/chars/players/Blood/p01/p09.Gif
+frame  data/chars/players/Blood/p01/p10.Gif
+frame  data/chars/players/Blood/p01/p11.Gif
+frame  data/chars/players/Blood/p01/p12.Gif
+frame  data/chars/players/Blood/p01/p13.Gif
+frame  data/chars/players/Blood/p01/p14.Gif
+frame  data/chars/players/Blood/p01/p15.Gif
+	@cmd killentity getlocalvar("self")
+frame  data/chars/players/Blood/p01/p15.Gif
+

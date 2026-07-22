@@ -1,0 +1,72 @@
+music		data/bgs/St203/Lv203a.bor
+bossmusic	data/music/boss2.bor
+scrollspeed 0.5#1
+stagenumber 3
+background	data/bgs/st203/bg00.gif
+panel		data/bgs/St203/Pn15.gif
+#fglayer			data/bgs/st201/fpn00.gif 0 -0.8 0.6 0 0 0 0 1 1 1
+frontpanel      data/bgs/St203/fpn00.gif
+cameratype 1
+cameraoffset 	0 -60
+settime         99
+notime          0
+noslow          1
+order		a
+spawn1  	125 20
+spawn2  	130 35
+spawn3  	135  50
+
+wall		711 238 -12 0 1000 1000 31 10000
+
+spawn  parque01D
+flip   1
+	coords  0  0
+	at  0
+
+
+spawn  Lixo01
+item   apple
+	coords  500  250
+	at  0
+
+
+spawn  Galsia_B
+map    1
+health 40
+	coords  383  177
+	at  0
+
+spawn  Galsia_
+map    1
+health 40
+	coords  471  204
+	at  0
+
+
+spawn  Donovan_
+health 40
+	coords  500  225
+	at  50
+
+spawn  Donovan
+health 40
+	coords  500  225
+	at  100
+
+spawn  Electra
+health 200
+	coords  550  190
+	at  350
+
+spawn  Jake
+map    3
+health 250
+	coords  500  190
+	at  350
+
+
+
+
+
+
+

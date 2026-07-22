@@ -1,0 +1,484 @@
+name	Ruy_B
+health	150
+mp 30
+mprate 1
+#secret 1
+blockodds 1
+Falldie 2
+Grabdistance 18
+riseinv				0.4 1
+speed	9
+type	Enemy
+gfxshadow	1
+candamage			Player npc obstacle
+JUMPHEIGHT 4
+hostile Player NPC
+#antigrab 2
+atchain   1 2 3 4 5
+#weapons Ruy_Knife Ruy_Sword Ruy_pipe Ruy_Kunai
+icon	data/chars/Enemys/Ruy/icon.gif 1
+diesound data/Sounds/Die3.wav
+running	20	3	2	1	1
+onblockwscript	data/scripts/bounceF.c
+#animationscript 	data/scripts/ani0020.h
+animationscript		data/scripts/drago.c
+ondrawscript 		data/scripts/Enemy_ondrawscript.c
+
+
+
+Load RuyP01
+#Load Ruy_Pipe
+#Load Ruy_Kunai
+#Load Ruy_Sword
+
+remap data/chars/Enemys/Ruy/idle00.gif data/chars/Enemys/Ruy/MAp01.gif
+remap data/chars/Enemys/Ruy/idle00.gif data/chars/Enemys/Ruy/MAp02.gif
+remap data/chars/Enemys/Ruy/idle00.gif data/chars/Enemys/Ruy/MAp03.gif
+remap data/chars/Enemys/Ruy/idle00.gif data/chars/Enemys/Ruy/MAp04.gif
+
+anim Block
+	loop	0
+	delay	8
+	offset	100 128
+		move  -5
+	frame	data/chars/Enemys/Ruy/a300.gif
+	frame	data/chars/Enemys/Ruy/a300.gif
+	frame	data/chars/Enemys/Ruy/a300.gif
+
+anim Spawn
+	loop	0
+	delay	999
+	offset	94 125
+	bbox	74 -101 45 44
+	frame   data/chars/Enemys/Ruy/W00.gif
+	frame   data/chars/Enemys/Ruy/W00.gif
+	frame   data/chars/Enemys/Ruy/W00.gif
+
+anim Pain5
+	loop	0
+	delay	10
+	offset	95 125
+	frame   data/chars/Enemys/Ruy/W01.gif
+	frame   data/chars/Enemys/Ruy/W02.gif
+	frame   data/chars/Enemys/Ruy/W03.gif
+		offset  95  121
+	frame   data/chars/Enemys/Ruy/Land.gif
+
+
+anim idle
+	loop	1
+	delay	25
+	offset	95 125
+	bbox	80 51 32 74
+	frame   data/chars/Enemys/Ruy/idle00.gif
+	@cmd	depost 0
+	@cmd	throw 15 0.7 0.7 1 0 -1
+	@cmd	clearL
+	frame   data/chars/Enemys/Ruy/idle01.gif
+
+
+
+anim walk
+	loop	1
+	delay	12
+	offset	100 128
+	bbox	91 49 15 80
+	frame	data/chars/Enemys/Ruy/walk00.gif
+	frame	data/chars/Enemys/Ruy/walk01.gif
+	frame	data/chars/Enemys/Ruy/walk02.gif
+	frame	data/chars/Enemys/Ruy/walk03.gif
+	frame	data/chars/Enemys/Ruy/walk04.gif
+	frame	data/chars/Enemys/Ruy/walk05.gif
+	frame	data/chars/Enemys/Ruy/walk06.gif
+	frame	data/chars/Enemys/Ruy/walk07.gif
+
+
+
+
+
+anim jump
+	loop	0
+	delay	15
+	offset	95 122
+	bbox	92 48 22 73
+	frame	data/chars/Enemys/Ruy/Jump00.gif
+	frame	data/chars/Enemys/Ruy/Jump00.gif
+	frame	data/chars/Enemys/Ruy/Jump00.gif
+
+
+
+
+
+anim attack1
+	loop	0
+	delay	6
+	offset	95 126
+        Range 0 40
+        RangeZ -5 5
+        hitflash	Fraco
+	bbox	86 49 20 77
+		Attack1  0
+        Sound	data/sounds/golpes/Soco.wav
+        hitfx	data/sounds/golpes/Fraco.wav
+	frame	data/chars/Enemys/Ruy/a100.gif
+		attack1  96  54  45  23  5  0  0  0  0  10
+		delay  12
+	frame	data/chars/Enemys/Ruy/a101.gif
+		delay  6
+		Attack1  0
+	frame	data/chars/Enemys/Ruy/a100.gif
+
+
+anim attack2
+	loop	0
+	delay	6
+	offset	98 125
+        hitflash	Medio
+	bbox	85 48 24 76
+		Attack1  0
+        Sound	data/sounds/golpes/Soco.wav
+        hitfx	data/sounds/golpes/Medio.wav
+	frame	data/chars/Enemys/Ruy/a200.gif
+		attack1  98  59  46  26  5  0  0  0  0  10
+		delay  15
+	frame	data/chars/Enemys/Ruy/a201.gif
+		delay  7
+		Attack1  0
+	frame	data/chars/Enemys/Ruy/a200.gif
+
+anim attack3
+	loop	0
+	delay	6
+	offset	97 126
+        hitflash	Forte
+	bbox	84 49 27 78
+		Attack1  0
+        Sound	data/sounds/golpes/Soco.wav
+        hitfx	data/sounds/golpes/Forte.wav
+	frame	data/chars/Enemys/Ruy/a300.gif
+		attack2  77  58  20  19  5  1  0  0  0  10
+		delay  5
+	frame	data/chars/Enemys/Ruy/a301.gif
+		delay  7
+		attack1  84  59  52  24  5  1  0  0  0  10
+	frame	data/chars/Enemys/Ruy/a302.gif
+	frame	data/chars/Enemys/Ruy/a303.gif
+		delay  15
+	frame	data/chars/Enemys/Ruy/a304.gif
+
+
+anim Upper
+	loop	0
+	delay	12
+        Range 0 60
+        RangeZ -10 10
+	offset	93 115
+	bbox	89 47 21 49
+        hitflash	MEdio
+	jumpframe  2  1  2  0
+	frame	data/chars/Enemys/Ruy/fs100.gif
+	Sound	data/chars/Enemys/Ruy/Shoryuken.wav
+	frame	data/chars/Enemys/Ruy/fs101.gif
+		delay  40
+		attack2  86  7  34  89  15  1  0  0  0  15
+	frame	data/chars/Enemys/Ruy/fs102.gif
+		delay  10
+	frame	data/chars/Enemys/Ruy/fs103.gif
+		Attack1  0
+	frame	data/chars/Enemys/Ruy/fs104.gif
+
+
+anim freespecial
+	loop	0
+	delay	12
+	offset	98 127
+        Range 100 120
+        RangeZ -5 5
+        hitflash	Forte
+	bbox	82 50 28 75
+		Attack1  0
+        Sound	data/sounds/golpes/Soco.wav
+        hitfx	data/sounds/golpes/Forte.wav
+	frame	data/chars/Enemys/Ruy/fs01.gif
+	Sound	data/chars/Enemys/Ruy/HAdouken.wav
+	frame	data/chars/Enemys/Ruy/fs02.gif
+	@cmd  spawn01  "RuyP01"  0  0  1
+		delay  40
+	frame	data/chars/Enemys/Ruy/fs03.gif
+
+
+anim freespecial2
+	loop	0
+	delay	12
+        Range 60 80
+        RangeZ -5 5
+	offset	93 115
+	bbox	89 47 21 49
+        hitflash	MEdio
+	jumpframe  2  2  2  0
+	frame	data/chars/Enemys/Ruy/fs100.gif
+	Sound	data/chars/Enemys/Ruy/Shoryuken.wav
+	frame	data/chars/Enemys/Ruy/fs101.gif
+		delay  40
+		attack2  86  7  34  89  15  1  0  0  0  15
+	frame	data/chars/Enemys/Ruy/fs102.gif
+		delay  10
+	frame	data/chars/Enemys/Ruy/fs103.gif
+		Attack1  0
+	frame	data/chars/Enemys/Ruy/fs104.gif
+
+anim freespecial3
+	loop	0
+	delay	12
+        Range 40 60
+        RangeZ -10 10
+	offset	98 125
+	bbox	77 52 33 55
+        hitflash	MEdio
+	frame	data/chars/Enemys/Ruy/fs200.gif
+        Sound	data/sounds/golpes/Soco.wav
+	Sound	data/chars/Enemys/Ruy/Senpuukyaku.wav
+		attack2  97  65  52  30  10  1  0  0  0  15
+	frame	data/chars/Enemys/Ruy/fs201.gif
+		attack2  80  74  31  27  10  1  0  0  0  15
+	frame	data/chars/Enemys/Ruy/fs202.gif
+        Sound	data/sounds/golpes/Soco.wav
+		attack2  55  51  45  44  10  1  0  0  0  15
+	frame	data/chars/Enemys/Ruy/fs203.gif
+		attack2  87  76  32  28  10  1  0  0  0  15
+	frame	data/chars/Enemys/Ruy/fs204.gif
+        Sound	data/sounds/golpes/Soco.wav
+		attack2  87  60  62  30  10  1  0  0  0  15
+	frame	data/chars/Enemys/Ruy/fs201.gif
+        Sound	data/sounds/golpes/Soco.wav
+		attack2  82  76  29  28  10  1  0  0  0  15
+	frame	data/chars/Enemys/Ruy/fs202.gif
+		attack2  49  51  55  40  10  1  0  0  0  15
+	frame	data/chars/Enemys/Ruy/fs203.gif
+		Attack1  0
+	frame	data/chars/Enemys/Ruy/a100.gif
+
+
+
+anim freespecial4
+	loop	0
+	delay	12
+        Range -40 -1
+        RangeZ -10 -5
+	offset	98 125
+	bbox	77 52 33 55
+        hitflash	MEdio
+	frame	data/chars/Enemys/Ruy/fs200.gif
+	Sound	data/chars/Enemys/Ruy/Senpuukyaku.wav
+		attack2  97  65  52  30  10  1  0  0  0  15
+	frame	data/chars/Enemys/Ruy/fs201.gif
+		attack2  80  74  31  27  10  1  0  0  0  15
+	frame	data/chars/Enemys/Ruy/fs202.gif
+		attack2  55  51  45  44  10  1  0  0  0  15
+	frame	data/chars/Enemys/Ruy/fs203.gif
+		attack2  87  76  32  28  10  1  0  0  0  15
+	frame	data/chars/Enemys/Ruy/fs204.gif
+		attack2  87  60  62  30  10  1  0  0  0  15
+	frame	data/chars/Enemys/Ruy/fs201.gif
+		attack2  82  76  29  28  10  1  0  0  0  15
+	frame	data/chars/Enemys/Ruy/fs202.gif
+		attack2  49  51  55  40  10  1  0  0  0  15
+	frame	data/chars/Enemys/Ruy/fs203.gif
+		Attack1  0
+	frame	data/chars/Enemys/Ruy/a100.gif
+
+
+
+
+
+anim pain
+	loop	0
+	offset	96 127
+	bbox	77 50 34 79
+	delay	5
+	frame	data/chars/Enemys/Ruy/pain01.gif
+		delay  25
+		offset  98  127
+	frame	data/chars/Enemys/Ruy/pain01.gif
+
+anim pain3
+	loop	0
+	offset	96 127
+	bbox	81 48 28 78
+	delay	5
+	jumpframe  0  2  0  0
+	frame	data/chars/Enemys/Ruy/pain01.gif
+		delay  25
+		offset  98  127
+	frame	data/chars/Enemys/Ruy/pain01.gif
+
+anim pain4
+	loop	0
+	offset	96 127
+	bbox	84 52 26 77
+	delay	5
+	frame	data/chars/Enemys/Ruy/pain01.gif
+		delay  900
+		offset  98  127
+	frame	data/chars/Enemys/Ruy/pain01.gif
+
+
+anim grabbed
+	loop	0
+	offset	98 125
+	bbox	84 58 30 68
+	delay	40
+	frame	data/chars/Enemys/Ruy/pain02.gif
+
+
+
+anim pain2
+	loop	0
+	offset	98 127
+	bbox	84 57 31 70
+	delay	5
+	frame	data/chars/Enemys/Ruy/pain02.gif
+		delay  25
+		offset  100  127
+	frame	data/chars/Enemys/Ruy/pain02.gif
+
+
+
+
+
+anim fall2
+	loop	0
+	offset	96 129
+	jumpframe  0  3  -3  0
+	delay	20
+        hitfx	data/sounds/golpes/Forte.wav
+		attack  0
+	frame	data/chars/Enemys/Ruy/fall00.gif
+		Attack1  0
+		offset  89  121
+	frame	data/chars/Enemys/Ruy/fall01.gif
+		offset  84  109
+		delay  10
+	frame	data/chars/Enemys/Ruy/fall02.gif
+
+anim fall
+	loop	0
+	offset	97 127
+	delay	20
+        hitfx	data/sounds/golpes/Forte.wav
+		attack  0
+	frame	data/chars/Enemys/Ruy/fall00.gif
+		Attack1  0
+		offset  91  122
+	frame	data/chars/Enemys/Ruy/fall01.gif
+		offset  83  108
+		delay  10
+	frame	data/chars/Enemys/Ruy/fall02.gif
+
+anim fall6 #Shok
+	loop	0
+	offset	85 111
+	delay	5
+        hitfx	data/sounds/golpes/Forte.wav
+		attack  0
+	frame	data/chars/Enemys/Ruy/fall201.gif
+	frame	data/chars/Enemys/Ruy/fall200.gif
+	frame	data/chars/Enemys/Ruy/fall201.gif
+	frame	data/chars/Enemys/Ruy/fall200.gif
+	frame	data/chars/Enemys/Ruy/fall201.gif
+		offset  87  110
+	frame	data/chars/Enemys/Ruy/fall02.gif
+
+
+anim fall7 #Burn
+	loop	0
+	offset	70 96
+	delay	10
+        hitfx	data/sounds/golpes/Forte.wav
+		attack  0
+	frame	data/chars/Enemys/Ruy/FALL300.gif
+	frame	data/chars/Enemys/Ruy/FALL301.gif
+	frame	data/chars/Enemys/Ruy/FALL302.gif
+	frame	data/chars/Enemys/Ruy/FALL300.gif
+	frame	data/chars/Enemys/Ruy/FALL301.gif
+		offset  83  110
+	frame	data/chars/Enemys/Ruy/FALL02.gif
+
+
+anim rise
+	loop	0
+	offset	89 115
+	delay	12
+	frame	data/chars/Enemys/Ruy/rise00.gif
+		move  0
+	frame	data/chars/Enemys/Ruy/rise01.gif
+		offset  89  113
+	frame  data/chars/Enemys/Ruy/Rise02.gif
+	frame  data/chars/Enemys/Ruy/Rise03.gif
+		delay  15
+		offset  89  114
+	frame  data/chars/Enemys/Ruy/Rise04.gif
+
+
+
+
+
+
+
+anim land
+	loop	0
+	delay	15
+	offset	96 121
+	bbox	83 76 33 46
+	frame	data/chars/Enemys/Ruy/Land.gif
+
+
+anim Fall9
+	loop	0
+	offset	97 126
+	delay	999
+	frame	data/chars/Enemys/Ruy/pain01.gif #0
+	frame	data/chars/Enemys/Ruy/pain02.gif #1
+		offset  83  121
+	frame	data/chars/Enemys/Ruy/fall01.gif #2
+		offset  82  111
+	frame	data/chars/Enemys/Ruy/fall02.gif #3
+		offset  104  103
+	frame	data/chars/Enemys/Ruy/fall400.gif #4
+		offset  95  133
+	frame	data/chars/Enemys/Ruy/fall401.gif #5
+		offset  74  111
+	frame	data/chars/Enemys/Ruy/fall402.gif #6
+		offset  92  108
+	frame  data/chars/Enemys/Ruy/fall403.gif #7
+		offset  91  130
+	delay	20
+	frame	data/chars/Enemys/Ruy/fall401.gif #8
+	delay	30
+		offset  95  121
+	frame	data/chars/Enemys/Ruy/fall404.gif #9
+	offset	81 110
+	frame	data/chars/Enemys/Ruy/Fall405.gif #10
+
+
+anim Fall8
+	loop	0
+	flipframe  0
+	offset	93 117
+	delay	30
+	frame	data/chars/Enemys/Ruy/fall01.gif #0
+	offset	83 110
+	delay	15
+	frame	data/chars/Enemys/Ruy/fall02.gif #1
+
+
+anim Fall5
+	loop	0
+	flipframe  1
+	offset	81 122
+	delay	30
+	frame	data/chars/Enemys/Ruy/fall01.gif #0
+	offset	83 110
+	delay	15
+	frame	data/chars/Enemys/Ruy/fall02.gif #1
+

@@ -1,0 +1,52 @@
+##MAIN
+name				FoG_B
+type				enemy
+subtype				biker
+hostile				player npc
+candamage			enemy player npc obstacle
+
+
+##ICONS
+icon				data/chars/Enemys/fog/icon.gif 1
+
+##REMAPS
+remap				data/chars/Enemys/fog/idle00.gif data/chars/Enemys/fog/MAp01.gif
+remap				data/chars/Enemys/fog/idle00.gif data/chars/Enemys/fog/Map02.gif
+remap				data/chars/Enemys/fog/idle00.gif data/chars/Enemys/fog/Map03.gif
+remap				data/chars/Enemys/fog/idle00.gif data/chars/Enemys/fog/Map04.gif
+
+##LOADS
+load				fog
+rider				fog
+
+##ANIMATIONS#############################################################################
+
+anim spawn
+	loop	0
+	delay	1
+	offset	145 179
+	frame	data/chars/Enemys/fog/mounted00.gif
+
+anim idle
+	fastattack 1
+	loop	1
+	delay	6
+	offset	145 179
+	bbox 	123 101 47 80
+        hitflash	Forte
+        hitfx	data/sounds/golpes/Forte.wav
+	attack3 169 148 31 33 15 1 1 0 0 12
+	frame	data/chars/Enemys/fog/mounted00.gif
+	frame	data/chars/Enemys/fog/mounted01.gif
+
+
+anim pain
+	loop	1
+	delay	8
+	offset	145 179
+        hitflash	Forte
+        hitfx	data/sounds/golpes/Forte.wav
+	attack1 167 150 35 30 24 1 1 0 0 12
+	frame	data/chars/Enemys/fog/unmounted00.gif
+	frame	data/chars/Enemys/fog/unmounted01.gif
+

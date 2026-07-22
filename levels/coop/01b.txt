@@ -1,0 +1,365 @@
+music		data/music/02a.bor
+bossmusic	data/music/Boss2.bor
+scrollspeed 0.5#1
+bgspeed 25 0
+Rock 2
+#direction Left
+stagenumber 2
+background	data/bgs/01/baCK02.gif 	0.675 1 0 0 0 0 -1 1 1
+#bglayer		data/bgs/00/b02.gif	0.575 1 0 0 0 0 -1 1 1
+#bglayer		data/bgs/00/b01.gif	0.475 1 0 0 0 0 -1 1 1
+#water		data/bgs/01/Mar01.gif		0.5
+#fglayer         data/bgs/00/FOG.gif              0.5 1 0 0 0 0 -1 1 1 0 1 3 10 0.3
+panel		data/bgs/01/pn02.gif		none	none
+frontpanel	data/bgs/01/Front02.gif		
+cameratype 1
+cameraoffset 0 -30
+#levelscript @script
+#void main() {
+#	changelevelproperty("camerazoffset", 0);
+#	changelevelproperty("cameraxoffset", 0);
+#}
+#@end_script
+settime         99
+notime          0
+noslow          1
+order		a
+spawn1  	50 20 50
+spawn2  	55 35 50 
+spawn3  	60 50 50
+
+light		128 -128
+at			0
+
+group 4 4
+at  0
+
+spawn  ActP
+	coords  250 250
+	at  0
+
+spawn  Slum_
+Flip 1
+health 70
+	coords  330 227
+	at  0
+
+
+spawn  Act
+	coords  400 227
+	at  0
+
+
+
+spawn  Slum_
+MAp 1
+health 70
+	coords  465 227
+	at  0
+
+spawn  Signal_
+Flip 1
+MAp 1
+health 70
+	coords  396 230
+	at  0
+
+group 4 4
+at  100
+
+wait
+at       100
+
+
+
+spawn  Jhonny
+health 70
+	coords  600 240
+	at  100
+
+spawn  Donovan
+MAp 1
+health 50
+	coords  -100 260
+	at  100
+
+spawn  Galsia
+MAp 1
+health 50
+	coords  -100 260
+	at  100
+
+spawn  Thug
+MAp 1
+health 50
+	coords  -100 260
+	at  100
+
+
+spawn  Skiner
+MAp 1
+health 70
+	coords  600 240
+	at  100
+
+spawn  Signal
+MAp 2
+health 70
+	coords  -100 240
+	at  100
+
+spawn  ActE
+	coords  250 240
+	at  100
+
+spawn  ActN
+	coords  250 250
+	at  101
+
+
+spawn  Act
+	coords  620 230
+	at  101
+
+spawn  Galsia_
+MAp 2
+health 70
+	coords  600 240
+	at  101
+
+
+spawn  Donovan_
+MAp 2
+health 70
+	coords  640 250
+	at  101
+
+group 4 4
+at  500
+
+wait
+at       500
+
+spawn  Ralf
+MAp 1
+health 70
+	coords  600 240
+	at  500
+
+spawn  Jhonny
+map    2
+health 70
+	coords  -100 240
+	at  500
+
+spawn  Thug
+map    1
+health 50
+	coords  600 240
+	at  500
+
+spawn  Signal
+map    2
+health 70
+	coords  -100 240
+	at  500
+
+spawn  Slum
+map    3
+health 50
+	coords  600 240
+	at  500
+
+spawn  Costa
+map    2
+health 70
+	coords  -100 240
+	at  500
+
+spawn  Chan
+map    1
+health 70
+	coords  600 240
+	at  500
+
+spawn  ActE
+	coords  250 240
+	at  500
+
+spawn  ActN
+	coords  250 250
+	at  501
+
+group 5 5
+at  501
+
+
+
+spawn  Chan
+map    2
+health 70
+	coords  600 240
+	at  600
+
+
+spawn  Costa
+map    2
+health 70
+	coords  600 260
+	at  700
+
+
+spawn  Slum
+map    4
+health 50
+	coords  600 240
+	at  800
+
+
+spawn  Galsia
+map    4
+health 50
+	coords  600 240
+	at  900
+
+
+wait
+at       1000
+
+group 4 4
+at  1000
+
+
+
+spawn  Jhonny
+map    3
+health 70
+	coords  600 260
+	at  1000
+
+
+spawn  Ralf
+map    4
+health 70
+	coords  -100 240
+	at  1000
+
+
+spawn  Jhonny
+map    4
+health 70
+	coords  600 240
+	at  1000
+
+spawn  Ralf
+map    3
+health 70
+	coords  -100 260
+	at  1000
+
+spawn  Apple
+	coords  300 240 300
+	at  1000
+
+spawn  ActE
+	coords  250 240
+	at  1000
+
+spawn  ActN
+	coords  250 250
+	at  1001
+
+
+
+group 5 5
+at  1600
+
+wait
+at       1600
+
+
+spawn  Costa
+map    1
+health 70
+	coords  600 240
+	at  1600
+
+
+spawn  Costa
+map    2
+health 70
+	coords  600 260
+	at  1600
+
+spawn  Chicken
+	coords  250 260 300
+	at  1600
+
+
+spawn  Slum
+map    4
+health 50
+	coords  -100 240
+	at  1600
+
+
+spawn  Galsia
+map    4
+health 50
+	coords  -100 240
+	at  1600
+
+
+
+spawn  Chan
+map    1
+health 70
+	coords  600 240
+	at  1600
+
+
+spawn  Chan
+map    2
+health 70
+	coords  600 260
+	at  1600
+
+spawn  Galsia
+map    4
+health 50
+	coords  600 240
+	at  1600
+
+
+spawn  Donovan
+map    4
+health 50
+	coords  600 240
+	at  1600
+
+spawn  ActE
+	coords  250 240
+	at  1600
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

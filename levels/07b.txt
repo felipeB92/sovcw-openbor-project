@@ -1,0 +1,349 @@
+music		data/BGs/07/07a.bor
+bossmusic	data/music/01a.bor
+scrollspeed 0.5#1
+stagenumber 8
+background	data/bgs/07/back01.gif	        1 1 0 0 0 0 -1 1 0
+bglayer		data/bgs/07/back01b.gif		0.6 1 0 0 0 0 -1 1 1 0  0 0 0 0 0
+bglayer		data/bgs/07/back01a.gif		0.4 1 0 0 0 0 -1 1 1 0  0 0 0 0 1.5
+#bglayer		data/bgs/st207/bg02.gif		0.2 1 0 0 0 0 -1 1 1 0  0 0 0 0 3
+panel		data/bgs/07/Pn02.gif		none	none		none	none
+frontpanel	data/bgs/07/Front.gif		
+cameratype 1
+cameraoffset 0 -30
+#levelscript @script
+#void main() {
+#	changelevelproperty("camerazoffset", 0);
+#	changelevelproperty("cameraxoffset", 0);
+#}
+#@end_script
+settime         90
+notime          1
+noslow          1
+order		a
+spawn1  	50 20 50
+spawn2  	55 35 50 
+spawn3  	60 50 50
+
+
+
+
+spawn LAb
+Item  Apple
+	coords  400 230
+        at 0
+
+spawn LAbB
+	coords  400 230
+        at 0
+
+wait
+at       0
+
+group 4 4
+at  0
+
+
+spawn Jake
+health 60
+map 7
+	coords  500 200 1
+        at 0
+
+spawn Bucky
+health 60
+map 4
+	coords  -100 200 1
+        at 0
+
+spawn Charlie
+health 60
+map 4
+	coords  -130 220 1
+        at 0
+
+
+spawn Edy
+health 60
+map 4
+	coords  550 220 1
+        at 0
+
+spawn Bil
+health 60
+map 4
+	coords  500 200 1
+        at 0
+
+spawn Gilson
+health 60
+map 4
+	coords  -100 200 1
+        at 0
+
+spawn JAy
+health 70
+map 4
+	coords  -130 220 1
+        at 0
+
+
+spawn Betty
+health 50
+map 3
+	coords  550 220 1
+        at 0
+
+
+spawn Box2
+Item  Chocolate
+	coords  500 190
+        at 1
+
+
+
+spawn Mike
+health 250
+map 1
+	coords  500 210
+        at 50
+
+wait
+at       100
+
+group 4 4
+at  100
+
+spawn Nita
+health 150
+map 4
+	coords  550 220 1
+        at 100
+
+spawn Nita
+health 150
+map 4
+	coords  500 195 1
+        at 100
+
+
+wait
+at       200
+
+group 4 4
+at  200
+
+
+spawn Zoi
+health 50
+map 3
+	coords  500 200 1
+        at 200
+
+spawn Mina
+health 50
+map 4
+	coords  -100 200 1
+        at 200
+
+spawn Ninja
+health 70
+map 1
+	coords  -130 220 1
+        at 200
+
+
+spawn Lisa
+health 70
+map 4
+	coords  550 220 1
+        at 200
+
+spawn Sara
+health 60
+map 4
+	coords  500 200 1
+        at 200
+
+
+spawn KAsumi_
+health 100
+map 4
+	coords  -130 220 1
+        at 200
+
+
+spawn Box2
+Item  Pao
+	coords  510 190
+        at 201
+
+spawn Box
+Item  Cash
+	coords  500 193
+        at 201
+
+spawn Hattori
+health 250
+map 1
+	coords  500 200
+        at 250
+
+
+wait
+at       300
+
+group 4 4
+at  300
+
+spawn Ninja_
+health 100
+map 4
+	coords  550 220 1
+        at 300
+
+spawn Ninja_
+health 75
+map 3
+	coords  500 195 1
+        at 300
+
+
+spawn Kasumi_
+health 100
+map 4
+	coords  -100 220 1
+        at 300
+
+spawn KAsumi_
+health 75
+map 3
+	coords  -100 195 1
+        at 300
+
+
+wait
+at       400
+
+group 4 4
+at  400
+
+
+spawn Gilson
+health 50
+map 3
+	coords  500 200 1
+        at 400
+
+spawn Edy
+health 70
+map 3
+	coords  -100 200 1
+        at 400
+
+spawn Shen
+health 100
+map 3
+	coords  -130 220 1
+        at 400
+
+
+spawn JAy
+health 60
+map 3
+	coords  550 220 1
+        at 400
+
+spawn Jake
+health 50
+map 4
+	coords  500 200 1
+        at 400
+
+spawn Lisa
+health 60
+	coords  -100 200 1
+        at 400
+
+spawn Betty
+health 60
+map 2
+	coords  -130 220 1
+        at 400
+
+
+spawn Mina
+health 70
+map 3
+	coords  550 220 1
+        at 400
+
+spawn Lata
+Item Carne
+map 1
+	coords  500 230
+        at 401
+
+
+spawn Lata
+Item Refri
+map 1
+	coords  520 185
+        at 401
+
+spawn Max
+health 200
+map 1
+	coords  500 200
+        at 450
+
+wait
+at       500
+
+group 4 4
+at  500
+
+spawn JAy
+health 60
+map 3
+	coords  550 220 1
+        at 500
+
+spawn Sara
+health 70
+map 4
+	coords  500 200 1
+        at 500
+
+spawn Montanha_
+health 100
+	coords  -100 200 1
+        at 500
+
+spawn MOntanha
+health 100
+map 2
+	coords  -130 220 1
+        at 500
+
+
+spawn Mina
+health 100
+map 3
+	coords  550 220 1
+        at 500
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

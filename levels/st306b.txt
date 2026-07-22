@@ -1,0 +1,207 @@
+music		data/bgs/St301/Lv301a.bor
+bossmusic	data/music/boss1.bor
+scrollspeed 0.5#1
+stagenumber 6
+background	data/bgs/st306/back00.gif	0.6 1 0 0 0 0 -1 1 0
+panel		data/bgs/st306/pn05.gif		none	none
+frontpanel      data/bgs/st05/Front02.gif
+cameratype 1
+cameraoffset 0 -30
+#levelscript @script
+#void main() {
+#	changelevelproperty("camerazoffset", 0);
+#	changelevelproperty("cameraxoffset", 0);
+#}
+#@end_script
+#settime         90
+notime          1
+noslow          1
+order		a
+spawn1  	150 70  50
+spawn2  	155 85  50
+spawn3  	160 105 50
+
+Wall  -15  273  2  0  132  16  115  306
+Wall  85  174  14  0  573  538  30  500
+Wall  1340  174  -33  0  110  140  30  300
+
+spawn  Elevador301
+Flip 1
+	coords  0 0
+	at  0
+
+
+spawn  Painel
+item   Pipe
+flip   1
+	coords  79 209
+	at  0
+
+spawn  Painel
+2pitem Knife
+flip   1
+	coords  31 254
+	at  0
+
+Wait 
+at  0
+
+Group 1 1
+at  0
+
+spawn  Delay
+	coords  0 200
+	at  0
+
+
+Wait 
+at  660
+
+Group 4 4
+at  660
+
+
+
+
+
+spawn  Tiger
+flip   1
+map    3
+health 80
+	coords  107 250 150
+	at  660
+
+spawn  Tiger
+health 70
+	coords  294 260 150
+	at  660
+
+
+spawn  Tiger
+health 70
+	coords  300 250 150
+	at  660
+
+spawn  Tiger
+map    4
+health 120
+	coords  250 200 150
+	at  660
+
+
+Group 5 5
+at  660
+
+
+
+spawn  Galsia
+flip   1
+health 50
+	coords  500 230
+	at  660
+
+spawn  slum
+health 50
+	coords  -100 250
+	at  660
+
+spawn  Vice
+flip   1
+map    3
+health 70
+	coords  500 200
+	at  660
+
+
+spawn  Galsia
+map    5
+health 90
+	coords  -100 150
+	at  660
+
+spawn  Tiger
+health 70
+	coords  300 250 150
+	at  660
+
+
+
+
+Group 5 5
+at  900
+
+spawn  _Electra
+map    2
+health 80
+	coords  280 150
+	at  900
+
+
+spawn  Garnet
+map    2
+health 80
+	coords  500 240
+	at  900
+
+
+spawn  Garnet
+map    1
+health 50
+	coords  500 230
+	at  900
+
+spawn  Garnet
+flip   1
+health 50
+	coords  -100 250
+	at  900
+
+spawn  Garnet
+flip   1
+health 50
+	coords  -100 220
+	at  900
+
+Group 1 4
+at  900
+
+spawn  Electra
+map    1
+health 90
+	coords  -100 230
+	at  900
+
+Group 4 4
+at  900
+
+
+
+spawn  Electra
+map    4
+health 150
+	coords  500 200
+	at  900
+
+
+spawn  Electra
+map    4
+health 150
+	coords  500 230
+	at  900
+
+spawn  Electra
+map    4
+health 150
+	coords  -100 260
+	at  900
+
+
+spawn  Electra
+map    4
+health 150
+	coords  280 150
+	at  900
+
+
+
+

@@ -1,0 +1,36 @@
+
+name			BlazeP02 #THROWNED
+type			none
+speed 12
+candamage			enemy obstacle
+alpha 1
+nolife			1
+lifespan		4
+remove			1
+gfxshadow		0 0
+flash			Forte
+antigravity 100
+
+anim idle
+	loop	0
+	offset	323 531
+		drawmethod  75  75  0  0  0  -1  -1
+		delay  4
+	frame	data/chars/players/Blaze/P02/p00.gif
+	frame	data/chars/players/Blaze/P02/p01.gif
+	frame	data/chars/players/Blaze/P02/p02.gif
+	frame	data/chars/players/Blaze/P02/p03.gif
+	frame	data/chars/players/Blaze/P02/p04.gif
+	frame	data/chars/players/Blaze/P02/p05.gif
+	frame	data/chars/players/Blaze/P02/p06.gif
+	frame	data/chars/players/Blaze/P02/p07.gif
+	frame	data/chars/players/Blaze/P02/p08.gif
+	frame	data/chars/players/Blaze/P02/p09.gif
+	frame	data/chars/players/Blaze/P02/p10.gif
+	frame	data/chars/players/Blaze/P02/p11.gif
+	frame	data/chars/players/Blaze/P02/p12.gif
+	frame	data/chars/players/Blaze/P02/p13.gif
+	frame	data/chars/players/Blaze/P02/p14.gif
+	@cmd killentity getlocalvar("self")
+	frame	data/chars/players/Blaze/P02/p14.gif
+

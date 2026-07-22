@@ -1,0 +1,27 @@
+name	Forte
+type	none
+Alpha 1
+#subtype	noskip
+#setlayer -1
+setlayer 1000
+antigravity 100
+
+
+anim	idle
+	loop	0
+	delay	2
+	offset	33 33
+		drawmethod  180  180  0  0  0  -1  -1
+	frame	data/Chars/efeitos/F300.gif
+	frame	data/Chars/efeitos/F301.gif
+	frame	data/Chars/efeitos/F302.gif
+	frame	data/Chars/efeitos/F303.gif
+	frame	data/Chars/efeitos/F304.gif
+	frame	data/Chars/efeitos/F305.gif
+	frame	data/Chars/efeitos/F306.gif
+	frame	data/Chars/efeitos/F307.gif
+	frame	data/Chars/efeitos/F308.gif
+	frame	data/Chars/efeitos/F309.gif
+	@cmd killentity getlocalvar("self")
+	frame	data/Chars/efeitos/F309.gif
+

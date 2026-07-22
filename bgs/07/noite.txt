@@ -1,0 +1,18 @@
+name			Noite #GROUND
+type			Panel
+Speed 1
+setlayer 150
+noquake 	1 1
+#offscreenkill	1000
+Alpha 1
+
+
+anim idle
+	loop	1
+	offset	0 275
+		delay  50
+	frame	data/Bgs/06/Front00.gif
+	frame	data/Bgs/06/Front01.gif
+	frame	data/Bgs/06/Front00.gif
+	frame	data/Bgs/06/Front02.gif
+

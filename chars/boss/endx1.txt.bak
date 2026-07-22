@@ -1,0 +1,26 @@
+name    	EndX1
+health	 	10
+type    	Enemy
+nomove  	1
+gfxshadow			1 1
+falldie    1
+Notgrab 1
+hostile player
+candamage player
+subtype	noskip
+setlayer 999
+
+
+anim	spawn
+		offset  0  0
+		delay  1
+        hitfx	data/sounds/silencio.wav
+		delay  60
+		attack5  0
+	frame  data/Bgs/endX1.GIF
+		delay  1
+		attack5  1  -2  484  277  0  0  1  1  0  999
+	frame	data/Bgs/endX1.GIF
+	@cmd killentity getlocalvar("self")
+	frame	data/Bgs/endX1.GIF
+

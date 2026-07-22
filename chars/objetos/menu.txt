@@ -1,0 +1,27 @@
+# Do not forget to name your character.
+# Health is optional.
+
+name	menu
+health	1
+type	obstacle
+gfxshadow	1
+nolife 1
+noname 1
+#icon	data/chars/misc/charicon.gif
+diesound		data/sounds/Wood.wav
+noatflash	1
+
+anim idle
+	loop	0
+	delay	100
+	offset	100 163
+	bbox	91 130 22 35
+	frame	data/chars/Objetos/menu00.gif
+
+
+anim fall
+	loop	1
+	delay	1000
+	offset	100 154
+	frame	data/chars/Objetos/Menu01.gif
+

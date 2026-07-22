@@ -1,0 +1,613 @@
+music		data/BGs/07/Boss7.bor
+bossmusic	data/BGs/07/Boss7.bor
+scrollspeed 0.5#1
+stagenumber 8
+background	data/bgs/07/back03.gif	        1 1 0 0 0 0 -1 1 0
+bglayer		data/bgs/07/back04.gif		0.6 1 0 0 0 0 -1 1 1 0  0 0 0 0 0
+#bglayer		data/bgs/07/back01a.gif		0.4 1 0 0 0 0 -1 1 1 0  0 0 0 0 1.5
+#bglayer		data/bgs/st207/bg02.gif		0.2 1 0 0 0 0 -1 1 1 0  0 0 0 0 3
+panel		data/bgs/07/Pn04.gif		none	none		none	none
+frontpanel	data/bgs/07/Front02.gif		
+cameratype 1
+cameraoffset 0 -30
+#levelscript @script
+#void main() {
+#	changelevelproperty("camerazoffset", 0);
+#	changelevelproperty("cameraxoffset", 0);
+#}
+#@end_script
+settime         90
+notime          1
+noslow          1
+order		a
+spawn1  	50 20 50
+spawn2  	55 35 50 
+spawn3  	60 50 50
+
+
+
+spawn BAck07
+	coords  246 170
+        at 0
+
+spawn BAck07h
+	coords  250 160
+        at 0
+
+
+wait
+at       0
+
+group 7 7
+at  0
+
+
+spawn mao
+Boss 1
+Flip 1
+health 600
+	coords  125 164 1
+        at 0
+
+spawn mao
+Boss 1
+health 600
+	coords  367 164 1
+        at 0
+
+spawn Hunter_B11
+Item  Hamburger
+health 100
+map 4
+	coords  27 170
+        at 0
+
+spawn Hunter_B12
+Item  Chicken
+health 100
+map 4
+	coords  27 230
+        at 0
+
+spawn Hunter_B13
+Item  refriB
+health 100
+map 4
+	coords  450 170
+        at 0
+
+spawn Hunter_B14
+Item  51
+health 100
+map 4
+	coords  450 230
+        at 0
+
+group 6 6
+at  0
+
+spawn Hunter_B15
+health 100
+map 4
+	coords  450 230
+        at 0
+
+
+spawn Hunter_B11
+health 100
+map 4
+	coords  27 170
+        at 0
+
+spawn Hunter_B12
+health 100
+map 4
+	coords  27 230
+        at 0
+
+spawn Hunter_B13
+health 100
+map 4
+	coords  450 170
+        at 0
+
+spawn Hunter_B14
+health 100
+map 4
+	coords  450 230
+        at 0
+spawn Hunter_B15
+health 100
+map 4
+	coords  450 230
+        at 0
+
+
+spawn Hunter_B11
+health 100
+map 4
+	coords  27 170
+        at 0
+
+spawn Hunter_B12
+health 100
+map 4
+	coords  27 230
+        at 0
+
+spawn Hunter_B13
+health 100
+map 4
+	coords  450 170
+        at 0
+
+spawn Hunter_B14
+health 100
+map 4
+	coords  450 230
+        at 0
+spawn Hunter_B15
+health 100
+map 4
+	coords  450 230
+        at 0
+
+
+spawn Hunter_B11
+health 100
+map 4
+	coords  27 170
+        at 0
+
+spawn Hunter_B12
+health 100
+map 4
+	coords  27 230
+        at 0
+
+spawn Hunter_B13
+health 100
+map 4
+	coords  450 170
+        at 0
+
+spawn Hunter_B14
+health 100
+map 4
+	coords  450 230
+        at 0
+spawn Hunter_B15
+health 100
+map 4
+	coords  450 230
+        at 0
+
+
+spawn Hunter_B11
+health 100
+map 4
+	coords  27 170
+        at 0
+
+spawn Hunter_B12
+health 100
+map 4
+	coords  27 230
+        at 0
+
+spawn Hunter_B13
+health 100
+map 4
+	coords  450 170
+        at 0
+
+spawn Hunter_B14
+health 100
+map 4
+	coords  450 230
+        at 0
+spawn Hunter_B15
+health 100
+map 4
+	coords  450 230
+        at 0
+
+
+spawn Hunter_B11
+health 100
+map 4
+	coords  27 170
+        at 0
+
+spawn Hunter_B12
+health 100
+map 4
+	coords  27 230
+        at 0
+
+spawn Hunter_B13
+health 100
+map 4
+	coords  450 170
+        at 0
+
+spawn Hunter_B14
+health 100
+map 4
+	coords  450 230
+        at 0
+spawn Hunter_B15
+health 100
+map 4
+	coords  450 230
+        at 0
+
+
+spawn Hunter_B11
+health 100
+map 4
+	coords  27 170
+        at 0
+
+spawn Hunter_B12
+health 100
+map 4
+	coords  27 230
+        at 0
+
+spawn Hunter_B13
+health 100
+map 4
+	coords  450 170
+        at 0
+
+spawn Hunter_B14
+health 100
+map 4
+	coords  450 230
+        at 0
+spawn Hunter_B15
+health 100
+map 4
+	coords  450 230
+        at 0
+
+
+spawn Hunter_B11
+health 100
+map 4
+	coords  27 170
+        at 0
+
+spawn Hunter_B12
+health 100
+map 4
+	coords  27 230
+        at 0
+
+spawn Hunter_B13
+health 100
+map 4
+	coords  450 170
+        at 0
+
+spawn Hunter_B14
+health 100
+map 4
+	coords  450 230
+        at 0
+spawn Hunter_B15
+health 100
+map 4
+	coords  450 230
+        at 0
+
+
+spawn Hunter_B11
+health 100
+map 4
+	coords  27 170
+        at 0
+
+spawn Hunter_B12
+health 100
+map 4
+	coords  27 230
+        at 0
+
+spawn Hunter_B13
+health 100
+map 4
+	coords  450 170
+        at 0
+
+spawn Hunter_B14
+health 100
+map 4
+	coords  450 230
+        at 0
+spawn Hunter_B15
+health 100
+map 4
+	coords  450 230
+        at 0
+
+
+spawn Hunter_B11
+health 100
+map 4
+	coords  27 170
+        at 0
+
+spawn Hunter_B12
+health 100
+map 4
+	coords  27 230
+        at 0
+
+spawn Hunter_B13
+health 100
+map 4
+	coords  450 170
+        at 0
+
+spawn Hunter_B14
+health 100
+map 4
+	coords  450 230
+        at 0
+spawn Hunter_B15
+health 100
+map 4
+	coords  450 230
+        at 0
+
+
+spawn Hunter_B11
+health 100
+map 4
+	coords  27 170
+        at 0
+
+spawn Hunter_B12
+health 100
+map 4
+	coords  27 230
+        at 0
+
+spawn Hunter_B13
+health 100
+map 4
+	coords  450 170
+        at 0
+
+spawn Hunter_B14
+health 100
+map 4
+	coords  450 230
+        at 0
+spawn Hunter_B15
+health 100
+map 4
+	coords  450 230
+        at 0
+
+
+spawn Hunter_B11
+health 100
+map 4
+	coords  27 170
+        at 0
+
+spawn Hunter_B12
+health 100
+map 4
+	coords  27 230
+        at 0
+
+spawn Hunter_B13
+health 100
+map 4
+	coords  450 170
+        at 0
+
+spawn Hunter_B14
+health 100
+map 4
+	coords  450 230
+        at 0
+spawn Hunter_B15
+health 100
+map 4
+	coords  450 230
+        at 0
+
+
+spawn Hunter_B11
+health 100
+map 4
+	coords  27 170
+        at 0
+
+spawn Hunter_B12
+health 100
+map 4
+	coords  27 230
+        at 0
+
+spawn Hunter_B13
+health 100
+map 4
+	coords  450 170
+        at 0
+
+spawn Hunter_B14
+health 100
+map 4
+	coords  450 230
+        at 0
+spawn Hunter_B15
+health 100
+map 4
+	coords  450 230
+        at 0
+
+
+spawn Hunter_B11
+health 100
+map 4
+	coords  27 170
+        at 0
+
+spawn Hunter_B12
+health 100
+map 4
+	coords  27 230
+        at 0
+
+spawn Hunter_B13
+health 100
+map 4
+	coords  450 170
+        at 0
+
+spawn Hunter_B14
+health 100
+map 4
+	coords  450 230
+        at 0
+spawn Hunter_B15
+health 100
+map 4
+	coords  450 230
+        at 0
+
+
+spawn Hunter_B11
+health 100
+map 4
+	coords  27 170
+        at 0
+
+spawn Hunter_B12
+health 100
+map 4
+	coords  27 230
+        at 0
+
+spawn Hunter_B13
+health 100
+map 4
+	coords  450 170
+        at 0
+
+spawn Hunter_B14
+health 100
+map 4
+	coords  450 230
+        at 0
+spawn Hunter_B15
+health 100
+map 4
+	coords  450 230
+        at 0
+
+
+spawn Hunter_B11
+health 100
+map 4
+	coords  27 170
+        at 0
+
+spawn Hunter_B12
+health 100
+map 4
+	coords  27 230
+        at 0
+
+spawn Hunter_B13
+health 100
+map 4
+	coords  450 170
+        at 0
+
+spawn Hunter_B14
+health 100
+map 4
+	coords  450 230
+        at 0
+spawn Hunter_B15
+health 100
+map 4
+	coords  450 230
+        at 0
+
+
+spawn Hunter_B11
+health 100
+map 4
+	coords  27 170
+        at 0
+
+spawn Hunter_B12
+health 100
+map 4
+	coords  27 230
+        at 0
+
+spawn Hunter_B13
+health 100
+map 4
+	coords  450 170
+        at 0
+
+spawn Hunter_B14
+health 100
+map 4
+	coords  450 230
+        at 0
+spawn Hunter_B15
+health 100
+map 4
+	coords  450 230
+        at 0
+
+
+spawn Hunter_B11
+health 100
+map 4
+	coords  27 170
+        at 0
+
+spawn Hunter_B12
+health 100
+map 4
+	coords  27 230
+        at 0
+
+spawn Hunter_B13
+health 100
+map 4
+	coords  450 170
+        at 0
+
+spawn Hunter_B14
+health 100
+map 4
+	coords  450 230
+        at 0
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

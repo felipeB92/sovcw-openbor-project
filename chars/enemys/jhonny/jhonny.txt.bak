@@ -1,0 +1,370 @@
+name	Jhonny
+health	70
+mp 30
+mprate 1
+#secret 1
+Falldie 2
+Grabdistance 18
+riseinv				0.4 1
+speed	6
+type	Enemy
+gfxshadow	1
+candamage			Player npc obstacle
+JUMPHEIGHT 4
+hostile Player NPC
+#antigrab 2
+atchain   1 1 2 3 4 5
+weapons Jhonny_Knife Jhonny_Sword Jhonny_pipe Jhonny_Kunai
+icon	data/chars/Enemys/Jhonny/icon.gif 1
+diesound data/Sounds/Die3.wav
+running	20	3	2	1	1
+onblockwscript	data/scripts/bounceF.c
+#animationscript 	data/scripts/ani0020.h
+animationscript		data/scripts/drago.c
+ondrawscript 		data/scripts/Enemy_ondrawscript.c
+
+
+
+#Load Jhonny_Knife
+#Load Jhonny_Pipe
+#Load Jhonny_Kunai
+#Load Jhonny_Sword
+
+remap data/chars/Enemys/Jhonny/idle00.gif data/chars/Enemys/Jhonny/MAp01.gif
+remap data/chars/Enemys/Jhonny/idle00.gif data/chars/Enemys/Jhonny/MAp02.gif
+remap data/chars/Enemys/Jhonny/idle00.gif data/chars/Enemys/Jhonny/MAp03.gif
+remap data/chars/Enemys/Jhonny/idle00.gif data/chars/Enemys/Jhonny/MAp04.gif
+
+
+anim Pain5
+	loop	0
+	delay	12
+	offset	83 121
+	bbox	67 44 34 78
+	frame   data/chars/Enemys/Jhonny/idle00.gif
+
+anim idle
+	loop	1
+	delay	12
+	offset	83 121
+	bbox	67 44 34 78
+	frame   data/chars/Enemys/Jhonny/idle00.gif
+	@cmd	depost 0
+	@cmd	throw 15 0.7 0.7 1 0 -1
+	@cmd	clearL
+	frame   data/chars/Enemys/Jhonny/idle00.gif
+
+
+
+anim walk
+	loop	1
+	delay	12
+	offset	83 119
+	bbox	71 45 31 77
+	frame	data/chars/Enemys/Jhonny/walk00.gif
+	frame	data/chars/Enemys/Jhonny/walk01.gif
+	frame	data/chars/Enemys/Jhonny/walk02.gif
+	frame  data/chars/Enemys/Jhonny/walk01.gif
+
+
+
+
+
+anim jump
+	loop	0
+	delay	15
+	offset	74 117
+	bbox	62 35 36 74
+	frame	data/chars/Enemys/Jhonny/Jump00.gif
+	frame	data/chars/Enemys/Jhonny/Jump00.gif
+	frame	data/chars/Enemys/Jhonny/Jump00.gif
+
+
+anim jumpattack
+	loop	0
+	delay	17
+        Range 60 70
+        RangeZ -8 8
+	offset	70 117
+	bbox	59 40 28 78
+        hitflash	MEdio
+        hitfx	data/sounds/golpes/medio.wav
+	frame	data/chars/Enemys/Jhonny/Jump00.gif
+		delay  15
+		hitflash  MEdio
+		hitfx  data/sounds/golpes/medio.wav
+	Sound  data/sounds/golpes/Chut.wav
+	frame  data/chars/Enemys/Jhonny/Ja100.gif
+		attack1  52  34  65  61  10  1  0  0  0  10
+	frame	data/chars/Enemys/Jhonny/Ja101.gif
+
+
+
+anim attack1
+	loop	0
+	delay	12
+	offset	77 119
+        Range 20 40
+        RangeZ -5 5
+        hitflash	Fraco
+	bbox	63 44 31 76
+		Attack1  0
+        Sound	data/sounds/golpes/Soco.wav
+        hitfx	data/sounds/golpes/Fraco.wav
+	frame	data/chars/Enemys/Jhonny/a100.gif
+		attack1  70  52  64  22  5  1  0  0  0  10
+		delay  20
+	frame	data/chars/Enemys/Jhonny/a101.gif
+		Attack1  0
+		delay  7
+	frame  data/chars/Enemys/Jhonny/a100.gif
+
+anim Freespecial
+	loop	0
+	delay	15
+        Range 0 20
+        RangeZ -5 5
+	offset	74 117
+	bbox	62 35 36 74
+		Followcond  1
+		followanim  1
+        hitfx	data/sounds/golpes/Grab.wav
+		attack1  77  56  40  19  0  0  1  1  0  10
+	frame	data/chars/Enemys/Jhonny/t00.gif
+	frame	data/chars/Enemys/Jhonny/t00.gif
+
+
+anim Freespecial2
+	loop	0
+	delay	15
+        Range 80 100
+        RangeZ -5 5
+	offset	78 118
+		Followcond  1
+		followanim  1
+        hitfx	data/sounds/golpes/Grab.wav
+	frame	data/chars/Enemys/Jhonny/Land.gif
+		delay  4
+		attack1  70  73  34  42  0  0  1  1  0  10
+        @cmd dasher 3 0 0
+	frame	data/chars/Enemys/Jhonny/Roll00.gif
+	frame	data/chars/Enemys/Jhonny/Roll01.gif
+	frame	data/chars/Enemys/Jhonny/Roll02.gif
+	frame	data/chars/Enemys/Jhonny/Roll00.gif
+	frame	data/chars/Enemys/Jhonny/Roll01.gif
+	frame	data/chars/Enemys/Jhonny/Roll02.gif
+        @cmd dasher 0 0 0
+		delay  15
+		Attack1  0
+	frame	data/chars/Enemys/Jhonny/Land.gif
+
+
+anim Follow1
+	loop	0
+	delay	15
+	offset	74 117
+        hitfx	data/sounds/golpes/Grab.wav
+	@cmd	slamstart
+@cmd	position 0 20 0 0 -1
+	delay	15
+        @cmd dasher 0 0 0
+	frame	data/chars/Enemys/Jhonny/t00.gif
+	frame	data/chars/Enemys/Jhonny/t01.gif
+	@cmd	position 1 15 1 0 -1
+	frame	data/chars/Enemys/Jhonny/t02.gif
+	@cmd	position 4 -5 50 0 -1
+	frame	data/chars/Enemys/Jhonny/t03.gif
+	@cmd	position 8 -20 30 0 -1
+	@cmd	depost 0
+	@cmd	throw 15 5 2 2 0 -1
+	@cmd	clearL
+	delay	40
+	frame	data/chars/Enemys/Jhonny/t03.gif
+
+
+anim pain
+	loop	0
+	offset	74 118
+	bbox	61 54 26 66
+	delay	5
+	frame	data/chars/Enemys/Jhonny/pain01.gif
+		delay  25
+		offset  72  118
+	frame	data/chars/Enemys/Jhonny/pain01.gif
+
+anim pain3
+	loop	0
+	offset	74 119
+	bbox	61 54 26 66
+	delay	5
+	jumpframe  0  2  0  0
+	frame	data/chars/Enemys/Jhonny/pain01.gif
+		delay  25
+		offset  77  119
+	frame	data/chars/Enemys/Jhonny/pain01.gif
+
+anim pain4
+	loop	0
+	offset	75 118
+	bbox	61 54 26 66
+	delay	5
+	frame	data/chars/Enemys/Jhonny/pain01.gif
+		delay  900
+		offset  74  119
+	frame	data/chars/Enemys/Jhonny/pain01.gif
+
+
+anim grabbed
+	loop	0
+	offset	81 118
+	bbox	75 53 26 67
+	delay	40
+	frame	data/chars/Enemys/Jhonny/pain02.gif
+
+
+
+anim pain2
+	loop	0
+	offset	83 120
+	bbox	72 55 28 65
+	delay	5
+	frame	data/chars/Enemys/Jhonny/pain02.gif
+		delay  25
+		offset  80  120
+	frame	data/chars/Enemys/Jhonny/pain02.gif
+
+
+
+
+
+anim fall2
+	loop	0
+	offset	81 115
+	jumpframe  0  3  -3  0
+	delay	20
+        hitfx	data/sounds/golpes/Forte.wav
+		attack  0
+	frame	data/chars/Enemys/Jhonny/fall00.gif
+		Attack1  0
+		offset  52  120
+	frame	data/chars/Enemys/Jhonny/fall01.gif
+		offset  78  121
+		delay  10
+	frame	data/chars/Enemys/Jhonny/fall02.gif
+
+anim fall
+	loop	0
+	offset	77 121
+	delay	20
+        hitfx	data/sounds/golpes/Forte.wav
+		attack  0
+	frame	data/chars/Enemys/Jhonny/fall00.gif
+		Attack1  0
+		offset  52  120
+	frame	data/chars/Enemys/Jhonny/fall01.gif
+		offset  78  119
+		delay  10
+	frame	data/chars/Enemys/Jhonny/fall02.gif
+
+anim fall6 #Shok
+	loop	0
+	offset	88 120
+	delay	5
+        hitfx	data/sounds/golpes/Forte.wav
+		attack  0
+	frame	data/chars/Enemys/Jhonny/fall01.gif
+	frame	data/chars/Enemys/Jhonny/fall200.gif
+	frame	data/chars/Enemys/Jhonny/fall01.gif
+	frame	data/chars/Enemys/Jhonny/fall200.gif
+	frame	data/chars/Enemys/Jhonny/fall01.gif
+		offset  74  120
+	frame	data/chars/Enemys/Jhonny/fall02.gif
+
+
+anim fall7 #Burn
+	loop	0
+	offset	65 97
+	delay	10
+        hitfx	data/sounds/golpes/Forte.wav
+		attack  0
+	frame	data/chars/Enemys/Jhonny/FALL300.gif
+	frame	data/chars/Enemys/Jhonny/FALL301.gif
+	frame	data/chars/Enemys/Jhonny/FALL302.gif
+	frame	data/chars/Enemys/Jhonny/FALL300.gif
+	frame	data/chars/Enemys/Jhonny/FALL301.gif
+		offset  78  119
+	frame	data/chars/Enemys/Jhonny/FALL02.gif
+
+
+anim rise
+	loop	0
+	offset	77 119
+	delay	20
+	frame	data/chars/Enemys/Jhonny/Rise00.gif
+	frame	data/chars/Enemys/Jhonny/Rise01.gif
+	frame	data/chars/Enemys/Jhonny/Rise02.gif
+
+
+
+
+
+
+
+anim land
+	loop	0
+	delay	15
+	offset	80 119
+	bbox	58 54 36 67
+	frame	data/chars/Enemys/Jhonny/Land.gif
+
+
+anim Fall9
+	loop	0
+	offset	78 120
+	delay	999
+	frame	data/chars/Enemys/Jhonny/pain01.gif #0
+		offset  83  118
+	frame	data/chars/Enemys/Jhonny/pain02.gif #1
+		offset  74  119
+	frame	data/chars/Enemys/Jhonny/fall01.gif #2
+		offset  81  119
+	frame	data/chars/Enemys/Jhonny/fall02.gif #3
+		offset  94  121
+	frame	data/chars/Enemys/Jhonny/fall400.gif #4
+		offset  83  115
+	frame	data/chars/Enemys/Jhonny/fall401.gif #5
+		offset  90  98
+	frame	data/chars/Enemys/Jhonny/fall402.gif #6
+		offset  101  129
+	frame  data/chars/Enemys/Jhonny/fall403.gif #7
+		offset  83  113
+	delay	20
+	frame	data/chars/Enemys/Jhonny/fall401.gif #8
+	delay	30
+		offset  104  123
+	frame	data/chars/Enemys/Jhonny/fall404.gif #9
+	offset	82 118
+	frame	data/chars/Enemys/Jhonny/Fall405.gif #10
+
+
+anim Fall8
+	loop	0
+	flipframe  0
+	offset	85 119
+	delay	30
+	frame	data/chars/Enemys/Jhonny/fall01.gif #0
+	offset	73 120
+	delay	15
+	frame	data/chars/Enemys/Jhonny/fall02.gif #1
+
+
+anim Fall5
+	loop	0
+	flipframe  1
+	offset	63 120
+	delay	30
+	frame	data/chars/Enemys/Jhonny/fall01.gif #0
+	offset	71 119
+	delay	15
+	frame	data/chars/Enemys/Jhonny/fall02.gif #1
+

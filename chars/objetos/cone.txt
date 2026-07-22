@@ -1,0 +1,27 @@
+# Do not forget to name your character.
+# Health is optional.
+
+name	Cone
+health	1
+nolife 1
+noname 1
+type	obstacle
+gfxshadow	1
+#icon	data/chars/misc/charicon.gif
+diesound		data/sounds/Tire.wav
+noatflash	1
+
+anim idle
+	loop	0
+	delay	100
+	offset	19 56
+	bbox	7 8 23 49
+	frame	data/chars/Objetos/Cone00.gif
+
+
+anim fall
+	loop	1
+	delay	1000
+	offset	13 43
+	frame	data/chars/Objetos/Cone01.gif
+

@@ -1,0 +1,57 @@
+
+name			LeonardoP01 #THROWNED
+type			none
+speed 12
+candamage			enemy obstacle
+alpha 1
+nolife			1
+lifespan		4
+remove			1
+gfxshadow		0 0
+flash			Corte
+antigravity 100
+animationscript		data/scripts/drago.c
+
+anim idle
+	loop	0
+	offset	86 196
+		delay  1
+        hitflash	Corte
+        hitfx	data/sounds/golpes/Corte.wav
+		Attack1  104  74  67  137  20  1  0  0  0  15
+	frame	data/chars/players/Leonardo/P1/P100.gif
+        @cmd dasher 2 0 0
+		delay  3
+	frame	data/chars/players/Leonardo/P1/P100.gif
+	frame	data/chars/players/Leonardo/P1/P101.gif
+	frame	data/chars/players/Leonardo/P1/P102.gif
+	frame	data/chars/players/Leonardo/P1/P103.gif
+	frame	data/chars/players/Leonardo/P1/P104.gif
+	frame	data/chars/players/Leonardo/P1/P105.gif
+	frame	data/chars/players/Leonardo/P1/P100.gif
+	frame	data/chars/players/Leonardo/P1/P101.gif
+	frame	data/chars/players/Leonardo/P1/P102.gif
+	frame	data/chars/players/Leonardo/P1/P103.gif
+	frame	data/chars/players/Leonardo/P1/P104.gif
+	frame	data/chars/players/Leonardo/P1/P105.gif
+	frame	data/chars/players/Leonardo/P1/P100.gif
+	frame	data/chars/players/Leonardo/P1/P101.gif
+	frame	data/chars/players/Leonardo/P1/P102.gif
+	frame	data/chars/players/Leonardo/P1/P103.gif
+	frame	data/chars/players/Leonardo/P1/P104.gif
+	frame	data/chars/players/Leonardo/P1/P105.gif
+	frame	data/chars/players/Leonardo/P1/P100.gif
+	frame	data/chars/players/Leonardo/P1/P101.gif
+	frame	data/chars/players/Leonardo/P1/P102.gif
+	frame	data/chars/players/Leonardo/P1/P103.gif
+	frame	data/chars/players/Leonardo/P1/P104.gif
+	frame	data/chars/players/Leonardo/P1/P105.gif
+	frame	data/chars/players/Leonardo/P1/P100.gif
+	frame	data/chars/players/Leonardo/P1/P101.gif
+	frame	data/chars/players/Leonardo/P1/P102.gif
+	frame	data/chars/players/Leonardo/P1/P103.gif
+	frame	data/chars/players/Leonardo/P1/P104.gif
+	frame	data/chars/players/Leonardo/P1/P105.gif
+	@cmd killentity getlocalvar("self")
+	frame  data/chars/players/Leonardo/P1/p105.gif
+

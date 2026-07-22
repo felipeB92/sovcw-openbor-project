@@ -1,0 +1,9 @@
+blackbox 248 144 24 - black color
+whitebox 248 252 248 - white color
+color25 255 0 0
+color50 224 95 46
+color100 255 255 0
+color200 255 255 0
+color300 255 255 0
+color400 24 184 14
+color500 24 184 14

@@ -1,0 +1,52 @@
+
+name			RyuP02 #THROWNED
+type			none
+speed 12
+candamage			enemy obstacle
+alpha 1
+nolife			1
+lifespan		4
+remove			1
+gfxshadow		0 0
+flash			Forte
+#antigravity 100
+animationscript		data/scripts/drago.c
+
+anim idle
+	loop	0
+	offset	46 93
+		delay  1
+		Attack1  0
+	frame	data/chars/players/Ryu/P100.gif
+        @cmd dasher 1 0 0
+		delay  8
+	frame	data/chars/players/Ryu/P100.gif
+	frame	data/chars/players/Ryu/P101.gif
+	frame	data/chars/players/Ryu/P102.gif
+	frame	data/chars/players/Ryu/P103.gif
+	frame	data/chars/players/Ryu/P104.gif
+	frame	data/chars/players/Ryu/P105.gif
+	frame	data/chars/players/Ryu/P106.gif
+	frame	data/chars/players/Ryu/P107.gif
+	frame	data/chars/players/Ryu/P108.gif
+	frame	data/chars/players/Ryu/P100.gif
+	frame	data/chars/players/Ryu/P101.gif
+	frame	data/chars/players/Ryu/P102.gif
+	frame	data/chars/players/Ryu/P103.gif
+	frame	data/chars/players/Ryu/P104.gif
+	frame	data/chars/players/Ryu/P105.gif
+	frame	data/chars/players/Ryu/P106.gif
+	frame	data/chars/players/Ryu/P107.gif
+	frame	data/chars/players/Ryu/P108.gif
+	frame	data/chars/players/Ryu/P100.gif
+	frame	data/chars/players/Ryu/P101.gif
+	frame	data/chars/players/Ryu/P102.gif
+	frame	data/chars/players/Ryu/P103.gif
+	frame	data/chars/players/Ryu/P104.gif
+	frame	data/chars/players/Ryu/P105.gif
+	frame	data/chars/players/Ryu/P106.gif
+	frame	data/chars/players/Ryu/P107.gif
+	frame	data/chars/players/Ryu/P108.gif
+	@cmd killentity getlocalvar("self")
+	frame  data/chars/players/Ryu/p108.gif
+

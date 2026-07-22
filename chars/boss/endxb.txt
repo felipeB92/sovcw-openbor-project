@@ -1,0 +1,31 @@
+name    	EndXb
+health	 	10
+type    	None
+nomove  	1
+gfxshadow			1 1
+falldie    1
+subject_to_screen 1
+Notgrab 1
+hostile player
+candamage player
+subtype	noskip
+setlayer 990
+
+
+anim	spawn
+		offset  0  0
+		delay  1
+        hitfx	data/sounds/silencio.wav
+	frame  data/Bgs/endX1.GIF
+	frame	data/Bgs/endX1.GIF
+	frame	data/Bgs/endX1.GIF
+
+anim	Idle
+		offset  0  0
+        Loop 1
+		delay  999
+        hitfx	data/sounds/silencio.wav
+	frame  data/Bgs/endX1.GIF
+	frame	data/Bgs/endX1.GIF
+	frame	data/Bgs/endX1.GIF
+

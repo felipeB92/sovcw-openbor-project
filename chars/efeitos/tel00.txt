@@ -1,0 +1,40 @@
+name	Tel00
+type	None
+Alpha 1
+subtype	noskip
+setlayer 999
+
+
+
+anim	idle
+	loop	0
+		offset  196  472
+		delay  3
+	frame	data/Chars/efeitos/T100.gif
+	frame	data/Chars/efeitos/T101.gif
+	frame	data/Chars/efeitos/T100.gif
+	frame	data/Chars/efeitos/T101.gif
+	frame	data/Chars/efeitos/T102.gif
+	frame	data/Chars/efeitos/T100.gif
+	frame	data/Chars/efeitos/T101.gif
+	frame	data/Chars/efeitos/T100.gif
+	frame	data/Chars/efeitos/T101.gif
+	frame	data/Chars/efeitos/T102.gif
+	frame	data/Chars/efeitos/T100.gif
+	frame	data/Chars/efeitos/T101.gif
+	frame	data/Chars/efeitos/T100.gif
+	frame	data/Chars/efeitos/T101.gif
+	frame	data/Chars/efeitos/T102.gif
+	frame	data/Chars/efeitos/T103.gif
+	frame	data/Chars/efeitos/T104.gif
+	frame	data/Chars/efeitos/T105.gif
+	frame	data/Chars/efeitos/T106.gif
+	frame	data/Chars/efeitos/T107.gif
+	frame	data/Chars/efeitos/T108.gif
+	frame	data/Chars/efeitos/T109.gif
+	frame	data/Chars/efeitos/T110.gif
+	frame	data/Chars/efeitos/T111.gif
+	frame	data/Chars/efeitos/T112.gif
+	@cmd killentity getlocalvar("self")
+	frame	data/Chars/efeitos/t112.gif
+

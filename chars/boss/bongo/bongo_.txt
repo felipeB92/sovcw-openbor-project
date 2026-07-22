@@ -1,0 +1,594 @@
+name	Bongo_
+health	300
+mp 30
+mprate 1
+#secret 1
+blockodds 1
+Falldie 2
+Grabdistance 18
+riseinv				0.4 1
+speed	9
+type	Enemy
+gfxshadow	1
+candamage			Player npc obstacle
+JUMPHEIGHT 4
+hostile Player NPC
+antigrab 2
+atchain   1 1 2 3 4 5
+weapons Bongo_Knife Bongo_Sword Bongo_pipe Bongo_Kunai
+icon	data/chars/Boss/Bongo/icon.gif 1
+diesound data/Sounds/Die7.wav
+running	20	3	2	1	1
+onblockwscript	data/scripts/bounceF.c
+#animationscript 	data/scripts/ani0020.h
+animationscript		data/scripts/drago.c
+ondrawscript 		data/scripts/Enemy_ondrawscript.c
+
+
+Load BongoP01
+Load BongoP02
+Load BongoP03
+Load BongoP04
+Load BongoP05
+Load BongoP06
+
+remap data/chars/Boss/Bongo/idle00.gif data/chars/Boss/Bongo/MAp01.gif
+remap data/chars/Boss/Bongo/idle00.gif data/chars/Boss/Bongo/MAp02.gif
+remap data/chars/Boss/Bongo/idle00.gif data/chars/Boss/Bongo/MAp03.gif
+remap data/chars/Boss/Bongo/idle00.gif data/chars/Boss/Bongo/MAp04.gif
+
+
+anim Spawn
+	loop	0
+	delay	12
+	offset	154 202
+	bbox	134 110 35 93
+	frame   data/chars/Boss/Bongo/idle00.gif
+	frame   data/chars/Boss/Bongo/idle01.gif
+	frame   data/chars/Boss/Bongo/idle02.gif
+	frame   data/chars/Boss/Bongo/idle01.gif
+	frame   data/chars/Boss/Bongo/idle00.gif
+	frame   data/chars/Boss/Bongo/idle01.gif
+	frame   data/chars/Boss/Bongo/idle02.gif
+	frame   data/chars/Boss/Bongo/idle01.gif
+	frame   data/chars/Boss/Bongo/idle00.gif
+	frame   data/chars/Boss/Bongo/idle01.gif
+	frame   data/chars/Boss/Bongo/idle02.gif
+	frame   data/chars/Boss/Bongo/idle01.gif
+	frame   data/chars/Boss/Bongo/idle00.gif
+	frame   data/chars/Boss/Bongo/idle01.gif
+	frame   data/chars/Boss/Bongo/idle02.gif
+	frame   data/chars/Boss/Bongo/idle01.gif
+	frame   data/chars/Boss/Bongo/idle00.gif
+	frame   data/chars/Boss/Bongo/idle01.gif
+	frame   data/chars/Boss/Bongo/idle02.gif
+	frame   data/chars/Boss/Bongo/idle01.gif
+	frame   data/chars/Boss/Bongo/idle00.gif
+	frame   data/chars/Boss/Bongo/idle01.gif
+	frame   data/chars/Boss/Bongo/idle02.gif
+	frame   data/chars/Boss/Bongo/idle01.gif
+	frame   data/chars/Boss/Bongo/idle00.gif
+	frame   data/chars/Boss/Bongo/idle01.gif
+	frame   data/chars/Boss/Bongo/idle02.gif
+	frame   data/chars/Boss/Bongo/idle01.gif
+	frame   data/chars/Boss/Bongo/idle00.gif
+	frame   data/chars/Boss/Bongo/idle01.gif
+	frame   data/chars/Boss/Bongo/idle02.gif
+	frame   data/chars/Boss/Bongo/idle01.gif
+	frame   data/chars/Boss/Bongo/idle00.gif
+	frame   data/chars/Boss/Bongo/idle01.gif
+	frame   data/chars/Boss/Bongo/idle02.gif
+	frame   data/chars/Boss/Bongo/idle01.gif
+	frame   data/chars/Boss/Bongo/idle00.gif
+	frame   data/chars/Boss/Bongo/idle01.gif
+	frame   data/chars/Boss/Bongo/idle02.gif
+	frame   data/chars/Boss/Bongo/idle01.gif
+	frame   data/chars/Boss/Bongo/idle00.gif
+	frame   data/chars/Boss/Bongo/idle01.gif
+	frame   data/chars/Boss/Bongo/idle02.gif
+	frame   data/chars/Boss/Bongo/idle01.gif
+	frame   data/chars/Boss/Bongo/idle00.gif
+	frame   data/chars/Boss/Bongo/idle01.gif
+	frame   data/chars/Boss/Bongo/idle02.gif
+	frame   data/chars/Boss/Bongo/idle01.gif
+	frame   data/chars/Boss/Bongo/idle00.gif
+	frame   data/chars/Boss/Bongo/idle01.gif
+	frame   data/chars/Boss/Bongo/idle02.gif
+	frame   data/chars/Boss/Bongo/idle01.gif
+	frame   data/chars/Boss/Bongo/idle00.gif
+	frame   data/chars/Boss/Bongo/idle01.gif
+	frame   data/chars/Boss/Bongo/idle02.gif
+	frame   data/chars/Boss/Bongo/idle01.gif
+	frame   data/chars/Boss/Bongo/idle00.gif
+	frame   data/chars/Boss/Bongo/idle01.gif
+	frame   data/chars/Boss/Bongo/idle02.gif
+	frame   data/chars/Boss/Bongo/idle01.gif
+	frame   data/chars/Boss/Bongo/idle00.gif
+	frame   data/chars/Boss/Bongo/idle01.gif
+	frame   data/chars/Boss/Bongo/idle02.gif
+	frame   data/chars/Boss/Bongo/idle01.gif
+	frame   data/chars/Boss/Bongo/idle00.gif
+	frame   data/chars/Boss/Bongo/idle01.gif
+	frame   data/chars/Boss/Bongo/idle02.gif
+	frame   data/chars/Boss/Bongo/idle01.gif
+	frame   data/chars/Boss/Bongo/idle00.gif
+	frame   data/chars/Boss/Bongo/idle01.gif
+	frame   data/chars/Boss/Bongo/idle02.gif
+	frame   data/chars/Boss/Bongo/idle01.gif
+	frame   data/chars/Boss/Bongo/idle00.gif
+	frame   data/chars/Boss/Bongo/idle01.gif
+	frame   data/chars/Boss/Bongo/idle02.gif
+	frame   data/chars/Boss/Bongo/idle01.gif
+	frame   data/chars/Boss/Bongo/idle00.gif
+	frame   data/chars/Boss/Bongo/idle01.gif
+	frame   data/chars/Boss/Bongo/idle02.gif
+	frame   data/chars/Boss/Bongo/idle01.gif
+	frame   data/chars/Boss/Bongo/idle00.gif
+	frame   data/chars/Boss/Bongo/idle01.gif
+	frame   data/chars/Boss/Bongo/idle02.gif
+	frame   data/chars/Boss/Bongo/idle01.gif
+	frame   data/chars/Boss/Bongo/idle00.gif
+	frame   data/chars/Boss/Bongo/idle01.gif
+	frame   data/chars/Boss/Bongo/idle02.gif
+	frame   data/chars/Boss/Bongo/idle01.gif
+	frame   data/chars/Boss/Bongo/idle00.gif
+	frame   data/chars/Boss/Bongo/idle01.gif
+        delay 999
+	frame   data/chars/Boss/Bongo/idle02.gif
+	frame   data/chars/Boss/Bongo/idle01.gif
+
+
+anim Pain5
+	loop	0
+	delay	12
+	offset	154 202
+	frame   data/chars/Boss/Bongo/idle00.gif
+
+
+anim idle
+	loop	1
+	delay	12
+	offset	154 202
+	bbox	134 110 35 93
+	frame   data/chars/Boss/Bongo/idle00.gif
+	@cmd	depost 0
+	@cmd	throw 1 0.7 0.7 1 0 -1
+	@cmd	clearL
+	frame   data/chars/Boss/Bongo/idle01.gif
+	frame   data/chars/Boss/Bongo/idle02.gif
+	frame   data/chars/Boss/Bongo/idle01.gif
+
+
+
+anim walk
+	loop	1
+	delay	16
+	offset	152 201
+	bbox	135 121 38 82
+	frame	data/chars/Boss/Bongo/walk00.gif
+	frame	data/chars/Boss/Bongo/walk01.gif
+	frame	data/chars/Boss/Bongo/walk02.gif
+	frame   data/chars/Boss/Bongo/walk01.gif
+
+
+
+
+
+anim jump
+	loop	0
+	delay	15
+	offset	160 203
+	bbox	127 119 49 85
+	frame	data/chars/Boss/Bongo/Jump00.gif
+	frame	data/chars/Boss/Bongo/Jump00.gif
+	frame	data/chars/Boss/Bongo/Jump00.gif
+
+
+
+
+
+
+anim attack1
+	loop	0
+	delay	12
+	offset	153 201
+        Range 0 40
+        RangeZ -10 10
+        hitflash	Forte
+	bbox	137 110 30 93
+		Attack1  0
+        Sound	data/sounds/golpes/Soco.wav
+        hitfx	data/sounds/golpes/Forte.wav
+	frame	data/chars/Boss/Bongo/a100.gif
+		delay  20
+		attack1  140  136  58  26  15  1  0  0  0  15
+		bbox  0
+	frame	data/chars/Boss/Bongo/a101.gif
+		Attack1  0
+		delay  6
+	frame	data/chars/Boss/Bongo/a100.gif
+
+
+anim Block
+	loop	0
+	delay	10
+	offset	152 202
+        Range 0 60
+        RangeZ -10 10
+		Attack1  0
+        hitfx	data/sounds/golpes/Grab.wav
+		move  -3
+	frame	data/chars/Boss/Bongo/Block.gif
+	frame  data/chars/Boss/Bongo/Block.gif
+	frame  data/chars/Boss/Bongo/Block.gif
+
+
+anim Freespecial
+	loop	0
+	delay	12
+	offset	154 201
+        Range 200 300
+        RangeZ -10 10
+        custknife BongoP01
+        throwframe 3 0
+        hitflash	Forte
+	bbox	133 111 29 90
+		Attack1  0
+        Sound	data/sounds/golpes/Soco.wav
+        hitfx	data/sounds/golpes/Forte.wav
+	frame	data/chars/Boss/Bongo/fs100.gif
+	frame	data/chars/Boss/Bongo/fs101.gif
+	frame	data/chars/Boss/Bongo/fs102.gif
+        Sound  data/sounds/Fire.wav
+	frame	data/chars/Boss/Bongo/fs103.gif
+		delay  35
+	frame	data/chars/Boss/Bongo/fs103.gif
+
+
+
+
+
+anim Freespecial2
+	loop	0
+	delay	15
+	offset	150 200
+        Range 100 120
+        RangeZ -10 10
+	bbox	138 134 31 67
+        Sound  data/sounds/andore_salto.wav
+        hitflash	Forte
+        hitfx	data/sounds/golpes/Forte.wav
+		Attack1  0
+	frame	data/chars/Boss/Bongo/fs201.gif
+		attack2  128  138  48  60  15  1  0  0  0  15
+		delay  6
+        @cmd dasher 3 0 0
+	frame	data/chars/Boss/Bongo/fs202.gif
+	frame	data/chars/Boss/Bongo/fs203.gif
+	frame	data/chars/Boss/Bongo/fs204.gif
+	frame	data/chars/Boss/Bongo/fs201.gif
+	frame	data/chars/Boss/Bongo/fs202.gif
+	frame	data/chars/Boss/Bongo/fs203.gif
+	frame	data/chars/Boss/Bongo/fs204.gif
+	frame	data/chars/Boss/Bongo/fs202.gif
+	frame	data/chars/Boss/Bongo/fs203.gif
+	frame	data/chars/Boss/Bongo/fs204.gif
+	frame	data/chars/Boss/Bongo/fs201.gif
+	frame	data/chars/Boss/Bongo/fs202.gif
+	frame	data/chars/Boss/Bongo/fs203.gif
+	frame	data/chars/Boss/Bongo/fs204.gif
+        @cmd dasher 0 0 0
+		delay  20
+		Attack1  0
+	frame	data/chars/Boss/Bongo/fs201.gif
+
+anim Freespecial3
+	loop	0
+	delay	20
+	offset	154 201
+        Range 150 250
+        RangeZ -50 -10
+        hitflash	Forte
+	bbox	135 108 36 95
+		Attack1  0
+        hitfx	data/sounds/golpes/Fire2.wav
+	frame	data/chars/Boss/Bongo/fs100.gif
+	frame	data/chars/Boss/Bongo/fs101.gif
+	frame	data/chars/Boss/Bongo/fs102.gif
+		offset  81  120
+		bbox  52  48  48  76
+	frame	data/chars/Boss/Bongo/Pain01.gif
+		offset  154  201
+		bbox  126  118  49  84
+		delay  8
+        @cmd dasher 2 0 -1
+        Sound	data/sounds/wirl.wav
+		attack7  142  117  95  41  15  1  0  0  0  15
+	@cmd  spawn01  "BongoP02"  0  0  1
+        frame	data/chars/Boss/Bongo/Run01.gif
+	@cmd  spawn01  "BongoP03"  0  0  1
+	frame	data/chars/Boss/Bongo/Run02.gif
+	@cmd  spawn01  "BongoP04"  0  0  1
+	frame	data/chars/Boss/Bongo/Run03.gif
+	@cmd  spawn01  "BongoP03"  0  0  1
+	frame	data/chars/Boss/Bongo/Run01.gif
+	@cmd  spawn01  "BongoP04"  0  0  1
+	frame	data/chars/Boss/Bongo/Run02.gif
+	@cmd  spawn01  "BongoP05"  0  0  1
+	frame	data/chars/Boss/Bongo/Run03.gif
+	@cmd  spawn01  "BongoP03"  0  0  1
+	frame	data/chars/Boss/Bongo/Run01.gif
+	@cmd  spawn01  "BongoP04"  0  0  1
+	frame	data/chars/Boss/Bongo/Run02.gif
+	@cmd  spawn01  "BongoP05"  0  0  1
+	frame	data/chars/Boss/Bongo/Run03.gif
+	@cmd  spawn01  "BongoP03"  0  0  1
+	frame	data/chars/Boss/Bongo/Run01.gif
+	@cmd  spawn01  "BongoP04"  0  0  1
+	frame	data/chars/Boss/Bongo/Run02.gif
+	@cmd  spawn01  "BongoP06"  0  0  1
+	frame	data/chars/Boss/Bongo/Run03.gif
+	@cmd  spawn01  "BongoP03"  0  0  1
+	frame	data/chars/Boss/Bongo/Run01.gif
+	@cmd  spawn01  "BongoP04"  0  0  1
+	frame	data/chars/Boss/Bongo/Run02.gif
+	@cmd  spawn01  "BongoP05"  0  0  1
+	frame	data/chars/Boss/Bongo/Run03.gif
+        @cmd dasher 0 0 0
+		Attack1  0
+	frame	data/chars/Boss/Bongo/Idle00.gif
+
+
+anim Freespecial4
+	loop	0
+	delay	20
+	offset	154 201
+        Range 150 250
+        RangeZ 10 50
+        hitflash	Forte
+	bbox	135 108 36 95
+		Attack1  0
+        hitfx	data/sounds/golpes/Fire2.wav
+	frame	data/chars/Boss/Bongo/fs100.gif
+	frame	data/chars/Boss/Bongo/fs101.gif
+	frame	data/chars/Boss/Bongo/fs102.gif
+		offset  81  120
+		bbox  52  48  48  76
+	frame	data/chars/Boss/Bongo/Pain01.gif
+		offset  154  201
+		bbox  126  118  49  84
+		delay  8
+        Sound	data/sounds/wirl.wav
+        @cmd dasher 2 0 1
+		attack7  142  117  95  41  15  1  0  0  0  15
+	@cmd  spawn01  "BongoP02"  0  0  1
+        frame	data/chars/Boss/Bongo/Run01.gif
+	@cmd  spawn01  "BongoP03"  0  0  1
+	frame	data/chars/Boss/Bongo/Run02.gif
+	@cmd  spawn01  "BongoP04"  0  0  1
+	frame	data/chars/Boss/Bongo/Run03.gif
+	@cmd  spawn01  "BongoP03"  0  0  1
+	frame	data/chars/Boss/Bongo/Run01.gif
+	@cmd  spawn01  "BongoP04"  0  0  1
+	frame	data/chars/Boss/Bongo/Run02.gif
+	@cmd  spawn01  "BongoP05"  0  0  1
+	frame	data/chars/Boss/Bongo/Run03.gif
+	@cmd  spawn01  "BongoP03"  0  0  1
+	frame	data/chars/Boss/Bongo/Run01.gif
+	@cmd  spawn01  "BongoP04"  0  0  1
+	frame	data/chars/Boss/Bongo/Run02.gif
+	@cmd  spawn01  "BongoP05"  0  0  1
+	frame	data/chars/Boss/Bongo/Run03.gif
+	@cmd  spawn01  "BongoP03"  0  0  1
+	frame	data/chars/Boss/Bongo/Run01.gif
+	@cmd  spawn01  "BongoP04"  0  0  1
+	frame	data/chars/Boss/Bongo/Run02.gif
+	@cmd  spawn01  "BongoP03"  0  0  1
+	frame	data/chars/Boss/Bongo/Run01.gif
+	@cmd  spawn01  "BongoP04"  0  0  1
+	frame	data/chars/Boss/Bongo/Run02.gif
+	@cmd  spawn01  "BongoP05"  0  0  1
+	frame	data/chars/Boss/Bongo/Run03.gif
+	@cmd  spawn01  "BongoP06"  0  0  1
+	frame	data/chars/Boss/Bongo/Run03.gif
+        @cmd dasher 0 0 0
+		Attack1  0
+	frame	data/chars/Boss/Bongo/Idle00.gif
+
+
+
+
+
+
+anim pain
+	loop	0
+	offset	82 121
+	bbox	65 45 33 76
+	delay	5
+	frame	data/chars/Boss/Bongo/pain01.gif
+		delay  25
+		offset  84  121
+	frame	data/chars/Boss/Bongo/pain01.gif
+
+anim pain3
+	loop	0
+	offset	83 122
+	bbox	63 45 34 78
+	delay	5
+	jumpframe  0  2  0  0
+	frame	data/chars/Boss/Bongo/pain01.gif
+		delay  25
+		offset  85  122
+	frame	data/chars/Boss/Bongo/pain01.gif
+
+anim pain4
+	loop	0
+	offset	82 121
+	bbox	62 44 35 77
+	delay	5
+	frame	data/chars/Boss/Bongo/pain01.gif
+		delay  900
+		offset  84  121
+	frame	data/chars/Boss/Bongo/pain01.gif
+
+
+anim grabbed
+	loop	0
+	offset	84 121
+	bbox	75 53 26 67
+	delay	40
+	frame	data/chars/Boss/Bongo/pain02.gif
+
+
+
+anim pain2
+	loop	0
+	offset	86 121
+	bbox	65 39 41 82
+	delay	5
+	frame	data/chars/Boss/Bongo/pain02.gif
+		delay  25
+		offset  88  121
+	frame	data/chars/Boss/Bongo/pain02.gif
+
+
+
+
+
+anim fall2
+	loop	0
+	offset	80 129
+	jumpframe  0  3  -3  0
+	delay	20
+        hitfx	data/sounds/golpes/Forte.wav
+		attack  0
+	frame	data/chars/Boss/Bongo/fall00.gif
+		Attack1  0
+		offset  70  110
+	frame	data/chars/Boss/Bongo/fall01.gif
+		offset  141  175
+		delay  10
+	frame	data/chars/Boss/Bongo/fall02.gif
+
+anim fall
+	loop	0
+	offset	80 133
+	delay	20
+        hitfx	data/sounds/golpes/Forte.wav
+		attack  0
+	frame	data/chars/Boss/Bongo/fall00.gif
+		Attack1  0
+		offset  67  113
+	frame	data/chars/Boss/Bongo/fall01.gif
+		offset  142  175
+		delay  10
+	frame	data/chars/Boss/Bongo/fall02.gif
+
+anim fall6 #Shok
+	loop	0
+	offset	251 181
+	delay	5
+        hitfx	data/sounds/golpes/Forte.wav
+		attack  0
+	frame	data/chars/Boss/Bongo/fall201.gif
+	frame	data/chars/Boss/Bongo/fall200.gif
+	frame	data/chars/Boss/Bongo/fall201.gif
+	frame	data/chars/Boss/Bongo/fall200.gif
+		offset  67  123
+	frame	data/chars/Boss/Bongo/fall01.gif
+		offset  134  176
+	frame	data/chars/Boss/Bongo/fall02.gif
+
+
+anim fall7 #Burn
+	loop	0
+	offset	91 121
+	delay	10
+        hitfx	data/sounds/golpes/Forte.wav
+		attack  0
+	frame	data/chars/Boss/Bongo/FALL300.gif
+	frame	data/chars/Boss/Bongo/FALL301.gif
+	frame	data/chars/Boss/Bongo/FALL302.gif
+	frame	data/chars/Boss/Bongo/FALL300.gif
+	frame	data/chars/Boss/Bongo/FALL301.gif
+		offset  140  176
+	frame	data/chars/Boss/Bongo/FALL02.gif
+
+
+anim rise
+	loop	0
+	offset	143 201
+	delay	20
+	frame	data/chars/Boss/Bongo/Rise00.gif
+	frame	data/chars/Boss/Bongo/Rise01.gif
+	frame	data/chars/Boss/Bongo/Rise02.gif
+
+
+
+
+
+
+anim jumpland
+	loop	0
+	delay	40
+	offset	147 201
+	bbox	132 131 37 70
+	frame	data/chars/Boss/Bongo/fs201.gif
+
+anim land
+	loop	0
+	delay	40
+	offset	149 201
+	bbox	117 130 63 73
+	frame	data/chars/Boss/Bongo/fs201.gif
+
+
+anim Fall9
+	loop	0
+	offset	82 120
+	delay	999
+	frame	data/chars/Boss/Bongo/pain01.gif #0
+	frame	data/chars/Boss/Bongo/pain02.gif #1
+		offset  65  120
+	frame	data/chars/Boss/Bongo/fall01.gif #2
+		offset  141  175
+	frame	data/chars/Boss/Bongo/fall02.gif #3
+		offset  87  126
+	frame	data/chars/Boss/Bongo/fall400.gif #4
+		offset  74  117
+	frame	data/chars/Boss/Bongo/fall401.gif #5
+		offset  93  106
+	frame	data/chars/Boss/Bongo/fall402.gif #6
+		offset  95  136
+	frame  data/chars/Boss/Bongo/fall403.gif #7
+		offset  83  115
+	delay	20
+	frame	data/chars/Boss/Bongo/fall401.gif #8
+	delay	30
+		offset  89  135
+	frame	data/chars/Boss/Bongo/fall404.gif #9
+	offset	84 128
+	frame	data/chars/Boss/Bongo/Fall405.gif #10
+
+
+anim Fall8
+	loop	0
+	flipframe  0
+	offset	85 119
+	delay	30
+	frame	data/chars/Boss/Bongo/fall01.gif #0
+	offset	133 172
+	delay	15
+	frame	data/chars/Boss/Bongo/fall02.gif #1
+
+
+anim Fall5
+	loop	0
+	flipframe  1
+	offset	80 122
+	delay	30
+	frame	data/chars/Boss/Bongo/fall01.gif #0
+	offset	131 173
+	delay	15
+	frame	data/chars/Boss/Bongo/fall02.gif #1
+

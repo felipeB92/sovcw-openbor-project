@@ -1,0 +1,52 @@
+music		data/bgs/St204/Lv204b.bor
+bossmusic	data/music/boss2.bor
+scrollspeed 0.5#1
+stagenumber 4
+background	data/bgs/st204/people00.gif
+panel		data/bgs/St204/pn03.gif
+#fglayer			data/bgs/st201/fpn00.gif 0 -0.8 0.6 0 0 0 0 1 1 1
+#frontpanel      data/bgs/St203/fpn00.gif
+cameratype 1
+cameraoffset 	0 -60
+settime         99
+notime          0
+noslow          1
+order		a
+spawn1  	50 20
+spawn2  	55 35
+spawn3  	60 50
+
+
+
+spawn  Plateia
+flip   1
+	coords  0  0
+	at  0
+
+spawn  Box03
+item   Chicken
+	coords  225  220
+	at  0
+
+spawn  Box03
+2pitem   Chicken
+	coords  270  220
+	at  0
+
+
+
+spawn  Abadede
+health 600
+boss   1
+	coords  500  208
+	at  150
+
+
+
+
+
+
+
+
+
+

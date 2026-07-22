@@ -1,0 +1,26 @@
+
+name			GuyP04 #THROWNED
+type			none
+speed 12
+candamage			enemy obstacle
+alpha 1
+nolife			1
+lifespan		4
+remove			1
+gfxshadow		0 0
+flash			Forte
+antigravity 100
+
+anim idle
+	loop	0
+	offset	-42 81
+		delay  8
+	frame	data/chars/players/Guy/p01/p00.gif
+	frame	data/chars/players/Guy/p01/p01.gif
+	frame	data/chars/players/Guy/p01/p02.gif
+	frame	data/chars/players/Guy/p01/p03.gif
+	frame	data/chars/players/Guy/p01/p04.gif
+	frame	data/chars/players/Guy/p01/p05.gif
+	@cmd killentity getlocalvar("self")
+	frame	data/chars/players/Guy/p01/p00.gif
+

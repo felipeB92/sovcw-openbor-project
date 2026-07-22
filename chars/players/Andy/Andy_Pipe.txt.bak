@@ -1,0 +1,628 @@
+name	Andy_pipe
+health	100
+mp 10
+chargerate 2
+mprate 1
+#secret 1
+Falldie 2
+Grabdistance 18
+riseinv				0.4 1
+speed	8
+type	None
+gfxshadow	1
+candamage			enemy obstacle
+JUMPHEIGHT 4
+#Jumpheight 3
+antigrab 2
+atchain   1 1 2 3 4 5
+weapons Terry_Knife Adam_Sword Terry_pipe Adam_Kunai None Blaze
+icon	data/chars/players/Andy/icon.gif 1
+diesound data/chars/players/Andy/Death.wav
+running	20	3	2	1	1
+onblockwscript	data/scripts/bounceF.c
+#animationscript 	data/scripts/ani0020.h
+animationscript		data/scripts/drago.c
+#ondrawscript 		data/scripts/player_ondrawscript.c
+
+Com f f A freespecial
+Com f f  freespecial2
+
+Load AndyP01
+Load AndyP02
+Load PipeT
+
+Load MEdio
+
+
+Load AXEL_
+LOAD BLaze_
+
+Load Terry_Knife
+Load Terry_Pipe
+#Load Adam_Kunai
+#Load Adam_Sword
+
+remap data/chars/players/Andy/iDLE00.gif data/chars/players/Andy/MAp01.gif
+remap data/chars/players/Andy/iDLE00.gif data/chars/players/Andy/MAp02.gif
+remap data/chars/players/Andy/iDLE00.gif data/chars/players/Andy/MAp03.gif
+remap data/chars/players/Andy/iDLE00.gif data/chars/players/Andy/MAp04.gif
+
+
+anim	waiting
+	loop	1
+	offset	1 -542
+	delay	14
+	frame   data/chars/players/Andy/select02.gif
+	frame   data/chars/players/Andy/select01.gif
+	frame   data/chars/players/Andy/select03.gif
+	frame   data/chars/players/Andy/select04.gif
+
+anim	Select
+	loop	0
+	offset	1 -542
+	delay	3
+	frame   data/chars/players/Andy/select00.gif
+	frame   data/chars/players/Andy/select02.gif
+	frame   data/chars/players/Andy/select00.gif
+	frame   data/chars/players/Andy/select02.gif
+	frame   data/chars/players/Andy/select00.gif
+	frame   data/chars/players/Andy/select02.gif
+	frame   data/chars/players/Andy/select00.gif
+	frame   data/chars/players/Andy/select02.gif
+	frame   data/chars/players/Andy/select00.gif
+	frame   data/chars/players/Andy/select02.gif
+
+anim Pain5
+	loop	0
+	delay	12
+	offset	18 77
+        Range 0 40
+        Rangez -10 10
+	bbox	0 3 34 74
+	frame   data/chars/players/Andy/idle00.gif
+	@cmd  spawn01  "Blaze_"  -5  0  10
+	@cmd  spawn01  "AXEL_"  5  0  -10
+	frame   data/chars/players/Andy/idle01.gif
+
+anim idle
+	loop	1
+	delay	14
+	offset	19 108
+	bbox	8 35 20 75
+	frame   data/chars/players/Andy/Pipe/idle00.gif
+	@cmd	depost 0
+	@cmd	throw 15 0.7 0.7 1 0 -1
+	@cmd	clearL
+	frame   data/chars/players/Andy/Pipe/idle01.gif
+	frame   data/chars/players/Andy/Pipe/idle02.gif
+	frame   data/chars/players/Andy/Pipe/idle03.gif
+
+
+
+anim walk
+	loop	1
+	delay	16
+	offset	22 108
+	bbox	12 37 23 73
+	frame	data/chars/players/Andy/Pipe/walk00.gif
+	frame	data/chars/players/Andy/Pipe/walk01.gif
+	frame	data/chars/players/Andy/Pipe/walk02.gif
+	frame	data/chars/players/Andy/Pipe/walk03.gif
+	frame	data/chars/players/Andy/Pipe/walk04.gif
+
+
+anim get
+	loop	0
+	delay	10
+	offset	17 65
+	frame	data/chars/players/Andy/Get00.gif
+		offset  19  51
+	frame	data/chars/players/Andy/Get01.gif
+
+
+anim jump
+	loop	0
+	delay	10
+	offset	59 119
+	bbox	44 40 27 79
+	frame	data/chars/players/Andy/Pipe/Jump00.gif
+	frame	data/chars/players/Andy/Pipe/Jump01.gif
+	frame	data/chars/players/Andy/Pipe/Jump02.gif
+	frame	data/chars/players/Andy/Pipe/Jump03.gif
+	frame	data/chars/players/Andy/Pipe/Jump04.gif
+
+
+anim jumpattack
+	loop	0
+	delay	5
+	offset	26 68
+	bbox	8 6 30 49
+        hitflash	MEdio
+        hitfx	data/sounds/golpes/medio.wav
+        Sound	data/sounds/golpes/Chut.wav
+	frame	data/chars/players/Andy/Ja300.gif
+	Sound	data/chars/players/Andy/a2.wav
+		Attack1  19  5  42  71  7  1  0  0  0  15
+	frame	data/chars/players/Andy/Ja301.gif
+
+
+anim jumpattack2
+	loop	0
+	delay	5
+	offset	20 87
+	bbox	8 11 33 77
+        hitflash	MEdio
+        hitfx	data/sounds/golpes/medio.wav
+        Sound	data/sounds/golpes/Chut.wav
+	frame	data/chars/players/Andy/Ja200.gif
+		attack1  7  14  52  61  7  1  0  0  0  15
+	frame	data/chars/players/Andy/Ja201.gif
+
+
+anim jumpforward
+	loop	0
+	delay	5
+	offset	25 72
+	bbox	5 20 48 52
+        hitflash	MEdio
+        hitfx	data/sounds/golpes/medio.wav
+        Sound	data/sounds/golpes/Chut.wav
+	frame	data/chars/players/Andy/Ja100.gif
+		delay  7
+	Sound	data/chars/players/Andy/a2.wav
+		Attack1  12  35  64  22  10  1  0  0  0  15
+	frame	data/chars/players/Andy/Ja101.gif
+
+anim attack1
+	loop	0
+	delay	6
+	offset	22 98
+        hitflash	Forte
+	bbox	13 25 23 73
+		Attack1  0
+        Sound	data/sounds/golpes/Chut.wav
+        hitfx	data/sounds/golpes/Forte.wav
+	frame	data/chars/players/Andy/pipe/a100.gif
+		delay  25
+		attack1  12  35  96  19  12  1  0  0  0  15
+	frame	data/chars/players/Andy/pipe/a101.gif
+		delay  3
+		Attack1  0
+	frame	data/chars/players/Andy/pipe/a102.gif
+
+
+anim attack2
+	loop	0
+	offset	24 74
+        hitflash	MEdio
+	bbox	14 6 30 69
+		Attack1  0
+        hitfx	data/sounds/golpes/MEdio.wav
+	Sound	data/chars/players/Andy/a1.wav
+		delay  6
+	frame	data/chars/players/Andy/a201.gif
+	frame	data/chars/players/Andy/a202.gif
+		attack2  8  7  57  14  5  0  0  0  0  15
+	frame	data/chars/players/Andy/a203.gif
+		Attack1  0
+	frame	data/chars/players/Andy/a204.gif
+	frame	data/chars/players/Andy/a205.gif
+
+anim attack3
+	loop	0
+	delay	6
+	offset	27 87
+	bbox	13 25 23 63
+        hitflash	medio
+        Sound	data/sounds/golpes/Chut.wav
+        hitfx	data/sounds/golpes/medio.wav
+	Sound	data/chars/players/Andy/a2.wav
+		blast  0  0  0  0  0  1
+	frame	data/chars/players/Andy/a400.gif
+		Attack1  0
+	frame	data/chars/players/Andy/a402.gif
+		attack3  24  0  38  87  5  0  1  0  0  15
+	frame	data/chars/players/Andy/a403.gif
+		Attack1  0
+	frame	data/chars/players/Andy/a404.gif
+	frame	data/chars/players/Andy/a405.gif
+	frame	data/chars/players/Andy/a406.gif
+
+anim attack4
+	loop	0
+	delay	7
+	offset	22 73
+	bbox	11 4 20 69
+        hitflash	Forte
+        Sound	data/sounds/golpes/Chut.wav
+        hitfx	data/sounds/golpes/Forte.wav
+	Sound	data/chars/players/Andy/a3.wav
+	frame	data/chars/players/Andy/a300.gif
+	frame	data/chars/players/Andy/a301.gif
+		attack2  10  8  54  18  7  1  1  0  0  15
+	frame	data/chars/players/Andy/a302.gif
+	frame	data/chars/players/Andy/a303.gif
+		Attack1  0
+	frame	data/chars/players/Andy/a304.gif
+	frame	data/chars/players/Andy/a305.gif
+
+
+
+anim grab
+	loop	0
+	delay	100
+	offset	22 74
+	bbox	10 4 36 68
+        cancel	0 3 0 J freespecial
+	frame	data/chars/players/Andy/a300.gif
+
+anim throw
+	loop	0
+	delay	5
+	offset	19 74
+        hitflash	Forte
+        hitfx	data/sounds/golpes/Forte.wav
+		Attack1  0
+	frame	data/chars/players/Andy/T00.gif
+	delay	10
+	@cmd	slamstart
+	@cmd	position 0 20 0 0 -1
+	frame	data/chars/players/Andy/T01.gif
+	@cmd	position 0 20 0 0 -1
+		delay  20
+		attack1  71  1  46  63  7  1  0  0  0  10
+		offset  50  72
+	frame	data/chars/players/Andy/T02.gif
+	Sound	data/chars/players/Andy/a2.wav
+	@cmd	position 4 -10 30 0 -1
+		attack1  10  -1  64  30  7  1  0  0  0  10
+		delay  10
+	frame	data/chars/players/Andy/T03.gif
+	@cmd	position 5 -30 30 0 -1
+		attack1  -48  7  54  47  7  1  0  0  0  10
+	frame	data/chars/players/Andy/T05.gif
+	@cmd	position 8 -40 30 0 -1
+	@cmd	depost 0
+	@cmd	throw 15 5 2 2 0 -1
+	@cmd	clearL
+		attack1  -76  10  50  22  7  1  0  0  0  10
+		delay  20
+	frame	data/chars/players/Andy/t05.gif
+		attack1  -104  16  47  20  7  1  0  0  0  10
+	frame  data/chars/players/Andy/T06.gif
+		attack1  -128  33  42  13  7  1  0  0  0  10
+	frame  data/chars/players/Andy/t03.gif
+
+
+
+anim pain
+	loop	0
+	offset	26 76
+	bbox	13 9 31 67
+	delay	5
+	frame	data/chars/players/Andy/pain100.gif
+		delay  25
+	frame	data/chars/players/Andy/pain101.gif
+
+anim pain3
+	loop	0
+	offset	25 77
+	bbox	13 2 30 74
+	delay	5
+	jumpframe  0  2  0  0
+	frame	data/chars/players/Andy/pain100.gif
+		delay  25
+		bbox  9  2  39  74
+	frame	data/chars/players/Andy/pain101.gif
+
+anim pain4
+	loop	0
+	offset	26 76
+	bbox	14 1 30 73
+	delay	5
+	frame	data/chars/players/Andy/pain100.gif
+		delay  900
+		bbox  8  0  36  78
+	frame	data/chars/players/Andy/pain101.gif
+
+
+anim grabbed
+	loop	0
+	offset	24 78
+	bbox	12 8 27 71
+	delay	40
+	frame	data/chars/players/Andy/pain101.gif
+
+
+
+anim pain2
+	loop	0
+	offset	37 76
+	bbox	24 8 28 70
+	delay	5
+	frame	data/chars/players/Andy/pain200.gif
+		delay  25
+	frame	data/chars/players/Andy/pain201.gif
+
+
+
+
+
+anim fall2
+	loop	0
+	offset	52 74
+	jumpframe  0  3  -3  0
+	delay	20
+        hitfx	data/sounds/golpes/Forte.wav
+		attack  0
+	frame	data/chars/players/Andy/fall00.gif
+		Attack1  0
+		offset  33  47
+	frame	data/chars/players/Andy/fall01.gif
+		offset  32  59
+		delay  10
+	frame	data/chars/players/Andy/fall02.gif
+		offset  31  23
+	frame	data/chars/players/Andy/fall03.gif
+
+anim fall
+	loop	0
+	offset	49 73
+	delay	20
+        hitfx	data/sounds/golpes/Forte.wav
+		attack  0
+	frame	data/chars/players/Andy/fall00.gif
+		Attack1  0
+		offset  38  69
+	frame	data/chars/players/Andy/fall01.gif
+		delay  10
+		offset  28  59
+	frame	data/chars/players/Andy/fall02.gif
+		offset  31  22
+	frame	data/chars/players/Andy/fall03.gif
+
+anim fall6 #Shok
+	loop	0
+	offset	80 108
+	delay	5
+        hitfx	data/sounds/golpes/Forte.wav
+		attack  0
+	frame	data/chars/players/Andy/fall201.gif
+	frame	data/chars/players/Andy/fall200.gif
+	frame	data/chars/players/Andy/fall201.gif
+	frame	data/chars/players/Andy/fall200.gif
+	frame	data/chars/players/Andy/fall201.gif
+		offset  33  22
+	frame	data/chars/players/Andy/fall03.gif
+
+
+anim fall7 #Burn
+	loop	0
+	offset	38 65
+	delay	10
+        hitfx	data/sounds/golpes/Forte.wav
+		attack  0
+	frame	data/chars/players/Andy/FALL300.gif
+	frame	data/chars/players/Andy/FALL301.gif
+	frame	data/chars/players/Andy/FALL302.gif
+	frame	data/chars/players/Andy/FALL300.gif
+	frame	data/chars/players/Andy/FALL301.gif
+		offset  36  25
+	frame	data/chars/players/Andy/FALL03.gif
+
+
+anim rise
+	loop	0
+	offset	48 95
+	delay	8
+	frame	data/chars/players/Andy/Rise00.gif
+	frame	data/chars/players/Andy/Rise01.gif
+	frame	data/chars/players/Andy/Rise02.gif
+	frame	data/chars/players/Andy/Rise03.gif
+	frame	data/chars/players/Andy/Rise04.gif
+	frame	data/chars/players/Andy/Rise05.gif
+	frame	data/chars/players/Andy/Rise06.gif
+		offset  48  94
+	frame	data/chars/players/Andy/Rise07.gif
+
+
+
+
+anim special2
+	loop	0
+	offset	48 91
+        custknife PipeT
+        throwframe 1 60
+        hitfx	data/sounds/golpes/forte.wav
+		Attack1  0
+		delay  6
+	frame	data/chars/players/Andy/Pipe/a100.gif
+	frame	data/chars/players/Andy/a102.gif
+	frame	data/chars/players/Andy/a103.gif
+
+
+anim special
+        energycost 10 1
+        MpOnly 1
+	loop	0
+	offset	35 97
+        hitflash	fORTE
+        hitfx	data/sounds/golpes/forte.wav
+		delay  5
+		Attack1  0
+	jumpframe  4  4  0  0
+	frame	data/chars/players/Andy/Sp100.gif
+	@cmd  spawn01  "AndyP01"  0  0  -1
+		attack3  7  35  53  69  5  0  1  0  0  25
+	frame	data/chars/players/Andy/Sp101.gif
+	Sound	data/chars/players/Andy/SP01.wav
+	@cmd  spawn01  "AndyP01"  0  0  -1
+	frame  data/chars/players/Andy/Sp102.gif
+	@cmd  spawn01  "AndyP01"  0  0  -1
+		Attack1  0
+	frame	data/chars/players/Andy/Sp103.gif
+	frame	data/chars/players/Andy/Sp104.gif
+		attack2  5  5  67  90  20  1  1  0  0  25
+	frame	data/chars/players/Andy/Sp105.gif
+		attack2  7  -1  67  98  15  1  0  0  0  15
+	frame  data/chars/players/Andy/Sp106.gif
+		Attack1  0
+	frame	data/chars/players/Andy/Sp107.gif
+
+anim jumpspecial
+        energycost 10 1
+        MpOnly 1
+	loop	0
+	offset	56 85
+        hitflash	fORTE
+        hitfx	data/sounds/golpes/forte.wav
+		attack2  0  0  95  86  25  1  0  0  0  25
+		delay  8
+	Sound	data/chars/players/Andy/SP01.wav
+	frame	data/chars/players/Andy/Sp103.gif
+	frame	data/chars/players/Andy/Sp104.gif
+		attack2  11  8  72  94  20  1  0  0  0  25
+	frame	data/chars/players/Andy/Sp105.gif
+		attack2  11  8  72  94  15  1  0  0  0  15
+	frame  data/chars/players/Andy/Sp106.gif
+	frame	data/chars/players/Andy/Sp107.gif
+
+
+anim Freespecial2
+	loop	0
+	delay	10
+	offset	31 68
+        cancel	0 3 0 A freespecial
+        @cmd dasher 1 0 0
+	frame	data/chars/players/Andy/Dash00.gif
+        @cmd dasher 2 0 0
+		delay  8
+	frame	data/chars/players/Andy/Dash01.gif
+	frame	data/chars/players/Andy/Dash02.gif
+	frame	data/chars/players/Andy/Dash01.gif
+	frame	data/chars/players/Andy/Dash02.gif
+        @cmd dasher 0 0 0
+		delay  15
+		offset  20  72
+	frame	data/chars/players/Andy/a200.gif
+
+
+anim Freespecial
+ 	loop	0
+ 	delay	8
+ 	offset	29 75
+ 	bbox	21 9 26 69
+		move  0
+        hitflash	MEdio
+        hitfx	data/sounds/golpes/MEdio.wav
+        @cmd dasher 1.5 0 0
+		attack1  16  19  41  18  10  1  1  0  0  15
+ 	frame	data/chars/players/Andy/ra00.gif
+	Sound	data/chars/players/Andy/RA.wav
+ 	frame	data/chars/players/Andy/ra01.gif
+ 	frame	data/chars/players/Andy/ra02.gif
+        @cmd dasher 0 0 0
+		Attack1  0
+		offset  27  73
+ 	frame	data/chars/players/Andy/ra03.gif
+
+
+
+
+anim grabattack
+	loop	0
+	offset	26 74
+	bbox	13 4 35 68
+	delay	7
+        hitflash	fRACO
+        hitfx	data/sounds/golpes/fRACO.wav
+		Attack1  0
+	frame	data/chars/players/Andy/a301.gif
+		attack1  15  8  50  16  5  0  0  0  0  15
+	frame	data/chars/players/Andy/a302.gif
+		Attack1  0
+	frame	data/chars/players/Andy/a301.gif
+
+
+
+
+
+anim grabattack2
+	loop	0
+	offset	21 74
+	bbox	9 1 32 78
+	delay	7
+        hitflash	Forte
+        hitfx	data/sounds/golpes/Forte.wav
+		Attack1  0
+	frame	data/chars/players/Andy/a300.gif
+	Sound	data/chars/players/Andy/a2.wav
+	frame	data/chars/players/Andy/a301.gif
+		attack1  9  7  53  18  10  1  0  0  0  15
+	frame	data/chars/players/Andy/a302.gif
+	frame	data/chars/players/Andy/a303.gif
+	frame	data/chars/players/Andy/a304.gif
+		Attack1  0
+	frame	data/chars/players/Andy/a305.gif
+
+
+
+
+anim land
+	loop	0
+	delay	15
+	offset	50 93
+	bbox	33 29 32 65
+	frame	data/chars/players/Andy/Sp210.gif
+
+
+anim Fall9
+	loop	0
+	offset	26 76
+	delay	999
+	frame	data/chars/players/Andy/pain100.gif #0
+		offset  36  76
+	frame	data/chars/players/Andy/pain200.gif #1
+		offset  39  69
+	frame	data/chars/players/Andy/fall01.gif #2
+		offset  31  59
+	frame	data/chars/players/Andy/fall02.gif #3
+		offset  72  82
+	frame	data/chars/players/Andy/fall400.gif #4
+		offset  91  94
+	frame	data/chars/players/Andy/fall401.gif #5
+		offset  81  99
+	frame	data/chars/players/Andy/fall402.gif #6
+		offset  77  119
+	frame  data/chars/players/Andy/fall403.gif
+		offset  87  96
+		delay  20
+	frame  data/chars/players/Andy/fall401.gif
+		offset  87  99
+		delay  30
+	frame  data/chars/players/Andy/fall404.gif
+		offset  74  102
+	frame  data/chars/players/Andy/fall405.gif
+
+
+anim Fall8
+	loop	0
+	flipframe  0
+	offset	26 47
+	delay	30
+	frame	data/chars/players/Andy/fall01.gif #0
+	offset	29 59
+	delay	15
+	frame	data/chars/players/Andy/fall02.gif #1
+
+
+anim Fall5
+	loop	0
+	flipframe  1
+	offset	34 68
+	delay	30
+	frame	data/chars/players/Andy/fall01.gif #0
+	offset	27 60
+	delay	15
+	frame	data/chars/players/Andy/fall02.gif #1
+

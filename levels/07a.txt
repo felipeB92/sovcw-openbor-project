@@ -1,0 +1,156 @@
+music		data/BGs/07/07a.bor
+bossmusic	data/music/01a.bor
+scrollspeed 0.5#1
+stagenumber 8
+background	data/bgs/00/Back01.gif	#0.85 1 0 0 0 0 -1 1 0 0 0 0 0 0 0
+bglayer		data/bgs/06/BAck01.gif		
+#water		data/bgs/01/Mar01.gif		0.5
+fglayer         data/bgs/Front.gif              0 -0.4 0 0 0 0 1 -1 1 1 0
+panel		data/bgs/07/pn01.gif		none	none
+frontpanel	data/bgs/Front.gif		
+cameratype 1
+cameraoffset 0 -30
+#levelscript @script
+#void main() {
+#	changelevelproperty("camerazoffset", 0);
+#	changelevelproperty("cameraxoffset", 0);
+#}
+#@end_script
+settime         90
+notime          1
+noslow          1
+order		a
+spawn1  	50 20 50
+spawn2  	55 35 50 
+spawn3  	60 50 50
+
+
+spawn Lata
+Item  Pao
+map 1
+	coords  230 200
+	at  0
+
+spawn Lata
+Item  CAsh
+	coords  260 205
+	at  0
+
+spawn Lata
+map 1
+	coords  290 200
+	at  0
+
+spawn Lata
+Item  Dinheiro
+map 1
+	coords  400 230
+	at  0
+
+spawn Painel07
+        Flip 1
+	coords  198 155
+	at  0
+
+spawn Painel07a
+        Flip 1
+	coords  420 143
+	at  0
+
+wait
+at       0
+
+group 4 4
+at  0
+
+
+spawn Montanha_
+health 100
+map 4
+	coords  270 230
+	at  0
+
+spawn  Montanha_
+MAp    3
+health 100
+	coords  200 210
+	at  0
+
+
+spawn Montanha_
+health 100
+map 2
+	coords  450 200
+	at  0
+
+spawn Montanha_
+health 100
+map 1
+	coords  330 220
+	at  0
+
+spawn  Montanha
+health 100
+	coords  -100 200 1
+	at  0
+
+
+spawn MOntanha_
+health 100
+Map 3
+	coords  500 245 1
+	at  0
+
+spawn Montanha
+health 100
+map 2
+	coords  150 245 1
+	at  0
+
+spawn Lata
+Item  Refri
+	coords  600 220
+	at  50
+
+spawn Box
+Item  Chocolate
+	coords  630 210
+	at  50
+
+group 1 1
+at  100
+
+spawn Hunter_U12
+alias Hunter_U12
+health 200
+	coords  500 210
+	at  100
+
+spawn Porta6
+        Flip 1
+	coords  384 181
+	at  219
+
+spawn DelayX1
+        Flip 1
+	coords  420 143
+	at  219
+
+spawn  EnDU
+Flip 1
+	coords  389 190
+	at  219
+
+
+
+
+
+
+
+
+
+
+
+
+
+

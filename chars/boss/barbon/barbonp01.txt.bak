@@ -1,0 +1,31 @@
+name			BarbonP01
+type			none
+speed 15
+candamage			Player
+#alpha 1
+nolife			1
+lifespan		4
+remove			1
+gfxshadow		1 1
+flash			Forte
+#subject_to_gravity 0
+
+anim idle
+	loop	0
+	offset	144 139
+		delay  12
+	frame	data/chars/Boss/Barbon/P01.gif
+	frame	data/chars/Boss/Barbon/P02.gif
+		delay  900
+	frame	data/chars/Boss/Barbon/P03.gif
+		delay  4
+	frame	data/chars/Boss/Barbon/P04.gif
+	frame	data/chars/Boss/Barbon/P03.gif
+	frame	data/chars/Boss/Barbon/P04.gif
+	frame	data/chars/Boss/Barbon/P03.gif
+	frame	data/chars/Boss/Barbon/P04.gif
+	frame	data/chars/Boss/Barbon/P03.gif
+	frame	data/chars/Boss/Barbon/P04.gif
+	frame	data/chars/Boss/Barbon/P03.gif
+	frame	data/chars/Boss/Barbon/P04.gif
+

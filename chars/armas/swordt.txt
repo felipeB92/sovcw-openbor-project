@@ -1,0 +1,27 @@
+name			SwordT #THROWNED
+type			none
+subtype			weapon
+nolife			1
+lifespan		4
+#remove			1
+gfxshadow		1 1
+noatflash 		1
+flash			noflash
+
+anim idle
+	loop	1
+	delay	5
+	offset	50 52
+	bbox 	26 45 48 14
+	hitfx	data/sounds/Cutter.wav
+	attack 26 46 48 13 40 1 0 0 0 12
+	frame	data/chars/armas/Sword00.gif
+	frame	data/chars/armas/Sword01.gif
+	frame	data/chars/armas/Sword02.gif
+	frame	data/chars/armas/Sword03.gif
+	frame	data/chars/armas/Sword04.gif
+	frame	data/chars/armas/Sword05.gif
+	frame	data/chars/armas/Sword06.gif
+	frame	data/chars/armas/Sword07.gif
+	frame	data/chars/armas/Sword08.gif
+

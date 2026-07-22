@@ -1,0 +1,285 @@
+music		data/bgs/St301/Lv301a.bor
+bossmusic	data/music/boss1.bor
+scrollspeed 0.5#1
+stagenumber 1
+background	data/bgs/St301/back00.gif	0.8 1 0 0 0 0 -1 1 0
+panel		data/bgs/St301/pn00.gif		none	none
+frontpanel	data/bgs/st301/fpn00.gif
+cameratype 1
+cameraoffset 0 -30
+#levelscript @script
+#void main() {
+#	changelevelproperty("camerazoffset", 0);
+#	changelevelproperty("cameraxoffset", 0);
+#}
+#@end_script
+#settime         90
+notime          1
+noslow          1
+order		a
+spawn1  	190 20 50
+spawn2  	210 35 50 
+spawn3  	220 50 50
+
+Wall  1078  163  -33  0  478  477  29  94
+
+
+spawn  Luz08
+       flip 1
+	coords  0  0
+	at  0
+
+spawn  1Up
+	coords  10  260
+	at  0
+
+spawn  pipe
+	coords  250  230
+	at  0
+
+wait 
+at     0
+
+
+
+spawn  Slum
+health 50
+	coords  500  200
+	at  0
+
+spawn  Slum
+health 50
+	coords  500  260
+	at  0
+
+spawn  Slum
+health 50
+	coords  -70  200
+	at  0
+
+spawn  Vice
+health 50
+	coords  -50  260
+	at  0
+
+
+
+spawn  Garnet
+health 50
+	coords  500  200
+	at  100
+
+
+spawn  Garnet
+health 50
+	coords  500  260
+	at  100
+
+spawn  _Garnet
+health 50
+	coords  248  136
+	at  200
+
+spawn  _Garnet
+health 50
+	coords  198  136
+	at  250
+
+wait 
+at     300
+
+Group 4  4
+at     300
+
+
+spawn  _Slum
+health 50
+	coords  150  136
+	at  300
+
+spawn  _Garnet
+health 50
+	coords  430  136
+	at  300
+
+spawn  _Vice
+health 50
+	coords  150  136
+	at  300
+
+spawn  _Garnet
+health 50
+	coords  430  136
+	at  300
+
+spawn  Box04
+item   apple
+	coords  500  250
+	at  301
+
+spawn  Box04
+2pitem   Apple
+	coords  570  250
+	at  301
+
+spawn  _Galsia
+Map    1
+health 50
+	coords  430  136
+	at  301
+
+spawn  _Slum
+health 50
+	coords  335  136
+	at  400
+
+spawn  _Vice
+health 50
+	coords  229  136
+	at  500
+
+wait 
+at   650
+
+Group 4 4
+at   650
+
+spawn  Donovan
+health 50
+	coords  500  230
+	at  650
+
+spawn  Vice
+health 50
+	coords  -100  220
+	at  650
+
+spawn  _Vice
+health 50
+	coords  320  136
+	at  650
+
+spawn  _Vice
+health 50
+	coords  320  136
+	at  650
+
+
+spawn  _Vice
+health 50
+	coords  95  136
+	at  650
+
+
+spawn  _Vice
+health 50
+	coords  320  136
+	at  650
+
+Group 9  9
+at   651
+
+spawn  Box04
+item   Knife
+	coords  500  250
+	at  651
+
+spawn  Box04
+item   Pipe
+	coords  570  250
+	at  651
+
+spawn  Galsia_
+map    1
+health 50
+	coords  500  150
+	at  651
+
+spawn  Galsia_
+map    1
+health 50
+	coords  500  150
+	at  823
+
+spawn  Galsia_
+map    1
+health 50
+	coords  500  150
+	at  950
+
+spawn  Galsia
+map    1
+health 50
+	coords  -100  230
+	at  1400
+
+spawn  Knife
+	coords  -100  230
+	at  1400
+
+spawn  Donovan
+health 50
+	coords  -100  220
+	at  1500
+wait 
+at   1600
+
+Group 5  5
+at   1600
+
+spawn  Donovan
+health 50
+	coords  500 220
+	at  1600
+
+
+spawn  MaCleod
+health 200
+	coords  500 220
+	at  1750
+
+
+spawn  mcbride
+health 200
+	coords  500 260
+	at  1750
+
+spawn  maclean
+health 200
+	coords  -100 230
+	at  1750
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

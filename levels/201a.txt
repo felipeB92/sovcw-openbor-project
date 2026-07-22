@@ -1,0 +1,298 @@
+music		data/music/200a.ogg
+bossmusic	data/music/Boss.bor
+scrollspeed 0.5#1
+stagenumber 1
+background	data/bgs/201/BAck00b.gif 	0.675 1 0 0 0 0 -1 1 1
+bglayer	        data/bgs/201/BAck00.gif 	0.475 1 0 0 0 0 -1 1 1
+#bglayer	data/bgs/201/BAck00c.gif 	0.475 1 0 0 0 0 -1 1 1 1
+#water		data/bgs/01/Mar01.gif		0.5
+#fglayer         data/bgs/00/FOG.gif              0.5 1 0 0 0 0 -1 1 1 0 1 3 10 0.3
+panel		data/bgs/201/pn00.gif		none	none
+#frontpanel	data/bgs/201/Front02.gif		
+cameratype 1
+cameraoffset 0 -30
+#levelscript @script
+#void main() {
+#	changelevelproperty("camerazoffset", 0);
+#	changelevelproperty("cameraxoffset", 0);
+#}
+#@end_script
+settime         99
+notime          0
+noslow          1
+order		a
+spawn1  	50 20 50
+spawn2  	55 35 50
+spawn3  	60 50 50
+
+
+Wall  512  239  -30  0  230  231  39  221
+
+
+light		128 -128
+at			0
+
+spawn  IntroST
+Flip 1
+	coords  0 4
+	at  0
+
+
+spawn  Time01
+Flip 1
+	coords  0 0
+	at  0
+
+spawn  Tel00
+Flip 1
+	coords  70 250
+	at  0
+
+
+wait
+at       184
+
+group 3 3
+at  184
+
+spawn  Kenny
+map  1
+health 50
+	coords  -100 192 1
+	at  184
+
+spawn  DK
+map  2
+health 50
+	coords  500 240 1
+	at  184
+
+spawn  Tommy
+map  1
+health 50
+	coords  -150 192 1
+	at  184
+
+spawn  DK
+map  3
+health 50
+	coords  500 220 1
+	at  184
+
+spawn  DK
+map  1
+health 50
+	coords  159 192 1
+	at  184
+
+
+spawn  Poison
+map  1
+health 50
+	coords  159 192 1
+	at  184
+
+
+spawn  Barril2
+Item   Gold
+	coords  550 260 1
+	at  185
+
+
+wait
+at       700
+
+group 3 3
+at  700
+
+
+spawn  hagen
+map  1
+health 50
+	coords  -100 220 300
+	at  700
+
+spawn  Mike
+map  2
+health 80
+	coords  500 240 1
+	at  700
+
+spawn  Jake
+map  1
+health 50
+	coords  -100 240 1 
+	at  700
+
+spawn  DK
+map  3
+health 50
+	coords  50 220 1
+	at  700
+
+spawn  Poison
+map  2
+health 50
+	coords  700 250 1
+	at  700
+
+
+spawn  Poison
+map  3
+health 50
+	coords  -100 240 1
+	at  700
+
+group 4 4
+at  701
+
+spawn  Lixeira2
+Item Carne
+	coords  620 225 1
+	at  701
+
+spawn  Lixeira2
+Item Dinheiro
+	coords  550 225 1
+	at  701
+
+spawn  Mike
+map  4
+health 80
+	coords  500 197 1
+	at  1000
+
+spawn  Hagen
+health 70
+	coords  500 240 300
+	at  1300
+
+wait
+at       1600
+
+group 3 3
+at  1600
+
+
+spawn  Carl
+map  1
+health 70
+	coords  127 197 1
+	at  1600
+
+spawn  Mike
+map  3
+health 80
+	coords  288 197 1
+	at  1600
+
+spawn  Hagen
+map  4
+health 70
+	coords  250 240 300
+	at  1600
+
+spawn  KEnny
+map  3
+health 50
+	coords  127 197 1
+	at  1600
+
+spawn  Tommy
+map  2
+health 50
+	coords  288 197 1
+	at  1600
+
+
+spawn  Poison
+map  4
+health 50
+	coords  127 197 1
+	at  1600
+
+wait
+at       1177
+
+group 3 3
+at  1177
+
+spawn  Poison
+map  2
+health 80
+	coords  -100 220 1
+	at  1177
+
+
+spawn  Mike
+map  3
+health 80
+	coords  -100 220 1
+	at  1177
+
+spawn  Jake
+map  1
+health 100
+	coords  -100 220 300
+	at  1177
+
+
+spawn  Jake
+map  2
+health 100
+	coords  -100 220 300
+	at  1177
+
+
+
+group 4 4
+at  1500
+
+spawn  Poison
+map  3
+health 50
+	coords  -100 240 1
+	at  1500
+
+spawn  Hugo_
+health 150
+	coords  530 220
+	at  1700
+
+spawn  Act
+	coords  520 230
+	at  1700
+
+spawn  Hugo_
+Alias Andore
+map  2
+health 150
+	coords  570 250
+	at  1705
+
+spawn  Poison
+map  4
+health 50
+	coords  -100 240 1
+	at  1800
+
+spawn  Poison
+map  2
+health 80
+	coords  -100 220 1
+	at  1800
+
+spawn  Poison
+map  3
+health 80
+	coords  600 230 1
+	at  1800
+
+
+
+
+
+
+
+
+

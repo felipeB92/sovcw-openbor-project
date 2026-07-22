@@ -1,0 +1,35 @@
+# Hit flash
+
+speed	8
+name	Boom01
+candamage  Player enemy obstacle npc pshot
+type	None
+Alpha   1
+
+
+anim idle
+	loop	0
+	delay	40
+	offset	25 27
+	frame	data/chars/Objetos/explosion04.gif
+	delay	10
+		offset  25  33
+	sound	data/sounds/Explosion.wav
+	frame	data/chars/Objetos/explosion00.gif
+		attack3  6  9  37  33  15  1  0  0  0  20
+	frame	data/chars/Objetos/explosion01.gif
+	frame	data/chars/Objetos/explosion02.gif
+	frame	data/chars/Objetos/explosion03.gif
+	frame	data/chars/Objetos/explosion01.gif
+	frame	data/chars/Objetos/explosion02.gif
+	frame	data/chars/Objetos/explosion03.gif
+	frame	data/chars/Objetos/explosion01.gif
+	frame	data/chars/Objetos/explosion02.gif
+	frame	data/chars/Objetos/explosion03.gif
+	frame	data/chars/Objetos/explosion01.gif
+	frame	data/chars/Objetos/explosion02.gif
+	frame	data/chars/Objetos/explosion03.gif
+	frame	data/chars/Objetos/explosion04.gif
+	@cmd killentity getlocalvar("self")
+	frame	data/chars/Objetos/explosion04.gif
+

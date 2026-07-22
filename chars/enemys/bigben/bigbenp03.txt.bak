@@ -1,0 +1,24 @@
+name			BigbenP03
+type			none
+speed 15
+candamage			Player
+alpha 1
+nolife			1
+lifespan		4
+remove			1
+gfxshadow		1 1
+flash			Forte
+subject_to_gravity 0
+
+anim idle
+	loop	1
+		offset  72  217
+		hitflash  Forte
+		hitfx  data/sounds/golpes/Forte.wav
+		delay  2
+	frame  data/chars/Enemys/BigBen/fire/P106.gif
+	frame  data/chars/Enemys/BigBen/fire/P107.gif
+	frame  data/chars/Enemys/BigBen/fire/P108.gif
+	@cmd killentity getlocalvar("self")
+	frame  data/chars/Enemys/BigBen/fire/P100.gif
+

@@ -1,0 +1,101 @@
+music	data/bgs/st304/Lv304c.bor
+bossmusic	data/music/boss3.bor
+scrollspeed 0.5#1
+stagenumber 4
+background	data/bgs/st304/back01.gif	0.6 1 0 0 0 0 -1 1 0
+bglayer		data/bgs/st304/bg00.gif		0 1 0 0 0 0 -1 1 1
+bglayer		data/bgs/st304/bg01.gif		0 1 0 0 0 0 -1 1 1
+panel		data/bgs/st304/pn02.gif		none	none
+frontpanel      data/bgs/st05/Front02.gif
+cameratype 1
+cameraoffset 0 -30
+#levelscript @script
+#void main() {
+#	changelevelproperty("camerazoffset", 0);
+#	changelevelproperty("cameraxoffset", 0);
+#}
+#@end_script
+#settime         90
+notime          1
+noslow          1
+order		a
+spawn1  	50 20 50
+spawn2  	55 35 50 
+spawn3  	60 50 50
+
+
+spawn  Lanterna
+Item   Chicken
+Flip   1
+	coords  400 230
+	at  0
+
+spawn  Lanterna
+2PItem   Chicken
+Flip   1
+	coords  530 230
+	at  0
+
+
+group 1 1
+at  200
+
+
+
+spawn  cabana01
+Flip   1
+	coords  70 0
+	at  230
+
+spawn  Yamato_
+Flip   1
+	coords  192 218
+	at  230
+
+
+spawn  cabana02
+Flip   1
+	coords  60 0
+	at  230
+
+spawn  YAmato_
+Flip   1
+	coords  320 218
+	at  230
+
+
+spawn  cabana03
+Flip   1
+	coords  60 0
+	at  230
+
+music     data/music/boss3.bor
+	at 230
+
+
+spawn  YAmato
+Flip   1
+	coords  244 218
+	at  230
+
+
+spawn  cabana04
+Flip   1
+	coords  60 0
+	at  230
+
+spawn  Delay
+	coords  244 218
+	at  230
+
+
+
+
+
+
+
+
+
+
+
+

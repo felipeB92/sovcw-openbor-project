@@ -1,0 +1,29 @@
+name			HarakiriP03
+type			none
+speed 15
+candamage			Player
+#alpha 1
+nolife			1
+lifespan		4
+remove			1
+gfxshadow		1 1
+flash			Forte
+subject_to_gravity 0
+
+anim idle
+	loop	1
+	offset	158 203
+        hitflash	Corte
+        hitfx	data/sounds/golpes/Corte.wav
+		delay  5
+	frame	data/chars/Boss/Harakiri/p03/P00.gif
+	frame	data/chars/Boss/Harakiri/p03/P01.gif
+	frame	data/chars/Boss/Harakiri/p03/P02.gif
+	frame	data/chars/Boss/Harakiri/p03/P03.gif
+	frame	data/chars/Boss/Harakiri/p03/P00.gif
+	frame	data/chars/Boss/Harakiri/p03/P01.gif
+	frame	data/chars/Boss/Harakiri/p03/P02.gif
+	frame	data/chars/Boss/Harakiri/p03/P03.gif
+	@cmd killentity getlocalvar("self")
+	frame	data/chars/Boss/Harakiri/p03/P03.gif
+

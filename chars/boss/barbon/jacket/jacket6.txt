@@ -1,0 +1,12 @@
+name		barbon_jacket6 #BARBON STRIPED JACKET
+type		none
+gfxshadow	1
+
+anim idle
+	loop	0
+	delay	1000
+	offset	51 90
+	frame	data/chars/barbon/jacket/jacket05.gif
+	
+	
+

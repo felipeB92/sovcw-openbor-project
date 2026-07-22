@@ -1,0 +1,461 @@
+music		data/music/07b.bor
+bossmusic	data/music/BossR.bor
+scrollspeed 0.5#1
+#direction Left
+stagenumber 7
+background	data/bgs/06/baCK02.gif  	0.650 1 0 0 0 0 -1 1 1
+bglayer		data/bgs/06/bAck02a.gif 	0.600 1 0 0 0 0 -1 1 1
+bglayer		data/bgs/06/bAck02b.gif 	0.550 1 0 0 0 0 -1 1 1
+#bglayer		data/bgs/06/BAck00c.gif	        0.500 1 0 0 0 0 -1 1 1
+#bglayer 	data/bgs/06/back00d.gif	        0.4 1 0 0 0 0 -1 1 1 0 1 3 10 0.3
+#water		data/bgs/01/Mar01.gif		0.5
+#fglayer         data/bgs/06/Luz00.gif           1 1 0 0 0 0 -1 1 1 1 1
+panel		data/bgs/06/pn02.gif		none	none
+#frontpanel	data/bgs/06/Front00b.gif		
+cameratype 1
+cameraoffset 0 -30
+#levelscript @script
+#void main() {
+#	changelevelproperty("camerazoffset", 0);
+#	changelevelproperty("cameraxoffset", 0);
+#}
+#@end_script
+settime         99
+notime          0
+noslow          1
+order		a
+spawn1  	50 20 50
+spawn2  	55 35 50 
+spawn3  	60 50 50
+
+light		128 -128
+at			0
+
+
+spawn  Bloqueio02
+Item   Gold
+Flip 1
+	coords  280 220
+	at  0
+
+spawn  Bloqueio02
+Flip 1
+	coords  300 240
+	at  0
+
+spawn  Bloqueio02
+Item   Apple
+Flip 1
+	coords  320 260
+	at  0
+
+
+
+group 4 4
+at  100
+
+wait
+at       100
+
+
+spawn  p1
+health 50
+	coords  600 220
+	at  100
+
+spawn  p1
+Map 2
+health 50
+	coords  600 260
+	at  100
+
+
+spawn  p1
+Map 3
+health 50
+	coords  -100 260
+	at  100
+
+spawn  p1
+Map 4
+health 50
+	coords  -100 220
+	at  100
+
+
+spawn  p1__
+map 1
+health 50
+	coords  400 220
+	at  100
+
+spawn  p1__
+health 50
+	coords  300 260
+	at  100
+
+
+spawn  p1__
+Map 2
+health 50
+	coords  250 260
+	at  100
+
+spawn  p1__
+Map 3
+health 50
+	coords  100 220
+	at  100
+
+spawn  ActE
+	coords  250 240
+	at  100
+
+group 4 4
+at  150
+
+wait
+at       150
+
+spawn  Abadede
+Map 1
+health 175
+	coords  550 260
+	at  150
+
+spawn  Abadede
+health 175
+	coords  -100 220
+	at  150
+
+spawn  ActE
+	coords  250 240
+	at  150
+
+spawn  Lata03
+Item Apple
+	coords  550 220
+	at  151
+
+spawn  Lata03
+Item Pipe
+	coords  600 240
+	at  151
+
+spawn  Lata03
+Item Knife
+	coords  580 260
+	at  151
+
+spawn  p1__
+Map 3
+health 50
+	coords  300 220
+	at  200
+
+
+spawn  Particle
+Map 3
+health 70
+	coords  600 220
+	at  300
+
+spawn  p1
+Map 4
+health 50
+	coords  600 220
+	at  400
+
+
+group 4 4
+at  500
+
+wait
+at       500
+
+
+spawn  Particle__
+Map 4
+health 100
+	coords  300 220
+	at  500
+
+
+spawn  Particle
+Map 3
+health 70
+	coords  600 220
+	at  500
+
+spawn  p1
+Map 4
+health 50
+	coords  600 220
+	at  500
+
+
+spawn  Particle__
+Map 1
+health 70
+	coords  450 240
+	at  500
+
+
+
+spawn  Particle__
+health 100
+	coords  100 210
+	at  500
+
+
+
+spawn  P1__
+Map 1
+health 50
+	coords  450 240
+	at  500
+
+
+
+spawn  P1__
+health 50
+	coords  100 210
+	at  500
+
+spawn  Particle
+health 70
+	coords  600 220
+	at  500
+
+spawn  ActE
+	coords  250 240
+	at  500
+
+spawn  Kurt
+health 200
+	coords  600 220
+	at  501
+
+group 4 4
+at  550
+
+wait
+at       550
+
+spawn  Costa
+health 70
+	coords  -100 210
+	at  550
+
+spawn  Chan
+health 70
+	coords  600 260
+	at  550
+
+spawn  Signal
+Map 1
+health 70
+	coords  -100 260
+	at  550
+
+spawn  Slum
+Map 1
+health 70
+	coords  600 210
+	at  550
+
+
+spawn  Bigben
+health 70
+	coords  -100 210
+	at  550
+
+spawn  Fog
+health 70
+	coords  600 260
+	at  550
+
+spawn  Raven
+Map 1
+health 70
+	coords  -100 260
+	at  550
+
+spawn  Garnet
+Map 1
+health 70
+	coords  600 210
+	at  550
+
+spawn  Nora
+Map 1
+health 70
+	coords  600 210
+	at  550
+
+spawn  ActE
+	coords  250 240
+	at  550
+
+spawn  Box02
+Item   Chicken
+	coords  600 210
+	at  551
+
+
+
+spawn  Jake
+Map 2
+health 75
+	coords  600 210
+	at  600
+
+
+group 4 4
+at  700
+
+wait
+at       700
+
+spawn  Nora
+Map 3
+health 70
+	coords  600 260
+	at  700
+
+spawn  Nora
+Map 4
+health 70
+	coords  600 210
+	at  700
+
+
+spawn  Electra
+Map 3
+health 70
+	coords  -100 260
+	at  700
+
+spawn  Electra
+Map 4
+health 70
+	coords  -100 210
+	at  700
+
+spawn  Garnet
+Map 1
+health 40
+	coords  600 260
+	at  700
+
+spawn  Garnet
+Map 2
+health 40
+	coords  600 210
+	at  700
+
+
+spawn  GArnet
+Map 3
+health 40
+	coords  -100 260
+	at  700
+
+spawn  Garnet
+Map 4
+health 40
+	coords  -100 210
+	at  700
+
+spawn  ActE
+	coords  250 240
+	at  700
+
+spawn  Box03
+Item   Apple
+	coords  650 260
+	at  701
+
+spawn  Box
+Item   Pipe
+	coords  600 240
+	at  701
+
+
+spawn  Harakiri__
+Map 2
+health 200
+	coords  400 210
+	at  800
+
+group 4 4
+at  900
+
+
+spawn  Slum
+Map 3
+health 70
+	coords  -100 260
+	at  900
+
+spawn  vice
+Map 4
+health 70
+	coords  -100 210
+	at  900
+
+spawn  Donovan
+Map 1
+health 40
+	coords  600 260
+	at  900
+
+spawn  Galsia
+Map 2
+health 40
+	coords  600 210
+	at  900
+
+
+spawn  Fog
+Map 3
+health 40
+	coords  -100 260
+	at  900
+
+spawn  Signal
+Map 4
+health 40
+	coords  -100 210
+	at  900
+
+spawn  Thug
+Map 4
+health 40
+	coords  600 210
+	at  900
+
+spawn  Bigben
+Map 4
+health 40
+	coords  -100 210
+	at  900
+
+spawn  ActE
+	coords  250 240
+	at  900
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

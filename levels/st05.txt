@@ -1,0 +1,424 @@
+music		data/bgs/St05/Lv05.bor
+bossmusic	data/music/boss1.bor
+rock		1
+scrollspeed 0.5
+stagenumber 5
+background	data/bgs/st05/Back01.gif
+bglayer		data/bgs/St05/bk00.gif		0.8 1 0 0 0 0 -1 1 1 0 1 0 0 0 1
+bglayer		data/bgs/St05/bk01.gif		0.6 1 0 0 0 0 -1 1 1 0 3 0.1 1.2 0 3
+panel		data/bgs/St05/Pn01.gif
+#frontpanel      data/bgs/St05/Front01.gif
+#bglayer           data/bgs/11lvl/liberty_statue.gif 0.3 0.1   60    -40 180 1 1 1 1  0
+#bglayer           data/bgs/11lvl/0x.gif 0.5 0.1   60    -40 180 1 1 1 1  0
+#fglayer         data/bgs/11lvl/fondo3.gif 1500 -0.1 0 0 0 0 0 1 1 1
+#fglayer         data/bgs/11lvl/sun.gif 500 0 0 0 -5 1 1 1 1 1 1
+#fglayer         data/bgs/11lvl/light2.gif 2500 0 0 0 -5 1 1 1 1 1 1
+cameratype 1
+#cameraoffset 0 -30
+#levelscript @script
+#void main() {
+#	changelevelproperty("camerazoffset", 0);
+#	changelevelproperty("cameraxoffset", 0);
+#}
+#@end_script
+#settime         90
+notime          1
+noslow          1
+order		a
+spawn1  	190 20 50
+spawn2  	210 25 50
+spawn3  	220 30 50
+
+
+spawn  Galsia
+health 50
+	coords  500  191
+	at  100
+
+spawn  Galsia
+health 50
+	coords  600  250
+	at  100
+
+
+spawn  Galsia
+map    2
+health 70
+	coords  600  250
+	at  250
+
+wait 
+at 400
+
+spawn  Knife
+	coords  550  250
+	at  400
+
+spawn  Galsia
+map    2
+health 70
+	coords  600  250
+	at  400
+
+spawn  Knife
+	coords  -100  250
+	at  400
+
+spawn  Galsia
+map    2
+health 70
+	coords  -150  250
+	at  400
+
+
+spawn  Duto
+Flip   1
+Item    cash
+	coords  522  226
+	at  401
+
+
+spawn  Duto
+item   cash
+Flip   1
+	coords  551  190
+	at  401
+
+spawn  Duto
+item   apple
+Flip   1
+	coords  587  250
+	at  401
+
+spawn  Duto
+item   Kunai
+Flip   1
+	coords  622  231
+	at  401
+
+spawn  Galsia
+map    2
+health 70
+	coords  450  250
+	at  800
+
+spawn  Galsia
+map    2
+health 70
+	coords  500  190
+	at  800
+
+
+spawn  Haku_oh
+map    2
+	coords  -100  190
+	at  950
+
+spawn  Galsia
+map    2
+health 70
+	coords  500  190
+	at  950
+
+wait 
+at 1000
+
+group		4 4
+at			1000
+
+
+spawn  Galsia
+map    2
+health 70
+	coords  500  190
+	at  1000
+
+spawn  Galsia
+map    2
+health 70
+	coords  500  250
+	at  1000
+
+spawn  Galsia
+map    2
+health 70
+	coords  -100  210
+	at  1000
+
+spawn  Galsia
+health 50
+	coords  500  250
+	at  1000
+
+group		9 9
+at			1001
+
+
+
+spawn  Nora
+map    4
+	coords  500  190
+	at  1400
+
+spawn  Nora
+map    4
+	coords  520  210
+	at  1400
+
+
+spawn  Nora
+map    4
+	coords  540  230
+	at  1400
+
+spawn  Nora
+map    4
+	coords  560  250
+	at  1400
+
+spawn  Duto
+item   Chicken
+Flip   1
+	coords  587  220
+	at  1625
+
+spawn  Signal
+	coords  500  250
+	at  1700
+
+spawn  Signal
+	coords  600  190
+	at  1700
+
+wait 
+at 1900
+
+group		4 4
+at			1900
+
+spawn  Signal
+	coords  500  190
+	at  1900
+
+spawn  Nora
+	coords  500  190
+	at  1900
+
+spawn  Galsia
+map    2
+health 70
+	coords  -100  210
+	at  1900
+
+group		9 9
+at			2000
+
+spawn  Haku_oh
+	coords  -100  190
+	at  2000
+
+
+spawn  _haku_oh
+health 50
+	coords  250  113
+	at  2300
+
+
+spawn  Knife
+	coords  500  210
+	at  2300
+
+spawn  Galsia
+map    2
+health 70
+	coords  550  210
+	at  2300
+
+spawn  _haku_oh
+health 50
+	coords  250  113
+	at  2400
+
+spawn  Duto
+item   Chicken
+Flip   1
+	coords  550  220
+	at  2400
+
+spawn  Galsia
+map    2
+health 70
+	coords  550  210
+	at  2450
+
+wait 
+at 2600
+
+group		4 4
+at		2600
+
+spawn  Haku_oh
+	coords  550  190
+	at  2600
+
+wait 
+at 2601
+
+group		1 1
+at		2601
+
+spawn  Abadede
+map    2
+	coords  550  190
+	at  2601
+
+group		9 9
+at		2602
+
+spawn  _haku_oh
+	coords  500  190
+	at  2750
+
+spawn  _haku_oh
+	coords  500  190
+	at  2800
+
+spawn  _haku_oh
+	coords  500  190
+	at  2850
+
+spawn  _haku_oh
+	coords  500  190
+	at  2900
+
+
+spawn  Duto
+item   1UP
+Flip   1
+	coords  587  220
+	at  3160
+
+
+
+spawn  _haku_oh
+	coords  500  113
+	at  3300
+
+wait 
+at 3450
+
+group		4 4
+at		3450
+
+
+spawn  Clown
+map    4
+	coords  500  210
+	at  3450
+
+spawn  Clown_
+map    4
+	coords  -100  210
+	at  3450
+
+group		9 9
+at		3451
+
+spawn  Galsia
+map    2
+health 70
+	coords  550  210
+	at  3600
+
+spawn  Duto
+item   Chicken
+Flip   1
+	coords  587  220
+	at  3710
+
+spawn  signal
+map    2
+	coords  500  190
+	at  3750
+
+
+spawn  signal
+map    2
+	coords  500  250
+	at  3800
+
+spawn  Galsia
+map    2
+health 70
+	coords  -100  210
+	at  3800
+
+spawn  Knife
+	coords  -50  210
+	at  3900
+
+spawn  Galsia
+map    2
+health 70
+	coords  -100  210
+	at  3900
+
+
+wait 
+at 4100
+
+group		4 4
+at		4100
+
+spawn  Galsia
+health 50
+	coords  500  210
+	at  4100
+
+
+spawn  signal
+	coords  600  250
+	at  4100
+
+spawn  Clown_
+	coords  -100  210
+	at  4100
+
+
+spawn  YAsha
+map    1
+boss   1
+	coords  500  190
+	at  4101
+
+spawn  YAsha
+alias  onihime
+map    2
+boss   1
+	coords  -100  250
+	at  4101
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

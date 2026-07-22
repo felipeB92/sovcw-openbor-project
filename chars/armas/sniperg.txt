@@ -1,0 +1,33 @@
+name			SniperG #GROUND
+type			item
+subtype			weapon
+nolife			1
+typeshot 		0
+weapnum			5
+shootnum 		1
+counter			1
+gfxshadow		1 1
+offscreenkill	1000
+
+anim idle
+	loop	1
+	delay	200
+	offset	40 24
+	bbox 	13 11 65 15
+	frame	data/chars/armas/Sniper.gif
+
+
+anim fALL
+	loop	0
+	delay	200
+	offset	40 24
+	bbox 	13 11 65 15
+	frame	data/chars/armas/Sniper.gif
+
+anim dEATH
+	loop	0
+	delay	200
+	offset	40 24
+	bbox 	13 11 65 15
+	frame	data/chars/armas/Sniper.gif
+

@@ -1,0 +1,59 @@
+##MAIN
+name				Skiner_B
+type				enemy
+subtype				biker
+hostile				player npc
+candamage			enemy player npc obstacle
+
+
+##ICONS
+icon				data/chars/Enemys/Skiner/icon.gif 1
+
+##REMAPS
+##LOADS
+load				Skiner
+rider				Skiner
+
+##ANIMATIONS#############################################################################
+
+anim spawn
+	loop	0
+	delay	1
+	offset	145 179
+	frame	data/chars/Enemys/Skiner/Bike/Idle00.gif
+
+anim idle
+	fastattack 1
+	loop	1
+	delay	6
+	offset	145 179
+	bbox 	119 99 44 34
+        hitflash	Forte
+        hitfx	data/sounds/golpes/Forte.wav
+	attack3 169 148 31 33 15 1 1 0 0 12
+	frame	data/chars/Enemys/Skiner/Bike/Idle00.gif
+	frame	data/chars/Enemys/Skiner/Bike/Idle01.gif
+	frame	data/chars/Enemys/Skiner/Bike/Idle00.gif
+	frame	data/chars/Enemys/Skiner/Bike/Idle01.gif
+	frame	data/chars/Enemys/Skiner/Bike/Idle00.gif
+	frame	data/chars/Enemys/Skiner/Bike/Idle01.gif
+	frame	data/chars/Enemys/Skiner/Bike/Idle00.gif
+	frame	data/chars/Enemys/Skiner/Bike/Idle01.gif
+	frame	data/chars/Enemys/Skiner/Bike/Idle00.gif
+	frame	data/chars/Enemys/Skiner/Bike/Idle01.gif
+	frame	data/chars/Enemys/Skiner/Bike/Idle00.gif
+	frame	data/chars/Enemys/Skiner/Bike/Idle01.gif
+	delay	40
+	frame	data/chars/Enemys/Skiner/Bike/Idle02.gif
+
+anim pain
+	loop	1
+	delay	8
+	offset	145 179
+        hitflash	Forte
+        hitfx	data/sounds/golpes/Forte.wav
+	attack1 167 150 35 30 24 1 1 0 0 12
+	frame	data/chars/Enemys/Skiner/Bike/Fall00.gif
+	frame	data/chars/Enemys/Skiner/Bike/Fall01.gif
+	frame	data/chars/Enemys/Skiner/Bike/Idle00.gif
+

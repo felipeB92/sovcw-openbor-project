@@ -1,0 +1,100 @@
+#music		data/bgs/St302/Lv302b.bor
+bossmusic	data/music/boss3.bor
+scrollspeed 0.5#1
+stagenumber 2
+background	data/bgs/st302/back01.gif	0.6 1 0 0 0 0 -1 1 0
+panel		data/bgs/st302/pn02.gif		none	none
+frontpanel      data/bgs/st05/Front02.gif
+cameratype 1
+cameraoffset 0 -30
+#levelscript @script
+#void main() {
+#	changelevelproperty("camerazoffset", 0);
+#	changelevelproperty("cameraxoffset", 0);
+#}
+#@end_script
+#settime         90
+notime          1
+noslow          1
+order		a
+spawn1  	50 20 50
+spawn2  	55 35 50 
+spawn3  	60 50 50
+
+
+
+
+spawn  BAr00
+Flip   1
+	coords  0 0
+	at  0
+
+
+
+
+spawn  Chicken
+	coords  150 200
+	at  0
+
+
+
+spawn  Monalisa
+Alias  Lisa
+BOSS   1
+	coords  450 230
+	at  0
+
+spawn  Monalisa_
+Alias  Mona
+BOSS   1
+	coords  455 228
+	at  0
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

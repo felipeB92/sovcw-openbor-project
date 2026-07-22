@@ -1,0 +1,41 @@
+name			_HarakiriP04
+type			none
+speed 15
+candamage			Enemy
+#alpha 1
+nolife			1
+lifespan		4
+remove			1
+gfxshadow		1 1
+flash			Forte
+subject_to_gravity 0
+
+anim idle
+	loop	1
+	offset	33 95
+        hitflash	Shock
+        hitfx	data/sounds/golpes/Forte.wav
+		delay  3
+	frame	data/chars/Boss/Harakiri/p04/P00.gif
+	frame	data/chars/Boss/Harakiri/p04/P01.gif
+	frame	data/chars/Boss/Harakiri/p04/P02.gif
+	frame	data/chars/Boss/Harakiri/p04/P03.gif
+	frame	data/chars/Boss/Harakiri/p04/P04.gif
+	frame	data/chars/Boss/Harakiri/p04/P05.gif
+		attack6  8  6  255  92  15  0  0  0  0  15
+	frame	data/chars/Boss/Harakiri/p04/P06.gif
+	frame	data/chars/Boss/Harakiri/p04/P07.gif
+		Attack1  0
+	frame	data/chars/Boss/Harakiri/p04/P08.gif
+	frame	data/chars/Boss/Harakiri/p04/P09.gif
+	frame	data/chars/Boss/Harakiri/p04/P10.gif
+		attack6  4  0  259  95  10  1  0  0  0  10
+	frame	data/chars/Boss/Harakiri/p04/P11.gif
+	frame	data/chars/Boss/Harakiri/p04/P12.gif
+	frame	data/chars/Boss/Harakiri/p04/P13.gif
+	frame	data/chars/Boss/Harakiri/p04/P14.gif
+	frame	data/chars/Boss/Harakiri/p04/P15.gif
+	frame	data/chars/Boss/Harakiri/p04/P16.gif
+	@cmd killentity getlocalvar("self")
+	frame	data/chars/Boss/Harakiri/p04/P16.gif
+

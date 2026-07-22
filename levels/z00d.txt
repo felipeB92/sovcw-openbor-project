@@ -1,0 +1,309 @@
+music		data/music/01a.bor
+bossmusic	data/music/boss1.bor
+scrollspeed 0.5#1
+stagenumber 1
+background	data/bgs/00/Back01.gif	#0.85 1 0 0 0 0 -1 1 0 0 0 0 0 0 0
+#bglayer		data/bgs/01/MAr01.gif		0.5 1 0 0 0 0 -1 1 1 0 1 3 10 0.3
+#water		data/bgs/01/Mar01.gif		0.5
+fglayer         data/bgs/Front.gif              0 -0.4 0 0 0 0 1 -1 1 1 0
+panel		data/bgs/00/pn02.gif		none	none
+frontpanel	data/bgs/00/Front02.gif		
+cameratype 1
+cameraoffset 0 -30
+#levelscript @script
+#void main() {
+#	changelevelproperty("camerazoffset", 0);
+#	changelevelproperty("cameraxoffset", 0);
+#}
+#@end_script
+settime         90
+notime          1
+noslow          1
+order		a
+spawn1  	50 20 0
+spawn2  	55 35 0 
+spawn3  	60 50 0
+
+spawn  Al00
+Flip 1
+	coords  342 0
+	at  0
+
+spawn  ConeB
+Flip 1
+	coords  345 170
+	at  0
+
+spawn  Cone
+Item Dinheiro
+	coords  404 171
+	at  0
+
+spawn  Tires
+Item Cash
+	coords  10 170
+	at  0
+
+
+wait
+at       0
+
+group 4 4
+at  0
+
+
+spawn  Jake
+map    3
+health 30
+	coords  600 183
+	at  0
+
+spawn  Jake__
+map    5
+health 30
+	coords  250 160
+	at  0
+
+spawn  Mina
+map    2
+health 30
+	coords  500 220
+	at  0
+
+spawn  Zoi
+MAp    4
+health 30
+	coords  650 240
+	at  0
+
+
+spawn  Biker
+MAp    4
+health 30
+	coords  650 240
+	at  0
+
+
+spawn  Porta2
+       fLIP 1
+	coords  95 164
+	at  0
+
+spawn  Mina
+map    3
+health 30
+	coords  500 220
+	at  0
+
+spawn  Biker
+map    3
+health 30
+	coords  -100 220
+	at  0
+
+spawn  Jake
+map    5
+health 30
+	coords  -100 220
+	at  0
+
+spawn  Jake
+map    3
+health 30
+	coords  99 166 1
+	at  0
+
+spawn  Zoi
+MAp    2
+health 30
+	coords  99 166 1
+	at  0
+
+spawn  Cone
+Item RefriB
+	coords  500 208
+	at  50
+
+spawn  Cone
+	coords  550 208
+	at  50
+
+spawn  Cone
+Item Pao
+	coords  600 208
+	at  50
+
+
+
+spawn  CAR2
+MAp    1
+fLIP 1
+	coords  500 184
+	at  100
+
+
+
+spawn  CAR2
+MAp    2
+	coords  -100 243
+	at  250
+
+
+wait
+at       300
+
+group 4 4
+at  300
+
+spawn  Mina
+map    1
+health 30
+	coords  600 183
+	at  300
+
+spawn  Montanha
+MAp    2
+health 80
+	coords  -100 220
+	at  300
+
+spawn  MIna
+MAp    4
+health 30
+	coords  600 240
+	at  300
+
+
+spawn  Jake
+MAp    1
+health 30
+	coords  600 240
+	at  300
+
+spawn  Biker
+MAp    3
+health 30
+	coords  -100 240
+	at  300
+
+spawn  Car1
+flip   1
+	coords  -100 184
+	at  300
+
+
+spawn  Biker
+MAp    1
+health 30
+	coords  600 180
+	at  300
+
+spawn  Jake
+MAp    4
+health 30
+	coords  600 240
+	at  300
+
+
+spawn  Tires
+Item Gold
+	coords  500 170
+	at  301
+
+spawn  Tires
+	coords  570 170
+	at  301
+
+spawn  Tires
+	coords  570 170
+	at  301
+
+spawn  Tires
+Item Apple
+Flip 1
+	coords  670 240
+	at  301
+
+spawn  Tires
+	coords  735 240
+	at  301
+
+
+
+spawn  Zoi
+MAp    4
+health 30
+	coords  600 200
+	at  400
+
+spawn  Jake
+map    5
+health 30
+	coords  600 183
+	at  590
+
+spawn  Jake
+MAp    4
+health 30
+	coords  -100 220
+	at  590
+
+spawn  Montanha
+MAp    3
+health 80
+	coords  500 220 1
+	at  590
+
+
+spawn  Porta3a
+       fLIP 1
+	coords  438 163
+	at  596
+	
+
+spawn  Biker
+MAp    3
+health 50
+	coords  -100 220
+	at  596
+
+group 1 1
+at  596
+
+spawn  Porta3b
+       fLIP 1
+	coords  438 163
+	at  596
+
+spawn  DelayX1
+	coords  600 220 1
+	at  590
+
+
+
+group 1 1
+at  596
+
+spawn  Porta3c
+       fLIP 1
+	coords  438 163
+	at  596
+
+spawn  DelayX1
+	coords  600 220 1
+	at  590
+
+spawn  EndU
+       Flip 1
+	coords  443 175
+	at  590
+
+
+
+
+
+
+
+
+
+

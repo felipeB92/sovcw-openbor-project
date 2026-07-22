@@ -1,0 +1,28 @@
+# Do not forget to name your character.
+# Health is optional.
+
+name	Pino
+health	1
+type	obstacle
+gfxshadow	1
+#icon	data/chars/misc/charicon.gif
+diesound		data/sounds/Tire.wav
+noatflash	1
+
+anim idle
+	loop	1
+	delay	20
+	offset	99 168
+	bbox	84 113 31 55
+	frame	data/chars/Objetos/Pino00.gif
+	frame	data/chars/Objetos/Pino01.gif
+	frame	data/chars/Objetos/Pino02.gif
+	frame	data/chars/Objetos/Pino01.gif
+
+
+anim fall
+	loop	1
+	delay	1000
+	offset	99 168
+	frame	data/chars/Objetos/Cone01.gif
+

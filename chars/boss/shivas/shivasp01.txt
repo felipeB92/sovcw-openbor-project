@@ -1,0 +1,60 @@
+name			ShivaSP01
+type			none
+speed 15
+candamage			Player NPC
+alpha 1
+nolife			1
+lifespan		4
+remove			1
+gfxshadow		1 1
+flash			Forte
+subject_to_gravity 0
+onblockwscript	data/scripts/bounceF.c
+#animationscript 	data/scripts/ani0020.h
+animationscript		data/scripts/drago.c
+ondrawscript 		data/scripts/Enemy_ondrawscript.c
+
+anim idle
+	loop	1
+	offset	154 201
+        hitflash	Shock
+	drawmethod tintmode 6
+	drawmethod tintcolor -255
+        hitfx	data/sounds/golpes/Forte.wav
+		delay  1
+	frame	data/chars/Boss/Shivas/a101.gif
+        @cmd dasher 3 0 0
+		offset  133  195
+		delay  5
+		attack1  116  120  72  17  5  0  0  0  0  15
+	frame	data/chars/Boss/Shivas/a101.gif
+	frame	data/chars/Boss/Shivas/a101b.gif
+	frame	data/chars/Boss/Shivas/a101c.gif
+        @cmd dasher 0 0 0
+		move  -100
+		Attack1  0
+		delay  15
+	frame	data/chars/Boss/Shivas/00.gif
+		move  0
+		delay  5
+        @cmd dasher 3 0 0
+		attack2  115  113  82  85  5  0  0  0  0  15
+	frame	data/chars/Boss/Shivas/a201.gif
+	frame	data/chars/Boss/Shivas/a201b.gif
+	frame	data/chars/Boss/Shivas/a201c.gif
+        @cmd dasher 0 0 0
+		move  -85
+		Attack1  0
+		delay  15
+	frame	data/chars/Boss/Shivas/00.gif
+		move  0
+		delay  5
+        @cmd dasher 3 0 0
+		attack3  118  90  67  108  5  0  0  0  0  15
+	frame	data/chars/Boss/Shivas/a300.gif
+	frame	data/chars/Boss/Shivas/a300b.gif
+	frame	data/chars/Boss/Shivas/a300c.gif
+        @cmd dasher 0 0 0
+	@cmd killentity getlocalvar("self")
+	frame	data/chars/Boss/SHivas/A201b.gif
+

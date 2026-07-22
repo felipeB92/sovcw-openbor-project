@@ -1,0 +1,234 @@
+music		data/bgs/st201/Lv201b.bor
+bossmusic	data/music/boss1.bor
+scrollspeed 0.5#1
+stagenumber 1
+background	data/bgs/st201/back00.gif
+panel		data/bgs/St201/pn01.gif
+frontpanel      data/bgs/St201/Front01.gif
+cameratype 1
+cameraoffset 0 -60
+#levelscript @script
+#void main() {
+#	changelevelproperty("camerazoffset", 0);
+#	changelevelproperty("cameraxoffset", 0);
+#}
+#@end_script
+settime         99
+notime          0
+noslow          1
+order		a
+spawn1  	50 20
+spawn2  	55 35
+spawn3  	60  50
+
+Wall  -2  200  1  0  1537  1536  30  94
+
+
+
+spawn  signal_
+health 40
+	coords  400  220 
+	at  0
+
+
+spawn  mesa
+item   cash
+	coords  160  220 
+	at  0
+
+
+spawn  cadeira
+	coords  210  220 
+	at  0
+
+spawn  mesa
+	coords  500  235 
+	at  0
+
+
+spawn  cadeira
+item   cash
+	coords  550  235 
+	at  0
+
+spawn  Donovan
+health 40
+	coords  300  195 
+	at  100
+
+spawn  signal
+map     3
+health 40
+	coords  500  250 
+	at  150
+
+spawn  Galsia
+map    1
+health 40
+	coords  -100  250 
+	at  150
+
+spawn  Luz02
+flip   1
+	coords  500  0 
+	at  300
+
+spawn  Galsia
+map    1
+health 40
+	coords  -100  250 
+	at  300
+
+
+spawn  mesa
+item   cash
+	coords  500  235 
+	at  395
+
+
+spawn  cadeira
+	coords  550  235 
+	at  395
+
+
+
+
+
+
+wait
+at     500
+
+group 4  4
+at     500
+
+
+spawn  signal
+map    3
+health 40
+	coords  -100  250 
+	at  500
+
+spawn  _Galsia
+map    1
+health 40
+	coords  94  204 
+	at  500
+
+
+spawn  Donovan
+health 40
+	coords  -100  110 
+	at  500
+
+spawn  Donovan
+health 40
+	coords  500  250 
+	at  500
+
+spawn  signal
+health 40
+	coords  300  195 
+	at  500
+
+spawn  Donovan
+health 40
+	coords  500  200 
+	at  501
+
+spawn  galsia
+map    1
+health 40
+	coords  -100  250 
+	at  550
+
+
+spawn  galsia
+map    1
+health 40
+	coords  -100  200 
+	at  600
+
+spawn  cadeira
+flip   1
+item   cash
+	coords  500  250 
+	at  600
+
+spawn  mesa
+	coords  550  250
+	at  600
+
+
+
+
+spawn  Luz02
+flip   1
+	coords  500  0 
+	at  650
+
+
+
+
+
+wait
+at     700
+
+group 4  4
+at     700
+
+spawn  galsia
+map    1
+health 40
+	coords  300  195 
+	at  700
+
+spawn  Donovan
+health 40
+	coords  500  200 
+	at  700
+
+spawn  mesa
+item   Apple
+	coords  600  230
+	at  728
+
+
+spawn  cadeira
+	coords  650  230 
+	at  728
+
+spawn  Barman
+flip   1
+	coords  550  164 
+	at  850
+
+
+spawn  Piano
+flip   1
+	coords  550  0 
+	at  900
+
+
+
+spawn  electra_
+health 150
+	coords  500  250 
+	at  1000
+
+
+spawn  Donovan
+health 40
+	coords  -100  250 
+	at  1200
+
+
+
+
+
+
+
+
+
+
+
+

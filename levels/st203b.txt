@@ -1,0 +1,132 @@
+music		data/bgs/St203/Lv203a.bor
+bossmusic	data/music/boss2.bor
+scrollspeed 0.5#1
+stagenumber 3
+background	data/bgs/st203/bg00.gif
+panel		data/bgs/St203/Pn11.gif
+fglayer		data/bgs/st203/fliper00.gif 0 -0.8 0.6 0 0 0 0 1 1 1
+#frontpanel      data/bgs/St203/fliper00.gif
+cameratype 1
+cameraoffset 	0 -60
+settime         99
+notime          0
+noslow          1
+order		a
+spawn1  	50 20
+spawn2  	55 35
+spawn3  	60  50
+
+
+wall		-200 450 -1000 -1000 0 570 285 10000
+
+wall		17 387 0 570 1500 1500 285 10000
+
+spawn  Luz04
+flip 1
+item   cash
+	coords  0  0
+	at  0
+
+
+
+
+spawn  arcade
+flip 1
+item   cash
+	coords  264  226
+	at  0
+
+
+spawn  arcade
+flip 1
+item   cash
+	coords  315  252
+	at  0
+
+spawn  arcade
+flip 1
+item   Gold
+	coords  346  268
+	at  0
+
+spawn  arcade
+flip 1
+item   cash
+	coords  385  282
+	at  0
+
+
+spawn  arcade
+flip 1
+item   apple
+	coords  477  342
+	at  0
+
+
+spawn  arcade
+flip 1
+item   Cash
+	coords  535  367
+	at  0
+
+spawn  Donovan_A
+health 70
+flip 1
+map  2
+	coords  269  253
+	at  0
+
+spawn  Signal_
+health 70
+flip 1
+map  1
+	coords  338  283
+	at  0
+
+spawn  Galsia_A
+health 40
+flip 1
+map  1
+	coords  433  342
+	at  0
+
+spawn  Signal_
+health 50
+flip 1
+	coords  465  370
+	at  25
+
+Group 5  5
+at  30
+
+
+
+spawn  Galsia
+health 40
+map  1
+	coords -50  200
+	at  30
+
+spawn  Donovan
+health 40
+	coords  -50  200
+	at  30
+
+spawn  Galsia
+health 70
+map  3
+	coords -50  200
+	at  30
+
+
+spawn  Signal
+health 70
+map  1
+	coords  500  420
+	at  371
+
+
+
+
+
+

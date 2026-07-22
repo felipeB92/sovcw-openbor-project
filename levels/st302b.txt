@@ -1,0 +1,376 @@
+music		data/bgs/St302/Lv302b.bor
+bossmusic	data/music/boss1.bor
+scrollspeed 0.5#1
+stagenumber 2
+background	data/bgs/st302/back00.gif	0.8 1 0 0 0 0 -1 1 0
+panel		data/bgs/st302/pn01.gif		none	none
+fglayer		data/bgs/st302/fpn00.gif		0 -0.4 0 0 0 0 0 -1 1 1
+fglayer		data/bgs/st302/fpn01.gif		0 -0.2 0 0 0 0 0 -1 1 1	none	none
+frontpanel      data/bgs/st05/Front02.gif
+cameratype 1
+cameraoffset 0 -30
+#levelscript @script
+#void main() {
+#	changelevelproperty("camerazoffset", 0);
+#	changelevelproperty("cameraxoffset", 0);
+#}
+#@end_script
+#settime         90
+notime          1
+noslow          1
+order		a
+spawn1  	50 20 50
+spawn2  	55 35 50 
+spawn3  	60 50 50
+
+
+
+
+spawn  Pessoas
+Flip   1
+	coords  0 0
+	at  0
+
+spawn  Dance
+Flip   1
+	coords  0 0
+	at  0
+
+
+spawn  LuzB01
+Flip   1
+	coords  0 0 0
+	at  0
+
+spawn		LuzB00
+flip		1
+coords		0 0
+at  0
+
+spawn		LuzB00
+flip		1
+coords		300 220 180
+at  0
+
+spawn		LuzB00
+flip		1
+coords		500 0
+at  0
+
+spawn		LuzB00
+flip		1
+coords		800 220 180
+at  0
+
+spawn		LuzB00
+flip		1
+coords		1100 0
+at  0
+
+spawn		LuzB00
+flip		1
+coords		1300 220 180
+at  0
+
+
+
+
+
+wait
+at  0
+
+Group 3 3
+at  0
+
+
+
+spawn  Garnet_
+health 50
+	coords  350 260
+	at  0
+
+spawn  Garnet_
+health 50
+	coords  340 180
+	at  0
+
+spawn  Garnet_
+health 50
+	coords  290 220
+	at  0
+
+spawn  Garnet
+health 50
+	coords  500 260
+	at  0
+
+Group 4 4
+at  0
+
+spawn  Signal
+health 50
+	coords  -100 260
+	at  0
+
+spawn  Signal
+health 50
+	coords  -100 180
+	at  0
+
+spawn  Signal
+health 50
+	coords  500 260
+	at  0
+
+spawn  Signal
+health 50
+	coords  500 180
+	at  0
+
+Group 9 9
+at  1
+
+
+spawn  Mesa02
+Item   Cash
+	coords  500 180
+	at  1
+
+spawn  Galsia_
+map    1
+health 50
+	coords  475 240
+	at  50
+
+spawn  Donovan_
+health 50
+	coords  475 220
+	at  50
+
+
+spawn  Signal_
+health 50
+	coords  475 260
+	at  450
+
+spawn  Signal_
+health 50
+	coords  480 180
+	at  450
+
+spawn  Signal_
+health 50
+	coords  490 220
+	at  450
+
+spawn  Mesa02
+Item   Knife
+	coords  500 180
+	at  450
+
+
+
+wait
+at  500
+
+Group 3 3
+at  500
+
+spawn  Signal
+health 50
+	coords  500 180
+	at  500
+
+
+spawn  Signal
+health 50
+	coords  500 220
+	at  500
+
+
+spawn  Signal
+health 50
+	coords  500 180
+	at  500
+
+spawn  Signal
+health 50
+	coords  500 220
+	at  500
+
+Group 4 4
+at  500
+
+spawn  Galsia
+map    1
+health 50
+	coords  500 250
+	at  500
+
+
+spawn  Galsia
+map    1
+health 50
+	coords  -100 220
+	at  500
+
+spawn  Donovan
+health 50
+	coords  300 250 200
+	at  500
+
+spawn  Signal
+health 50
+	coords  500 220
+	at  500
+
+
+spawn  Signal
+health 50
+	coords  500 180
+	at  500
+
+spawn  Signal
+health 50
+	coords  500 220
+	at  500
+
+spawn  Galsia
+map    1
+health 50
+	coords  500 220
+	at  500
+
+
+spawn  Donovan
+health 50
+	coords  300 250 200
+	at  500
+
+Group 9 9
+at  501
+
+spawn  Mesa02
+Item   pipe
+	coords  500 180
+	at  501
+
+
+spawn  Donovan_
+health 50
+	coords  475 250
+	at  700
+
+spawn  Galsia
+map    1
+health 50
+	coords  -100 220
+	at  700
+
+spawn  Mesa02
+Item   Chicken
+	coords  500 180
+	at  780
+
+spawn  Galsia
+map    1
+health 50
+	coords  -100 250
+	at  800
+
+spawn  Mesa02
+2pItem   Chicken
+	coords  500 180
+	at  940
+
+
+spawn  Electra_
+health 90
+	coords  475 230
+	at  1000
+
+spawn  Electra_
+health 90
+	coords  480 250
+	at  1000
+
+wait
+at  1100
+
+Group 4 4
+at  1100
+
+spawn  Galsia
+map    1
+health 50
+	coords  -100 240
+	at  1100
+
+spawn  Donovan
+health 50
+	coords  500 240
+	at  1100
+
+spawn  Knife
+	coords  300 250 200
+	at  1100
+
+spawn  Galsia
+map    1
+health 50
+	coords  300 240 200
+	at  1100
+
+spawn  Galsia
+map    1
+health 50
+	coords  -100 250
+	at  1100
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

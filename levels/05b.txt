@@ -1,0 +1,246 @@
+music		data/music/06a.bor
+bossmusic	data/music/boss1.bor
+rock		1
+scrollspeed 0.5
+stagenumber 6
+background	data/bgs/05/Back01.gif
+bglayer		data/bgs/05/bg00.gif		0.8 1 0 0 0 0 -1 1 1 0 1 0 0 0 1
+bglayer		data/bgs/05/bg01.gif		0.6 1 0 0 0 0 -1 1 1 0 3 0.1 1.2 0 3
+panel		data/bgs/05/Pn01.gif
+frontpanel	data/bgs/05/Front02.gif
+cameratype 1
+cameraoffset 0 -30
+#levelscript @script
+#void main() {
+#	changelevelproperty("camerazoffset", 0);
+#	changelevelproperty("cameraxoffset", 0);
+#}
+#@end_script
+settime         99
+notime          0
+noslow          1
+order		a
+spawn1  	35 05 0
+spawn2  	37 06 0
+spawn3  	38 07 0
+
+Wall  917  312  -234  0  500  500  110  300
+
+
+light		128 -128
+at			0
+
+
+group 4 4
+at  0
+
+wait
+at       0
+
+spawn  Act
+	coords  300 239 0
+	at  0
+
+spawn  Donovan_
+MAp 3
+health 50
+	coords  300 240 0
+	at  0
+spawn  Pipe
+	coords  300 239 0
+	at  0
+
+spawn  Bigben_
+MAp 4
+health 70
+	coords  370 260 0
+	at  0
+
+spawn  Bigben_
+MAp 3
+health 70
+	coords  400 210 0
+	at  0
+
+spawn  Signal
+Flip 1
+MAp 3
+health 70
+	coords  37 210 1
+	at  0
+
+spawn  Knife
+	coords  37 210 1
+	at  0
+
+
+spawn  Galsia
+Flip 1
+MAp 3
+health 50
+	coords  37 210 1
+	at  0
+
+
+spawn  Thug
+MAp 3
+health 50
+	coords  -100 240
+	at  0
+
+spawn  Chicken
+	coords  400 210 52
+	at  0
+
+
+spawn  Garnet
+MAp 3
+health 50
+	coords  -100 240
+	at  0
+
+spawn  Bigben
+Flip 1
+MAp 2
+health 70
+	coords  37 210 1
+	at  0
+
+spawn  Knife
+	coords  -50 236
+	at  0
+
+spawn  Galsia
+MAp 1
+health 50
+	coords  -100 236
+	at  0
+
+spawn  Knife
+	coords  -50 260
+	at  0
+
+spawn  Galsia
+MAp 2
+health 50
+	coords  -100 260
+	at  0
+
+spawn  Knife
+	coords  500 260
+	at  0
+
+spawn  Galsia
+MAp 3
+health 50
+	coords  550 260
+	at  0
+
+spawn  Knife
+	coords  500 236
+	at  0
+
+spawn  Galsia
+MAp 4
+health 50
+	coords  550 236
+	at  0
+
+spawn  ActE
+	coords  250 240
+	at  0
+
+spawn  Kart01
+Item Apple
+	coords  540 210
+	at  1
+
+spawn  Kart01
+Item Knife
+	coords  600 210
+	at  1
+
+spawn  Barbon__
+MAp 4
+health 250
+	coords  675 236
+	at  1
+
+spawn  Act
+	coords  675 236
+	at  1
+
+group 4 4
+at  268
+
+wait
+at       268
+
+spawn  Knife
+	coords  -50 260
+	at  268
+
+spawn  Galsia
+MAp 3
+health 50
+	coords  -100 260
+	at  268
+
+spawn  Knife
+	coords  -50 236
+	at  268
+
+spawn  Galsia
+MAp 4
+health 50
+	coords  -100 236
+	at  268
+
+spawn  Donovan
+MAp 3
+health 50
+	coords  -100 260
+	at  268
+
+spawn  Donovan
+MAp 4
+health 50
+	coords  -100 236
+	at  268
+
+
+spawn  Signal
+MAp 3
+health 70
+	coords  -100 260
+	at  268
+
+spawn  Signal
+MAp 4
+health 70
+	coords  -100 236
+	at  268
+
+spawn  Garnet
+MAp 3
+health 70
+	coords  -100 260
+	at  268
+
+spawn  Garnet
+MAp 4
+health 70
+	coords  -100 236
+	at  268
+
+spawn  ActE
+	coords  250 240
+	at  268
+
+
+
+
+
+
+
+

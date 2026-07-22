@@ -1,0 +1,45 @@
+name			Chuva04 #GROUND
+type			None
+Speed 0
+#setlayer 999
+#noquake 	1 1
+#offscreenkill	1000
+Alpha 1
+
+
+
+anim idle
+	loop	1
+	offset	7 551
+		delay  2
+frame data/Bgs/05/Chuva/PP/Rain00.gif
+frame data/Bgs/05/Chuva/PP/Rain01.gif
+frame data/Bgs/05/Chuva/PP/Rain02.gif
+frame data/Bgs/05/Chuva/PP/Rain03.gif
+frame data/Bgs/05/Chuva/PP/Rain04.gif
+frame data/Bgs/05/Chuva/PP/Rain05.gif
+frame data/Bgs/05/Chuva/PP/Rain06.gif
+frame data/Bgs/05/Chuva/PP/Rain07.gif
+frame data/Bgs/05/Chuva/PP/Rain08.gif
+frame data/Bgs/05/Chuva/PP/Rain09.gif
+frame data/Bgs/05/Chuva/PP/Rain10.gif
+frame data/Bgs/05/Chuva/PP/Rain11.gif
+frame data/Bgs/05/Chuva/PP/Rain12.gif
+frame data/Bgs/05/Chuva/PP/Rain13.gif
+frame data/Bgs/05/Chuva/PP/Rain14.gif
+frame data/Bgs/05/Chuva/PP/Rain15.gif
+frame data/Bgs/05/Chuva/PP/Rain16.gif
+frame data/Bgs/05/Chuva/PP/Rain17.gif
+frame data/Bgs/05/Chuva/PP/Rain18.gif
+frame data/Bgs/05/Chuva/PP/Rain19.gif
+frame data/Bgs/05/Chuva/PP/Rain20.gif
+frame data/Bgs/05/Chuva/PP/Rain21.gif
+frame data/Bgs/05/Chuva/PP/Rain22.gif
+frame data/Bgs/05/Chuva/PP/Rain23.gif
+frame data/Bgs/05/Chuva/PP/Rain24.gif
+frame data/Bgs/05/Chuva/PP/Rain25.gif
+frame data/Bgs/05/Chuva/PP/Rain26.gif
+frame data/Bgs/05/Chuva/PP/Rain27.gif
+frame data/Bgs/05/Chuva/PP/Rain28.gif
+frame data/Bgs/05/Chuva/PP/Rain29.gif
+

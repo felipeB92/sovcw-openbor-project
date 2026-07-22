@@ -1,0 +1,21 @@
+name		st5_panel1
+type		none
+shadow		0
+setlayer	10
+
+anim idle
+	loop	1
+	delay	8
+	offset	1 -9
+	frame	data/bgs/sor2_st5/panel00.gif
+	frame	data/bgs/sor2_st5/panel01.gif
+	frame	data/bgs/sor2_st5/panel02.gif
+	frame	data/bgs/sor2_st5/panel03.gif
+	frame	data/bgs/sor2_st5/panel04.gif
+	frame	data/bgs/sor2_st5/panel05.gif
+	frame	data/bgs/sor2_st5/panel06.gif
+	frame	data/bgs/sor2_st5/panel07.gif
+	frame	data/bgs/sor2_st5/panel08.gif
+	frame	data/bgs/sor2_st5/panel09.gif
+	frame	data/bgs/sor2_st5/panel10.gif
+	frame	data/bgs/sor2_st5/panel11.gif

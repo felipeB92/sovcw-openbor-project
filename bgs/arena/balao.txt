@@ -1,0 +1,44 @@
+name			Balao #GROUND
+type			None
+setlayer -57
+noquake 	1 1
+#offscreenkill	1000
+
+
+anim idle
+	loop	1
+	offset	79 42
+		delay  20
+		movea  1
+	frame	data/Bgs/Arena/D00.gif
+	frame	data/Bgs/Arena/D01.gif
+	frame	data/Bgs/Arena/D02.gif
+		movea  -1
+	frame	data/Bgs/Arena/D03.gif
+	frame	data/Bgs/Arena/D04.gif
+	frame	data/Bgs/Arena/D05.gif
+		movea  1
+	frame	data/Bgs/Arena/D06.gif
+	frame	data/Bgs/Arena/D07.gif
+	frame	data/Bgs/Arena/D08.gif
+		movea  -1
+	frame	data/Bgs/Arena/D09.gif
+	frame	data/Bgs/Arena/D10.gif
+	frame	data/Bgs/Arena/D11.gif
+		movea  1
+	frame	data/Bgs/Arena/D12.gif
+	frame	data/Bgs/Arena/D13.gif
+	frame	data/Bgs/Arena/D14.gif
+		movea  -1
+	frame	data/Bgs/Arena/D15.gif
+	frame	data/Bgs/Arena/D16.gif
+	frame	data/Bgs/Arena/D17.gif
+		movea  1
+	frame	data/Bgs/Arena/D18.gif
+	frame	data/Bgs/Arena/D19.gif
+	frame	data/Bgs/Arena/D20.gif
+		movea  -1
+	frame	data/Bgs/Arena/D21.gif
+	frame	data/Bgs/Arena/D22.gif
+	frame	data/Bgs/Arena/D00.gif
+

@@ -1,0 +1,201 @@
+music		data/bgs/St204/Lv204a.bor
+bossmusic	data/music/boss2.bor
+scrollspeed 0.5#1
+stagenumber 4
+background	data/bgs/st204/back00.gif
+panel		data/bgs/St204/Pn00.gif
+#fglayer			data/bgs/st201/fpn00.gif 0 -0.8 0.6 0 0 0 0 1 1 1
+#frontpanel      data/bgs/St203/fpn00.gif
+cameratype 1
+cameraoffset 	0 -60
+settime         99
+notime          0
+noslow          1
+order		a
+spawn1  	50 20
+spawn2  	55 35
+spawn3  	60 50
+
+
+
+spawn  Lixo01
+item   Pipe
+	coords  293  220
+	at  0
+
+
+
+spawn  Galsia_B
+map    1
+health 40
+	coords  465  208
+	at  0
+
+spawn  signal
+health 50
+	coords  500  230
+	at  0
+
+spawn  Donovan
+health 40
+	coords  600  240
+	at  0
+
+spawn  Donovan_B
+map    3
+health 70
+	coords  465  208
+	at  197
+
+spawn  Signal
+map    2
+health 70
+	coords  600  240
+	at  200
+
+spawn  Galsia
+map    1
+health 40
+	coords  -100  230
+	at  200
+
+wait
+at       300
+
+group 5  5
+at       300
+
+
+spawn  Knife
+	coords  -50  230
+	at  300
+
+spawn  Galsia
+map    4
+health 70
+	coords  -100  230
+	at  300
+
+spawn  Knife
+	coords  500  230
+	at  300
+
+spawn  Galsia
+map    4
+health 70
+	coords  550  230
+	at  300
+
+spawn  Donovan
+map    3
+health 70
+	coords  -100  208
+	at  300
+
+group 9  9
+at       301
+
+spawn  Donovan
+health 40
+	coords  500  208
+	at  350
+
+spawn  Galsia_B
+map    1
+health 40
+	coords  470  208
+	at  507
+
+
+
+spawn  Galsia
+map    1
+health 40
+	coords  -50  230
+	at  550
+
+spawn  Donovan
+map    4
+health 90
+	coords  -100  220
+	at  600
+
+spawn  Pipe
+	coords  -50  220
+	at  600
+
+spawn  Donovan_B
+map    4
+health 90
+	coords  470  208
+	at  716
+
+spawn  Pipe
+	coords  500  230
+	at  750
+
+spawn  Donovan
+health 40
+	coords  550  230
+	at  750
+
+
+
+
+
+wait
+at       750
+
+group 5  5
+at       750
+
+
+spawn  Galsia
+map    1
+health 40
+	coords  -50  230
+	at  750
+
+spawn  Lixo01
+item   cash
+	coords  500  220
+	at  756
+
+spawn  Lixo01
+item   Apple
+	coords  500  220
+	at  756
+
+
+spawn  Donovan
+health 40
+	coords  500  230
+	at  1000
+
+
+spawn  Donovan
+map    4
+health 90
+	coords  -100  230
+	at  1000
+
+spawn  Donovan_
+map    4
+health 90
+	coords  500  230
+	at  1001
+
+spawn  Hakuyo
+map    2
+health 100
+	coords  300  230 200
+	at  1100
+
+
+
+
+
+
+
+
+

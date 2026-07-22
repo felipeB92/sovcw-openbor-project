@@ -1,0 +1,33 @@
+name			Knife #GROUND
+type			item
+subtype			weapon
+nolife			1
+typeshot 		0
+weapnum			1
+shootnum 		1
+counter			4
+gfxshadow		1 1
+offscreenkill	1000
+
+anim spawn
+	loop	0
+	delay	5
+	jumpframe  0  3  0  0
+	offset	26 28
+	frame	data/chars/armas/Knife00.gif
+	frame	data/chars/armas/Knife01.gif
+	frame	data/chars/armas/Knife02.gif
+	frame	data/chars/armas/Knife03.gif
+	frame	data/chars/armas/Knife04.gif
+	frame	data/chars/armas/Knife05.gif
+	frame	data/chars/armas/Knife06.gif
+	frame	data/chars/armas/Knife07.gif
+	frame	data/chars/armas/Knife08.gif
+
+anim idle
+	loop	1
+	delay	200
+	offset	24 28
+	bbox 	14 21 22 8
+	frame	data/chars/armas/Knife08.gif
+

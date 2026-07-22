@@ -1,0 +1,139 @@
+music		data/Bgs/st305/Lv305a.bor
+bossmusic	data/music/boss1.bor
+scrollspeed 0.5#1
+stagenumber 5
+background	data/bgs/st305/back00.gif	0.6 1 0 0 0 0 -1 1 0
+panel		data/bgs/st305/pn02.gif		none	none
+frontpanel      data/bgs/st05/Front02.gif
+cameratype 1
+cameraoffset 0 -30
+#levelscript @script
+#void main() {
+#	changelevelproperty("camerazoffset", 0);
+#	changelevelproperty("cameraxoffset", 0);
+#}
+#@end_script
+#settime         90
+notime          1
+noslow          1
+order		a
+spawn1  	50 20 50
+spawn2  	55 35 50 
+spawn3  	60 50 50
+
+
+wall		343 281 0 154 200 200 76 10000
+
+
+
+
+spawn  LuzB05
+flip   1
+	coords  0  0
+	at  0
+
+Group 4  4
+at 0
+
+
+spawn  Tiger
+       health 80
+	coords  250  240 150
+	at  0
+
+
+spawn  Tiger
+       health 80
+	coords  -100  220 150
+	at  0
+
+
+spawn  Tiger
+       health 80
+	coords  230  260 150
+	at  0
+
+Group 5  5
+at   200
+
+spawn  Tiger
+       health 80
+	coords  250  240 150
+	at  200
+
+spawn  Tiger
+map    2
+       health 120
+	coords  250  260 150
+	at  200
+
+spawn  Tiger
+       health 80
+	coords  200  220 150
+	at  200
+
+spawn  Tiger
+       health 80
+	coords  300  220 150
+	at  200
+
+
+spawn  Tiger
+       health 80
+	coords  -100  220 150
+	at  200
+
+spawn  Tiger
+       health 80
+	coords  -100  220 150
+	at  200
+
+
+spawn  Tiger
+map    4
+       health 200
+	coords  250  220 150
+	at  200
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

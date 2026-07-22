@@ -1,0 +1,604 @@
+name	Joe_Higashi
+health	100
+mp 10
+chargerate 2
+mprate 1
+#secret 1
+Falldie 2
+Grabdistance 18
+riseinv				0.4 1
+speed	8
+type	player
+gfxshadow	1
+candamage			enemy obstacle
+JUMPHEIGHT 4
+#Jumpheight 3
+antigrab 2
+atchain   1 1 2 3 4 5
+weapons Joe_Higashi_Knife Adam_Sword Joe_Higashi_pipe Adam_Kunai None Blaze
+icon	data/chars/players/Joe/icon.gif 1
+diesound data/chars/players/Joe/Death.wav
+running	20	3	2	1	1
+animationscript		data/scripts/Felipe.c
+
+Com f f A freespecial
+Com f f  freespecial2
+
+Load Joe_HigashiP01
+Load Joe_HigashiP02
+Load Joe_HigashiP03
+Load MEdio
+
+
+
+Load Joe_Higashi_Knife
+Load Joe_Higashi_Pipe
+#Load Andy_
+Load Terry_
+
+remap data/chars/players/Joe/idle00.gif data/chars/players/Joe/MAp01.gif
+remap data/chars/players/Joe/idle00.gif data/chars/players/Joe/MAp02.gif
+remap data/chars/players/Joe/idle00.gif data/chars/players/Joe/MAp03.gif
+remap data/chars/players/Joe/idle00.gif data/chars/players/Joe/MAp04.gif
+
+
+anim	waiting
+	loop	1
+	offset	1 -542
+	delay	16
+	frame   data/chars/players/Joe/select01.gif
+	frame   data/chars/players/Joe/select02.gif
+	frame   data/chars/players/Joe/select03.gif
+	frame   data/chars/players/Joe/select04.gif
+
+anim	Select
+	loop	0
+	offset	1 -542
+	delay	3
+	frame   data/chars/players/Joe/select00.gif
+	frame   data/chars/players/Joe/select01.gif
+	frame   data/chars/players/Joe/select00.gif
+	frame   data/chars/players/Joe/select01.gif
+	frame   data/chars/players/Joe/select00.gif
+	frame   data/chars/players/Joe/select01.gif
+	frame   data/chars/players/Joe/select00.gif
+	frame   data/chars/players/Joe/select01.gif
+	frame   data/chars/players/Joe/select00.gif
+	frame   data/chars/players/Joe/select01.gif
+
+
+anim Pain5
+	loop	0
+	delay	12
+	offset	19 77
+        Range 0 40
+        Rangez -10 10
+	bbox	7 0 26 77
+	frame   data/chars/players/Joe/idle00.gif
+	@cmd  spawn01  "Terry_"  -5  0  10
+	@cmd  spawn01  "Andy_"  5  0  -10
+	frame   data/chars/players/Joe/idle01.gif
+
+anim idle
+	loop	1
+	delay	16
+	offset	22 78
+	bbox	7 3 25 75
+	frame   data/chars/players/Joe/idle00.gif
+	@cmd	depost 0
+	@cmd	throw 15 0.7 0.7 1 0 -1
+	@cmd	clearL
+	frame   data/chars/players/Joe/idle01.gif
+	frame   data/chars/players/Joe/idle02.gif
+	frame   data/chars/players/Joe/idle03.gif
+
+
+
+anim walk
+	loop	1
+	delay	12
+	offset	17 78
+	bbox	5 1 22 79
+	frame	data/chars/players/Joe/walk00.gif
+	frame	data/chars/players/Joe/walk01.gif
+	frame	data/chars/players/Joe/walk02.gif
+	frame	data/chars/players/Joe/walk03.gif
+
+
+anim get
+	loop	0
+	delay	10
+	offset	19 68
+	frame	data/chars/players/Joe/Get00.gif
+	frame	data/chars/players/Joe/Get01.gif
+
+
+anim jump
+	loop	0
+	delay	20
+	offset	20 92
+	bbox	4 13 31 82
+	frame	data/chars/players/Joe/Jump00.gif
+	frame	data/chars/players/Joe/Jump01.gif
+	frame	data/chars/players/Joe/Jump02.gif
+
+
+anim jumpattack
+	loop	0
+	delay	5
+	offset	31 77
+	bbox	13 6 32 51
+        hitflash	MEdio
+        hitfx	data/sounds/golpes/medio.wav
+        Sound	data/sounds/golpes/Chut.wav
+	frame	data/chars/players/Joe/Ja300.gif
+	Sound	data/chars/players/Joe/a2.wav
+		Attack1  35  39  43  28  10  1  0  0  0  15
+	frame	data/chars/players/Joe/Ja301.gif
+
+
+anim jumpattack2
+	loop	0
+	delay	5
+	offset	21 83
+	bbox	8 4 25 80
+        hitflash	MEdio
+        hitfx	data/sounds/golpes/medio.wav
+        Sound	data/sounds/golpes/Chut.wav
+	frame	data/chars/players/Joe/Ja200.gif
+	Sound	data/chars/players/Joe/a3.wav
+		attack1  4  36  55  35  10  1  0  0  0  15
+	frame	data/chars/players/Joe/Ja201.gif
+
+
+anim jumpforward
+	loop	0
+	delay	5
+	offset	23 79
+	bbox	5 20 48 52
+        hitflash	MEdio
+        hitfx	data/sounds/golpes/medio.wav
+        Sound	data/sounds/golpes/Chut.wav
+	frame	data/chars/players/Joe/Ja100.gif
+		delay  7
+	Sound	data/chars/players/Joe/a1.wav
+		Attack1  19  10  36  49  10  1  0  0  0  15
+		bbox  7  1  35  60
+	frame	data/chars/players/Joe/Ja101.gif
+
+anim attack1
+	loop	0
+	delay	6
+	offset	17 76
+        hitflash	Fraco
+	bbox	8 2 21 75
+		Attack1  0
+        Sound	data/sounds/golpes/Soco.wav
+        hitfx	data/sounds/golpes/Fraco.wav
+	frame	data/chars/players/Joe/a100.gif
+		delay  7
+		attack1  4  10  62  9  8  0  0  0  0  15
+	frame	data/chars/players/Joe/a101.gif
+		delay  3
+		Attack1  0
+	frame	data/chars/players/Joe/a102.gif
+
+
+anim attack2
+	loop	0
+	offset	18 79
+        hitflash	MEdio
+	bbox	14 6 30 69
+		Attack1  0
+        hitfx	data/sounds/golpes/MEdio.wav
+	Sound	data/chars/players/Joe/a2.wav
+		delay  6
+	frame	data/chars/players/Joe/a200.gif
+	frame	data/chars/players/Joe/a201.gif
+		delay  6
+		attack2  33  30  26  26  7  0  1  0  0  15
+	frame	data/chars/players/Joe/a202.gif
+		attack2  26  25  62  13  7  0  1  0  0  15
+		sound  data/sounds/golpes/Chut.wav
+	frame	data/chars/players/Joe/a203.gif
+		Attack1  0
+		delay  5
+	frame	data/chars/players/Joe/a204.gif
+	frame	data/chars/players/Joe/a205.gif
+
+anim attack3
+	loop	0
+	delay	5
+	offset	20 77
+	bbox	9 5 22 72
+        hitflash	Forte
+        Sound	data/sounds/golpes/Chut.wav
+        hitfx	data/sounds/golpes/Forte.wav
+	Sound	data/chars/players/Joe/a3.wav
+	frame	data/chars/players/Joe/a300.gif
+	frame	data/chars/players/Joe/a301.gif
+	frame	data/chars/players/Joe/a302.gif
+		attack3  23  0  56  69  12  1  0  0  0  15
+		delay  12
+	frame	data/chars/players/Joe/a303.gif
+		Attack1  0
+	frame	data/chars/players/Joe/a304.gif
+	frame	data/chars/players/Joe/a305.gif
+
+
+
+
+anim grab
+	loop	0
+	delay	100
+	offset	28 91
+	bbox	19 29 25 62
+        cancel	0 3 0 J freespecial
+	frame	data/chars/players/Joe/SP201.gif
+
+anim throw
+	loop	0
+	delay	5
+	offset	63 85
+        hitflash	Forte
+        hitfx	data/sounds/golpes/Forte.wav
+		Attack1  0
+	frame	data/chars/players/Joe/T00.gif
+	delay	10
+	@cmd	slamstart
+	@cmd	position 0 20 0 0 -1
+	frame	data/chars/players/Joe/T01.gif
+	@cmd	position 0 20 0 0 -1
+		delay  20
+		attack1  74  5  47  48  7  1  1  0  0  10
+	frame	data/chars/players/Joe/T02.gif
+	Sound	data/chars/players/Joe/a2.wav
+	@cmd	position 4 -10 30 0 -1
+		attack1  47  10  62  29  7  1  1  0  0  10
+		delay  10
+	frame	data/chars/players/Joe/T03.gif
+	@cmd	position 5 -30 30 0 -1
+		attack1  -14  13  32  44  7  1  1  0  0  10
+	frame	data/chars/players/Joe/T05.gif
+	@cmd	position 8 -40 30 0 -1
+	@cmd	depost 0
+	@cmd	throw 15 5 2 2 0 -1
+	@cmd	clearL
+		attack1  -26  8  36  47  7  1  1  0  0  10
+		delay  20
+	frame	data/chars/players/Joe/t06.gif
+
+
+
+anim pain
+	loop	0
+	offset	30 78
+	bbox	14 11 24 68
+	delay	5
+	frame	data/chars/players/Joe/pain100.gif
+		delay  25
+	frame	data/chars/players/Joe/pain101.gif
+
+anim pain3
+	loop	0
+	offset	18 79
+	bbox	3 6 27 73
+	delay	5
+	jumpframe  0  2  0  0
+	frame	data/chars/players/Joe/pain100.gif
+		delay  25
+		bbox  9  2  39  74
+	frame	data/chars/players/Joe/pain101.gif
+
+anim pain4
+	loop	0
+	offset	19 78
+	bbox	6 6 24 74
+	delay	5
+	frame	data/chars/players/Joe/pain100.gif
+		delay  900
+		bbox  8  0  36  78
+	frame	data/chars/players/Joe/pain101.gif
+
+
+anim grabbed
+	loop	0
+	offset	23 77
+	bbox	9 9 23 70
+	delay	40
+	frame	data/chars/players/Joe/pain100.gif
+
+
+
+anim pain2
+	loop	0
+	offset	34 78
+	bbox	23 0 25 78
+	delay	5
+	frame	data/chars/players/Joe/pain200.gif
+		delay  25
+	frame	data/chars/players/Joe/pain201.gif
+
+
+
+
+
+anim fall2
+	loop	0
+	offset	24 69
+	jumpframe  0  3  -3  0
+	delay	20
+        hitfx	data/sounds/golpes/Forte.wav
+		attack  0
+	frame	data/chars/players/Joe/fall00.gif
+		Attack1  0
+		offset  43  67
+	frame	data/chars/players/Joe/fall01.gif
+		delay  10
+	frame	data/chars/players/Joe/fall02.gif
+	frame	data/chars/players/Joe/fall03.gif
+		offset  38  23
+	frame	data/chars/players/Joe/fall04.gif
+
+anim fall
+	loop	0
+	offset	24 69
+	delay	20
+        hitfx	data/sounds/golpes/Forte.wav
+		attack  0
+	frame	data/chars/players/Joe/fall00.gif
+		Attack1  0
+		offset  38  69
+	frame	data/chars/players/Joe/fall01.gif
+		delay  10
+	frame	data/chars/players/Joe/fall02.gif
+	frame	data/chars/players/Joe/fall03.gif
+		offset  38  22
+	frame	data/chars/players/Joe/fall04.gif
+
+anim fall6 #Shok
+	loop	0
+	offset	80 108
+	delay	5
+        hitfx	data/sounds/golpes/Forte.wav
+		attack  0
+	frame	data/chars/players/Joe/fall201.gif
+	frame	data/chars/players/Joe/fall200.gif
+	frame	data/chars/players/Joe/fall201.gif
+	frame	data/chars/players/Joe/fall200.gif
+	frame	data/chars/players/Joe/fall201.gif
+		offset  45  23
+	frame	data/chars/players/Joe/fall04.gif
+
+
+anim fall7 #Burn
+	loop	0
+	offset	38 65
+	delay	10
+        hitfx	data/sounds/golpes/Forte.wav
+		attack  0
+	frame	data/chars/players/Joe/FALL300.gif
+	frame	data/chars/players/Joe/FALL301.gif
+	frame	data/chars/players/Joe/FALL302.gif
+	frame	data/chars/players/Joe/FALL300.gif
+	frame	data/chars/players/Joe/FALL301.gif
+		offset  43  20
+	frame	data/chars/players/Joe/FALL04.gif
+
+
+anim rise
+	loop	0
+	offset	29 71
+	delay	18
+	frame	data/chars/players/Joe/Rise00.gif
+	frame	data/chars/players/Joe/Rise01.gif
+	frame	data/chars/players/Joe/Rise02.gif
+	frame	data/chars/players/Joe/Rise03.gif
+
+
+
+
+anim special2
+        energycost 10 1
+        MpOnly 1
+	loop	0
+	offset	27 95
+        hitflash	fORTE
+        hitfx	data/sounds/golpes/forte.wav
+		Attack1  0
+		delay  6
+		move  0
+	frame	data/chars/players/Joe/SP100.gif
+	frame	data/chars/players/Joe/SP101.gif
+	Sound	data/chars/players/Joe/SP01.wav
+	frame	data/chars/players/Joe/SP102.gif
+	@cmd  spawn01  "Joe_HigashiP01"  20  0  1
+	frame	data/chars/players/Joe/SP103.gif
+	frame	data/chars/players/Joe/SP104.gif
+		delay  35
+	frame	data/chars/players/Joe/SP105.gif
+
+
+anim special
+        energycost 10 1
+        MpOnly 1
+	loop	0
+	offset	24 92
+        hitflash	fORTE
+	jumpframe  4  3  1  0
+        hitfx	data/sounds/golpes/forte.wav
+		delay  12
+	Sound	data/chars/players/Joe/a1.wav
+		Attack1  0
+	frame	data/chars/players/Joe/Sp200.gif
+	@cmd  spawn01  "Joe_HigashiP03"  0  0  -1
+	frame	data/chars/players/Joe/Sp201.gif
+		delay  6
+	frame  data/chars/players/Joe/Sp202.gif
+	Sound	data/chars/players/Joe/SP02.wav
+	frame	data/chars/players/Joe/Sp203.gif
+		attack7  6  10  51  79  25  1  0  1  0  25
+	frame	data/chars/players/Joe/Sp204.gif
+		delay  12
+		attack1  6  10  51  79  25  1  1  0  0  25
+	frame	data/chars/players/Joe/Sp205.gif
+	frame  data/chars/players/Joe/Sp206.gif
+		delay  4
+	frame	data/chars/players/Joe/Sp207.gif
+	frame  data/chars/players/Joe/Sp208.gif
+	Sound	data/chars/players/Joe/a3.wav
+	frame	data/chars/players/Joe/Sp209.gif
+		delay  9
+		Attack1  0
+	frame	data/chars/players/Joe/Sp210.gif
+
+anim jumpspecial
+        energycost 10 1
+        MpOnly 1
+	loop	0
+	offset	23 68
+        hitflash	fORTE
+        hitfx	data/sounds/golpes/forte.wav
+		Attack1  0
+		delay  8
+	Sound	data/chars/players/Joe/A3.wav
+	frame	data/chars/players/Joe/ja101.gif
+	@cmd  spawn01  "Joe_HigashiP02"  10  0  1
+		attack2  11  7  75  73  25  1  1  0  0  25
+	frame	data/chars/players/Joe/a203.gif
+	frame	data/chars/players/Joe/Ja300.gif
+	frame	data/chars/players/Joe/Ja301.gif
+
+
+anim Freespecial2
+	loop	0
+	delay	10
+	offset	23 67
+        cancel	0 3 0 A freespecial
+        @cmd dasher 1 0 0
+	frame	data/chars/players/Joe/roll00.gif
+        @cmd dasher 2 0 0
+		offset  33  47
+	frame	data/chars/players/Joe/roll01.gif
+	frame	data/chars/players/Joe/roll02.gif
+	frame	data/chars/players/Joe/roll03.gif
+        @cmd dasher 0 0 0
+		offset  26  47
+		delay  15
+	frame	data/chars/players/Joe/RA00.gif
+
+
+anim Freespecial
+ 	loop	0
+ 	delay	8
+ 	offset	29 46
+ 	bbox	9 2 32 44
+		move  0
+        hitflash	MEdio
+        hitfx	data/sounds/golpes/MEdio.wav
+	Sound	data/chars/players/Joe/Ra.wav
+ 	frame	data/chars/players/Joe/ra00.gif
+        @cmd dasher 2 0 0
+		attack1  22  25  48  22  12  1  1  0  0  15
+		delay  35
+ 	frame	data/chars/players/Joe/ra01.gif
+        @cmd dasher 0 0 0
+		delay  8
+		Attack1  0
+ 	frame	data/chars/players/Joe/ra02.gif
+
+
+anim grabattack
+	loop	0
+	offset	20 80
+	bbox	13 4 35 68
+	delay	5
+        hitflash	fRACO
+        hitfx	data/sounds/golpes/fRACO.wav
+		Attack1  0
+	frame	data/chars/players/Joe/a200.gif
+	Sound	data/chars/players/Joe/A1.wav
+	frame	data/chars/players/Joe/a201.gif
+		attack2  26  30  35  47  7  0  0  0  0  15
+		delay  20
+	frame  data/chars/players/Joe/a202.gif
+		Attack1  0
+		delay  5
+	frame	data/chars/players/Joe/a201.gif
+
+
+
+anim grabattack2
+	loop	0
+	offset	25 77
+	bbox	9 1 32 78
+	delay	7
+        hitflash	Forte
+        hitfx	data/sounds/golpes/Forte.wav
+		Attack1  0
+	frame	data/chars/players/Joe/a304.gif
+		delay  20
+	Sound	data/chars/players/Joe/a3.wav
+		attack1  32  0  49  43  12  1  0  0  0  15
+	frame	data/chars/players/Joe/a303.gif
+		delay  8
+		Attack1  0
+	frame	data/chars/players/Joe/a304.gif
+
+
+anim land
+	loop	0
+	delay	15
+	offset	17 76
+	bbox	10 0 18 77
+	frame	data/chars/players/Joe/a100.gif
+
+
+anim Fall9
+	loop	0
+	offset	19 77
+	delay	999
+	frame	data/chars/players/Joe/pain100.gif #0
+		offset  38  77
+	frame	data/chars/players/Joe/pain200.gif #1
+		offset  39  69
+	frame	data/chars/players/Joe/fall01.gif #2
+	frame	data/chars/players/Joe/fall02.gif #3
+		offset  72  82
+	frame	data/chars/players/Joe/fall400.gif #4
+		offset  91  94
+	frame	data/chars/players/Joe/fall401.gif #5
+		offset  81  99
+	frame	data/chars/players/Joe/fall402.gif #6
+		offset  77  119
+	frame  data/chars/players/Joe/fall403.gif
+		offset  87  96
+		delay  20
+	frame  data/chars/players/Joe/fall401.gif
+		offset  87  99
+		delay  30
+	frame  data/chars/players/Joe/fall404.gif
+		offset  73  96
+	frame  data/chars/players/Joe/fall405.gif
+
+
+anim Fall8
+	loop	0
+	flipframe  0
+	offset	37 69
+	delay	30
+	frame	data/chars/players/Joe/fall01.gif #0
+	delay	15
+	frame	data/chars/players/Joe/fall02.gif #1
+
+
+anim Fall5
+	loop	0
+	flipframe  1
+	offset	34 57
+	delay	30
+	frame	data/chars/players/Joe/fall01.gif #0
+	delay	15
+		offset  34  70
+	frame	data/chars/players/Joe/fall02.gif #1
+

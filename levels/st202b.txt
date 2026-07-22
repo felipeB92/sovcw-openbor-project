@@ -1,0 +1,106 @@
+music		data/bgs/St202/Lv202b.bor
+bossmusic	data/music/boss2.bor
+scrollspeed 0.5#1
+stagenumber 2
+background	data/bgs/st202/Truck00.gif
+panel		data/bgs/St202/Truck00.gif
+#fglayer	data/bgs/st201/fpn00.gif 0 -0.8 0.6 0 0 0 0 1 1 1
+frontpanel      data/bgs/St201/Front02.gif
+cameratype 1
+#cameraoffset 	0 -60
+rock 2
+settime         99
+notime          0
+noslow          1
+order		a
+spawn1  	125 20
+spawn2  	130 35
+spawn3  	135  50
+
+wall		0 257 -500 -500 134 0 66 10000
+
+wall		379 257 0 134 634 634 66 10000
+
+
+
+
+
+
+
+spawn  Truck03
+Flip   1
+	coords  0  5
+	at  0
+
+
+spawn  Box02
+	coords  174  265
+	at  0
+
+
+spawn  Box02
+item   cash
+map    1
+	coords  210  265
+	at  0
+
+
+spawn  Box02
+item   apple
+map    1
+	coords  271  240
+	at  0
+
+spawn  Box02
+	coords  311  266
+	at  0
+
+wait 
+at 0
+
+group 1 1
+at  0
+
+
+spawn  Hakuyo_
+	coords  425  250
+	at  0
+
+group 4 4
+at  0
+
+
+spawn  Truck02
+Flip   1
+	coords  0  0
+	at  0
+
+spawn  Fog
+	coords  136  225
+	at  0
+
+spawn  Fog
+	coords  236  225
+	at  0
+
+spawn  Fog
+	coords  314  225
+	at  0
+
+spawn  Pipe
+	coords  394  225 200
+	at  0
+
+spawn  Fog
+	coords  394  225
+	at  0
+
+
+spawn  Hakuyo
+map    1
+	coords  425  250 150
+	at  0
+
+
+
+

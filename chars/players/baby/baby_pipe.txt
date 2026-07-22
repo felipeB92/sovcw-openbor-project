@@ -1,0 +1,787 @@
+
+name	Baby_pipe
+health	100
+mp 10
+chargerate 2
+mprate 1
+#secret 1
+Falldie 2
+Grabdistance 18
+riseinv				0.4 1
+speed	8
+type	None
+candamage			enemy obstacle
+gfxshadow	1
+JUMPHEIGHT 4
+#Jumpheight 3
+antigrab 2
+atchain   1 1 2 3 4 5
+#weapons Commando_Knife Adam_Sword Commando_pipe Adam_Kunai None Blaze
+icon	data/chars/players/Baby/icon.gif 1
+diesound data/chars/players/Baby/Death.wav
+running	20	3	2	1	1
+onblockwscript	data/scripts/bounceF.c
+onblockwscript	data/scripts/bounceF.c
+#animationscript 	data/scripts/ani0020.h
+animationscript		data/scripts/drago.c
+#ondrawscript 		data/scripts/player_ondrawscript.c
+
+Load BabyP01
+Load BabyP02
+Load BabyP03
+Load PipeT
+
+
+Load Commando_
+LOAD Hannah_
+
+Load Commando_Knife
+Load Commando_Pipe
+#Load Adam_Kunai
+#Load Adam_Sword
+
+remap data/chars/players/Baby/idle00.gif data/chars/players/Baby/MAp01.gif
+remap data/chars/players/Baby/idle00.gif data/chars/players/Baby/MAp02.gif
+remap data/chars/players/Baby/idle00.gif data/chars/players/Baby/MAp03.gif
+remap data/chars/players/Baby/idle00.gif data/chars/players/Baby/MAp04.gif
+
+anim	waiting
+	loop	1
+	offset	1 -542
+	delay	16
+	frame   data/chars/players/Baby/select01.gif
+
+
+anim	Select
+	loop	0
+	offset	1 -542
+	delay	3
+	frame   data/chars/players/Baby/select00.gif
+	frame   data/chars/players/Baby/select01.gif
+	frame   data/chars/players/Baby/select00.gif
+	frame   data/chars/players/Baby/select01.gif
+	frame   data/chars/players/Baby/select00.gif
+	frame   data/chars/players/Baby/select01.gif
+	frame   data/chars/players/Baby/select00.gif
+	frame   data/chars/players/Baby/select01.gif
+	frame   data/chars/players/Baby/select00.gif
+	frame   data/chars/players/Baby/select01.gif
+	frame   data/chars/players/Baby/select00.gif
+	frame   data/chars/players/Baby/select01.gif
+
+
+
+anim Pain5
+	loop	0
+	delay	12
+	offset	239 169
+        Range 0 40
+        Rangez -10 10
+	bbox	220 99 37 68
+	frame   data/chars/players/Baby/Pipe/idle00.gif
+	@cmd  spawn01  "Commando_"  -5  0  10
+	@cmd  spawn01  "HAnnah_"  5  0  -10
+	frame   data/chars/players/Baby/Pipe/idle00.gif
+
+anim idle
+	loop	1
+	delay	240
+	offset	239 169
+	bbox	222 105 41 66
+	frame   data/chars/players/Baby/Pipe/idle00.gif
+	delay	20
+	@cmd	depost 0
+	@cmd	throw 15 0.7 0.7 1 0 -1
+	@cmd	clearL
+	frame   data/chars/players/Baby/Pipe/idle00.gif
+
+
+anim Run
+	loop	1
+	delay	6
+	offset	242 168
+	bbox	222 100 41 60
+	Sound	data/chars/players/Baby/run.wav
+	frame   data/chars/players/Baby/Pipe/run00.gif
+	frame   data/chars/players/Baby/Pipe/run01.gif
+	frame   data/chars/players/Baby/Pipe/run00.gif
+	frame   data/chars/players/Baby/Pipe/run01.gif
+	frame   data/chars/players/Baby/Pipe/run00.gif
+	frame   data/chars/players/Baby/Pipe/run01.gif
+	frame   data/chars/players/Baby/Pipe/run00.gif
+	frame   data/chars/players/Baby/Pipe/run01.gif
+	frame   data/chars/players/Baby/Pipe/run00.gif
+	frame   data/chars/players/Baby/Pipe/run01.gif
+	frame   data/chars/players/Baby/Pipe/run00.gif
+	frame   data/chars/players/Baby/Pipe/run01.gif
+	frame   data/chars/players/Baby/Pipe/run00.gif
+	frame   data/chars/players/Baby/Pipe/run01.gif
+	frame   data/chars/players/Baby/Pipe/run00.gif
+	frame   data/chars/players/Baby/Pipe/run01.gif
+	frame   data/chars/players/Baby/Pipe/run00.gif
+	frame   data/chars/players/Baby/Pipe/run01.gif
+	frame   data/chars/players/Baby/Pipe/run00.gif
+	frame   data/chars/players/Baby/Pipe/run01.gif
+	frame   data/chars/players/Baby/Pipe/run00.gif
+	frame   data/chars/players/Baby/Pipe/run01.gif
+	frame   data/chars/players/Baby/Pipe/run00.gif
+	frame   data/chars/players/Baby/Pipe/run01.gif
+	frame   data/chars/players/Baby/Pipe/run00.gif
+	frame   data/chars/players/Baby/Pipe/run01.gif
+	frame   data/chars/players/Baby/Pipe/run00.gif
+	frame   data/chars/players/Baby/Pipe/run01.gif
+	frame   data/chars/players/Baby/Pipe/run00.gif
+	frame   data/chars/players/Baby/Pipe/run01.gif
+	frame   data/chars/players/Baby/Pipe/run00.gif
+	frame   data/chars/players/Baby/Pipe/run01.gif
+
+anim RunAttack
+	loop	0
+	offset	236 173
+        Fastattack 1
+        hitflash	MEdio
+        hitfx	data/sounds/golpes/Medio.wav
+	bbox	212 101 43 77
+      @cmd dasher 1 0 0
+		delay  5
+	frame   data/chars/players/Baby/ra100.gif
+	frame   data/chars/players/Baby/ra101.gif
+		attack1  186  112  118  26  3  0  0  0  0  15
+	frame   data/chars/players/Baby/ra102.gif
+		Attack1  0
+	frame   data/chars/players/Baby/ra103.gif
+		attack1  186  112  118  26  3  0  0  0  0  15
+	frame   data/chars/players/Baby/ra104.gif
+		Attack1  0
+	frame   data/chars/players/Baby/ra105.gif
+		attack1  186  112  118  26  3  0  0  0  0  15
+	frame   data/chars/players/Baby/ra106.gif
+		Attack1  0
+	frame   data/chars/players/Baby/ra107.gif
+		attack1  186  112  118  26  3  0  0  0  0  15
+	frame   data/chars/players/Baby/ra108.gif
+		Attack1  0
+	frame   data/chars/players/Baby/ra109.gif
+		attack2  186  112  118  26  3  1  0  0  0  15
+	frame   data/chars/players/Baby/ra110.gif
+
+anim walk
+	loop	1
+	delay	10
+	offset	237 170
+	bbox	216 94 36 50
+	frame	data/chars/players/Baby/Pipe/walk00.gif
+	frame	data/chars/players/Baby/Pipe/walk01.gif
+	frame	data/chars/players/Baby/Pipe/walk02.gif
+	frame	data/chars/players/Baby/Pipe/walk03.gif
+	frame	data/chars/players/Baby/Pipe/walk04.gif
+	frame	data/chars/players/Baby/Pipe/walk05.gif
+	frame	data/chars/players/Baby/Pipe/walk06.gif
+	frame	data/chars/players/Baby/Pipe/walk07.gif
+	frame	data/chars/players/Baby/Pipe/walk08.gif
+	frame	data/chars/players/Baby/Pipe/walk09.gif
+	frame	data/chars/players/Baby/Pipe/walk10.gif
+	frame	data/chars/players/Baby/Pipe/walk11.gif
+
+anim get
+	loop	0
+	delay	20
+	offset	233 158
+	frame	data/chars/players/Baby/Get.gif
+
+
+anim jump
+	loop	0
+	delay	25
+	offset	243 172
+	bbox	224 97 41 66
+	frame	data/chars/players/Baby/Pipe/Jump00.gif
+	frame	data/chars/players/Baby/Pipe/Jump01.gif
+
+
+anim jumpattack
+	loop	0
+	delay	8
+	offset	232 180
+	bbox	218 97 35 48
+        hitflash	MEdio
+        hitfx	data/sounds/golpes/medio.wav
+        Sound	data/sounds/golpes/Chut.wav
+		attack1  206  132  79  25  10  1  0  0  0  15
+	frame	data/chars/players/Baby/Ja100.gif
+	Sound	data/chars/players/Baby/a2.wav
+		attack1  207  96  67  60  10  1  0  0  0  15
+	frame	data/chars/players/Baby/Ja101.gif
+		attack1  229  131  70  27  10  1  0  0  0  15
+	frame	data/chars/players/Baby/Ja102.gif
+	frame	data/chars/players/Baby/Ja103.gif
+
+
+anim jumpattack2
+	loop	0
+	delay	5
+	offset	234 169
+	bbox	216 89 40 53
+        hitflash	MEdio
+        hitfx	data/sounds/golpes/medio.wav
+        Sound	data/sounds/golpes/Chut.wav
+	frame	data/chars/players/Baby/ja200.gif
+		attack1  201  104  88  55  8  0  0  0  0  10
+		delay  7
+	Sound	data/chars/players/Baby/a1.wav
+		bbox  211  98  55  49
+	frame	data/chars/players/Baby/Ja201.gif
+		attack1  187  130  111  32  8  0  0  0  0  10
+	frame	data/chars/players/Baby/Ja202.gif
+
+anim jumpforward
+	loop	0
+	delay	5
+	offset	224 160
+	bbox	190 93 57 43
+        hitflash	MEdio
+        hitfx	data/sounds/golpes/medio.wav
+        Sound	data/sounds/golpes/Chut.wav
+	frame	data/chars/players/Baby/Ja300.gif
+		delay  7
+	Sound	data/chars/players/Baby/a2.wav
+		Attack1  206  137  103  29  10  1  0  0  0  10
+		bbox  202  128  44  41
+	frame	data/chars/players/Baby/Ja301.gif
+
+
+anim runjumpattack
+	loop	0
+	delay	6
+	offset	229 176
+	bbox	214 96 35 39
+        hitflash	MEdio
+        hitfx	data/sounds/golpes/medio.wav
+        Sound	data/sounds/golpes/Chut.wav
+		Attack1  0
+	frame	data/chars/players/Baby/JA100.gif
+	Sound	data/chars/players/Baby/a1.wav
+		attack1  208  98  66  60  10  1  0  0  0  10
+	frame	data/chars/players/Baby/JA101.gif
+		delay  5
+	frame	data/chars/players/Baby/JA101.gif
+		attack1  211  127  90  33  10  1  0  0  0  10
+		delay  30
+	frame	data/chars/players/Baby/JA102.gif
+	frame	data/chars/players/Baby/JA103.gif
+
+
+anim attack1
+	loop	0
+	delay	6
+	offset	221 165
+        hitflash	Forte
+	bbox	205 99 35 67
+        Sound	data/sounds/golpes/Soco.wav
+        hitfx	data/sounds/golpes/Forte.wav
+		Attack1  0
+	frame	data/chars/players/Baby/Pipe/a100.gif
+		attack1  203  119  134  29  12  1  1  0  0  10
+		delay  15
+	frame	data/chars/players/Baby/Pipe/a101.gif
+		delay  3
+		Attack1  0
+	frame	data/chars/players/Baby/Pipe/a100.gif
+
+
+anim attack2
+	loop	0
+	delay	4
+	offset	234 172
+        hitflash	Fraco
+	bbox	233 108 39 65
+		Attack1  0
+        hitfx	data/sounds/golpes/FRACO.wav
+	Sound	data/chars/players/Baby/a1.wav
+	frame	data/chars/players/Baby/a200.gif
+	frame	data/chars/players/Baby/a201.gif
+		attack2  249  126  40  26  3  0  0  0  0  15
+	frame	data/chars/players/Baby/a202.gif
+		attack2  226  101  60  46  3  0  0  0  0  10
+	frame	data/chars/players/Baby/a203.gif
+	frame	data/chars/players/Baby/a204.gif
+	frame	data/chars/players/Baby/a205.gif
+		bbox  214  107  29  66
+	frame	data/chars/players/Baby/a206.gif
+		Attack1  0
+	frame	data/chars/players/Baby/a207.gif
+	frame	data/chars/players/Baby/a208.gif
+
+anim attack3
+	loop	0
+	delay	5
+	offset	239 170
+	bbox	229 104 36 41
+        hitflash	Medio
+        Sound	data/sounds/golpes/Chut.wav
+        hitfx	data/sounds/golpes/MEdio.wav
+	frame	data/chars/players/Baby/a300.gif
+		Attack1  0
+	frame	data/chars/players/Baby/a301.gif
+		delay  5
+		attack1  220  98  67  74  5  0  0  0  0  15
+	frame	data/chars/players/Baby/a302.gif
+		delay  4
+		Attack1  0
+	frame	data/chars/players/Baby/a303.gif
+		attack1  246  84  37  95  3  0  0  0  0  15
+	frame	data/chars/players/Baby/a304.gif
+
+anim attack4
+	loop	0
+	delay	5
+	offset	189 167
+	bbox	210 111 36 50
+        hitflash	Medio
+        Sound	data/sounds/golpes/Chut.wav
+        hitfx	data/sounds/golpes/Medio.wav
+	Sound	data/chars/players/Baby/a2.wav
+	frame	data/chars/players/Baby/a400.gif
+		Attack1  0
+	frame	data/chars/players/Baby/a401.gif
+		attack2  198  119  111  20  10  1  0  0  0  15
+		delay  5
+	frame	data/chars/players/Baby/a402.gif
+		attack1  195  118  118  20  10  1  0  0  0  15
+		delay  20
+	frame	data/chars/players/Baby/a403.gif
+		Attack1  0
+		delay  5
+	frame	data/chars/players/Baby/a404.gif
+		bbox  182  106  32  62
+	frame	data/chars/players/Baby/a405.gif
+	frame	data/chars/players/Baby/a406.gif
+
+
+
+
+
+anim grab
+	loop	0
+	delay	100
+	offset	234 167
+	bbox	220 99 27 71
+        cancel	0 3 0 J freespecial
+	frame	data/chars/players/Baby/GrAB.gif
+
+anim throw
+	loop	0
+	delay	20
+	offset	235 167
+        hitflash	Forte
+        hitfx	data/sounds/golpes/Forte.wav
+		Attack1  0
+	@cmd	slamstart
+	@cmd	position 1 20 0 0 -1
+	frame	data/chars/players/Baby/Grab.gif
+	Sound	data/chars/players/Baby/a1.wav
+		attack1  267  100  34  70  7  1  0  0  0  10
+		delay  10
+	@cmd	position 1 20 1 0 -1
+		offset  255  169
+	frame	data/chars/players/Baby/T00.gif
+	@cmd	position 7 20 5 0 -1
+	frame  data/chars/players/Baby/T01.gif
+		delay  12
+		attack1  259  93  36  78  7  1  1  0  0  15
+	@cmd	position 1 15 5 0 -1
+	frame	data/chars/players/Baby/T02.gif
+	frame	data/chars/players/Baby/T03.gif
+	@cmd	position 4 -40 50 1 -1
+		attack1  209  92  61  30  7  1  1  0  0  15
+	frame	data/chars/players/Baby/T04.gif
+		attack1  162  97  40  36  7  1  1  0  0  15
+	frame	data/chars/players/Baby/T05.gif
+	@cmd	position 8 -50 35 1 -1
+	@cmd	depost 0
+	@cmd	throw 15 5 2 2 0 -1
+	@cmd	clearL
+		attack1  141  99  52  32  7  1  0  0  0  15
+	frame	data/chars/players/Baby/T06.gif
+		attack1  115  106  39  28  7  1  0  0  0  15
+	frame  data/chars/players/Baby/T07.gif
+
+
+
+
+
+
+
+
+anim pain
+	loop	0
+	offset	242 168
+	bbox	220 93 47 76
+	delay	5
+	frame	data/chars/players/Baby/pain01.gif
+		delay  25
+		offset  240  168
+	frame	data/chars/players/Baby/pain01.gif
+
+anim pain3
+	loop	0
+	offset	243 168
+	bbox	216 94 42 75
+	delay	5
+	jumpframe  0  2  0  0
+	frame	data/chars/players/Baby/pain01.gif
+		delay  25
+		offset  241  168
+	frame	data/chars/players/Baby/pain01.gif
+
+anim pain4
+	loop	0
+	offset	242 168
+	bbox	221 92 32 82
+	delay	5
+	frame	data/chars/players/Baby/pain01.gif
+		delay  900
+		offset  240  168
+	frame	data/chars/players/Baby/pain01.gif
+
+
+anim grabbed
+	loop	0
+	offset	243 167
+	bbox	221 93 32 77
+	delay	40
+	frame	data/chars/players/Baby/pain01.gif
+
+
+
+anim pain2
+	loop	0
+	offset	244 164
+	bbox	230 103 36 62
+	delay	5
+	frame	data/chars/players/Baby/pain02.gif
+		delay  25
+		offset  242  164
+	frame	data/chars/players/Baby/pain02.gif
+
+
+
+
+
+anim fall2
+	loop	0
+	offset	228 164
+	jumpframe  0  3  -3  0
+	delay	20
+        hitfx	data/sounds/golpes/Forte.wav
+		attack  0
+	frame	data/chars/players/Baby/fall00.gif
+		Attack1  0
+		offset  241  155
+	frame	data/chars/players/Baby/fall01.gif
+		delay  10
+		offset  240  143
+	frame	data/chars/players/Baby/fall02.gif
+
+anim fall
+	loop	0
+	offset	233 170
+	delay	20
+        hitfx	data/sounds/golpes/Forte.wav
+		attack  0
+	frame	data/chars/players/Baby/fall00.gif
+		Attack1  0
+		offset  234  151
+	frame	data/chars/players/Baby/fall01.gif
+		delay  10
+		offset  241  144
+	frame	data/chars/players/Baby/fall02.gif
+
+anim fall6 #Shok
+	loop	0
+	offset	229 157
+	delay	5
+        hitfx	data/sounds/golpes/Forte.wav
+		attack  0
+	frame	data/chars/players/Baby/fall201.gif
+	frame	data/chars/players/Baby/fall200.gif
+	frame	data/chars/players/Baby/fall201.gif
+	frame	data/chars/players/Baby/fall200.gif
+	frame	data/chars/players/Baby/fall201.gif
+		offset  242  143
+	frame	data/chars/players/Baby/fall02.gif
+
+
+anim fall7 #Burn
+	loop	0
+	offset	231 161
+	delay	10
+        hitfx	data/sounds/golpes/Forte.wav
+		attack  0
+	frame	data/chars/players/Baby/FALL300.gif
+	frame	data/chars/players/Baby/FALL301.gif
+	frame	data/chars/players/Baby/FALL302.gif
+	frame	data/chars/players/Baby/FALL300.gif
+	frame	data/chars/players/Baby/FALL301.gif
+		offset  238  142
+	frame	data/chars/players/Baby/FALL02.gif
+
+
+anim rise
+	loop	0
+	offset	231 147
+	delay	12
+	frame	data/chars/players/Baby/Fall02.gif
+		offset  231  160
+	frame	data/chars/players/Baby/Rise00.gif
+	frame	data/chars/players/Baby/Rise01.gif
+	frame	data/chars/players/Baby/Rise02.gif
+	frame	data/chars/players/Baby/Rise03.gif
+		offset  231  152
+	frame  data/chars/players/Baby/Rise04.gif
+
+
+
+
+anim Special
+        energycost 10 1
+        MpOnly 1
+	loop	0
+	offset	219 171
+        hitflash	Forte
+        hitfx	data/sounds/golpes/Forte.wav
+		Attack1  0
+		delay  12
+		move  0
+	frame	data/chars/players/Baby/fs100.gif
+	frame	data/chars/players/Baby/fs101.gif
+		attack7  157  45  151  129  25  1  0  0  0  20
+		delay  6
+	frame	data/chars/players/Baby/fs102.gif
+	Sound	data/chars/players/Baby/P01.wav
+	@cmd  spawn01  "BabyP01"  50  50  1
+	frame	data/chars/players/Baby/fs103.gif
+	@cmd  spawn01  "BabyP01"  70  70  1
+	frame	data/chars/players/Baby/fs103.gif
+	Sound	data/chars/players/Baby/P01.wav
+	@cmd  spawn01  "BabyP01"  -10  60  1
+	frame	data/chars/players/Baby/fs103.gif
+	@cmd  spawn01  "BabyP01"  60  60  1
+	frame	data/chars/players/Baby/fs103.gif
+	Sound	data/chars/players/Baby/P01.wav
+	@cmd  spawn01  "BabyP01"  0  80  -1
+	frame	data/chars/players/Baby/fs103.gif
+	@cmd  spawn01  "BabyP01"  -10 75  -1
+	frame	data/chars/players/Baby/fs103.gif
+	Sound	data/chars/players/Baby/P01.wav
+	@cmd  spawn01  "BabyP01"  -20 40  -1
+		delay  25
+	frame	data/chars/players/Baby/fs104.gif
+
+
+
+
+
+
+anim Special2
+        energycost 0 1
+        MpOnly 1
+        custKnife Pipet
+        throwframe 3 45
+	loop	0
+	offset	249 172
+        hitflash	Forte
+        hitfx	data/sounds/golpes/forte.wav
+		delay  8
+		Attack1  0
+	frame	data/chars/players/Baby/Pipe/a200.gif
+	frame	data/chars/players/Baby/Pipe/a201.gif
+	frame	data/chars/players/Baby/Pipe/a202.gif
+	frame	data/chars/players/Baby/Pipe/a203.gif
+	frame	data/chars/players/Baby/Pipe/a204.gif
+
+
+anim jumpspecial
+        energycost 10 1
+        MpOnly 1
+	loop	0
+	offset	237 165
+        hitflash	fORTE
+        hitfx	data/sounds/golpes/forte.wav
+	Sound	data/chars/players/Baby/a2.wav
+		delay  4
+	frame	data/chars/players/Baby/fs300.gif
+	@cmd  spawn01  "BabyP03"  0  0  -1
+		offset  243  170
+		attack7  187  103  108  70  20  1  0  0  0  20
+	frame	data/chars/players/Baby/fs301.gif
+	frame	data/chars/players/Baby/fs302.gif
+	frame	data/chars/players/Baby/fs303.gif
+		delay  4
+		offset  246  173
+	frame	data/chars/players/Baby/fs304.gif
+	frame	data/chars/players/Baby/fs305.gif
+	frame	data/chars/players/Baby/fs306.gif
+	frame	data/chars/players/Baby/fs301.gif
+	frame	data/chars/players/Baby/fs302.gif
+	frame	data/chars/players/Baby/fs303.gif
+	frame	data/chars/players/Baby/fs304.gif
+	frame	data/chars/players/Baby/fs305.gif
+	frame	data/chars/players/Baby/fs306.gif
+	frame	data/chars/players/Baby/fs307.gif
+
+
+
+
+anim grabattack
+	loop	0
+	offset	234 167
+	bbox	220 102 37 78
+	delay	8
+        hitflash	fRACO
+        hitfx	data/sounds/golpes/fRACO.wav
+		Attack1  0
+	frame	data/chars/players/Baby/ga100.gif
+		delay  20
+		attack2  239  118  40  33  5  00  0  0  0  15
+	frame	data/chars/players/Baby/ga101.gif
+		delay  8
+		Attack1  0
+	frame	data/chars/players/Baby/Ga100.gif
+
+anim grabattack2
+	loop	0
+	offset	234 167
+	bbox	220 102 37 78
+	delay	8
+        hitflash	fRACO
+        hitfx	data/sounds/golpes/fRACO.wav
+		Attack1  0
+	frame	data/chars/players/Baby/ga100.gif
+		delay  30
+		attack1  239  118  40  33  10  1  0  0  0  15
+	frame	data/chars/players/Baby/ga101.gif
+
+
+anim Freespecial
+	loop	0
+	offset	201 170
+	delay	7
+        hitflash	Forte
+	jumpframe  5  3  3  0
+        hitfx	data/sounds/golpes/Forte.wav
+		Attack1  0
+	@cmd	slamstart
+	@cmd	position 1 20 1 0 -1
+	frame	data/chars/players/Baby/Ga203.gif
+	frame	data/chars/players/Baby/Ga204.gif
+	frame	data/chars/players/Baby/Ga205.gif
+		delay  5
+	frame	data/chars/players/Baby/Ga206.gif
+	frame	data/chars/players/Baby/Ga207.gif
+	@cmd	position 7 15 1 0 -1
+	frame	data/chars/players/Baby/Ga208.gif
+		attack1  182  102  65  73  8  1  0  0  0  15
+	frame	data/chars/players/Baby/Ga209.gif
+	@cmd	position 6 1 1 0 -1
+	frame	data/chars/players/Baby/Ga210.gif
+	frame	data/chars/players/Baby/Ga211.gif
+	@cmd	position 5 -20 1 0 -1
+	frame	data/chars/players/Baby/Ga212.gif
+	frame	data/chars/players/Baby/Ga213.gif
+	@cmd	position 4 1 50 0 -1
+	frame	data/chars/players/Baby/Ga214.gif
+	frame	data/chars/players/Baby/Ga215.gif
+	@cmd	position 7 15 1 0 -1
+	frame	data/chars/players/Baby/Ga216.gif
+	frame	data/chars/players/Baby/Ga217.gif
+	@cmd	position 6 1 1 0 -1
+	frame	data/chars/players/Baby/Ga218.gif
+	frame	data/chars/players/Baby/Ga219.gif
+	@cmd	position 5 -20 1 0 -1
+	frame	data/chars/players/Baby/Ga220.gif
+	frame	data/chars/players/Baby/Ga221.gif
+		offset  209  147
+	@cmd	position 4 1 50 0 -1
+	frame	data/chars/players/Baby/Ga222.gif
+	frame	data/chars/players/Baby/Ga223.gif
+		delay  30
+		attack2  168  135  94  22  8  1  1  0  0  15
+	@cmd	position 5 15 1 0 -1
+	frame	data/chars/players/Baby/Ga224.gif
+		delay  5
+		offset  221  173
+	@cmd	position 9 20 0 0 -1
+        @cmd leaper 1 2 0
+	@cmd	depost 0
+	@cmd	throw 20 5 1 1 0 -1
+	@cmd	clearL
+		Attack1  0
+	frame  data/chars/players/Baby/Ga206.gif
+		offset  244  174
+	frame  data/chars/players/Baby/Jump00.gif
+	frame  data/chars/players/Baby/Jump01.gif
+	frame  data/chars/players/Baby/Jump02.gif
+	frame  data/chars/players/Baby/Jump03.gif
+	frame  data/chars/players/Baby/Jump04.gif
+	frame  data/chars/players/Baby/Jump05.gif
+
+
+anim land
+	loop	0
+	delay	15
+	offset	236 161
+	bbox	215 105 47 62
+	frame	data/chars/players/Baby/Land.gif
+
+
+anim Fall9
+	loop	0
+	offset	240 168
+	delay	999
+	frame	data/chars/players/Baby/pain01.gif #0
+		offset  242  165
+	frame	data/chars/players/Baby/pain02.gif #1
+		offset  230  151
+	frame	data/chars/players/Baby/fall01.gif #2
+		offset  233  140
+	frame	data/chars/players/Baby/fall02.gif #3
+		offset  244  141
+	frame	data/chars/players/Baby/fall400.gif #4
+		offset  261  162
+	frame	data/chars/players/Baby/fall401.gif #5
+		offset  247  164
+	frame	data/chars/players/Baby/fall402.gif #6
+		offset  241  162
+	frame  data/chars/players/Baby/fall403.gif
+		offset  257  162
+		delay  20
+	frame  data/chars/players/Baby/fall401.gif
+		offset  240  173
+		delay  30
+	frame  data/chars/players/Baby/fall404.gif
+		offset  238  143
+	frame  data/chars/players/Baby/fall405.gif
+
+
+anim Fall8
+	loop	0
+	flipframe  0
+	offset	233 155
+	delay	30
+	frame	data/chars/players/Baby/fall01.gif #0
+	delay	15
+		offset  244  145
+	frame	data/chars/players/Baby/fall02.gif #1
+
+
+anim Fall5
+	loop	0
+	flipframe  1
+	offset	232 153
+	delay	30
+	frame	data/chars/players/Baby/fall01.gif #0
+	delay	15
+		offset  228  150
+	frame	data/chars/players/Baby/fall02.gif #1
+

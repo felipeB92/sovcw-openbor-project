@@ -1,0 +1,423 @@
+name	Kusanagi
+health	70
+mp 10
+mprate 1
+#secret 1
+Falldie 2
+Grabdistance 18
+riseinv				0.4 1
+speed	12
+type	Enemy
+gfxshadow	1
+candamage			Player npc obstacle
+JUMPHEIGHT 4
+hostile Player NPC
+#antigrab 2
+atchain   1 1 2 3 4 5
+#weapons Kusanagi_Knife Kusanagi_Sword Kusanagi_pipe Kusanagi_Kunai
+icon	data/chars/Enemys/Kusanagi/icon.gif 1
+diesound data/Sounds/Die5.wav
+running	20	3	2	1	1
+onblockwscript	data/scripts/bounceF.c
+#animationscript 	data/scripts/ani0020.h
+animationscript		data/scripts/drago.c
+ondrawscript 		data/scripts/Enemy_ondrawscript.c
+
+
+
+Load KusanagiP01
+#Load Kusanagi_Pipe
+#Load Kusanagi_Kunai
+#Load Kusanagi_Sword
+
+remap data/chars/Enemys/Kusanagi/idle00.gif data/chars/Enemys/Kusanagi/MAp01.gif
+remap data/chars/Enemys/Kusanagi/idle00.gif data/chars/Enemys/Kusanagi/MAp02.gif
+remap data/chars/Enemys/Kusanagi/idle00.gif data/chars/Enemys/Kusanagi/MAp03.gif
+remap data/chars/Enemys/Kusanagi/idle00.gif data/chars/Enemys/Kusanagi/MAp04.gif
+
+anim Spawn
+	loop	0
+	delay	12
+	offset	147 183
+	bbox	134 112 34 74
+	frame   data/chars/Enemys/Kusanagi/idle00.gif
+
+
+anim Pain5
+	loop	0
+	delay	12
+	offset	147 183
+	bbox	137 110 26 75
+	frame   data/chars/Enemys/Kusanagi/idle00.gif
+
+anim idle
+	loop	1
+	delay	12
+	offset	147 183
+	bbox	132 111 32 73
+	frame   data/chars/Enemys/Kusanagi/idle00.gif
+	@cmd	depost 0
+	@cmd	throw 15 0.7 0.7 1 0 -1
+	@cmd	clearL
+	frame   data/chars/Enemys/Kusanagi/idle01.gif
+	frame   data/chars/Enemys/Kusanagi/idle02.gif
+	frame   data/chars/Enemys/Kusanagi/idle03.gif
+
+
+
+anim walk
+	loop	1
+	delay	12
+	offset	147 183
+	bbox	136 111 28 76
+	frame	data/chars/Enemys/Kusanagi/walk00.gif
+	frame	data/chars/Enemys/Kusanagi/walk01.gif
+	frame	data/chars/Enemys/Kusanagi/walk02.gif
+	frame  data/chars/Enemys/Kusanagi/walk03.gif
+
+
+
+
+
+anim jump
+	loop	0
+	delay	15
+	offset	147 183
+	bbox	135 133 34 49
+	frame	data/chars/Enemys/Kusanagi/Jump200.gif
+	frame	data/chars/Enemys/Kusanagi/Jump200.gif
+	frame	data/chars/Enemys/Kusanagi/Jump200.gif
+
+
+anim Freespecial
+	loop	0
+	delay	35
+        Range 150 170
+        RangeZ -10 10
+	jumpframe  1  3 2  0
+	offset	147 183
+        hitflash	MEdio
+        hitfx	data/sounds/golpes/medio.wav
+	frame	data/chars/Enemys/Kusanagi/LAnd.gif
+	Sound	data/chars/Enemys/Kusanagi/A1.wav
+		delay  4
+	frame	data/chars/Enemys/Kusanagi/Jump00.gif
+	frame	data/chars/Enemys/Kusanagi/Jump01.gif
+	frame	data/chars/Enemys/Kusanagi/Jump02.gif
+	frame	data/chars/Enemys/Kusanagi/Jump03.gif
+	frame	data/chars/Enemys/Kusanagi/Jump00.gif
+	frame	data/chars/Enemys/Kusanagi/Jump01.gif
+	frame	data/chars/Enemys/Kusanagi/Jump02.gif
+	frame	data/chars/Enemys/Kusanagi/Jump03.gif
+		delay  6
+		hitflash  MEdio
+		hitfx  data/sounds/golpes/medio.wav
+	Sound  data/sounds/golpes/Chut.wav
+	frame  data/chars/Enemys/Kusanagi/Ja100.gif
+		attack1  120  153  86  39  10  1  0  0  0  10
+		delay  40
+		bbox  129  133  48  38
+	frame	data/chars/Enemys/Kusanagi/Ja101.gif
+		Attack1  0
+		bbox  128  137  46  45
+		delay  20
+	frame  data/chars/Enemys/Kusanagi/LAnd.gif
+
+
+anim Freespecial2
+	loop	0
+	delay	10
+        Range 100 150
+        RangeZ -10 10
+	offset	147 183
+        custknife KusanagiP01
+        throwframe 2 45
+        hitflash	MEdio
+        hitfx	data/sounds/golpes/medio.wav
+	frame	data/chars/Enemys/Kusanagi/fs100.gif
+	frame	data/chars/Enemys/Kusanagi/fs101.gif
+	frame	data/chars/Enemys/Kusanagi/fs102.gif
+	frame	data/chars/Enemys/Kusanagi/fs103.gif
+	frame	data/chars/Enemys/Kusanagi/fs104.gif
+
+
+anim Freespecial3
+	loop	0
+	Followcond  1
+	followanim  1
+	delay	10
+        Range 50 100
+        RangeZ -10 10
+	offset	147 166
+        hitflash	MEdio
+        hitfx	data/sounds/golpes/medio.wav
+        @cmd dasher 3 0 0
+		attack1  137  129  19  38  1  0  0  0  0  15
+	frame	data/chars/Enemys/Kusanagi/Jump00.gif
+	frame	data/chars/Enemys/Kusanagi/Jump01.gif
+	frame	data/chars/Enemys/Kusanagi/Jump02.gif
+	frame	data/chars/Enemys/Kusanagi/Jump03.gif
+	frame	data/chars/Enemys/Kusanagi/Jump00.gif
+	frame	data/chars/Enemys/Kusanagi/Jump01.gif
+	frame	data/chars/Enemys/Kusanagi/Jump02.gif
+        @cmd dasher 0 0 0
+		offset  147  183
+	frame	data/chars/Enemys/Kusanagi/LAnd.gif
+
+
+anim Follow1
+	loop	0
+	delay	15
+	offset	147 183
+        hitflash	Forte
+        hitfx	data/sounds/golpes/Forte.wav
+	@cmd	slamstart
+        @cmd	position 0 20 0 0 -1
+	delay	15
+        @cmd dasher 0 0 0
+	frame	data/chars/Enemys/Kusanagi/t00.gif
+	@cmd	position 1 15 1 0 -1
+		attack1  150  99  25  63  7  1  0  0  0  11
+	frame	data/chars/Enemys/Kusanagi/t01.gif
+	@cmd	position 4 -15 50 0 -1
+		attack1  94  95  74  33  7  1  0  0  0  11
+	frame	data/chars/Enemys/Kusanagi/t02.gif
+	@cmd	position 8 -30 30 0 -1
+	@cmd	depost 0
+	@cmd	throw 15 5 2 2 0 -1
+	@cmd	clearL
+		attack1  52  86  44  69  7  1  0  0  0  11
+	frame	data/chars/Enemys/Kusanagi/t02.gif
+	delay	40
+		attack1  13  125  57  31  7  1  0  0  0  11
+	frame	data/chars/Enemys/Kusanagi/t03.gif
+
+
+anim get
+	loop	0
+	delay	12
+	offset	147 183
+	bbox	131 128 38 56
+        hitflash	Corte
+        hitfx	data/sounds/golpes/corte.wav
+	frame	data/chars/Enemys/Kusanagi/Get.gif
+
+anim attack1
+	loop	0
+	offset	147 183
+        Range 0 40
+        RangeZ -10 10
+        hitflash	Fraco
+	bbox	135 110 27 74
+		Attack1  0
+        Sound	data/sounds/golpes/Soco.wav
+        hitfx	data/sounds/golpes/Fraco.wav
+		delay  6
+	frame	data/chars/Enemys/Kusanagi/a101.gif
+		attack1  132  117  65  15  5  0  0  0  0  10
+		delay  10
+	frame	data/chars/Enemys/Kusanagi/a100.gif
+		delay  4
+		Attack1  0
+	frame  data/chars/Enemys/Kusanagi/a101.gif
+
+anim attack2
+	loop	0
+	delay	12
+	offset	147 183
+        hitflash	Corte
+	bbox	134 109 30 75
+		Attack1  0
+        Sound	data/sounds/golpes/Soco.wav
+        hitfx	data/sounds/golpes/Corte.wav
+	frame	data/chars/Enemys/Kusanagi/a200.gif
+		attack1  150  109  48  26  7  1  0  0  0  10
+		delay  7
+	frame	data/chars/Enemys/Kusanagi/a201.gif
+		attack1  136  113  65  33  5  1  0  0  0  15
+	frame   data/chars/Enemys/Kusanagi/a202.gif
+		Attack1  0
+	frame   data/chars/Enemys/Kusanagi/a203.gif
+	frame   data/chars/Enemys/Kusanagi/a204.gif
+
+
+
+
+anim pain
+	loop	0
+	offset	147 183
+	bbox	127 108 42 77
+	delay	5
+	frame	data/chars/Enemys/Kusanagi/pain01.gif
+		delay  25
+		offset  145  183
+	frame	data/chars/Enemys/Kusanagi/pain01.gif
+
+anim pain3
+	loop	0
+	offset	147 183
+	bbox	128 104 32 78
+	delay	5
+	jumpframe  0  2  0  0
+	frame	data/chars/Enemys/Kusanagi/pain01.gif
+		delay  25
+		offset  145  183
+	frame	data/chars/Enemys/Kusanagi/pain01.gif
+
+anim pain4
+	loop	0
+	offset	147 183
+	bbox	129 108 35 76
+	delay	5
+	frame	data/chars/Enemys/Kusanagi/pain01.gif
+		delay  900
+		offset  145  183
+	frame	data/chars/Enemys/Kusanagi/pain01.gif
+
+
+anim grabbed
+	loop	0
+	offset	147 183
+	bbox	135 104 27 82
+	delay	40
+	frame	data/chars/Enemys/Kusanagi/pain02.gif
+
+
+
+anim pain2
+	loop	0
+	offset	147 183
+	bbox	135 107 42 74
+	delay	5
+	frame	data/chars/Enemys/Kusanagi/pain02.gif
+		delay  25
+		offset  145  183
+	frame	data/chars/Enemys/Kusanagi/pain02.gif
+
+
+
+
+
+anim fall2
+	loop	0
+	offset	147 183
+	jumpframe  0  3  -3  0
+	delay	20
+        hitfx	data/sounds/golpes/Forte.wav
+		attack  0
+	frame	data/chars/Enemys/Kusanagi/fall00.gif
+		Attack1  0
+	frame	data/chars/Enemys/Kusanagi/fall01.gif
+		delay  10
+	frame	data/chars/Enemys/Kusanagi/fall02.gif
+
+anim fall
+	loop	0
+	offset	147 183
+	delay	20
+        hitfx	data/sounds/golpes/Forte.wav
+		attack  0
+	frame	data/chars/Enemys/Kusanagi/fall00.gif
+		Attack1  0
+	frame	data/chars/Enemys/Kusanagi/fall01.gif
+		delay  10
+	frame	data/chars/Enemys/Kusanagi/fall02.gif
+
+anim fall6 #Shok
+	loop	0
+	offset	88 120
+	delay	5
+        hitfx	data/sounds/golpes/Forte.wav
+		attack  0
+	frame	data/chars/Enemys/Kusanagi/fall201.gif
+	frame	data/chars/Enemys/Kusanagi/fall200.gif
+	frame	data/chars/Enemys/Kusanagi/fall201.gif
+	frame	data/chars/Enemys/Kusanagi/fall200.gif
+	frame	data/chars/Enemys/Kusanagi/fall201.gif
+		offset  147  183
+	frame	data/chars/Enemys/Kusanagi/fall02.gif
+
+
+anim fall7 #Burn
+	loop	0
+	offset	65 97
+	delay	10
+        hitfx	data/sounds/golpes/Forte.wav
+		attack  0
+	frame	data/chars/Enemys/Kusanagi/FALL300.gif
+	frame	data/chars/Enemys/Kusanagi/FALL301.gif
+	frame	data/chars/Enemys/Kusanagi/FALL302.gif
+	frame	data/chars/Enemys/Kusanagi/FALL300.gif
+	frame	data/chars/Enemys/Kusanagi/FALL301.gif
+		offset  147  183
+	frame	data/chars/Enemys/Kusanagi/FALL02.gif
+
+
+anim rise
+	loop	0
+	offset	147 183
+	delay	20
+	frame	data/chars/Enemys/Kusanagi/Rise00.gif
+	frame	data/chars/Enemys/Kusanagi/Rise01.gif
+	frame	data/chars/Enemys/Kusanagi/Idle00.gif
+
+
+
+
+anim jUMPland
+	loop	0
+	delay	15
+	offset	147 183
+	bbox	139 135 29 49
+	frame	data/chars/Enemys/Kusanagi/Land.gif
+
+
+anim land
+	loop	0
+	delay	15
+	offset	147 183
+	bbox	136 133 33 51
+	frame	data/chars/Enemys/Kusanagi/Land.gif
+
+
+anim Fall9
+	loop	0
+	offset	147 183
+	delay	999
+	frame	data/chars/Enemys/Kusanagi/pain01.gif #0
+	frame	data/chars/Enemys/Kusanagi/pain02.gif #1
+	frame	data/chars/Enemys/Kusanagi/fall01.gif #2
+	frame	data/chars/Enemys/Kusanagi/fall02.gif #3
+	frame	data/chars/Enemys/Kusanagi/fall400.gif #4
+	frame	data/chars/Enemys/Kusanagi/fall401.gif #5
+		offset  147  166
+	frame	data/chars/Enemys/Kusanagi/fall402.gif #6
+		offset  147  183
+	frame  data/chars/Enemys/Kusanagi/fall403.gif #7
+	delay	20
+	frame	data/chars/Enemys/Kusanagi/fall401.gif #8
+	delay	30
+	frame	data/chars/Enemys/Kusanagi/fall404.gif #9
+	frame	data/chars/Enemys/Kusanagi/Fall405.gif #10
+
+
+anim Fall8
+	loop	0
+	flipframe  0
+	offset	147 183
+	delay	30
+	frame	data/chars/Enemys/Kusanagi/fall01.gif #0
+	offset	73 120
+	delay	15
+	frame	data/chars/Enemys/Kusanagi/fall02.gif #1
+
+
+anim Fall5
+	loop	0
+	flipframe  1
+	offset	147 180
+	delay	30
+	frame	data/chars/Enemys/Kusanagi/fall01.gif #0
+	delay	15
+	frame	data/chars/Enemys/Kusanagi/fall02.gif #1
+

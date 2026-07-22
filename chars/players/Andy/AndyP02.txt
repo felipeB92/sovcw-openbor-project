@@ -1,0 +1,36 @@
+
+name			AndyP02 #THROWNED
+type			none
+speed 8
+candamage			enemy obstacle
+alpha 1
+nolife			1
+lifespan		4
+remove			1
+gfxshadow		0 0
+flash			Forte
+antigravity 100
+animationscript		data/scripts/drago.c
+
+anim idle
+	loop	0
+	offset	48 91
+	drawmethod tintmode 6
+	drawmethod tintcolor -255
+		delay  6
+	frame	data/chars/players/Andy/SP200.gif
+	frame	data/chars/players/Andy/SP201.gif
+	frame	data/chars/players/Andy/SP202.gif
+	frame	data/chars/players/Andy/SP203.gif
+        @cmd dasher 1 0 0
+	frame	data/chars/players/Andy/SP204.gif
+	frame	data/chars/players/Andy/SP205.gif
+	frame	data/chars/players/Andy/SP206.gif
+	frame	data/chars/players/Andy/SP207.gif
+	frame	data/chars/players/Andy/SP208.gif
+        @cmd dasher 0 0 0
+	frame	data/chars/players/Andy/SP209.gif
+	frame	data/chars/players/Andy/SP210.gif
+	@cmd killentity getlocalvar("self")
+	frame	data/chars/players/Andy/SP210.gif
+

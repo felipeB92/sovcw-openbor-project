@@ -1,0 +1,302 @@
+music		data/bgs/St307/Lv307a.bor
+bossmusic	data/music/boss1.bor
+scrollspeed 0.5#1
+stagenumber 8
+background	data/bgs/st308/back00.gif	0.6 1 0 0 0 0 -1 1 1
+bglayer		data/bgs/st308/bg00.gif		0.3 1 0 0 0 0 -1 1 1
+panel		data/bgs/st308/pn00.gif		none	none
+frontpanel	data/bgs/st308/fpn00.gif
+fglayer		data/bgs/st05/Front02.gif 			1000 1 1 0 0 0 0 -1 -1 1 2
+cameratype 1
+cameraoffset 0 -30
+#levelscript @script
+#void main() {
+#	changelevelproperty("camerazoffset", 0);
+#	changelevelproperty("cameraxoffset", 0);
+#}
+#@end_script
+#settime         90
+notime          1
+noslow          1
+order		a
+spawn1  	50 70  50
+spawn2  	55 85  50
+spawn3  	60 105 50
+
+
+
+
+
+spawn  Box03
+Item   Knife
+	coords  200 240
+	at  0
+
+spawn  Box03
+Item   Pipe
+	coords  500 240
+	at  0
+
+
+spawn  sword
+	coords  250 250 140
+	at  30
+
+spawn  Kusanagi
+Map    1
+health 100
+	coords  250 230 150
+	at  30
+
+spawn  Moto02
+	coords  500 260
+	at  100
+
+spawn  Kusanagi
+health 80
+	coords  250 220 150
+	at  100
+
+spawn  Kusanagi
+health 80
+	coords  250 260 150
+	at  100
+
+wait 
+at     200
+
+Group 1  4
+at     200
+
+
+spawn  Moto
+health 1
+alias  fog
+	coords  500 220
+	at  200
+
+Group 1  1
+at     200
+
+spawn  Moto02
+map    2
+	coords  500 260
+	at  200
+
+
+spawn  Moto
+health 1
+alias  fog
+	coords  500 220
+	at  200
+
+spawn  Moto02
+map    1
+flip   1
+	coords  -100 240
+	at  200
+
+
+spawn  Moto
+health 1
+alias  fog
+	coords  500 260
+	at  200
+
+
+Group 2  2
+at     200
+
+
+spawn  Fog_B
+health 70
+alias  fog
+	coords  500 220
+	at  200
+
+
+spawn  Moto02
+map    2
+	coords  500 260
+	at  200
+
+
+spawn  Moto
+health 1
+alias  fog
+	coords  500 240
+	at  200
+
+
+spawn  fog_B
+health 70
+alias  fog
+flip   1
+	coords  -100 220
+	at  200
+
+
+
+spawn  Kusanagi
+Map    1
+health 100
+	coords  250 230 150
+	at  200
+
+spawn  sword
+	coords  -100 250 140
+	at  200
+
+Group 5  5
+at     200
+
+
+spawn  Kusanagi
+flip   1
+health 80
+	coords  150 220 150
+	at  200
+
+spawn  Kusanagi
+flip   1
+health 80
+	coords  150 260 150
+	at  200
+
+spawn  Kusanagi
+health 80
+	coords  400 220 150
+	at  200
+
+spawn  Kusanagi
+health 80
+	coords  400 260 150
+	at  200
+
+spawn  Kusanagi
+Map    1
+health 100
+	coords  250 230 150
+	at  200
+
+spawn  Kunai
+	coords  500 230 140
+	at  200
+
+
+Group 9  9
+at  201
+
+spawn  Box03
+Item   Apple
+	coords  500 240
+	at  250
+
+spawn  P1
+Map    2
+health 100
+	coords  500 230
+	at  300
+
+
+spawn  P1
+Map    2
+health 100
+	coords  500 260
+	at  350
+
+spawn  Kusanagi
+health 80
+	coords  -100 260 150
+	at  400
+
+
+spawn  Box03
+2pItem   Apple
+	coords  500 240
+	at  400
+
+spawn  P1
+flip   1
+Map    2
+health 100
+	coords  -100 260
+	at  500
+
+
+spawn  P1
+health 100
+	coords  500 260
+	at  600
+
+wait 
+at     900
+
+Group 4  4
+at     900
+
+spawn  P1
+flip   1
+Map    2
+health 100
+	coords  -100 260
+	at  900
+
+spawn  P1
+Map    2
+health 100
+	coords  500 260
+	at  900
+
+wait 
+at     1200
+
+Group 4  4
+at     1200
+
+
+spawn  P1
+health 100
+	coords  500 260
+	at  1200
+
+
+spawn  Kusanagi
+health 80
+	coords  -100 260
+	at  1200
+
+spawn  Kusanagi
+map    3
+health 120
+	coords  250 230 150
+	at  1200
+
+spawn  P1
+flip   1
+Map    2
+health 100
+	coords  -100 260
+	at  1200
+
+spawn  P1
+Map    2
+health 100
+	coords  500 260
+	at  1200
+
+spawn  P1
+Map    2
+health 100
+	coords  500 260
+	at  1200
+
+
+
+
+
+
+
+
+
+

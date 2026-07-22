@@ -1,0 +1,134 @@
+music		data/BGs/07/Boss7.bor
+bossmusic	data/BGs/07/Boss7.bor
+scrollspeed 0.5#1
+stagenumber 8
+background	data/bgs/07/back03.gif	        1 1 0 0 0 0 -1 1 0
+bglayer		data/bgs/07/back04.gif		0.6 1 0 0 0 0 -1 1 1 0  0 0 0 0 0
+#bglayer		data/bgs/07/back01a.gif		0.4 1 0 0 0 0 -1 1 1 0  0 0 0 0 1.5
+#bglayer		data/bgs/st207/bg02.gif		0.2 1 0 0 0 0 -1 1 1 0  0 0 0 0 3
+panel		data/bgs/07/Pn05.gif		none	none		none	none
+frontpanel	data/bgs/07/Front03.gif		
+cameratype 1
+cameraoffset 0 -30
+#levelscript @script
+#void main() {
+#	changelevelproperty("camerazoffset", 0);
+#	changelevelproperty("cameraxoffset", 0);
+#}
+#@end_script
+settime         90
+notime          1
+noslow          1
+order		a
+spawn1  	50 20 50
+spawn2  	55 35 50 
+spawn3  	60 50 50
+
+spawn eX
+Flip  1
+	coords  30 180
+        at 0
+
+
+wait
+at       0
+
+group 1 1
+at  0
+
+spawn DelayX1
+	coords  600 155
+        at 0
+
+
+spawn Alerta
+Flip 1
+	coords  0 0 
+        at 0
+
+group 4 4
+at  1
+
+
+
+spawn Hunter_B11
+health 50
+map 4
+	coords  750 230
+        at 700
+
+spawn Hunter_B12
+health 50
+map 4
+	coords  730 220
+        at 700
+
+spawn Hunter_B13
+health 50
+map 4
+	coords  720 210
+        at 900
+
+wait
+at       1000
+
+group 4 4
+at  1000
+
+
+spawn Hunter_B14
+health 50
+map 4
+	coords  410 200
+        at 1000
+
+spawn Hunter_B15
+health 50
+map 4
+	coords  410 200
+        at 1000
+
+
+
+spawn Helli
+Flip  1
+	coords  260 155
+        at 1000
+
+spawn DelayX1
+	coords  600 155
+        at 1000
+
+
+spawn Hunter_B11
+health 50
+map 4
+	coords  450 230
+        at 1000
+
+spawn Hunter_B12
+health 50
+map 4
+	coords  430 220
+        at 1000
+
+
+spawn EndU
+Flip  1
+	coords  260 170
+        at 1000
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

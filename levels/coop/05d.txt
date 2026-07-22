@@ -1,0 +1,186 @@
+music		data/music/06b.bor
+bossmusic	data/music/bossR.bor
+rock		1
+scrollspeed 0.5
+stagenumber 6
+background	data/bgs/05/Back01.gif
+bglayer		data/bgs/05/Sky2.gif		0.8 1 0 0 0 0 -1 1 1 0 1 0 0 0 1
+bglayer		data/bgs/05/bg01.gif		0.6 1 0 0 0 0 -1 1 1 0 3 0.1 1.2 0 3
+panel		data/bgs/05/Pn04.gif
+cameratype 1
+cameraoffset 0 -30
+#levelscript @script
+#void main() {
+#	changelevelproperty("camerazoffset", 0);
+#	changelevelproperty("cameraxoffset", 0);
+#}
+#@end_script
+settime         99
+notime          0
+noslow          1
+order		a
+spawn1  	64 0 0
+spawn2  	66 0 0
+spawn3  	68 0 0
+
+light		128 -128
+at			0
+
+spawn  ActP
+	coords  250 250
+	at  0
+
+spawn  Chuva01
+Flip 1
+	coords  0 290
+	at  0
+
+spawn  Chuva01
+Flip 1
+	coords  504 290
+	at  0
+
+spawn  Chuva02
+Flip 1
+	coords  0 272
+	at  0
+
+spawn  Chuva02
+Flip 1
+	coords  0 230
+	at  0
+
+spawn  Chuva02
+Flip 1
+	coords  785 272
+	at  0
+
+spawn  Chuva02
+Flip 1
+	coords  785 230
+	at  0
+
+
+spawn  Tires02
+Item Apple
+Flip 1
+	coords  500 205
+	at  0
+
+spawn  Tires02
+Item Chicken
+Flip 1
+	coords  550 205
+	at  0
+
+
+
+
+
+wait
+at       400
+
+
+
+group 4 4
+at 400
+
+spawn  Harakiri__
+health 350
+Boss 1
+	coords  385 240 0
+	at  400
+
+spawn  Harakiri__
+Map 4
+health 350
+Flip 1
+Boss 1
+	coords  150 240 0
+	at  400
+
+spawn  Raven
+MAp 3
+health 70
+	coords  550 260 0
+	at  400
+
+spawn  Signal
+MAp 3
+health 70
+	coords  -100 260 0
+	at  400
+
+
+spawn  Fog
+MAp 3
+health 70
+	coords  550 210 0
+	at  400
+
+spawn  Slum
+MAp 3
+health 50
+	coords  -100 210 0
+	at  400
+
+spawn  Donovan
+MAp 3
+health 50
+	coords  550 260 0
+	at  400
+
+spawn  Galsia
+MAp 3
+health 50
+	coords  -100 260 0
+	at  400
+
+
+spawn  Vice
+MAp 3
+health 60
+	coords  550 210 0
+	at  400
+
+spawn  GArnet
+MAp 3
+health 70
+	coords  -100 210 0
+	at  400
+
+spawn  Jhonny
+MAp 3
+health 70
+	coords  550 260 0
+	at  400
+
+spawn  Ralf
+MAp 3
+health 70
+	coords  -100 260 0
+	at  400
+
+
+spawn  Nora
+MAp 3
+health 70
+	coords  550 210 0
+	at  400
+
+spawn  Electra
+MAp 3
+health 70
+	coords  -100 210 0
+	at  400
+
+
+
+spawn  Bigben
+MAp 3
+health 70
+	coords  -100 210 0
+	at  400
+
+
+

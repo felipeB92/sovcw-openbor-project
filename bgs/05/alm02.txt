@@ -1,0 +1,22 @@
+name			alm02 #GROUND
+type			None
+setlayer 5
+
+anim idle
+	loop	1
+	delay	30
+	offset	0 0
+	frame	data/Bgs/St205/panel12.gif
+	frame	data/Bgs/St205/panel13.gif
+	frame	data/Bgs/St205/panel14.gif
+	frame	data/Bgs/St205/panel15.gif
+	frame	data/Bgs/St205/panel16.gif
+	frame	data/Bgs/St205/panel17.gif
+	frame	data/Bgs/St205/panel18.gif
+	frame	data/Bgs/St205/panel19.gif
+	frame	data/Bgs/St205/panel20.gif
+	frame	data/Bgs/St205/panel21.gif
+	frame	data/Bgs/St205/panel22.gif
+	frame	data/Bgs/St205/panel23.gif
+
+

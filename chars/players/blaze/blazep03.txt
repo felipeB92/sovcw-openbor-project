@@ -1,0 +1,32 @@
+
+name			BlazeP03 #THROWNED
+type			none
+speed 12
+candamage			enemy obstacle
+alpha 1
+nolife			1
+lifespan		4
+remove			1
+gfxshadow		0 0
+flash			Forte
+#antigravity 100
+
+anim idle
+	loop	0
+	offset	279 447
+		drawmethod  60  60  0  0  0  -1  -1
+		delay  4
+	frame	data/chars/players/Blaze/P03/p00.gif
+	frame	data/chars/players/Blaze/P03/p01.gif
+	frame	data/chars/players/Blaze/P03/p02.gif
+	frame	data/chars/players/Blaze/P03/p03.gif
+	frame	data/chars/players/Blaze/P03/p04.gif
+	frame	data/chars/players/Blaze/P03/p05.gif
+	frame	data/chars/players/Blaze/P03/p06.gif
+	frame	data/chars/players/Blaze/P03/p07.gif
+	frame	data/chars/players/Blaze/P03/p08.gif
+	frame	data/chars/players/Blaze/P03/p09.gif
+	frame	data/chars/players/Blaze/P03/p10.gif
+	@cmd killentity getlocalvar("self")
+	frame	data/chars/players/Blaze/P03/p10.gif
+

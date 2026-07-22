@@ -1,0 +1,27 @@
+name			ShivaSP02
+type			none
+speed 15
+candamage			Player
+alpha 1
+nolife			1
+lifespan		4
+remove			1
+gfxshadow		1 1
+flash			Forte
+subject_to_gravity 0
+onblockwscript	data/scripts/bounceF.c
+#animationscript 	data/scripts/ani0020.h
+animationscript		data/scripts/drago.c
+ondrawscript 		data/scripts/Enemy_ondrawscript.c
+
+anim idle
+	loop	1
+	offset	154 201
+        hitflash	Forte
+        hitfx	data/sounds/golpes/Forte.wav
+		delay  6
+	frame	data/chars/Boss/Shivas/Fire/P00.gif
+	frame	data/chars/Boss/Shivas/Fire/P01.gif
+	frame	data/chars/Boss/Shivas/Fire/P02.gif
+      
+

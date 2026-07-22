@@ -1,0 +1,39 @@
+name			Snipert #GROUND
+type			None
+subtype			weapon
+nolife			1
+typeshot 		0
+weapnum			5
+lifespan 10
+shootnum 		1
+counter			1
+gfxshadow		1 1
+offscreenkill	1000
+
+anim idle
+	loop	1
+	delay	6
+	offset	39 42
+	bbox 	25 28 33 32
+		attack1  14  22  64  43  10  1  0  0  0  15
+		sound  data/Sounds/whoosh.wav
+	frame	data/chars/armas/Sniper00.gif
+	frame	data/chars/armas/Sniper01.gif
+	frame	data/chars/armas/Sniper02.gif
+	frame	data/chars/armas/Sniper03.gif
+
+
+anim fALL
+	loop	0
+	delay	200
+	offset	40 24
+	bbox 	13 11 65 15
+	frame	data/chars/armas/Sniper.gif
+
+anim dEATH
+	loop	0
+	delay	200
+	offset	40 24
+	bbox 	13 11 65 15
+	frame	data/chars/armas/Sniper.gif
+

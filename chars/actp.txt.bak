@@ -1,0 +1,54 @@
+name    	ACTP
+health	 	1
+type    	None
+nomove  	1 1
+gfxshadow			1 1
+falldie    1
+Notgrab 1
+hostile player
+candamage			PLayer
+subject_to_platform 0
+subject_to_wall 0
+subject_to_obstacle 0
+subject_to_hole 0
+subject_to_screen 0
+subject_to_gravity 0
+#setlayer 800
+#offscreenkill	500
+nolife 1
+animationscript 	data/scripts/ani0020.h
+onblockwscript	data/scripts/bounceF.c
+ondrawscript 		data/scripts/player_ondrawscript.c
+diesound data/sounds/vozes/Man1.wav
+
+#remap data/chars/Boss/z/St01/Idle00.gif data/chars/Boss/z/St01/MAp01.gif
+
+anim	spawn
+		offset  35  117
+		delay  1
+	frame   data/chars/00.gif
+        hitfx	data/sounds/sILENCIO.wav
+		attack5  -227  -128  633  240  0  0  0  0  0  999
+	frame   data/chars/00.gif
+	frame   data/chars/00.gif
+	frame   data/chars/00.gif
+	@cmd killentity getlocalvar("self")
+	frame   data/chars/00.gif
+
+
+
+
+
+anim Idle
+		offset  35  117
+		delay  10
+                Loop 1
+	frame   data/chars/00.gif
+        hitfx	data/sounds/sILENCIO.wav
+		attack5  -148  -46  452  165  0  0  0  0  0  999
+	frame   data/chars/00.gif
+	frame   data/chars/00.gif
+	frame   data/chars/00.gif
+	@cmd killentity getlocalvar("self")
+	frame   data/chars/00.gif
+

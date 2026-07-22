@@ -1,0 +1,492 @@
+name	Barbon__
+health	300
+mp 10
+mprate 1
+#secret 1
+blockodds 1
+Falldie 2
+Grabdistance 18
+riseinv				0.4 1
+speed	10
+type	Enemy
+gfxshadow	1
+candamage			Player npc obstacle
+JUMPHEIGHT 4
+hostile Player NPC
+#antigrab 2
+atchain    1 2 3 4 5
+weapons Barbon_Knife Barbon_Sword Barbon_pipe Barbon_Kunai
+icon	data/chars/Boss/Barbon/icon.gif 1
+diesound data/Sounds/Die4.wav
+running	20	3	2	1	1
+onblockwscript	data/scripts/bounceF.c
+#animationscript 	data/scripts/ani0020.h
+animationscript		data/scripts/drago.c
+ondrawscript 		data/scripts/Enemy_ondrawscript.c
+
+Load BarbonP01
+
+remap data/chars/Boss/Barbon/idle00.gif data/chars/Boss/Barbon/MAp01.gif
+remap data/chars/Boss/Barbon/idle00.gif data/chars/Boss/Barbon/MAp02.gif
+remap data/chars/Boss/Barbon/idle00.gif data/chars/Boss/Barbon/MAp03.gif
+remap data/chars/Boss/Barbon/idle00.gif data/chars/Boss/Barbon/MAp04.gif
+
+
+
+anim Spawn
+	loop	1
+	delay	25
+	offset	146 193
+	bbox	129 106 41 86
+	frame   data/chars/Boss/Barbon/fullclothes00.gif
+	frame   data/chars/Boss/Barbon/fullclothes01.gif
+
+anim Pain5
+	loop	0
+	delay	12
+	offset	146 193
+	frame   data/chars/Boss/Barbon/stripclothes00.gif
+	Sound   data/chars/Boss/Barbon/BArbon2.wav
+	frame   data/chars/Boss/Barbon/stripclothes01.gif
+		delay  25
+	frame   data/chars/Boss/Barbon/stripclothes02.gif
+		delay  12
+	@cmd  spawn01  "BarbonP01"  0  65  1 
+	frame   data/chars/Boss/Barbon/stripclothes03.gif
+	frame   data/chars/Boss/Barbon/stripclothes04.gif
+
+
+anim idle
+	loop	1
+	delay	12
+	offset	146 193
+	bbox	129 106 41 86
+	frame   data/chars/Boss/Barbon/idle00.gif
+	@cmd	depost 0
+	@cmd	throw 1 0.7 0.7 1 0 -1
+	@cmd	clearL
+	frame   data/chars/Boss/Barbon/idle01.gif
+	frame   data/chars/Boss/Barbon/idle02.gif
+	frame   data/chars/Boss/Barbon/idle01.gif
+
+
+
+anim walk
+	loop	1
+	delay	16
+	offset	146 193
+	bbox	134 110 31 80
+	frame	data/chars/Boss/Barbon/walk00.gif
+	frame	data/chars/Boss/Barbon/walk01.gif
+	frame	data/chars/Boss/Barbon/walk02.gif
+	frame   data/chars/Boss/Barbon/walk01.gif
+
+
+anim jump
+	loop	0
+	delay	15
+	offset	146 193
+	bbox	115 119 55 69
+	frame	data/chars/Boss/Barbon/Jump00.gif
+	frame	data/chars/Boss/Barbon/Jump00.gif
+	frame	data/chars/Boss/Barbon/Jump00.gif
+
+anim jumpLanD
+	loop	0
+	delay	15
+	offset	146 193
+	bbox	136 126 35 68
+		move  0
+	frame	data/chars/Boss/Barbon/Land.gif
+
+
+
+anim attack1
+	loop	0
+	delay	12
+	offset	146 193
+        Range 30 60
+        RangeZ -10 10
+        hitflash	Fraco
+	bbox	126 107 44 89
+		Attack1  0
+        hitfx	data/sounds/golpes/Fraco.wav
+	frame	data/chars/Boss/Barbon/a100.gif
+		delay  6
+		bbox  0
+        Sound	data/sounds/golpes/Soco.wav
+	frame	data/chars/Boss/Barbon/a101.gif
+		delay  5
+		attack1  147  129  63  28  5  0  0  0  0  15
+	frame	data/chars/Boss/Barbon/a102.gif
+		Attack1  0
+	frame	data/chars/Boss/Barbon/a101.gif
+
+anim attack2
+	loop	0
+	delay	12
+	offset	146 193
+        hitflash	MEdio
+		Attack1  0
+        Sound	data/sounds/golpes/Soco.wav
+	Sound  data/chars/Boss/Barbon/a1.wav
+        hitfx	data/sounds/golpes/Medio.wav
+	frame	data/chars/Boss/Barbon/a200.gif
+		delay  8
+		move  5
+	frame	data/chars/Boss/Barbon/a201.gif
+		attack2  147  88  38  101  10  1  0  0  0  10
+		move  0
+		delay  25
+	frame	data/chars/Boss/Barbon/a202.gif
+		delay  8
+		move  5
+		Attack1  0
+	frame  data/chars/Boss/Barbon/a201.gif
+
+anim Block
+	loop	0
+	delay	10
+	offset	146 193
+		Attack1  0
+        hitfx	data/sounds/golpes/Grab.wav
+		move  -3
+	frame	data/chars/Boss/Barbon/Block.gif
+	frame  data/chars/Boss/Barbon/Block.gif
+	frame  data/chars/Boss/Barbon/Block.gif
+
+
+anim Freespecial
+	loop	0
+	delay	25
+	offset	146 193
+        Range 60 100
+        RangeZ -30 0
+        hitflash	Forte
+		Attack1  0
+        Sound	data/sounds/golpes/Soco.wav
+	Sound  data/chars/Boss/Barbon/a2.wav
+        hitfx	data/sounds/golpes/Forte.wav
+	frame	data/chars/Boss/Barbon/special00.gif
+		delay  7
+        @cmd dasher 3 0 -1
+	frame	data/chars/Boss/Barbon/special01.gif
+		attack1  142  122  84  30  15  1  0  0  0  15
+	frame	data/chars/Boss/Barbon/special02.gif
+		attack1  146  122  42  29  15  1  0  0  0  15
+	frame	data/chars/Boss/Barbon/special03.gif
+		attack1  122  122  38  37  15  1  0  0  0  15
+	frame	data/chars/Boss/Barbon/special04.gif
+		attack1  92  134  63  21  15  1  0  0  0  15
+	frame	data/chars/Boss/Barbon/special05.gif
+        @cmd dasher 0 0 0
+		Attack1  0
+	frame	data/chars/Boss/Barbon/special06.gif
+
+anim Freespecial2
+	loop	0
+	delay	25
+	offset	146 193
+        Range 60 100
+        RangeZ 1 30
+        hitflash	Forte
+		Attack1  0
+        Sound	data/sounds/golpes/Soco.wav
+	Sound  data/chars/Boss/Barbon/a2.wav
+        hitfx	data/sounds/golpes/Forte.wav
+	frame	data/chars/Boss/Barbon/special00.gif
+		delay  7
+        @cmd dasher 3 0 1
+	frame	data/chars/Boss/Barbon/special01.gif
+		attack1  142  122  84  30  15  1  0  0  0  15
+	frame	data/chars/Boss/Barbon/special02.gif
+		attack1  146  122  42  29  15  1  0  0  0  15
+	frame	data/chars/Boss/Barbon/special03.gif
+		attack1  122  122  38  37  15  1  0  0  0  15
+	frame	data/chars/Boss/Barbon/special04.gif
+		attack1  92  134  63  21  15  1  0  0  0  15
+	frame	data/chars/Boss/Barbon/special05.gif
+		Attack1  0
+	frame	data/chars/Boss/Barbon/special06.gif
+
+
+
+
+
+
+
+anim Freespecial3
+	loop	0
+	delay	12
+	offset	146 193
+        Range 0 30
+        RangeZ -10 10
+		Followcond  1
+		followanim  1
+	bbox	127 109 42 76
+		Attack1  0
+        hitfx	data/sounds/golpes/Grab.wav
+	frame	data/chars/Boss/Barbon/a100.gif
+		delay  6
+		attack1  139  126  35  24  0  0  0  1  0  15
+		bbox  0
+        Sound	data/sounds/golpes/Soco.wav
+	frame	data/chars/Boss/Barbon/a101.gif
+		delay  5
+		attack1  144  127  68  30  0  0  0  1  0  15
+	frame	data/chars/Boss/Barbon/a102.gif
+		Attack1  0
+	frame	data/chars/Boss/Barbon/a101.gif
+
+anim Follow1
+	loop	0
+	delay	12
+	offset	146 193
+        hitflash	Fraco
+		Attack1  0
+        hitfx	data/sounds/golpes/Grab.wav
+	frame	data/chars/Boss/Barbon/t00.gif
+	@cmd	slamstart
+	@cmd	position 0 20 0 0 -1
+	delay	15
+	frame	data/chars/Boss/Barbon/t01.gif
+	@cmd	position 4 -10 50 0 -1
+	frame	data/chars/Boss/Barbon/t02.gif
+	@cmd	position 8 -20 30 0 -1
+	@cmd	depost 0
+	@cmd	throw 15 5 2 2 0 -1
+	@cmd	clearL
+	delay	40
+	frame	data/chars/Boss/Barbon/t03.gif
+
+
+anim Special
+	loop	0
+	delay	25
+	offset	146 193
+        Range 40 60
+        RangeZ -10 10
+        hitflash	Forte
+		Attack1  0
+        Sound	data/sounds/golpes/Soco.wav
+	Sound  data/chars/Boss/Barbon/a2.wav
+        hitfx	data/sounds/golpes/Forte.wav
+	frame	data/chars/Boss/Barbon/special00.gif
+		delay  10
+	frame	data/chars/Boss/Barbon/special01.gif
+		attack1  140  123  89  32  15  1  0  0  0  15
+	frame	data/chars/Boss/Barbon/special02.gif
+		attack1  140  119  51  32  15  1  0  0  0  15
+	frame	data/chars/Boss/Barbon/special03.gif
+		attack1  119  122  36  28  15  1  0  0  0  15
+	frame	data/chars/Boss/Barbon/special04.gif
+		attack1  93  134  57  23  15  1  0  0  0  15
+	frame	data/chars/Boss/Barbon/special05.gif
+		Attack1  0
+	frame	data/chars/Boss/Barbon/special06.gif
+
+anim Special2
+	loop	0
+	delay	25
+	offset	146 193
+        Range 40 60
+        RangeZ -10 10
+        hitflash	Forte
+		Attack1  0
+        Sound	data/sounds/golpes/Soco.wav
+	Sound  data/chars/Boss/Barbon/a2.wav
+        hitfx	data/sounds/golpes/Forte.wav
+	frame	data/chars/Boss/Barbon/special00.gif
+	frame	data/chars/Boss/Barbon/special01.gif
+		attack1  142  129  83  21  15  1  0  0  0  15
+	frame	data/chars/Boss/Barbon/special02.gif
+		attack1  143  123  52  24  15  1  0  0  0  15
+	frame	data/chars/Boss/Barbon/special03.gif
+		attack1  113  119  45  34  15  1  0  0  0  15
+	frame	data/chars/Boss/Barbon/special04.gif
+		attack1  90  131  63  27  15  1  0  0  0  15
+	frame	data/chars/Boss/Barbon/special05.gif
+		Attack1  0
+	frame	data/chars/Boss/Barbon/special06.gif
+
+
+
+
+
+
+
+
+anim pain
+	loop	0
+	offset	146 193
+	bbox	122 102 42 92
+	delay	5
+	frame	data/chars/Boss/Barbon/pain01.gif
+		delay  25
+		offset  144  193
+	frame	data/chars/Boss/Barbon/pain01.gif
+
+anim pain3
+	loop	0
+	offset	146 193
+	bbox	131 100 30 94
+	delay	5
+	jumpframe  0  2  0  0
+	frame	data/chars/Boss/Barbon/pain01.gif
+		delay  25
+		offset  144  193
+	frame	data/chars/Boss/Barbon/pain01.gif
+
+anim pain4
+	loop	0
+	offset	146 193
+	bbox	130 97 34 97
+	delay	5
+	frame	data/chars/Boss/Barbon/pain01.gif
+		delay  900
+		offset  144  193
+	frame	data/chars/Boss/Barbon/pain01.gif
+
+
+anim grabbed
+	loop	0
+	offset	146 193
+	bbox	123 112 44 81
+	delay	40
+	frame	data/chars/Boss/Barbon/pain02.gif
+
+
+
+anim pain2
+	loop	0
+	offset	146 193
+	bbox	124 114 39 76
+	delay	5
+	frame	data/chars/Boss/Barbon/pain02.gif
+		delay  25
+		offset  144  193
+	frame	data/chars/Boss/Barbon/pain02.gif
+
+
+
+
+
+anim fall2
+	loop	0
+	offset	146 193
+	jumpframe  0  3  -3  0
+	delay	20
+        hitfx	data/sounds/golpes/Forte.wav
+		attack  0
+	frame	data/chars/Boss/Barbon/fall00.gif
+		Attack1  0
+	frame	data/chars/Boss/Barbon/fall01.gif
+		delay  10
+	frame	data/chars/Boss/Barbon/fall02.gif
+
+anim fall
+	loop	0
+	offset	146 193
+	delay	20
+        hitfx	data/sounds/golpes/Forte.wav
+		attack  0
+	frame	data/chars/Boss/Barbon/fall00.gif
+		Attack1  0
+	frame	data/chars/Boss/Barbon/fall01.gif
+		delay  10
+	frame	data/chars/Boss/Barbon/fall02.gif
+
+anim fall6 #Shok
+	loop	0
+	offset	252 183
+	delay	5
+        hitfx	data/sounds/golpes/Forte.wav
+		attack  0
+	frame	data/chars/Boss/Barbon/fall201.gif
+		offset  250  177
+	frame	data/chars/Boss/Barbon/fall200.gif
+	frame	data/chars/Boss/Barbon/fall201.gif
+	frame	data/chars/Boss/Barbon/fall200.gif
+		offset  146  193
+	frame	data/chars/Boss/Barbon/fall01.gif
+	frame	data/chars/Boss/Barbon/fall02.gif
+
+
+anim fall7 #Burn
+	loop	0
+	offset	233 164
+	delay	10
+        hitfx	data/sounds/golpes/Forte.wav
+		attack  0
+	frame	data/chars/Boss/Barbon/FALL300.gif
+	frame	data/chars/Boss/Barbon/FALL301.gif
+	frame	data/chars/Boss/Barbon/FALL302.gif
+	frame	data/chars/Boss/Barbon/FALL300.gif
+	frame	data/chars/Boss/Barbon/FALL301.gif
+		offset  146  193
+	frame	data/chars/Boss/Barbon/FALL02.gif
+
+
+anim rise
+	loop	0
+	offset	146 193
+	delay	20
+	frame	data/chars/Boss/Barbon/Rise00.gif
+	frame	data/chars/Boss/Barbon/Rise01.gif
+	frame	data/chars/Boss/Barbon/Rise02.gif
+
+
+
+
+anim land
+	loop	0
+	delay	40
+	offset	146 193
+	bbox	135 127 45 59
+	frame	data/chars/Boss/Barbon/Land.gif
+
+
+anim Fall9
+	loop	0
+	offset	146 193
+	delay	999
+	frame	data/chars/Boss/Barbon/pain01.gif #0
+	frame	data/chars/Boss/Barbon/pain02.gif #1
+	frame	data/chars/Boss/Barbon/fall01.gif #2
+	frame	data/chars/Boss/Barbon/fall02.gif #3
+		offset  165  172
+	frame	data/chars/Boss/Barbon/fall400.gif #4
+		offset  151  193
+	frame	data/chars/Boss/Barbon/fall401.gif #5
+		offset  139  174
+	frame	data/chars/Boss/Barbon/fall402.gif #6
+		offset  154  181
+	frame  data/chars/Boss/Barbon/fall403.gif #7
+	delay	20
+		offset  154  192
+	frame	data/chars/Boss/Barbon/fall401.gif #8
+	delay	30
+	frame	data/chars/Boss/Barbon/fall404.gif #9
+		offset  154  192
+	frame	data/chars/Boss/Barbon/Fall405.gif #10
+
+
+anim Fall8
+	loop	0
+	flipframe  0
+	offset	146 193
+	delay	30
+	frame	data/chars/Boss/Barbon/fall01.gif #0
+	delay	15
+	frame	data/chars/Boss/Barbon/fall02.gif #1
+
+
+anim Fall5
+	loop	0
+	flipframe  1
+	offset	146 193
+	delay	30
+	frame	data/chars/Boss/Barbon/fall01.gif #0
+	delay	15
+	frame	data/chars/Boss/Barbon/fall02.gif #1
+

@@ -1,0 +1,22 @@
+name			Particle_Laser
+type			none
+health			1
+nolife			1
+lifespan		2
+remove			1
+shadow			0
+antigravity		100
+didhitscript	data/scripts/didhit/default.c
+
+anim idle
+	attackone 1
+	fastattack 1
+	jugglecost 31
+	forcedirection -1
+	hitflash shock
+	loop	0
+	delay	8
+	offset	143 192
+	hitfx	data/sounds/StrongPunch.wav
+	shock 163 136 32 7 16 3 0 0 0 12
+	frame	data/chars/particle/laser/laser00.gif

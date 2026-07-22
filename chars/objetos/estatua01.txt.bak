@@ -1,0 +1,27 @@
+# Do not forget to name your character.
+# Health is optional.
+
+name	Estatua01
+health	1
+type	obstacle
+nolife 1
+noname 1
+gfxshadow	1
+#icon	data/chars/misc/charicon.gif
+diesound		data/sounds/Tire.wav
+noatflash	1
+
+anim idle
+	loop	0
+	delay	100
+	offset	99 168
+	bbox	78 126 52 42
+	frame	data/chars/Objetos/statue00.gif
+
+
+anim fall
+	loop	1
+	delay	1000
+	offset	99 168
+	frame	data/chars/Objetos/statue01.gif
+

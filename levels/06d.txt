@@ -1,0 +1,101 @@
+music		data/music/BossR.bor
+bossmusic	data/music/BossF.bor
+scrollspeed 0.5#1
+#direction Left
+stagenumber 7
+background	data/bgs/06/baCK00.gif  	0.650 1 0 0 0 0 -1 1 1
+bglayer		data/bgs/06/bAck00a.gif 	0.600 1 0 0 0 0 -1 1 1
+bglayer		data/bgs/06/bAck00b.gif 	0.550 1 0 0 0 0 -1 1 1
+bglayer		data/bgs/06/BAck00c.gif	        0.500 1 0 0 0 0 -1 1 1
+bglayer 	data/bgs/06/back00d.gif	        0.4 1 0 0 0 0 -1 1 1 0 1 3 10 0.3
+#water		data/bgs/01/Mar01.gif		0.5
+#fglayer         data/bgs/06/Luz00.gif           1 1 0 0 0 0 -1 1 1 1 1
+panel		data/bgs/06/pn03.gif		none	none
+frontpanel	data/bgs/06/Front01.gif		
+cameratype 1
+cameraoffset 0 -30
+#levelscript @script
+#void main() {
+#	changelevelproperty("camerazoffset", 0);
+#	changelevelproperty("cameraxoffset", 0);
+#}
+#@end_script
+settime         99
+notime          0
+noslow          1
+order		a
+spawn1  	50 20 50
+spawn2  	55 35 50 
+spawn3  	60 50 50
+
+light		128 -128
+at			0
+
+
+
+spawn  MRX_
+MAp 2
+Flip 1
+health 250
+	coords  395 182
+	at  0
+
+
+spawn  Faust_
+MAp 3
+Flip 1
+health 250
+	coords 225 182
+	at  0
+
+
+wait
+at       50
+
+
+
+group 1 1
+at  51
+
+wait
+at       51
+
+spawn  Chicken
+	coords 250 220 300
+	at  51
+
+spawn  DelayX1
+	coords 250 190
+	at  51
+
+
+music		data/music/FF.bor
+at  51
+
+
+spawn  Shiva__
+health 300
+	coords 250 190 300
+	at  51
+
+spawn  delayX1
+	coords 250 190
+	at  51
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

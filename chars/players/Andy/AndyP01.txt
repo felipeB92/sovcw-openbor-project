@@ -1,0 +1,34 @@
+
+name			AndyP01 #THROWNED
+type			none
+speed 8
+candamage			enemy obstacle
+alpha 1
+nolife			1
+lifespan		4
+remove			1
+gfxshadow		0 0
+flash			Forte
+antigravity 100
+
+anim idle
+	loop	0
+	offset	35 97
+	drawmethod tintmode 6
+	drawmethod tintcolor -255
+		delay  5
+		Attack1  0
+	jumpframe  4  4  0  0
+	frame	data/chars/players/Andy/Sp100.gif
+	frame	data/chars/players/Andy/Sp101.gif
+	frame  data/chars/players/Andy/Sp102.gif
+		Attack1  0
+	frame	data/chars/players/Andy/Sp103.gif
+	frame	data/chars/players/Andy/Sp104.gif
+	frame	data/chars/players/Andy/Sp105.gif
+	frame  data/chars/players/Andy/Sp106.gif
+		Attack1  0
+	frame	data/chars/players/Andy/Sp107.gif
+	@cmd killentity getlocalvar("self")
+	frame	data/chars/players/Andy/SP107.gif
+

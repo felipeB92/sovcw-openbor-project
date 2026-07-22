@@ -1,0 +1,322 @@
+name	Jake_Knife
+health	150
+mp 30
+mprate 1
+#secret 1
+Falldie 2
+Grabdistance 18
+riseinv				0.4 1
+speed	6
+type	None
+gfxshadow	1
+candamage			Player npc obstacle
+JUMPHEIGHT 4
+hostile Player NPC
+#antigrab 2
+atchain   1 1 2 3 4 5
+weapons Jake_Knife Jake_Sword Jake_pipe Jake_Kunai
+icon	data/chars/Enemys/Jake/icon.gif 1
+diesound data/Sounds/Die1.wav
+running	20	3	2	1	1
+animationscript		data/scripts/felipe.c
+
+
+
+Load KnifeT
+#Load Jake_Pipe
+#Load Jake_Kunai
+#Load Jake_Sword
+
+remap data/chars/Enemys/Jake/idle00.gif data/chars/Enemys/Jake/MAp01.gif
+remap data/chars/Enemys/Jake/idle00.gif data/chars/Enemys/Jake/MAp02.gif
+remap data/chars/Enemys/Jake/idle00.gif data/chars/Enemys/Jake/MAp03.gif
+remap data/chars/Enemys/Jake/idle00.gif data/chars/Enemys/Jake/MAp04.gif
+
+
+
+anim idle
+	loop	1
+	delay	18
+	offset	131 185
+	bbox	124 115 28 71
+	frame   data/chars/Enemys/Jake/Knife/idle00.gif
+	@cmd	depost 0
+	@cmd	throw 15 0.7 0.7 1 0 -1
+	@cmd	clearL
+	frame   data/chars/Enemys/Jake/Knife/idle01.gif
+	frame   data/chars/Enemys/Jake/Knife/idle02.gif
+	frame   data/chars/Enemys/Jake/Knife/idle01.gif
+
+
+
+anim walk
+	loop	1
+	delay	12
+	offset	138 184
+	bbox	122 112 34 74
+	frame	data/chars/Enemys/Jake/Knife/walk00.gif
+	frame	data/chars/Enemys/Jake/Knife/walk01.gif
+	frame	data/chars/Enemys/Jake/Knife/walk02.gif
+	frame  data/chars/Enemys/Jake/Knife/walk03.gif
+
+
+
+
+
+anim jump
+	loop	0
+	delay	15
+	offset	132 187
+	bbox	119 107 36 79
+	frame	data/chars/Enemys/Jake/Knife/Jump00.gif
+	frame	data/chars/Enemys/Jake/Knife/Jump00.gif
+	frame	data/chars/Enemys/Jake/Knife/Jump00.gif
+
+
+anim freespecial
+	loop	0
+	delay	17
+        energycost 10 1
+        MpOnly 1
+        Range 100 200
+        RangeZ -5 5
+	offset	132 186
+	bbox	116 110 39 78
+        hitflash	MEdio
+        custknife Knifet
+        throwframe 2 45
+        hitfx	data/sounds/golpes/medio.wav
+	frame	data/chars/Enemys/Jake/Knife/a200.gif
+	frame	data/chars/Enemys/Jake/Knife/a201.gif
+	frame	data/chars/Enemys/Jake/Knife/a202.gif
+	frame	data/chars/Enemys/Jake/a201.gif
+
+
+anim get
+	loop	0
+	delay	12
+	offset	137 186
+	bbox	115 128 44 60
+        hitflash	Corte
+        hitfx	data/sounds/golpes/corte.wav
+	frame	data/chars/Enemys/Jake/Knife/LAnd.gif
+
+anim attack1
+	loop	0
+	delay	12
+	offset	133 183
+        Range 0 80
+        RangeZ -5 5
+        hitflash	Corte
+	bbox	123 118 26 66
+		Attack1  0
+        Sound	data/sounds/golpes/Soco.wav
+        hitfx	data/sounds/golpes/Corte.wav
+	frame	data/chars/Enemys/Jake/Knife/a100.gif
+		attack1  126  125  69  19  5  0  0  0  0  10
+		delay  7
+		move  3
+	frame	data/chars/Enemys/Jake/Knife/a101.gif
+		delay  9
+		attack1  154  108  68  44  5  0  0  0  0  10
+	frame	data/chars/Enemys/Jake/Knife/a102.gif
+		Attack1  0
+	frame	data/chars/Enemys/Jake/Knife/a103.gif
+	frame	data/chars/Enemys/Jake/Knife/a104.gif
+		attack2  150  117  57  53  7  1  0  0  0  10
+	frame	data/chars/Enemys/Jake/Knife/a105.gif
+		move  0
+	frame	data/chars/Enemys/Jake/Knife/a106.gif
+
+
+
+
+anim pain
+	loop	0
+	offset	131 185
+	bbox	115 111 33 75
+	delay	5
+	frame	data/chars/Enemys/Jake/pain01.gif
+		delay  25
+		offset  134  185
+	frame	data/chars/Enemys/Jake/pain01.gif
+
+anim pain3
+	loop	0
+	offset	129 186
+	bbox	109 113 40 73
+	delay	5
+	jumpframe  0  2  0  0
+	frame	data/chars/Enemys/Jake/pain01.gif
+		delay  25
+		offset  126  186
+	frame	data/chars/Enemys/Jake/pain01.gif
+
+anim pain4
+	loop	0
+	offset	132 184
+	bbox	112 109 36 75
+	delay	5
+	frame	data/chars/Enemys/Jake/pain01.gif
+		delay  900
+		offset  128  184
+	frame	data/chars/Enemys/Jake/pain01.gif
+
+
+anim grabbed
+	loop	0
+	offset	131 187
+	bbox	113 116 36 66
+	delay	40
+	frame	data/chars/Enemys/Jake/pain02.gif
+
+
+
+anim pain2
+	loop	0
+	offset	132 188
+	bbox	116 113 40 74
+	delay	5
+	frame	data/chars/Enemys/Jake/pain02.gif
+		delay  25
+		offset  129  188
+	frame	data/chars/Enemys/Jake/pain02.gif
+
+
+
+
+
+anim fall2
+	loop	0
+	offset	137 186
+	jumpframe  0  3  -3  0
+	delay	20
+        hitfx	data/sounds/golpes/Forte.wav
+		attack  0
+	frame	data/chars/Enemys/Jake/fall00.gif
+		Attack1  0
+		offset  149  185
+	frame	data/chars/Enemys/Jake/fall01.gif
+		offset  136  186
+		delay  10
+	frame	data/chars/Enemys/Jake/fall02.gif
+
+anim fall
+	loop	0
+	offset	134 186
+	delay	20
+        hitfx	data/sounds/golpes/Forte.wav
+		attack  0
+	frame	data/chars/Enemys/Jake/fall00.gif
+		Attack1  0
+		offset  167  185
+	frame	data/chars/Enemys/Jake/fall01.gif
+		offset  130  183
+		delay  10
+	frame	data/chars/Enemys/Jake/fall02.gif
+
+anim fall6 #Shok
+	loop	0
+	offset	142 188
+	delay	5
+        hitfx	data/sounds/golpes/Forte.wav
+		attack  0
+	frame	data/chars/Enemys/Jake/fall01.gif
+		offset  88  116
+	frame	data/chars/Enemys/Jake/fall200.gif
+		offset  150  187
+	frame	data/chars/Enemys/Jake/fall01.gif
+		offset  88  116
+	frame	data/chars/Enemys/Jake/fall200.gif
+		offset  148  185
+	frame	data/chars/Enemys/Jake/fall01.gif
+		offset  138  185
+	frame	data/chars/Enemys/Jake/fall02.gif
+
+
+anim fall7 #Burn
+	loop	0
+	offset	65 97
+	delay	10
+        hitfx	data/sounds/golpes/Forte.wav
+		attack  0
+	frame	data/chars/Enemys/Jake/FALL300.gif
+	frame	data/chars/Enemys/Jake/FALL301.gif
+	frame	data/chars/Enemys/Jake/FALL302.gif
+	frame	data/chars/Enemys/Jake/FALL300.gif
+	frame	data/chars/Enemys/Jake/FALL301.gif
+		offset  139  185
+	frame	data/chars/Enemys/Jake/FALL02.gif
+
+
+anim rise
+	loop	0
+	offset	141 184
+	delay	20
+	frame	data/chars/Enemys/Jake/Rise00.gif
+	frame	data/chars/Enemys/Jake/Rise01.gif
+	frame	data/chars/Enemys/Jake/Rise02.gif
+
+
+
+
+
+
+
+anim land
+	loop	0
+	delay	15
+	offset	137 185
+	bbox	113 125 47 60
+	frame	data/chars/Enemys/Jake/Land.gif
+
+
+anim Fall9
+	loop	0
+	offset	131 184
+	delay	999
+	frame	data/chars/Enemys/Jake/pain01.gif #0
+		offset  137  181
+	frame	data/chars/Enemys/Jake/pain02.gif #1
+		offset  144  187
+	frame	data/chars/Enemys/Jake/fall01.gif #2
+		offset  134  182
+	frame	data/chars/Enemys/Jake/fall02.gif #3
+		offset  151  160
+	frame	data/chars/Enemys/Jake/fall400.gif #4
+		offset  156  182
+	frame	data/chars/Enemys/Jake/fall401.gif #5
+	frame	data/chars/Enemys/Jake/fall402.gif #6
+		offset  134  186
+	frame  data/chars/Enemys/Jake/fall403.gif #7
+	delay	20
+		offset  159  180
+	frame	data/chars/Enemys/Jake/fall401.gif #8
+	delay	30
+		offset  145  201
+	frame	data/chars/Enemys/Jake/fall404.gif #9
+	offset	137 185
+	frame	data/chars/Enemys/Jake/Fall405.gif #10
+
+
+anim Fall8
+	loop	0
+	flipframe  0
+	offset	133 181
+	delay	30
+	frame	data/chars/Enemys/Jake/fall01.gif #0
+	offset	123 183
+	delay	15
+	frame	data/chars/Enemys/Jake/fall02.gif #1
+
+
+anim Fall5
+	loop	0
+	flipframe  1
+	offset	140 185
+	delay	30
+	frame	data/chars/Enemys/Jake/fall01.gif #0
+	offset	128 186
+	delay	15
+	frame	data/chars/Enemys/Jake/fall02.gif #1
+

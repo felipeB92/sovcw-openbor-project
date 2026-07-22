@@ -1,0 +1,15 @@
+name			Luz01 #GROUND
+type			None
+Speed .5
+#setlayer 5
+#noquake 	1 1
+#offscreenkill	1000
+Alpha 1
+
+
+anim idle
+	loop	1
+	offset	0 274
+		delay  50
+	frame	data/Bgs/06/Luz00.gif
+

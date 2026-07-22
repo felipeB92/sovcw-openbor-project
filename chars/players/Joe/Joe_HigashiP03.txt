@@ -1,0 +1,34 @@
+
+name			Joe_HigashiP03 #THROWNED
+type			none
+speed 8
+candamage			enemy obstacle
+alpha 1
+nolife			1
+lifespan		4
+remove			1
+gfxshadow		0 0
+flash			Forte
+JUMPHEIGHT 4
+#antigravity 100
+
+anim idle
+	loop	0
+	offset	24 92
+        hitflash	fORTE
+	jumpframe  4  3  1  0
+		delay  12
+		Attack1  0
+	drawmethod tintmode 6
+	drawmethod tintcolor -255
+	frame	data/chars/players/Joe/Sp200.gif
+	frame	data/chars/players/Joe/Sp201.gif
+		delay  6
+	frame  data/chars/players/Joe/Sp202.gif
+	frame	data/chars/players/Joe/Sp203.gif
+	frame	data/chars/players/Joe/Sp204.gif
+	@cmd killentity getlocalvar("self")
+		delay  12
+	frame	data/chars/players/Joe/Sp205.gif
+	frame  data/chars/players/Joe/Sp206.gif
+	frame  data/chars/players/Joe/Sp206.gif

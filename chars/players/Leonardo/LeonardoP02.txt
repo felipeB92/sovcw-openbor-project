@@ -1,0 +1,38 @@
+
+name			LeonardoP02 #THROWNED
+type			none
+speed 12
+candamage			enemy obstacle
+alpha 1
+nolife			1
+lifespan		4
+remove			1
+gfxshadow		0 0
+flash			Forte
+antigravity 100
+
+anim idle
+	loop	0
+	offset	81 91
+		delay  4
+	drawmethod tintmode 6
+	drawmethod tintcolor -255
+	frame	data/chars/players/Leonardo/SP100.gif
+	frame	data/chars/players/Leonardo/SP101.gif
+	frame	data/chars/players/Leonardo/SP102.gif
+	frame	data/chars/players/Leonardo/SP103.gif
+	frame	data/chars/players/Leonardo/SP104.gif
+	frame	data/chars/players/Leonardo/SP105.gif
+	frame	data/chars/players/Leonardo/SP106.gif
+	frame	data/chars/players/Leonardo/SP107.gif
+	frame	data/chars/players/Leonardo/SP108.gif
+	frame	data/chars/players/Leonardo/SP109.gif
+	frame	data/chars/players/Leonardo/SP110.gif
+	frame	data/chars/players/Leonardo/SP111.gif
+	frame	data/chars/players/Leonardo/SP112.gif
+	frame	data/chars/players/Leonardo/SP113.gif
+	@cmd killentity getlocalvar("self")
+	frame	data/chars/players/Leonardo/SP114.gif
+
+
+

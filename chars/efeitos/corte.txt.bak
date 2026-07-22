@@ -1,0 +1,23 @@
+name	Corte
+type	none
+Alpha 1
+#subtype	noskip
+#setlayer -1
+
+
+
+anim	idle
+	loop	0
+	delay	3
+	offset	27 27
+		drawmethod  180  180  0  0  0  -1  -1
+	frame	data/Chars/efeitos/F400.gif
+	frame	data/Chars/efeitos/F401.gif
+	frame	data/Chars/efeitos/F402.gif
+	frame	data/Chars/efeitos/F403.gif
+	frame	data/Chars/efeitos/F404.gif
+	frame	data/Chars/efeitos/F405.gif
+	frame	data/Chars/efeitos/F406.gif
+	frame	data/Chars/efeitos/F407.gif
+	frame	data/Chars/efeitos/F408.gif
+

@@ -1,0 +1,40 @@
+music		data/bgs/St308/Lv308b.bor
+bossmusic	data/music/boss3.bor
+scrollspeed 0.5#1
+background	data/bgs/ST308/back01.gif	1 1 0 0 0 0 -1 1 1
+panel		data/bgs/sT308/pn03.gif		none	none
+Frontpanel	data/bgs/st05/Front02.gif 	
+stagenumber 8
+cameratype 1
+cameraoffset 0 -30
+#levelscript @script
+#void main() {
+#	changelevelproperty("camerazoffset", 0);
+#	changelevelproperty("cameraxoffset", 0);
+#}
+#@end_script
+#settime         90
+notime          1
+noslow          1
+order		a
+spawn1  	50 70  50
+spawn2  	55 85  50
+spawn3  	60 105 50
+
+
+
+spawn  AlarmeB
+Flip   1
+	coords  0 0
+	at  0
+
+
+spawn  DELAY
+	coords  -100 190
+	at  0
+
+spawn  neOx
+BOSS   1
+	coords  400 220 150
+	at  50
+

@@ -1,0 +1,82 @@
+
+name			BloodP04 #THROWNED
+type			none
+speed 12
+candamage			enemy obstacle
+alpha 1
+nolife			1
+lifespan		4
+remove			1
+gfxshadow		0 0
+flash			Forte
+antigravity 100
+
+anim idle
+	loop	0
+	offset	232 626
+		drawmethod  60  60  0  0  0  -1  -1
+		delay  2
+frame  data/chars/players/Blood/p04/P00.gif
+Sound  data/chars/players/Blood/P02.wav
+frame  data/chars/players/Blood/p04/p01.Gif
+frame  data/chars/players/Blood/p04/p02.Gif
+frame  data/chars/players/Blood/p04/p03.Gif
+frame  data/chars/players/Blood/p04/p04.Gif
+frame  data/chars/players/Blood/p04/p05.Gif
+frame  data/chars/players/Blood/p04/p06.Gif
+frame  data/chars/players/Blood/p04/p07.Gif
+frame  data/chars/players/Blood/p04/p08.Gif
+frame  data/chars/players/Blood/p04/p09.Gif
+frame  data/chars/players/Blood/p04/p10.Gif
+frame  data/chars/players/Blood/p04/p11.Gif
+frame  data/chars/players/Blood/p04/p12.Gif
+frame  data/chars/players/Blood/p04/p13.Gif
+frame  data/chars/players/Blood/p04/p14.Gif
+frame  data/chars/players/Blood/p04/p15.Gif
+frame  data/chars/players/Blood/p04/p16.Gif
+frame  data/chars/players/Blood/p04/p17.Gif
+frame  data/chars/players/Blood/p04/p18.Gif
+frame  data/chars/players/Blood/p04/p19.Gif
+frame  data/chars/players/Blood/p04/p20.Gif
+frame  data/chars/players/Blood/p04/p21.Gif
+frame  data/chars/players/Blood/p04/p22.Gif
+frame  data/chars/players/Blood/p04/p23.Gif
+frame  data/chars/players/Blood/p04/p24.Gif
+frame  data/chars/players/Blood/p04/p25.Gif
+frame  data/chars/players/Blood/p04/p26.Gif
+frame  data/chars/players/Blood/p04/p27.Gif
+frame  data/chars/players/Blood/p04/p28.Gif
+frame  data/chars/players/Blood/p04/p29.Gif
+frame  data/chars/players/Blood/p04/p30.Gif
+frame  data/chars/players/Blood/p04/p31.Gif
+frame  data/chars/players/Blood/p04/p32.Gif
+frame  data/chars/players/Blood/p04/p33.Gif
+frame  data/chars/players/Blood/p04/p34.Gif
+frame  data/chars/players/Blood/p04/p35.Gif
+frame  data/chars/players/Blood/p04/p36.Gif
+frame  data/chars/players/Blood/p04/p37.Gif
+frame  data/chars/players/Blood/p04/p38.Gif
+frame  data/chars/players/Blood/p04/p39.Gif
+frame  data/chars/players/Blood/p04/p40.Gif
+frame  data/chars/players/Blood/p04/p41.Gif
+frame  data/chars/players/Blood/p04/p42.Gif
+frame  data/chars/players/Blood/p04/p43.Gif
+frame  data/chars/players/Blood/p04/p44.Gif
+frame  data/chars/players/Blood/p04/p45.Gif
+frame  data/chars/players/Blood/p04/p46.Gif
+frame  data/chars/players/Blood/p04/p47.Gif
+frame  data/chars/players/Blood/p04/p48.Gif
+frame  data/chars/players/Blood/p04/p49.Gif
+frame  data/chars/players/Blood/p04/p50.Gif
+frame  data/chars/players/Blood/p04/p51.Gif
+frame  data/chars/players/Blood/p04/p52.Gif
+frame  data/chars/players/Blood/p04/p53.Gif
+frame  data/chars/players/Blood/p04/p54.Gif
+frame  data/chars/players/Blood/p04/p55.Gif
+frame  data/chars/players/Blood/p04/p56.Gif
+frame  data/chars/players/Blood/p04/p57.Gif
+frame  data/chars/players/Blood/p04/p58.Gif
+frame  data/chars/players/Blood/p04/p59.Gif
+	@cmd killentity getlocalvar("self")
+frame  data/chars/players/Blood/p04/p59.Gif
+

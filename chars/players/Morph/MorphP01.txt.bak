@@ -1,0 +1,34 @@
+
+name			MorphP01 #THROWNED
+type			none
+speed 12
+candamage			enemy obstacle
+alpha 1
+nolife			1
+lifespan		4
+remove			1
+gfxshadow		0 0
+flash			Forte
+antigravity 100
+
+anim idle
+	loop	0
+	offset	123 166
+		delay  4
+	frame	data/chars/players/Morph/P100.gif
+	frame	data/chars/players/Morph/P101.gif
+	frame	data/chars/players/Morph/P102.gif
+	frame	data/chars/players/Morph/P103.gif
+	frame	data/chars/players/Morph/P104.gif
+	frame	data/chars/players/Morph/P105.gif
+	frame	data/chars/players/Morph/P106.gif
+	frame	data/chars/players/Morph/P107.gif
+	frame	data/chars/players/Morph/P108.gif
+	frame	data/chars/players/Morph/P109.gif
+	frame	data/chars/players/Morph/P110.gif
+	frame	data/chars/players/Morph/P111.gif
+	frame	data/chars/players/Morph/P112.gif
+	frame	data/chars/players/Morph/P113.gif
+	@cmd killentity getlocalvar("self")
+	frame	data/chars/players/Morph/P113.gif
+

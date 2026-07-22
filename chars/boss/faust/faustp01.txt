@@ -1,0 +1,27 @@
+name			FaustP01
+type			none
+speed 15
+candamage			Player
+alpha 1
+nolife			1
+lifespan		4
+remove			1
+gfxshadow		1 1
+flash			Forte
+subject_to_gravity 0
+
+anim idle
+	loop	1
+	offset	140 200
+        hitflash	Forte
+        hitfx	data/sounds/golpes/Forte.wav
+		delay  7
+	frame	data/chars/Boss/Faust/p01.gif
+	frame	data/chars/Boss/Faust/p02.gif
+	frame	data/chars/Boss/Faust/p03.gif
+	frame	data/chars/Boss/Faust/p04.gif
+	frame	data/chars/Boss/Faust/p05.gif
+	frame	data/chars/Boss/Faust/p06.gif
+	@cmd killentity getlocalvar("self")
+	frame	data/chars/Boss/Faust/p06.gif
+

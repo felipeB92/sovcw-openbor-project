@@ -1,0 +1,52 @@
+music	data/music/ending3.bor
+#bossmusic	data/music/Ending1.bor
+scrollspeed 0.5#1
+stagenumber 10
+#background	data/bgs/00.gif 	      
+#bglayer		data/bgs/00.gif 	    
+#bglayer		data/bgs/BossRush/b01.gif         0.575 1 0 0 0 0 -1 1 1 1
+#Fglayer		data/bgs/BossRush/Front.gif                0.575 1 0 0 0 0 -1 1 1 1 1
+#water		data/bgs/01/Mar01.gif		0.5
+#fglayer         data/bgs/Front.gif              0 -0.4 0 0 0 0 1 -1 1 1 0
+panel		data/bgs/00.gif 	   
+#frontpanel	data/bgs/t00/Front02.gif		
+cameratype 1
+cameraoffset 0 -30
+#levelscript @script
+#void main() {
+#	changelevelproperty("camerazoffset", 0);
+#	changelevelproperty("cameraxoffset", 0);
+#}
+#@end_script
+#settime         90
+notime          1
+noslow          1
+order		a
+spawn1  	200 200 0
+spawn2  	200 200 0
+spawn3  	60 50 50
+
+spawn  EndXb
+Flip 1
+	coords  0 0
+	at  0
+
+
+spawn  EndX1
+Flip 1
+	coords  0 0
+	at  0
+
+
+
+
+
+
+
+
+
+
+
+
+
+

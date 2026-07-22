@@ -1,0 +1,402 @@
+name	Agamenon
+health	100
+mp 30
+mprate 1
+#secret 1
+blockodds 1
+Falldie 2
+Grabdistance 18
+riseinv				0.4 1
+speed	5
+type	Enemy
+gfxshadow	1
+candamage			Player npc obstacle
+JUMPHEIGHT 4
+hostile Player NPC
+antigrab 2
+atchain    1 2 3 4 5
+weapons Agamenon_Knife Agamenon_Sword Agamenon_pipe Agamenon_Kunai
+icon	data/chars/Enemys/Agamenon/icon.gif 1
+diesound data/Sounds/Die7.wav
+running	20	3	2	1	1
+onblockwscript	data/scripts/bounceF.c
+#animationscript 	data/scripts/ani0020.h
+animationscript		data/scripts/drago.c
+ondrawscript 		data/scripts/Enemy_ondrawscript.c
+
+
+
+#Load Agamenon_Knife
+#Load Agamenon_Pipe
+#Load Agamenon_Kunai
+#Load Agamenon_Sword
+
+remap data/chars/Enemys/Agamenon/idle00.gif data/chars/Enemys/Agamenon/MAp01.gif
+remap data/chars/Enemys/Agamenon/idle00.gif data/chars/Enemys/Agamenon/MAp02.gif
+remap data/chars/Enemys/Agamenon/idle00.gif data/chars/Enemys/Agamenon/MAp03.gif
+remap data/chars/Enemys/Agamenon/idle00.gif data/chars/Enemys/Agamenon/MAp04.gif
+
+
+anim Pain5
+	loop	0
+	delay	12
+	offset	147 189
+	bbox	135 131 46 61
+	frame   data/chars/Enemys/Agamenon/Land.gif
+
+anim idle
+	loop	1
+	delay	12
+	offset	133 186
+	bbox	118 102 39 83
+	frame   data/chars/Enemys/Agamenon/idle00.gif
+	@cmd	depost 0
+	@cmd	throw 15 0.7 0.7 1 0 -1
+	@cmd	clearL
+	frame   data/chars/Enemys/Agamenon/idle00.gif
+
+
+
+anim walk
+	loop	1
+	delay	20
+	offset	136 184
+	bbox	122 91 32 95
+	frame	data/chars/Enemys/Agamenon/walk00.gif
+	frame	data/chars/Enemys/Agamenon/walk02.gif
+	frame  data/chars/Enemys/Agamenon/walk03.gif
+	frame  data/chars/Enemys/Agamenon/walk04.gif
+
+
+
+
+
+anim jump
+	loop	0
+	delay	15
+	offset	133 169
+	bbox	113 110 53 60
+	frame	data/chars/Enemys/Agamenon/Jump00.gif
+	frame	data/chars/Enemys/Agamenon/Jump00.gif
+	frame	data/chars/Enemys/Agamenon/Jump00.gif
+
+
+
+
+
+anim attack1
+	loop	0
+	delay	12
+	offset	136 186
+        Range 40 60
+        RangeZ -5 5
+        hitflash	MEdio
+	bbox	118 106 40 80
+		Attack1  0
+        Sound	data/sounds/golpes/Soco.wav
+        hitfx	data/sounds/golpes/Medio.wav
+	frame	data/chars/Enemys/Agamenon/a100.gif
+		attack2  111  117  102  21  5  0  0  0  0  10
+		delay  15
+	frame	data/chars/Enemys/Agamenon/a101.gif
+		Attack1  0
+		delay  7
+	frame  data/chars/Enemys/Agamenon/a102.gif
+
+anim attack2
+	loop	0
+	delay	12
+	offset	133 186
+        hitflash	MEdio
+	bbox	124 98 30 90
+		Attack1  0
+        Sound	data/sounds/golpes/Soco.wav
+        hitfx	data/sounds/golpes/MEdio.wav
+	frame	data/chars/Enemys/Agamenon/a200.gif
+		attack1  122  108  86  33  5  0  0  0  0  10
+		delay  15
+	frame	data/chars/Enemys/Agamenon/a201.gif
+		Attack1  0
+		delay  5
+	frame  data/chars/Enemys/Agamenon/a201.gif
+
+anim attack3
+	loop	0
+	delay	12
+	offset	134 185
+        Range 20 40
+        RangeZ -5 5
+        hitflash	Forte
+        hitfx	data/sounds/golpes/Forte.wav
+	bbox	113 96 35 89
+		Attack1  0
+        Sound	data/sounds/golpes/Soco.wav
+	frame	data/chars/Enemys/Agamenon/a300.gif
+		attack2  132  119  50  39  10  1  0  0  0  10
+		delay  15
+	frame	data/chars/Enemys/Agamenon/a301.gif
+		attack2  128  128  50  47  10  1  0  0  0  10
+	frame  data/chars/Enemys/Agamenon/a302.gif
+		attack2  116  146  79  42  10  1  0  0  0  10
+	frame  data/chars/Enemys/Agamenon/a304.gif
+
+anim Freespecial
+	loop	0
+	delay	15
+        Range 0 40
+        RangeZ -5 5
+	offset	147 188
+	bbox	140 114 30 71
+		Followcond  1
+		followanim  1
+        hitfx	data/sounds/golpes/Grab.wav
+		attack1  141  128  50  30  1  0  1  1  0  10
+	frame	data/chars/Enemys/Agamenon/t00.gif
+	frame	data/chars/Enemys/Agamenon/t00.gif
+
+anim Block
+	loop	0
+	delay	5
+        Range 0 100
+        RangeZ -15 15
+	offset	135 185
+	bbox	140 114 30 71
+		Followcond  1
+		followanim  1
+		move  -5
+	frame	data/chars/Enemys/Agamenon/A100.gif
+	frame  data/chars/Enemys/Agamenon/A100.gif
+		move  0
+		bbox  0
+	delay	60
+	frame  data/chars/Enemys/Agamenon/A100.gif
+        hitfx	data/sounds/golpes/Grab.wav
+	delay	15
+		attack1  141  128  50  30  1  0  1  1  0  10
+		offset  147  188
+	frame	data/chars/Enemys/Agamenon/t00.gif
+	frame	data/chars/Enemys/Agamenon/t00.gif
+
+
+anim Freespecial2
+	loop	0
+	delay	15
+        Range 60 80
+        RangeZ -5 5
+	offset	141 188
+        hitflash	Forte
+        hitfx	data/sounds/golpes/Forte.wav
+	bbox	119 105 38 84
+	frame	data/chars/Enemys/Agamenon/A400.gif
+	frame	data/chars/Enemys/Agamenon/A401.gif
+		attack2  115  126  81  33  15  1  0  0  0  15
+	frame	data/chars/Enemys/Agamenon/A402.gif
+
+
+anim Follow1
+	loop	0
+	delay	15
+	offset	147 188
+        hitfx	data/sounds/golpes/Grab.wav
+	@cmd	slamstart
+        @cmd	position 0 20 0 0 -1
+	delay	15
+        @cmd dasher 0 0 0
+	frame	data/chars/Enemys/Agamenon/t00.gif
+	@cmd	position 4 1 80 0 -1
+		delay  45
+	frame	data/chars/Enemys/Agamenon/t01.gif
+		delay  10
+	frame	data/chars/Enemys/Agamenon/t02.gif
+	@cmd	position 8 20 30 1 -1
+	@cmd	depost 0
+	@cmd	throw 15 5 -2 2 0 1
+	@cmd	clearL
+	delay	40
+	frame	data/chars/Enemys/Agamenon/t02.gif
+
+
+anim pain
+	loop	0
+	offset	135 184
+	bbox	119 99 31 88
+	delay	5
+	frame	data/chars/Enemys/Agamenon/pain01.gif
+		delay  25
+		offset  134  184
+	frame	data/chars/Enemys/Agamenon/pain01.gif
+
+anim pain3
+	loop	0
+	offset	137 184
+	bbox	121 96 31 88
+	delay	5
+	jumpframe  0  2  0  0
+	frame	data/chars/Enemys/Agamenon/pain01.gif
+		delay  25
+		offset  135  184
+	frame	data/chars/Enemys/Agamenon/pain01.gif
+
+anim pain4
+	loop	0
+	offset	137 185
+	bbox	120 92 32 94
+	delay	5
+	frame	data/chars/Enemys/Agamenon/pain01.gif
+		delay  900
+		offset  135  185
+	frame	data/chars/Enemys/Agamenon/pain01.gif
+
+
+anim grabbed
+	loop	0
+	offset	151 188
+	bbox	137 109 33 79
+	delay	40
+	frame	data/chars/Enemys/Agamenon/pain02.gif
+
+
+
+anim pain2
+	loop	0
+	offset	139 185
+	bbox	72 55 28 65
+	delay	5
+	frame	data/chars/Enemys/Agamenon/pain02.gif
+		delay  25
+		bbox  126  114  44  73
+		offset  137  185
+	frame	data/chars/Enemys/Agamenon/pain02.gif
+
+
+
+
+
+anim fall2
+	loop	0
+	offset	136 186
+	jumpframe  0  3  -3  0
+	delay	20
+        hitfx	data/sounds/golpes/Forte.wav
+		attack  0
+	frame	data/chars/Enemys/Agamenon/fall00.gif
+		Attack1  0
+	frame	data/chars/Enemys/Agamenon/fall01.gif
+		offset  130  155
+		delay  10
+	frame	data/chars/Enemys/Agamenon/fall02.gif
+
+anim fall
+	loop	0
+	offset	138 184
+	delay	20
+        hitfx	data/sounds/golpes/Forte.wav
+		attack  0
+	frame	data/chars/Enemys/Agamenon/fall00.gif
+		Attack1  0
+	frame	data/chars/Enemys/Agamenon/fall01.gif
+		delay  10
+		offset  134  158
+	frame	data/chars/Enemys/Agamenon/fall02.gif
+
+anim fall6 #Shok
+	loop	0
+	offset	250 181
+	delay	5
+        hitfx	data/sounds/golpes/Forte.wav
+		attack  0
+	frame	data/chars/Enemys/Agamenon/fall201.gif
+	frame	data/chars/Enemys/Agamenon/fall200.gif
+	frame	data/chars/Enemys/Agamenon/fall201.gif
+	frame	data/chars/Enemys/Agamenon/fall200.gif
+	frame	data/chars/Enemys/Agamenon/fall201.gif
+		offset  134  152
+	frame	data/chars/Enemys/Agamenon/fall02.gif
+
+
+anim fall7 #Burn
+	loop	0
+	offset	232 163
+	delay	10
+        hitfx	data/sounds/golpes/Forte.wav
+		attack  0
+	frame	data/chars/Enemys/Agamenon/FALL300.gif
+	frame	data/chars/Enemys/Agamenon/FALL301.gif
+	frame	data/chars/Enemys/Agamenon/FALL302.gif
+	frame	data/chars/Enemys/Agamenon/FALL300.gif
+	frame	data/chars/Enemys/Agamenon/FALL301.gif
+		offset  134  152
+	frame	data/chars/Enemys/Agamenon/FALL02.gif
+
+
+anim rise
+	loop	0
+	offset	142 187
+	delay	20
+	frame	data/chars/Enemys/Agamenon/Rise00.gif
+	frame	data/chars/Enemys/Agamenon/Rise01.gif
+	frame	data/chars/Enemys/Agamenon/Rise02.gif
+
+
+
+
+
+
+
+anim land
+	loop	0
+	delay	15
+	offset	147 187
+	bbox	135 128 37 61
+	frame	data/chars/Enemys/Agamenon/Land.gif
+
+
+anim Fall9
+	loop	0
+	offset	137 186
+	delay	999
+	frame	data/chars/Enemys/Agamenon/pain01.gif #0
+	frame	data/chars/Enemys/Agamenon/pain02.gif #1
+		offset  136  153
+	frame	data/chars/Enemys/Agamenon/fall01.gif #2
+		offset  133  154
+	frame	data/chars/Enemys/Agamenon/fall02.gif #3
+		offset  158  161
+	frame	data/chars/Enemys/Agamenon/fall400.gif #4
+		offset  157  193
+	frame	data/chars/Enemys/Agamenon/fall401.gif #5
+		offset  141  183
+	frame	data/chars/Enemys/Agamenon/fall402.gif #6
+		offset  136  175
+	frame  data/chars/Enemys/Agamenon/fall403.gif #7
+		offset  158  187
+	delay	20
+	frame	data/chars/Enemys/Agamenon/fall401.gif #8
+	delay	30
+		offset  133  158
+	frame	data/chars/Enemys/Agamenon/fall404.gif #9
+	offset	132 154
+	frame	data/chars/Enemys/Agamenon/Fall405.gif #10
+
+
+anim Fall8
+	loop	0
+	flipframe  0
+	offset	128 153
+	delay	30
+	frame	data/chars/Enemys/Agamenon/fall01.gif #0
+	offset	129 156
+	delay	15
+	frame	data/chars/Enemys/Agamenon/fall02.gif #1
+
+
+anim Fall5
+	loop	0
+	flipframe  1
+	offset	134 157
+	delay	30
+	frame	data/chars/Enemys/Agamenon/fall01.gif #0
+	offset	129 159
+	delay	15
+	frame	data/chars/Enemys/Agamenon/fall02.gif #1
+

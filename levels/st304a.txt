@@ -1,0 +1,489 @@
+music	data/bgs/st304/Lv304a.bor
+bossmusic	data/music/boss3.bor
+scrollspeed 0.5#1
+stagenumber 4
+background	data/bgs/st304/back00.gif	0.8 1 0 0 0 0 -1 1 0
+panel		data/bgs/St304/pn00.gif		none	none
+frontpanel	data/bgs/St304/fpn00.gif
+#frontpanel      data/bgs/st05/Front02.gif
+cameratype 1
+cameraoffset 0 -30
+#levelscript @script
+#void main() {
+#	changelevelproperty("camerazoffset", 0);
+#	changelevelproperty("cameraxoffset", 0);
+#}
+#@end_script
+#settime         90
+notime          1
+noslow          1
+order		a
+spawn1  	150 20 50
+spawn2  	155 35 50 
+spawn3  	160 50 50
+
+spawn  Fundo00
+flip   1
+	coords  0 0
+	at  0
+
+
+
+spawn  Trilho01
+flip   1
+	coords  0 0
+	at  0
+
+
+
+spawn  Vice
+health 50
+	coords  -100 230
+	at  0
+
+
+spawn  Vice
+health 50
+	coords  -100 260
+	at  0
+
+spawn  Vice
+health 50
+	coords  500 230
+	at  0
+
+
+spawn  Slum
+map    1
+health 70
+	coords  500 260
+	at  0
+
+
+wait 
+at     300
+
+Group 1  5
+at     300
+
+
+spawn  Vice
+health 50
+	coords  -100 230
+	at  300
+
+
+spawn  Vice
+health 50
+	coords  -100 260
+	at  300
+
+
+
+spawn  Vice
+health 50
+	coords  -100 230
+	at  300
+
+
+
+spawn  Vice
+map    1
+health 70
+	coords  500 260
+	at  300
+
+
+spawn  Vice
+map    1
+health 70
+	coords  500 230
+	at  300
+
+Group 4  4
+at     300
+
+
+
+
+spawn  Galsia
+map    1
+health 50
+	coords  500 260
+	at  300
+
+spawn  Vice
+map    1
+health 70
+	coords  -100 260
+	at  300
+
+
+spawn  Vice
+map    1
+health 70
+	coords  -100 230
+	at  300
+
+
+
+spawn  Vice
+map    1
+health 70
+	coords  500 260
+	at  300
+
+
+spawn  Vice
+map    1
+health 70
+	coords  500 230
+	at  300
+
+
+spawn  Galsia
+map    3
+health 80
+	coords  -100 230
+	at  300
+
+
+
+spawn  Donovan
+map    3
+health 80
+	coords  500 260
+	at  300
+
+
+spawn  Donovan
+health 50
+	coords  -100 230
+	at  300
+
+
+
+spawn  Galsia
+map    3
+health 80
+	coords  500 260
+	at  300
+
+
+spawn  Vice
+map    2
+health 80
+	coords  -100 230
+	at  300
+
+
+
+spawn  Vice
+health 50
+	coords  500 260
+	at  300
+
+
+spawn  Vice
+map    2
+health 80
+	coords  500 230
+	at  300
+
+
+spawn  Vice
+map    2
+health 80
+	coords  -100 230
+	at  300
+
+
+spawn  Vice
+map    2
+health 80
+	coords  -100 230
+	at  300
+
+spawn  Vice
+map    2
+health 80
+	coords  500 230
+	at  300
+
+spawn  Galsia
+map    1
+health 50
+	coords  500 230
+	at  301
+
+spawn  Galsia
+map    1
+health 50
+	coords  510 240
+	at  301
+
+spawn  Galsia
+map    1
+health 50
+	coords  520 260
+	at  301
+
+spawn  Apple
+	coords  500 245
+	at  302
+
+
+wait 
+at     600
+
+Group 1  3
+at     600
+
+spawn  Galsia
+map    1
+health 50
+	coords  300 230 200
+	at  600
+
+spawn  Galsia
+map    1
+health 50
+	coords  260 240 200
+	at  600
+
+spawn  Galsia
+map    2
+health 70
+	coords  310 260 200
+	at  600
+
+
+Group 4  4
+at     600
+
+spawn  signal
+health 50
+	coords  -100 260
+	at  600
+
+spawn  signal
+health 50
+	coords  -100 230
+	at  600
+
+spawn  signal
+map    3
+health 80
+	coords  500 260
+	at  600
+
+spawn  signal
+health 50
+	coords  500 230
+	at  600
+
+spawn  Donovan
+health 50
+	coords  500 230
+	at  600
+
+
+
+wait 
+at     601
+
+Group 3  3
+at     601
+
+spawn  Knife
+	coords  500 230
+	at  601
+
+spawn  Galsia
+map    2
+health 70
+	coords  550 230
+	at  601
+
+spawn  Knife
+	coords  510 240
+	at  601
+
+spawn  Galsia
+map    2
+health 70
+	coords  560 240
+	at  601
+
+spawn  Knife
+	coords  520 260
+	at  601
+
+
+spawn  Galsia
+map    2
+health 70
+	coords  570 260
+	at  601
+
+Group 4  4
+at     601
+
+spawn  signal
+map    3
+health 80
+	coords  -100 230
+	at  601
+
+spawn  signal
+map    3
+health 80
+	coords  500 260
+	at  601
+
+spawn  signal
+map    3
+health 80
+	coords  500 230
+	at  601
+
+spawn  Donovan
+health 50
+	coords  500 230
+	at  601
+
+
+spawn  Donovan
+health 50
+	coords  -100 230
+	at  601
+
+spawn  Donovan
+map    1
+health 70
+	coords  -100 230
+	at  601
+
+
+spawn  Galsia
+map    2
+health 70
+	coords  300 230 200
+	at  601
+
+spawn  Galsia
+map    2
+health 70
+	coords  300 260 200
+	at  601
+
+spawn  Chicken
+	coords  500 245
+	at  630
+
+
+spawn  Garnet
+health 50
+	coords  500 230
+	at  700
+
+spawn  Garnet
+health 50
+	coords  500 260
+	at  750
+
+spawn  Electra_
+map    3
+health 100
+	coords  500 240
+	at  750
+
+wait 
+at     900
+
+Group 4  4
+at     900
+
+
+spawn  Garnet
+health 50
+	coords  -100 240
+	at  900
+
+spawn  Electra
+map    3
+health 150
+	coords  500 260
+	at  900
+
+spawn  Garnet
+map    4
+health 90
+	coords  -100 260
+	at  900
+
+
+spawn  Garnet
+map    4
+health 90
+	coords  500 220
+	at  900
+
+spawn  Garnet
+health 50
+	coords  -100 230
+	at  900
+
+spawn  Garnet
+health 50
+	coords  500 240
+	at  900
+
+spawn  Electra
+map    2
+health 100
+	coords  500 260
+	at  900
+
+spawn  Electra
+map    2
+health 100
+	coords  500 230
+	at  900
+
+spawn  Garnet
+health 50
+	coords  -100 260
+	at  900
+
+
+spawn  Electra
+map    3
+health 150
+	coords  500 260
+	at  900
+
+
+spawn  Garnet
+map    4
+health 90
+	coords  -100 240
+	at  900
+
+spawn  Garnet
+map    4
+health 90
+	coords  -100 230
+	at  900
+
+spawn  Garnet
+map    4
+health 90
+	coords  500 260
+	at  900
+
+
+
+
+
+

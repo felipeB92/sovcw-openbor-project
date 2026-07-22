@@ -1,0 +1,658 @@
+name	Leonardo_knife
+health	100
+mp 10
+chargerate 2
+mprate 1
+#secret 1
+Falldie 2
+Grabdistance 18
+riseinv				0.4 1
+speed	8
+type	None
+gfxshadow	1
+candamage			enemy obstacle
+JUMPHEIGHT 4
+#Jumpheight 3
+antigrab 2
+atchain   1 1 2 3 4 5 5
+weapons Leonardo_Knife Adam_Sword leonardo_pipe Adam_Kunai None Blaze
+icon	data/chars/players/Leonardo/icon.gif 1
+diesound data/chars/players/Leonardo/Death.wav
+running	20	3	2	1	1
+onblockwscript	data/scripts/bounceF.c
+#animationscript 	data/scripts/ani0020.h
+animationscript		data/scripts/drago.c
+#ondrawscript 		data/scripts/player_ondrawscript.c
+
+Com f f A freespecial
+Com f f  freespecial2
+
+Load KnifeT
+
+remap data/chars/players/Leonardo/Map00.gif data/chars/players/Leonardo/MAp01.gif
+remap data/chars/players/Leonardo/Map00.gif data/chars/players/Leonardo/MAp02.gif
+remap data/chars/players/Leonardo/Map00.gif data/chars/players/Leonardo/MAp03.gif
+remap data/chars/players/Leonardo/Map00.gif data/chars/players/Leonardo/MAp04.gif
+
+
+
+anim Pain5
+	loop	0
+	delay	12
+	offset	22 94
+        Range 0 40
+        Rangez -10 10
+	bbox	14 4 33 64
+	frame   data/chars/players/Leonardo/idle00.gif
+	@cmd  spawn01  "Joe_Higashi_"  -5  0  10
+	@cmd  spawn01  "Andy_"  5  0  -10
+	frame   data/chars/players/Leonardo/idle01.gif
+
+anim idle
+	loop	1
+	offset	25 94
+	bbox	16 9 24 74
+		delay  25
+	frame   data/chars/players/Leonardo/idle00.gif
+	@cmd	depost 0
+	@cmd	throw 15 0.7 0.7 1 0 -1
+	@cmd	clearL
+	frame   data/chars/players/Leonardo/idle01.gif
+	frame   data/chars/players/Leonardo/idle02.gif
+	frame   data/chars/players/Leonardo/idle03.gif
+
+
+
+anim walk
+	loop	1
+	delay	12
+	offset	26 95
+	bbox	14 8 32 72
+	frame	data/chars/players/Leonardo/walk00.gif
+	frame	data/chars/players/Leonardo/walk01.gif
+	frame	data/chars/players/Leonardo/walk02.gif
+	frame	data/chars/players/Leonardo/walk03.gif
+	frame	data/chars/players/Leonardo/walk04.gif
+	frame	data/chars/players/Leonardo/walk05.gif
+
+
+
+anim get
+	loop	0
+	delay	10
+	offset	26 87
+        custknife Knifet
+        throwframe 2 40
+	frame	data/chars/players/Leonardo/Knife00.gif
+	frame	data/chars/players/Leonardo/Knife01.gif
+	frame	data/chars/players/Leonardo/A402.gif
+	frame	data/chars/players/Leonardo/A403.gif
+	frame	data/chars/players/Leonardo/A404.gif
+	frame	data/chars/players/Leonardo/A405.gif
+
+
+anim jump
+	loop	0
+	delay	10
+	offset	30 103
+	bbox	11 14 30 88
+	frame	data/chars/players/Leonardo/Jump01.gif
+	frame	data/chars/players/Leonardo/Jump02.gif
+	frame	data/chars/players/Leonardo/Jump03.gif
+
+
+
+anim jumpattack
+	loop	0
+	delay	5
+	offset	23 84
+	bbox	13 9 30 78
+        hitflash	Corte
+        hitfx	data/sounds/golpes/Corte.wav
+        Sound	data/sounds/golpes/Chut.wav
+	frame	data/chars/players/Leonardo/Ja200.gif
+	Sound	data/chars/players/Leonardo/a2.wav
+		Attack1  16  12  82  73
+		delay  25
+	frame	data/chars/players/Leonardo/Ja201.gif
+		Attack1  0
+	frame	data/chars/players/Leonardo/Ja202.gif
+
+
+anim jumpattack2
+	loop	0
+	delay	5
+	offset	22 80
+	bbox	10 10 36 68
+        hitflash	Corte
+        hitfx	data/sounds/golpes/Corte.wav
+        Sound	data/sounds/golpes/Chut.wav
+	frame	data/chars/players/Leonardo/Ja300.gif
+	Sound	data/chars/players/Leonardo/a1.wav
+	frame	data/chars/players/Leonardo/Ja301.gif
+		attack1  14  19  54  73  12  1  0  0  0  15
+		delay  5
+	frame	data/chars/players/Leonardo/Ja302.gif
+		delay  25
+	frame	data/chars/players/Leonardo/Ja303.gif
+
+anim jumpforward
+	loop	0
+	delay	5
+	offset	44 101
+	bbox	5 20 48 52
+        hitflash	MEdio
+        hitfx	data/sounds/golpes/medio.wav
+        Sound	data/sounds/golpes/Chut.wav
+	frame	data/chars/players/Leonardo/Ja100.gif
+		delay  7
+	Sound	data/chars/players/Leonardo/a3.wav
+		Attack1  0
+	frame	data/chars/players/Leonardo/Ja101.gif
+		attack1  32  55  48  45  8  1  0  0  0  10
+		delay  20
+	frame	data/chars/players/Leonardo/Ja102.gif
+
+anim attack1
+	loop	0
+	delay	5
+	offset	62 79
+        hitflash	Corte
+	bbox	51 10 21 69
+        hitfx	data/sounds/golpes/Corte.wav
+		Attack1  0
+	frame	data/chars/players/Leonardo/a100.gif
+        Sound	data/sounds/golpes/Soco.wav
+	frame	data/chars/players/Leonardo/a101.gif
+		attack1  46  19  74  19  3  0  0  0  0  15
+	frame  data/chars/players/Leonardo/a104.gif
+	frame	data/chars/players/Leonardo/a105.gif
+		Attack1  0
+	frame	data/chars/players/Leonardo/a106.gif
+
+anim attack2
+	loop	0
+	offset	48 93
+        hitflash	Corte
+	bbox	19 7 21 76
+		Attack1  0
+        hitfx	data/sounds/golpes/Corte.wav
+	Sound	data/chars/players/Leonardo/a1.wav
+		delay  6
+	frame	data/chars/players/Leonardo/a200.gif
+		bbox  39  31  26  46
+	frame	data/chars/players/Leonardo/a201.gif
+		attack2  37  25  56  35  7  0  0  0  0  15
+		delay  8
+        @cmd dasher 1 0 0
+	frame	data/chars/players/Leonardo/a202.gif
+		attack2  56  47  100  14  7  0  0  0  0  15
+		delay  12
+	frame	data/chars/players/Leonardo/a203.gif
+		Attack1  0
+		delay  6
+        @cmd dasher 0 0 0
+	frame	data/chars/players/Leonardo/a206.gif
+
+
+anim attack3
+	loop	0
+	delay	8
+	offset	53 99
+	bbox	27 15 26 75
+        hitflash	Corte
+        hitfx	data/sounds/golpes/Corte.wav
+	frame	data/chars/players/Leonardo/a300.gif
+		delay  20
+		Attack1  62  42  79  53  12  1  0  0  0  15
+		sound  data/chars/players/Leonardo/a3.wav
+	frame	data/chars/players/Leonardo/a302.gif
+		delay  8
+		sound  data/sounds/golpes/Chut.wav
+	frame	data/chars/players/Leonardo/a304.gif
+
+
+
+anim grab
+	loop	0
+	delay	100
+	offset	71 80
+	bbox	51 1 29 82
+        cancel	0 3 0 J freespecial
+	frame	data/chars/players/Leonardo/a101.gif
+
+anim throw
+	loop	0
+	delay	5
+	offset	26 94
+        hitflash	Forte
+        hitfx	data/sounds/golpes/Forte.wav
+		Attack1  0
+	frame	data/chars/players/Leonardo/ga101.gif
+	delay	10
+	@cmd	slamstart
+	@cmd	position 0 20 0 0 -1
+		offset  67  64
+	frame	data/chars/players/Leonardo/T00.gif
+	@cmd	position 0 20 0 0 -1
+		delay  20
+		attack1  71  1  46  63  7  1  0  0  0  10
+	frame	data/chars/players/Leonardo/T01.gif
+	Sound	data/chars/players/Leonardo/a2.wav
+	@cmd	position 4 -10 30 0 -1
+		attack1  10  -1  64  30  7  1  0  0  0  10
+		delay  10
+	frame	data/chars/players/Leonardo/T02.gif
+	@cmd	position 5 -30 30 0 -1
+		attack1  -48  7  54  47  7  1  0  0  0  10
+	frame	data/chars/players/Leonardo/T03.gif
+	@cmd	position 8 -40 30 0 -1
+	@cmd	depost 0
+	@cmd	throw 15 5 2 2 0 -1
+	@cmd	clearL
+		attack1  -76  15  43  44  7  1  0  0  0  10
+		delay  20
+	frame	data/chars/players/Leonardo/t03.gif
+		attack1  -124  24  49  46  7  1  0  0  0  10
+		offset  25  93
+	frame  data/chars/players/Leonardo/ga101.gif
+		attack1  -128  56  42  30  7  1  0  0  0  10
+	frame  data/chars/players/Leonardo/Ga102.gif
+
+
+
+anim pain
+	loop	0
+	offset	28 89
+	bbox	13 11 36 65
+	delay	5
+	frame	data/chars/players/Leonardo/pain100.gif
+		delay  25
+	frame	data/chars/players/Leonardo/pain101.gif
+
+anim pain3
+	loop	0
+	offset	28 90
+	bbox	12 21 33 69
+	delay	5
+	jumpframe  0  2  0  0
+	frame	data/chars/players/Leonardo/pain100.gif
+		delay  25
+		bbox  9  2  39  74
+	frame	data/chars/players/Leonardo/pain101.gif
+
+anim pain4
+	loop	0
+	offset	25 89
+	bbox	13 17 32 74
+	delay	5
+	frame	data/chars/players/Leonardo/pain100.gif
+		delay  900
+		bbox  8  0  36  78
+	frame	data/chars/players/Leonardo/pain101.gif
+
+
+anim grabbed
+	loop	0
+	offset	24 75
+	bbox	17 13 30 63
+	delay	40
+	frame	data/chars/players/Leonardo/pain200.gif
+
+
+
+anim pain2
+	loop	0
+	offset	24 76
+	bbox	8 13 36 61
+	delay	5
+	frame	data/chars/players/Leonardo/pain200.gif
+		delay  25
+	frame	data/chars/players/Leonardo/pain201.gif
+
+
+
+
+
+anim fall2
+	loop	0
+	offset	24 73
+	jumpframe  0  3  -3  0
+	delay	20
+        hitfx	data/sounds/golpes/Forte.wav
+		attack  0
+	frame	data/chars/players/Leonardo/fall00.gif
+		Attack1  0
+	frame	data/chars/players/Leonardo/fall01.gif
+		delay  10
+	frame	data/chars/players/Leonardo/fall02.gif
+		offset  46  23
+	frame	data/chars/players/Leonardo/fall03.gif
+
+anim fall
+	loop	0
+	offset	50 77
+	delay	20
+        hitfx	data/sounds/golpes/Forte.wav
+		attack  0
+	frame	data/chars/players/Leonardo/fall00.gif
+		Attack1  0
+	frame	data/chars/players/Leonardo/fall01.gif
+		delay  10
+		offset  48  84
+	frame	data/chars/players/Leonardo/fall02.gif
+		offset  44  22
+	frame	data/chars/players/Leonardo/fall03.gif
+
+anim fall6 #Shok
+	loop	0
+	offset	80 108
+	delay	5
+        hitfx	data/sounds/golpes/Forte.wav
+		attack  0
+	frame	data/chars/players/Leonardo/fall201.gif
+	frame	data/chars/players/Leonardo/fall200.gif
+	frame	data/chars/players/Leonardo/fall201.gif
+	frame	data/chars/players/Leonardo/fall200.gif
+	frame	data/chars/players/Leonardo/fall201.gif
+		offset  52  24
+	frame	data/chars/players/Leonardo/fall03.gif
+
+
+anim fall7 #Burn
+	loop	0
+	offset	38 65
+	delay	10
+        hitfx	data/sounds/golpes/Forte.wav
+		attack  0
+	frame	data/chars/players/Leonardo/FALL300.gif
+	frame	data/chars/players/Leonardo/FALL301.gif
+	frame	data/chars/players/Leonardo/FALL302.gif
+	frame	data/chars/players/Leonardo/FALL300.gif
+	frame	data/chars/players/Leonardo/FALL301.gif
+		offset  56  26
+	frame	data/chars/players/Leonardo/FALL03.gif
+
+
+anim rise
+	loop	0
+	offset	30 85
+	delay	8
+	frame	data/chars/players/Leonardo/Rise00.gif
+	frame	data/chars/players/Leonardo/Rise01.gif
+	frame	data/chars/players/Leonardo/Rise02.gif
+		offset  32  85
+	frame	data/chars/players/Leonardo/Get01.gif
+
+
+
+anim special2
+        energycost 10 1
+        MpOnly 1
+	loop	0
+	offset	40 96
+        Fastattack 1
+        hitflash	CORTE
+        hitfx	data/sounds/golpes/Corte.wav
+		Attack1  0
+		delay  25
+	Sound	data/chars/players/Leonardo/SP03.wav
+		move  0
+	frame	data/chars/players/Leonardo/SP200.gif
+		delay  6
+	frame	data/chars/players/Leonardo/SP201.gif
+		delay  4
+	Sound	data/chars/players/Leonardo/A4.wav
+	frame	data/chars/players/Leonardo/SP202.gif
+	Sound	data/chars/players/Leonardo/SP02.wav
+	@cmd  spawn01  "LeonardoP01"  0  0  1
+	frame	data/chars/players/Leonardo/SP203.gif
+		delay  25
+	frame	data/chars/players/Leonardo/SP204.gif
+
+
+
+anim special
+        energycost 10 1
+        MpOnly 1
+	loop	0
+	offset	81 91
+        hitflash	CORTE
+        hitfx	data/sounds/golpes/Corte.wav
+		delay  4
+		attack2  55  10  58  27  25  1  0  0  0  15
+	frame	data/chars/players/Leonardo/SP100.gif
+	Sound	data/chars/players/Leonardo/SP01.wav
+	@cmd  spawn01  "LeonardoP02"  0  0  -1
+		attack2  11  11  149  22  25  1  0  0  0  15
+	frame	data/chars/players/Leonardo/SP101.gif
+	@cmd  spawn01  "LeonardoP02"  0  0  -1
+		attack2  0  12  165  23  25  1  0  0  0  15
+	frame	data/chars/players/Leonardo/SP102.gif
+	@cmd  spawn01  "LeonardoP02"  0  0  -1
+	frame	data/chars/players/Leonardo/SP103.gif
+	frame	data/chars/players/Leonardo/SP104.gif
+	frame	data/chars/players/Leonardo/SP105.gif
+	frame	data/chars/players/Leonardo/SP106.gif
+	frame	data/chars/players/Leonardo/SP107.gif
+	frame	data/chars/players/Leonardo/SP108.gif
+	frame	data/chars/players/Leonardo/SP109.gif
+	frame	data/chars/players/Leonardo/SP110.gif
+	frame	data/chars/players/Leonardo/SP111.gif
+	frame	data/chars/players/Leonardo/SP112.gif
+	frame	data/chars/players/Leonardo/SP113.gif
+		delay  15
+		Attack1  0
+	frame	data/chars/players/Leonardo/SP114.gif
+
+anim jumpspecial
+        energycost 10 1
+        MpOnly 1
+	loop	0
+	offset	54 109
+        hitflash	CORTE
+        hitfx	data/sounds/golpes/Corte.wav
+		attack2  17  13  106  100  25  1  0  0  0  25
+		delay  3
+		sound  data/chars/players/Leonardo/a4.wav
+	frame	data/chars/players/Leonardo/Sp304.gif
+	frame	data/chars/players/Leonardo/Sp305.gif
+	frame	data/chars/players/Leonardo/Sp306.gif
+	frame	data/chars/players/Leonardo/Sp307.gif
+	frame	data/chars/players/Leonardo/Sp304.gif
+	frame	data/chars/players/Leonardo/Sp305.gif
+	frame	data/chars/players/Leonardo/Sp306.gif
+	frame	data/chars/players/Leonardo/Sp307.gif
+	frame	data/chars/players/Leonardo/Sp304.gif
+	frame	data/chars/players/Leonardo/Sp305.gif
+	frame	data/chars/players/Leonardo/Sp306.gif
+	frame	data/chars/players/Leonardo/Sp307.gif
+
+
+
+
+
+
+anim Freespecial2
+	loop	0
+	delay	5
+	offset	53 85
+        cancel	0 3 0 A freespecial
+        @cmd dasher 1 0 0
+	frame	data/chars/players/Leonardo/Dash00.gif
+	frame	data/chars/players/Leonardo/Dash01.gif
+        @cmd dasher 2 0 0
+		delay  6
+	frame	data/chars/players/Leonardo/Dash02.gif
+	frame	data/chars/players/Leonardo/Dash03.gif
+	frame	data/chars/players/Leonardo/Dash04.gif
+		offset  69  85
+	frame	data/chars/players/Leonardo/Dash05.gif
+        @cmd dasher 0 0 0
+		delay  8
+		offset  27  87
+	frame	data/chars/players/Leonardo/Get01.gif
+
+
+anim Freespecial
+ 	loop	0
+        Sound	data/sounds/golpes/Soco.wav
+ 	offset	50 93
+		delay  5
+ 	bbox	36 26 29 58
+		move  0
+        hitflash	Corte
+        hitfx	data/sounds/golpes/Corte.wav
+ 	frame	data/chars/players/Leonardo/a200.gif
+ 	frame	data/chars/players/Leonardo/a201.gif
+        @cmd dasher 1 0 0
+		sound  data/chars/players/Leonardo/a5.wav
+		attack1  28  41  73  30  10  1  0  0  0  15
+		delay  5
+	frame	data/chars/players/Leonardo/a202.gif
+		attack1  57  41  105  24  10  1  0  0  0  15
+		delay  10
+	frame	data/chars/players/Leonardo/a203.gif
+	frame	data/chars/players/Leonardo/a204.gif
+	frame	data/chars/players/Leonardo/a205.gif
+        @cmd dasher 0 0 0
+		Attack1  0
+		delay  8
+		bbox  27  40  38  52
+	frame	data/chars/players/Leonardo/a206.gif
+	frame	data/chars/players/Leonardo/a207.gif
+
+
+
+
+
+
+
+anim grabattack
+	loop	0
+	offset	27 95
+	bbox	14 23 25 73
+	delay	6
+        Fastattack 1
+        hitflash	Fraco
+        hitfx	data/sounds/golpes/Fraco.wav
+		Attack1  0
+	frame	data/chars/players/Leonardo/Ga100.gif
+	frame	data/chars/players/Leonardo/Ga101.gif
+	frame	data/chars/players/Leonardo/Ga102.gif
+	frame	data/chars/players/Leonardo/Ga103.gif
+		delay  2
+	frame	data/chars/players/Leonardo/Ga104.gif
+		delay  4
+		offset  37  95
+	frame	data/chars/players/Leonardo/Ga105.gif
+	frame	data/chars/players/Leonardo/Ga106.gif
+		attack1  37  29  50  32  1  0  0  0  0  15
+	frame	data/chars/players/Leonardo/Ga107.gif
+		Attack1  0
+	frame	data/chars/players/Leonardo/Ga107.gif
+		attack1  31  30  62  22  1  0  0  0  0  15
+	frame	data/chars/players/Leonardo/Ga108.gif
+		Attack1  0
+	frame	data/chars/players/Leonardo/Ga108.gif
+		attack1  31  19  62  27  1  0  0  0  0  15
+	frame	data/chars/players/Leonardo/Ga109.gif
+		Attack1  0
+	frame	data/chars/players/Leonardo/Ga109.gif
+		attack1  28  27  56  30  1  0  0  0  0  15
+	frame	data/chars/players/Leonardo/Ga107.gif
+		Attack1  0
+	frame	data/chars/players/Leonardo/Ga107.gif
+		attack1  25  31  68  19  1  0  0  0  0  15
+	frame	data/chars/players/Leonardo/Ga108.gif
+		Attack1  0
+	frame	data/chars/players/Leonardo/Ga108.gif
+		attack1  30  19  63  39  1  0  0  0  0  15
+	frame	data/chars/players/Leonardo/Ga109.gif
+		Attack1  0
+	frame	data/chars/players/Leonardo/Ga109.gif
+		attack1  31  27  58  31  1  0  0  0  0  15
+	frame	data/chars/players/Leonardo/Ga107.gif
+		Attack1  0
+	frame	data/chars/players/Leonardo/Ga107.gif
+		attack1  23  27  69  22  1  0  0  0  0  15
+	frame	data/chars/players/Leonardo/Ga108.gif
+		Attack1  0
+	frame	data/chars/players/Leonardo/Ga108.gif
+		attack1  37  22  58  30  5  1  0  0  0  15
+	frame	data/chars/players/Leonardo/Ga109.gif
+	frame	data/chars/players/Leonardo/Ga109.gif
+		delay  15
+		offset  32  95
+	frame  data/chars/players/Leonardo/Ga108.gif
+		delay  6
+		Attack1  0
+		offset  27  95
+	frame	data/chars/players/Leonardo/Ga110.gif
+	frame	data/chars/players/Leonardo/Ga111.gif
+		Attack1  0
+	frame	data/chars/players/Leonardo/Ga112.gif
+	frame	data/chars/players/Leonardo/Ga113.gif
+	frame	data/chars/players/Leonardo/Ga114.gif
+
+
+
+
+
+
+
+anim land
+	loop	0
+	delay	15
+	offset	22 86
+	bbox	16 8 23 66
+	frame	data/chars/players/Leonardo/Get00.gif
+
+
+anim Fall9
+	loop	0
+	offset	30 89
+	delay	999
+	frame	data/chars/players/Leonardo/pain100.gif #0
+		offset  24  75
+	frame	data/chars/players/Leonardo/pain200.gif #1
+		offset  60  94
+	frame	data/chars/players/Leonardo/fall01.gif #2
+	frame	data/chars/players/Leonardo/fall02.gif #3
+		offset  80  95
+	frame	data/chars/players/Leonardo/fall400.gif #4
+	frame	data/chars/players/Leonardo/fall401.gif #5
+		offset  81  99
+	frame	data/chars/players/Leonardo/fall402.gif #6
+		offset  75  114
+	frame  data/chars/players/Leonardo/fall403.gif
+		delay  20
+	frame  data/chars/players/Leonardo/fall401.gif
+		offset  87  99
+		delay  30
+	frame  data/chars/players/Leonardo/fall404.gif
+		offset  64  107
+	frame  data/chars/players/Leonardo/fall405.gif
+
+
+anim Fall8
+	loop	0
+	flipframe  0
+	offset	45 66
+	delay	30
+	frame	data/chars/players/Leonardo/fall01.gif #0
+	delay	15
+		offset  48  25
+	frame	data/chars/players/Leonardo/fall03.gif #1
+
+
+anim Fall5
+	loop	0
+	flipframe  1
+	offset	39 79
+	delay	30
+	frame	data/chars/players/Leonardo/fall01.gif #0
+	offset	48 29
+	delay	15
+	frame	data/chars/players/Leonardo/fall03.gif #1
+

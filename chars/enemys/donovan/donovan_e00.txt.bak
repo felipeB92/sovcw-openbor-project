@@ -1,0 +1,38 @@
+name			Donovan_E00 #GROUND
+type			None
+Speed 0
+#setlayer 5
+#noquake 	1 1
+#offscreenkill	1000
+#Alpha 1
+animationscript		data/scripts/drago.c
+
+
+Load Donovan
+Load Ruy
+
+anim idle
+	loop	0
+	offset	193 322
+		delay  8
+        hitflash	Forte
+        hitfx	data/sounds/golpes/Forte.wav
+        @cmd dasher 2 0 0
+	frame   data/chars/Enemys/Donovan/emp/D01.gif
+	frame   data/chars/Enemys/Donovan/emp/D01b.gif
+	frame   data/chars/Enemys/Donovan/emp/D01.gif
+	frame   data/chars/Enemys/Donovan/emp/D01b.gif
+	frame   data/chars/Enemys/Donovan/emp/D01.gif
+	frame   data/chars/Enemys/Donovan/emp/D01b.gif
+        @cmd dasher 0 0 0
+	frame   data/chars/Enemys/Donovan/emp/D02.gif
+	frame   data/chars/Enemys/Donovan/emp/D03.gif
+	frame   data/chars/Enemys/Donovan/emp/D00.gif
+        @cmd dasher -1 0 0
+	frame   data/chars/Enemys/Donovan/emp/D00b.gif
+	frame   data/chars/Enemys/Donovan/emp/D00.gif
+	frame   data/chars/Enemys/Donovan/emp/D00b.gif
+        @cmd dasher 0 0 0
+	@cmd  spawn01  "Donovan"  -40  40  1
+	frame   data/chars/Enemys/Donovan/emp/D04.gif
+	frame   data/chars/Enemys/Donovan/emp/D04.gif

@@ -1,0 +1,14 @@
+name	chicken
+health	100
+type	item
+shadow	0
+#icon	data/chars/misc/meaticon.gif
+nolife 1
+
+anim idle
+	loop	0
+	delay	1000
+	offset	53 63
+	bbox	36 42 29 24
+	frame	data/chars/Itens/chicken00.gif
+

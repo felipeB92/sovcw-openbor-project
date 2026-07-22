@@ -1,0 +1,188 @@
+music		data/bgs/St203/Lv203c.bor
+bossmusic	data/music/boss2.bor
+scrollspeed 0.5#1
+stagenumber 3
+background	data/bgs/st203/bg00.gif
+panel		data/bgs/St203/pn16.gif
+fglayer		data/bgs/st203/fog00.gif		100 0.1 0 -20 0 0 0 1 1 0 1 1 10 30 0.5
+frontpanel      data/bgs/St203/fpn04.gif
+cameratype 1
+cameraoffset 	0 -60
+settime         99
+notime          0
+noslow          1
+order		a
+spawn1  	125 20
+spawn2  	130 35
+spawn3  	135  50
+
+
+
+spawn  ovo
+ITEM   CHICKEN
+	coords  276  220
+	at  0
+
+spawn  ovo
+ITEM   Sword
+	coords  375  206
+	at  0
+
+
+spawn  ovo
+ITEM   Cash
+	coords  500  220
+	at  0
+
+
+
+spawn  Galsia_
+map    5
+health 90
+	coords  237  270
+	at  0
+
+spawn  Donovan_
+map    4
+health 90
+	coords  237  270
+	at  100
+
+spawn  Galsia_
+map    5
+health 90
+	coords  237  270
+	at  150
+
+spawn  ovo
+ITEM   cash
+	coords  500  206
+	at  153
+
+
+spawn  Signal
+map    2
+health 70
+	coords  500  230
+	at  200
+
+spawn  Galsia
+map    5
+health 90
+	coords  500  250
+	at  200
+
+wait  
+at    300
+
+group 4  4
+at    300
+
+spawn  ovo
+ITEM   Apple
+	coords  500  206
+	at  301
+
+spawn  Signal
+map    2
+health 70
+	coords  500  230
+	at  300
+
+spawn  Donovan
+map    4
+health 90
+	coords  -100  250
+	at  300
+
+spawn  _Donovan
+map    4
+health 90
+	coords  237  270
+	at  300
+
+group 9  9
+at    301
+
+spawn  Alien
+	coords  470  160
+	at  420
+
+wait  
+at    700
+
+group 4  4
+at    700
+
+spawn  Signal
+map    2
+health 70
+	coords  -50  230
+	at  700
+
+spawn  Galsia
+map    5
+health 90
+	coords  -50  250
+	at  700
+
+spawn  Galsia_
+map    5
+health 90
+	coords  237  270
+	at  700
+
+
+
+
+
+spawn  Signal
+map    2
+health 70
+	coords  500  230
+	at  700
+
+spawn  _Donovan
+map    4
+health 90
+	coords  237  270
+	at  700
+
+spawn  Galsia_
+map    5
+health 90
+	coords  237  270
+	at  700
+
+spawn  _Donovan
+map    4
+health 90
+	coords  237  270
+	at  700
+
+spawn  Kusanagi_
+health 60
+	coords  500  135
+	at  701
+
+
+spawn  Sword
+	coords  500  230
+	at  701
+
+
+spawn  Zamza
+boss   1
+	coords  300  200 200
+	at  1000
+
+wait  
+at    1000
+
+
+
+
+
+
+
+

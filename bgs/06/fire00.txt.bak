@@ -1,0 +1,16 @@
+name			Fire00 #GROUND
+type			None
+Speed .5
+setlayer -9
+noquake 	1 1
+#offscreenkill	1000
+Alpha 1
+
+anim idle
+	loop	1
+	offset	343 182
+		delay  999
+	frame	data/Bgs/06/Fire00.gif
+	frame	data/Bgs/06/Fire01.gif
+	frame	data/Bgs/06/Fire02.gif
+

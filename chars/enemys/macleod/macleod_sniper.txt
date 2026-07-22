@@ -1,0 +1,107 @@
+name    	macleod_sniper
+health	 	200
+mp 120
+lifespan 30
+nodrop 1
+mprate 1
+type    	enemy
+setlayer 999
+#nomove  	1 1
+gfxshadow			0
+Speed 12
+nodieblink 2
+falldie    1
+Notgrab 1
+aggression 100
+hostile player
+#Alpha 1
+aimove chase
+candamage player enemy
+subject_to_platform 0
+subject_to_wall 0
+subject_to_obstacle 0
+subject_to_hole 0
+subject_to_screen 0
+subject_to_gravity 1
+#setlayer 800
+#offscreenkill	500
+nolife 1
+animationscript 	data/scripts/ani0020.h
+onblockwscript	data/scripts/bounceF.c
+ondrawscript 		data/scripts/player_ondrawscript.c
+
+
+anim	spawn
+		offset  0  205
+		delay  150
+	Sound	data/Sounds/Reload.wav
+	frame	data/chars/enemys/macleod/sniper/Idle.GIF
+
+
+
+
+anim Idle
+		offset  29  65
+		delay  15
+                Loop 1
+	frame	data/chars/enemys/macleod/sniper/a100.GIF
+
+anim Walk
+		offset  29  65
+		delay  15
+                Loop 1
+	frame	data/chars/enemys/macleod/sniper/a100.GIF
+
+anim fall
+		offset  29  65
+		delay  1
+                Loop 0
+	frame	data/chars/enemys/macleod/sniper/a100.GIF
+
+
+anim death
+		offset  0  205
+		delay  1
+                Loop 0
+	frame	data/chars/enemys/macleod/sniper/Death.GIF
+
+anim Rise
+		offset  29  65
+		delay  1
+                Loop 0
+	frame	data/chars/enemys/macleod/sniper/a100.GIF
+
+
+
+anim Freespecial
+                Range   -2   2
+                Rangez  -7   7
+		offset  29  65
+		delay  20
+        energycost 10 1
+        MpOnly 1
+        Hitflash MEdio
+	frame	data/chars/enemys/macleod/sniper/a100.GIF
+		delay  6
+	frame	data/chars/enemys/macleod/sniper/a101.GIF
+	frame	data/chars/enemys/macleod/sniper/a102.GIF
+	frame	data/chars/enemys/macleod/sniper/a103.GIF
+	frame	data/chars/enemys/macleod/sniper/a104.GIF
+	frame	data/chars/enemys/macleod/sniper/a105.GIF
+	frame	data/chars/enemys/macleod/sniper/a106.GIF
+	frame	data/chars/enemys/macleod/sniper/a107.GIF
+	frame	data/chars/enemys/macleod/sniper/a108.GIF
+	frame	data/chars/enemys/macleod/sniper/a109.GIF
+	frame	data/chars/enemys/macleod/sniper/a110.GIF
+		offset  29  67
+		attack1  22  16  14  15  20  1  0  0  0  15
+	Sound	data/Sounds/pistola.wav
+	frame  data/chars/enemys/macleod/sniper/a110.GIF
+		offset  29  65
+	frame  data/chars/enemys/macleod/sniper/a110.GIF
+		delay  40
+		Attack1  0
+	frame	data/chars/enemys/macleod/sniper/a110.GIF
+	Sound	data/Sounds/Reload.wav
+	frame	data/chars/enemys/macleod/sniper/a110.GIF
+

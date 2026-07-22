@@ -1,0 +1,38 @@
+
+name			BabyP03 #THROWNED
+type			none
+speed 12
+candamage			enemy obstacle
+alpha 1
+nolife			1
+lifespan		4
+remove			1
+gfxshadow		0 0
+flash			Forte
+#antigravity 100
+
+anim idle
+	loop	0
+	drawmethod tintmode 6
+	drawmethod tintcolor -255
+	offset	237 165
+		delay  4
+	frame	data/chars/players/Baby/fs300.gif
+		offset  243  170
+	frame	data/chars/players/Baby/fs301.gif
+	frame	data/chars/players/Baby/fs302.gif
+	frame	data/chars/players/Baby/fs303.gif
+		offset  246  173
+	frame	data/chars/players/Baby/fs304.gif
+	frame	data/chars/players/Baby/fs305.gif
+	frame	data/chars/players/Baby/fs306.gif
+	frame	data/chars/players/Baby/fs301.gif
+	frame	data/chars/players/Baby/fs302.gif
+	frame	data/chars/players/Baby/fs303.gif
+	frame	data/chars/players/Baby/fs304.gif
+	frame	data/chars/players/Baby/fs305.gif
+	frame	data/chars/players/Baby/fs306.gif
+	frame	data/chars/players/Baby/fs307.gif
+	@cmd killentity getlocalvar("self")
+	frame	data/chars/players/Baby/fs207.gif
+

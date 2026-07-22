@@ -1,0 +1,652 @@
+name	PArticle
+health	70
+mp 30
+mprate 1
+#secret 1
+Falldie 2
+Grabdistance 18
+riseinv				0.4 1
+speed	12
+type	Enemy
+gfxshadow	1
+candamage			Player npc obstacle
+JUMPHEIGHT 4
+hostile Player NPC
+antigrab 2
+atchain   1 1 2 3 4 5
+weapons P1_Knife P1_Sword P1_pipe P1_Kunai
+icon	data/chars/Enemys/Particle/icon.gif 1
+#diesound data/Sounds/Die5.wav
+running	20	3	2	1	1
+onblockwscript	data/scripts/bounceF.c
+#animationscript 	data/scripts/ani0020.h
+animationscript		data/scripts/drago.c
+ondrawscript 		data/scripts/Enemy_ondrawscript.c
+
+
+
+Load LAser02
+Load EX02
+#Load P1_Pipe
+#Load P1_Kunai
+#Load P1_Sword
+
+remap data/chars/Enemys/Particle/idle00.gif data/chars/Enemys/Particle/MAp01.gif
+remap data/chars/Enemys/Particle/idle00.gif data/chars/Enemys/Particle/MAp02.gif
+remap data/chars/Enemys/Particle/idle00.gif data/chars/Enemys/Particle/MAp03.gif
+remap data/chars/Enemys/Particle/idle00.gif data/chars/Enemys/Particle/MAp04.gif
+
+
+
+
+
+
+anim idle
+	loop	1
+	delay	12
+	offset	146 194
+	bbox	121 103 44 93
+	frame   data/chars/Enemys/Particle/idle00.gif
+	@cmd	depost 0
+	@cmd	throw 15 0.7 0.7 1 0 -1
+	@cmd	clearL
+	frame   data/chars/Enemys/Particle/idle00.gif
+
+
+
+anim walk
+	loop	1
+	delay	6
+	offset	146 194
+	bbox	131 130 35 54
+	frame	data/chars/Enemys/Particle/walk00.gif
+	frame	data/chars/Enemys/Particle/walk01.gif
+
+anim Backwalk
+	loop	1
+	delay	6
+	offset	146 194
+	bbox	126 106 40 79
+	frame	data/chars/Enemys/Particle/backwalk00.gif
+	frame	data/chars/Enemys/Particle/backwalk01.gif
+
+
+
+
+
+
+anim jump
+	loop	0
+	delay	15
+	offset	146 194
+	bbox	127 118 31 70
+	frame	data/chars/Enemys/Particle/Jump04.gif
+	frame	data/chars/Enemys/Particle/Jump05.gif
+	frame	data/chars/Enemys/Particle/Jump06.gif
+
+
+anim Freespecial
+	loop	0
+	delay	35
+        Range 80 100
+        RangeZ -5 5
+	jumpframe  7  3 2  0
+	offset	146 194
+        hitflash	MEdio
+        hitfx	data/sounds/golpes/medio.wav
+	frame	data/chars/Enemys/Particle/Jump00.gif
+		delay  5
+	frame	data/chars/Enemys/Particle/Jump01.gif
+	frame	data/chars/Enemys/Particle/Jump02.gif
+	frame	data/chars/Enemys/Particle/Jump03.gif
+	frame	data/chars/Enemys/Particle/Jump04.gif
+	frame	data/chars/Enemys/Particle/Jump05.gif
+	frame	data/chars/Enemys/Particle/Jump06.gif
+	frame	data/chars/Enemys/Particle/Jump07.gif
+	frame	data/chars/Enemys/Particle/Jump05.gif
+	frame	data/chars/Enemys/Particle/Jump06.gif
+	frame	data/chars/Enemys/Particle/Jump07.gif
+	frame	data/chars/Enemys/Particle/Jump05.gif
+	frame	data/chars/Enemys/Particle/Jump06.gif
+	frame	data/chars/Enemys/Particle/Jump07.gif
+
+anim Freespecial2
+	loop	0
+	delay	35
+        Range 80 150
+        RangeZ -15 -5
+	jumpframe  7  3 2  -1
+	offset	146 194
+        hitflash	MEdio
+        hitfx	data/sounds/golpes/medio.wav
+	frame	data/chars/Enemys/Particle/Jump00.gif
+		delay  5
+	frame	data/chars/Enemys/Particle/Jump01.gif
+	frame	data/chars/Enemys/Particle/Jump02.gif
+	frame	data/chars/Enemys/Particle/Jump03.gif
+	frame	data/chars/Enemys/Particle/Jump04.gif
+	frame	data/chars/Enemys/Particle/Jump05.gif
+	frame	data/chars/Enemys/Particle/Jump06.gif
+	frame	data/chars/Enemys/Particle/Jump07.gif
+	frame	data/chars/Enemys/Particle/Jump05.gif
+	frame	data/chars/Enemys/Particle/Jump06.gif
+	frame	data/chars/Enemys/Particle/Jump07.gif
+	frame	data/chars/Enemys/Particle/Jump05.gif
+	frame	data/chars/Enemys/Particle/Jump06.gif
+	frame	data/chars/Enemys/Particle/Jump07.gif
+
+
+anim Freespecial3
+	loop	0
+	delay	35
+        Range 80 150
+        RangeZ 5 15
+	jumpframe  7  3 2  1
+	offset	146 194
+        hitflash	MEdio
+        hitfx	data/sounds/golpes/medio.wav
+	frame	data/chars/Enemys/Particle/Jump00.gif
+		delay  5
+	frame	data/chars/Enemys/Particle/Jump01.gif
+	frame	data/chars/Enemys/Particle/Jump02.gif
+	frame	data/chars/Enemys/Particle/Jump03.gif
+	frame	data/chars/Enemys/Particle/Jump04.gif
+	frame	data/chars/Enemys/Particle/Jump05.gif
+	frame	data/chars/Enemys/Particle/Jump06.gif
+	frame	data/chars/Enemys/Particle/Jump07.gif
+	frame	data/chars/Enemys/Particle/Jump05.gif
+	frame	data/chars/Enemys/Particle/Jump06.gif
+	frame	data/chars/Enemys/Particle/Jump07.gif
+	frame	data/chars/Enemys/Particle/Jump05.gif
+	frame	data/chars/Enemys/Particle/Jump06.gif
+	frame	data/chars/Enemys/Particle/Jump07.gif
+
+
+anim Freespecial4
+	loop	0
+	delay	5
+        Range 150 250
+        RangeZ -5 5
+	offset	146 194
+        custknife LAser02
+        throwframe 7 0
+        hitflash	MEdio
+        hitfx	data/sounds/golpes/medio.wav
+	frame	data/chars/Enemys/Particle/LAser00.gif
+	frame	data/chars/Enemys/Particle/LAser01.gif
+	frame	data/chars/Enemys/Particle/LAser02.gif
+	frame	data/chars/Enemys/Particle/LAser03.gif
+	frame	data/chars/Enemys/Particle/LAser04.gif
+	frame	data/chars/Enemys/Particle/LAser05.gif
+	frame	data/chars/Enemys/Particle/LAser06.gif
+	frame	data/chars/Enemys/Particle/LAser07.gif
+		delay  35
+	frame	data/chars/Enemys/Particle/LAser08.gif
+	frame	data/chars/Enemys/Particle/LAser09.gif
+		delay  5
+	frame	data/chars/Enemys/Particle/LAser10.gif
+	frame	data/chars/Enemys/Particle/LAser11.gif
+	frame	data/chars/Enemys/Particle/LAser12.gif
+	frame	data/chars/Enemys/Particle/LAser13.gif
+	frame	data/chars/Enemys/Particle/LAser14.gif
+	frame	data/chars/Enemys/Particle/LAser15.gif
+
+anim Freespecial5
+	loop	0
+	delay	4
+	offset	146 194
+        Range 0 150
+        RangeZ -30 30
+        hitflash	cORTE
+	bbox	127 101 39 91
+		Attack1  0
+        Sound	data/sounds/golpes/Soco.wav
+        hitfx	data/sounds/golpes/cORTE.wav
+	frame  data/chars/Enemys/Particle/a200.Gif
+	frame  data/chars/Enemys/Particle/a211.Gif
+	frame  data/chars/Enemys/Particle/a222.Gif
+	frame  data/chars/Enemys/Particle/a233.Gif
+	frame  data/chars/Enemys/Particle/a244.Gif
+	frame  data/chars/Enemys/Particle/a255.Gif
+	frame  data/chars/Enemys/Particle/a266.Gif
+	frame  data/chars/Enemys/Particle/a277.Gif
+	frame  data/chars/Enemys/Particle/a288.Gif
+	frame  data/chars/Enemys/Particle/a299.Gif
+	frame  data/chars/Enemys/Particle/a210.Gif
+	frame  data/chars/Enemys/Particle/a211.Gif
+	frame  data/chars/Enemys/Particle/a212.Gif
+	frame  data/chars/Enemys/Particle/a213.Gif
+	frame  data/chars/Enemys/Particle/a214.Gif
+	frame  data/chars/Enemys/Particle/a215.Gif
+	frame  data/chars/Enemys/Particle/a216.Gif
+	frame  data/chars/Enemys/Particle/a217.Gif
+	frame  data/chars/Enemys/Particle/a218.Gif
+	frame  data/chars/Enemys/Particle/a219.Gif
+	frame  data/chars/Enemys/Particle/a220.Gif
+	frame  data/chars/Enemys/Particle/a221.Gif
+	frame  data/chars/Enemys/Particle/a222.Gif
+	frame  data/chars/Enemys/Particle/a223.Gif
+	frame  data/chars/Enemys/Particle/a224.Gif
+	frame  data/chars/Enemys/Particle/a225.Gif
+	frame  data/chars/Enemys/Particle/a226.Gif
+	frame  data/chars/Enemys/Particle/a227.Gif
+	frame  data/chars/Enemys/Particle/a228.Gif
+	frame  data/chars/Enemys/Particle/a229.Gif
+	frame  data/chars/Enemys/Particle/a230.Gif
+	frame  data/chars/Enemys/Particle/a231.Gif
+	frame  data/chars/Enemys/Particle/a232.Gif
+	frame  data/chars/Enemys/Particle/a233.Gif
+	frame  data/chars/Enemys/Particle/a234.Gif
+	frame  data/chars/Enemys/Particle/a235.Gif
+	frame  data/chars/Enemys/Particle/a236.Gif
+	frame  data/chars/Enemys/Particle/a237.Gif
+	frame  data/chars/Enemys/Particle/a238.Gif
+	frame  data/chars/Enemys/Particle/a239.Gif
+	frame  data/chars/Enemys/Particle/a240.Gif
+	frame  data/chars/Enemys/Particle/a241.Gif
+	frame  data/chars/Enemys/Particle/a242.Gif
+	frame  data/chars/Enemys/Particle/a243.Gif
+	frame  data/chars/Enemys/Particle/a244.Gif
+	frame  data/chars/Enemys/Particle/a245.Gif
+	frame  data/chars/Enemys/Particle/a246.Gif
+	frame  data/chars/Enemys/Particle/a247.Gif
+	frame  data/chars/Enemys/Particle/a248.Gif
+	frame  data/chars/Enemys/Particle/a249.Gif
+	frame  data/chars/Enemys/Particle/a250.Gif
+	frame  data/chars/Enemys/Particle/a251.Gif
+	frame  data/chars/Enemys/Particle/a252.Gif
+	frame  data/chars/Enemys/Particle/a253.Gif
+	frame  data/chars/Enemys/Particle/a254.Gif
+	frame  data/chars/Enemys/Particle/a255.Gif
+	frame  data/chars/Enemys/Particle/a256.Gif
+	frame  data/chars/Enemys/Particle/a257.Gif
+	frame  data/chars/Enemys/Particle/a258.Gif
+	frame  data/chars/Enemys/Particle/a259.Gif
+	frame  data/chars/Enemys/Particle/a260.Gif
+	frame  data/chars/Enemys/Particle/a261.Gif
+	frame  data/chars/Enemys/Particle/a262.Gif
+	frame  data/chars/Enemys/Particle/a263.Gif
+	frame  data/chars/Enemys/Particle/a264.Gif
+	frame  data/chars/Enemys/Particle/a265.Gif
+	frame  data/chars/Enemys/Particle/a266.Gif
+	frame  data/chars/Enemys/Particle/a267.Gif
+	frame  data/chars/Enemys/Particle/a268.Gif
+	frame  data/chars/Enemys/Particle/a269.Gif
+	frame  data/chars/Enemys/Particle/a270.Gif
+	frame  data/chars/Enemys/Particle/a271.Gif
+	frame  data/chars/Enemys/Particle/a272.Gif
+	frame  data/chars/Enemys/Particle/a273.Gif
+	frame  data/chars/Enemys/Particle/a274.Gif
+	frame  data/chars/Enemys/Particle/a275.Gif
+	frame  data/chars/Enemys/Particle/a276.Gif
+	frame  data/chars/Enemys/Particle/a277.Gif
+	frame  data/chars/Enemys/Particle/a278.Gif
+	frame  data/chars/Enemys/Particle/a279.Gif
+	frame  data/chars/Enemys/Particle/a280.Gif
+	frame  data/chars/Enemys/Particle/a281.Gif
+	frame  data/chars/Enemys/Particle/a282.Gif
+	frame  data/chars/Enemys/Particle/a283.Gif
+	frame  data/chars/Enemys/Particle/a284.Gif
+	frame  data/chars/Enemys/Particle/a285.Gif
+	frame  data/chars/Enemys/Particle/a286.Gif
+	frame  data/chars/Enemys/Particle/a287.Gif
+	frame  data/chars/Enemys/Particle/a288.Gif
+	frame  data/chars/Enemys/Particle/a289.Gif
+	frame  data/chars/Enemys/Particle/a290.Gif
+	frame  data/chars/Enemys/Particle/a291.Gif
+	frame  data/chars/Enemys/Particle/a292.Gif
+	frame  data/chars/Enemys/Particle/a293.Gif
+	frame  data/chars/Enemys/Particle/a294.Gif
+	frame  data/chars/Enemys/Particle/a295.Gif
+	frame  data/chars/Enemys/Particle/a296.Gif
+	frame  data/chars/Enemys/Particle/a297.Gif
+	frame  data/chars/Enemys/Particle/a298.Gif
+	frame  data/chars/Enemys/Particle/a299.Gif
+	frame  data/chars/Enemys/Particle/a2100.Gif
+	frame  data/chars/Enemys/Particle/a2101.Gif
+	frame  data/chars/Enemys/Particle/a2102.Gif
+	frame  data/chars/Enemys/Particle/a2103.Gif
+	frame  data/chars/Enemys/Particle/a2104.Gif
+	frame  data/chars/Enemys/Particle/a2105.Gif
+	frame  data/chars/Enemys/Particle/a2106.Gif
+	frame  data/chars/Enemys/Particle/a2107.Gif
+	frame  data/chars/Enemys/Particle/a2108.Gif
+	frame  data/chars/Enemys/Particle/a2109.Gif
+	frame  data/chars/Enemys/Particle/a2110.Gif
+	frame  data/chars/Enemys/Particle/a2111.Gif
+	frame  data/chars/Enemys/Particle/a2112.Gif
+	frame  data/chars/Enemys/Particle/a2113.Gif
+	frame  data/chars/Enemys/Particle/a2114.Gif
+	frame  data/chars/Enemys/Particle/a2115.Gif
+	frame  data/chars/Enemys/Particle/a2116.Gif
+	frame  data/chars/Enemys/Particle/a2117.Gif
+	frame  data/chars/Enemys/Particle/a2118.Gif
+	frame  data/chars/Enemys/Particle/a2119.Gif
+	frame  data/chars/Enemys/Particle/a2120.Gif
+	frame  data/chars/Enemys/Particle/a2121.Gif
+	frame  data/chars/Enemys/Particle/a2122.Gif
+	frame  data/chars/Enemys/Particle/a2123.Gif
+	frame  data/chars/Enemys/Particle/a2124.Gif
+	frame  data/chars/Enemys/Particle/a2125.Gif
+	frame  data/chars/Enemys/Particle/a2126.Gif
+	frame  data/chars/Enemys/Particle/a2127.Gif
+	frame  data/chars/Enemys/Particle/a2128.Gif
+	frame  data/chars/Enemys/Particle/a2129.Gif
+	frame  data/chars/Enemys/Particle/a2130.Gif
+	frame  data/chars/Enemys/Particle/a2131.Gif
+	frame  data/chars/Enemys/Particle/a2132.Gif
+	frame  data/chars/Enemys/Particle/a2133.Gif
+	frame  data/chars/Enemys/Particle/a2134.Gif
+	frame  data/chars/Enemys/Particle/a2135.Gif
+	frame  data/chars/Enemys/Particle/a2136.Gif
+	frame  data/chars/Enemys/Particle/a2137.Gif
+	frame  data/chars/Enemys/Particle/a2138.Gif
+	frame  data/chars/Enemys/Particle/a2139.Gif
+	frame  data/chars/Enemys/Particle/a2140.Gif
+	frame  data/chars/Enemys/Particle/a2141.Gif
+	frame  data/chars/Enemys/Particle/a2142.Gif
+	frame  data/chars/Enemys/Particle/a2143.Gif
+	frame  data/chars/Enemys/Particle/a2144.Gif
+	frame  data/chars/Enemys/Particle/a2145.Gif
+	frame  data/chars/Enemys/Particle/a2146.Gif
+	frame  data/chars/Enemys/Particle/a2147.Gif
+	frame  data/chars/Enemys/Particle/a2148.Gif
+	frame  data/chars/Enemys/Particle/a2149.Gif
+	frame  data/chars/Enemys/Particle/a2150.Gif
+	frame  data/chars/Enemys/Particle/a2151.Gif
+	frame  data/chars/Enemys/Particle/a2152.Gif
+	frame  data/chars/Enemys/Particle/a2153.Gif
+	frame  data/chars/Enemys/Particle/a2154.Gif
+	frame  data/chars/Enemys/Particle/a2155.Gif
+	frame  data/chars/Enemys/Particle/a2156.Gif
+	frame  data/chars/Enemys/Particle/a2157.Gif
+	frame  data/chars/Enemys/Particle/a2158.Gif
+	frame  data/chars/Enemys/Particle/a2159.Gif
+	frame  data/chars/Enemys/Particle/a2160.Gif
+	frame  data/chars/Enemys/Particle/a2161.Gif
+	frame  data/chars/Enemys/Particle/a2162.Gif
+	frame  data/chars/Enemys/Particle/a2163.Gif
+	frame  data/chars/Enemys/Particle/a2164.Gif
+	frame  data/chars/Enemys/Particle/a2165.Gif
+	frame  data/chars/Enemys/Particle/a2166.Gif
+	frame  data/chars/Enemys/Particle/a2167.Gif
+	frame  data/chars/Enemys/Particle/a2168.Gif
+	frame  data/chars/Enemys/Particle/a2169.Gif
+	frame  data/chars/Enemys/Particle/a2170.Gif
+	frame  data/chars/Enemys/Particle/a2171.Gif
+	frame  data/chars/Enemys/Particle/a2172.Gif
+	frame  data/chars/Enemys/Particle/a2173.Gif
+	frame  data/chars/Enemys/Particle/a2174.Gif
+	frame  data/chars/Enemys/Particle/a2175.Gif
+	frame  data/chars/Enemys/Particle/a2176.Gif
+	frame  data/chars/Enemys/Particle/a2177.Gif
+	frame  data/chars/Enemys/Particle/a2178.Gif
+	frame  data/chars/Enemys/Particle/a2179.Gif
+	frame  data/chars/Enemys/Particle/a2180.Gif
+	frame  data/chars/Enemys/Particle/a2181.Gif
+	frame  data/chars/Enemys/Particle/a2182.Gif
+	frame  data/chars/Enemys/Particle/a2183.Gif
+	frame  data/chars/Enemys/Particle/a2184.Gif
+	frame  data/chars/Enemys/Particle/a2185.Gif
+	frame  data/chars/Enemys/Particle/a2186.Gif
+	frame  data/chars/Enemys/Particle/a2187.Gif
+	frame  data/chars/Enemys/Particle/a2188.Gif
+	frame  data/chars/Enemys/Particle/a2189.Gif
+	frame  data/chars/Enemys/Particle/a2190.Gif
+	frame  data/chars/Enemys/Particle/a2191.Gif
+	frame  data/chars/Enemys/Particle/a2192.Gif
+	frame  data/chars/Enemys/Particle/a2193.Gif
+	frame  data/chars/Enemys/Particle/a2194.Gif
+	frame  data/chars/Enemys/Particle/a2195.Gif
+	frame  data/chars/Enemys/Particle/a2196.Gif
+	frame  data/chars/Enemys/Particle/a2197.Gif
+	frame  data/chars/Enemys/Particle/a2198.Gif
+	frame  data/chars/Enemys/Particle/a2199.Gif
+	frame  data/chars/Enemys/Particle/a2200.Gif
+	frame  data/chars/Enemys/Particle/a2201.Gif
+	frame  data/chars/Enemys/Particle/a2202.Gif
+	frame  data/chars/Enemys/Particle/a2203.Gif
+	frame  data/chars/Enemys/Particle/a2204.Gif
+	frame  data/chars/Enemys/Particle/a2205.Gif
+	frame  data/chars/Enemys/Particle/a2206.Gif
+	frame  data/chars/Enemys/Particle/a2207.Gif
+	frame  data/chars/Enemys/Particle/a2208.Gif
+	frame  data/chars/Enemys/Particle/a2209.Gif
+	frame  data/chars/Enemys/Particle/a2210.Gif
+	frame  data/chars/Enemys/Particle/a2211.Gif
+	frame  data/chars/Enemys/Particle/a2212.Gif
+	frame  data/chars/Enemys/Particle/a2213.Gif
+	frame  data/chars/Enemys/Particle/a2214.Gif
+	frame  data/chars/Enemys/Particle/a2215.Gif
+	frame  data/chars/Enemys/Particle/a2216.Gif
+	frame  data/chars/Enemys/Particle/a2217.Gif
+	frame  data/chars/Enemys/Particle/a2218.Gif
+	frame  data/chars/Enemys/Particle/a2219.Gif
+	frame  data/chars/Enemys/Particle/a2220.Gif
+	frame  data/chars/Enemys/Particle/a2221.Gif
+
+
+anim attack1
+	loop	0
+	delay	4
+	offset	146 194
+        Range 0 80
+        RangeZ -5 5
+        hitflash	cORTE
+	bbox	127 101 39 91
+		Attack1  0
+        Sound	data/sounds/golpes/Soco.wav
+        hitfx	data/sounds/golpes/cORTE.wav
+	frame	data/chars/Enemys/Particle/a100.gif
+	frame	data/chars/Enemys/Particle/a101.gif
+	frame	data/chars/Enemys/Particle/a102.gif
+		attack1  147  113  50  29  7  1  0  0  0  10
+	frame	data/chars/Enemys/Particle/a103.gif
+	frame	data/chars/Enemys/Particle/a104.gif
+		attack1  147  116  69  24  7  1  0  0  0  10
+	frame	data/chars/Enemys/Particle/a105.gif
+		attack1  141  113  86  25  7  1  0  0  0  10
+	frame	data/chars/Enemys/Particle/a106.gif
+	frame	data/chars/Enemys/Particle/a107.gif
+		attack1  146  111  88  29  7  1  0  0  0  10
+	frame	data/chars/Enemys/Particle/a108.gif
+	frame	data/chars/Enemys/Particle/a109.gif
+	frame	data/chars/Enemys/Particle/a108.gif
+	frame	data/chars/Enemys/Particle/a107.gif
+		Attack1  0
+		delay  2
+	frame	data/chars/Enemys/Particle/a106.gif
+		attack1  137  116  77  28  7  1  0  0  0  100
+	frame	data/chars/Enemys/Particle/a105.gif
+	frame	data/chars/Enemys/Particle/a104.gif
+	frame	data/chars/Enemys/Particle/a103.gif
+	frame	data/chars/Enemys/Particle/a102.gif
+	frame	data/chars/Enemys/Particle/a101.gif
+
+
+
+
+
+anim pain
+	loop	0
+	offset	146 194
+	bbox	126 113 36 70
+	delay	5
+	frame	data/chars/Enemys/Particle/pain01.gif
+		delay  25
+		offset  144  194
+	frame	data/chars/Enemys/Particle/pain01.gif
+
+anim pain3
+	loop	0
+	offset	146 194
+	bbox	131 117 30 66
+	delay	5
+	jumpframe  0  2  0  0
+	frame	data/chars/Enemys/Particle/pain01.gif
+		delay  25
+		offset  144  194
+	frame	data/chars/Enemys/Particle/pain01.gif
+
+anim pain4
+	loop	0
+	offset	146 194
+	bbox	133 118 27 67
+	delay	5
+	frame	data/chars/Enemys/Particle/pain01.gif
+		delay  900
+		offset  145  194
+	frame	data/chars/Enemys/Particle/pain01.gif
+
+
+anim grabbed
+	loop	0
+	offset	146 194
+	bbox	121 113 47 83
+	delay	40
+	frame	data/chars/Enemys/Particle/pain02.gif
+
+
+
+anim pain2
+	loop	0
+	offset	146 194
+	bbox	129 120 32 63
+	delay	5
+	frame	data/chars/Enemys/Particle/pain02.gif
+		delay  25
+		offset  144  194
+	frame	data/chars/Enemys/Particle/pain02.gif
+
+
+
+
+
+anim fall2
+	loop	0
+	offset	146 194
+	jumpframe  0  3  -3  0
+	delay	20
+        hitfx	data/sounds/golpes/Forte.wav
+		attack  0
+	frame	data/chars/Enemys/Particle/fall00.gif
+		Attack1  0
+	frame	data/chars/Enemys/Particle/fall01.gif
+		delay  10
+	frame	data/chars/Enemys/Particle/fall02.gif
+
+anim fall
+	loop	0
+	offset	146 194
+	delay	20
+        hitfx	data/sounds/golpes/Forte.wav
+		attack  0
+	frame	data/chars/Enemys/Particle/fall00.gif
+		Attack1  0
+	frame	data/chars/Enemys/Particle/fall01.gif
+		delay  10
+	frame	data/chars/Enemys/Particle/fall02.gif
+
+anim fall6 #Shok
+	loop	0
+	offset	145 196
+	delay	5
+        hitfx	data/sounds/golpes/Forte.wav
+		attack  0
+	frame	data/chars/Enemys/Particle/fall01.gif
+	frame	data/chars/Enemys/Particle/fall200.gif
+	frame	data/chars/Enemys/Particle/fall01.gif
+	frame	data/chars/Enemys/Particle/fall200.gif
+	frame	data/chars/Enemys/Particle/fall01.gif
+		offset  144  192
+	frame	data/chars/Enemys/Particle/fall02.gif
+
+
+anim fall7 #Burn
+	loop	0
+	offset	147 195
+	delay	10
+        hitfx	data/sounds/golpes/Forte.wav
+		attack  0
+	frame	data/chars/Enemys/Particle/FALL300.gif
+	frame	data/chars/Enemys/Particle/FALL301.gif
+	frame	data/chars/Enemys/Particle/FALL302.gif
+	frame	data/chars/Enemys/Particle/FALL300.gif
+	frame	data/chars/Enemys/Particle/FALL301.gif
+		offset  144  192
+	frame	data/chars/Enemys/Particle/FALL02.gif
+
+
+anim rise
+	loop	0
+	offset	146 194
+	delay	20
+	frame	data/chars/Enemys/Particle/Rise00.gif
+	frame	data/chars/Enemys/Particle/Rise01.gif
+	frame	data/chars/Enemys/Particle/Rise02.gif
+
+
+
+
+anim jUMPland
+	loop	0
+	delay	15
+	offset	146 194
+	bbox	133 131 35 52
+	frame	data/chars/Enemys/Particle/Land.gif
+
+
+anim land
+	loop	0
+	delay	15
+	offset	146 194
+	bbox	131 129 35 54
+	frame	data/chars/Enemys/Particle/Land.gif
+
+
+anim Fall9
+	loop	0
+	offset	146 194
+	delay	999
+	frame	data/chars/Enemys/Particle/pain01.gif #0
+	frame	data/chars/Enemys/Particle/pain02.gif #1
+	frame	data/chars/Enemys/Particle/fall01.gif #2
+	frame	data/chars/Enemys/Particle/fall02.gif #3
+		offset  172  181
+	frame	data/chars/Enemys/Particle/fall400.gif #4
+		offset  147  196
+	frame	data/chars/Enemys/Particle/fall401.gif #5
+		offset  133  166
+	frame	data/chars/Enemys/Particle/fall402.gif #6
+		offset  167  179
+	frame  data/chars/Enemys/Particle/fall403.gif #7
+		offset  148  192
+	delay	20
+	frame	data/chars/Enemys/Particle/fall401.gif #8
+	delay	30
+		offset  153  179
+	frame	data/chars/Enemys/Particle/fall404.gif #9
+	offset	140 190
+	frame	data/chars/Enemys/Particle/Fall405.gif #10
+
+
+anim Fall8
+	loop	0
+	flipframe  0
+	offset	144 196
+	delay	30
+	frame	data/chars/Enemys/Particle/fall01.gif #0
+	delay	15
+		offset  134  192
+	frame	data/chars/Enemys/Particle/fall02.gif #1
+
+
+anim Fall5
+	loop	0
+	flipframe  1
+	offset	138 197
+	delay	30
+	frame	data/chars/Enemys/Particle/fall01.gif #0
+	delay	15
+	frame	data/chars/Enemys/Particle/fall02.gif #1
+

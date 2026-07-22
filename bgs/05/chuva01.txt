@@ -1,0 +1,86 @@
+name			Chuva01 #GROUND
+type			Panel
+Speed 0
+setlayer 999
+#noquake 	1 1
+#offscreenkill	1000
+Alpha 1
+
+
+
+anim idle
+	loop	1
+	offset	0 758
+		delay  2
+	frame	data/Bgs/05/Chuva/Chuva200.gif
+offset  0 748
+	frame	data/Bgs/05/Chuva/Chuva200.gif
+offset  0 738
+	frame	data/Bgs/05/Chuva/Chuva200.gif
+offset  0 728
+	frame	data/Bgs/05/Chuva/Chuva200.gif
+offset  0 718
+	frame	data/Bgs/05/Chuva/Chuva200.gif
+offset  0 708
+	frame	data/Bgs/05/Chuva/Chuva200.gif
+offset  0 698
+	frame	data/Bgs/05/Chuva/Chuva200.gif
+offset  0 688
+	frame	data/Bgs/05/Chuva/Chuva200.gif
+offset  0 678
+	frame	data/Bgs/05/Chuva/Chuva200.gif
+offset  0 668
+	frame	data/Bgs/05/Chuva/Chuva200.gif
+offset  0 658
+	frame	data/Bgs/05/Chuva/Chuva200.gif
+offset  0 648
+	frame	data/Bgs/05/Chuva/Chuva200.gif
+offset  0 638
+	frame	data/Bgs/05/Chuva/Chuva200.gif
+offset  0 628
+	frame	data/Bgs/05/Chuva/Chuva200.gif
+offset  0 618
+	frame	data/Bgs/05/Chuva/Chuva200.gif
+offset  0 608
+	frame	data/Bgs/05/Chuva/Chuva200.gif
+offset  0 598
+	frame	data/Bgs/05/Chuva/Chuva200.gif
+offset  0 588
+	frame	data/Bgs/05/Chuva/Chuva200.gif
+offset  0 578
+	frame	data/Bgs/05/Chuva/Chuva200.gif
+offset  0 568
+	frame	data/Bgs/05/Chuva/Chuva200.gif
+offset  0 558
+	frame	data/Bgs/05/Chuva/Chuva200.gif
+offset  0 548
+	frame	data/Bgs/05/Chuva/Chuva200.gif
+offset  0 538
+	frame	data/Bgs/05/Chuva/Chuva200.gif
+offset  0 528
+	frame	data/Bgs/05/Chuva/Chuva200.gif
+offset  0 518
+	frame	data/Bgs/05/Chuva/Chuva200.gif
+offset  0 508
+	frame	data/Bgs/05/Chuva/Chuva200.gif
+offset  0 498
+	frame	data/Bgs/05/Chuva/Chuva200.gif
+offset  0 488
+	frame	data/Bgs/05/Chuva/Chuva200.gif
+offset  0 478
+	frame	data/Bgs/05/Chuva/Chuva200.gif
+offset  0 468
+	frame	data/Bgs/05/Chuva/Chuva200.gif
+offset  0 458
+	frame	data/Bgs/05/Chuva/Chuva200.gif
+offset  0 448
+	frame	data/Bgs/05/Chuva/Chuva200.gif
+offset  0 438
+	frame	data/Bgs/05/Chuva/Chuva200.gif
+offset  0 428
+	frame	data/Bgs/05/Chuva/Chuva200.gif
+offset  0 418
+	frame	data/Bgs/05/Chuva/Chuva200.gif
+offset  0 408
+	frame	data/Bgs/05/Chuva/Chuva200.gif
+

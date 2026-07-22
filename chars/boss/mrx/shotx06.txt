@@ -1,0 +1,55 @@
+name			ShotX06
+type			none
+subtype			project
+health			1
+nolife			1
+lifespan		2
+candamage			Player npc obstacle
+remove			1
+shadow			0
+#antigravity		100
+onblockwscript	data/scripts/bounceF.c
+#animationscript 	data/scripts/ani0020.h
+animationscript		data/scripts/drago.c
+ondrawscript 		data/scripts/Enemy_ondrawscript.c
+
+anim idle
+	loop	0
+	delay	4
+	offset	25 28
+	hitflash Fraco
+        hitfx	data/sounds/golpes/fraco.wav
+	frame	data/chars/Boss/mrx/cartridge00.gif
+	frame	data/chars/Boss/mrx/cartridge01.gif
+	frame	data/chars/Boss/mrx/cartridge02.gif
+	frame	data/chars/Boss/mrx/cartridge03.gif
+	frame	data/chars/Boss/mrx/cartridge00.gif
+	frame	data/chars/Boss/mrx/cartridge01.gif
+	frame	data/chars/Boss/mrx/cartridge02.gif
+	frame	data/chars/Boss/mrx/cartridge03.gif
+	frame	data/chars/Boss/mrx/cartridge00.gif
+	frame	data/chars/Boss/mrx/cartridge01.gif
+	frame	data/chars/Boss/mrx/cartridge02.gif
+	frame	data/chars/Boss/mrx/cartridge00.gif
+	frame	data/chars/Boss/mrx/cartridge01.gif
+	frame	data/chars/Boss/mrx/cartridge02.gif
+	frame	data/chars/Boss/mrx/cartridge03.gif
+	frame	data/chars/Boss/mrx/cartridge00.gif
+	frame	data/chars/Boss/mrx/cartridge01.gif
+	frame	data/chars/Boss/mrx/cartridge02.gif
+	frame	data/chars/Boss/mrx/cartridge03.gif
+	frame	data/chars/Boss/mrx/cartridge00.gif
+	frame	data/chars/Boss/mrx/cartridge01.gif
+	delay	50
+	frame	data/chars/Boss/mrx/cartridge02.gif
+	delay	5
+	frame	data/chars/Boss/mrx/00.gif
+	frame	data/chars/Boss/mrx/cartridge02.gif
+	frame	data/chars/Boss/mrx/00.gif
+	frame	data/chars/Boss/mrx/cartridge02.gif
+	frame	data/chars/Boss/mrx/00.gif
+	frame	data/chars/Boss/mrx/cartridge02.gif
+	frame	data/chars/Boss/mrx/00.gif
+	@cmd killentity getlocalvar("self")
+	frame	data/chars/Boss/mrx/00.gif
+

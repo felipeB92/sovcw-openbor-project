@@ -1,0 +1,27 @@
+
+name			HAwkP03 #THROWNED
+type			none
+speed 12
+candamage			enemy obstacle
+alpha 1
+nolife			1
+lifespan		4
+remove			1
+gfxshadow		0 0
+flash			Forte
+antigravity 100
+
+anim idle
+	loop	0
+	offset	72 115
+		delay  10
+	drawmethod tintmode 6
+	drawmethod tintcolor -255
+	frame	data/chars/players/Hawk/fs200.gif
+	frame	data/chars/players/Hawk/fs201.gif
+	frame	data/chars/players/Hawk/fs202.gif
+	frame	data/chars/players/Hawk/fs203.gif
+	frame	data/chars/players/Hawk/fs204.gif
+	@cmd killentity getlocalvar("self")
+	frame	data/chars/players/Hawk/fs204.gif
+

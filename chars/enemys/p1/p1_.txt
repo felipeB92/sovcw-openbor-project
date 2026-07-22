@@ -1,0 +1,429 @@
+name	P1_
+health	70
+mp 30
+mprate 1
+#secret 1
+Falldie 2
+Grabdistance 18
+riseinv				0.4 1
+speed	12
+type	Enemy
+gfxshadow	1
+candamage			Player npc obstacle
+JUMPHEIGHT 4
+hostile Player NPC
+antigrab 2
+atchain   1 1 2 3 4 5
+weapons P1_Knife P1_Sword P1_pipe P1_Kunai
+icon	data/chars/Enemys/P1/icon.gif 1
+#diesound data/Sounds/Die5.wav
+running	20	3	2	1	1
+onblockwscript	data/scripts/bounceF.c
+#animationscript 	data/scripts/ani0020.h
+animationscript		data/scripts/drago.c
+ondrawscript 		data/scripts/Enemy_ondrawscript.c
+
+
+
+Load LAser
+Load EX02
+#Load P1_Pipe
+#Load P1_Kunai
+#Load P1_Sword
+
+remap data/chars/Enemys/P1/idle00.gif data/chars/Enemys/P1/MAp01.gif
+remap data/chars/Enemys/P1/idle00.gif data/chars/Enemys/P1/MAp02.gif
+remap data/chars/Enemys/P1/idle00.gif data/chars/Enemys/P1/MAp03.gif
+remap data/chars/Enemys/P1/idle00.gif data/chars/Enemys/P1/MAp04.gif
+
+
+
+
+anim Spawn
+	loop	0
+	delay	999
+	offset	145 183
+	bbox	122 118 40 68
+	frame   data/chars/Enemys/P1/idle00.gif
+	frame   data/chars/Enemys/P1/idle00.gif
+
+anim PAin5
+	loop	0
+	delay	12
+	offset	145 183
+	bbox	122 118 40 68
+	frame   data/chars/Enemys/P1/idle00.gif
+
+
+anim Death
+	loop	0
+	delay	80
+	offset	145 183
+	frame   data/chars/Enemys/P1/fall02.gif
+	delay	12
+	frame   data/chars/Enemys/P1/death00.gif
+	@cmd  spawn01  "EX02"  0  10  1
+		Attack1  0
+	frame   data/chars/Enemys/P1/death01.gif
+	frame   data/chars/Enemys/P1/death02.gif
+
+
+anim idle
+	loop	1
+	delay	12
+	offset	145 183
+	bbox	122 118 40 68
+	frame   data/chars/Enemys/P1/idle00.gif
+	@cmd	depost 0
+	@cmd	throw 15 0.7 0.7 1 0 -1
+	@cmd	clearL
+	frame   data/chars/Enemys/P1/idle00.gif
+
+
+
+anim walk
+	loop	1
+	delay	6
+	offset	145 183
+	bbox	131 130 35 54
+	frame	data/chars/Enemys/P1/walk00.gif
+	frame	data/chars/Enemys/P1/walk01.gif
+
+anim Backwalk
+	loop	1
+	delay	6
+	offset	145 183
+	bbox	137 130 24 53
+	frame	data/chars/Enemys/P1/backwalk00.gif
+	frame	data/chars/Enemys/P1/backwalk01.gif
+
+
+
+
+
+
+anim jump
+	loop	0
+	delay	15
+	offset	145 183
+	bbox	127 118 31 70
+	frame	data/chars/Enemys/P1/Jump08.gif
+	frame	data/chars/Enemys/P1/Jump09.gif
+	frame	data/chars/Enemys/P1/Jump08.gif
+
+
+anim Freespecial
+	loop	0
+	delay	35
+        Range 80 100
+        RangeZ -5 5
+	jumpframe  7  3 2  0
+	offset	145 183
+        hitflash	MEdio
+        hitfx	data/sounds/golpes/medio.wav
+	frame	data/chars/Enemys/P1/Jump00.gif
+		delay  5
+	frame	data/chars/Enemys/P1/Jump01.gif
+	frame	data/chars/Enemys/P1/Jump02.gif
+	frame	data/chars/Enemys/P1/Jump03.gif
+	frame	data/chars/Enemys/P1/Jump04.gif
+	frame	data/chars/Enemys/P1/Jump05.gif
+	frame	data/chars/Enemys/P1/Jump06.gif
+		delay  10
+	frame	data/chars/Enemys/P1/Jump07.gif
+	frame	data/chars/Enemys/P1/Jump08.gif
+	frame	data/chars/Enemys/P1/Jump09.gif
+	frame  data/chars/Enemys/P1/Jump07.gif
+	frame  data/chars/Enemys/P1/Jump09.gif
+	frame  data/chars/Enemys/P1/Jump08.gif
+
+anim Freespecial2
+	loop	0
+	delay	35
+        Range 80 150
+        RangeZ -15 -5
+	jumpframe  7  3 2  -2
+	offset	145 183
+        hitflash	MEdio
+        hitfx	data/sounds/golpes/medio.wav
+	frame	data/chars/Enemys/P1/Jump00.gif
+		delay  5
+	frame	data/chars/Enemys/P1/Jump01.gif
+	frame	data/chars/Enemys/P1/Jump02.gif
+	frame	data/chars/Enemys/P1/Jump03.gif
+	frame	data/chars/Enemys/P1/Jump04.gif
+	frame	data/chars/Enemys/P1/Jump05.gif
+	frame	data/chars/Enemys/P1/Jump06.gif
+		delay  10
+	frame	data/chars/Enemys/P1/Jump07.gif
+	frame	data/chars/Enemys/P1/Jump08.gif
+	frame	data/chars/Enemys/P1/Jump09.gif
+	frame  data/chars/Enemys/P1/Jump07.gif
+	frame  data/chars/Enemys/P1/Jump09.gif
+	frame  data/chars/Enemys/P1/Jump08.gif
+
+
+anim Freespecial3
+	loop	0
+	delay	35
+        Range 80 150
+        RangeZ 5 15
+	jumpframe  7  3 2  2
+	offset	145 183
+        hitflash	MEdio
+        hitfx	data/sounds/golpes/medio.wav
+	frame	data/chars/Enemys/P1/Jump00.gif
+		delay  5
+	frame	data/chars/Enemys/P1/Jump01.gif
+	frame	data/chars/Enemys/P1/Jump02.gif
+	frame	data/chars/Enemys/P1/Jump03.gif
+	frame	data/chars/Enemys/P1/Jump04.gif
+	frame	data/chars/Enemys/P1/Jump05.gif
+	frame	data/chars/Enemys/P1/Jump06.gif
+		delay  10
+	frame	data/chars/Enemys/P1/Jump07.gif
+	frame	data/chars/Enemys/P1/Jump08.gif
+	frame	data/chars/Enemys/P1/Jump09.gif
+	frame  data/chars/Enemys/P1/Jump07.gif
+	frame  data/chars/Enemys/P1/Jump09.gif
+	frame  data/chars/Enemys/P1/Jump08.gif
+
+anim Freespecial4
+	loop	0
+	delay	35
+        Range 150 250
+        RangeZ -5 5
+	offset	145 183
+        custknife LAser
+        throwframe 5 0
+        hitflash	MEdio
+        hitfx	data/sounds/golpes/medio.wav
+	frame	data/chars/Enemys/P1/Fs100.gif
+	delay	8
+	frame	data/chars/Enemys/P1/Fs101.gif
+	frame	data/chars/Enemys/P1/Fs102.gif
+        Sound	data/sounds/lasershot.wav
+	frame	data/chars/Enemys/P1/Fs104.gif
+	frame	data/chars/Enemys/P1/Fs105.gif
+	frame	data/chars/Enemys/P1/Fs106.gif
+	delay	40
+	frame	data/chars/Enemys/P1/Fs107.gif
+	frame	data/chars/Enemys/P1/Fs108.gif
+
+
+
+
+anim attack1
+	loop	0
+	delay	12
+	offset	145 183
+        Range 0 80
+        RangeZ -5 5
+        hitflash	MEdio
+	bbox	63 44 31 76
+		Attack1  0
+        Sound	data/sounds/golpes/Soco.wav
+        hitfx	data/sounds/golpes/Medio.wav
+	frame	data/chars/Enemys/P1/a100.gif
+        Sound	data/sounds/Dash.wav
+		attack1  130  132  45  25  7  1  0  0  0  10
+		delay  7
+        @cmd dasher 2 0 0
+		bbox  123  131  39  52
+	frame	data/chars/Enemys/P1/a101.gif
+	frame	data/chars/Enemys/P1/a102.gif
+	frame  data/chars/Enemys/P1/a103.gif
+	frame	data/chars/Enemys/P1/a101.gif
+	frame	data/chars/Enemys/P1/a102.gif
+        @cmd dasher  0 0 0
+	frame  data/chars/Enemys/P1/a100.gif
+
+
+
+
+anim pain
+	loop	0
+	offset	145 183
+	bbox	126 113 36 70
+	delay	5
+	frame	data/chars/Enemys/P1/pain01.gif
+		delay  25
+		offset  144  183
+	frame	data/chars/Enemys/P1/pain01.gif
+
+anim pain3
+	loop	0
+	offset	145 183
+	bbox	131 117 30 66
+	delay	5
+	jumpframe  0  2  0  0
+	frame	data/chars/Enemys/P1/pain01.gif
+		delay  25
+		offset  143  183
+	frame	data/chars/Enemys/P1/pain01.gif
+
+anim pain4
+	loop	0
+	offset	145 183
+	bbox	133 118 27 67
+	delay	5
+	frame	data/chars/Enemys/P1/pain01.gif
+		delay  900
+		offset  143  183
+	frame	data/chars/Enemys/P1/pain01.gif
+
+
+anim grabbed
+	loop	0
+	offset	145 183
+	bbox	126 118 31 66
+	delay	40
+	frame	data/chars/Enemys/P1/pain02.gif
+
+
+
+anim pain2
+	loop	0
+	offset	145 183
+	bbox	129 120 32 63
+	delay	5
+	frame	data/chars/Enemys/P1/pain02.gif
+		delay  25
+		offset  143  183
+	frame	data/chars/Enemys/P1/pain02.gif
+
+
+
+
+
+anim fall2
+	loop	0
+	offset	145 183
+	jumpframe  0  3  -3  0
+	delay	20
+        hitfx	data/sounds/golpes/Forte.wav
+		attack  0
+	frame	data/chars/Enemys/P1/fall00.gif
+		Attack1  0
+	frame	data/chars/Enemys/P1/fall01.gif
+		delay  10
+	frame	data/chars/Enemys/P1/fall02.gif
+
+anim fall
+	loop	0
+	offset	145 183
+	delay	20
+        hitfx	data/sounds/golpes/Forte.wav
+		attack  0
+	frame	data/chars/Enemys/P1/fall00.gif
+		Attack1  0
+	frame	data/chars/Enemys/P1/fall01.gif
+		delay  10
+	frame	data/chars/Enemys/P1/fall02.gif
+
+anim fall6 #Shok
+	loop	0
+	offset	145 164
+	delay	5
+        hitfx	data/sounds/golpes/Forte.wav
+		attack  0
+	frame	data/chars/Enemys/P1/fall01.gif
+	frame	data/chars/Enemys/P1/fall200.gif
+	frame	data/chars/Enemys/P1/fall01.gif
+	frame	data/chars/Enemys/P1/fall200.gif
+	frame	data/chars/Enemys/P1/fall01.gif
+		offset  145  183
+	frame	data/chars/Enemys/P1/fall02.gif
+
+
+anim fall7 #Burn
+	loop	0
+	offset	133 163
+	delay	10
+        hitfx	data/sounds/golpes/Forte.wav
+		attack  0
+	frame	data/chars/Enemys/P1/FALL300.gif
+	frame	data/chars/Enemys/P1/FALL301.gif
+	frame	data/chars/Enemys/P1/FALL302.gif
+	frame	data/chars/Enemys/P1/FALL300.gif
+	frame	data/chars/Enemys/P1/FALL301.gif
+		offset  145  183
+	frame	data/chars/Enemys/P1/FALL02.gif
+
+
+anim rise
+	loop	0
+	offset	145 183
+	delay	20
+	frame	data/chars/Enemys/P1/Rise00.gif
+	frame	data/chars/Enemys/P1/Rise01.gif
+	frame	data/chars/Enemys/P1/Rise02.gif
+
+
+
+
+anim jUMPland
+	loop	0
+	delay	15
+	offset	145 183
+	bbox	133 131 35 52
+	frame	data/chars/Enemys/P1/Land.gif
+
+
+anim land
+	loop	0
+	delay	15
+	offset	145 183
+	bbox	131 129 35 54
+	frame	data/chars/Enemys/P1/Land.gif
+
+
+anim Fall9
+	loop	0
+	offset	145 183
+	delay	999
+	frame	data/chars/Enemys/P1/pain01.gif #0
+	frame	data/chars/Enemys/P1/pain02.gif #1
+		offset  145  163
+	frame	data/chars/Enemys/P1/fall01.gif #2
+		offset  134  181
+	frame	data/chars/Enemys/P1/fall02.gif #3
+		offset  153  183
+	frame	data/chars/Enemys/P1/fall400.gif #4
+		offset  144  184
+	frame	data/chars/Enemys/P1/fall401.gif #5
+		offset  146  152
+	frame	data/chars/Enemys/P1/fall402.gif #6
+		offset  167  179
+	frame  data/chars/Enemys/P1/fall403.gif #7
+		offset  141  185
+	delay	20
+	frame	data/chars/Enemys/P1/fall401.gif #8
+	delay	30
+		offset  135  161
+	frame	data/chars/Enemys/P1/fall404.gif #9
+	offset	129 178
+	frame	data/chars/Enemys/P1/Fall405.gif #10
+
+
+anim Fall8
+	loop	0
+	flipframe  0
+	offset	145 164
+	delay	30
+	frame	data/chars/Enemys/P1/fall01.gif #0
+	delay	15
+		offset  123  182
+	frame	data/chars/Enemys/P1/fall02.gif #1
+
+
+anim Fall5
+	loop	0
+	flipframe  1
+	offset	145 165
+	delay	30
+	frame	data/chars/Enemys/P1/fall01.gif #0
+	delay	15
+		offset  130  180
+	frame	data/chars/Enemys/P1/fall02.gif #1
+

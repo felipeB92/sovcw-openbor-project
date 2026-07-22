@@ -1,0 +1,192 @@
+music		data/music/200a.ogg
+bossmusic	data/music/Boss.bor
+scrollspeed 0.5#1
+stagenumber 1
+background	data/bgs/200/BAck00.gif 	0.675 1 0 0 0 0 -1 1 1
+bglayer		data/bgs/200/BAck00b.gif 	0.475 1 0 0 0 0 -1 1 1
+bglayer		data/bgs/200/BAck00c.gif 	0.475 1 0 0 0 0 -1 1 1 1
+#water		data/bgs/01/Mar01.gif		0.5
+#fglayer         data/bgs/00/FOG.gif              0.5 1 0 0 0 0 -1 1 1 0 1 3 10 0.3
+panel		data/bgs/200/pn01.gif		none	none
+#frontpanel	data/bgs/00/Front01.gif		
+cameratype 1
+cameraoffset 0 -30
+#levelscript @script
+#void main() {
+#	changelevelproperty("camerazoffset", 0);
+#	changelevelproperty("cameraxoffset", 0);
+#}
+#@end_script
+settime         99
+notime          0
+noslow          1
+order		a
+spawn1  	50 20 50
+spawn2  	55 35 50
+spawn3  	60 50 50
+
+
+light		128 -128
+at			0
+
+spawn  IntroST
+Flip 1
+	coords  0 4
+	at  0
+
+
+spawn  Time01
+Flip 1
+	coords  0 0
+	at  0
+
+
+spawn  LAta04
+       item Chocolate
+	coords  400 230 1
+	at  0
+
+wait
+at       0
+
+group 3 3
+at  0
+
+spawn  Tommy
+map  2
+health 40
+	coords  550 250 1
+	at  0
+
+spawn  DK
+map  2
+health 40
+	coords  530 220 1
+	at  0
+
+spawn  Poison
+map  2
+health 40
+	coords  -50 250 1
+	at 0
+
+spawn  LAuren
+map  4
+health 40
+	coords  50 220 300
+	at  0
+
+
+
+spawn  DK
+map  1
+health 40
+	coords 250 250 300
+	at  100
+
+spawn  DK
+map  2
+health 40
+	coords  550 220 300
+	at  150
+
+
+wait
+at       250
+
+group 3 3
+at  250
+
+
+spawn  DK
+map  3
+health 40
+	coords  530 220 1
+	at  250
+
+spawn  Kenny
+map  4
+health 40
+	coords  -100 250 1
+	at  250
+
+spawn  HAgen
+map  2
+health 70
+	coords  50 220 300
+	at  250
+
+
+spawn  Poison
+map  3
+health 40
+	coords  250 220 300
+	at  250
+
+spawn  DK
+map  4
+health 40
+	coords  530 220 1
+	at 250
+
+
+
+spawn  Smachine
+Alias Sonic_Machine
+Boss 1
+health 300
+	coords  550 250
+	at  320
+
+spawn  ACt
+	coords  550 250
+	at  320
+
+wait
+at       450
+
+group 2 2
+at  450
+
+spawn  Tommy
+map  2
+health 40
+	coords  550 250 1
+	at  450
+
+group 3 3
+at  450
+
+spawn  DK
+map  2
+health 40
+	coords  530 220 1
+	at  450
+
+spawn  Poison
+map  2
+health 40
+	coords  -50 250 1
+	at 450
+
+spawn  LAuren
+map  1
+health 40
+	coords  50 220 300
+	at  450
+
+
+
+spawn  DK
+map  4
+health 40
+	coords 550 250 300
+	at  450
+
+spawn  DK
+map  1
+health 40
+	coords  550 220 300
+	at  450
+
+

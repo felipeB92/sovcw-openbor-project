@@ -1,0 +1,328 @@
+name	Crakito_
+health	100
+mp 30
+mprate 1
+#secret 1
+Falldie 2
+Grabdistance 18
+riseinv				0.4 1
+speed	6
+type	Enemy
+gfxshadow	1
+candamage			Player npc obstacle
+JUMPHEIGHT 4
+hostile Player NPC
+#antigrab 2
+atchain   1 1 2 3 4 5
+#weapons Blaze_Knife Blaze_Sword Blaze_pipe Blaze_Kunai
+icon	data/chars/Enemys/Crakito/icon.gif 1
+diesound data/chars/Enemys/Crakito/Die1.wav
+running	20	3	2	1	1
+onblockwscript	data/scripts/bounceF.c
+#animationscript 	data/scripts/ani0020.h
+animationscript		data/scripts/drago.c
+ondrawscript 		data/scripts/Enemy_ondrawscript.c
+
+
+
+#Load Blaze_Knife
+#Load Blaze_Pipe
+#Load Blaze_Kunai
+#Load Blaze_Sword
+
+remap data/chars/Enemys/Crakito/idle00.gif data/chars/Enemys/Crakito/MAp01.gif
+remap data/chars/Enemys/Crakito/idle00.gif data/chars/Enemys/Crakito/MAp02.gif
+remap data/chars/Enemys/Crakito/idle00.gif data/chars/Enemys/Crakito/MAp03.gif
+remap data/chars/Enemys/Crakito/idle00.gif data/chars/Enemys/Crakito/MAp04.gif
+
+anim spawn
+	loop	1
+	delay	12
+	offset	24 70
+	bbox	15 -1 22 71
+	frame   data/chars/Enemys/Crakito/LAnd.gif
+
+anim Pain5
+	loop	0
+	delay	12
+	offset	24 70
+	frame   data/chars/Enemys/Crakito/idle00.gif
+
+anim idle
+	loop	1
+	delay	12
+	offset	24 70
+	bbox	15 -1 22 71
+	frame   data/chars/Enemys/Crakito/idle00.gif
+	@cmd	depost 0
+	@cmd	throw 15 0.7 0.7 1 0 -1
+	@cmd	clearL
+	frame   data/chars/Enemys/Crakito/idle01.gif
+	frame   data/chars/Enemys/Crakito/idle02.gif
+	frame   data/chars/Enemys/Crakito/idle01.gif
+
+
+
+anim walk
+	loop	1
+	delay	12
+	offset	23 71
+	bbox	13 1 27 73
+	frame	data/chars/Enemys/Crakito/walk00.gif
+	frame	data/chars/Enemys/Crakito/walk01.gif
+	frame	data/chars/Enemys/Crakito/walk02.gif
+	frame  data/chars/Enemys/Crakito/walk01.gif
+
+
+
+
+
+anim jump
+	loop	0
+	delay	15
+	offset	23 70
+	bbox	9 1 31 69
+	frame	data/chars/Enemys/Crakito/Jump00.gif
+	frame	data/chars/Enemys/Crakito/Jump00.gif
+	frame	data/chars/Enemys/Crakito/Jump00.gif
+
+
+anim Freespecial
+	loop	0
+	delay	17
+        Range 0 30
+        RangeZ -5 5
+	offset	27 74
+	bbox	16 1 21 74
+        hitflash	MEdio
+        hitfx	data/sounds/golpes/medio.wav
+	frame	data/chars/Enemys/Crakito/Ga100.gif
+	frame	data/chars/Enemys/Crakito/Ga101.gif
+		attack2  35  0  26  82  10  1  0  0  0  10
+	frame	data/chars/Enemys/Crakito/Ga102.gif
+		Attack1  0
+		delay  20
+	frame	data/chars/Enemys/Crakito/Ga103.gif
+	frame	data/chars/Enemys/Crakito/Ga104.gif
+	frame	data/chars/Enemys/Crakito/Ga103.gif
+	frame	data/chars/Enemys/Crakito/Ga104.gif
+	frame	data/chars/Enemys/Crakito/Ga103.gif
+	frame	data/chars/Enemys/Crakito/Ga104.gif
+	frame	data/chars/Enemys/Crakito/Ga105.gif
+
+
+
+
+anim attack1
+	loop	0
+	delay	12
+	offset	18 72
+        Range 30 40
+        RangeZ -5 5
+        hitflash	Fraco
+	bbox	7 2 24 70
+		Attack1  0
+        Sound	data/sounds/golpes/Soco.wav
+        hitfx	data/sounds/golpes/Fraco.wav
+	frame	data/chars/Enemys/Crakito/a100.gif
+		attack1  26  13  47  16  5  1  0  0  0  10
+		delay  7
+	frame	data/chars/Enemys/Crakito/a101.gif
+		delay  20
+	frame	data/chars/Enemys/Crakito/a102.gif
+		Attack1  0
+	frame  data/chars/Enemys/Crakito/a100.gif
+
+
+
+
+anim pain
+	loop	0
+	offset	26 69
+	bbox	4 0 38 69
+	delay	5
+	frame	data/chars/Enemys/Crakito/pain01.gif
+		delay  25
+		offset  24  69
+	frame	data/chars/Enemys/Crakito/pain01.gif
+
+anim pain3
+	loop	0
+	offset	26 71
+	bbox	7 0 29 72
+	delay	5
+	jumpframe  0  2  0  0
+	frame	data/chars/Enemys/Crakito/pain01.gif
+		delay  25
+		offset  23  71
+	frame	data/chars/Enemys/Crakito/pain01.gif
+
+anim pain4
+	loop	0
+	offset	25 69
+	bbox	11 3 26 66
+	delay	5
+	frame	data/chars/Enemys/Crakito/pain01.gif
+		delay  900
+		offset  22  69
+	frame	data/chars/Enemys/Crakito/pain01.gif
+
+
+anim grabbed
+	loop	0
+	offset	22 72
+	bbox	10 9 31 63
+	delay	40
+	frame	data/chars/Enemys/Crakito/pain02.gif
+
+
+
+anim pain2
+	loop	0
+	offset	24 69
+	bbox	9 5 32 62
+	delay	5
+	frame	data/chars/Enemys/Crakito/pain02.gif
+		delay  25
+		offset  22  69
+	frame	data/chars/Enemys/Crakito/pain02.gif
+
+
+
+
+
+anim fall2
+	loop	0
+	offset	23 69
+	jumpframe  0  3  -3  0
+	delay	20
+        hitfx	data/sounds/golpes/Forte.wav
+		attack  0
+	frame	data/chars/Enemys/Crakito/fall00.gif
+		Attack1  0
+		offset  35  53
+	frame	data/chars/Enemys/Crakito/fall01.gif
+		offset  33  22
+		delay  10
+	frame	data/chars/Enemys/Crakito/fall02.gif
+
+anim fall
+	loop	0
+	offset	24 72
+	delay	20
+        hitfx	data/sounds/golpes/Forte.wav
+		attack  0
+	frame	data/chars/Enemys/Crakito/fall00.gif
+		Attack1  0
+		offset  33  54
+	frame	data/chars/Enemys/Crakito/fall01.gif
+		offset  33  21
+		delay  10
+	frame	data/chars/Enemys/Crakito/fall02.gif
+
+anim fall6 #Shok
+	loop	0
+	offset	41 54
+	delay	5
+        hitfx	data/sounds/golpes/Forte.wav
+		attack  0
+	frame	data/chars/Enemys/Crakito/fall01.gif
+		offset  88  120
+	frame	data/chars/Enemys/Crakito/fall200.gif
+		offset  39  54
+	frame	data/chars/Enemys/Crakito/fall01.gif
+		offset  88  120
+	frame	data/chars/Enemys/Crakito/fall200.gif
+		offset  33  54
+	frame	data/chars/Enemys/Crakito/fall01.gif
+		offset  41  22
+	frame	data/chars/Enemys/Crakito/fall02.gif
+
+
+anim fall7 #Burn
+	loop	0
+	offset	65 97
+	delay	10
+        hitfx	data/sounds/golpes/Forte.wav
+		attack  0
+	frame	data/chars/Enemys/Crakito/FALL300.gif
+	frame	data/chars/Enemys/Crakito/FALL301.gif
+	frame	data/chars/Enemys/Crakito/FALL302.gif
+	frame	data/chars/Enemys/Crakito/FALL300.gif
+	frame	data/chars/Enemys/Crakito/FALL301.gif
+		offset  33  21
+	frame	data/chars/Enemys/Crakito/FALL02.gif
+
+
+anim rise
+	loop	0
+	offset	37 48
+	delay	20
+	frame	data/chars/Enemys/Crakito/Rise00.gif
+	frame	data/chars/Enemys/Crakito/Rise01.gif
+	frame	data/chars/Enemys/Crakito/Rise02.gif
+
+
+
+
+
+
+
+anim land
+	loop	0
+	delay	15
+	offset	45 48
+	bbox	26 -1 38 50
+	frame	data/chars/Enemys/Crakito/Land.gif
+
+
+anim Fall9
+	loop	0
+	offset	27 72
+	delay	999
+	frame	data/chars/Enemys/Crakito/pain01.gif #0
+		offset  21  72
+	frame	data/chars/Enemys/Crakito/pain02.gif #1
+		offset  49  54
+	frame	data/chars/Enemys/Crakito/fall01.gif #2
+		offset  37  22
+	frame	data/chars/Enemys/Crakito/fall02.gif #3
+		offset  154  164
+	frame	data/chars/Enemys/Crakito/fall400.gif #4
+		offset  151  182
+	frame	data/chars/Enemys/Crakito/fall401.gif #5
+		offset  144  166
+	frame	data/chars/Enemys/Crakito/fall402.gif #6
+		offset  149  185
+	frame  data/chars/Enemys/Crakito/fall403.gif #7
+		offset  149  179
+	delay	20
+	frame	data/chars/Enemys/Crakito/fall401.gif #8
+	delay	30
+		offset  135  184
+	frame	data/chars/Enemys/Crakito/fall404.gif #9
+	offset	144 172
+	frame	data/chars/Enemys/Crakito/Fall405.gif #10
+
+
+anim Fall8
+	loop	0
+	flipframe  0
+	offset	30 45
+	delay	30
+	frame	data/chars/Enemys/Crakito/fall01.gif #0
+	offset	37 22
+	delay	15
+	frame	data/chars/Enemys/Crakito/fall02.gif #1
+
+
+anim Fall5
+	loop	0
+	flipframe  1
+	offset	35 52
+	delay	30
+	frame	data/chars/Enemys/Crakito/fall01.gif #0
+	offset	35 22
+	delay	15
+	frame	data/chars/Enemys/Crakito/fall02.gif #1
+

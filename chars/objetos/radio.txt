@@ -1,0 +1,43 @@
+# Do not forget to name your character.
+# Health is optional.
+
+name	Radio
+health	1
+type	obstacle
+candamage			enemy
+gfxshadow	1
+nolife 1
+noname 1
+#icon	data/chars/misc/charicon.gif
+diesound		data/sounds/Wood.wav
+noatflash	1
+
+anim Spawn
+	loop	0
+	delay	100
+	offset	20 22
+	bbox	0 -1 48 30
+	platform 74 84 116 126 5 52
+	frame	data/chars/Objetos/Radio00.gif
+
+
+anim idle
+	loop	0
+	delay	100
+	offset	20 22
+	bbox	0 -1 49 31
+	platform 74 84 116 126 5 52
+	frame	data/chars/Objetos/Radio00.gif
+
+
+anim fall
+	loop	1
+	delay	1
+	offset	40 51
+		attack5  -222  -122  441  275  5  0  1  1  0  999
+        hitfx	data/sounds/sILENCIO.wav
+	frame	data/chars/Objetos/Radio01.gif
+		delay  1000
+		Attack1  0
+	frame  data/chars/Objetos/Radio01.gif
+

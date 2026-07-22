@@ -1,0 +1,18 @@
+name			sword #GROUND
+type			item
+subtype			weapon
+nolife			1
+typeshot 		0
+weapnum			2
+shootnum 		1
+counter			4
+gfxshadow		1 1
+offscreenkill	1000
+
+anim idle
+	loop	1
+	delay	200
+	offset	45 54
+	bbox 	25 48 51 7
+	frame	data/chars/armas/sword08.gif
+

@@ -1,0 +1,557 @@
+music		data/music/01a.bor
+bossmusic	data/music/Boss2.bor
+scrollspeed 0.5#1
+direction Left
+stagenumber 1
+background	data/bgs/00/baCK02.gif 	0.675 1 0 0 0 0 -1 1 1
+bglayer		data/bgs/00/b02.gif	0.575 1 0 0 0 0 -1 1 1
+bglayer		data/bgs/00/b01.gif	0.475 1 0 0 0 0 -1 1 1
+#water		data/bgs/01/Mar01.gif		0.5
+#fglayer         data/bgs/00/FOG.gif              0.5 1 0 0 0 0 -1 1 1 0 1 3 10 0.3
+panel		data/bgs/00/pn01.gif		none	none
+frontpanel	data/bgs/00/Front00.gif		
+cameratype 1
+cameraoffset 0 -30
+#levelscript @script
+#void main() {
+#	changelevelproperty("camerazoffset", 0);
+#	changelevelproperty("cameraxoffset", 0);
+#}
+#@end_script
+settime         99
+notime          0
+noslow          1
+order		a
+Spawn1  	50 20 50
+Spawn2  	55 35 50 
+Spawn3  	60 50 50
+
+light		128 -128
+at			0
+
+group 5 5
+at  0
+
+Spawn  Car
+Flip 1
+	coords  400 295
+	at  0
+
+Spawn  1Up
+Flip 1
+	coords  400 240
+	at  0
+
+Spawn  Lixo02
+Item Cash
+Flip 1
+	coords  162 205
+	at  0
+
+Spawn  Crakito_
+map  4
+health 50
+	coords  70 200
+	at  0
+
+
+
+Spawn  Thug_
+map  1
+health 50
+	coords  30 218
+	at  0
+
+Spawn  Act
+	coords  30 218
+	at  0
+
+Spawn  Balu_
+Flip 1
+map  1
+health 60
+	coords  20 203
+	at  0
+
+wait
+at       100
+
+Spawn  Diga
+map  2
+health 50
+	coords  -100 240
+	at  100
+
+
+
+
+Spawn  Donovan
+map  2
+health 50
+	coords  550 210
+	at  100
+
+Spawn  Crakito
+map  1
+health 50
+	coords  500 220
+	at  100
+
+Spawn  Galsia
+map  3
+health 50
+	coords  -100 240
+	at  100
+
+Spawn  ActE
+	coords  250 240
+	at  100
+
+Spawn  Lixo03
+Item Apple
+	coords  -100 205
+	at  101
+
+Spawn  Pipe
+	coords  -300 205
+	at  101
+
+Spawn  Lixo03
+	coords  -150 220
+	at  101
+
+wait
+at       400
+
+
+group 4 4
+at  400
+
+Spawn  Skiner
+map  2
+health 50
+	coords  -100 240
+	at  400
+
+
+
+Spawn  Donovan
+map  2
+health 50
+	coords  -100 210
+	at  400
+
+Spawn  Diga
+map  1
+health 50
+	coords  -100 250
+	at  400
+
+Spawn  Galsia
+map  1
+health 50
+	coords  500 220
+	at  400
+
+
+Spawn  Skiner
+map  3
+health 50
+	coords  550 240
+	at  400
+
+
+Spawn  Thug
+map  1
+health 50
+	coords  -100 240
+	at  400
+
+
+
+Spawn  Diga
+map  3
+health 50
+	coords  -100 210
+	at  400
+
+Spawn  Crakito
+map  1
+health 50
+	coords  500 220
+	at  400
+
+
+Spawn  Crakito
+map  3
+health 50
+	coords  550 240
+	at  400
+
+Spawn  ActE
+	coords  250 240
+	at  400
+
+
+
+Spawn  Signal_
+Flip 1
+map  1
+health 75
+	coords  -250 220
+	at  401
+
+Spawn  Act
+	coords  -200 240
+	at  401
+
+Spawn  Signal_
+Flip 1
+health 75
+	coords  -200 240
+	at  401
+
+
+Spawn  Donovan
+map  4
+health 50
+	coords  -100 210
+	at  550
+
+wait
+at       700
+
+
+
+group 4 4
+at  700
+
+Spawn  BAlu
+map  2
+health 50
+	coords  -100 210
+	at  700
+
+Spawn  Diga
+map  4
+health 50
+	coords  500 260
+	at  700
+
+Spawn  Pipe
+	coords  550 240
+	at  700
+
+Spawn  Donovan
+map  1
+health 50
+	coords  550 240
+	at  700
+
+
+Spawn  Thug
+map  1
+health 50
+	coords  -100 240
+	at  700
+
+Spawn  Knife
+	coords  -100 240
+	at  700
+
+Spawn  GAlsia
+map  1
+health 50
+	coords  -100 240
+	at  700
+
+
+Spawn  Knife
+	coords  600 240
+	at  700
+
+Spawn  Skiner
+health 50
+	coords  600 240
+	at  700
+
+Spawn  ActE
+	coords  250 240
+	at  700
+
+Spawn  Bloqueio02
+Item   Apple
+	coords  -300 240
+	at  701
+
+Spawn  Bloqueio02
+Item   Gold
+	coords  -280 220
+	at  701
+
+
+
+
+wait
+at       1300
+
+
+
+group 4 4
+at  1300
+
+
+Spawn  Knife
+	coords  -100 240
+	at  1300
+
+
+Spawn  Knife
+	coords  -100 230
+	at  1300
+
+
+Spawn  Knife
+	coords  600 240
+	at  1300
+
+
+Spawn  Knife
+	coords  600 230
+	at  1300
+
+Spawn  Galsia
+map  1
+health 50
+	coords  -100 240
+	at  1300
+
+
+Spawn  Galsia
+health 50
+	coords  -100 230
+	at  1300
+
+
+Spawn  Galsia
+map  1
+health 50
+	coords  600 240
+	at  1300
+
+
+Spawn  Galsia
+health 50
+	coords  600 230
+	at  1300
+
+
+Spawn  Signal
+health 50
+	coords  -100 230
+	at  1300
+
+Spawn  Porta04
+	coords  171 191
+	at  1300
+
+
+Spawn  Jake
+map  2
+health 150
+	coords  171 207 8
+	at  1300
+
+
+Spawn  Donovan
+map  1
+health 50
+	coords  -100 240
+	at  1300
+
+
+Spawn  Crakito
+health 50
+	coords  -100 230
+	at  1300
+
+Spawn  ActE
+	coords  250 240
+	at  1300
+
+Spawn  Lixo02
+Item Gold
+	coords  -200 205
+	at  1301
+
+Spawn  Lixo02
+	coords  -250 205
+	at  1301
+
+Spawn  Lixo02
+Item Apple
+	coords  -300 205
+	at  1301
+
+
+wait
+at       2000
+
+
+
+group 4 4
+at  2000
+
+
+Spawn  Crakito
+map  1
+health 50
+	coords  -100 240
+	at  2000
+
+
+Spawn  Balu
+health 50
+	coords  -100 230
+	at  2000
+
+
+Spawn  Diga
+health 50
+	coords  600 240
+	at  2000
+
+
+Spawn  Crakito
+health 50
+	coords  600 230
+	at  2000
+
+Spawn  Knife
+	coords  -100 230
+	at  2000
+
+Spawn  Galsia
+health 80
+	coords  -100 230
+	at  2000
+
+
+Spawn  Pipe
+	coords  600 240
+	at  2000
+
+Spawn  Donovan
+map  1
+health 80
+	coords  600 240
+	at  2000
+
+
+Spawn  ActE
+	coords  250 240
+	at  2000
+
+
+Spawn  Lixo01
+Item  Chicken
+	coords  -150 230
+	at  2001
+
+Spawn  Lixo01
+Item  Apple
+	coords  -100 230
+	at  2001
+
+group 4 4
+at  2001
+
+
+Spawn  Diga_
+health 75
+	coords  -15 230
+	at  2300
+
+Spawn  Act
+	coords  -25 225
+	at  2300
+
+Spawn  Crakito_
+Map 1
+health 75
+	coords  -25 250
+	at  2300
+
+Spawn  Biggar_
+Alias Big_Gar
+Flip 1
+Boss 1
+health 300
+	coords  -50 240
+	at  2300
+
+
+Spawn  Donovan
+health 50
+	coords  550 210 300
+	at  2400
+
+Spawn  Crakito
+map  2
+health 70
+	coords  500 220
+	at  2400
+
+
+Spawn  Skiner
+map  3
+health 70
+	coords  -100 240
+	at  2400
+
+
+Spawn  Balu
+map  3
+health 70
+	coords  -100 240
+	at  2400
+
+
+Spawn  Diga
+map  2
+health 70
+	coords  550 210
+	at  2400
+
+Spawn  Crakito
+map  4
+health 70
+	coords  500 220
+	at  2400
+
+
+Spawn  Signal
+map  3
+health 70
+	coords  -100 240
+	at  2400
+
+
+Spawn  Balu
+health 70
+	coords  -100 240
+	at  2400
+
+
+
+
+
+
+
+
+
+
+
+
+
+

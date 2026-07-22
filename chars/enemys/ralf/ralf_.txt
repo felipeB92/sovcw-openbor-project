@@ -1,0 +1,342 @@
+name	Ralf_
+health	70
+mp 30
+mprate 1
+#secret 1
+Falldie 2
+Grabdistance 18
+riseinv				0.4 1
+speed	6
+type	Enemy
+gfxshadow	1
+candamage			Player npc obstacle
+JUMPHEIGHT 4
+hostile Player NPC
+#antigrab 2
+atchain   1 1 2 3 4 5
+weapons Ralf_Knife Ralf_Sword Ralf_pipe Ralf_Kunai
+icon	data/chars/Enemys/Ralf/icon.gif 1
+diesound data/Sounds/Die1.wav
+running	20	3	2	1	1
+onblockwscript	data/scripts/bounceF.c
+#animationscript 	data/scripts/ani0020.h
+animationscript		data/scripts/drago.c
+ondrawscript 		data/scripts/Enemy_ondrawscript.c
+
+
+
+#Load Ralf_Knife
+#Load Ralf_Pipe
+#Load Ralf_Kunai
+#Load Ralf_Sword
+
+remap data/chars/Enemys/Ralf/idle00.gif data/chars/Enemys/Ralf/MAp01.gif
+remap data/chars/Enemys/Ralf/idle00.gif data/chars/Enemys/Ralf/MAp02.gif
+remap data/chars/Enemys/Ralf/idle00.gif data/chars/Enemys/Ralf/MAp03.gif
+remap data/chars/Enemys/Ralf/idle00.gif data/chars/Enemys/Ralf/MAp04.gif
+
+anim spawn
+	loop	0
+	delay	999
+	offset	94 98
+        hitflash	Corte
+        hitfx	data/sounds/golpes/corte.wav
+	frame	data/chars/Enemys/Ralf/LAnd.gif
+	frame	data/chars/Enemys/Ralf/LAnd.gif
+
+anim Pain5
+	loop	0
+	delay	12
+	offset	94 98
+        hitflash	Corte
+        hitfx	data/sounds/golpes/corte.wav
+	frame	data/chars/Enemys/Ralf/LAnd.gif
+
+anim idle
+	loop	1
+	delay	12
+	offset	79 119
+	bbox	67 44 34 78
+	frame   data/chars/Enemys/Ralf/idle00.gif
+	@cmd	depost 0
+	@cmd	throw 15 0.7 0.7 1 0 -1
+	@cmd	clearL
+	frame   data/chars/Enemys/Ralf/idle01.gif
+	frame   data/chars/Enemys/Ralf/idle02.gif
+	frame   data/chars/Enemys/Ralf/idle01.gif
+
+
+
+anim walk
+	loop	1
+	delay	12
+	offset	79 119
+	bbox	71 45 31 77
+	frame	data/chars/Enemys/Ralf/walk00.gif
+	frame	data/chars/Enemys/Ralf/walk01.gif
+	frame	data/chars/Enemys/Ralf/walk02.gif
+	frame  data/chars/Enemys/Ralf/walk01.gif
+
+
+
+
+
+anim jump
+	loop	0
+	delay	15
+	offset	88 116
+	bbox	75 52 34 65
+	frame	data/chars/Enemys/Ralf/Jump00.gif
+	frame	data/chars/Enemys/Ralf/Jump00.gif
+	frame	data/chars/Enemys/Ralf/Jump00.gif
+
+
+
+
+anim attack1
+	loop	0
+	delay	12
+	offset	77 119
+        Range 0 40
+        RangeZ -5 5
+        hitflash	Fraco
+	bbox	63 44 31 76
+		Attack1  0
+        Sound	data/sounds/golpes/Soco.wav
+        hitfx	data/sounds/golpes/Fraco.wav
+	frame	data/chars/Enemys/Ralf/a100.gif
+		attack1  70  52  64  22  5  1  0  0  0  10
+		delay  20
+	frame	data/chars/Enemys/Ralf/a101.gif
+		delay  6
+		Attack1  0
+	frame	data/chars/Enemys/Ralf/a100.gif
+
+anim Freespecial
+	loop	0
+	delay	1
+	offset	77 122
+        Range 100 130
+        RangeZ -5 5
+        hitflash	Fraco
+	bbox	63 44 31 76
+		Attack1  0
+        hitfx	data/sounds/golpes/Fraco.wav
+	frame	data/chars/Enemys/Ralf/run00.gif
+	delay	6
+        @cmd dasher 2 0 0
+	frame	data/chars/Enemys/Ralf/run00.gif
+	frame	data/chars/Enemys/Ralf/run01.gif
+	frame	data/chars/Enemys/Ralf/run02.gif
+	frame	data/chars/Enemys/Ralf/run03.gif
+	frame	data/chars/Enemys/Ralf/run04.gif
+	frame	data/chars/Enemys/Ralf/run05.gif
+		delay  8
+        @cmd dasher 1 0 0
+	frame	data/chars/Enemys/Ralf/ra100.gif
+		bbox  79  49  38  44
+		sound  data/sounds/golpes/Soco.wav
+		attack2  68  40  70  73  10  1  0  0  0  15
+	frame	data/chars/Enemys/Ralf/ra101.gif
+	frame	data/chars/Enemys/Ralf/ra102.gif
+	frame	data/chars/Enemys/Ralf/ra103.gif
+		offset  96  119
+		Attack1  0
+	frame	data/chars/Enemys/Ralf/ra106.gif
+		offset  97  106
+	frame	data/chars/Enemys/Ralf/ra107.gif
+	frame	data/chars/Enemys/Ralf/ra108.gif
+		offset  98  100
+		bbox  83  54  34  46
+        @cmd dasher 0 0 0
+	frame	data/chars/Enemys/Ralf/ra109.gif
+
+
+
+
+anim pain
+	loop	0
+	offset	82 118
+	bbox	72 54 21 65
+	delay	5
+	frame	data/chars/Enemys/Ralf/pain01.gif
+		delay  25
+		offset  79  118
+	frame	data/chars/Enemys/Ralf/pain01.gif
+
+anim pain3
+	loop	0
+	offset	81 119
+	bbox	61 54 26 66
+	delay	5
+	jumpframe  0  2  0  0
+	frame	data/chars/Enemys/Ralf/pain01.gif
+		delay  25
+		offset  78  119
+	frame	data/chars/Enemys/Ralf/pain01.gif
+
+anim pain4
+	loop	0
+	offset	81 118
+	bbox	61 54 26 66
+	delay	5
+	frame	data/chars/Enemys/Ralf/pain01.gif
+		delay  900
+		offset  79  118
+	frame	data/chars/Enemys/Ralf/pain01.gif
+
+
+anim grabbed
+	loop	0
+	offset	79 120
+	bbox	63 52 37 69
+	delay	40
+	frame	data/chars/Enemys/Ralf/pain02.gif
+
+
+
+anim pain2
+	loop	0
+	offset	80 120
+	bbox	72 55 28 65
+	delay	5
+	frame	data/chars/Enemys/Ralf/pain02.gif
+		delay  25
+		offset  78  120
+	frame	data/chars/Enemys/Ralf/pain02.gif
+
+
+
+
+
+anim fall2
+	loop	0
+	offset	81 115
+	jumpframe  0  3  -3  0
+	delay	20
+        hitfx	data/sounds/golpes/Forte.wav
+		attack  0
+	frame	data/chars/Enemys/Ralf/fall00.gif
+		Attack1  0
+		offset  52  120
+	frame	data/chars/Enemys/Ralf/fall01.gif
+		offset  78  121
+		delay  10
+	frame	data/chars/Enemys/Ralf/fall02.gif
+
+anim fall
+	loop	0
+	offset	77 121
+	delay	20
+        hitfx	data/sounds/golpes/Forte.wav
+		attack  0
+	frame	data/chars/Enemys/Ralf/fall00.gif
+		Attack1  0
+		offset  52  120
+	frame	data/chars/Enemys/Ralf/fall01.gif
+		offset  78  119
+		delay  10
+	frame	data/chars/Enemys/Ralf/fall02.gif
+
+anim fall6 #Shok
+	loop	0
+	offset	88 120
+	delay	5
+        hitfx	data/sounds/golpes/Forte.wav
+		attack  0
+	frame	data/chars/Enemys/Ralf/fall01.gif
+	frame	data/chars/Enemys/Ralf/fall200.gif
+	frame	data/chars/Enemys/Ralf/fall01.gif
+	frame	data/chars/Enemys/Ralf/fall200.gif
+	frame	data/chars/Enemys/Ralf/fall01.gif
+		offset  74  120
+	frame	data/chars/Enemys/Ralf/fall02.gif
+
+
+anim fall7 #Burn
+	loop	0
+	offset	65 97
+	delay	10
+        hitfx	data/sounds/golpes/Forte.wav
+		attack  0
+	frame	data/chars/Enemys/Ralf/FALL300.gif
+	frame	data/chars/Enemys/Ralf/FALL301.gif
+	frame	data/chars/Enemys/Ralf/FALL302.gif
+	frame	data/chars/Enemys/Ralf/FALL300.gif
+	frame	data/chars/Enemys/Ralf/FALL301.gif
+		offset  78  119
+	frame	data/chars/Enemys/Ralf/FALL02.gif
+
+
+anim rise
+	loop	0
+	offset	77 119
+	delay	20
+	frame	data/chars/Enemys/Ralf/Rise00.gif
+	frame	data/chars/Enemys/Ralf/Rise01.gif
+	frame	data/chars/Enemys/Ralf/Rise02.gif
+
+
+
+
+
+
+
+anim land
+	loop	0
+	delay	15
+	offset	92 99
+	bbox	82 54 30 46
+	frame	data/chars/Enemys/Ralf/Land.gif
+
+
+anim Fall9
+	loop	0
+	offset	78 120
+	delay	999
+	frame	data/chars/Enemys/Ralf/pain01.gif #0
+		offset  77  121
+	frame	data/chars/Enemys/Ralf/pain02.gif #1
+		offset  74  119
+	frame	data/chars/Enemys/Ralf/fall01.gif #2
+		offset  81  119
+	frame	data/chars/Enemys/Ralf/fall02.gif #3
+		offset  102  97
+	frame	data/chars/Enemys/Ralf/fall400.gif #4
+		offset  98  128
+	frame	data/chars/Enemys/Ralf/fall401.gif #5
+		offset  79  113
+	frame	data/chars/Enemys/Ralf/fall402.gif #6
+		offset  81  114
+	frame  data/chars/Enemys/Ralf/fall403.gif #7
+		offset  99  128
+	delay	20
+	frame	data/chars/Enemys/Ralf/fall401.gif #8
+	delay	30
+		offset  82  109
+	frame	data/chars/Enemys/Ralf/fall404.gif #9
+	offset	76 92
+	frame	data/chars/Enemys/Ralf/Fall405.gif #10
+
+
+anim Fall8
+	loop	0
+	flipframe  0
+	offset	85 119
+	delay	30
+	frame	data/chars/Enemys/Ralf/fall01.gif #0
+	offset	73 120
+	delay	15
+	frame	data/chars/Enemys/Ralf/fall02.gif #1
+
+
+anim Fall5
+	loop	0
+	flipframe  1
+	offset	63 120
+	delay	30
+	frame	data/chars/Enemys/Ralf/fall01.gif #0
+	offset	71 119
+	delay	15
+	frame	data/chars/Enemys/Ralf/fall02.gif #1
+
