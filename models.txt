@@ -43,6 +43,13 @@ know	Joe_Higashi_Pipe	data/chars/Players/Joe/Joe_Higashi_Pipe.txt
 
 
 
+load	Andy		data/chars/Players/Andy/Andy.txt
+know	Andy_		data/chars/Players/Andy/Andy_.txt
+know	AndyP01		data/chars/Players/Andy/AndyP01.txt
+know	AndyP02		data/chars/Players/Andy/AndyP02.txt
+know	Andy_Knife	data/chars/Players/Andy/Andy_Knife.txt
+know	Andy_Pipe	data/chars/Players/Andy/Andy_Pipe.txt
+
 #Boss
 
 know	Biggar data/chars/Boss/Biggar/Biggar.txt
