@@ -166,7 +166,7 @@ anim attack2
 	Sound	data/chars/players/Terry/a2.wav
 		delay  6
 	frame	data/chars/players/Terry/a200.gif
-		attack2  73  58  46  20  7  0  0  0  0  15
+		attack2  73  58  46  20  7  0  0  0  12  15
 		delay  12
 	frame	data/chars/players/Terry/a201.gif
 		Attack1  0
@@ -203,39 +203,40 @@ anim grab
 
 anim throw
 	loop	0
-	delay	5
+	delay	1
 	offset	70 110
         hitflash	Forte
         hitfx	data/sounds/golpes/Forte.wav
 		Attack1  0
+        Sound	data/sounds/golpes/grab.wav
 	frame	data/chars/players/Terry/T100.gif
-	delay	10
+	delay	20
 	@cmd	slamstart
-	@cmd	position 0 20 0 0 -1
-	frame	data/chars/players/Terry/T101.gif
-	@cmd	position 0 20 0 0 -1
-		delay  20
-		attack1  71  1  46  63  7  1  0  0  0  10
-	frame	data/chars/players/Terry/T102.gif
+	@cmd	position 1 40 0 0 -1
 	Sound	data/chars/players/Terry/a2.wav
-	@cmd	position 4 -10 30 0 -1
-		attack1  10  -1  64  30  7  1  0  0  0  10
+		attack1  83  38  35  68  7  1  0  0  0  15
+	frame	data/chars/players/Terry/T100.gif
+	@cmd	position 4 5 50 0 -1
+		attack1  60  28  46  31  7  1  0  0  0  15
+	frame	data/chars/players/Terry/T101.gif
 		delay  10
+		attack1  5  13  41  67  7  1  0  0  0  10
+	@cmd	position 5 -30 40 0 -1
 	frame	data/chars/players/Terry/T102.gif
-	@cmd	position 5 -50 30 0 -1
-		attack1  -48  7  54  47  7  1  0  0  0  10
+		attack1  -28  12  37  43  7  1  0  0  0  10
+	@cmd	position 5 -50 40 0 -1
 	frame	data/chars/players/Terry/T102.gif
-	@cmd	position 8 -70 30 0 -1
+	@cmd	position 8 -70 40 0 -1
 	@cmd	depost 0
 	@cmd	throw 15 5 2 2 0 -1
 	@cmd	clearL
-		attack1  -76  15  43  44  7  1  0  0  0  10
+		attack1  -42  15  32  45  7  1  0  0  0  10
 		delay  20
-	frame	data/chars/players/Terry/t101.gif
-		attack1  -124  24  49  46  7  1  0  0  0  10
+	frame	data/chars/players/Terry/t102.gif
+		attack1  -95  17  49  31  7  1  0  0  0  10
 		offset  75  112
 	frame  data/chars/players/Terry/idle00.gif
-		attack1  -128  56  42  30  7  1  0  0  0  10
+		attack1  -120  42  48  21  7  1  0  0  0  10
 	frame  data/chars/players/Terry/Idle01.gif
 
 
@@ -378,11 +379,12 @@ anim special2
 	frame	data/chars/players/Terry/SP101.gif
 	@cmd  spawn01  "TerryP02"  40  0  1
 	frame	data/chars/players/Terry/SP102.gif
+		attack2  94  39  45  75  30  1  0  0  25  15
 	frame	data/chars/players/Terry/SP103.gif
 		delay  70
 	frame	data/chars/players/Terry/SP104.gif
 		delay  6
-		attack2  23  24  48  62  30  1  0  0  0  20
+		Attack1  0
 	frame	data/chars/players/Terry/Sp102.gif
 
 anim special
@@ -392,25 +394,26 @@ anim special
 	offset	75 112
         hitflash	fORTE
         hitfx	data/sounds/golpes/forte.wav
-		delay  5
-	Sound	data/chars/players/Terry/a1.wav
+		delay  15
 		Attack1  0
-	jumpframe  4  4  0  0
+	jumpframe  1  4  0  0
+	frame	data/chars/players/Terry/get01.gif
+		delay  5
 	frame	data/chars/players/Terry/Sp200.gif
 	@cmd  spawn01  "TerryP01"  0  0  -1
-		attack3  7  35  53  69  5  0  1  0  0  25
+		attack3  54  32  48  81  5  0  1  0  15  25
+		sound  data/chars/players/Terry/SP01.wav
 	frame	data/chars/players/Terry/Sp201.gif
 	@cmd  spawn01  "TerryP01"  0  0  -1
-		attack1  7  35  53  69  5  0  1  0  15  25
+		attack1  62  35  44  77  5  0  1  0  15  25
 	frame  data/chars/players/Terry/Sp202.gif
 	@cmd  spawn01  "TerryP01"  0  0  -1
-	Sound	data/chars/players/Terry/SP01.wav
 		Attack1  0
 	frame	data/chars/players/Terry/Sp200.gif
 	frame	data/chars/players/Terry/Sp201.gif
-		attack2  11  8  72  94  20  1  0  0  15  25
+		attack2  64  35  32  84  20  1  0  0  15  25
 	frame	data/chars/players/Terry/Sp202.gif
-		attack2  11  8  72  94  15  1  0  0  15  15
+		attack2  55  32  33  81  15  1  0  0  15  15
 	frame  data/chars/players/Terry/Sp200.gif
 	frame	data/chars/players/Terry/Sp201.gif
 	frame  data/chars/players/Terry/Sp202.gif
@@ -451,6 +454,9 @@ anim Freespecial
 		attack1  89  56  43  18  10  1  1  0  15  15
  	frame	data/chars/players/Terry/ra101.gif
 	Sound	data/chars/players/Terry/RA.wav
+ 	frame	data/chars/players/Terry/ra102.gif
+ 	frame	data/chars/players/Terry/ra103.gif
+ 	frame	data/chars/players/Terry/ra101.gif
  	frame	data/chars/players/Terry/ra102.gif
  	frame	data/chars/players/Terry/ra103.gif
         @cmd dasher 0 0 0

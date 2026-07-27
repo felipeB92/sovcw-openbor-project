@@ -50,7 +50,7 @@ anim Pain5
 	offset	75 112
         Range 0 40
         Rangez -10 10
-	bbox	4 -1 40 77
+	bbox	64 36 24 75
 	frame   data/chars/players/Terry/idle00.gif
 	@cmd  spawn01  "Joe_Higashi_"  -5  0  10
 	@cmd  spawn01  "Andy_"  5  0  -10
@@ -60,7 +60,7 @@ anim idle
 	loop	1
 	delay	12
 	offset	75 112
-	bbox	11 7 30 69
+	bbox	64 35 27 67
 	frame   data/chars/players/Terry/idle00.gif
 	@cmd	depost 0
 	@cmd	throw 15 0.7 0.7 1 0 -1
@@ -75,7 +75,7 @@ anim walk
 	loop	1
 	delay	16
 	offset	75 112
-	bbox	14 8 32 72
+	bbox	62 41 26 54
 	frame	data/chars/players/Terry/walk00.gif
 	frame	data/chars/players/Terry/walk01.gif
 	frame	data/chars/players/Terry/walk02.gif
@@ -94,7 +94,7 @@ anim jump
 	loop	0
 	delay	10
 	offset	75 112
-	bbox	4 13 31 82
+	bbox	64 36 27 38
 	frame	data/chars/players/Terry/Jump00.gif
 	frame	data/chars/players/Terry/Jump01.gif
 	frame	data/chars/players/Terry/Jump02.gif
@@ -104,25 +104,26 @@ anim jumpattack
 	loop	0
 	delay	5
 	offset	75 112
-	bbox	12 22 35 64
+	bbox	62 37 31 31
         hitflash	MEdio
         hitfx	data/sounds/golpes/medio.wav
         Sound	data/sounds/golpes/Chut.wav
 	frame	data/chars/players/Terry/Ja100.gif
 	Sound	data/chars/players/Terry/a2.wav
-		Attack1  0
+		Attack1  61  34  36  52  7  1  0  0  0  15
 	frame	data/chars/players/Terry/Ja300.gif
 
 
 anim jumpattack2
 	loop	0
 	delay	5
-	offset	75 112
-	bbox	21 0 40 45
+	offset	63 106
+	bbox	54 33 28 45
         hitflash	MEdio
         hitfx	data/sounds/golpes/medio.wav
         Sound	data/sounds/golpes/Chut.wav
 	frame	data/chars/players/Terry/Ja200.gif
+		attack1  54  36  46  41  7  0  0  0  0  15
 	frame	data/chars/players/Terry/Ja201.gif
 
 
@@ -130,14 +131,14 @@ anim jumpforward
 	loop	0
 	delay	5
 	offset	75 112
-	bbox	5 20 48 52
+	bbox	60 32 39 41
         hitflash	MEdio
         hitfx	data/sounds/golpes/medio.wav
         Sound	data/sounds/golpes/Chut.wav
 	frame	data/chars/players/Terry/Ja100.gif
 		delay  7
 	Sound	data/chars/players/Terry/a2.wav
-		Attack1  0
+		Attack1  56  64  65  28  10  1  0  0  0  15
 	frame	data/chars/players/Terry/Ja101.gif
 
 anim attack1
@@ -165,7 +166,7 @@ anim attack2
 	Sound	data/chars/players/Terry/a2.wav
 		delay  6
 	frame	data/chars/players/Terry/a200.gif
-		attack2  73  58  46  20  7  0  0  0  0  15
+		attack2  73  58  46  20  7  0  0  0  12  15
 		delay  12
 	frame	data/chars/players/Terry/a201.gif
 		Attack1  0
@@ -176,13 +177,13 @@ anim attack3
 	loop	0
 	delay	7
 	offset	75 112
-	bbox	18 3 28 71
+	bbox	64 39 30 71
         hitflash	Forte
         Sound	data/sounds/golpes/Chut.wav
         hitfx	data/sounds/golpes/Forte.wav
 	Sound	data/chars/players/Terry/a3.wav
 	frame	data/chars/players/Terry/a300.gif
-		attack2  56  39  66  73  12  1  0  0  0  15
+		attack2  56  39  66  73  12  1  0  0  12  15
 		delay  25
 		bbox  60  43  25  69
 	frame	data/chars/players/Terry/a301.gif
@@ -196,41 +197,40 @@ anim grab
 	loop	0
 	delay	100
 	offset	75 112
-	bbox	10 4 36 68
+	bbox	67 42 22 70
         cancel	0 3 0 J freespecial
 	frame	data/chars/players/Terry/a100.gif
 
 anim throw
 	loop	0
-	delay	5
-	offset	75 112
+	delay	1
+	offset	70 110
         hitflash	Forte
         hitfx	data/sounds/golpes/Forte.wav
 		Attack1  0
+        Sound	data/sounds/golpes/grab.wav
 	frame	data/chars/players/Terry/T100.gif
-	delay	10
+	delay	20
 	@cmd	slamstart
-	@cmd	position 0 20 0 0 -1
-	frame	data/chars/players/Terry/T101.gif
-	@cmd	position 0 20 0 0 -1
-		delay  20
-		attack1  71  1  46  63  7  1  0  0  0  10
-	frame	data/chars/players/Terry/T102.gif
+	@cmd	position 1 40 0 0 -1
 	Sound	data/chars/players/Terry/a2.wav
-	@cmd	position 4 -10 30 0 -1
-		attack1  10  -1  64  30  7  1  0  0  0  10
+	frame	data/chars/players/Terry/T100.gif
+	@cmd	position 4 5 50 0 -1
+	frame	data/chars/players/Terry/T101.gif
 		delay  10
+		attack1  71  1  46  63  7  1  0  0  0  10
+	@cmd	position 5 -30 40 0 -1
 	frame	data/chars/players/Terry/T102.gif
-	@cmd	position 5 -50 30 0 -1
 		attack1  -48  7  54  47  7  1  0  0  0  10
+	@cmd	position 5 -50 40 0 -1
 	frame	data/chars/players/Terry/T102.gif
-	@cmd	position 8 -70 30 0 -1
+	@cmd	position 8 -70 40 0 -1
 	@cmd	depost 0
 	@cmd	throw 15 5 2 2 0 -1
 	@cmd	clearL
 		attack1  -76  15  43  44  7  1  0  0  0  10
 		delay  20
-	frame	data/chars/players/Terry/t101.gif
+	frame	data/chars/players/Terry/t102.gif
 		attack1  -124  24  49  46  7  1  0  0  0  10
 		offset  75  112
 	frame  data/chars/players/Terry/idle00.gif
@@ -242,7 +242,7 @@ anim throw
 anim pain
 	loop	0
 	offset	75 112
-	bbox	14 1 34 65
+	bbox	61 41 24 69
 	delay	5
 	frame	data/chars/players/Terry/pain100.gif
 		delay  25
@@ -251,38 +251,36 @@ anim pain
 anim pain3
 	loop	0
 	offset	75 112
-	bbox	13 2 30 74
+	bbox	62 40 25 73
 	delay	5
 	jumpframe  0  2  0  0
 	frame	data/chars/players/Terry/pain100.gif
 		delay  25
-		bbox  9  2  39  74
 	frame	data/chars/players/Terry/pain101.gif
 
 anim pain4
 	loop	0
 	offset	75 112
-	bbox	14 1 30 73
+	bbox	60 41 25 71
 	delay	5
 	frame	data/chars/players/Terry/pain100.gif
 		delay  900
-		bbox  8  0  36  78
 	frame	data/chars/players/Terry/pain101.gif
 
 
 anim grabbed
 	loop	0
 	offset	75 112
-	bbox	17 0 26 71
+	bbox	65 52 24 62
 	delay	40
-	frame	data/chars/players/Terry/pain101.gif
+	frame	data/chars/players/Terry/pain201.gif
 
 
 
 anim pain2
 	loop	0
 	offset	75 112
-	bbox	14 7 37 56
+	bbox	62 43 24 69
 	delay	5
 	frame	data/chars/players/Terry/pain200.gif
 		delay  25
@@ -304,6 +302,7 @@ anim fall2
 	frame	data/chars/players/Terry/fall01.gif
 		delay  10
 	frame	data/chars/players/Terry/fall02.gif
+		offset  68  94
 	frame	data/chars/players/Terry/fall03.gif
 
 anim fall
@@ -317,6 +316,7 @@ anim fall
 	frame	data/chars/players/Terry/fall01.gif
 		delay  10
 	frame	data/chars/players/Terry/fall02.gif
+		offset  71  97
 	frame	data/chars/players/Terry/fall03.gif
 
 anim fall6 #Shok
@@ -330,7 +330,7 @@ anim fall6 #Shok
 	frame	data/chars/players/Terry/fall201.gif
 	frame	data/chars/players/Terry/fall200.gif
 	frame	data/chars/players/Terry/fall201.gif
-		offset  75  112
+		offset  70  98
 	frame	data/chars/players/Terry/fall02.gif
 
 
@@ -345,16 +345,17 @@ anim fall7 #Burn
 	frame	data/chars/players/Terry/FALL302.gif
 	frame	data/chars/players/Terry/FALL300.gif
 	frame	data/chars/players/Terry/FALL301.gif
-		offset  75  112
+		offset  69  97
 	frame	data/chars/players/Terry/FALL02.gif
 
 
 anim rise
 	loop	0
-	offset	75 112
+	offset	67 94
 	delay	8
 	frame	data/chars/players/Terry/Rise00.gif
 	frame	data/chars/players/Terry/Rise01.gif
+		offset  69  98
 	frame	data/chars/players/Terry/Rise02.gif
 
 
@@ -376,11 +377,12 @@ anim special2
 	frame	data/chars/players/Terry/SP101.gif
 	@cmd  spawn01  "TerryP02"  40  0  1
 	frame	data/chars/players/Terry/SP102.gif
+		attack2  94  39  45  75  30  1  0  0  25  15
 	frame	data/chars/players/Terry/SP103.gif
 		delay  70
 	frame	data/chars/players/Terry/SP104.gif
 		delay  6
-		attack2  23  24  48  62  30  1  0  0  0  20
+		Attack1  0
 	frame	data/chars/players/Terry/Sp102.gif
 
 anim special
@@ -390,29 +392,30 @@ anim special
 	offset	75 112
         hitflash	fORTE
         hitfx	data/sounds/golpes/forte.wav
-		delay  5
+		delay  25
 	Sound	data/chars/players/Terry/a1.wav
 		Attack1  0
-	jumpframe  4  4  0  0
+	jumpframe  1  4  0  0
+	frame	data/chars/players/Terry/get01.gif
+		delay  5
 	frame	data/chars/players/Terry/Sp200.gif
 	@cmd  spawn01  "TerryP01"  0  0  -1
-		attack3  7  35  53  69  5  0  1  0  0  25
+		attack3  54  32  48  81  5  0  1  0  15  25
 	frame	data/chars/players/Terry/Sp201.gif
 	@cmd  spawn01  "TerryP01"  0  0  -1
-		attack1  7  35  53  69  5  0  1  0  15  25
+		attack1  62  35  44  77  5  0  1  0  15  25
 	frame  data/chars/players/Terry/Sp202.gif
 	@cmd  spawn01  "TerryP01"  0  0  -1
 	Sound	data/chars/players/Terry/SP01.wav
 		Attack1  0
 	frame	data/chars/players/Terry/Sp200.gif
 	frame	data/chars/players/Terry/Sp201.gif
-		attack2  11  8  72  94  20  1  0  0  15  25
+		attack2  64  35  32  84  20  1  0  0  15  25
 	frame	data/chars/players/Terry/Sp202.gif
-		attack2  11  8  72  94  15  1  0  0  15  15
+		attack2  55  32  33  81  15  1  0  0  15  15
 	frame  data/chars/players/Terry/Sp200.gif
 	frame	data/chars/players/Terry/Sp201.gif
 	frame  data/chars/players/Terry/Sp202.gif
-	frame	data/chars/players/Terry/Sp203.gif
 		Attack1  0
 	frame	data/chars/players/Terry/jump00.gif
 	frame	data/chars/players/Terry/jump01.gif
@@ -439,16 +442,20 @@ anim Freespecial
  	loop	0
  	delay	8
  	offset	75 112
- 	bbox	25 21 34 63
+ 	bbox	61 40 21 51
 		move  0
         hitflash	MEdio
         hitfx	data/sounds/golpes/MEdio.wav
  	frame	data/chars/players/Terry/ra100.gif
         @cmd dasher 2 0 0
 		delay  4
+		bbox  73  54  27  30
+		attack1  89  56  43  18  10  1  1  0  15  15
  	frame	data/chars/players/Terry/ra101.gif
 	Sound	data/chars/players/Terry/RA.wav
-		attack1  19  21  70  37  10  1  1  0  15  15
+ 	frame	data/chars/players/Terry/ra102.gif
+ 	frame	data/chars/players/Terry/ra103.gif
+ 	frame	data/chars/players/Terry/ra101.gif
  	frame	data/chars/players/Terry/ra102.gif
  	frame	data/chars/players/Terry/ra103.gif
         @cmd dasher 0 0 0
@@ -463,16 +470,18 @@ anim Freespecial
 
 anim grabattack
 	loop	0
-	offset	75 112
-	bbox	13 4 35 68
+	offset	71 114
+	bbox	69 38 15 74
 	delay	4
         hitflash	fRACO
         hitfx	data/sounds/golpes/fRACO.wav
 		Attack1  0
 	frame	data/chars/players/Terry/ga100.gif
+		attack1  72  60  27  29  7  0  0  0  7  15
+		delay  20
 	frame	data/chars/players/Terry/ga101.gif
-		attack1  35  19  28  45  7  0  0  0  0  15
 		delay  8
+		Attack1  0
 	frame	data/chars/players/Terry/ga100.gif
 
 
@@ -480,18 +489,18 @@ anim grabattack
 
 anim grabattack2
 	loop	0
-	offset	75 112
-	bbox	9 1 32 78
+	offset	75 114
+	bbox	62 40 23 74
 	delay	7
         hitflash	Forte
         hitfx	data/sounds/golpes/Forte.wav
 		Attack1  0
 	frame	data/chars/players/Terry/ga200.gif
 	Sound	data/chars/players/Terry/a2.wav
-		attack1  34  25  19  16  10  1  0  0  0  10
-		delay  6
+		attack1  74  57  51  18  10  1  0  0  0  10
+		delay  14
 	frame	data/chars/players/Terry/ga201.gif
-		attack1  24  27  31  40  10  1  0  0  0  10
+		Attack1  0
 	frame	data/chars/players/Terry/ga200.gif
 
 
@@ -500,7 +509,7 @@ anim land
 	loop	0
 	delay	15
 	offset	75 112
-	bbox	27 22 29 61
+	bbox	72 49 29 46
 	frame	data/chars/players/Terry/Ra104.gif
 
 
@@ -512,22 +521,29 @@ anim Fall9
 	frame	data/chars/players/Terry/pain200.gif #1
 		offset  75  112
 	frame	data/chars/players/Terry/fall01.gif #2
+		offset  69  97
 	frame	data/chars/players/Terry/fall02.gif #3
+		offset  73  83
 	frame	data/chars/players/Terry/fall400.gif #4
+		offset  88  97
 	frame	data/chars/players/Terry/fall401.gif #5
+		offset  72  104
 	frame	data/chars/players/Terry/fall402.gif #6
+		offset  69  115
 	frame  data/chars/players/Terry/fall403.gif
 		delay  20
+		offset  91  95
 	frame  data/chars/players/Terry/fall401.gif
 		delay  30
 	frame  data/chars/players/Terry/fall404.gif
+		offset  70  85
 	frame  data/chars/players/Terry/fall405.gif
 
 
 anim Fall8
 	loop	0
 	flipframe  0
-	offset	75 112
+	offset	76 98
 	delay	30
 	frame	data/chars/players/Terry/fall01.gif #0
 	delay	15
@@ -537,7 +553,7 @@ anim Fall8
 anim Fall5
 	loop	0
 	flipframe  1
-	offset	75 112
+	offset	69 97
 	delay	30
 	frame	data/chars/players/Terry/fall01.gif #0
 	delay	15

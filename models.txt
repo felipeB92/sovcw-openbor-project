@@ -25,6 +25,7 @@ noaircancel 2
 know	T00	data/chars/Players/T00.txt
 
 load	Terry		data/chars/Players/Terry/Terry.txt
+know	Terry02		data/chars/Players/Terry/Terryp02.txt
 
 
 #Boss
