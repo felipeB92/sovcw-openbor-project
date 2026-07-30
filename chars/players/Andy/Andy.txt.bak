@@ -15,32 +15,25 @@ JUMPHEIGHT 4
 #Jumpheight 3
 antigrab 2
 atchain   1 1 2 3 4 5
-weapons Terry_Knife Adam_Sword Terry_pipe Adam_Kunai None Blaze
+weapons Andy_Knife Adam_Sword Andy_pipe Adam_Kunai None Blaze
 icon	data/chars/players/Andy/icon.gif 1
 diesound data/chars/players/Andy/Death.wav
 running	20	3	2	1	1
-onblockwscript	data/scripts/bounceF.c
-#animationscript 	data/scripts/ani0020.h
-animationscript		data/scripts/drago.c
-#ondrawscript 		data/scripts/player_ondrawscript.c
+animationscript		data/scripts/Felipe.c
 
 Com f f A freespecial
 Com f f  freespecial2
 
 Load AndyP01
 Load AndyP02
-Load TerryP03
 
 Load MEdio
 
 
-Load AXEL_
-LOAD BLaze_
-
-Load Terry_Knife
-Load Terry_Pipe
-#Load Adam_Kunai
-#Load Adam_Sword
+Load Andy_Knife
+Load Andy_Pipe
+Load Terry__
+Load Joe_Higashi_
 
 remap data/chars/players/Andy/iDLE00.gif data/chars/players/Andy/MAp01.gif
 remap data/chars/players/Andy/iDLE00.gif data/chars/players/Andy/MAp02.gif
@@ -80,8 +73,8 @@ anim Pain5
         Rangez -10 10
 	bbox	0 3 34 74
 	frame   data/chars/players/Andy/idle00.gif
-	@cmd  spawn01  "Blaze_"  -5  0  10
-	@cmd  spawn01  "AXEL_"  5  0  -10
+	@cmd  spawn01  "Joe_Higashi_"  -5  0  10
+	@cmd  spawn01  "Terry__"  5  0  -10
 	frame   data/chars/players/Andy/idle01.gif
 
 anim idle
@@ -217,10 +210,11 @@ anim attack3
         Sound	data/sounds/golpes/Chut.wav
         hitfx	data/sounds/golpes/medio.wav
 	Sound	data/chars/players/Andy/a2.wav
+		blast  0  0  0  0  0  1
 	frame	data/chars/players/Andy/a400.gif
 		Attack1  0
 	frame	data/chars/players/Andy/a402.gif
-		attack3  24  0  38  87  5  0  0  0  0  15
+		attack3  24  0  38  87  5  0  1  0  0  15
 	frame	data/chars/players/Andy/a403.gif
 		Attack1  0
 	frame	data/chars/players/Andy/a404.gif
@@ -238,7 +232,7 @@ anim attack4
 	Sound	data/chars/players/Andy/a3.wav
 	frame	data/chars/players/Andy/a300.gif
 	frame	data/chars/players/Andy/a301.gif
-		attack2  10  8  54  18  7  1  0  0  0  15
+		attack2  10  8  54  18  7  1  1  0  0  15
 	frame	data/chars/players/Andy/a302.gif
 	frame	data/chars/players/Andy/a303.gif
 		Attack1  0
@@ -436,7 +430,6 @@ anim special2
         hitfx	data/sounds/golpes/forte.wav
 		Attack1  0
 		delay  6
-        quakeframe 3 2 2
 	Sound	data/chars/players/Andy/SP02.wav
 		move  0
 	frame	data/chars/players/Andy/SP200.gif
@@ -445,13 +438,22 @@ anim special2
 	@cmd  spawn01  "AndyP02"  0  0  -1
 	frame	data/chars/players/Andy/SP202.gif
 	frame	data/chars/players/Andy/SP203.gif
-        @cmd dasher 2 0 0
 		delay  6
 	frame	data/chars/players/Andy/SP204.gif
-		attack2  14  20  90  59  25  1  0  0  0  20
+        @cmd dasher 2 0 0
+	attack2  14  20  90  59  25  1  1  0  0  20
 	frame	data/chars/players/Andy/SP205.gif
 	frame	data/chars/players/Andy/SP206.gif
+		delay  3
 	frame	data/chars/players/Andy/SP207.gif
+	frame	data/chars/players/Andy/SP207.gif
+	frame	data/chars/players/Andy/SP207.gif
+	frame	data/chars/players/Andy/SP207.gif
+	frame	data/chars/players/Andy/SP207.gif
+	frame	data/chars/players/Andy/SP207.gif
+	frame	data/chars/players/Andy/SP207.gif
+		delay  6
+        @cmd dasher 1 0 0
 	frame	data/chars/players/Andy/SP208.gif
 		Attack1  0
         @cmd dasher 0 0 0
@@ -479,7 +481,7 @@ anim special
 		Attack1  0
 	frame	data/chars/players/Andy/Sp103.gif
 	frame	data/chars/players/Andy/Sp104.gif
-		attack2  5  5  67  90  20  1  0  0  0  25
+		attack2  5  5  67  90  20  1  1  0  0  25
 	frame	data/chars/players/Andy/Sp105.gif
 		attack2  7  -1  67  98  15  1  0  0  0  15
 	frame  data/chars/players/Andy/Sp106.gif
@@ -533,7 +535,7 @@ anim Freespecial
         hitflash	MEdio
         hitfx	data/sounds/golpes/MEdio.wav
         @cmd dasher 1.5 0 0
-		attack1  16  19  41  18  10  1  0  0  0  15
+		attack1  16  19  41  18  10  1  1  0  0  15
  	frame	data/chars/players/Andy/ra00.gif
 	Sound	data/chars/players/Andy/RA.wav
  	frame	data/chars/players/Andy/ra01.gif

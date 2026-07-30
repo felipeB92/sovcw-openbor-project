@@ -33,8 +33,8 @@ Load MEdio
 
 Load Terry_Knife
 Load Terry_Pipe
-#Load Joe_Higashi_
-#Load Andy_
+Load Joe_Higashi_
+Load Andy_
 
 remap data/chars/players/Terry/idle00.gif data/chars/players/Terry/MAp01.gif
 remap data/chars/players/Terry/idle00.gif data/chars/players/Terry/MAp02.gif

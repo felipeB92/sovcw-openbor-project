@@ -42,7 +42,33 @@ remap data/chars/players/Terry/idle00.gif data/chars/players/Terry/MAp02.gif
 remap data/chars/players/Terry/idle00.gif data/chars/players/Terry/MAp03.gif
 remap data/chars/players/Terry/idle00.gif data/chars/players/Terry/MAp04.gif
 
-
+anim Pain5
+	loop	0
+	delay	16
+	offset	75 112
+	bbox	62 41 26 54
+	frame	data/chars/players/Terry/walk00.gif
+        @cmd dasher 1 0 0
+	frame	data/chars/players/Terry/walk01.gif
+	frame	data/chars/players/Terry/walk02.gif
+	frame	data/chars/players/Terry/walk03.gif
+	frame	data/chars/players/Terry/walk00.gif
+	frame	data/chars/players/Terry/walk01.gif
+	frame	data/chars/players/Terry/walk02.gif
+	frame	data/chars/players/Terry/walk03.gif
+	frame	data/chars/players/Terry/walk00.gif
+	frame	data/chars/players/Terry/walk01.gif
+	frame	data/chars/players/Terry/walk02.gif
+	frame	data/chars/players/Terry/walk03.gif
+	frame	data/chars/players/Terry/walk00.gif
+	frame	data/chars/players/Terry/walk01.gif
+	frame	data/chars/players/Terry/walk02.gif
+	frame	data/chars/players/Terry/walk03.gif
+	frame	data/chars/players/Terry/walk00.gif
+	frame	data/chars/players/Terry/walk01.gif
+	frame	data/chars/players/Terry/walk02.gif
+        @cmd dasher 0 0 0
+	frame	data/chars/players/Terry/walk03.gif
 
 anim idle
 	loop	1

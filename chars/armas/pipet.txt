@@ -16,6 +16,7 @@ anim idle
         hitflash	Forte
         hitfx	data/sounds/golpes/Forte.wav
 	attack 26 41 51 17 35 1 0 0 0 12
+		move  2
 	frame	data/chars/armas/pipe00.gif
 	frame	data/chars/armas/pipe01.gif
 	frame	data/chars/armas/pipe02.gif
