@@ -25,9 +25,26 @@ noaircancel 2
 know	T00	data/chars/Players/T00.txt
 
 load	Terry		data/chars/Players/Terry/Terry.txt
+know	Terry_		data/chars/Players/Terry/Terry_.txt
+know	Terry__		data/chars/Players/Terry/Terry__.txt
 know	Terry_knife	data/chars/Players/Terry/Terry_knife.txt
 know	Terry_pipe	data/chars/Players/Terry/Terry_Pipe.txt
 know	TerryP02	data/chars/Players/Terry/Terryp02.txt
+
+load	Joe_Higashi	data/chars/Players/Joe/Joe_Higashi.txt
+know	Joe_Higashi_	data/chars/Players/Joe/Joe_Higashi_.txt
+know	Joe_HigashiP01	data/chars/Players/Joe/Joe_HigashiP01.txt
+know	Joe_HigashiP02	data/chars/Players/Joe/Joe_HigashiP02.txt
+know	Joe_HigashiP03	data/chars/Players/Joe/Joe_HigashiP03.txt
+know	Joe_Higashi_Knife	data/chars/Players/Joe/Joe_Higashi_Knife.txt
+know	Joe_Higashi_Pipe	data/chars/Players/Joe/Joe_Higashi_Pipe.txt
+
+load	Andy		data/chars/Players/Andy/Andy.txt
+know	Andy_		data/chars/Players/Andy/Andy_.txt
+know	AndyP01		data/chars/Players/Andy/AndyP01.txt
+know	AndyP02		data/chars/Players/Andy/AndyP02.txt
+know	Andy_Knife	data/chars/Players/Andy/Andy_Knife.txt
+know	Andy_Pipe	data/chars/Players/Andy/Andy_Pipe.txt
 
 
 #Boss

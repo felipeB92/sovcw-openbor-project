@@ -107,7 +107,7 @@ anim special2
 	loop	0
 	offset	75 112
         custknife Knifet
-        throwframe 1 60
+        throwframe 1 40
 		Attack1  0
 		delay  6
 		move  0
