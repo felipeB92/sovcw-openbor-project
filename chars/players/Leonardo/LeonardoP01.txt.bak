@@ -10,7 +10,7 @@ remove			1
 gfxshadow		0 0
 flash			Corte
 antigravity 100
-animationscript		data/scripts/drago.c
+animationscript		data/scripts/Felipe.c
 
 anim idle
 	loop	0
@@ -18,7 +18,7 @@ anim idle
 		delay  1
         hitflash	Corte
         hitfx	data/sounds/golpes/Corte.wav
-		Attack1  104  74  67  137  20  1  0  0  0  15
+		Attack1  104  74  67  137  20  1  1  0  0  15
 	frame	data/chars/players/Leonardo/P1/P100.gif
         @cmd dasher 2 0 0
 		delay  3

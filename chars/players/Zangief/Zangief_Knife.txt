@@ -19,11 +19,7 @@ weapons Haggar_Knife Adam_Sword haggar_pipe Adam_Kunai None Blaze
 icon	data/chars/players/Zangief/icon.gif 1
 diesound data/chars/players/Zangief/Death.wav
 running	15	3	2	1	1
-onblockwscript	data/scripts/bounceF.c
-#animationscript 	data/scripts/ani0020.h
-animationscript		data/scripts/drago.c
-#ondrawscript 		data/scripts/player_ondrawscript.c
-
+animationscript		data/scripts/Felipe.c
 
 
 

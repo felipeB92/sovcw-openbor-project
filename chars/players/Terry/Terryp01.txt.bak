@@ -14,13 +14,10 @@ animationscript		data/scripts/Felipe.c
 
 anim idle
 	loop	1
-	offset	43 58
+	offset	42 140
 		delay  5
         Followcond 1
         followanim 1
-        hitflash	fORTE
-        hitfx	data/sounds/golpes/forte.wav
-		attack1  20  40  42  23  10  1  0  0  10  0
 	frame	data/chars/players/Terry/P2/p00.gif
         @cmd dasher 1 0 0
 	frame	data/chars/players/Terry/P2/p01.gif
@@ -29,9 +26,10 @@ anim idle
 
 anim Follow1
 	loop	1
-	offset	999 9999
+	offset	42 140
 		delay  1
 	frame	data/chars/players/Terry/P2/p00.gif
 	@cmd killentity getlocalvar("self")
 	frame	data/chars/players/Terry/P2/p00.gif
+
 

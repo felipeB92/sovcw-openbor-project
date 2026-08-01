@@ -1,0 +1,42 @@
+
+name			ChunliP03 #THROWNED
+type			none
+speed 12
+candamage			enemy obstacle
+alpha 1
+nolife			1
+lifespan		4
+remove			1
+gfxshadow		0 0
+flash			Forte
+antigravity 100
+animationscript		data/scripts/Felipe.c
+
+anim idle
+	loop	1
+	offset	43 58
+		delay  5
+        Followcond 1
+        followanim 1
+        hitflash	fORTE
+        hitfx	data/sounds/golpes/forte.wav
+		attack1  20  40  42  23  10  1  0  0  10  0
+	frame	data/chars/players/Chunli/P/p00.gif
+        @cmd dasher 1 0 0
+	frame	data/chars/players/Chunli/P/p04.gif
+	frame	data/chars/players/Chunli/P/p01.gif
+	frame	data/chars/players/Chunli/P/p04.gif
+	frame	data/chars/players/Chunli/P/p02.gif
+	frame	data/chars/players/Chunli/P/p04.gif
+	frame	data/chars/players/Chunli/P/p03.gif
+	frame	data/chars/players/Chunli/P/p04.gif
+
+
+anim Follow1
+	loop	1
+	offset	9999 9999
+		delay  1
+	frame	data/chars/players/Chunli/P/p00.gif
+	@cmd killentity getlocalvar("self")
+	frame	data/chars/players/Chunli/P/p00.gif
+

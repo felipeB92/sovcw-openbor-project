@@ -28,28 +28,20 @@ weapons Ryu_Knife Adam_Sword Ryu_pipe Adam_Kunai None Blaze
 icon	data/chars/players/Ryu/icon2.gif 1
 diesound data/chars/players/Ryu/Death.wav
 running	20	3	2	1	1
-onblockwscript	data/scripts/bounceF.c
-#animationscript 	data/scripts/ani0020.h
-animationscript		data/scripts/drago.c
-#ondrawscript 		data/scripts/player_ondrawscript.c
+animationscript		data/scripts/Felipe.c
 
 Com f f A freespecial
 Com f f  freespecial2
 
 Load RyuP01
 Load RyuP02
-Load TerryP03
 
 Load MEdio
 
 
-Load AXEL_
-LOAD BLaze_
 
 Load Ryu_Knife
 Load Ryu_Pipe
-Load Joe_Higashi_
-Load Andy_
 
 remap data/chars/players/Ryu/idle00.gif data/chars/players/Ryu/MAp01.gif
 remap data/chars/players/Ryu/idle00.gif data/chars/players/Ryu/MAp02.gif
@@ -432,21 +424,21 @@ anim Freespecial4
 	Sound	data/chars/players/Ryu/SP01.wav
 		Attack1  0
 	frame	data/chars/players/Ryu/Sp103.gif
-		attack2  34  33  66  22  25  1  0  0  0  25
+		attack2  34  33  66  22  25  1  0  0  15  25
 	frame	data/chars/players/Ryu/Sp104.gif
-		attack2  36  35  36  23  25  1  0  0  0  25
+		attack2  36  35  36  23  25  1  0  0  15  25
 	frame	data/chars/players/Ryu/Sp105.gif
-		attack2  2  32  63  17  25  1  0  0  0  25
+		attack2  2  32  63  17  25  1  0  0  15  25
 	frame  data/chars/players/Ryu/Sp106.gif
-		attack2  31  36  37  15  25  1  0  0  0  25
+		attack2  31  36  37  15  25  1  0  0  15  25
 	frame	data/chars/players/Ryu/Sp107.gif
-		attack2  29  34  71  21  25  1  0  0  0  25
+		attack2  29  34  71  21  25  1  0  0  15  25
 	frame	data/chars/players/Ryu/Sp104.gif
-		attack2  34  36  38  20  25  1  0  0  0  25
+		attack2  34  36  38  20  25  1  0  0  15  25
 	frame	data/chars/players/Ryu/Sp105.gif
-		attack2  1  33  63  19  25  1  0  0  0  25
+		attack2  1  33  63  19  25  1  0  0  15  25
 	frame  data/chars/players/Ryu/Sp106.gif
-		attack2  26  36  44  15  25  1  0  0  0  25
+		attack2  26  36  44  15  25  1  0  0  15  25
 	frame	data/chars/players/Ryu/Sp107.gif
 		Attack1  0
 	frame  data/chars/players/Ryu/Sp108.gif

@@ -26,28 +26,22 @@ weapons Chunli_Knife Adam_Sword Chunli_pipe Adam_Kunai None Blaze
 icon	data/chars/players/Chunli/icon2.gif 1
 diesound data/chars/players/Chunli/Death.wav
 running	20	3	2	1	1
-onblockwscript	data/scripts/bounceF.c
-#animationscript 	data/scripts/ani0020.h
-animationscript		data/scripts/drago.c
-#ondrawscript 		data/scripts/player_ondrawscript.c
+animationscript		data/scripts/Felipe.c
 
 Com f f A freespecial
 Com f f  freespecial2
 
 Load ChunliP01
 Load ChunliP02
-Load TerryP03
 
 Load MEdio
 
 
-Load AXEL_
-LOAD BLaze_
+
 
 Load Chunli_Knife
 Load Chunli_Pipe
-Load Joe_Higashi_
-Load Andy_
+
 
 remap data/chars/players/Chunli/idle00.gif data/chars/players/Chunli/MAp01.gif
 remap data/chars/players/Chunli/idle00.gif data/chars/players/Chunli/MAp02.gif
@@ -409,9 +403,9 @@ anim Freespecial3
 	frame	data/chars/players/Chunli/SP207.gif
 	frame	data/chars/players/Chunli/SP208.gif
 	frame	data/chars/players/Chunli/SP209.gif
-		attack2  30  38  71  25  25  1  1  0  0  20
+		attack2  30  38  71  25  25  1  1  0  15  20
 	frame	data/chars/players/Chunli/SP210.gif
-		attack2  11  34  107  22  25  1  1  0  0  20
+		attack2  11  34  107  22  25  1  1  0  15  20
 	frame	data/chars/players/Chunli/SP211.gif
 	frame	data/chars/players/Chunli/SP212.gif
 	frame	data/chars/players/Chunli/SP213.gif
@@ -482,7 +476,7 @@ anim Freespecial4
 	frame	data/chars/players/Chunli/Sp131.gif
 	frame	data/chars/players/Chunli/Sp132.gif
 	Sound	data/chars/players/Chunli/a3.wav
-		attack2  44  -3  44  95  15  1  1  0  0  15
+		attack2  44  -3  44  95  15  1  1  0  15  15
 	frame	data/chars/players/Chunli/Sp133.gif
 	frame	data/chars/players/Chunli/Sp134.gif
 	frame	data/chars/players/Chunli/Sp135.gif

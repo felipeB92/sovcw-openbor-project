@@ -26,10 +26,8 @@ weapons Raphael_Knife Adam_Sword Raphael_pipe Adam_Kunai None Blaze
 icon	data/chars/players/Raphael/icon2.gif 1
 diesound data/chars/players/Raphael/Death.wav
 running	20	3	2	1	1
-onblockwscript	data/scripts/bounceF.c
-#animationscript 	data/scripts/ani0020.h
-animationscript		data/scripts/drago.c
-#ondrawscript 		data/scripts/player_ondrawscript.c
+
+animationscript		data/scripts/Felipe.c
 
 Com f f A freespecial
 Com f f  freespecial2
@@ -38,14 +36,8 @@ Load RaphaelP01
 
 Load MEdio
 
-
-Load AXEL_
-LOAD BLaze_
-
 Load Raphael_Knife
 Load Raphael_Pipe
-Load Joe_Higashi_
-Load Andy_
 
 remap data/chars/players/Raphael/Idle00.gif data/chars/players/Raphael/MAp01.gif
 remap data/chars/players/Raphael/Idle00.gif data/chars/players/Raphael/MAp02.gif

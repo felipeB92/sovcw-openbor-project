@@ -26,57 +26,85 @@ weapons Chunli_Knife Adam_Sword Chunli_pipe Adam_Kunai None Blaze
 icon	data/chars/players/Chunli/icon2.gif 1
 diesound data/chars/players/Chunli/Death.wav
 running	20	3	2	1	1
-onblockwscript	data/scripts/bounceF.c
-#animationscript 	data/scripts/ani0020.h
-animationscript		data/scripts/drago.c
-#ondrawscript 		data/scripts/player_ondrawscript.c
+animationscript		data/scripts/Felipe.c
 
 Com f f A freespecial
 Com f f  freespecial2
 
 Load ChunliP01
 Load ChunliP02
-Load TerryP03
 
 Load MEdio
 
 
-Load AXEL_
-LOAD BLaze_
+
 
 Load Chunli_Knife
 Load Chunli_Pipe
-Load Joe_Higashi_
-Load Andy_
+
 
 remap data/chars/players/Chunli/idle00.gif data/chars/players/Chunli/MAp01.gif
 remap data/chars/players/Chunli/idle00.gif data/chars/players/Chunli/MAp02.gif
 remap data/chars/players/Chunli/idle00.gif data/chars/players/Chunli/MAp03.gif
 remap data/chars/players/Chunli/idle00.gif data/chars/players/Chunli/MAp04.gif
 
-anim	waiting
-	loop	1
-	offset	1 -542
-	delay	17
-	frame   data/chars/players/Chunli/select01.gif
-	frame   data/chars/players/Chunli/select02.gif
-	frame   data/chars/players/Chunli/select03.gif
-	frame   data/chars/players/Chunli/select04.gif
-
-anim	Select
+anim Pain5
 	loop	0
-	offset	1 -542
-	delay	3
-	frame   data/chars/players/Chunli/select00.gif
-	frame   data/chars/players/Chunli/select01.gif
-	frame   data/chars/players/Chunli/select00.gif
-	frame   data/chars/players/Chunli/select01.gif
-	frame   data/chars/players/Chunli/select00.gif
-	frame   data/chars/players/Chunli/select01.gif
-	frame   data/chars/players/Chunli/select00.gif
-	frame   data/chars/players/Chunli/select01.gif
-	frame   data/chars/players/Chunli/select00.gif
-	frame   data/chars/players/Chunli/select01.gif
+	delay	9
+	offset	30 69
+	bbox	11 0 41 70
+	frame	data/chars/players/Chunli/walk00.gif
+        @cmd dasher 1 0 0
+	frame	data/chars/players/Chunli/walk01.gif
+	frame	data/chars/players/Chunli/walk02.gif
+	frame	data/chars/players/Chunli/walk03.gif
+	frame	data/chars/players/Chunli/walk04.gif
+	frame	data/chars/players/Chunli/walk05.gif
+	frame	data/chars/players/Chunli/walk06.gif
+	frame	data/chars/players/Chunli/walk07.gif
+	frame	data/chars/players/Chunli/walk08.gif
+	frame	data/chars/players/Chunli/walk09.gif
+	frame	data/chars/players/Chunli/walk10.gif
+	frame	data/chars/players/Chunli/walk11.gif
+	frame	data/chars/players/Chunli/walk00.gif
+	frame	data/chars/players/Chunli/walk01.gif
+	frame	data/chars/players/Chunli/walk02.gif
+	frame	data/chars/players/Chunli/walk03.gif
+	frame	data/chars/players/Chunli/walk04.gif
+	frame	data/chars/players/Chunli/walk05.gif
+	frame	data/chars/players/Chunli/walk06.gif
+	frame	data/chars/players/Chunli/walk07.gif
+	frame	data/chars/players/Chunli/walk08.gif
+	frame	data/chars/players/Chunli/walk09.gif
+	frame	data/chars/players/Chunli/walk10.gif
+	frame	data/chars/players/Chunli/walk11.gif
+	frame	data/chars/players/Chunli/walk00.gif
+	frame	data/chars/players/Chunli/walk01.gif
+	frame	data/chars/players/Chunli/walk02.gif
+	frame	data/chars/players/Chunli/walk03.gif
+	frame	data/chars/players/Chunli/walk04.gif
+	frame	data/chars/players/Chunli/walk05.gif
+	frame	data/chars/players/Chunli/walk06.gif
+
+anim Spawn
+	loop	0
+	delay	17
+	offset	22 68
+	bbox	11 0 24 69
+	frame   data/chars/players/Chunli/idle00.gif
+	frame   data/chars/players/Chunli/idle01.gif
+	frame   data/chars/players/Chunli/idle02.gif
+	frame   data/chars/players/Chunli/idle03.gif
+	frame   data/chars/players/Chunli/idle00.gif
+	frame   data/chars/players/Chunli/idle01.gif
+	frame   data/chars/players/Chunli/idle02.gif
+	frame   data/chars/players/Chunli/idle03.gif
+	frame   data/chars/players/Chunli/idle00.gif
+	frame   data/chars/players/Chunli/idle01.gif
+	frame   data/chars/players/Chunli/idle02.gif
+	frame   data/chars/players/Chunli/idle03.gif
+
+
 
 anim idle
 	loop	1
@@ -473,6 +501,7 @@ anim Freespecial2
 	frame	data/chars/players/Chunli/Dash07.gif
         @cmd dasher 2 0 0
 		delay  8
+		attack1  49  5  25  28  1  0  0  0  0  15
 	frame	data/chars/players/Chunli/Dash00.gif
 	frame	data/chars/players/Chunli/Dash00.gif
         @cmd dasher 1 0 0
@@ -482,6 +511,7 @@ anim Freespecial2
 	frame	data/chars/players/Chunli/Dash03.gif
 	frame	data/chars/players/Chunli/Dash04.gif
         @cmd dasher 0 0 0
+		Attack1  0
 	frame	data/chars/players/Chunli/Dash05.gif
 	frame	data/chars/players/Chunli/Dash06.gif
 	frame	data/chars/players/Chunli/Dash07.gif
@@ -664,4 +694,21 @@ anim Fall5
 	offset	39 53
 	delay	15
 	frame	data/chars/players/Chunli/fall03.gif #1
+
+anim Death
+	loop	0
+	offset	49 73
+	delay	20
+        hitfx	data/sounds/golpes/Forte.wav
+		attack  0
+	frame	data/chars/players/Chunli/fall00.gif
+		Attack1  0
+		offset  38  69
+	frame	data/chars/players/Chunli/fall01.gif
+		delay  10
+		offset  28  59
+	@cmd  spawn01  "Chunli_"  0  0  -1
+	frame	data/chars/players/Chunli/fall02.gif
+		offset  44  53
+	frame	data/chars/players/Chunli/fall03.gif
 

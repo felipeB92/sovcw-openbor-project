@@ -24,8 +24,9 @@ animationscript		data/scripts/Felipe.c
 
 Com f f A freespecial
 Com f f  freespecial2
+Com d f A freespecial4
 
-#Load TerryP01
+Load TerryP01
 Load TerryP02
 #Load TerryP03
 
@@ -239,6 +240,28 @@ anim throw
 		attack1  -120  42  48  21  7  1  0  0  0  10
 	frame  data/chars/players/Terry/Idle01.gif
 
+anim freespecial4
+        energycost 5 1
+        MpOnly 1
+	loop	0
+	offset	75 112
+        hitflash	fORTE
+        hitfx	data/sounds/golpes/forte.wav
+		Attack1  0
+		delay  6
+	Sound	data/chars/players/Terry/PW.wav
+		move  0
+	frame	data/chars/players/Terry/SP100.gif
+	frame	data/chars/players/Terry/SP101.gif
+	@cmd  spawn01  "TerryP01"  40  0  1
+	frame	data/chars/players/Terry/SP102.gif
+	frame	data/chars/players/Terry/SP103.gif
+		delay  16
+	frame	data/chars/players/Terry/SP104.gif
+		delay  6
+	frame	data/chars/players/Terry/Sp102.gif
+
+
 
 
 anim pain
@@ -400,14 +423,11 @@ anim special
 	frame	data/chars/players/Terry/get01.gif
 		delay  5
 	frame	data/chars/players/Terry/Sp200.gif
-	@cmd  spawn01  "TerryP01"  0  0  -1
 		attack3  54  32  48  81  5  0  1  0  15  25
 		sound  data/chars/players/Terry/SP01.wav
 	frame	data/chars/players/Terry/Sp201.gif
-	@cmd  spawn01  "TerryP01"  0  0  -1
 		attack1  62  35  44  77  5  0  1  0  15  25
 	frame  data/chars/players/Terry/Sp202.gif
-	@cmd  spawn01  "TerryP01"  0  0  -1
 		Attack1  0
 	frame	data/chars/players/Terry/Sp200.gif
 	frame	data/chars/players/Terry/Sp201.gif

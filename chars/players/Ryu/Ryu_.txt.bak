@@ -1,4 +1,4 @@
-name	Ryu_Pipe
+name	Ryu_
 health	100
 mp 10
 chargerate 2
@@ -8,14 +8,24 @@ Falldie 2
 Grabdistance 18
 riseinv				0.4 1
 speed	8
-type	None
+type	NPC
+Subtype Follow
+iconposition 322 4
+lifeposition 322 23
+Nameposition 343 4
+MPposition 406 14
+lifebarstatus 126 5 1 1 0 -500 -500 1 -500
+MPbarstatus 42 5 1 1 0 -500 -500 1 -500
+hostile ENEMY
+subject_to_screen 1
 gfxshadow	1
 candamage			enemy obstacle
 JUMPHEIGHT 4
 #Jumpheight 3
 antigrab 2
 atchain   1 1 2 3 4 5
-icon	data/chars/players/Ryu/icon.gif 1
+weapons Ryu_Knife Adam_Sword Ryu_pipe Adam_Kunai None Blaze
+icon	data/chars/players/Ryu/icon2.gif 1
 diesound data/chars/players/Ryu/Death.wav
 running	20	3	2	1	1
 animationscript		data/scripts/Felipe.c
@@ -25,15 +35,68 @@ Com f f  freespecial2
 
 Load RyuP01
 Load RyuP02
-Load pipeT
 
 Load MEdio
 
+
+
+Load Ryu_Knife
+Load Ryu_Pipe
 
 remap data/chars/players/Ryu/idle00.gif data/chars/players/Ryu/MAp01.gif
 remap data/chars/players/Ryu/idle00.gif data/chars/players/Ryu/MAp02.gif
 remap data/chars/players/Ryu/idle00.gif data/chars/players/Ryu/MAp03.gif
 remap data/chars/players/Ryu/idle00.gif data/chars/players/Ryu/MAp04.gif
+
+anim Pain5
+	loop	0
+	delay	16
+	offset	30 77
+	bbox	14 8 32 72
+	frame	data/chars/players/Ryu/walk00.gif
+        @cmd dasher 1 0 0
+	frame	data/chars/players/Ryu/walk01.gif
+	frame	data/chars/players/Ryu/walk02.gif
+	frame	data/chars/players/Ryu/walk03.gif
+	frame	data/chars/players/Ryu/walk04.gif
+	frame	data/chars/players/Ryu/walk00.gif
+	frame	data/chars/players/Ryu/walk01.gif
+	frame	data/chars/players/Ryu/walk02.gif
+	frame	data/chars/players/Ryu/walk03.gif
+	frame	data/chars/players/Ryu/walk04.gif
+	frame	data/chars/players/Ryu/walk00.gif
+	frame	data/chars/players/Ryu/walk01.gif
+	frame	data/chars/players/Ryu/walk02.gif
+	frame	data/chars/players/Ryu/walk03.gif
+	frame	data/chars/players/Ryu/walk04.gif
+	frame	data/chars/players/Ryu/walk00.gif
+	frame	data/chars/players/Ryu/walk01.gif
+	frame	data/chars/players/Ryu/walk02.gif
+	frame	data/chars/players/Ryu/walk03.gif
+	frame	data/chars/players/Ryu/walk04.gif
+	frame	data/chars/players/Ryu/walk00.gif
+	frame	data/chars/players/Ryu/walk01.gif
+	frame	data/chars/players/Ryu/walk02.gif
+	frame	data/chars/players/Ryu/walk03.gif
+	frame	data/chars/players/Ryu/walk04.gif
+
+anim Spawn
+	loop	0
+	delay	14
+	offset	22 75
+	bbox	11 7 30 69
+	frame   data/chars/players/Ryu/idle00.gif
+	frame   data/chars/players/Ryu/idle01.gif
+	frame   data/chars/players/Ryu/idle02.gif
+	frame   data/chars/players/Ryu/idle03.gif
+	frame   data/chars/players/Ryu/idle04.gif
+	frame   data/chars/players/Ryu/idle05.gif
+	frame   data/chars/players/Ryu/idle00.gif
+	frame   data/chars/players/Ryu/idle01.gif
+	frame   data/chars/players/Ryu/idle02.gif
+	frame   data/chars/players/Ryu/idle03.gif
+	frame   data/chars/players/Ryu/idle04.gif
+	frame   data/chars/players/Ryu/idle05.gif
 
 
 anim	waiting
@@ -62,106 +125,56 @@ anim	Select
 	frame   data/chars/players/Ryu/select00.gif
 	frame   data/chars/players/Ryu/select01.gif
 
-anim Pain5
-	loop	0
-	delay	12
-	offset	26 79
-        Range 0 40
-        Rangez -10 10
-	bbox	4 -1 40 77
-	frame   data/chars/players/Ryu/idle00.gif
-	@cmd  spawn01  "Joe_Higashi_"  -5  0  10
-	@cmd  spawn01  "Andy_"  5  0  -10
-	frame   data/chars/players/Ryu/idle01.gif
-
 anim idle
 	loop	1
 	delay	14
-	offset	22 108
-	bbox	3 35 37 74
-	frame   data/chars/players/Ryu/Pipe/idle00.gif
+	offset	22 75
+	bbox	11 7 30 69
+	frame   data/chars/players/Ryu/idle00.gif
 	@cmd	depost 0
 	@cmd	throw 15 0.7 0.7 1 0 -1
 	@cmd	clearL
-	frame   data/chars/players/Ryu/Pipe/idle01.gif
-	frame   data/chars/players/Ryu/Pipe/idle02.gif
-	frame   data/chars/players/Ryu/Pipe/idle03.gif
-	frame   data/chars/players/Ryu/Pipe/idle04.gif
-	frame   data/chars/players/Ryu/Pipe/idle05.gif
+	frame   data/chars/players/Ryu/idle01.gif
+	frame   data/chars/players/Ryu/idle02.gif
+	frame   data/chars/players/Ryu/idle03.gif
+	frame   data/chars/players/Ryu/idle04.gif
+	frame   data/chars/players/Ryu/idle05.gif
 
 
 
 anim walk
 	loop	1
 	delay	16
-	offset	22 100
-	bbox	11 34 25 64
-	frame	data/chars/players/Ryu/Pipe/walk00.gif
-	frame	data/chars/players/Ryu/Pipe/walk01.gif
-	frame	data/chars/players/Ryu/Pipe/walk02.gif
-	frame	data/chars/players/Ryu/Pipe/walk03.gif
-	frame	data/chars/players/Ryu/Pipe/walk04.gif
+	offset	30 77
+	bbox	14 8 32 72
+	frame	data/chars/players/Ryu/walk00.gif
+	frame	data/chars/players/Ryu/walk01.gif
+	frame	data/chars/players/Ryu/walk02.gif
+	frame	data/chars/players/Ryu/walk03.gif
+	frame	data/chars/players/Ryu/walk04.gif
 
-
-anim get
-	loop	0
-	delay	10
-	offset	32 76
-	frame	data/chars/players/Ryu/Get00.gif
-	frame	data/chars/players/Ryu/Get01.gif
 
 
 anim jump
 	loop	0
 	delay	10
-	offset	68 89
-	bbox	61 13 27 69
-	frame	data/chars/players/Ryu/Pipe/Jump00.gif
-		offset  18  101
-		bbox  10  31  30  56
-	frame	data/chars/players/Ryu/Pipe/Jump01.gif
-		bbox  4  38  40  57
-	frame	data/chars/players/Ryu/Pipe/Jump02.gif
-	frame	data/chars/players/Ryu/Pipe/Jump03.gif
-	frame	data/chars/players/Ryu/Pipe/Jump04.gif
-		offset  68  89
-		bbox  52  7  45  71
-	frame	data/chars/players/Ryu/Pipe/Jump05.gif
+	offset	22 89
+	bbox	9 9 28 59
+	frame	data/chars/players/Ryu/Jump00.gif
+	frame	data/chars/players/Ryu/Jump01.gif
+	frame	data/chars/players/Ryu/Jump02.gif
+	frame	data/chars/players/Ryu/Jump03.gif
+	frame	data/chars/players/Ryu/Jump04.gif
+	frame	data/chars/players/Ryu/Jump05.gif
 
-
-anim jumpattack2
-	loop	0
-	delay	5
-	offset	26 54
-	bbox	11 1 38 54
-        hitflash	MEdio
-        hitfx	data/sounds/golpes/medio.wav
-        Sound	data/sounds/golpes/Chut.wav
-	frame	data/chars/players/Ryu/Ja200.gif
-	Sound	data/chars/players/Ryu/a2.wav
-		Attack1  8  3  52  53  10  1  0  0  0  15
-		delay  25
-	frame	data/chars/players/Ryu/Ja201.gif
 
 
 anim jumpattack
 	loop	0
 	delay	5
-	offset	22 79
-	bbox	16 15 31 57
-        hitflash	MEdio
-        hitfx	data/sounds/golpes/medio.wav
-        Sound	data/sounds/golpes/Chut.wav
-	frame	data/chars/players/Ryu/Ja100.gif
-		offset  22  75
-		attack1  14  1  43  73  10  1  0  0  0  15
-		delay  25
-	frame	data/chars/players/Ryu/Ja300.gif
-
-anim jumpforward
-	loop	0
-	delay	5
 	offset	23 79
+        Range 70 80
+        RangeZ -10 10
 	bbox	5 20 48 52
         hitflash	MEdio
         hitfx	data/sounds/golpes/medio.wav
@@ -177,19 +190,21 @@ anim jumpforward
 anim attack1
 	loop	0
 	delay	6
-	offset	22 109
-        hitflash	Forte
-	bbox	11 39 29 69
+	offset	22 74
+        Range 0 40
+        RangeZ -10 10
+        hitflash	Fraco
+	bbox	14 4 24 70
 		Attack1  0
-        Sound	data/sounds/golpes/Chut.wav
-        hitfx	data/sounds/golpes/Forte.wav
-	frame	data/chars/players/Ryu/Pipe/a100.gif
-		delay  17
-		attack2  7  43  100  15  12  1  0  0  0  15
-	frame	data/chars/players/Ryu/Pipe/a101.gif
-		delay  5
+        Sound	data/sounds/golpes/Soco.wav
+        hitfx	data/sounds/golpes/Fraco.wav
+	frame	data/chars/players/Ryu/a100.gif
+		delay  7
+		attack1  13  14  56  13  7  0  0  0  0  15
+	frame	data/chars/players/Ryu/a101.gif
+		delay  3
 		Attack1  0
-	frame	data/chars/players/Ryu/Pipe/a102.gif
+	frame	data/chars/players/Ryu/a102.gif
 
 
 anim attack2
@@ -237,45 +252,6 @@ anim grab
 	bbox	24 19 26 71
         cancel	0 3 0 J freespecial
 	frame	data/chars/players/Ryu/Ga100.gif
-
-anim throw
-	loop	0
-	delay	5
-	offset	33 76
-        hitflash	Forte
-        hitfx	data/sounds/golpes/Forte.wav
-		Attack1  0
-	frame	data/chars/players/Ryu/T00.gif
-	delay	10
-	@cmd	slamstart
-	@cmd	position 0 20 0 0 -1
-		offset  64  76
-	frame	data/chars/players/Ryu/T01.gif
-	@cmd	position 4 -10 30 0 -1
-		delay  20
-		attack1  71  1  46  63  7  1  0  0  0  10
-	frame	data/chars/players/Ryu/T02.gif
-	Sound	data/chars/players/Ryu/a1.wav
-	@cmd	position 5 -30 30 0 -1
-		attack1  10  -1  64  30  7  1  0  0  0  10
-		delay  10
-	frame	data/chars/players/Ryu/T03.gif
-	@cmd	position 5 -50 40 0 -1
-		attack1  -48  7  54  47  7  1  0  0  0  10
-	frame	data/chars/players/Ryu/T03.gif
-	@cmd	position 8 -70 30 0 -1
-	@cmd	depost 0
-	@cmd	throw 15 5 2 2 0 -1
-	@cmd	clearL
-		attack1  -76  15  43  44  7  1  0  0  0  10
-		delay  20
-	frame	data/chars/players/Ryu/t04.gif
-		attack1  -124  24  49  46  7  1  0  0  0  10
-		offset  55  76
-	frame  data/chars/players/Ryu/t05.gif
-		attack1  -128  56  42  30  7  1  0  0  0  10
-		offset  31  76
-	frame  data/chars/players/Ryu/get00.gif
 
 
 
@@ -408,26 +384,32 @@ anim rise
 
 
 
-anim special2
+anim Freespecial3
+        energycost 10 1
+        MpOnly 1
+        Range 100 150
+        RangeZ -10 10
 	loop	0
-        custknife PipeT
-        throwframe 1 60
-	offset	28 109
+	offset	36 77
         hitflash	fORTE
         hitfx	data/sounds/golpes/forte.wav
-		delay  5
-	frame	data/chars/players/Ryu/Pipe/a100.gif
-		delay  20
-		offset  27  74
 		Attack1  0
-	frame	data/chars/players/Ryu/a101.gif
-		delay  5
-	frame	data/chars/players/Ryu/a102.gif
+		delay  6
+	Sound	data/chars/players/Ryu/SP02.wav
+		move  0
+	frame	data/chars/players/Ryu/SP300.gif
+	frame	data/chars/players/Ryu/SP301.gif
+	frame	data/chars/players/Ryu/SP302.gif
+		delay  50
+	@cmd  spawn01  "RyuP02"  8  47  1
+	frame	data/chars/players/Ryu/SP303.gif
 
-anim special
+anim Freespecial4
         energycost 10 1
         MpOnly 1
 	loop	0
+        Range 40 50
+        RangeZ -10 10
 	offset	46 93
         hitflash	fORTE
         hitfx	data/sounds/golpes/forte.wav
@@ -461,54 +443,16 @@ anim special
 		Attack1  0
 	frame  data/chars/players/Ryu/Sp108.gif
 
-anim jumpspecial
-        energycost 10 1
-        MpOnly 1
-	loop	0
-	offset	44 93
-        hitflash	fORTE
-        hitfx	data/sounds/golpes/forte.wav
-		delay  6
-	frame	data/chars/players/Ryu/Sp100.gif
-	@cmd  spawn01  "RyuP01"  0  0  -1
-		Attack1  0
-	frame	data/chars/players/Ryu/Sp101.gif
-	frame  data/chars/players/Ryu/Sp102.gif
-	Sound	data/chars/players/Ryu/SP01.wav
-		Attack1  0
-	frame	data/chars/players/Ryu/Sp103.gif
-		attack1  30  32  67  32  25  1  0  0  0  15
-	frame	data/chars/players/Ryu/Sp104.gif
-		attack1  36  38  42  18  25  1  0  0  0  15
-	frame	data/chars/players/Ryu/Sp105.gif
-		attack1  2  35  65  17  25  1  0  0  0  15
-	frame  data/chars/players/Ryu/Sp106.gif
-		attack1  29  34  47  16  25  1  0  0  0  15
-	frame	data/chars/players/Ryu/Sp107.gif
-		Attack1  0
-	frame  data/chars/players/Ryu/Sp108.gif
 
-anim Freespecial2
-	loop	0
-	delay	10
-	offset	26 101
-        cancel	0 3 0 A freespecial
-        @cmd dasher 1 0 0
-	frame	data/chars/players/Ryu/pipe/Walk00.gif
-        @cmd dasher 2 0 0
-		delay  24
-		offset  46  55
-	frame	data/chars/players/Ryu/pipe/Dash00.gif
-        @cmd dasher 0 0 0
-		delay  16
-		offset  46  57
-	frame	data/chars/players/Ryu/pipe/Dash01.gif
+
 
 
 anim Freespecial
  	loop	0
  	delay	8
  	offset	38 97
+        Range 50 60
+        RangeZ -10 10
  	bbox	25 21 34 63
 		move  0
 	jumpframe  2  2  2  0
@@ -625,4 +569,21 @@ anim Fall5
 	offset	31 78
 	delay	15
 	frame	data/chars/players/Ryu/fall02.gif #1
+
+anim Death
+	loop	0
+	offset	49 73
+	delay	20
+        hitfx	data/sounds/golpes/Forte.wav
+		attack  0
+	frame	data/chars/players/Ryu/fall00.gif
+		Attack1  0
+		offset  38  69
+	frame	data/chars/players/Ryu/fall01.gif
+	@cmd  spawn01  "Ryu_"  0  100  0
+		delay  10
+		offset  35  77
+	frame	data/chars/players/Ryu/fall02.gif
+		offset  42  40
+	frame	data/chars/players/Ryu/fall03.gif
 

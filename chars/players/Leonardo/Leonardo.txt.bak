@@ -19,10 +19,7 @@ weapons Leonardo_Knife Adam_Sword leonardo_pipe Adam_Kunai None Blaze
 icon	data/chars/players/Leonardo/icon.gif 1
 diesound data/chars/players/Leonardo/Death.wav
 running	20	3	2	1	1
-onblockwscript	data/scripts/bounceF.c
-#animationscript 	data/scripts/ani0020.h
-animationscript		data/scripts/drago.c
-#ondrawscript 		data/scripts/player_ondrawscript.c
+animationscript		data/scripts/Felipe.c
 
 Com f f A freespecial
 Com f f  freespecial2
@@ -38,8 +35,6 @@ LOAD Raphael_
 
 Load Leonardo_Knife
 Load leonardo_Pipe
-Load Joe_Higashi_
-Load Andy_
 
 remap data/chars/players/Leonardo/Map00.gif data/chars/players/Leonardo/MAp01.gif
 remap data/chars/players/Leonardo/Map00.gif data/chars/players/Leonardo/MAp02.gif
@@ -505,18 +500,21 @@ anim jumpspecial
 
 anim Freespecial2
 	loop	0
-	delay	5
+	delay	6
 	offset	53 85
         cancel	0 3 0 A freespecial
         @cmd dasher 1 0 0
 	frame	data/chars/players/Leonardo/Dash00.gif
+		delay  12
 	frame	data/chars/players/Leonardo/Dash01.gif
         @cmd dasher 2 0 0
 		delay  6
 	frame	data/chars/players/Leonardo/Dash02.gif
 	frame	data/chars/players/Leonardo/Dash03.gif
+		delay  12
 	frame	data/chars/players/Leonardo/Dash04.gif
 		offset  69  85
+		delay  6
 	frame	data/chars/players/Leonardo/Dash05.gif
         @cmd dasher 0 0 0
 		delay  8

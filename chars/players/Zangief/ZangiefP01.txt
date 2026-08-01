@@ -27,5 +27,5 @@ anim idle
 	frame	data/chars/players/Zangief/Sp102.gif
 	frame	data/chars/players/Zangief/Sp103.gif
 	@cmd killentity getlocalvar("self")
-	frame	data/chars/players/Terry/Sp114.gif
+	frame	data/chars/players/Zangief/Sp103.gif
 

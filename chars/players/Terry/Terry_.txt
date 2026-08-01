@@ -262,14 +262,11 @@ anim freespecial4
 	frame	data/chars/players/Terry/get01.gif
 		delay  5
 	frame	data/chars/players/Terry/Sp200.gif
-	@cmd  spawn01  "TerryP01"  0  0  -1
 		attack3  54  32  48  81  5  0  1  0  15  25
 		sound  data/chars/players/Terry/SP01.wav
 	frame	data/chars/players/Terry/Sp201.gif
-	@cmd  spawn01  "TerryP01"  0  0  -1
 		attack1  62  35  44  77  5  0  1  0  15  25
 	frame  data/chars/players/Terry/Sp202.gif
-	@cmd  spawn01  "TerryP01"  0  0  -1
 		Attack1  0
 	frame	data/chars/players/Terry/Sp200.gif
 	frame	data/chars/players/Terry/Sp201.gif

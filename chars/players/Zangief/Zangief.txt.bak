@@ -305,7 +305,6 @@ anim throw
 	@cmd	position 5 -50 20 0 -1
 	frame	data/chars/players/Zangief/t07.gif
 	@cmd	position 5 -40 0 0 -1
-		sound  data/sounds/solo.wav
 	frame	data/chars/players/Zangief/t08.gif
 		attack1  -26  76  62  24  7  1  0  0  0  10
 	frame	data/chars/players/Zangief/t09.gif
@@ -506,8 +505,7 @@ anim Follow1
 	frame	data/chars/players/Zangief/sp209.gif
 		offset  28  93
 		delay  15
-		attack2  -5  77  96  17  15  1  1  0  25  20
-		sound  data/sounds/solo.wav
+		attack2  -5  77  96  17  15  1  1  0  0  20
 	frame	data/chars/players/Zangief/sp300.gif
 	@cmd	position 9 30 0 0 -1
 	@cmd	depost 0
@@ -535,22 +533,22 @@ anim special
 		Attack1  0
 	frame	data/chars/players/Zangief/Sp100.gif
 	@cmd  spawn01  "ZangiefP01"  0  0  -1
-		attack2  54  11  30  29  25  1  1  0  20  20
+		attack2  54  11  30  29  25  1  1  0  0  20
 	frame	data/chars/players/Zangief/Sp101.gif
 	@cmd  spawn01  "ZangiefP01"  0  0  -1
-		attack2  35  12  77  21  25  1  1  0  20  20
+		attack2  35  12  77  21  25  1  1  0  0  20
 	frame	data/chars/players/Zangief/Sp102.gif
-		attack2  41  6  42  26  25  1  1  0  20  20
+		attack2  41  6  42  26  25  1  1  0  0  20
 	frame	data/chars/players/Zangief/Sp103.gif
-		attack2  -2  15  80  20  25  1  1  0  20  20
+		attack2  -2  15  80  20  25  1  1  0  0  20
 	frame	data/chars/players/Zangief/Sp104.gif
-		attack2  51  16  31  22  25  1  1  0  20  20
+		attack2  51  16  31  22  25  1  1  0  0  20
 	frame	data/chars/players/Zangief/Sp101.gif
-		attack2  38  8  76  27  25  1  1  0  20  20
+		attack2  38  8  76  27  25  1  1  0  0  20
 	frame	data/chars/players/Zangief/Sp102.gif
-		attack2  42  6  38  39  25  1  1  0  20  20
+		attack2  42  6  38  39  25  1  1  0  0  20
 	frame	data/chars/players/Zangief/Sp103.gif
-		attack2  1  12  70  20  25  1  1  0  20  20
+		attack2  1  12  70  20  25  1  1  0  0  20
 	frame	data/chars/players/Zangief/Sp104.gif
 
 
