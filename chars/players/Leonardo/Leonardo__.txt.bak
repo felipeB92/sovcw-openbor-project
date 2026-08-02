@@ -1,19 +1,21 @@
-name	Leonardo_
+name	Leonardo__
 health	100
 mp 10
 chargerate 2
 mprate 1
 #secret 1
-Falldie 2
 Grabdistance 18
 riseinv				0.4 1
 speed	8
 type	NPC
+Falldie 2
 Subtype Follow
-iconposition 165 4
-lifeposition 165 23
-Nameposition 186 4
+iconposition 322 4
+lifeposition 322 23
+Nameposition 343 4
+MPposition 406 14
 lifebarstatus 126 5 1 1 0 -500 -500 1 -500
+MPbarstatus 42 5 1 1 0 -500 -500 1 -500
 hostile ENEMY
 subject_to_screen 1
 gfxshadow	1
@@ -36,7 +38,6 @@ Load LeonardoP02
 
 Load MEdio
 
-
 Load Donatello_
 LOAD Raphael_
 
@@ -49,6 +50,20 @@ remap data/chars/players/Leonardo/Map00.gif data/chars/players/Leonardo/MAp03.gi
 remap data/chars/players/Leonardo/Map00.gif data/chars/players/Leonardo/MAp04.gif
 
 
+
+anim Spawn
+	loop	0
+	offset	25 94
+	bbox	16 9 24 74
+		delay  25
+	frame   data/chars/players/Leonardo/idle00.gif
+	frame   data/chars/players/Leonardo/idle01.gif
+	frame   data/chars/players/Leonardo/idle02.gif
+	frame   data/chars/players/Leonardo/idle03.gif
+	frame   data/chars/players/Leonardo/idle00.gif
+	frame   data/chars/players/Leonardo/idle01.gif
+	frame   data/chars/players/Leonardo/idle02.gif
+	frame   data/chars/players/Leonardo/idle03.gif
 
 anim Pain5
 	loop	0
@@ -74,21 +89,6 @@ anim Pain5
 	frame	data/chars/players/Leonardo/walk03.gif
 	frame	data/chars/players/Leonardo/walk04.gif
 	frame	data/chars/players/Leonardo/walk05.gif
-
-anim Spawn
-	loop	0
-	offset	25 94
-	bbox	16 9 24 74
-		delay  25
-	frame   data/chars/players/Leonardo/idle00.gif
-	frame   data/chars/players/Leonardo/idle01.gif
-	frame   data/chars/players/Leonardo/idle02.gif
-	frame   data/chars/players/Leonardo/idle03.gif
-	frame   data/chars/players/Leonardo/idle00.gif
-	frame   data/chars/players/Leonardo/idle01.gif
-	frame   data/chars/players/Leonardo/idle02.gif
-	frame   data/chars/players/Leonardo/idle03.gif
-
 
 
 anim idle
@@ -308,7 +308,7 @@ anim Death
 	frame	data/chars/players/Leonardo/fall01.gif
 		delay  10
 		offset  48  84
-	@cmd  spawn01  "Leonardo_"  0  150  1
+	@cmd  spawn01  "Leonardo__"  0  150  1
 	frame	data/chars/players/Leonardo/fall02.gif
 		offset  44  22
 	frame	data/chars/players/Leonardo/fall03.gif

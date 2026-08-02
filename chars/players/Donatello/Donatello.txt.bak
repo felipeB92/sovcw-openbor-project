@@ -500,7 +500,7 @@ anim special2
 	frame	data/chars/players/Donatello/SP208.gif
 		Attack1  0
 	frame	data/chars/players/Donatello/SP209.gif
-		attack1  32  14  78  46  10  1  1  0  0  20
+		attack1  32  14  78  46  10  1  1  0  25  20
 	frame	data/chars/players/Donatello/SP210.gif
 	frame	data/chars/players/Donatello/SP211.gif
 
@@ -519,7 +519,7 @@ anim special
 		sound  data/chars/players/Donatello/SP02.wav
 	frame	data/chars/players/Donatello/Sp101.gif
 	@cmd  spawn01  "DonatelloP01"  0  0  -1
-		attack1  -2  4  113  21  25  1  0  0  0  15
+		attack1  -2  4  113  21  25  1  0  0  20  15
 	frame	data/chars/players/Donatello/Sp102.gif
 	@cmd  spawn01  "DonatelloP01"  0  0  -1
 	frame	data/chars/players/Donatello/Sp103.gif

@@ -19,10 +19,8 @@ weapons Adam_Knife Adam_Sword Adam_pipe Adam_Kunai None Blaze
 icon	data/chars/players/Adam/icon.gif 1
 diesound data/chars/players/Adam/Death.wav
 running	20	3	2	1	1
-onblockwscript	data/scripts/bounceF.c
-#animationscript 	data/scripts/ani0020.h
-animationscript		data/scripts/drago.c
-#ondrawscript 		data/scripts/player_ondrawscript.c
+
+animationscript		data/scripts/Felipe.c
 
 Load AdamP01
 Load AdamP02
@@ -262,7 +260,6 @@ anim freespecial
 		delay  15
 		hitflash  MEdio
 		hitfx  data/sounds/Silencio.wav
-		attack4  25  66  60  84  0  0  1  1  0  2
 	frame  data/chars/players/Adam/gJ00.gif
         frame	data/chars/players/Adam/gJ01.gif
 		Attack1  0
@@ -270,7 +267,6 @@ anim freespecial
 	@cmd	position 0 -30 0 0 1
 		offset  109  150
 		move  50
-		attack4  41  67  34  84  0  0  1  1  0  2
         frame	data/chars/players/Adam/gJ03.gif
 	@cmd	anichange "ANI_FOLLOW2"
         move  0
@@ -284,7 +280,6 @@ anim Follow2
 	@cmd	position 0 -29 0 0 1
         frame	data/chars/players/Adam/gJ04.gif
 		Attack1  36  42  45  76  7  1  1  1  0  10
-		delay  25
 		offset  82  118
 	@cmd  spawn01  "Medio"  -30  40  1
 	@cmd	position 8 -29 7 0 1

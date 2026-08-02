@@ -1,14 +1,23 @@
-name	Donatello
+name	Donatello_
 health	100
 mp 10
 chargerate 2
 mprate 1
 #secret 1
-Falldie 2
 Grabdistance 18
 riseinv				0.4 1
 speed	8
-type	player
+type	NPC
+Falldie 2
+Subtype Follow
+iconposition 322 4
+lifeposition 322 23
+Nameposition 343 4
+MPposition 406 14
+lifebarstatus 126 5 1 1 0 -500 -500 1 -500
+MPbarstatus 42 5 1 1 0 -500 -500 1 -500
+hostile ENEMY
+subject_to_screen 1
 gfxshadow	1
 candamage			enemy obstacle
 JUMPHEIGHT 4
@@ -16,10 +25,9 @@ JUMPHEIGHT 4
 antigrab 2
 atchain   1 2 3 4 5 5
 weapons Donatello_Knife Adam_Sword Donatello_pipe Adam_Kunai None Blaze
-icon	data/chars/players/Donatello/icon.gif 1
+icon	data/chars/players/Donatello/icon2.gif 1
 diesound data/chars/players/Donatello/Death.wav
 running	20	3	2	1	1
-
 animationscript		data/scripts/Felipe.c
 
 Com f f A freespecial
@@ -30,10 +38,6 @@ Load DonatelloP02
 
 Load MEdio
 
-
-Load Raphael_
-LOAD Leonardo__
-
 Load Donatello_Knife
 Load Donatello_Pipe
 
@@ -42,46 +46,64 @@ remap data/chars/players/Donatello/MAp00.gif data/chars/players/Donatello/MAp02.
 remap data/chars/players/Donatello/MAp00.gif data/chars/players/Donatello/MAp03.gif
 remap data/chars/players/Donatello/MAp00.gif data/chars/players/Donatello/MAp04.gif
 
-
-
-anim	waiting
-	loop	1
-	offset	1 -542
-	delay	18
-	frame   data/chars/players/Donatello/select01.gif
-	frame   data/chars/players/Donatello/select02.gif
-	frame   data/chars/players/Donatello/select03.gif
-	frame   data/chars/players/Donatello/select04.gif
-	frame   data/chars/players/Donatello/select03.gif
-	frame   data/chars/players/Donatello/select02.gif
-
-anim	Select
-	loop	0
-	offset	1 -542
-	delay	3
-	frame   data/chars/players/Donatello/select00.gif
-	frame   data/chars/players/Donatello/select01.gif
-	frame   data/chars/players/Donatello/select00.gif
-	frame   data/chars/players/Donatello/select01.gif
-	frame   data/chars/players/Donatello/select00.gif
-	frame   data/chars/players/Donatello/select01.gif
-	frame   data/chars/players/Donatello/select00.gif
-	frame   data/chars/players/Donatello/select01.gif
-	frame   data/chars/players/Donatello/select00.gif
-	frame   data/chars/players/Donatello/select01.gif
-
-
 anim Pain5
 	loop	0
-	delay	12
-	offset	31 71
-        Range 0 40
-        Rangez -10 10
-	bbox	14 4 33 64
+	delay	16
+	offset	26 89
+	bbox	14 8 32 72
+	frame	data/chars/players/Donatello/walk00.gif
+        @cmd dasher 1 0 0
+	frame	data/chars/players/Donatello/walk01.gif
+	frame	data/chars/players/Donatello/walk02.gif
+	frame	data/chars/players/Donatello/walk03.gif
+	frame	data/chars/players/Donatello/walk04.gif
+	frame	data/chars/players/Donatello/walk05.gif
+	frame	data/chars/players/Donatello/walk06.gif
+	frame	data/chars/players/Donatello/walk07.gif
+	frame	data/chars/players/Donatello/walk08.gif
+	frame	data/chars/players/Donatello/walk09.gif
+	frame	data/chars/players/Donatello/walk10.gif
+	frame	data/chars/players/Donatello/walk11.gif
+	frame	data/chars/players/Donatello/walk00.gif
+	frame	data/chars/players/Donatello/walk01.gif
+	frame	data/chars/players/Donatello/walk02.gif
+	frame	data/chars/players/Donatello/walk03.gif
+	frame	data/chars/players/Donatello/walk04.gif
+	frame	data/chars/players/Donatello/walk05.gif
+	frame	data/chars/players/Donatello/walk06.gif
+
+
+anim Spawn
+	loop	0
+	offset	33 72
+	bbox	20 1 28 70
+		delay  18
 	frame   data/chars/players/Donatello/idle00.gif
-	@cmd  spawn01  "Raphael_"  -5  0  10
-	@cmd  spawn01  "Leonardo__"  5  0  -10
+	@cmd	depost 0
+	@cmd	throw 15 0.7 0.7 1 0 -1
+	@cmd	clearL
 	frame   data/chars/players/Donatello/idle01.gif
+	frame   data/chars/players/Donatello/idle02.gif
+	frame   data/chars/players/Donatello/idle03.gif
+	frame   data/chars/players/Donatello/idle04.gif
+	frame   data/chars/players/Donatello/idle05.gif
+	frame   data/chars/players/Donatello/idle06.gif
+	frame   data/chars/players/Donatello/idle07.gif
+	frame   data/chars/players/Donatello/idle08.gif
+	frame   data/chars/players/Donatello/idle00.gif
+	frame   data/chars/players/Donatello/idle01.gif
+	frame   data/chars/players/Donatello/idle02.gif
+	frame   data/chars/players/Donatello/idle03.gif
+	frame   data/chars/players/Donatello/idle04.gif
+	frame   data/chars/players/Donatello/idle05.gif
+	frame   data/chars/players/Donatello/idle06.gif
+	frame   data/chars/players/Donatello/idle07.gif
+	frame   data/chars/players/Donatello/idle08.gif
+
+
+
+
+
 
 anim idle
 	loop	1
@@ -122,14 +144,6 @@ anim walk
 	frame	data/chars/players/Donatello/walk11.gif
 
 
-anim get
-	loop	0
-	delay	10
-	offset	36 70
-	frame	data/chars/players/Donatello/Get00.gif
-	frame	data/chars/players/Donatello/Get01.gif
-
-
 anim jump
 	loop	0
 	delay	10
@@ -147,80 +161,30 @@ anim jump
 	frame	data/chars/players/Donatello/Jump09.gif
 
 
-anim jumpattack
-	loop	0
-	delay	5
-	offset	40 91
-	bbox	30 32 35 65
-        hitflash	MEdio
-        hitfx	data/sounds/golpes/medio.wav
-        Sound	data/sounds/golpes/Chut.wav
-	frame	data/chars/players/Donatello/Ja200.gif
-	Sound	data/chars/players/Donatello/a2.wav
-		Attack1  18  22  104  70
-		delay  25
-	frame	data/chars/players/Donatello/Ja201.gif
-		Attack1  0
-	frame	data/chars/players/Donatello/Ja202.gif
 
-
-anim jumpattack2
-	loop	0
-	delay	5
-	offset	49 81
-	bbox	26 21 45 51
-        hitflash	MEdio
-        hitfx	data/sounds/golpes/medio.wav
-        Sound	data/sounds/golpes/Chut.wav
-	frame	data/chars/players/Donatello/Ja300.gif
-	frame	data/chars/players/Donatello/Ja301.gif
-		attack1  24  16  57  90  12  1  0  0  0  15
-		delay  5
-	frame	data/chars/players/Donatello/Ja302.gif
-		delay  25
-	frame	data/chars/players/Donatello/Ja303.gif
-		delay  20
-		Attack1  0
-	frame	data/chars/players/Donatello/Ja304.gif
-
-anim jumpforward
-	loop	0
-	delay	5
-	offset	44 91
-	bbox	5 20 48 52
-        hitflash	MEdio
-        hitfx	data/sounds/golpes/medio.wav
-        Sound	data/sounds/golpes/Chut.wav
-	frame	data/chars/players/Donatello/Ja100.gif
-		delay  7
-	Sound	data/chars/players/Donatello/a2.wav
-		Attack1  0
-	frame	data/chars/players/Donatello/Ja101.gif
-		attack1  32  26  57  58  8  1  0  0  0  10
-	frame	data/chars/players/Donatello/Ja102.gif
 
 anim attack1
 	loop	0
 	delay	3
 	offset	45 99
+        Range 0 50
+        RangeZ -10 10
         hitflash	Fraco
 	bbox	34 34 26 65
         hitfx	data/sounds/golpes/Fraco.wav
 		Attack1  0
 	frame	data/chars/players/Donatello/a100.gif
-        Sound	data/sounds/whoosh.wav
+        Sound	data/sounds/golpes/Soco.wav
 	frame	data/chars/players/Donatello/a101.gif
 	frame	data/chars/players/Donatello/a102.gif
-        Sound	data/sounds/whoosh.wav
+        Sound	data/sounds/golpes/Soco.wav
 	frame  data/chars/players/Donatello/a101.gif
 		attack1  62  30  83  28  3  0  0  0  0  15
 	frame  data/chars/players/Donatello/a104.gif
 		Attack1  0
-		sound  data/sounds/whoosh.wav
 	frame	data/chars/players/Donatello/a105.gif
 		attack1  45  0  81  40  3  0  0  0  0  15
 	frame	data/chars/players/Donatello/a106.gif
-		sound  data/sounds/whoosh.wav
 	frame	data/chars/players/Donatello/a107.gif
 		Attack1  0
 	frame  data/chars/players/Donatello/a108.gif
@@ -289,52 +253,6 @@ anim attack4
         @cmd dasher 0 0 0
 	frame  data/chars/players/Donatello/Get01.gif
 
-
-
-anim grab
-	loop	0
-	delay	100
-	offset	75 84
-	bbox	45 13 27 73
-        cancel	0 3 0 J freespecial
-	frame	data/chars/players/Donatello/T00.gif
-
-anim throw
-	loop	0
-	delay	5
-	offset	57 84
-        hitflash	Forte
-        hitfx	data/sounds/golpes/Forte.wav
-		Attack1  0
-	frame	data/chars/players/Donatello/T00.gif
-	delay	10
-	@cmd	slamstart
-	@cmd	position 0 20 0 0 -1
-	frame	data/chars/players/Donatello/T00.gif
-	@cmd	position 0 20 0 0 -1
-		delay  20
-		attack1  71  1  46  63  7  1  0  0  0  10
-	frame	data/chars/players/Donatello/T01.gif
-	Sound	data/chars/players/Donatello/a2.wav
-	@cmd	position 4 -10 30 0 -1
-		attack1  10  -1  64  30  7  1  0  0  0  10
-		delay  10
-	frame	data/chars/players/Donatello/T02.gif
-	@cmd	position 5 -30 30 0 -1
-		attack1  -48  7  54  47  7  1  0  0  0  10
-	frame	data/chars/players/Donatello/T03.gif
-	@cmd	position 8 -40 30 0 -1
-	@cmd	depost 0
-	@cmd	throw 15 5 2 2 0 -1
-	@cmd	clearL
-		attack1  -76  15  43  44  7  1  0  0  0  10
-		delay  20
-	frame	data/chars/players/Donatello/t04.gif
-		attack1  -124  24  49  46  7  1  0  0  0  10
-	frame  data/chars/players/Donatello/T05.gif
-		attack1  -128  56  42  30  7  1  0  0  0  10
-		offset  28  71
-	frame  data/chars/players/Donatello/Idle01.gif
 
 
 
@@ -469,10 +387,12 @@ anim rise
 
 
 
-anim special2
+anim Freespecial4
         energycost 10 1
         MpOnly 1
 	loop	0
+        Range 70 80
+        RangeZ -10 10
 	offset	38 70
         hitflash	fORTE
         hitfx	data/sounds/golpes/forte.wav
@@ -489,39 +409,30 @@ anim special2
 	frame	data/chars/players/Donatello/SP202.gif
 	@cmd  spawn01  "DonatelloP02"  0  0  -1
 		attack1  34  17  77  45  5  0  1  0  0  20
-		sound  data/sounds/golpes/Chut.wav
 	frame	data/chars/players/Donatello/SP203.gif
 		delay  6
 		Attack1  0
 	frame	data/chars/players/Donatello/SP204.gif
 		attack1  34  19  92  16  5  0  1  0  0  20
-		sound  data/sounds/golpes/Chut.wav
 	frame	data/chars/players/Donatello/SP205.gif
 		Attack1  0
 	frame	data/chars/players/Donatello/SP206.gif
-		sound  data/sounds/golpes/Chut.wav
 	frame	data/chars/players/Donatello/SP207.gif
 		attack1  27  1  85  41  5  0  1  0  0  20
 	frame	data/chars/players/Donatello/SP208.gif
 		Attack1  0
-		sound  data/sounds/golpes/Chut.wav
 	frame	data/chars/players/Donatello/SP209.gif
-		attack1  32  14  78  46  10  1  1  0  25  20
+		attack1  32  14  78  46  10  1  1  0  0  20
 	frame	data/chars/players/Donatello/SP210.gif
-		sound  data/sounds/golpes/Chut.wav
 	frame	data/chars/players/Donatello/SP211.gif
-		sound  data/sounds/golpes/Chut.wav
-	frame  data/chars/players/Donatello/SP207.gif
-		sound  data/sounds/golpes/Chut.wav
-		attack1  25  16  101  21  10  1  1  0  25  20
-		delay  20
-	frame  data/chars/players/Donatello/SP212.gif
 
 
-anim special
+anim Freespecial3
         energycost 10 1
         MpOnly 1
 	loop	0
+        Range 50 60
+        RangeZ -10 10
 	offset	56 55
         hitflash	fORTE
         hitfx	data/sounds/golpes/forte.wav
@@ -532,21 +443,16 @@ anim special
 		sound  data/chars/players/Donatello/SP02.wav
 	frame	data/chars/players/Donatello/Sp101.gif
 	@cmd  spawn01  "DonatelloP01"  0  0  -1
-		attack1  -2  4  113  21  25  1  0  0  20  15
-		sound  data/sounds/whoosh2.wav
+		attack1  -2  4  113  21  25  1  0  0  0  15
 	frame	data/chars/players/Donatello/Sp102.gif
 	@cmd  spawn01  "DonatelloP01"  0  0  -1
 	frame	data/chars/players/Donatello/Sp103.gif
-		sound  data/sounds/whoosh2.wav
 	frame	data/chars/players/Donatello/Sp104.gif
 	frame	data/chars/players/Donatello/Sp105.gif
-		sound  data/sounds/whoosh2.wav
 	frame	data/chars/players/Donatello/Sp106.gif
 	frame	data/chars/players/Donatello/Sp107.gif
-		sound  data/sounds/whoosh2.wav
 	frame	data/chars/players/Donatello/Sp108.gif
 	frame	data/chars/players/Donatello/Sp109.gif
-		sound  data/sounds/whoosh2.wav
 	frame	data/chars/players/Donatello/Sp110.gif
 		offset  34  70
 		Attack1  0
@@ -579,33 +485,12 @@ anim jumpspecial
 
 
 
-anim Freespecial2
-	loop	0
-	delay	5
-	offset	42 110
-        cancel	0 3 0 A freespecial
-        @cmd dasher 1 0 0
-	frame	data/chars/players/Donatello/Dash00.gif
-	frame	data/chars/players/Donatello/Dash01.gif
-        @cmd dasher 2 0 0
-		delay  6
-	frame	data/chars/players/Donatello/Dash02.gif
-	frame	data/chars/players/Donatello/Dash03.gif
-	frame	data/chars/players/Donatello/Dash04.gif
-	frame	data/chars/players/Donatello/Dash05.gif
-	frame	data/chars/players/Donatello/Dash06.gif
-	frame	data/chars/players/Donatello/Dash07.gif
-	frame	data/chars/players/Donatello/Dash08.gif
-        @cmd dasher 0 0 0
-		delay  8
-		offset  53  111
-	frame	data/chars/players/Donatello/Dash09.gif
-
-
 anim Freespecial
  	loop	0
         Sound	data/sounds/golpes/Soco.wav
  	offset	39 79
+        Range 80 100
+        RangeZ -10 10
 		delay  8
  	bbox	25 21 34 63
 		move  0
@@ -627,36 +512,6 @@ anim Freespecial
 		bbox  27  40  38  52
  	frame	data/chars/players/Donatello/a301.gif
  	frame	data/chars/players/Donatello/a300.gif
-
-
-
-
-
-
-
-anim grabattack
-	loop	0
-	offset	73 84
-	bbox	44 12 32 71
-	delay	20
-        hitflash	Forte
-        hitfx	data/sounds/golpes/Forte.wav
-		Attack1  0
-	frame	data/chars/players/Donatello/t00.gif
-		delay  12
-		offset  24  79
-		bbox  9  14  41  66
-		sound  data/chars/players/Donatello/a1.wav
-	frame	data/chars/players/Donatello/ga101.gif
-		attack1  31  10  39  54  12  1  0  0  0  15
-		delay  8
-	frame	data/chars/players/Donatello/ga102.gif
-		delay  12
-	frame	data/chars/players/Donatello/ga102.gif
-	frame	data/chars/players/Donatello/ga102.gif
-
-
-
 
 
 
@@ -715,4 +570,22 @@ anim Fall5
 	offset	48 29
 	delay	15
 	frame	data/chars/players/Donatello/fall03.gif #1
+
+anim Death
+	loop	0
+	offset	53 89
+	delay	20
+        hitfx	data/sounds/golpes/Forte.wav
+		attack  0
+	frame	data/chars/players/Donatello/fall00.gif
+		Attack1  0
+		offset  38  69
+	frame	data/chars/players/Donatello/fall01.gif
+	@cmd  spawn01  "Donatello_"  0  300  0
+		delay  10
+		offset  28  59
+	frame	data/chars/players/Donatello/fall02.gif
+		offset  44  22
+	frame	data/chars/players/Donatello/fall03.gif
+
 

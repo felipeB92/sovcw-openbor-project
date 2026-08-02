@@ -19,10 +19,10 @@ weapons Hawk_Knife Hawk_Sword Hawk_pipe Hawk_Kunai
 icon	data/chars/players/Hawk/icon.gif 1
 diesound data/chars/players/Hawk/Death.wav
 running	20	3	2	1	1
-onblockwscript	data/scripts/bounceF.c
-#animationscript 	data/scripts/ani0020.h
-animationscript		data/scripts/drago.c
-#ondrawscript 		data/scripts/player_ondrawscript.c
+
+animationscript		data/scripts/Felipe.c
+
+
 
 Com f f A freespecial6
 Com f f freespecial3

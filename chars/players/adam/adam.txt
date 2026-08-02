@@ -19,10 +19,8 @@ weapons Adam_Knife Adam_Sword Adam_pipe Adam_Kunai None Blaze
 icon	data/chars/players/Adam/icon.gif 1
 diesound data/chars/players/Adam/Death.wav
 running	20	3	2	1	1
-onblockwscript	data/scripts/bounceF.c
-#animationscript 	data/scripts/ani0020.h
-animationscript		data/scripts/drago.c
-#ondrawscript 		data/scripts/player_ondrawscript.c
+
+animationscript		data/scripts/Felipe.c
 
 Load AdamP01
 Load AdamP02
@@ -565,7 +563,7 @@ anim special
 	@cmd  spawn01  "AdamP01"  0  0  1
 		Attack1  0
 	frame	data/chars/players/Adam/Sp202.gif
-		attack1  22  63  103  63  20  1  1  0  10  20
+		attack1  22  63  103  63  20  1  1  0  25  20
 		delay  6
 	frame  data/chars/players/Adam/Sp203b.gif
 	frame	data/chars/players/Adam/Sp203.gif

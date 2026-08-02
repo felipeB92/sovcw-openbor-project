@@ -401,6 +401,7 @@ anim Freespecial4
 	frame	data/chars/players/Leonardo/SP101.gif
 	@cmd  spawn01  "LeonardoP02"  0  0  -1
 		attack2  0  12  165  23  25  1  1  0  0  15
+		sound  data/sounds/whoosh3.wav
 	frame	data/chars/players/Leonardo/SP102.gif
 	@cmd  spawn01  "LeonardoP02"  0  0  -1
 	frame	data/chars/players/Leonardo/SP103.gif
@@ -410,9 +411,11 @@ anim Freespecial4
 	frame	data/chars/players/Leonardo/SP107.gif
 	frame	data/chars/players/Leonardo/SP108.gif
 	frame	data/chars/players/Leonardo/SP109.gif
+		sound  data/sounds/whoosh3.wav
 	frame	data/chars/players/Leonardo/SP110.gif
 	frame	data/chars/players/Leonardo/SP111.gif
 	frame	data/chars/players/Leonardo/SP112.gif
+		sound  data/sounds/whoosh3.wav
 	frame	data/chars/players/Leonardo/SP113.gif
 		delay  15
 		Attack1  0
@@ -435,14 +438,17 @@ anim Freespecial2
 		delay  3
 		sound  data/chars/players/Leonardo/a4.wav
 	frame	data/chars/players/Leonardo/Sp304.gif
+		sound  data/sounds/whoosh3.wav
 	frame	data/chars/players/Leonardo/Sp305.gif
 	frame	data/chars/players/Leonardo/Sp306.gif
 	frame	data/chars/players/Leonardo/Sp307.gif
 	frame	data/chars/players/Leonardo/Sp304.gif
+		sound  data/sounds/whoosh3.wav
 	frame	data/chars/players/Leonardo/Sp305.gif
 	frame	data/chars/players/Leonardo/Sp306.gif
 	frame	data/chars/players/Leonardo/Sp307.gif
 	frame	data/chars/players/Leonardo/Sp304.gif
+		sound  data/sounds/whoosh3.wav
 	frame	data/chars/players/Leonardo/Sp305.gif
 	frame	data/chars/players/Leonardo/Sp306.gif
 	frame  data/chars/players/Leonardo/Sp307.gif

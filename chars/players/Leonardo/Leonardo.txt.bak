@@ -445,14 +445,14 @@ anim special
         hitflash	CORTE
         hitfx	data/sounds/golpes/Corte.wav
 		delay  4
-		attack2  55  10  58  27  25  1  1  0  0  15
+		attack2  55  10  58  27  25  1  1  0  20  15
 	frame	data/chars/players/Leonardo/SP100.gif
 	Sound	data/chars/players/Leonardo/SP01.wav
 	@cmd  spawn01  "LeonardoP02"  0  0  -1
-		attack2  11  11  149  22  25  1  1  0  0  15
+		attack2  11  11  149  22  25  1  1  0  20  15
 	frame	data/chars/players/Leonardo/SP101.gif
 	@cmd  spawn01  "LeonardoP02"  0  0  -1
-		attack2  0  12  165  23  25  1  1  0  0  15
+		attack2  0  12  165  23  25  1  1  0  20  15
 	frame	data/chars/players/Leonardo/SP102.gif
 	@cmd  spawn01  "LeonardoP02"  0  0  -1
 	frame	data/chars/players/Leonardo/SP103.gif
