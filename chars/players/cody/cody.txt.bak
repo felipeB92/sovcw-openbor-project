@@ -19,11 +19,8 @@ weapons Cody_Knife Adam_Sword Cody_pipe Adam_Kunai None Blaze
 icon	data/chars/players/Cody/icon.gif 1
 diesound data/chars/players/Cody/Death.wav
 running	20	3	2	1	1
-onblockwscript	data/scripts/bounceF.c
-onblockwscript	data/scripts/bounceF.c
-#animationscript 	data/scripts/ani0020.h
-animationscript		data/scripts/drago.c
-#ondrawscript 		data/scripts/player_ondrawscript.c
+
+animationscript		data/scripts/Felipe.c
 
 Load CodyP01
 Load CodyP02
@@ -363,18 +360,18 @@ anim throw
 		attack1  220  107  28  45  7  1  0  0  0  10
 	frame	data/chars/players/Cody/T00.gif
 	@cmd	position 4 -10 35 0 -1
-		blast  196  104  44  25  7  0  0  10
+		attack1  196  104  44  25  7  1  0  1  0  10
 	frame  data/chars/players/Cody/T01.gif
 	@cmd	position 8 -30 35 1 -1
 	@cmd	depost 0
 	@cmd	throw 15 5 2 2 0 -1
 	@cmd	clearL
 		delay  12
-		blast  162  97  40  36  7  0  1
+		attack1  162  97  40  36  7  1  1  0  0  10
 	frame	data/chars/players/Cody/T01.gif
-		blast  141  99  52  32  7  1
+		attack1  141  99  52  32  7  1  0  0  0  10
 	frame	data/chars/players/Cody/T01.gif
-		blast  115  106  39  28  7
+		attack1  115  106  39  28  7  1  0  0  0  10
 	frame  data/chars/players/Cody/T00.gif
 
 

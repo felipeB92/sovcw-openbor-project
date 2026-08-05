@@ -19,11 +19,8 @@ weapons Cody_Knife Adam_Sword Cody_pipe Adam_Kunai None Blaze
 icon	data/chars/players/Cody/icon.gif 1
 diesound data/chars/players/Cody/Death.wav
 running	20	3	2	1	1
-onblockwscript	data/scripts/bounceF.c
-onblockwscript	data/scripts/bounceF.c
-#animationscript 	data/scripts/ani0020.h
-animationscript		data/scripts/drago.c
-#ondrawscript 		data/scripts/player_ondrawscript.c
+
+animationscript		data/scripts/Felipe.c
 
 Load CodyP01
 Load CodyP02
@@ -524,7 +521,7 @@ anim special2
 	@cmd  spawn01  "CodyP01"  0  0  1
 	frame	data/chars/players/Cody/a302.gif
 		delay  30
-		attack2  248  61  50  110  20  1  1  0  0  15
+		attack2  248  61  50  110  20  1  1  0  25  15
 	frame	data/chars/players/Cody/a303.gif
 
 
@@ -542,11 +539,11 @@ anim special
 		Attack1  0
 	frame	data/chars/players/Cody/Sp00.gif
 	@cmd  spawn01  "CodyP02"  0  0  -1
-		attack2  168  111  51  24  20  1  1  0  0  15
+		attack2  168  111  51  24  20  1  1  0  25  15
 	frame	data/chars/players/Cody/Sp01.gif
 	frame	data/chars/players/Cody/Sp02.gif
 	@cmd  spawn01  "CodyP03"  0  0  -1
-		attack2  214  119  62  22  20  1  1  0  0  15
+		attack2  214  119  62  22  20  1  1  0  25  15
 	frame	data/chars/players/Cody/Sp04.gif
 		Attack1  0
 	frame  data/chars/players/Cody/Jump01.gif

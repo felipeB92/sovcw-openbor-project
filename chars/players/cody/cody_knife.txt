@@ -19,11 +19,9 @@ weapons Adam_Knife Adam_Sword Adam_Knife Adam_Kunai None Blaze
 icon	data/chars/players/Cody/icon.gif 1
 diesound data/chars/players/Cody/Death.wav
 running	20	3	2	1	1
-onblockwscript	data/scripts/bounceF.c
-onblockwscript	data/scripts/bounceF.c
-#animationscript 	data/scripts/ani0020.h
-animationscript		data/scripts/drago.c
-#ondrawscript 		data/scripts/player_ondrawscript.c
+
+animationscript		data/scripts/Felipe.c
+
 
 Load CodyP01
 Load CodyP02

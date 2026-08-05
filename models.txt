@@ -145,7 +145,57 @@ know	HawkP01 	data/chars/Players/Hawk/HawkP01.txt
 know	HawkP02 	data/chars/Players/Hawk/HawkP02.txt
 know	HawkP03 	data/chars/Players/Hawk/HawkP03.txt
 
+load	Cody 		data/chars/Players/Cody/Cody.txt
+know	Cody_   	data/chars/Players/Cody/Cody_.txt
+know	Cody_Pipe 	data/chars/Players/Cody/Cody_pipe.txt
+know	Cody_Knife 	data/chars/Players/Cody/Cody_Knife.txt
+know	CodyP01 	data/chars/Players/Cody/CodyP01.txt
+know	CodyP02 	data/chars/Players/Cody/CodyP02.txt
+know	CodyP03 	data/chars/Players/Cody/CodyP03.txt
 
+load	Guy 		data/chars/Players/Guy/Guy.txt
+know	Guy_    	data/chars/Players/Guy/Guy_.txt
+know	Guy_pipe	data/chars/Players/Guy/Guy_pipe.txt
+know	Guy_Knife	data/chars/Players/Guy/Guy_Knife.txt
+know	GuyP01 		data/chars/Players/Guy/GuyP01.txt
+know	GuyP02 		data/chars/Players/Guy/GuyP02.txt
+know	GuyP03 		data/chars/Players/Guy/GuyP03.txt
+know	GuyP04 		data/chars/Players/Guy/GuyP04.txt
+
+load	HAggar		data/chars/Players/HAggar/Haggar.txt
+know	HAggar_	        data/chars/Players/HAggar/Haggar_.txt
+know	HAggar__	data/chars/Players/HAggar/Haggar__.txt
+know	HAggar_pipe	data/chars/Players/HAggar/Haggar_pipe.txt
+know	HAggar_Knife	data/chars/Players/HAggar/Haggar_Knife.txt
+know	HAggarP01	data/chars/Players/HAggar/HaggarP01.txt
+know	HAggarP02	data/chars/Players/HAggar/HaggarP02.txt
+
+load	HannaH  	data/chars/Players/Hannah/Hannah.txt
+know	HannaH_  	data/chars/Players/Hannah/Hannah_.txt
+know	HannaHP01  	data/chars/Players/Hannah/HannahP01.txt
+know	HannaHP02  	data/chars/Players/Hannah/HannahP02.txt
+know	HannaHP03  	data/chars/Players/Hannah/HannahP03.txt
+know	HannaH_Pipe  	data/chars/Players/Hannah/Hannah_pipe.txt
+know	HannaH_Knife  	data/chars/Players/Hannah/Hannah_Knife.txt
+
+load	Mustapha  	data/chars/Players/Mustapha/Mustapha.txt
+know	Mustapha_  	data/chars/Players/Mustapha/Mustapha_.txt
+know	MustaphaP01  	data/chars/Players/Mustapha/MustaphaP01.txt
+know	MustaphaP02  	data/chars/Players/Mustapha/MustaphaP02.txt
+know	MustaphaP03  	data/chars/Players/Mustapha/MustaphaP03.txt
+know	MustaphaP04  	data/chars/Players/Mustapha/MustaphaP04.txt
+know	Mustapha_Pipe  	data/chars/Players/Mustapha/Mustapha_pipe.txt
+know	Mustapha_Knife  data/chars/Players/Mustapha/Mustapha_Knife.txt
+
+load	JAck  	data/chars/Players/JAck/Jack.txt
+know	JAckP01  data/chars/Players/JAck/JackP01.txt
+know	JAckP02  data/chars/Players/JAck/JackP02.txt
+know	JAckP03  data/chars/Players/JAck/JackP03.txt
+know	JAckP04  data/chars/Players/JAck/JackP04.txt
+know	JAck_  data/chars/Players/JAck/Jack_.txt
+know	JAck__ data/chars/Players/JAck/Jack__.txt
+know	JAck_pipe  data/chars/Players/JAck/Jack_pipe.txt
+know	JAck_Knife data/chars/Players/JAck/Jack_Knife.txt
 
 #Boss
 

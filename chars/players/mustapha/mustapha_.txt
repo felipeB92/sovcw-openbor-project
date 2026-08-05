@@ -28,11 +28,9 @@ atchain   1 1 2 3 4 5
 icon	data/chars/players/Mustapha/icon2.gif 1
 diesound data/chars/players/Mustapha/Death.wav
 running	22	3	2	1	1
-onblockwscript	data/scripts/bounceF.c
-onblockwscript	data/scripts/bounceF.c
-#animationscript 	data/scripts/ani0020.h
-animationscript		data/scripts/drago.c
-#ondrawscript 		data/scripts/player_ondrawscript.c
+
+animationscript		data/scripts/Felipe.c
+
 
 Load MustaphaP01
 Load MustaphaP02

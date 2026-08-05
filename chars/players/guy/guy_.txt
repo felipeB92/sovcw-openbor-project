@@ -26,11 +26,10 @@ atchain   1 1 2 3 4 5
 icon	data/chars/players/Guy/icon2.gif 1
 diesound data/chars/players/Guy/Death.wav
 running	20	3	2	1	1
-onblockwscript	data/scripts/bounceF.c
-onblockwscript	data/scripts/bounceF.c
-#animationscript 	data/scripts/ani0020.h
-animationscript		data/scripts/drago.c
-#ondrawscript 		data/scripts/player_ondrawscript.c
+
+animationscript		data/scripts/Felipe.c
+
+
 
 Load GuyP01
 Load GuyP02
@@ -560,11 +559,11 @@ anim Freespecial8
 		Attack1  0
 	frame	data/chars/players/Guy/Sp01.gif
 	@cmd  spawn01  "GuyP02"  0  0  -1
-		attack2  216  105  44  22  20  1  1  0  0  15
+		attack2  216  105  44  22  20  1  1  0  20  15
 	frame	data/chars/players/Guy/Sp02.gif
 	frame	data/chars/players/Guy/Sp03.gif
 	@cmd  spawn01  "GuyP03"  0  0  -1
-		attack2  181  103  52  24  20  1  1  0  0  15
+		attack2  181  103  52  24  20  1  1  0  20  15
 	frame	data/chars/players/Guy/Sp04.gif
 	frame	data/chars/players/Guy/Sp05.gif
 		Attack1  0

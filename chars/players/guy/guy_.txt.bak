@@ -26,11 +26,10 @@ atchain   1 1 2 3 4 5
 icon	data/chars/players/Guy/icon2.gif 1
 diesound data/chars/players/Guy/Death.wav
 running	20	3	2	1	1
-onblockwscript	data/scripts/bounceF.c
-onblockwscript	data/scripts/bounceF.c
-#animationscript 	data/scripts/ani0020.h
-animationscript		data/scripts/drago.c
-#ondrawscript 		data/scripts/player_ondrawscript.c
+
+animationscript		data/scripts/Felipe.c
+
+
 
 Load GuyP01
 Load GuyP02
@@ -54,6 +53,37 @@ remap data/chars/players/Guy/idle00.gif data/chars/players/Guy/MAp01.gif
 remap data/chars/players/Guy/idle00.gif data/chars/players/Guy/MAp02.gif
 remap data/chars/players/Guy/idle00.gif data/chars/players/Guy/MAp03.gif
 remap data/chars/players/Guy/idle00.gif data/chars/players/Guy/MAp04.gif
+
+anim Pain5
+	loop	0
+	delay	12
+	offset	224 168
+	bbox	216 86 28 74
+	frame	data/chars/players/Guy/walk00.gif
+        @cmd dasher 1 0 0
+	frame	data/chars/players/Guy/walk01.gif
+	frame	data/chars/players/Guy/walk02.gif
+	frame	data/chars/players/Guy/walk03.gif
+	frame	data/chars/players/Guy/walk04.gif
+	frame	data/chars/players/Guy/walk05.gif
+	frame	data/chars/players/Guy/walk00.gif
+	frame	data/chars/players/Guy/walk01.gif
+	frame	data/chars/players/Guy/walk02.gif
+	frame	data/chars/players/Guy/walk03.gif
+	frame	data/chars/players/Guy/walk04.gif
+	frame	data/chars/players/Guy/walk05.gif
+	frame	data/chars/players/Guy/walk00.gif
+	frame	data/chars/players/Guy/walk01.gif
+	frame	data/chars/players/Guy/walk02.gif
+	frame	data/chars/players/Guy/walk03.gif
+	frame	data/chars/players/Guy/walk04.gif
+	frame	data/chars/players/Guy/walk05.gif
+	frame	data/chars/players/Guy/walk00.gif
+	frame	data/chars/players/Guy/walk01.gif
+	frame	data/chars/players/Guy/walk02.gif
+	frame	data/chars/players/Guy/walk03.gif
+	frame	data/chars/players/Guy/walk04.gif
+	frame	data/chars/players/Guy/walk05.gif
 
 anim Spawn
 	loop	0
@@ -96,17 +126,6 @@ anim Freespecial
 	frame	data/chars/players/Guy/Ja201.gif
 
 
-anim Pain5
-	loop	0
-	delay	12
-	offset	224 168
-        Range 0 40
-        Rangez -10 10
-	bbox	210 85 31 79
-	frame   data/chars/players/Guy/idle01.gif
-	@cmd  spawn01  "Blaze_"  -5  0  10
-	@cmd  spawn01  "AXEL_"  5  0  -10
-	frame   data/chars/players/Guy/idle01.gif
 
 anim idle
 	loop	1
@@ -134,11 +153,6 @@ anim walk
 	frame	data/chars/players/Guy/walk05.gif
 
 
-anim get
-	loop	0
-	delay	20
-	offset	224 168
-	frame	data/chars/players/Guy/Get.gif
 
 
 anim jump
@@ -360,18 +374,18 @@ anim throw
 		attack1  220  107  28  45  7  1  0  0  0  10
 	frame	data/chars/players/Guy/T00.gif
 	@cmd	position 4 -10 35 0 -1
-		blast  196  104  44  25  7  0  0  10
+		attack1  196  104  44  25  7  1  0  1  0  10
 	frame  data/chars/players/Guy/T01.gif
 	@cmd	position 8 -30 35 1 -1
 	@cmd	depost 0
 	@cmd	throw 15 5 2 2 0 -1
 	@cmd	clearL
 		delay  12
-		blast  162  97  40  36  7  0  1
+		attack1  162  97  40  36  7  1  1  0  0  10
 	frame	data/chars/players/Guy/T01.gif
-		blast  141  99  52  32  7  1
+		attack1  141  99  52  32  7  1  0  0  0  10
 	frame	data/chars/players/Guy/T01.gif
-		blast  115  106  39  28  7
+		attack1  115  106  39  28  7  1  0  0  0  10
 	frame  data/chars/players/Guy/T00.gif
 
 

@@ -25,17 +25,16 @@ JUMPHEIGHT 4
 antigrab 2
 atchain   1 2 3 4 5
 #weapons Haggar_Knife Adam_Sword haggar_pipe Adam_Kunai None Blaze
-icon	data/chars/players/HAggar/icon.gif 1
+icon	data/chars/players/HAggar/icon2.gif 1
 diesound data/chars/players/HAggar/Death.wav
 running	15	3	2	1	1
-onblockwscript	data/scripts/bounceF.c
-#animationscript 	data/scripts/ani0020.h
-animationscript		data/scripts/drago.c
-#ondrawscript 		data/scripts/player_ondrawscript.c
+
+animationscript		data/scripts/Felipe.c
+
+
 
 Load HaggarP01
 Load HaggarP02
-Load AdamP03
 
 Load Forte
 Load Cody_
@@ -50,6 +49,37 @@ remap data/chars/players/HAggar/idle00.gif data/chars/players/HAggar/MAp01.gif
 remap data/chars/players/HAggar/idle00.gif data/chars/players/HAggar/MAp02.gif
 remap data/chars/players/HAggar/idle00.gif data/chars/players/HAggar/MAp03.gif
 remap data/chars/players/HAggar/idle00.gif data/chars/players/HAggar/MAp04.gif
+
+anim Pain5
+	loop	0
+	delay	12
+	offset	225 166
+	bbox	213 83 36 56
+	frame	data/chars/players/HAggar/walk00.gif
+        @cmd dasher 0.9 0 0
+	frame	data/chars/players/HAggar/walk01.gif
+	frame	data/chars/players/HAggar/walk02.gif
+	frame	data/chars/players/HAggar/walk03.gif
+	frame	data/chars/players/HAggar/walk04.gif
+	frame	data/chars/players/HAggar/walk05.gif
+	frame	data/chars/players/HAggar/walk00.gif
+	frame	data/chars/players/HAggar/walk01.gif
+	frame	data/chars/players/HAggar/walk02.gif
+	frame	data/chars/players/HAggar/walk03.gif
+	frame	data/chars/players/HAggar/walk04.gif
+	frame	data/chars/players/HAggar/walk05.gif
+	frame	data/chars/players/HAggar/walk00.gif
+	frame	data/chars/players/HAggar/walk01.gif
+	frame	data/chars/players/HAggar/walk02.gif
+	frame	data/chars/players/HAggar/walk03.gif
+	frame	data/chars/players/HAggar/walk04.gif
+	frame	data/chars/players/HAggar/walk05.gif
+	frame	data/chars/players/HAggar/walk00.gif
+	frame	data/chars/players/HAggar/walk01.gif
+	frame	data/chars/players/HAggar/walk02.gif
+	frame	data/chars/players/HAggar/walk03.gif
+	frame	data/chars/players/HAggar/walk04.gif
+	frame	data/chars/players/HAggar/walk05.gif
 
 anim Spawn
 	loop	0
@@ -67,16 +97,6 @@ anim Death
 	@cmd  spawn01  "Haggar__"  -5  0  10
 	frame   data/chars/players/HAggar/fall02.gif
 	frame   data/chars/players/HAggar/fall02.gif
-
-anim Pain5
-	loop	0
-	delay	12
-	offset	225 166
-	bbox	213 87 34 65
-	frame   data/chars/players/HAggar/idle00.gif
-	@cmd  spawn01  "Cody_"  -5  0  10
-	@cmd  spawn01  "Guy_"  5  0  -10
-	frame   data/chars/players/HAggar/idle00.gif
 
 anim idle
 	loop	1
@@ -103,12 +123,6 @@ anim walk
 	frame	data/chars/players/HAggar/walk04.gif
 	frame	data/chars/players/HAggar/walk05.gif
 
-
-anim get
-	loop	0
-	delay	20
-	offset	225 166
-	frame	data/chars/players/HAggar/Get.gif
 
 
 anim jump
@@ -242,7 +256,7 @@ anim Freespecial6
 	offset	225 166
 	bbox	203 95 52 37
         @cmd dasher 2 0 0
-		attack1  217  95  27  70  1  0  0  0  0  15
+		attack1  217  95  27  70  1  0  1  0  0  15
         frame	data/chars/players/HAggar/run00.gif
         frame	data/chars/players/HAggar/run01.gif
         Sound	data/sounds/Run.wav
@@ -263,7 +277,7 @@ anim Freespecial7
 	offset	225 166
 	bbox	203 95 52 37
         @cmd dasher 2 0 0
-		attack1  218  94  21  73  1  0  0  0  0  15
+		attack1  218  94  21  73  1  0  1  0  0  15
         frame	data/chars/players/HAggar/run00.gif
         frame	data/chars/players/HAggar/run01.gif
         Sound	data/sounds/Run.wav
@@ -506,6 +520,15 @@ anim Freespecial4
         Range 80 90
         Rangez -10 10
 	loop	0
+	offset	225 166
+	bbox	203 95 52 37
+        @cmd dasher 2 0 0
+		attack1  217  95  27  70  1  0  1  0  0  15
+        frame	data/chars/players/HAggar/run00.gif
+        frame	data/chars/players/HAggar/run01.gif
+        Sound	data/sounds/Run.wav
+        frame	data/chars/players/HAggar/run02.gif
+        @cmd dasher 0 0 0
 	offset	225 166
         hitflash	fORTE
         hitfx	data/sounds/golpes/forte.wav
