@@ -10,7 +10,9 @@ remove			1
 gfxshadow		0 0
 flash			Forte
 antigravity 100
-animationscript		data/scripts/drago.c
+
+animationscript		data/scripts/Felipe.c
+
 
 anim idle
 	loop	0

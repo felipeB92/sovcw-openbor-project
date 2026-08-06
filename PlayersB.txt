@@ -6,30 +6,7 @@
 
 
 
-load	Commando  data/chars/Players/Commando/Commando.txt
-know	CommandoP01  data/chars/Players/Commando/CommandoP01.txt
-know	CommandoP02  data/chars/Players/Commando/CommandoP02.txt
-know	CommandoP03  data/chars/Players/Commando/CommandoP03.txt
-know	CommandoP04  data/chars/Players/Commando/CommandoP04.txt
-know	Commando_knife  data/chars/Players/Commando/Commando_knife.txt
-know	Commando_Pipe  data/chars/Players/Commando/Commando_Pipe.txt
-know	Commando_      data/chars/Players/Commando/Commando_.txt
 
-load	Baby  data/chars/Players/Baby/Baby.txt
-know	Babyp01  data/chars/Players/Baby/Babyp01.txt
-know	Babyp02  data/chars/Players/Baby/Babyp02.txt
-know	Babyp03  data/chars/Players/Baby/Babyp03.txt
-know	Baby_PIPE  data/chars/Players/Baby/Baby_PIPE.txt
-know	Baby_kNIFE  data/chars/Players/Baby/Baby_kNIFE.txt
-know	Baby_  data/chars/Players/Baby/Baby_.txt
-
-load	Ginzo  data/chars/Players/Ginzo/Ginzo.txt
-know	GinzoP01  data/chars/Players/Ginzo/GinzoP01.txt
-know	GinzoP02  data/chars/Players/Ginzo/GinzoP02.txt
-know	Ginzo_pipe  data/chars/Players/Ginzo/Ginzo_pipe.txt
-know	Ginzo_Knife  data/chars/Players/Ginzo/Ginzo_Knife.txt
-know	Ginzo_  data/chars/Players/Ginzo/Ginzo_.txt
-know	Ginzo__  data/chars/Players/Ginzo/Ginzo__.txt
 
 #Secret_Players
 

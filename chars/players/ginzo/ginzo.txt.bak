@@ -15,15 +15,13 @@ JUMPHEIGHT 4
 #Jumpheight 3
 antigrab 2
 atchain   1 2 3 4 5
-weapons Commando_Knife Adam_Sword Commando_pipe Adam_Kunai None Blaze
+weapons Ginzo_Knife Adam_Sword Ginzo_pipe Adam_Kunai None Blaze
 icon	data/chars/players/Ginzo/icon.gif 1
 diesound data/chars/players/Ginzo/Death.wav
 running	25	3	2	1	1
-onblockwscript	data/scripts/bounceF.c
-onblockwscript	data/scripts/bounceF.c
-#animationscript 	data/scripts/ani0020.h
-animationscript		data/scripts/drago.c
-#ondrawscript 		data/scripts/player_ondrawscript.c
+
+animationscript		data/scripts/Felipe.c
+
 
 Load GinzoP01
 Load GinzoP02
@@ -34,8 +32,8 @@ Load CommandoP04
 Load Commando_
 LOAD Baby_
 
-Load Commando_Knife
-Load Commando_Pipe
+Load Ginzo_Knife
+Load Ginzo_Pipe
 #Load Adam_Kunai
 #Load Adam_Sword
 
@@ -404,9 +402,9 @@ anim throw
 	@cmd	clearL
 		attack1  136  99  45  31  7  1  0  0  0  15
 	frame	data/chars/players/Ginzo/T03.gif
-		attack1  115  106  39  28  7  1  0  0  0  15
+		attack1  136  91  41  40  7  1  0  0  0  15
 	frame  data/chars/players/Ginzo/T04.gif
-		attack1  88  127  42  27  7  1  0  0  0  15
+		attack1  105  100  44  32  7  1  0  0  0  15
 	frame  data/chars/players/Ginzo/T05.gif
 
 
@@ -554,23 +552,28 @@ anim Special
 		Attack1  0
 		delay  12
 		move  0
+	Sound	data/chars/players/Ginzo/p01.wav
 	frame	data/chars/players/Ginzo/sp100.gif
 		delay  5
-		attack1  170  86  96  73  20  1  0  0  0  20
+		attack2  170  86  96  73  20  1  0  0  0  20
 	@cmd  spawn01  "GinzoP01"  40  10  -1
 	frame	data/chars/players/Ginzo/sp101.gif
 	@cmd  spawn01  "GinzoP01"  30  5  1
 	frame	data/chars/players/Ginzo/sp101.gif
+	Sound	data/chars/players/Ginzo/p01.wav
 	@cmd  spawn01  "GinzoP01"  -5  0  -1
 	frame	data/chars/players/Ginzo/sp101.gif
 	@cmd  spawn01  "GinzoP01"   5  -5  1
 	frame	data/chars/players/Ginzo/sp101.gif
+	Sound	data/chars/players/Ginzo/p01.wav
 	@cmd  spawn01  "GinzoP01"  -15  -7  -1
 	frame	data/chars/players/Ginzo/sp101.gif
+	Sound	data/chars/players/Ginzo/p01.wav
 	@cmd  spawn01  "GinzoP01"  -5  0  1
 	frame	data/chars/players/Ginzo/sp101.gif
 	@cmd  spawn01  "GinzoP01"  -10  20  -1
 	frame	data/chars/players/Ginzo/sp101.gif
+	Sound	data/chars/players/Ginzo/p01.wav
 	@cmd  spawn01  "GinzoP01"  0  30  -1
 	frame	data/chars/players/Ginzo/sp101.gif
 	@cmd  spawn01  "GinzoP01"  10  20  1
@@ -593,6 +596,7 @@ anim Special2
         hitfx	data/sounds/golpes/Corte.wav
 		delay  8
 		Attack1  0
+	Sound	data/chars/players/Ginzo/Sp01.wav
 	frame	data/chars/players/Ginzo/sp200.gif
 	@cmd  spawn01  "GinzoP02"  0  0  -1
 	frame	data/chars/players/Ginzo/sp201.gif
@@ -608,13 +612,38 @@ anim jumpspecial
         energycost 10 1
         MpOnly 1
 	loop	0
-	offset	214 145
-        hitflash	fORTE
-        hitfx	data/sounds/golpes/forte.wav
-	Sound	data/chars/players/Ginzo/Sp02.wav
-	frame	data/chars/players/Ginzo/sp100.gif
+	offset	217 147
+        hitflash	Forte
+        hitfx	data/sounds/golpes/Forte.wav
+		delay  5
+		attack2  170  86  96  73  20  1  0  0  0  20
+	@cmd  spawn01  "GinzoP01"  40  10  -1
 	frame	data/chars/players/Ginzo/sp101.gif
+	@cmd  spawn01  "GinzoP01"  30  5  1
+	frame	data/chars/players/Ginzo/sp101.gif
+	Sound	data/chars/players/Ginzo/p01.wav
+	@cmd  spawn01  "GinzoP01"  -5  0  -1
+	frame	data/chars/players/Ginzo/sp101.gif
+	@cmd  spawn01  "GinzoP01"   5  -5  1
+	frame	data/chars/players/Ginzo/sp101.gif
+	Sound	data/chars/players/Ginzo/p01.wav
+	@cmd  spawn01  "GinzoP01"  -15  -7  -1
+	frame	data/chars/players/Ginzo/sp101.gif
+	Sound	data/chars/players/Ginzo/p01.wav
+	@cmd  spawn01  "GinzoP01"  -5  0  1
+	frame	data/chars/players/Ginzo/sp101.gif
+	@cmd  spawn01  "GinzoP01"  -10  20  -1
+	frame	data/chars/players/Ginzo/sp101.gif
+	Sound	data/chars/players/Ginzo/p01.wav
+	@cmd  spawn01  "GinzoP01"  0  30  -1
+	frame	data/chars/players/Ginzo/sp101.gif
+	@cmd  spawn01  "GinzoP01"  10  20  1
 	frame	data/chars/players/Ginzo/sp102.gif
+		offset  227  152
+		Attack1  0
+		delay  10
+	frame  data/chars/players/Ginzo/get.gif
+
 
 
 
