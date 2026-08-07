@@ -16,10 +16,8 @@ subject_to_gravity 0
 #setlayer 800
 #offscreenkill	500
 nolife 1
-animationscript 	data/scripts/ani0020.h
-onblockwscript	data/scripts/bounceF.c
-ondrawscript 		data/scripts/player_ondrawscript.c
-diesound data/sounds/vozes/Man5.wav
+
+animationscript		data/scripts/Felipe.c
 
 
 anim	spawn

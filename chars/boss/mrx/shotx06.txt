@@ -8,10 +8,8 @@ candamage			Player npc obstacle
 remove			1
 shadow			0
 #antigravity		100
-onblockwscript	data/scripts/bounceF.c
-#animationscript 	data/scripts/ani0020.h
-animationscript		data/scripts/drago.c
-ondrawscript 		data/scripts/Enemy_ondrawscript.c
+
+animationscript		data/scripts/Felipe.c
 
 anim idle
 	loop	0

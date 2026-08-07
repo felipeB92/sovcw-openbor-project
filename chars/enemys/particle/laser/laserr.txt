@@ -7,7 +7,6 @@ remove			1
 shadow			0
 antigravity		100
 alpha			1
-didhitscript	data/scripts/didhit/particle_laserR.c
 
 anim idle
 	fastattack 1

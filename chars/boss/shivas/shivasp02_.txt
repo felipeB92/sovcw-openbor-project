@@ -9,10 +9,8 @@ remove			1
 gfxshadow		1 1
 flash			Forte
 subject_to_gravity 0
-onblockwscript	data/scripts/bounceF.c
-#animationscript 	data/scripts/ani0020.h
-animationscript		data/scripts/drago.c
-ondrawscript 		data/scripts/Enemy_ondrawscript.c
+
+animationscript		data/scripts/Felipe.c
 
 anim idle
 	loop	1

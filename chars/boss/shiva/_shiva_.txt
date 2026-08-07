@@ -27,10 +27,8 @@ weapons Shiva_Knife Shiva_Sword Shiva_pipe Shiva_Kunai
 icon	data/chars/Boss/Shiva/icon.gif 1
 diesound data/Sounds/Die4.wav
 running	20	3	2	1	1
-onblockwscript	data/scripts/bounceF.c
-#animationscript 	data/scripts/ani0020.h
-animationscript		data/scripts/drago.c
-ondrawscript 		data/scripts/Enemy_ondrawscript.c
+
+animationscript		data/scripts/Felipe.c
 
 
 
@@ -463,7 +461,7 @@ anim Follow2
 	frame	data/chars/Boss/Shiva/SLam201.gif
 	@cmd	position 0 0 9 0 1
 	frame	data/chars/Boss/Shiva/SLam202.gif
-	@cmd	position 3 40 0 0 1
+	@cmd	position 10 40 0 0 1
 		@cmd  depost  0
 		@cmd  throw  20  5  1  1  0  -1
 		@cmd  clearL

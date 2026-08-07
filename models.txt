@@ -291,6 +291,35 @@ know	ShivaSP01a data/chars/Boss/ShivaS/ShivaSP01a.txt
 know	ShivaSP02 data/chars/Boss/ShivaS/ShivaSP02.txt
 know	ShivaSP02_ data/chars/Boss/ShivaS/ShivaSP02_.txt
 
+#Secret_Players
+
+load	_Shiva 		data/chars/Boss/Shiva/_shiva.txt
+know	_Shiva_ 	data/chars/Boss/Shiva/_shiva_.txt
+know	_Shiva__ 	data/chars/Boss/Shiva/_shiva__.txt
+know	_Shiva_Knife 	data/chars/Boss/Shiva/_Shiva_Knife.txt
+know	_Shiva_Pipe 	data/chars/Boss/Shiva/_Shiva_Pipe.txt
+load	_ShivaS 	data/chars/Boss/ShivaS/_shivaS.txt
+know	_ShivaS_Knife 	data/chars/Boss/ShivaS/_ShivaS_Knife.txt
+
+load	_Biggar		data/chars/Boss/Biggar/_Biggar.txt
+
+load	_Bongo		data/chars/Boss/Bongo/_Bongo.txt
+know	_BongoP01	data/chars/Boss/Bongo/_BongoP01.txt
+
+Load	_Joe            data/chars/Boss/Joe/_Joe.txt
+know	_JoeP01         data/chars/Boss/Joe/_JoeP01.txt
+know	_JoeP02         data/chars/Boss/Joe/_JoeP02.txt
+
+Load	_Abadede data/chars/Boss/Abadede/_Abadede.txt
+
+Load	_Kurt data/chars/Boss/Kurt/_Kurt.txt
+
+Load    _Harakiri    data/chars/Boss/HArakiri/_HaraKiri.txt
+know    _HarakiriP04 data/chars/Boss/HArakiri/_HaraKiriP04.txt
+
+Load    Morph   data/chars/Players/Morph/Morph.txt
+know    MorphP01   data/chars/Players/Morph/MorphP01.txt
+
 #Inimigos
 
 know	Galsia	data/chars/Enemys/Galsia/Galsia.txt

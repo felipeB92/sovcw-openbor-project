@@ -19,10 +19,8 @@ weapons _ShivaS_Knife Blaze_Sword _ShivaS_Knife Blaze_Kunai
 icon	data/chars/Boss/ShivaS/iconP.gif 1
 diesound data/Sounds/Die2.wav
 running	25	3	2	1	1
-onblockwscript	data/scripts/bounceF.c
-#animationscript 	data/scripts/ani0020.h
-animationscript		data/scripts/drago.c
-#ondrawscript 		data/scripts/player_ondrawscript.c
+
+animationscript		data/scripts/Felipe.c
 
 Load ShivaSP01a
 Load ShivaSP02_
@@ -315,7 +313,7 @@ anim freespecial
 	@cmd	position 6 40 5 0 1
 		attack1  144  161  89  34  7  1  0  0  0  15
 	frame	data/chars/Boss/ShivaS/Slam203.gif
-	@cmd	position 3 40 0 0 1
+	@cmd	position 10 40 0 0 1
         @cmd leaper 1 2 0
 		@cmd  depost  0
 		@cmd  throw  15  5  -1  1  0  1
@@ -367,7 +365,7 @@ anim throw
 	@cmd	position 6 -40 5 0 -1
 		attack1  72  160  69  35  7  1  0  0  0  15
 	frame	data/chars/Boss/ShivaS/Slam03.gif
-	@cmd	position 3 -40 0 0 -1
+	@cmd	position 10 -40 0 0 -1
         @cmd leaper 1 2 0
 		@cmd  depost  0
 		@cmd  throw  15  5  1  1  0  11

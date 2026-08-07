@@ -19,10 +19,8 @@ atchain   1 2 3 4 5
 icon	data/chars/Enemys/Ruy/icon.gif 1
 diesound data/Sounds/Die5.wav
 running	20	3	2	1	1
-onblockwscript	data/scripts/bounceF.c
-#animationscript 	data/scripts/ani0020.h
-animationscript		data/scripts/drago.c
-ondrawscript 		data/scripts/Enemy_ondrawscript.c
+
+animationscript		data/scripts/Felipe.c
 
 
 

@@ -19,10 +19,8 @@ weapons Bongo_Knife Bongo_Sword Bongo_pipe Bongo_Kunai
 icon	data/chars/Boss/Bongo/icon.gif 1
 diesound data/Sounds/Die7.wav
 running	20	3	2	1	1
-onblockwscript	data/scripts/bounceF.c
-#animationscript 	data/scripts/ani0020.h
-animationscript		data/scripts/drago.c
-ondrawscript 		data/scripts/Enemy_ondrawscript.c
+
+animationscript		data/scripts/Felipe.c
 
 
 Load BongoP01

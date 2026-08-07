@@ -26,9 +26,8 @@ subject_to_gravity 1
 #setlayer 800
 #offscreenkill	500
 nolife 1
-animationscript 	data/scripts/ani0020.h
-onblockwscript	data/scripts/bounceF.c
-ondrawscript 		data/scripts/player_ondrawscript.c
+
+animationscript		data/scripts/Felipe.c
 
 
 anim	spawn

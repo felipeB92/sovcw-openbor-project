@@ -18,10 +18,8 @@ weapons None None None None macleod_Sniper_
 icon	data/chars/Enemys/macleod/icon.gif 1
 diesound data/Sounds/Die8.wav
 running	20	3	2	1	1
-onblockwscript	data/scripts/bounceF.c
-#animationscript 	data/scripts/ani0020.h
-animationscript		data/scripts/drago.c
-ondrawscript 		data/scripts/Enemy_ondrawscript.c
+
+animationscript		data/scripts/Felipe.c
 
 
 

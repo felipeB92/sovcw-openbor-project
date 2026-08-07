@@ -19,10 +19,8 @@ weapons Slum_Knife Slum_Sword Slum_pipe Slum_Kunai
 icon	data/chars/Enemys/Slum/icon.gif 1
 diesound data/Sounds/Die8.wav
 running	20	3	2	1	1
-onblockwscript	data/scripts/bounceF.c
-#animationscript 	data/scripts/ani0020.h
-animationscript		data/scripts/drago.c
-ondrawscript 		data/scripts/Enemy_ondrawscript.c
+
+animationscript		data/scripts/Felipe.c
 
 
 

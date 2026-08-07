@@ -403,7 +403,7 @@ anim Follow2
 	Sound	data/Sounds/efeitos/solo.wav
 		attack1  74  98  69  21  10  1  0  0  0  10
         frame	data/chars/players/Axel/Slam03.gif
-	@cmd	position 3 40 0 0 1
+	@cmd	position 10 40 0 0 1
 		offset  67  119
 		delay  7
 		@cmd  depost  0

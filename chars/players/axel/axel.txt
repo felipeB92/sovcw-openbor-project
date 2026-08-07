@@ -306,7 +306,7 @@ anim freespecial2
 	Sound	data/Sounds/efeitos/solo.wav
 		attack1  74  98  69  21  10  1  0  0  0  10
         frame	data/chars/players/Axel/Slam03.gif
-	@cmd	position 3 40 0 0 1
+	@cmd	position 10 40 0 0 1
 		offset  67  119
 		delay  7
 		@cmd  depost  0
@@ -366,7 +366,7 @@ anim throw
 		attack1  -7  98  74  34  7  1  0  0  0  15
 		sound  data/Sounds/efeitos/solo.wav
 	frame	data/chars/players/Axel/T02.gif
-	@cmd	position 3 -10 0 0 -1
+	@cmd	position 10 -10 0 0 -1
         @cmd leaper 1 2 0
 		@cmd  depost  0
 		@cmd  throw  15  5  1  1  0  11

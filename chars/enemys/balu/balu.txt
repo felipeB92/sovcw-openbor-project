@@ -18,6 +18,7 @@ atchain   1 1 2 3 4 5
 icon	data/chars/Enemys/Balu/icon.gif 1
 diesound data/Sounds/die_cadillac.wav
 running	20	3	2	1	1
+
 animationscript		data/scripts/felipe.c
 
 

@@ -343,7 +343,7 @@ anim freespecial2
 	@cmd	position 5 40 0 0 1
 		attack1  159  160  106  21  7  1  0  0  0  10
         frame	data/chars/players/Blaze/Slam203.gif
-	@cmd	position 3 40 0 0 1
+	@cmd	position 10 40 0 0 1
 		offset  118  182
 		delay  7
 		@cmd  depost  0

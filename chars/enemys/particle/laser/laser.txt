@@ -6,7 +6,6 @@ lifespan		2
 remove			1
 shadow			0
 antigravity		100
-didhitscript	data/scripts/didhit/default.c
 
 anim idle
 	attackone 1

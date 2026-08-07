@@ -7,8 +7,8 @@ lifespan		2
 remove			1
 shadow			0
 antigravity		100
-didhitscript	data/scripts/didhit/default.c
-animationscript	data/scripts/animation/default.c
+
+animationscript		data/scripts/Felipe.c
 
 anim idle
 	fastattack 1
