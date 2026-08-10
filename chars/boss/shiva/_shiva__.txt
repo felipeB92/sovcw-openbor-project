@@ -471,7 +471,7 @@ anim Follow2
 	frame	data/chars/Boss/ShivaR/SLam201.gif
 	@cmd	position 0 0 9 0 1
 	frame	data/chars/Boss/ShivaR/SLam202.gif
-	@cmd	position 3 40 0 0 1
+	@cmd	position 10 40 0 0 1
 		@cmd  depost  0
 		@cmd  throw  20  5  1  1  0  -1
 		@cmd  clearL

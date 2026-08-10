@@ -1,0 +1,45 @@
+name	Super3
+type	Text
+Alpha 1
+subtype	noskip
+
+
+
+anim	idle
+	loop	0
+		offset  400  160
+		delay  3
+	frame	data/Chars/efeitos/Super/3/000.gif
+	Sound	data/Chars/efeitos/super.Wav
+	frame	data/Chars/efeitos/Super/3/001.gif
+	frame	data/Chars/efeitos/Super/3/002.gif
+	frame	data/Chars/efeitos/Super/3/003.gif
+	frame	data/Chars/efeitos/Super/3/004.gif
+	frame	data/Chars/efeitos/Super/3/005.gif
+	frame	data/Chars/efeitos/Super/3/006.gif
+	frame	data/Chars/efeitos/Super/3/007.gif
+	frame	data/Chars/efeitos/Super/3/008.gif
+	frame	data/Chars/efeitos/Super/3/009.gif
+	frame	data/Chars/efeitos/Super/3/010.gif
+	frame	data/Chars/efeitos/Super/3/011.gif
+	frame	data/Chars/efeitos/Super/3/012.gif
+	frame	data/Chars/efeitos/Super/3/013.gif
+	frame	data/Chars/efeitos/Super/3/014.gif
+	frame	data/Chars/efeitos/Super/3/015.gif
+	frame	data/Chars/efeitos/Super/3/016.gif
+	frame	data/Chars/efeitos/Super/3/017.gif
+	frame	data/Chars/efeitos/Super/3/018.gif
+	frame	data/Chars/efeitos/Super/3/019.gif
+	frame	data/Chars/efeitos/Super/3/020.gif
+	frame	data/Chars/efeitos/Super/3/021.gif
+	frame	data/Chars/efeitos/Super/3/022.gif
+	frame	data/Chars/efeitos/Super/3/023.gif
+	frame	data/Chars/efeitos/Super/3/024.gif
+	frame	data/Chars/efeitos/Super/3/025.gif
+	frame	data/Chars/efeitos/Super/3/026.gif
+	frame	data/Chars/efeitos/Super/3/027.gif
+	frame	data/Chars/efeitos/Super/3/028.gif
+	frame	data/Chars/efeitos/Super/3/029.gif
+	@cmd killentity getlocalvar("self")
+	frame	data/Chars/efeitos/Super/3/000.gif
+

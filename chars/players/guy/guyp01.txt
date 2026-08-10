@@ -1,5 +1,5 @@
 
-name			GuyP01 #THROWNED
+name			GuyP01 
 type			none
 speed 12
 candamage			enemy obstacle

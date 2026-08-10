@@ -1,5 +1,5 @@
 name	Super
-type	None
+type	Text
 Alpha 1
 subtype	noskip
 setlayer -1

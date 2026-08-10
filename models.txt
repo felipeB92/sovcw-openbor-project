@@ -226,6 +226,7 @@ know	Ginzo__  data/chars/Players/Ginzo/Ginzo__.txt
 
 know	Biggar data/chars/Boss/Biggar/Biggar.txt
 know	Biggar_ data/chars/Boss/Biggar/Biggar_.txt
+know	BiggarP01 data/chars/Boss/Biggar/BiggarP01.txt
 
 know	Bongo data/chars/Boss/Bongo/Bongo.txt
 know	Bongo_ data/chars/Boss/Bongo/Bongo_.txt
@@ -235,6 +236,7 @@ know	BongoP03 data/chars/Boss/Bongo/BongoP03.txt
 know	BongoP04 data/chars/Boss/Bongo/BongoP04.txt
 know	BongoP05 data/chars/Boss/Bongo/BongoP05.txt
 know	BongoP06 data/chars/Boss/Bongo/BongoP06.txt
+know	BongoP07 data/chars/Boss/Bongo/BongoP07.txt
 
 
 know	Joe data/chars/Boss/Joe/Joe.txt
@@ -456,8 +458,9 @@ know	ACTp	data/chars/ACtp.txt
 know	ACTE	data/chars/ACtE.txt
 know	ACTN	data/chars/ACtN.txt
 know	ACTN2	data/chars/ACtN2.txt
-know	Super	data/chars/Efeitos/Super.txt
-know	Super2	data/chars/Efeitos/Super2.txt
+know	Super1	data/chars/Efeitos/Super/super1.txt
+know	Super2	data/chars/Efeitos/super/Super2.txt
+know	Super3	data/chars/Efeitos/super/Super3.txt
 Load	Fraco	data/chars/Efeitos/Fraco.txt
 Load	Medio	data/chars/Efeitos/Medio.txt
 Load	Forte	data/chars/Efeitos/Forte.txt

@@ -1,6 +1,6 @@
 name	Biggar_
 health	300
-mp 30
+mp 60
 mprate 1
 #secret 1
 blockodds 2
@@ -21,7 +21,7 @@ diesound data/Sounds/Die7.wav
 running	20	3	2	1	1
 animationscript		data/scripts/felipe.c
 
-
+Load Super3
 
 #Load Biggar_Knife
 #Load Biggar_Pipe
@@ -46,14 +46,17 @@ anim spawn
 	frame   data/chars/Boss/Biggar/Rise00.gif
 
 
+
+
+
 anim Pain5
 	loop	0
 	delay	12
-	offset	67 95
-	frame   data/chars/Boss/Biggar/Rise00.gif
-	frame   data/chars/Boss/Biggar/Rise01.gif
-		offset  73  106
-	frame   data/chars/Boss/Biggar/Rise02.gif
+	offset	83 112
+	bbox	61 14 48 97
+	frame   data/chars/Boss/Biggar/idle00.gif
+	frame   data/chars/Boss/Biggar/idle00.gif
+
 
 anim idle
 	loop	1
@@ -96,27 +99,7 @@ anim jump
 	frame	data/chars/Boss/Biggar/Jump00.gif
 
 
-anim jumpattack
-	loop	0
-	delay	17
-        Range 80 100
-        RangeZ -5 5
-	offset	78 135
-	bbox	59 40 28 78
-        hitflash	MEdio
-        hitfx	data/sounds/golpes/medio.wav
-	frame	data/chars/Boss/Biggar/Jump00.gif
-		delay  15
-		hitflash  MEdio
-		hitfx  data/sounds/golpes/medio.wav
-	Sound  data/sounds/haggar_golpe.wav
-	frame  data/chars/Boss/Biggar/Ja100.gif
-		attack1  52  34  65  61  10  1  0  0  0  10
-	frame	data/chars/Boss/Biggar/Ja101.gif
-		attack1  44  34  79  78  15  1  0  0  0  15
-		offset  77  100
-	frame	data/chars/Boss/Biggar/Ja102.gif
-	frame	data/chars/Boss/Biggar/Ja103.gif
+
 
 
 
@@ -124,7 +107,7 @@ anim attack1
 	loop	0
 	delay	12
 	offset	77 133
-        Range 0 60
+        Range 0 40
         RangeZ -10 10
         hitflash	Forte
 	bbox	61 29 37 90
@@ -147,8 +130,6 @@ anim attack1
 
 anim Block
 	loop	0
-		Followcond  1
-		followanim  1
 	delay	12
 	offset	77 134
         Range 0 60
@@ -186,6 +167,7 @@ anim Upper
 	delay	12
 	offset	61 130
         Range 0 60
+	Rangea 3 50
         RangeZ -5 5
         hitflash	Forte
 	bbox	50 31 46 87
@@ -209,11 +191,11 @@ anim Upper
 	frame  data/chars/Boss/Biggar/a202.gif
 
 
-anim Freespecial2
+anim Freespecial
 	loop	0
 	delay	12
 	offset	61 130
-        Range 0 60
+        Range 40 60
         RangeZ -10 -5
         hitflash	Forte
 	bbox	50 31 46 87
@@ -238,7 +220,8 @@ anim Freespecial2
 
 
 
-anim Freespecial
+
+anim Freespecial2
 	loop	0
 	delay	12
 	offset	78 139
@@ -264,6 +247,113 @@ anim Freespecial
         @cmd dasher 0 0 0
 		Attack1  0
 	frame	data/chars/Boss/Biggar/a103.gif
+
+anim freespecial3
+	loop	0
+	delay	25
+        Range 120 150
+        RangeZ -5 5
+	offset	64 129
+	bbox	59 40 28 78
+	jumpframe  1  4  2  0
+        hitflash	MEdio
+        hitfx	data/sounds/golpes/medio.wav
+	frame	data/chars/Boss/Biggar/a200.gif
+		delay  15
+		offset  78  135
+	frame	data/chars/Boss/Biggar/Jump00.gif
+		hitflash  MEdio
+		hitfx  data/sounds/golpes/medio.wav
+	Sound  data/sounds/haggar_golpe.wav
+	frame  data/chars/Boss/Biggar/Ja100.gif
+		attack1  52  34  65  61  10  1  0  0  0  10
+	frame	data/chars/Boss/Biggar/Ja101.gif
+		attack1  44  34  79  78  15  1  0  0  0  15
+		offset  77  100
+	Sound	data/Sounds/efeitos/solo.wav
+	frame	data/chars/Boss/Biggar/Ja102.gif
+		delay  45
+	frame	data/chars/Boss/Biggar/Ja103.gif
+
+anim Freespecial4
+	loop	0
+        energycost 50 1
+        MpOnly 1
+	delay	12
+	offset	78 139
+                Followcond 1
+                followanim 2
+        Range 150 200
+        RangeZ -5 5
+	bbox	63 44 31 76
+		Attack1  0
+        	Sound  data/sounds/haggar_grabbackward.wav
+        hitfx	data/sounds/golpes/Grab.wav
+	frame	data/chars/Boss/Biggar/a400.gif
+	drawmethod tintmode 6
+	drawmethod tintcolor 255
+	@cmd  spawn01  "Super3" -40  120  1
+		offset  78  133
+	frame	data/chars/Boss/Biggar/a100.gif
+		bbox  0
+	frame	data/chars/Boss/Biggar/a101.gif
+		offset  72  135
+		attack1  70  60  38  31  1  0  1  1  0  15
+		delay  4
+        @cmd dasher 3 0 0
+	frame	data/chars/Boss/Biggar/a401.gif
+	@cmd  spawn01  "BiggarP01" -10  0  -1
+	frame	data/chars/Boss/Biggar/a401.gif
+	@cmd  spawn01  "BiggarP01" -10  0  -1
+	frame	data/chars/Boss/Biggar/a401.gif
+	@cmd  spawn01  "BiggarP01" -10  0  -1
+	frame	data/chars/Boss/Biggar/a401.gif
+	@cmd  spawn01  "BiggarP01" -10  0  -1
+	frame	data/chars/Boss/Biggar/a401.gif
+	@cmd  spawn01  "BiggarP01" -10  0  -1
+	frame	data/chars/Boss/Biggar/a401.gif
+	@cmd  spawn01  "BiggarP01" -10  0  -1
+	frame	data/chars/Boss/Biggar/a401.gif
+	@cmd  spawn01  "BiggarP01" -10  0  -1
+	frame	data/chars/Boss/Biggar/a401.gif
+	@cmd  spawn01  "BiggarP01" -10  0  -1
+	frame	data/chars/Boss/Biggar/a401.gif
+	@cmd  spawn01  "BiggarP01" -10  0  -1
+	frame	data/chars/Boss/Biggar/a401.gif
+	@cmd  spawn01  "BiggarP01" -10  0  -1
+	frame	data/chars/Boss/Biggar/a401.gif
+	@cmd  spawn01  "BiggarP01" -10  0  -1
+	frame	data/chars/Boss/Biggar/a401.gif
+	@cmd  spawn01  "BiggarP01" -10  0  -1
+	frame	data/chars/Boss/Biggar/a401.gif
+	@cmd  spawn01  "BiggarP01" -10  0  -1
+	frame	data/chars/Boss/Biggar/a401.gif
+	@cmd  spawn01  "BiggarP01" -10  0  -1
+	frame	data/chars/Boss/Biggar/a401.gif
+	@cmd  spawn01  "BiggarP01" -10  0  -1
+	frame	data/chars/Boss/Biggar/a401.gif
+	@cmd  spawn01  "BiggarP01" -10  0  -1
+	frame	data/chars/Boss/Biggar/a401.gif
+	@cmd  spawn01  "BiggarP01" -10  0  -1
+	frame	data/chars/Boss/Biggar/a401.gif
+	@cmd  spawn01  "BiggarP01" -10  0  -1
+	frame	data/chars/Boss/Biggar/a401.gif
+	@cmd  spawn01  "BiggarP01" -10  0  -1
+	frame	data/chars/Boss/Biggar/a401.gif
+	@cmd  spawn01  "BiggarP01" -10  0  -1
+	frame	data/chars/Boss/Biggar/a401.gif
+	@cmd  spawn01  "BiggarP01" -10  0  -1
+	frame	data/chars/Boss/Biggar/a401.gif
+	@cmd  spawn01  "BiggarP01" -10  0  -1
+	frame	data/chars/Boss/Biggar/a401.gif
+	@cmd  spawn01  "BiggarP01" -10  0  -1
+	frame	data/chars/Boss/Biggar/a401.gif
+        @cmd dasher 0 0 0
+		Attack1  0
+	frame	data/chars/Boss/Biggar/a103.gif
+
+
+
 
 
 anim follow1
@@ -291,11 +381,42 @@ anim follow1
 	@cmd  spawn01  "Forte"  50  60  -1
 	@cmd	position 8 35 45 1 -1
 	@cmd	depost 0
-	@cmd	throw 1 5 -2 2 0 -1
+	@cmd	throw 10 5 -2 2 0 -1
 	@cmd	clearL
 	frame	data/chars/Boss/Biggar/a304.gif
 		delay  30
 	frame	data/chars/Boss/Biggar/a305.gif
+
+anim follow2
+	loop	0
+	offset	69 139
+	delay	1
+        quakeframe 5 2 2
+	jumpframe  3  5  1  0
+        @cmd dasher 0 0 0
+	frame	data/chars/Boss/Biggar/a300.gif
+	delay	20
+	@cmd	slamstart
+	@cmd	position 0 35 0 -1 -1
+	frame	data/chars/Boss/Biggar/a300.gif
+	@cmd	position 1 35 40 -1 -1
+	frame	data/chars/Boss/Biggar/a301.gif
+	@cmd	position 1 35 40 -1 -1
+	delay	37
+	frame  data/chars/Boss/Biggar/ja100.gif
+	@cmd	position 4 10 100  1 -1
+	frame  data/chars/Boss/Biggar/ja101.gif
+		offset  75  102
+	@cmd	position 5 35 5  1 -1
+	frame  data/chars/Boss/Biggar/ja102.gif
+	@cmd	position 10 35 1 1 -1
+	@cmd	depost 0
+	@cmd	throw 45 5 -2 2 0 -1
+	@cmd	clearL
+	Sound	data/Sounds/efeitos/solo.wav
+	frame  data/chars/Boss/Biggar/ja103.gif
+		delay  30
+	frame  data/chars/Boss/Biggar/ja103.gif
 
 
 anim pain
@@ -384,7 +505,7 @@ anim fall
 
 anim fall6 #Shok
 	loop	0
-	offset	86 128
+	offset	86 127
 	delay	5
         hitfx	data/sounds/golpes/Forte.wav
 		attack  0
@@ -392,7 +513,7 @@ anim fall6 #Shok
 	frame	data/chars/Boss/Biggar/fall200.gif
 	frame	data/chars/Boss/Biggar/fall201.gif
 	frame	data/chars/Boss/Biggar/fall200.gif
-	frame	data/chars/Boss/Biggar/fall201.gif
+	frame	data/chars/Boss/Biggar/fall01.gif
 		offset  74  90
 	frame	data/chars/Boss/Biggar/fall02.gif
 

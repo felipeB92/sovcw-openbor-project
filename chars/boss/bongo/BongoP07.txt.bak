@@ -1,0 +1,34 @@
+name			BongoP07
+type			none
+speed 15
+candamage			Player
+alpha 1
+nolife			1
+lifespan		4
+remove			1
+gfxshadow		1 1
+flash			Forte
+subject_to_gravity 0
+
+anim idle
+	loop	1
+	offset	154 201
+        hitflash	Forte
+        hitfx	data/sounds/golpes/Forte.wav
+		delay  7
+	frame	data/chars/Boss/Bongo/Sp/P00.gif
+	frame	data/chars/Boss/Bongo/Sp/P01.gif
+	frame	data/chars/Boss/Bongo/Sp/P02.gif
+	frame	data/chars/Boss/Bongo/Sp/P03.gif
+	frame	data/chars/Boss/Bongo/Sp/P04.gif
+	frame	data/chars/Boss/Bongo/Sp/P05.gif
+	frame	data/chars/Boss/Bongo/Sp/P06.gif
+	frame	data/chars/Boss/Bongo/Sp/P07.gif
+	frame	data/chars/Boss/Bongo/Sp/P08.gif
+	frame	data/chars/Boss/Bongo/Sp/P09.gif
+	frame	data/chars/Boss/Bongo/Sp/P10.gif
+	frame	data/chars/Boss/Bongo/Sp/P11.gif
+	frame	data/chars/Boss/Bongo/Sp/P12.gif
+	@cmd killentity getlocalvar("self")
+	frame	data/chars/Boss/Bongo/Sp/P12.gif
+
