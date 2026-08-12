@@ -313,56 +313,57 @@ anim Freespecial5
 	drawmethod tintcolor 255
 	@cmd  spawn01  "Super3"  0  30  1
 	frame	data/chars/Boss/Bongo/fs201.gif
-		attack7  128  138  48  60  25  1  0  0  25  15
+		attack7  94  110  111  96  25  1  0  0  25  15
+	Nodrawmethod
 		delay  2
-        @cmd dasher 4 0 0
+        @cmd dasher 5 0 0
 	@cmd  spawn01  "BongoP07"  0  0  -1
-	frame	data/chars/Boss/Bongo/sp01.gif
-	frame	data/chars/Boss/Bongo/sp02.gif
-	frame	data/chars/Boss/Bongo/sp03.gif
-	frame	data/chars/Boss/Bongo/sp00.gif
-	frame	data/chars/Boss/Bongo/sp01.gif
-	frame	data/chars/Boss/Bongo/sp02.gif
-	frame	data/chars/Boss/Bongo/sp03.gif
-	frame	data/chars/Boss/Bongo/sp00.gif
-	frame	data/chars/Boss/Bongo/sp01.gif
-	frame	data/chars/Boss/Bongo/sp02.gif
-	frame	data/chars/Boss/Bongo/sp03.gif
-	frame	data/chars/Boss/Bongo/sp00.gif
-	frame	data/chars/Boss/Bongo/sp01.gif
-	frame	data/chars/Boss/Bongo/sp02.gif
-	frame	data/chars/Boss/Bongo/sp03.gif
-	frame	data/chars/Boss/Bongo/sp00.gif
-	frame	data/chars/Boss/Bongo/sp01.gif
-	frame	data/chars/Boss/Bongo/sp02.gif
-	frame	data/chars/Boss/Bongo/sp03.gif
-	frame	data/chars/Boss/Bongo/sp00.gif
-	frame	data/chars/Boss/Bongo/sp01.gif
-	frame	data/chars/Boss/Bongo/sp02.gif
-	frame	data/chars/Boss/Bongo/sp03.gif
-	frame	data/chars/Boss/Bongo/sp01.gif
-	frame	data/chars/Boss/Bongo/sp02.gif
-	frame	data/chars/Boss/Bongo/sp03.gif
-	frame	data/chars/Boss/Bongo/sp00.gif
-	frame	data/chars/Boss/Bongo/sp01.gif
-	frame	data/chars/Boss/Bongo/sp02.gif
-	frame	data/chars/Boss/Bongo/sp03.gif
-	frame	data/chars/Boss/Bongo/sp00.gif
-	frame	data/chars/Boss/Bongo/sp01.gif
-	frame	data/chars/Boss/Bongo/sp02.gif
-	frame	data/chars/Boss/Bongo/sp03.gif
-	frame	data/chars/Boss/Bongo/sp00.gif
-	frame	data/chars/Boss/Bongo/sp01.gif
-	frame	data/chars/Boss/Bongo/sp02.gif
-	frame	data/chars/Boss/Bongo/sp03.gif
-	frame	data/chars/Boss/Bongo/sp00.gif
-	frame	data/chars/Boss/Bongo/sp01.gif
-	frame	data/chars/Boss/Bongo/sp02.gif
-	frame	data/chars/Boss/Bongo/sp03.gif
-	frame	data/chars/Boss/Bongo/sp00.gif
-	frame	data/chars/Boss/Bongo/sp01.gif
-	frame	data/chars/Boss/Bongo/sp02.gif
-	frame	data/chars/Boss/Bongo/sp03.gif
+	frame	data/chars/Boss/Bongo/sp201.gif
+	frame	data/chars/Boss/Bongo/sp202.gif
+	frame	data/chars/Boss/Bongo/sp203.gif
+	frame	data/chars/Boss/Bongo/sp200.gif
+	frame	data/chars/Boss/Bongo/sp201.gif
+	frame	data/chars/Boss/Bongo/sp202.gif
+	frame	data/chars/Boss/Bongo/sp203.gif
+	frame	data/chars/Boss/Bongo/sp200.gif
+	frame	data/chars/Boss/Bongo/sp201.gif
+	frame	data/chars/Boss/Bongo/sp202.gif
+	frame	data/chars/Boss/Bongo/sp203.gif
+	frame	data/chars/Boss/Bongo/sp200.gif
+	frame	data/chars/Boss/Bongo/sp201.gif
+	frame	data/chars/Boss/Bongo/sp202.gif
+	frame	data/chars/Boss/Bongo/sp203.gif
+	frame	data/chars/Boss/Bongo/sp200.gif
+	frame	data/chars/Boss/Bongo/sp201.gif
+	frame	data/chars/Boss/Bongo/sp202.gif
+	frame	data/chars/Boss/Bongo/sp203.gif
+	frame	data/chars/Boss/Bongo/sp200.gif
+	frame	data/chars/Boss/Bongo/sp201.gif
+	frame	data/chars/Boss/Bongo/sp202.gif
+	frame	data/chars/Boss/Bongo/sp203.gif
+	frame	data/chars/Boss/Bongo/sp201.gif
+	frame	data/chars/Boss/Bongo/sp202.gif
+	frame	data/chars/Boss/Bongo/sp203.gif
+	frame	data/chars/Boss/Bongo/sp200.gif
+	frame	data/chars/Boss/Bongo/sp201.gif
+	frame	data/chars/Boss/Bongo/sp202.gif
+	frame	data/chars/Boss/Bongo/sp203.gif
+	frame	data/chars/Boss/Bongo/sp200.gif
+	frame	data/chars/Boss/Bongo/sp201.gif
+	frame	data/chars/Boss/Bongo/sp202.gif
+	frame	data/chars/Boss/Bongo/sp203.gif
+	frame	data/chars/Boss/Bongo/sp200.gif
+	frame	data/chars/Boss/Bongo/sp201.gif
+	frame	data/chars/Boss/Bongo/sp202.gif
+	frame	data/chars/Boss/Bongo/sp203.gif
+	frame	data/chars/Boss/Bongo/sp200.gif
+	frame	data/chars/Boss/Bongo/sp201.gif
+	frame	data/chars/Boss/Bongo/sp202.gif
+	frame	data/chars/Boss/Bongo/sp203.gif
+	frame	data/chars/Boss/Bongo/sp200.gif
+	frame	data/chars/Boss/Bongo/sp201.gif
+	frame	data/chars/Boss/Bongo/sp202.gif
+	frame	data/chars/Boss/Bongo/sp203.gif
         @cmd dasher 0 0 0
 		delay  20
 		Attack1  0

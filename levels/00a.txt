@@ -50,7 +50,7 @@ Flip 1
 
 Spawn  Crakito_
 map  4
-health 50
+health 30
 	coords  70 200
 	at  0
 
@@ -58,7 +58,7 @@ health 50
 
 Spawn  Thug_
 map  1
-health 50
+health 30
 	coords  30 218
 	at  0
 
@@ -78,7 +78,7 @@ at       100
 
 Spawn  Diga
 map  2
-health 50
+health 30
 	coords  -100 240
 	at  100
 
@@ -87,19 +87,19 @@ health 50
 
 Spawn  Donovan
 map  2
-health 50
+health 30
 	coords  550 210
 	at  100
 
 Spawn  Crakito
 map  1
-health 50
+health 30
 	coords  500 220
 	at  100
 
 Spawn  Galsia
 map  3
-health 50
+health 30
 	coords  -100 240
 	at  100
 
@@ -129,7 +129,7 @@ at  400
 
 Spawn  Skiner
 map  2
-health 50
+health 30
 	coords  -100 240
 	at  400
 
@@ -137,33 +137,33 @@ health 50
 
 Spawn  Donovan
 map  2
-health 50
+health 30
 	coords  -100 210
 	at  400
 
 Spawn  Diga
 map  1
-health 50
+health 30
 	coords  -100 250
 	at  400
 
 Spawn  Galsia
 map  1
-health 50
+health 30
 	coords  500 220
 	at  400
 
 
 Spawn  Skiner
 map  3
-health 50
+health 30
 	coords  550 240
 	at  400
 
 
 Spawn  Thug
 map  1
-health 50
+health 30
 	coords  -100 240
 	at  400
 
@@ -171,20 +171,20 @@ health 50
 
 Spawn  Diga
 map  3
-health 50
+health 30
 	coords  -100 210
 	at  400
 
 Spawn  Crakito
 map  1
-health 50
+health 30
 	coords  500 220
 	at  400
 
 
 Spawn  Crakito
 map  3
-health 50
+health 30
 	coords  550 240
 	at  400
 
@@ -197,7 +197,7 @@ Spawn  ActE
 Spawn  Signal_
 Flip 1
 map  1
-health 75
+health 50
 	coords  -250 220
 	at  401
 
@@ -207,14 +207,14 @@ Spawn  Act
 
 Spawn  Signal_
 Flip 1
-health 75
+health 50
 	coords  -200 240
 	at  401
 
 
 Spawn  Donovan
 map  4
-health 50
+health 30
 	coords  -100 210
 	at  550
 
@@ -228,13 +228,13 @@ at  700
 
 Spawn  BAlu
 map  2
-health 50
+health 30
 	coords  -100 210
 	at  700
 
 Spawn  Diga
 map  4
-health 50
+health 30
 	coords  500 260
 	at  700
 
@@ -244,14 +244,14 @@ Spawn  Pipe
 
 Spawn  Donovan
 map  1
-health 50
+health 30
 	coords  550 240
 	at  700
 
 
 Spawn  Thug
 map  1
-health 50
+health 30
 	coords  -100 240
 	at  700
 
@@ -261,7 +261,7 @@ Spawn  Knife
 
 Spawn  GAlsia
 map  1
-health 50
+health 30
 	coords  -100 240
 	at  700
 
@@ -271,7 +271,7 @@ Spawn  Knife
 	at  700
 
 Spawn  Skiner
-health 50
+health 30
 	coords  600 240
 	at  700
 
@@ -322,32 +322,32 @@ Spawn  Knife
 
 Spawn  Galsia
 map  1
-health 50
+health 30
 	coords  -100 240
 	at  1300
 
 
 Spawn  Galsia
-health 50
+health 30
 	coords  -100 230
 	at  1300
 
 
 Spawn  Galsia
 map  1
-health 50
+health 30
 	coords  600 240
 	at  1300
 
 
 Spawn  Galsia
-health 50
+health 30
 	coords  600 230
 	at  1300
 
 
 Spawn  Signal
-health 50
+health 30
 	coords  -100 230
 	at  1300
 
@@ -365,13 +365,13 @@ health 150
 
 Spawn  Donovan
 map  1
-health 50
+health 30
 	coords  -100 240
 	at  1300
 
 
 Spawn  Crakito
-health 50
+health 30
 	coords  -100 230
 	at  1300
 
@@ -405,25 +405,25 @@ at  2000
 
 Spawn  Crakito
 map  1
-health 50
+health 30
 	coords  -100 240
 	at  2000
 
 
 Spawn  Balu
-health 50
+health 30
 	coords  -100 230
 	at  2000
 
 
 Spawn  Diga
-health 50
+health 30
 	coords  600 240
 	at  2000
 
 
 Spawn  Crakito
-health 50
+health 30
 	coords  600 230
 	at  2000
 
@@ -432,7 +432,7 @@ Spawn  Knife
 	at  2000
 
 Spawn  Galsia
-health 80
+health 40
 	coords  -100 230
 	at  2000
 
@@ -443,7 +443,7 @@ Spawn  Pipe
 
 Spawn  Donovan
 map  1
-health 80
+health 40
 	coords  600 240
 	at  2000
 
@@ -468,7 +468,7 @@ at  2001
 
 
 Spawn  Diga_
-health 75
+health 50
 	coords  -15 230
 	at  2300
 
@@ -478,7 +478,7 @@ Spawn  Act
 
 Spawn  Crakito_
 Map 1
-health 75
+health 50
 	coords  -25 250
 	at  2300
 
@@ -486,59 +486,59 @@ Spawn  Biggar_
 Alias Big_Gar
 Flip 1
 Boss 1
-health 300
+health 200
 	coords  -50 240
 	at  2300
 
 
 Spawn  Donovan
-health 50
+health 30
 	coords  550 210 300
 	at  2400
 
 Spawn  Crakito
 map  2
-health 70
+health 40
 	coords  500 220
 	at  2400
 
 
 Spawn  Skiner
 map  3
-health 70
+health 40
 	coords  -100 240
 	at  2400
 
 
 Spawn  Balu
 map  3
-health 70
+health 40
 	coords  -100 240
 	at  2400
 
 
 Spawn  Diga
 map  2
-health 70
+health 40
 	coords  550 210
 	at  2400
 
 Spawn  Crakito
 map  4
-health 70
+health 40
 	coords  500 220
 	at  2400
 
 
 Spawn  Signal
 map  3
-health 70
+health 40
 	coords  -100 240
 	at  2400
 
 
 Spawn  Balu
-health 70
+health 40
 	coords  -100 240
 	at  2400
 
