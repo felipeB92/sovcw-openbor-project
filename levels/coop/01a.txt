@@ -45,7 +45,7 @@ spawn  ActP
 
 spawn  Costa_
 MAp 3
-health 70
+health 45
 	coords  330 240
 	at  0
 
@@ -56,7 +56,7 @@ spawn  Act
 
 spawn  Costa_
 Map 1
-health 70
+health 45
 	coords  300 260
 	at  0
 
@@ -71,13 +71,13 @@ at  1
 
 spawn  Signal
 MAp 3
-health 50
+health 30
 	coords  500 240 1
 	at  100
 
 spawn  Thug
 Map 1
-health 50
+health 30
 	coords  500 260 1
 	at  200
 
@@ -87,27 +87,27 @@ at       400
 
 spawn  Chan
 MAp 3
-health 70
+health 45
 	coords  -100 240
 	at  400
 
 spawn  Galsia
 Map 1
-health 50
+health 30
 	coords  -100 260
 	at  400
 
 
 spawn  Costa
 MAp 3
-health 70
+health 45
 	coords  -100 240
 	at  400
 
 
 spawn  Costa
 Map 3
-health 70
+health 45
 	coords  600 260
 	at  400
 
@@ -127,7 +127,7 @@ Item Apple
 
 spawn  Galsia_
 Map 3
-health 50
+health 30
 	coords  600 250
 	at  401
 
@@ -137,13 +137,13 @@ spawn  Act
 
 spawn  Donovan_
 Map 3
-health 50
+health 30
 	coords  650 260
 	at  401
 
 spawn  Donovan_
 Map 2
-health 50
+health 30
 	coords  625 240
 	at  401
 
@@ -153,28 +153,28 @@ at       600
 
 spawn  Costa
 MAp 1
-health 70
+health 45
 	coords  -100 240
 	at  600
 
 
 spawn  Costa
 Map 2
-health 70
+health 45
 	coords  600 260
 	at  600
 
 
 spawn  Chan
 MAp 1
-health 70
+health 45
 	coords  -100 240
 	at  600
 
 
 spawn  Chan
 Map 2
-health 70
+health 45
 	coords  600 260
 	at  600
 
@@ -206,54 +206,54 @@ at       900
 
 
 spawn  Costa
-health 70
+health 45
 	coords  -100 260
 	at  900
 
 
 spawn  Costa
 Map 1
-health 70
+health 45
 	coords  600 260
 	at  900
 
 
 spawn  Costa
 map 2
-health 70
+health 45
 	coords  -100 240
 	at  900
 
 
 spawn  Costa
 Map 4
-health 70
+health 45
 	coords  600 240
 	at  900
 
 spawn  Signal
 Map 2
-health 70
+health 45
 	coords  430 225 1
 	at  900
 
 
 spawn  galsia
 Map 2
-health 50
+health 30
 	coords  430 225 1
 	at  900
 
 
 spawn  Thug
 Map 2
-health 50
+health 30
 	coords  430 225 1
 	at  900
 
 spawn  DonovaN
 Map 2
-health 50
+health 30
 	coords  430 225 1
 	at  900
 

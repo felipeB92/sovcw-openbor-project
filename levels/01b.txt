@@ -36,7 +36,7 @@ at  0
 
 spawn  Slum_
 Flip 1
-health 70
+health 35
 	coords  330 227
 	at  0
 
@@ -49,14 +49,14 @@ spawn  Act
 
 spawn  Slum_
 MAp 1
-health 70
+health 35
 	coords  465 227
 	at  0
 
 spawn  Signal_
 Flip 1
 MAp 1
-health 70
+health 35
 	coords  396 230
 	at  0
 
@@ -69,38 +69,38 @@ at       100
 
 
 spawn  Jhonny
-health 70
+health 35
 	coords  600 240
 	at  100
 
 spawn  Donovan
 MAp 1
-health 50
+health 30
 	coords  -100 260
 	at  100
 
 spawn  Galsia
 MAp 1
-health 50
+health 30
 	coords  -100 260
 	at  100
 
 spawn  Thug
 MAp 1
-health 50
+health 30
 	coords  -100 260
 	at  100
 
 
 spawn  Skiner
 MAp 1
-health 70
+health 35
 	coords  600 240
 	at  100
 
 spawn  Signal
 MAp 2
-health 70
+health 35
 	coords  -100 240
 	at  100
 
@@ -114,14 +114,14 @@ spawn  Act
 
 spawn  Galsia_
 MAp 2
-health 70
+health 35
 	coords  600 240
 	at  101
 
 
 spawn  Donovan_
 MAp 2
-health 70
+health 35
 	coords  640 250
 	at  101
 
@@ -133,43 +133,43 @@ at       500
 
 spawn  Ralf
 MAp 1
-health 70
+health 35
 	coords  600 240
 	at  500
 
 spawn  Jhonny
 map    2
-health 70
+health 35
 	coords  -100 240
 	at  500
 
 spawn  Thug
 map    1
-health 50
+health 30
 	coords  600 240
 	at  500
 
 spawn  Signal
 map    2
-health 70
+health 35
 	coords  -100 240
 	at  500
 
 spawn  Slum
 map    3
-health 50
+health 30
 	coords  600 240
 	at  500
 
 spawn  Costa
 map    2
-health 70
+health 35
 	coords  -100 240
 	at  500
 
 spawn  Chan
 map    1
-health 70
+health 35
 	coords  600 240
 	at  500
 
@@ -184,28 +184,28 @@ at  501
 
 spawn  Chan
 map    2
-health 70
+health 35
 	coords  600 240
 	at  600
 
 
 spawn  Costa
 map    2
-health 70
+health 35
 	coords  600 260
 	at  700
 
 
 spawn  Slum
 map    4
-health 50
+health 30
 	coords  600 240
 	at  800
 
 
 spawn  Galsia
 map    4
-health 50
+health 30
 	coords  600 240
 	at  900
 
@@ -220,27 +220,27 @@ at  1000
 
 spawn  Jhonny
 map    3
-health 70
+health 35
 	coords  600 260
 	at  1000
 
 
 spawn  Ralf
 map    4
-health 70
+health 35
 	coords  -100 240
 	at  1000
 
 
 spawn  Jhonny
 map    4
-health 70
+health 35
 	coords  600 240
 	at  1000
 
 spawn  Ralf
 map    3
-health 70
+health 35
 	coords  -100 260
 	at  1000
 
@@ -263,14 +263,14 @@ at       1600
 
 spawn  Costa
 map    1
-health 70
+health 35
 	coords  600 240
 	at  1600
 
 
 spawn  Costa
 map    2
-health 70
+health 35
 	coords  600 260
 	at  1600
 
@@ -281,14 +281,14 @@ spawn  Chicken
 
 spawn  Slum
 map    4
-health 50
+health 30
 	coords  -100 240
 	at  1600
 
 
 spawn  Galsia
 map    4
-health 50
+health 30
 	coords  -100 240
 	at  1600
 
@@ -296,27 +296,27 @@ health 50
 
 spawn  Chan
 map    1
-health 70
+health 35
 	coords  600 240
 	at  1600
 
 
 spawn  Chan
 map    2
-health 70
+health 35
 	coords  600 260
 	at  1600
 
 spawn  Galsia
 map    4
-health 50
+health 30
 	coords  600 240
 	at  1600
 
 
 spawn  Donovan
 map    4
-health 50
+health 30
 	coords  600 240
 	at  1600
 

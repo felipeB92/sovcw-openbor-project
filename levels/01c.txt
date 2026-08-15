@@ -48,7 +48,7 @@ group 4 4
 at  0
 
 spawn  Bongo_
-health 300
+health 200
 Boss 1
 	coords  550 270
 	at  0
@@ -71,75 +71,75 @@ group 3 3
 at  130
 
 spawn  Jhonny
-health 70
+health 40
 	coords  600 240
 	at  100
 
 spawn  Donovan
 MAp 1
-health 50
+health 30
 	coords  -100 260
 	at  100
 
 spawn  Galsia
 MAp 1
-health 50
+health 30
 	coords  -100 260
 	at  100
 
 spawn  Thug
 MAp 1
-health 50
+health 30
 	coords  -100 260
 	at  100
 
 
 spawn  Jhonny
 MAp 1
-health 70
+health 40
 	coords  600 240
 	at  100
 
 spawn  Signal
 MAp 2
-health 70
+health 40
 	coords  -100 240
 	at  100
 
 
 spawn  Ralf
-health 70
+health 40
 	coords  600 240
 	at  100
 
 spawn  Thug
 MAp 1
-health 50
+health 30
 	coords  -100 260
 	at  100
 
 spawn  Donovan
 MAp 1
-health 50
+health 30
 	coords  -100 260
 	at  100
 
 spawn  Chan
 MAp 1
-health 50
+health 30
 	coords  -100 260
 	at  100
 
 
 spawn  Costa
 MAp 1
-health 70
+health 40
 	coords  600 240
 	at  100
 
 spawn  Signal
 MAp 2
-health 70
+health 40
 	coords  -100 240
 	at  100
 

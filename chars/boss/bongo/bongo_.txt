@@ -1,6 +1,6 @@
 name	Bongo_
 health	300
-mp 30
+mp 60
 mprate 1
 #secret 1
 blockodds 1
