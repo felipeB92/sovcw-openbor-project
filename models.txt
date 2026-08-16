@@ -243,6 +243,8 @@ know	Joe data/chars/Boss/Joe/Joe.txt
 know	Joe_ data/chars/Boss/Joe/Joe_.txt
 know	JoeP01 data/chars/Boss/Joe/JoeP01.txt
 know	JoeP02 data/chars/Boss/Joe/JoeP02.txt
+know	JoeP03 data/chars/Boss/Joe/JoeP03.txt
+know	JoeP04 data/chars/Boss/Joe/JoeP04.txt
 
 know	Abadede data/chars/Boss/Abadede/Abadede.txt
 know	Abadede_ data/chars/Boss/Abadede/Abadede_.txt

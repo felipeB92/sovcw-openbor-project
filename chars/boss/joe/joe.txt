@@ -1,6 +1,6 @@
 name	Joe
 health	300
-mp 30
+mp 60
 mprate 1
 #secret 1
 blockodds 1
@@ -32,7 +32,9 @@ remap data/chars/Boss/Joe/idle00.gif data/chars/Boss/Joe/MAp04.gif
 
 Load JoeP01
 Load JoeP02
-
+Load JoeP03
+Load JoeP04
+Load Super3
 
 anim Pain5
 	loop	0
@@ -251,12 +253,19 @@ anim Freespecial5
         RangeZ -10 10
                 Followcond 1
                 followanim 3
-        hitflash	Forte
+        energycost 50 1
+        MpOnly 1
+        hitflash	fraco
         hitfx	data/sounds/golpes/Grab.wav
 		Attack1  0
+	@cmd  spawn01  "Super3" 0  50  1
+	drawmethod tintmode 6
+	drawmethod tintcolor 255
 	frame	data/chars/Boss/Joe/a300.gif
+	Npdrawmethod
 		delay  5
 	frame	data/chars/Boss/Joe/a301.gif
+	@cmd  spawn01  "JoeP03" 0  0  -1
 	frame	data/chars/Boss/Joe/a302.gif
 		offset  36  186
 		bbox  21  110  42  80
@@ -302,16 +311,33 @@ anim follow3
 	@cmd	position 0 115 -2 -1
 	frame	data/chars/Boss/Joe/sp04.gif
 	delay	25
+        sound	data/sounds/Shock.wav
+	@cmd  spawn01  "JoeP04"  25  40  -1
 	@cmd	position 0 25 -2 -1
 	frame	data/chars/Boss/Joe/sp05.gif
+        Sound	data/sounds/golpes/medio.wav
+	@cmd  spawn01  "Shock"  40  40  -2
+	@cmd  spawn01  "JoeP04"  27  37  -1
 	@cmd	position 1 25 -2 -1
 	frame	data/chars/Boss/Joe/sp05.gif
+        Sound	data/sounds/golpes/medio.wav
+	@cmd  spawn01  "JoeP04"  25  40  -1
+	@cmd  spawn01  "Shock"  40  40  -2
 	@cmd	position 0 25 -2 -1
 	frame	data/chars/Boss/Joe/sp05.gif
+        Sound	data/sounds/golpes/medio.wav
+	@cmd  spawn01  "JoeP04"  23  43  -1
+	@cmd  spawn01  "Shock"  40  40  -2
 	@cmd	position 1 25 -2 -1
 	frame	data/chars/Boss/Joe/sp05.gif
+        Sound	data/sounds/golpes/medio.wav
+	@cmd  spawn01  "JoeP04"  25  40  -1
+	@cmd  spawn01  "Shock"  40  40  -2
 	@cmd	position 0 25 -2 -1
 	frame	data/chars/Boss/Joe/sp05.gif
+        Sound	data/sounds/golpes/medio.wav
+	@cmd  spawn01  "JoeP04"  24  39  -1
+	@cmd  spawn01  "Shock"  40  40  -2
 	@cmd	position 1 25 -2 -1
 	frame	data/chars/Boss/Joe/sp05.gif
 	delay	5
@@ -322,8 +348,9 @@ anim follow3
 	frame	data/chars/Boss/Joe/a103.gif
 	@cmd	position 10 20 10 -2 -1
 	@cmd  spawn01  "Corte"  50  60  -2
+        sound	data/sounds/golpes/Corte.wav
 	@cmd	depost 0
-	@cmd	throw 10 5 -2 2 0 -1
+	@cmd	throw 45 8 -2 2 0 -1
 	@cmd	clearL
 	frame	data/chars/Boss/Joe/a103.gif
 
