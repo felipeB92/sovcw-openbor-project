@@ -23,7 +23,7 @@ spawn3  	60 50 50
 group 1 1
 at 0
 
-spawn  	Bongo
+spawn  	Joe
 MAP    1
 health 10
 	coords  200 210 250

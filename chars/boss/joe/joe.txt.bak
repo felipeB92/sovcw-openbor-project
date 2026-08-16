@@ -19,10 +19,8 @@ weapons Joe_Knife Joe_Sword Joe_pipe Joe_Kunai
 icon	data/chars/Boss/Joe/icon.gif 1
 diesound data/Sounds/Die4.wav
 running	20	3	2	1	1
-onblockwscript	data/scripts/bounceF.c
-#animationscript 	data/scripts/ani0020.h
-animationscript		data/scripts/drago.c
-ondrawscript 		data/scripts/Enemy_ondrawscript.c
+
+animationscript		data/scripts/Felipe.c
 
 
 
@@ -34,6 +32,14 @@ remap data/chars/Boss/Joe/idle00.gif data/chars/Boss/Joe/MAp04.gif
 
 Load JoeP01
 Load JoeP02
+
+
+anim Pain5
+	loop	0
+	delay	12
+	offset	154 186
+	bbox	135 100 32 86
+	frame   data/chars/Boss/Joe/idle00.gif
 
 anim idle
 	loop	1
@@ -130,7 +136,7 @@ anim Freespecial
 	loop	0
 	delay	12
 	offset	150 186
-        Range 200 300
+        Range 200 220
         RangeZ -10 10
         custknife JoeP01
         throwframe 6 0
@@ -152,8 +158,6 @@ anim Follow1
 	loop	0
 	delay	8
 	offset	150 186
-        Range 200 300
-        RangeZ -10 10
         custknife JoeP01
         throwframe 1 0
         hitflash	Forte
@@ -169,8 +173,6 @@ anim Follow1
 anim Follow2
 	loop	0
 	offset	150 186
-        Range 200 300
-        RangeZ -10 10
         custknife JoeP02
         throwframe 1 0
         hitflash	Forte
@@ -181,8 +183,6 @@ anim Follow2
 	frame	data/chars/Boss/Joe/a205.gif
 	frame	data/chars/Boss/Joe/a206.gif
 	frame	data/chars/Boss/Joe/a206.gif
-
-
 
 
 
@@ -243,12 +243,81 @@ anim Freespecial3
 		delay  20
 	frame	data/chars/Boss/Joe/Jump06.gif
 
-anim Freespecial4
+anim Freespecial5
+	loop	0
+	delay	15
+	offset	151 186
+        Range 220 240
+        RangeZ -10 10
+                Followcond 1
+                followanim 3
+        hitflash	Forte
+        hitfx	data/sounds/golpes/Grab.wav
+		Attack1  0
+	frame	data/chars/Boss/Joe/a300.gif
+		delay  5
+	frame	data/chars/Boss/Joe/a301.gif
+	frame	data/chars/Boss/Joe/a302.gif
+		offset  36  186
+		bbox  21  110  42  80
+		attack1  69  128  95  25  0  0  0  0  0  10
+		delay  3
+	frame	data/chars/Boss/Joe/a303.gif
+		attack1  61  126  144  26  0  0  0  0  0  10
+	frame	data/chars/Boss/Joe/a304.gif
+	frame	data/chars/Boss/Joe/a305.gif
+		attack1  31  131  206  13  0  0  0  0  0  10
+	frame	data/chars/Boss/Joe/a306.gif
+		attack1  49  132  236  12  0  0  0  0  0  10
+	frame	data/chars/Boss/Joe/a307.gif
+		Attack1  0
+		delay  3
+	frame	data/chars/Boss/Joe/a308.gif
+	frame	data/chars/Boss/Joe/a309.gif
+	frame	data/chars/Boss/Joe/a310.gif
+		delay  7
+	frame	data/chars/Boss/Joe/a311.gif
+	frame	data/chars/Boss/Joe/a312.gif
+
+
+anim follow3
+	loop	0
+	delay	1
+	offset	38 184
+        Sound	data/chars/Boss/Joe/A1.WAV
+        hitflash	Forte
+        hitfx	data/sounds/golpes/Forte.wav
+		Attack1  0
+	frame	data/chars/Boss/Joe/sp00.gif
+	delay	5
+	@cmd	slamstart
+	@cmd	position 0 220 0 -2 -1
+	frame	data/chars/Boss/Joe/sp00.gif
+	@cmd	position 0 150 -2 -1
+	frame	data/chars/Boss/Joe/sp01.gif
+	frame	data/chars/Boss/Joe/sp02.gif
+	frame	data/chars/Boss/Joe/sp03.gif
+	frame	data/chars/Boss/Joe/sp04.gif
+	frame	data/chars/Boss/Joe/sp05.gif
+	frame	data/chars/Boss/Joe/a100.gif
+	frame	data/chars/Boss/Joe/a101.gif
+	frame	data/chars/Boss/Joe/a102.gif
+	frame	data/chars/Boss/Joe/a103.gif
+	@cmd	position 10 200 0 -1 -2
+	@cmd  spawn01  "Corte"  50  60  -2
+	@cmd	depost 0
+	@cmd	throw 10 5 -2 2 0 -1
+	@cmd	clearL
+	frame	data/chars/Boss/Joe/a103.gif
+
+
+
+anim special2
 	loop	0
 	delay	20
 	offset	154 187
         custknife JoeP02
-        throwframe 1 0
+        throwframe 10 0
         Range 50 100
         RangeZ -10 10
         hitflash	Forte
@@ -256,18 +325,91 @@ anim Freespecial4
 	frame	data/chars/Boss/Joe/LAnd.gif
 		delay  4
 	frame	data/chars/Boss/Joe/Jump06.gif
+		move  -5
 	frame	data/chars/Boss/Joe/Jump05.gif
+		movea  5
 	frame	data/chars/Boss/Joe/Jump04.gif
 	frame	data/chars/Boss/Joe/Jump03.gif
+		movea  -5
 	frame	data/chars/Boss/Joe/Jump02.gif
 	frame	data/chars/Boss/Joe/Jump01.gif
 		delay  20
+		movea  0
 	frame	data/chars/Boss/Joe/Jump00.gif
 	frame	data/chars/Boss/Joe/LAnd.gif
 	offset	150 186
         Sound	data/sounds/golpes/Soco.wav
         hitfx	data/sounds/golpes/Forte.wav
 		delay  8
+		move  0
+	frame	data/chars/Boss/Joe/a205.gif
+	frame	data/chars/Boss/Joe/a206.gif
+	frame	data/chars/Boss/Joe/a206.gif
+
+anim special
+	loop	0
+	delay	20
+	offset	154 187
+        custknife JoeP02
+        throwframe 10 0
+        Range 50 100
+        RangeZ -10 10
+        hitflash	Forte
+		Attack1  0
+	frame	data/chars/Boss/Joe/LAnd.gif
+		delay  4
+	frame	data/chars/Boss/Joe/Jump06.gif
+		move  -5
+	frame	data/chars/Boss/Joe/Jump05.gif
+		movea  5
+	frame	data/chars/Boss/Joe/Jump04.gif
+	frame	data/chars/Boss/Joe/Jump03.gif
+		movea  -5
+	frame	data/chars/Boss/Joe/Jump02.gif
+	frame	data/chars/Boss/Joe/Jump01.gif
+		delay  20
+		movea  0
+	frame	data/chars/Boss/Joe/Jump00.gif
+	frame	data/chars/Boss/Joe/LAnd.gif
+	offset	150 186
+        Sound	data/sounds/golpes/Soco.wav
+        hitfx	data/sounds/golpes/Forte.wav
+		delay  8
+		move  0
+	frame	data/chars/Boss/Joe/a205.gif
+	frame	data/chars/Boss/Joe/a206.gif
+	frame	data/chars/Boss/Joe/a206.gif
+
+anim Freespecial4
+	loop	0
+	delay	20
+	offset	154 187
+        custknife JoeP02
+        throwframe 10 0
+        Range 50 100
+        RangeZ -10 10
+        hitflash	Forte
+		Attack1  0
+	frame	data/chars/Boss/Joe/LAnd.gif
+		delay  4
+	frame	data/chars/Boss/Joe/Jump06.gif
+		move  -5
+	frame	data/chars/Boss/Joe/Jump05.gif
+		movea  5
+	frame	data/chars/Boss/Joe/Jump04.gif
+	frame	data/chars/Boss/Joe/Jump03.gif
+		movea  -5
+	frame	data/chars/Boss/Joe/Jump02.gif
+	frame	data/chars/Boss/Joe/Jump01.gif
+		delay  20
+		movea  0
+	frame	data/chars/Boss/Joe/Jump00.gif
+	frame	data/chars/Boss/Joe/LAnd.gif
+	offset	150 186
+        Sound	data/sounds/golpes/Soco.wav
+        hitfx	data/sounds/golpes/Forte.wav
+		delay  8
+		move  0
 	frame	data/chars/Boss/Joe/a205.gif
 	frame	data/chars/Boss/Joe/a206.gif
 	frame	data/chars/Boss/Joe/a206.gif
