@@ -153,7 +153,7 @@ anim attack1
         hitfx	data/sounds/golpes/Fraco.wav
 	frame	data/chars/players/Terry/a100.gif
 		delay  7
-		attack1  58  46  53  12  7  0  0  0  0  15
+		attack1  58  46  53  12  7  0  0  0  10  15
 	frame	data/chars/players/Terry/a101.gif
 
 
@@ -184,7 +184,7 @@ anim attack3
         hitfx	data/sounds/golpes/Forte.wav
 	Sound	data/chars/players/Terry/a3.wav
 	frame	data/chars/players/Terry/a300.gif
-		attack2  56  39  66  73  12  1  0  0  12  15
+		attack2  56  39  66  73  12  1  0  0  15  15
 		delay  25
 		bbox  60  43  25  69
 	frame	data/chars/players/Terry/a301.gif
@@ -431,7 +431,7 @@ anim special
 		Attack1  0
 	frame	data/chars/players/Terry/Sp200.gif
 	frame	data/chars/players/Terry/Sp201.gif
-		attack2  64  35  32  84  20  1  0  0  15  25
+		attack2  64  35  32  84  30  1  0  0  15  25
 	frame	data/chars/players/Terry/Sp202.gif
 		attack2  55  32  33  81  15  1  0  0  15  15
 	frame  data/chars/players/Terry/Sp200.gif

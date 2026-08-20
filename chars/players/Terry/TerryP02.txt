@@ -20,7 +20,7 @@ anim idle
 	frame	data/chars/players/Terry/P/P202.gif
 	frame	data/chars/players/Terry/P/P203.gif
 	frame	data/chars/players/Terry/P/P204.gif
-		attack2  17  81  46  64  30  1  1  0  25  20
+		attack2  17  81  46  64  35  1  1  0  25  20
 	frame	data/chars/players/Terry/P/P205.gif
 		attack2  18  24  52  121  30  1  1  0  25  20
 	frame	data/chars/players/Terry/P/P208.gif

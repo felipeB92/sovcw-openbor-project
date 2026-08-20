@@ -3,11 +3,12 @@ bossmusic	data/music/BossR.bor
 scrollspeed 0.5#1
 #direction Left
 stagenumber 2
-background	data/bgs/01/baCK03B.gif 	0.675 1 0 0 0 0 -1 1 1
-bglayer		data/bgs/01/bAck03.gif	0.575 1 0 0 0 0 -1 1 1
-#bglayer		data/bgs/00/b01.gif	0.475 1 0 0 0 0 -1 1 1
-#water		data/bgs/01/Mar01.gif		0.5
-#fglayer         data/bgs/00/FOG.gif              0.5 1 0 0 0 0 -1 1 1 0 1 3 10 0.3
+background	data/bgs/01/b/03.gif
+bglayer		data/bgs/01/b/03.gif 0.1 1 0 0 0 0 -1 1 1 0 0 0 0 0 0.2
+bglayer		data/bgs/01/b/02.gif 0.1 1 0 0 0 0 -1 1 1 0 0 0 0 0 0.4
+bglayer		data/bgs/01/b/04.gif 0.1 1 0 0 0 0 -1 1 1 0 0 0 0 0 0.5
+bglayer		data/bgs/01/bAck03.gif	0.1 1 0 0 0 0 -1 1 1 0 0 0 0 0 0.6
+10 0.3
 panel		data/bgs/01/pn03.gif		none	none
 #frontpanel	data/bgs/00/Front00.gif		
 cameratype 1

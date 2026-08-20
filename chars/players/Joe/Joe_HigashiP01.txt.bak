@@ -16,7 +16,7 @@ anim idle
 	loop	0
 	offset	17 75
 		delay  4
-		attack2  3  2  39  74  25  1  0  0  0  15
+		attack2  3  2  39  74  25  1  0  0  15  15
 	frame	data/chars/players/Joe/P100.gif
         @cmd dasher 1 0 0
 	frame	data/chars/players/Joe/P101.gif

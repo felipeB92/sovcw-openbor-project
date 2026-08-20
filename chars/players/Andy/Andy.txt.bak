@@ -177,7 +177,7 @@ anim attack1
         hitfx	data/sounds/golpes/Fraco.wav
 	frame	data/chars/players/Andy/a101.gif
 		delay  7
-		attack1  11  11  58  12  5  0  0  0  0  15
+		attack1  11  11  58  12  5  0  0  0  10  15
 	frame	data/chars/players/Andy/a102.gif
 		delay  3
 		Attack1  0
@@ -195,7 +195,7 @@ anim attack2
 		delay  6
 	frame	data/chars/players/Andy/a201.gif
 	frame	data/chars/players/Andy/a202.gif
-		attack2  8  7  57  14  5  0  0  0  0  15
+		attack2  8  7  57  14  5  0  0  0  12  15
 	frame	data/chars/players/Andy/a203.gif
 		Attack1  0
 	frame	data/chars/players/Andy/a204.gif
@@ -214,7 +214,7 @@ anim attack3
 	frame	data/chars/players/Andy/a400.gif
 		Attack1  0
 	frame	data/chars/players/Andy/a402.gif
-		attack3  24  0  38  87  5  0  1  0  0  15
+		attack3  24  0  38  87  5  0  1  0  5  15
 	frame	data/chars/players/Andy/a403.gif
 		Attack1  0
 	frame	data/chars/players/Andy/a404.gif
@@ -232,7 +232,7 @@ anim attack4
 	Sound	data/chars/players/Andy/a3.wav
 	frame	data/chars/players/Andy/a300.gif
 	frame	data/chars/players/Andy/a301.gif
-		attack2  10  8  54  18  7  1  1  0  0  15
+		attack2  10  8  54  18  7  1  1  0  15  15
 	frame	data/chars/players/Andy/a302.gif
 	frame	data/chars/players/Andy/a303.gif
 		Attack1  0
@@ -441,19 +441,27 @@ anim special2
 		delay  6
 	frame	data/chars/players/Andy/SP204.gif
         @cmd dasher 2 0 0
-	attack2  14  20  90  59  25  1  1  0  0  20
+	attack2  14  20  90  59  5  0  1  0  10  20
 	frame	data/chars/players/Andy/SP205.gif
 	frame	data/chars/players/Andy/SP206.gif
 		delay  3
+		Attack1  0
 	frame	data/chars/players/Andy/SP207.gif
+		attack2  14  20  90  59  5  0  1  0  10  20
 	frame	data/chars/players/Andy/SP207.gif
+		Attack1  0
 	frame	data/chars/players/Andy/SP207.gif
+		attack2  14  20  90  59  5  0  1  0  10  20
 	frame	data/chars/players/Andy/SP207.gif
+		Attack1  0
 	frame	data/chars/players/Andy/SP207.gif
+		attack2  14  20  90  59  5  0  1  0  10  20
 	frame	data/chars/players/Andy/SP207.gif
+		Attack1  0
 	frame	data/chars/players/Andy/SP207.gif
 		delay  6
         @cmd dasher 1 0 0
+		attack1  6  28  91  66  15  1  0  0  15  15
 	frame	data/chars/players/Andy/SP208.gif
 		Attack1  0
         @cmd dasher 0 0 0
@@ -472,7 +480,7 @@ anim special
 	jumpframe  4  4  0  0
 	frame	data/chars/players/Andy/Sp100.gif
 	@cmd  spawn01  "AndyP01"  0  0  -1
-		attack3  7  35  53  69  5  0  1  0  0  25
+		attack3  7  35  53  69  10  0  1  0  0  25
 	frame	data/chars/players/Andy/Sp101.gif
 	Sound	data/chars/players/Andy/SP01.wav
 	@cmd  spawn01  "AndyP01"  0  0  -1
@@ -481,9 +489,8 @@ anim special
 		Attack1  0
 	frame	data/chars/players/Andy/Sp103.gif
 	frame	data/chars/players/Andy/Sp104.gif
-		attack2  5  5  67  90  20  1  1  0  0  25
+		attack2  5  5  67  90  20  1  1  0  25  25
 	frame	data/chars/players/Andy/Sp105.gif
-		attack2  7  -1  67  98  15  1  0  0  0  15
 	frame  data/chars/players/Andy/Sp106.gif
 		Attack1  0
 	frame	data/chars/players/Andy/Sp107.gif
