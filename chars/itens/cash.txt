@@ -1,14 +1,16 @@
 name	cash
 score			2500
-type	item
+type	None
 shadow	0
-#icon	data/chars/misc/meaticon.gif
 nolife 1
 
+animationscript	data/scripts/itens.c
+
 anim idle
-	loop	0
-	delay	1000
+	loop	1
+	delay	2
 	offset	53 63
 	bbox	41 47 20 17
+	@cmd    detector_gold 1000
 	frame	data/chars/Itens/cash00.gif
 

@@ -1,13 +1,16 @@
 name	Apple
 health	30
-type	item
+type	None
 shadow	0
 nolife 1
+animationscript	data/scripts/itens.c
 
 anim idle
-	loop	0
-	delay	1000
+	loop	1
+	delay	2
 	offset	50 63
 	bbox	44 47 15 16
+	@cmd    detector_item 30
 	frame	data/chars/Itens/apple00.gif
+
 

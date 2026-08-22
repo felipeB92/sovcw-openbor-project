@@ -1,5 +1,5 @@
-music		data/music/01a.bor
-bossmusic	data/music/Boss2.bor
+music		data/music/Lv1.ogg
+bossmusic	data/music/Boss1.ogg
 scrollspeed 0.5#1
 direction Left
 stagenumber 1

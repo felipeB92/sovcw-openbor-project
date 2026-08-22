@@ -640,21 +640,22 @@ anim Freespecial
 	frame	data/chars/players/Chunli/Dash06.gif
 	frame	data/chars/players/Chunli/Dash07.gif
 
-anim Freespcial4
+anim Freespecial4
 	loop	0
-	delay	3
+	delay	5
+        energycost 5 1
+        MpOnly 1
 	offset	28 83
 	bbox	18 3 28 71
         hitflash	Forte
-        Sound	data/sounds/golpes/Chut.wav
         hitfx	data/sounds/golpes/Forte.wav
-	Sound	data/chars/players/Chunli/P01.wav
 	frame	data/chars/players/Chunli/a400.gif
 	frame	data/chars/players/Chunli/a401.gif
+		sound  data/chars/players/Chunli/P01.wav
 	frame	data/chars/players/Chunli/a402.gif
 	frame	data/chars/players/Chunli/a403.gif
 	frame	data/chars/players/Chunli/a404.gif
-	@cmd  spawn01  "Chunlip03"  15  15  0
+	@cmd  spawn01  "Chunlip03"  15  43  0
 	frame	data/chars/players/Chunli/a405.gif
 		delay  20
 	frame	data/chars/players/Chunli/a406.gif
