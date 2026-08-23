@@ -90,6 +90,22 @@ anim get
 	frame	data/chars/players/Terry/Get00.gif
 	frame	data/chars/players/Terry/Get01.gif
 
+anim Follow10
+	loop	0
+	delay	10
+	offset	75 112
+        Sound	data/sounds/food.wav
+	frame	data/chars/players/Terry/Get00.gif
+	frame	data/chars/players/Terry/Get01.gif
+
+anim Follow11
+	loop	0
+	delay	10
+	offset	75 112
+        Sound	data/sounds/Coin.wav
+	frame	data/chars/players/Terry/Get00.gif
+	frame	data/chars/players/Terry/Get01.gif
+
 
 anim jump
 	loop	0
