@@ -15,6 +15,7 @@ anim idle
 	bbox 	16 25 19 3
 	hitFlash Corte
 	hitfx	data/sounds/Cutter.wav
-	attack 16 25 19 3 25 1 0 0 0 12
+	attack 16 25 19 3 20 1 0 0 0 12
+		move  2
 	frame	data/chars/armas/knife07.gif
 

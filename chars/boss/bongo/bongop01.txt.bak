@@ -1,7 +1,7 @@
 name			BongoP01
 type			none
 speed 15
-candamage			Player
+candamage			Player NPC
 alpha 1
 nolife			1
 lifespan		4
@@ -12,11 +12,11 @@ subject_to_gravity 0
 
 anim idle
 	loop	1
-	offset	-18 14
+	offset	12 57
         hitflash	Forte
         hitfx	data/sounds/golpes/Forte.wav
 		delay  3
-		attack1  -1  -1  60  24  15  1  0  0  0  15
+		attack7  10  37  57  29  15  1  0  0  0  15
 	frame	data/chars/Boss/Bongo/fireball00.gif
 	frame	data/chars/Boss/Bongo/fireball01.gif
 	frame	data/chars/Boss/Bongo/fireball02.gif
@@ -24,5 +24,6 @@ anim idle
 	frame	data/chars/Boss/Bongo/fireball04.gif
 	frame	data/chars/Boss/Bongo/fireball05.gif
 	frame	data/chars/Boss/Bongo/fireball06.gif
+		attack7  10  37  57  29  15  1  0  0  0  10
 	frame	data/chars/Boss/Bongo/fireball07.gif
 

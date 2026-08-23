@@ -18,7 +18,7 @@ anim idle
 		delay  1
         hitflash	Corte
         hitfx	data/sounds/golpes/Corte.wav
-		Attack1  104  74  67  137  20  1  1  0  0  15
+		Attack1  104  74  67  137  20  1  1  0  20  15
 	frame	data/chars/players/Leonardo/P1/P100.gif
         @cmd dasher 2 0 0
 		delay  3

@@ -109,6 +109,22 @@ anim get
 	frame	data/chars/players/Zangief/Get00.gif
 	frame	data/chars/players/Zangief/Get01.gif
 
+anim Follow10
+	loop	0
+	delay	10
+	offset	28 80
+        Sound	data/sounds/food.wav
+	frame	data/chars/players/Zangief/Get00.gif
+	frame	data/chars/players/Zangief/Get01.gif
+
+anim Follow11
+	loop	0
+	delay	10
+	offset	28 80
+        Sound	data/sounds/Coin.wav
+	frame	data/chars/players/Zangief/Get00.gif
+	frame	data/chars/players/Zangief/Get01.gif
+
 
 anim jump
 	loop	0
@@ -202,7 +218,7 @@ anim attack1
         hitfx	data/sounds/golpes/mEDIO.wav
 	frame	data/chars/players/Zangief/a100.gif
 		delay  7
-		attack1  30  11  62  16  5  0  0  0  10  15
+		attack1  30  11  62  16  5  0  0  0  5  15
 	frame	data/chars/players/Zangief/a101.gif
 		delay  12
 		Attack1  0
@@ -211,7 +227,7 @@ anim attack1
 
 anim attack2
 	loop	0
-	delay	6
+	delay	4
 	offset	37 89
         hitflash	mEDIO
 	bbox	21 0 30 88
@@ -220,10 +236,10 @@ anim attack2
         hitfx	data/sounds/golpes/mEDIO.wav
 	Sound	data/chars/players/Zangief/a1.wav
 	frame	data/chars/players/Zangief/a200.gif
-		delay  7
+		delay  5
 	frame	data/chars/players/Zangief/a201.gif
-		delay  12
-		attack2  14  14  88  16  7  0  0  0  12  15
+		delay  8
+		attack2  14  14  88  16  7  0  0  0  8  15
 	frame	data/chars/players/Zangief/a202.gif
 	frame	data/chars/players/Zangief/a203.gif
 

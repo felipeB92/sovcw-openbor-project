@@ -112,6 +112,22 @@ anim get
 	frame	data/chars/players/Joe/Get00.gif
 	frame	data/chars/players/Joe/Get01.gif
 
+anim Follow10
+	loop	0
+	delay	10
+	offset	19 68
+        Sound	data/sounds/food.wav
+	frame	data/chars/players/Joe/Get00.gif
+	frame	data/chars/players/Joe/Get01.gif
+
+anim Follow11
+	loop	0
+	delay	10
+	offset	19 68
+        Sound	data/sounds/Coin.wav
+	frame	data/chars/players/Joe/Get00.gif
+	frame	data/chars/players/Joe/Get01.gif
+
 
 anim jump
 	loop	0
@@ -177,7 +193,7 @@ anim attack1
         hitfx	data/sounds/golpes/Fraco.wav
 	frame	data/chars/players/Joe/a100.gif
 		delay  7
-		attack1  4  10  62  9  8  0  0  0  0  15
+		attack1  4  10  62  9  8  0  0  0  10  15
 	frame	data/chars/players/Joe/a101.gif
 		delay  3
 		Attack1  0
@@ -196,9 +212,9 @@ anim attack2
 	frame	data/chars/players/Joe/a200.gif
 	frame	data/chars/players/Joe/a201.gif
 		delay  6
-		attack2  33  30  26  26  7  0  1  0  0  15
+		attack2  33  30  26  26  7  0  1  0  12  15
 	frame	data/chars/players/Joe/a202.gif
-		attack2  26  25  62  13  7  0  1  0  0  15
+		attack2  26  25  62  13  7  0  1  0  12  15
 		sound  data/sounds/golpes/Chut.wav
 	frame	data/chars/players/Joe/a203.gif
 		Attack1  0
@@ -218,7 +234,7 @@ anim attack3
 	frame	data/chars/players/Joe/a300.gif
 	frame	data/chars/players/Joe/a301.gif
 	frame	data/chars/players/Joe/a302.gif
-		attack3  23  0  56  69  12  1  0  0  0  15
+		attack3  23  0  56  69  12  1  0  0  15  15
 		delay  12
 	frame	data/chars/players/Joe/a303.gif
 		Attack1  0
@@ -437,7 +453,7 @@ anim special
 	frame  data/chars/players/Joe/Sp202.gif
 	Sound	data/chars/players/Joe/SP02.wav
 	frame	data/chars/players/Joe/Sp203.gif
-		attack7  6  10  51  79  25  1  0  1  25  25
+		attack7  6  10  51  79  35  1  0  1  25  25
 	frame	data/chars/players/Joe/Sp204.gif
 		delay  12
 	frame	data/chars/players/Joe/Sp205.gif

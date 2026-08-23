@@ -121,6 +121,22 @@ anim get
 	frame	data/chars/players/Chunli/Get00.gif
 	frame	data/chars/players/Chunli/Get01.gif
 
+anim Follow10
+	loop	0
+	delay	10
+	offset	25 65
+        Sound	data/sounds/food.wav
+	frame	data/chars/players/Chunli/Get00.gif
+	frame	data/chars/players/Chunli/Get01.gif
+
+anim Follow11
+	loop	0
+	delay	10
+	offset	25 65
+        Sound	data/sounds/Coin.wav
+	frame	data/chars/players/Chunli/Get00.gif
+	frame	data/chars/players/Chunli/Get01.gif
+
 
 anim jump
 	loop	0
@@ -198,7 +214,7 @@ anim attack1
 	frame	data/chars/players/Chunli/a100.gif
 	frame	data/chars/players/Chunli/a101.gif
 		delay  3
-		Attack1  16  17  57  13  5  0  0  0  0  15
+		Attack1  16  17  57  13  5  0  0  0  10  15
 	frame	data/chars/players/Chunli/a102.gif
 	frame	data/chars/players/Chunli/a103.gif
 		Attack1  0
@@ -217,7 +233,7 @@ anim attack2
 	frame	data/chars/players/Chunli/a200.gif
 	frame	data/chars/players/Chunli/a201.gif
 	frame	data/chars/players/Chunli/a202.gif
-		attack2  26  22  58  15  7  0  0  0  0  15
+		attack2  26  22  58  15  7  0  0  0  12  15
 	frame	data/chars/players/Chunli/a203.gif
 	frame	data/chars/players/Chunli/a204.gif
 		Attack1  0
@@ -239,6 +255,7 @@ anim attack3
 	frame	data/chars/players/Chunli/a303.gif
 		attack3  31  4  35  89  7  0  0  0  0  20
 	frame	data/chars/players/Chunli/a304.gif
+		attack1  31  4  35  89  7  0  0  0  7  20
 	frame	data/chars/players/Chunli/a305.gif
 	frame	data/chars/players/Chunli/a306.gif
 	frame	data/chars/players/Chunli/a307.gif
@@ -259,7 +276,7 @@ anim attack4
 	frame	data/chars/players/Chunli/a402.gif
 	frame	data/chars/players/Chunli/a403.gif
 	frame	data/chars/players/Chunli/a404.gif
-		attack2  5  26  77  29  10  1  0  0  0  15
+		attack2  5  26  77  29  10  1  0  0  15  15
 	frame	data/chars/players/Chunli/a405.gif
 		delay  20
 	frame	data/chars/players/Chunli/a406.gif
@@ -462,9 +479,9 @@ anim special
 	frame	data/chars/players/Chunli/SP207.gif
 	frame	data/chars/players/Chunli/SP208.gif
 	frame	data/chars/players/Chunli/SP209.gif
-		attack2  30  38  71  25  25  1  1  0  20  20
+		attack2  30  38  71  25  30  1  1  0  20  20
 	frame	data/chars/players/Chunli/SP210.gif
-		attack2  11  34  107  22  25  1  1  0  20  20
+		attack2  11  34  107  22  30  1  1  0  20  20
 	frame	data/chars/players/Chunli/SP211.gif
 	frame	data/chars/players/Chunli/SP212.gif
 	frame	data/chars/players/Chunli/SP213.gif
@@ -533,7 +550,7 @@ anim special2
 	frame	data/chars/players/Chunli/Sp131.gif
 	frame	data/chars/players/Chunli/Sp132.gif
 	Sound	data/chars/players/Chunli/a3.wav
-		attack2  44  -3  44  95  15  1  1  0  20  15
+		attack2  44  -3  44  95  20  1  1  0  20  15
 	frame	data/chars/players/Chunli/Sp133.gif
 	frame	data/chars/players/Chunli/Sp134.gif
 	frame	data/chars/players/Chunli/Sp135.gif

@@ -469,6 +469,7 @@ anim Freespecial2
 	frame	data/chars/players/Terry/get00.gif
         @cmd dasher 2 0 0
 		delay  24
+		sound  data/sounds/DASH1.wav
 	frame	data/chars/players/Terry/jump200.gif
         @cmd dasher 0 0 0
 		delay  15

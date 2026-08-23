@@ -106,14 +106,17 @@ z 207 270
 
 file	data/levels/T.txt
 
-z 240 270
+z 185 270
 
-file	data/levels/01B.txt
+file	data/levels/COOP/02a.txt
 
-z 235 275
+z 215 270
 
-file	data/levels/01c.txt
+file	data/levels/COOP/02b.txt
 
+z 204 250
+
+file	data/levels/COOP/02c.txt
 #-------------------
 
 set	    Arcade

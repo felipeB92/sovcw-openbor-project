@@ -50,26 +50,24 @@ spawn  Pipe
 	at  0
 
 spawn  Fog_
-health 70
+health 40
 	coords  400 190
 	at  0
 
 
 spawn  Act
-MAp 2
-health 70
 	coords  400 210
 	at  0
 
 spawn  Crakito_
 MAp 2
-health 50
+health 30
 	coords  430 220
 	at  0
 
 spawn  Balu_
 MAp 2
-health 50
+health 30
 	coords  450 260
 	at  0
 
@@ -98,21 +96,21 @@ spawn  Pipe
 
 spawn  Donovan
 MAp 2
-health 50
+health 30
 	coords  -100 260
 	at  100
 
 
 spawn  Jhonny
 MAp 2
-health 50
+health 30
 	coords  -100 220
 	at  100
 
 
 spawn  Ralf
 MAp 2
-health 50
+health 30
 	coords  600 220
 	at  100
 
@@ -124,12 +122,12 @@ fLIP 1
 
 spawn  Donovan
 MAp 2
-health 50
+health 30
 	coords  600 220
 	at  100
 
 spawn  Galsia
-health 50
+health 30
 	coords  600 260
 	at  100
 
@@ -139,27 +137,27 @@ health 50
 
 spawn  Diga
 MAp 2
-health 50
+health 30
 	coords  600 260
 	at  100
 
 spawn  Fog
 MAp 2
-health 50
+health 30
 	coords  600 220
 	at  100
 
 
 spawn  Thug
 MAp 2
-health 50
+health 30
 	coords  -100 220
 	at  100
 
 
 spawn  Ralf
 MAp 3
-health 50
+health 30
 	coords  600 220
 	at  100
 
@@ -184,20 +182,20 @@ spawn  Lixo02
 
 spawn  Signal
 MAp 3
-health 50
+health 30
 	coords  600 220
 	at  150
 
 spawn  Fog
 MAp 3
-health 70
+health 40
 	coords  600 260
 	at  250
 
 
 spawn  Donovan
 MAp 3
-health 50
+health 30
 	coords  600 240
 	at  350
 
@@ -224,25 +222,25 @@ spawn  Pipe
 
 spawn  Fog
 MAp    4
-health 70
+health 40
 	coords  600 220
 	at  414
 
 
 spawn  Crakito
 MAp 2
-health 50
+health 30
 	coords  -100 210
 	at  414
 
 spawn  Balu
 MAp 4
-health 50
+health 30
 	coords  600 220
 	at  414
 
 spawn  Diga
-health 50
+health 30
 	coords  -100 260
 	at  414
 
@@ -262,20 +260,20 @@ spawn  Pipe
 
 spawn  Donovan
 MAp    4
-health 70
+health 40
 	coords  600 220
 	at  414
 
 
 spawn  Galsia
 MAp 2
-health 50
+health 30
 	coords  410 157 1
 	at  414
 
 spawn  Signal
 MAp 4
-health 50
+health 30
 	coords  600 220
 	at  414
 
@@ -285,26 +283,26 @@ spawn  macleod_Sniper
 
 spawn  Diga
 MAp 4
-health 50
+health 30
 	coords  600 260
 	at  414
 
 
 spawn  Donovan
 MAp    2
-health 70
+health 40
 	coords  410 157 1
 	at  414
 
 
 spawn  Galsia
 MAp 1
-health 50
+health 30
 	coords  410 157 1
 	at  414
 
 spawn  Signal
-health 70
+health 40
 	coords  600 220
 	at  414
 

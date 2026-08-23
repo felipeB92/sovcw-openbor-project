@@ -112,6 +112,24 @@ anim get
 		offset  19  51
 	frame	data/chars/players/Andy/Get01.gif
 
+anim Follow10
+	loop	0
+	delay	10
+	offset	17 65
+        Sound	data/sounds/food.wav
+	frame	data/chars/players/Andy/Get00.gif
+		offset  19  51
+	frame	data/chars/players/Andy/Get01.gif
+
+anim Follow11
+	loop	0
+	delay	10
+	offset	17 65
+        Sound	data/sounds/Coin.wav
+	frame	data/chars/players/Andy/Get00.gif
+		offset  19  51
+	frame	data/chars/players/Andy/Get01.gif
+
 
 anim jump
 	loop	0
@@ -223,7 +241,7 @@ anim attack3
 
 anim attack4
 	loop	0
-	delay	7
+	delay	4
 	offset	22 73
 	bbox	11 4 20 69
         hitflash	Forte

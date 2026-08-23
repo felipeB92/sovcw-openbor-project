@@ -63,12 +63,12 @@ health 150
 
 spawn Galsia_
 Map 1
-health 50
+health 30
 	coords  450 210
 	at  0
 
 spawn Galsia_
-health 50
+health 30
 	coords  475 250
 	at  0
 
@@ -77,7 +77,7 @@ spawn  Pipe
 	at  0
 
 spawn  Fog
-health 70
+health 40
 	coords  -100 220
 	at  0
 
@@ -87,33 +87,33 @@ spawn  SniperG
 	at  0
 
 spawn  MacLeod
-health 100
+health 50
 	coords  600 230
 	at  0
 
 spawn  Signal
 Map  1
-health 70
+health 40
 	coords  600 220
 	at  0
 
 
 spawn  Donovan
 Map  1
-health 50
+health 30
 	coords  600 220
 	at  0
 
 spawn  Ralf
 Map  1
-health 70
+health 40
 	coords  600 220
 	at  0
 
 
 
 spawn  Jhonny
-health 70
+health 40
 	coords  -100 220
 	at  0
 
@@ -133,19 +133,19 @@ spawn  Box03
 	at  1
 
 spawn  Fog
-health 70
+health 40
 Map 3
 	coords  557 240
 	at  100
 
 spawn  Fog
-health 70
+health 40
 Map 2
 	coords  -100 220
 	at  200
 
 spawn  Skiner
-health 70
+health 40
 Map 4
 	coords  557 250
 	at  300
@@ -161,25 +161,25 @@ at  400
 
 spawn  Signal
 MAp 1
-health 70
+health 40
 	coords  600 200
 	at  400
 
 spawn  Signal
 Map  2
-health 70
+health 40
 	coords  550 250
 	at  400
 
 spawn  Signal
 MAp 3
-health 70
+health 40
 	coords  -50 200
 	at  400
 
 spawn  Signal
 Map  4
-health 70
+health 40
 	coords  -100 250
 	at  400
 
@@ -200,148 +200,148 @@ at  500
 
 spawn  Signal
 MAp 1
-health 70
+health 40
 	coords  600 200
 	at  500
 
 spawn  Skiner
 Map  1
-health 70
+health 40
 	coords  550 250
 	at  500
 
 spawn  Thug
 MAp 1
-health 70
+health 40
 	coords  -50 200
 	at  500
 
 spawn  Galsia
 Map  1
-health 70
+health 40
 	coords  -100 250
 	at  500
 
 spawn  Joe
 Map  2
-health 300
+health 200
 Boss 1
 	coords  600 250
 	at  500
 
 spawn  Fog
 MAp 1
-health 70
+health 40
 	coords  600 200
 	at  500
 
 spawn  Jhonny
 Map  1
-health 70
+health 40
 	coords  550 250
 	at  500
 
 spawn  Ralf
 MAp 1
-health 70
+health 40
 	coords  -50 200
 	at  500
 
 spawn  Donovan
 Map  1
-health 70
+health 40
 	coords  -100 250
 	at  500
 
 spawn  Signal
 MAp 2
-health 70
+health 40
 	coords  600 200
 	at  500
 
 spawn  Donovan
 Map  2
-health 70
+health 40
 	coords  550 250
 	at  500
 
 spawn  Thug
 MAp 2
-health 70
+health 40
 	coords  -50 200
 	at  500
 
 spawn  Galsia
 Map  2
-health 70
+health 40
 	coords  -100 250
 	at  500
 
 
 spawn  Fog
 MAp 2
-health 70
+health 40
 	coords  600 200
 	at  500
 
 spawn  Jhonny
 Map  2
-health 70
+health 40
 	coords  550 250
 	at  500
 
 spawn  Ralf
 MAp 2
-health 70
+health 40
 	coords  -50 200
 	at  500
 
 spawn  Signal
 Map  1
-health 70
+health 40
 	coords  -100 250
 	at  500
 
 spawn  Signal
 MAp 3
-health 70
+health 40
 	coords  600 200
 	at  500
 
 spawn  Donovan
 Map  3
-health 70
+health 40
 	coords  550 250
 	at  500
 
 spawn  Thug
 MAp 3
-health 70
+health 40
 	coords  -50 200
 	at  500
 
 spawn  Galsia
 Map  3
-health 70
+health 40
 	coords  -100 250
 	at  500
 
 
 spawn  Fog
 MAp 3
-health 70
+health 40
 	coords  600 200
 	at  500
 
 spawn  Jhonny
 Map  3
-health 70
+health 40
 	coords  550 250
 	at  500
 
 spawn  Ralf
 MAp 3
-health 70
+health 40
 	coords  -50 200
 	at  500
 

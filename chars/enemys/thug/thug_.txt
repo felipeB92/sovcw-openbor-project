@@ -111,7 +111,7 @@ anim Freespecial
 	offset	78 119
 	bbox	67 41 28 80
         hitflash	MEdio
-        hitfx	data/sounds/golpes/medio.wav
+        hitfx	data/sounds/golpes/BURN.wav
 	frame	data/chars/Enemys/Thug/a200.gif
 		delay  30
 		bbox  0

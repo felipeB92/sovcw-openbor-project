@@ -112,6 +112,24 @@ anim get
 		offset  19  51
 	frame	data/chars/players/Andy/Get01.gif
 
+anim Follow10
+	loop	0
+	delay	10
+	offset	17 65
+        Sound	data/sounds/food.wav
+	frame	data/chars/players/Andy/Get00.gif
+		offset  19  51
+	frame	data/chars/players/Andy/Get01.gif
+
+anim Follow11
+	loop	0
+	delay	10
+	offset	17 65
+        Sound	data/sounds/Coin.wav
+	frame	data/chars/players/Andy/Get00.gif
+		offset  19  51
+	frame	data/chars/players/Andy/Get01.gif
+
 
 anim jump
 	loop	0
@@ -214,7 +232,7 @@ anim attack3
 	frame	data/chars/players/Andy/a400.gif
 		Attack1  0
 	frame	data/chars/players/Andy/a402.gif
-		attack3  24  0  38  87  5  0  1  0  5  15
+		attack3  24  0  38  87  10  0  1  0  5  15
 	frame	data/chars/players/Andy/a403.gif
 		Attack1  0
 	frame	data/chars/players/Andy/a404.gif
@@ -232,7 +250,7 @@ anim attack4
 	Sound	data/chars/players/Andy/a3.wav
 	frame	data/chars/players/Andy/a300.gif
 	frame	data/chars/players/Andy/a301.gif
-		attack2  10  8  54  18  7  1  1  0  15  15
+		attack2  10  8  54  18  12  1  1  0  15  15
 	frame	data/chars/players/Andy/a302.gif
 	frame	data/chars/players/Andy/a303.gif
 		Attack1  0
@@ -520,6 +538,7 @@ anim Freespecial2
 	offset	31 68
         cancel	0 3 0 A freespecial
         @cmd dasher 1 0 0
+		sound  data/sounds/DASH1.wav
 	frame	data/chars/players/Andy/Dash00.gif
         @cmd dasher 2 0 0
 		delay  8

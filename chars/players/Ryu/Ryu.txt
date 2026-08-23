@@ -115,6 +115,22 @@ anim get
 	frame	data/chars/players/Ryu/Get00.gif
 	frame	data/chars/players/Ryu/Get01.gif
 
+anim Follow10
+	loop	0
+	delay	10
+	offset	32 76
+        Sound	data/sounds/food.wav
+	frame	data/chars/players/Ryu/Get00.gif
+	frame	data/chars/players/Ryu/Get01.gif
+
+anim Follow11
+	loop	0
+	delay	10
+	offset	32 76
+        Sound	data/sounds/Coin.wav
+	frame	data/chars/players/Ryu/Get00.gif
+	frame	data/chars/players/Ryu/Get01.gif
+
 
 anim jump
 	loop	0
@@ -500,6 +516,7 @@ anim Freespecial2
         @cmd dasher 2 0 0
 		delay  24
 		offset  46  55
+		sound  data/sounds/DASH1.wav
 	frame	data/chars/players/Ryu/Dash00.gif
         @cmd dasher 0 0 0
 		delay  15

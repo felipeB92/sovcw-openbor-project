@@ -79,7 +79,7 @@ spawn  Act
 	at  0
 
 spawn  Galsia_A
-health 70
+health 40
 Flip 1
 	coords  405 216
 	at  0
@@ -91,26 +91,26 @@ Flip 1
 	at  0
 
 spawn  Fog
-health 70
+health 40
 	coords  600 220
 	at  0
 
 spawn  Signal
 Map  1
-health 70
+health 40
 	coords  600 220
 	at  0
 
 
 spawn  Donovan
 Map  1
-health 50
+health 30
 	coords  600 220
 	at  0
 
 spawn  Ralf
 Map  1
-health 70
+health 40
 	coords  600 220
 	at  0
 
@@ -120,13 +120,13 @@ spawn  Act
 
 
 spawn  Jhonny
-health 70
+health 40
 	coords  -100 220
 	at  0
 
 spawn  Signal
 Map  2
-health 70
+health 40
 	coords  -100 240
 	at  0
 
@@ -136,7 +136,7 @@ spawn  Pipe
 
 spawn  Thug
 Map  3
-health 50
+health 30
 	coords  -100 220
 	at  0
 
@@ -144,20 +144,20 @@ health 50
 
 spawn  Donovan
 Map  1
-health 50
+health 30
 	coords  600 240
 	at  0
 
 spawn  Fog
 Map  3
-health 70
+health 40
 	coords  600 240
 	at  0
 
 
 spawn  Galsia
 Map  3
-health 50
+health 30
 	coords  -100 220
 	at  0
 
@@ -170,7 +170,7 @@ spawn  ActN
 	at  1
 
 spawn  Galsia_A
-health 70
+health 40
 Map 3
 Flip 1
 	coords  557 255
@@ -189,7 +189,7 @@ spawn  Act
 
 
 spawn  Galsia_A
-health 70
+health 40
 Map 2
 Flip 1
 	coords  578 266
@@ -211,63 +211,63 @@ at  130
 
 spawn  Fog
 MAp 4
-health 70
+health 40
 	coords  456 200 1
 	at  130
 
 spawn  Signal
 Map  4
-health 70
+health 40
 	coords  456 200 1
 	at  130
 
 
 spawn  Donovan
 Map  4
-health 50
+health 30
 	coords  456 220 1
 	at  130
 
 spawn  Ralf
 Map  4
-health 70
+health 40
 	coords  -100 220
 	at  130
 
 
 spawn  Jhonny
-health 70
+health 40
 Map 4
 	coords  -100 220
 	at  130
 
 spawn  Signal
 Map  3
-health 70
+health 40
 	coords  -100 240
 	at  130
 
 spawn  Galsia
-health 50
+health 30
 	coords  456 200 1
 	at  130
 
 spawn  GAlsia
 Map  4
-health 50
+health 30
 	coords  456 200 1
 	at  130
 
 
 spawn  Donovan
 Map  4
-health 50
+health 30
 	coords  -100 220 1
 	at  130
 
 
 spawn  Donovan
-health 50
+health 30
 	coords  456 220 1
 	at  130
 

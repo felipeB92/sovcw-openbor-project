@@ -18,10 +18,7 @@ atchain   1 1 2 3 4 5
 icon	data/chars/Enemys/Galsia/icon.gif 1
 diesound data/Sounds/Die1.wav
 running	20	3	2	1	1
-onblockwscript	data/scripts/bounceF.c
-#animationscript 	data/scripts/ani0020.h
-animationscript		data/scripts/drago.c
-ondrawscript 		data/scripts/Enemy_ondrawscript.c
+animationscript		data/scripts/felipe.c
 
 
 
@@ -42,7 +39,7 @@ anim idle
 	delay	12
 	offset	83 121
 	bbox	67 44 34 78
-	frame   data/chars/Enemys/Galsia//Knife/idle00.gif
+	frame   data/chars/Enemys/Galsia/Knife/idle00.gif
 	@cmd	depost 0
 	@cmd	throw 15 0.7 0.7 1 0 -1
 	@cmd	clearL
@@ -95,7 +92,6 @@ anim Freespecial
         RangeZ -5 5
 	jumpframe  1  3 1  0
 	offset	70 117
-	bbox	63 79 43 44
         hitflash	MEdio
         hitfx	data/sounds/golpes/medio.wav
 	frame	data/chars/Enemys/Galsia/Knife/LAnd.gif
@@ -108,9 +104,11 @@ anim Freespecial
 	frame  data/chars/Enemys/Galsia/Ja100.gif
 		attack1  52  34  65  61  10  1  0  0  0  10
 		delay  40
+		bbox  72  53  39  33
 	frame	data/chars/Enemys/Galsia/Knife/Ja101.gif
 		offset  84  118
 		Attack1  0
+		bbox  72  73  29  45
 	frame  data/chars/Enemys/Galsia/Knife/LAnd.gif
 
 

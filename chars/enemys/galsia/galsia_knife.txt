@@ -56,7 +56,7 @@ anim walk
 	bbox	71 45 31 77
         hitflash	Corte
         hitfx	data/sounds/golpes/corte.wav
-		attack1  75  73  44  10  10  1  0  0  0  10
+		attack1  75  73  44  10  10  1  0  0  0  5
 	frame	data/chars/Enemys/Galsia/Knife/walk00.gif
 	frame	data/chars/Enemys/Galsia/Knife/walk01.gif
 	frame	data/chars/Enemys/Galsia/Knife/walk02.gif
@@ -123,7 +123,7 @@ anim attack1
         hitflash	Corte
         hitfx	data/sounds/golpes/corte.wav
 	bbox	63 44 31 76
-		Attack1  76  70  45  14  10  1  0  0  0  10
+		Attack1  76  70  45  14  10  1  0  0  0  5
 	frame	data/chars/Enemys/Galsia/Knife/walk00.gif
         @cmd dasher 2 0 0
 	delay	8

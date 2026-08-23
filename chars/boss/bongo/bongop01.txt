@@ -14,9 +14,9 @@ anim idle
 	loop	1
 	offset	12 57
         hitflash	Forte
-        hitfx	data/sounds/golpes/Forte.wav
+        hitfx	data/sounds/golpes/bURN.wav
 		delay  3
-		attack7  10  37  57  29  15  1  0  0  0  15
+		attack7  10  37  57  29  15  1  0  0  0  7
 	frame	data/chars/Boss/Bongo/fireball00.gif
 	frame	data/chars/Boss/Bongo/fireball01.gif
 	frame	data/chars/Boss/Bongo/fireball02.gif

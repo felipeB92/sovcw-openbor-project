@@ -115,6 +115,22 @@ anim get
 	frame	data/chars/players/Leonardo/Get00.gif
 	frame	data/chars/players/Leonardo/Get01.gif
 
+anim Follow10
+	loop	0
+	delay	10
+	offset	26 87
+        Sound	data/sounds/food.wav
+	frame	data/chars/players/Leonardo/Get00.gif
+	frame	data/chars/players/Leonardo/Get01.gif
+
+anim Follow11
+	loop	0
+	delay	10
+	offset	26 87
+        Sound	data/sounds/Coin.wav
+	frame	data/chars/players/Leonardo/Get00.gif
+	frame	data/chars/players/Leonardo/Get01.gif
+
 
 anim jump
 	loop	0
@@ -189,7 +205,7 @@ anim attack1
 	frame	data/chars/players/Leonardo/a100.gif
         Sound	data/sounds/golpes/Soco.wav
 	frame	data/chars/players/Leonardo/a101.gif
-		attack1  46  19  74  19  3  0  0  0  0  15
+		attack1  46  19  74  19  5  0  0  0  5  15
 	frame  data/chars/players/Leonardo/a104.gif
 	frame	data/chars/players/Leonardo/a105.gif
 		Attack1  0
@@ -207,11 +223,11 @@ anim attack2
 	frame	data/chars/players/Leonardo/a200.gif
 		bbox  39  31  26  46
 	frame	data/chars/players/Leonardo/a201.gif
-		attack2  37  25  56  35  7  0  0  0  0  15
+		attack2  37  25  56  35  10  0  0  0  7  15
 		delay  8
         @cmd dasher 1 0 0
 	frame	data/chars/players/Leonardo/a202.gif
-		attack2  56  47  100  14  7  0  0  0  0  15
+		attack2  56  47  100  14  10  0  0  0  7  15
 		delay  12
 	frame	data/chars/players/Leonardo/a203.gif
 		Attack1  0
@@ -229,7 +245,7 @@ anim attack3
         hitfx	data/sounds/golpes/Corte.wav
 	frame	data/chars/players/Leonardo/a300.gif
 		delay  20
-		Attack1  62  42  79  53  12  1  0  0  0  15
+		Attack1  62  42  79  53  12  1  0  0  15  15
 		sound  data/chars/players/Leonardo/a3.wav
 	frame	data/chars/players/Leonardo/a302.gif
 		delay  8
@@ -429,10 +445,10 @@ anim special2
 		delay  4
 	Sound	data/chars/players/Leonardo/A4.wav
 	frame	data/chars/players/Leonardo/SP202.gif
-	Sound	data/chars/players/Leonardo/SP02.wav
 	@cmd  spawn01  "LeonardoP01"  0  0  1
 	frame	data/chars/players/Leonardo/SP203.gif
 		delay  25
+		sound  data/chars/players/Leonardo/SP02.wav
 	frame	data/chars/players/Leonardo/SP204.gif
 
 
@@ -445,26 +461,30 @@ anim special
         hitflash	CORTE
         hitfx	data/sounds/golpes/Corte.wav
 		delay  4
-		attack2  55  10  58  27  25  1  1  0  20  15
+		attack2  55  10  58  27  35  1  1  0  20  15
 	frame	data/chars/players/Leonardo/SP100.gif
 	Sound	data/chars/players/Leonardo/SP01.wav
 	@cmd  spawn01  "LeonardoP02"  0  0  -1
-		attack2  11  11  149  22  25  1  1  0  20  15
+		attack2  11  11  149  22  35  1  1  0  20  15
 	frame	data/chars/players/Leonardo/SP101.gif
 	@cmd  spawn01  "LeonardoP02"  0  0  -1
-		attack2  0  12  165  23  25  1  1  0  20  15
+		attack2  0  12  165  23  35  1  1  0  20  15
+		sound  data/sounds/whoosh3.wav
 	frame	data/chars/players/Leonardo/SP102.gif
 	@cmd  spawn01  "LeonardoP02"  0  0  -1
 	frame	data/chars/players/Leonardo/SP103.gif
 	frame	data/chars/players/Leonardo/SP104.gif
 	frame	data/chars/players/Leonardo/SP105.gif
+		sound  data/sounds/whoosh3.wav
 	frame	data/chars/players/Leonardo/SP106.gif
 	frame	data/chars/players/Leonardo/SP107.gif
 	frame	data/chars/players/Leonardo/SP108.gif
 	frame	data/chars/players/Leonardo/SP109.gif
+		sound  data/sounds/whoosh3.wav
 	frame	data/chars/players/Leonardo/SP110.gif
 	frame	data/chars/players/Leonardo/SP111.gif
 	frame	data/chars/players/Leonardo/SP112.gif
+		sound  data/sounds/whoosh3.wav
 	frame	data/chars/players/Leonardo/SP113.gif
 		delay  15
 		Attack1  0

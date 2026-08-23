@@ -114,6 +114,22 @@ anim get
 	frame	data/chars/players/Raphael/Get00.gif
 	frame	data/chars/players/Raphael/Get01.gif
 
+anim Follow10
+	loop	0
+	delay	10
+	offset	26 73
+        Sound	data/sounds/food.wav
+	frame	data/chars/players/Raphael/Get00.gif
+	frame	data/chars/players/Raphael/Get01.gif
+
+anim Follow11
+	loop	0
+	delay	10
+	offset	26 73
+        Sound	data/sounds/Coin.wav
+	frame	data/chars/players/Raphael/Get00.gif
+	frame	data/chars/players/Raphael/Get01.gif
+
 
 anim jump
 	loop	0
@@ -192,7 +208,7 @@ anim attack1
 	frame	data/chars/players/Raphael/a101.gif
         Sound	data/sounds/golpes/Soco.wav
 	frame  data/chars/players/Raphael/a102.gif
-		attack1  39  1  73  51  3  0  0  0  0  15
+		attack1  39  1  73  51  5  0  0  0  5  15
 	frame  data/chars/players/Raphael/a104.gif
 	frame	data/chars/players/Raphael/a105.gif
 		Attack1  0
@@ -209,7 +225,7 @@ anim attack2
 		delay  6
 	frame	data/chars/players/Raphael/a200.gif
 	frame	data/chars/players/Raphael/a201.gif
-		attack2  37  25  56  35  7  0  0  0  0  15
+		attack2  37  25  56  35  10  0  0  0  10  15
 		delay  8
         @cmd dasher 1 0 0
 	frame	data/chars/players/Raphael/a202.gif
@@ -228,7 +244,7 @@ anim attack3
         hitfx	data/sounds/golpes/Forte.wav
 	frame	data/chars/players/Raphael/a300.gif
 		delay  16
-		Attack1  37  4  57  59  12  1  0  0  0  15
+		Attack1  37  4  57  59  17  1  0  0  15  15
 		sound  data/chars/players/Raphael/a3.wav
 	frame	data/chars/players/Raphael/a302.gif
 		delay  10
@@ -429,33 +445,33 @@ anim special2
 		offset  51  49
 		delay  4
 	frame	data/chars/players/Raphael/SP202.gif
-		attack1  9  14  124  31  5  0  1  0  0  20
+		attack1  9  14  124  31  5  0  1  0  5  20
 	frame	data/chars/players/Raphael/SP203.gif
 		delay  6
 		Attack1  0
 	frame	data/chars/players/Raphael/SP204.gif
-		attack1  7  17  125  27  5  0  1  0  0  20
+		attack1  7  17  125  27  5  0  1  0  5  20
 	frame	data/chars/players/Raphael/SP205.gif
 		Attack1  0
 	frame	data/chars/players/Raphael/SP202.gif
-		attack1  8  18  126  22  5  0  1  0  0  20
+		attack1  8  18  126  22  5  0  1  0  5  20
 	frame	data/chars/players/Raphael/SP203.gif
 		delay  6
 		Attack1  0
 	frame	data/chars/players/Raphael/SP204.gif
-		attack1  6  21  127  19  5  0  1  0  0  20
+		attack1  6  21  127  19  5  0  1  0  5  20
 	frame	data/chars/players/Raphael/SP205.gif
 		Attack1  0
 	frame	data/chars/players/Raphael/SP202.gif
-		attack1  5  19  128  23  5  0  1  0  0  20
+		attack1  5  19  128  23  5  0  1  0  5  20
 	frame	data/chars/players/Raphael/SP203.gif
 		delay  6
 		Attack1  0
 	frame	data/chars/players/Raphael/SP204.gif
-		attack1  7  23  124  17  10  1  1  0  0  20
+		attack1  7  23  124  17  10  1  1  0  25  20
 	frame	data/chars/players/Raphael/SP205.gif
 		offset  42  81
-		attack1  20  13  41  68  10  1  1  0  0  20
+		attack1  20  13  41  68  10  1  1  0  25  20
 	frame	data/chars/players/Raphael/SP206.gif
 
 
@@ -466,7 +482,7 @@ anim special
 	loop	0
 	offset	30 101
         hitflash	fORTE
-        hitfx	data/sounds/golpes/forte.wav
+        hitfx	data/sounds/golpes/bURN.wav
 		delay  5
 		Attack1  0
 	frame	data/chars/players/Raphael/GA100.gif
@@ -475,7 +491,7 @@ anim special
 	@cmd  spawn01  "RaphaelP01"  0  0  1
 		delay  70
 		offset  41  108
-		attack7  -17  -24  109  140  25  1  1  0  0  20
+		attack7  -17  -24  109  140  35  1  1  0  0  20
 	frame	data/chars/players/Raphael/Sp303.gif
 		delay  6
 		offset  41  107
@@ -485,7 +501,7 @@ anim special
 	frame  data/chars/players/Raphael/Sp300.gif
 		delay  30
 		offset  41  106
-		attack7  42  -9  92  127  25  1  1  0  0  25
+		attack7  42  -9  92  127  35  1  1  0  25  25
 	frame	data/chars/players/Raphael/Sp305.gif
 
 

@@ -191,7 +191,7 @@ anim Freespecial3
         hitflash	Forte
 	bbox	135 108 36 95
 		Attack1  0
-        hitfx	data/sounds/golpes/Fire2.wav
+        hitfx	data/sounds/golpes/bURN.wav
 	frame	data/chars/Boss/Bongo/fs100.gif
 	frame	data/chars/Boss/Bongo/fs101.gif
 	frame	data/chars/Boss/Bongo/fs102.gif
@@ -248,7 +248,7 @@ anim Freespecial4
         hitflash	Forte
 	bbox	135 108 36 95
 		Attack1  0
-        hitfx	data/sounds/golpes/Fire2.wav
+        hitfx	data/sounds/golpes/bURN.wav
 	frame	data/chars/Boss/Bongo/fs100.gif
 	frame	data/chars/Boss/Bongo/fs101.gif
 	frame	data/chars/Boss/Bongo/fs102.gif
@@ -307,7 +307,7 @@ anim Freespecial5
         MpOnly 1
         Sound  data/sounds/andore_salto.wav
         hitflash	Forte
-        hitfx	data/sounds/golpes/Forte.wav
+        hitfx	data/sounds/golpes/bURN.wav
 		Attack1  0
 	drawmethod tintmode 6
 	drawmethod tintcolor 255

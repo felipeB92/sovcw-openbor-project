@@ -121,6 +121,22 @@ anim get
 	frame	data/chars/players/Chunli/Get00.gif
 	frame	data/chars/players/Chunli/Get01.gif
 
+anim Follow10
+	loop	0
+	delay	10
+	offset	25 65
+        Sound	data/sounds/food.wav
+	frame	data/chars/players/Chunli/Get00.gif
+	frame	data/chars/players/Chunli/Get01.gif
+
+anim Follow11
+	loop	0
+	delay	10
+	offset	25 65
+        Sound	data/sounds/Coin.wav
+	frame	data/chars/players/Chunli/Get00.gif
+	frame	data/chars/players/Chunli/Get01.gif
+
 
 anim jump
 	loop	0
@@ -575,6 +591,7 @@ anim Freespecial2
 	frame	data/chars/players/Chunli/Dash07.gif
         @cmd dasher 2 0 0
 		delay  8
+		sound  data/sounds/DASH1.wav
 	frame	data/chars/players/Chunli/Dash00.gif
 	frame	data/chars/players/Chunli/Dash00.gif
         @cmd dasher 1 0 0
