@@ -19,16 +19,16 @@ weapons Blaze_Knife Blaze_Sword Blaze_pipe Blaze_Kunai
 icon	data/chars/players/Blaze/icon.gif 1
 diesound data/chars/players/Blaze/Death.wav
 running	25	3	2	1	1
-onblockwscript	data/scripts/bounceF.c
-#animationscript 	data/scripts/ani0020.h
-animationscript		data/scripts/drago.c
-#ondrawscript 		data/scripts/player_ondrawscript.c
+
+animationscript		data/scripts/Felipe.c
 
 Load BlazeP01
 Load BlazeP02
 Load BlazeP03
 Load BlazeP04
 
+Load AXEL_
+Load ADAM__
 
 Load Blaze_Knife
 Load Blaze_Pipe
@@ -40,7 +40,39 @@ remap data/chars/players/Blaze/idle00.gif data/chars/players/Blaze/MAp02.gif
 remap data/chars/players/Blaze/idle00.gif data/chars/players/Blaze/MAp03.gif
 remap data/chars/players/Blaze/idle00.gif data/chars/players/Blaze/MAp04.gif
 
+anim	waiting
+	loop	1
+	offset	1 -542
+	delay	16
+	frame   data/chars/players/Blaze/select01.gif
+	frame   data/chars/players/Blaze/select02.gif
+	frame   data/chars/players/Blaze/select03.gif
+	frame   data/chars/players/Blaze/select04.gif
 
+anim	Select
+	loop	0
+	offset	1 -542
+	delay	3
+	frame   data/chars/players/Blaze/select00.gif
+	frame   data/chars/players/Blaze/select04.gif
+	frame   data/chars/players/Blaze/select00.gif
+	frame   data/chars/players/Blaze/select04.gif
+	frame   data/chars/players/Blaze/select00.gif
+	frame   data/chars/players/Blaze/select04.gif
+	frame   data/chars/players/Blaze/select00.gif
+	frame   data/chars/players/Blaze/select04.gif
+	frame   data/chars/players/Blaze/select00.gif
+	frame   data/chars/players/Blaze/select04.gif
+
+anim PAin5
+	loop	0
+	delay	16
+	offset	127 180
+	bbox	112 109 35 72
+	frame   data/chars/players/Blaze/idle00.gif
+	@cmd  spawn01  "AXEL_"  5  0  -10
+	@cmd  spawn01  "Adam__"  -5  0  10
+	frame   data/chars/players/Blaze/idle01.gif
 
 anim idle
 	loop	1
@@ -311,7 +343,7 @@ anim freespecial2
 	@cmd	position 5 40 0 0 1
 		attack1  159  160  106  21  7  1  0  0  0  10
         frame	data/chars/players/Blaze/Slam203.gif
-	@cmd	position 3 40 0 0 1
+	@cmd	position 10 40 0 0 1
 		offset  118  182
 		delay  7
 		@cmd  depost  0
@@ -563,14 +595,14 @@ anim jumpspecial
         energycost 10 1
         MpOnly 1
 	loop	0
+	delay  8
 	offset	127 180
         hitflash	fORTE
         hitfx	data/sounds/golpes/forte.wav
 		Attack1  0
-		delay  8
 	Sound	data/chars/players/Blaze/Sp02.wav
+	@cmd  spawn01  "BlazeP03"  0  0  1		
 	frame	data/chars/players/Blaze/ra104.gif
-	@cmd  spawn01  "BlazeP03"  0  0  1
 		attack2  79  58  106  146  15  1  1  0  0  15
 	frame	data/chars/players/Blaze/ra105.gif
 		attack1  79  58  106  146  15  1  1  0  0  15

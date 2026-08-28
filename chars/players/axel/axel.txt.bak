@@ -20,10 +20,8 @@ weapons Axel_Knife Axel_Sword Axel_pipe Axel_Kunai
 icon	data/chars/players/Axel/icon.gif 1
 diesound data/chars/players/Axel/Death.wav
 running	20	3	2	1	1
-onblockwscript	data/scripts/bounceF.c
-#animationscript 	data/scripts/ani0020.h
-animationscript		data/scripts/drago.c
-#ondrawscript 		data/scripts/player_ondrawscript.c
+
+animationscript		data/scripts/Felipe.c
 
 Load AxelP01
 Load AxelP02
@@ -42,6 +40,29 @@ remap data/chars/players/Axel/idle00.gif data/chars/players/Axel/MAp02.gif
 remap data/chars/players/Axel/idle00.gif data/chars/players/Axel/MAp03.gif
 remap data/chars/players/Axel/idle00.gif data/chars/players/Axel/MAp04.gif
 
+anim	waiting
+	loop	1
+	offset	1 -542
+	delay	12
+	frame   data/chars/players/Axel/SELECT01.gif
+	frame   data/chars/players/Axel/SELECT02.gif
+	frame   data/chars/players/Axel/SELECT03.gif
+	frame   data/chars/players/Axel/SELECT04.gif
+
+anim	Select
+	loop	0
+	offset	1 -542
+	delay	3
+	frame   data/chars/players/Axel/SELECT00.gif
+	frame   data/chars/players/Axel/SELECT04.gif
+	frame   data/chars/players/Axel/SELECT00.gif
+	frame   data/chars/players/Axel/SELECT04.gif
+	frame   data/chars/players/Axel/SELECT00.gif
+	frame   data/chars/players/Axel/SELECT04.gif
+	frame   data/chars/players/Axel/SELECT00.gif
+	frame   data/chars/players/Axel/SELECT04.gif
+	frame   data/chars/players/Axel/SELECT00.gif
+	frame   data/chars/players/Axel/SELECT04.gif
 
 anim PAin5
 	loop	0
@@ -79,6 +100,20 @@ anim walk
 	frame	data/chars/players/Axel/walk03.gif
 	frame	data/chars/players/Axel/walk04.gif
 
+
+anim Follow10
+	loop	0
+	delay	20
+	offset	61 130
+        Sound	data/sounds/Food.wav
+	frame	data/chars/players/Axel/Get.gif
+
+anim Follow11
+	loop	0
+	delay	20
+	offset	61 130
+        Sound	data/sounds/Coin.wav
+	frame	data/chars/players/Axel/Get.gif
 
 anim get
 	loop	0
@@ -172,7 +207,7 @@ anim attack1
         Sound	data/sounds/golpes/Soco.wav
         hitfx	data/sounds/golpes/Fraco.wav
 	frame	data/chars/players/Axel/a100.gif
-		attack1  44  59  62  21  6  0  0  0  0  10
+		attack1  44  59  62  21  6  0  0  0  3  10
 		delay  10
 	frame	data/chars/players/Axel/a101.gif
 		delay  3
@@ -190,7 +225,7 @@ anim attack2
         hitfx	data/sounds/golpes/MEdio.wav
 	Sound	data/chars/players/Axel/a1.wav
 	frame	data/chars/players/Axel/a200.gif
-		attack2  62  58  55  22  5  0  0  0  0  10
+		attack2  62  58  55  22  5  0  0  0  7  10
 		delay  12
 	frame	data/chars/players/Axel/a201.gif
 		delay  8
@@ -208,7 +243,7 @@ anim attack3
 	Sound	data/chars/players/Axel/a2.wav
         hitfx	data/sounds/golpes/Forte.waw
 	frame	data/chars/players/Axel/a300.gif
-		Attack1  61  74  66  28  5  0  0  0  0  10
+		Attack1  61  74  66  28  5  0  1  0  5  10
 		delay  12
 	frame	data/chars/players/Axel/a301.gif
 
@@ -222,7 +257,7 @@ anim attack4
         hitfx	data/sounds/golpes/Forte.wav
 	Sound	data/chars/players/Axel/a3.wav
 	frame	data/chars/players/Axel/a400.gif
-		attack2  68  61  59  39  5  1  0  0  0  10
+		attack2  68  61  59  39  12  1  0  0  15  10
 		delay  25
 	frame	data/chars/players/Axel/a401.gif
 
@@ -285,7 +320,7 @@ anim freespecial2
 	Sound	data/Sounds/efeitos/solo.wav
 		attack1  74  98  69  21  10  1  0  0  0  10
         frame	data/chars/players/Axel/Slam03.gif
-	@cmd	position 3 40 0 0 1
+	@cmd	position 10 40 0 0 1
 		offset  67  119
 		delay  7
 		@cmd  depost  0
@@ -345,7 +380,7 @@ anim throw
 		attack1  -7  98  74  34  7  1  0  0  0  15
 		sound  data/Sounds/efeitos/solo.wav
 	frame	data/chars/players/Axel/T02.gif
-	@cmd	position 3 -10 0 0 -1
+	@cmd	position 10 -10 0 0 -1
         @cmd leaper 1 2 0
 		@cmd  depost  0
 		@cmd  throw  15  5  1  1  0  11
@@ -521,15 +556,15 @@ anim special
 	Sound	data/chars/players/Axel/a2.wav
 	@cmd  spawn01  "AxelP03"  0  0  1
 	frame	data/chars/players/Axel/fs100.gif
-		attack2  39  45  102  69  20  1  1  0  0  20
+		attack2  39  45  102  69  30  1  1  0  25  20
 	frame	data/chars/players/Axel/fs101.gif
-		attack2  29  26  107  79  20  1  1  0  0  20
+		attack2  29  26  107  79  30  1  1  0  25  20
 	frame	data/chars/players/Axel/fs302.gif
 	frame	data/chars/players/Axel/fs303.gif
 		offset  61  129
-		attack2  13  64  79  52  20  1  1  0  0  20
+		attack2  13  64  79  52  30  1  1  0  25  20
 	frame	data/chars/players/Axel/fs304.gif
-		attack2  57  71  82  53  20  1  1  0  0  20
+		attack2  57  71  82  53  30  1  1  0  25  20
 	frame	data/chars/players/Axel/fs105.gif
 	frame	data/chars/players/Axel/fs106.gif
 
@@ -607,16 +642,16 @@ anim follow1
 		Attack1  0
 	Sound	data/chars/players/Axel/a2.wav
 	frame	data/chars/players/Axel/fs203.gif
-		attack1  46  61  58  36  3  0  1  0  0  15
+		attack1  46  61  58  36  5  0  1  0  0  15
 	frame	data/chars/players/Axel/fs204.gif
 		Attack1  0
 	frame	data/chars/players/Axel/fs205.gif
-		Attack1  55  69  52  18  3  0  1  0  0  15
+		Attack1  55  69  52  18  5  0  1  0  0  15
 	frame	data/chars/players/Axel/fs200.gif
 		Attack1  0
 	Sound	data/chars/players/Axel/a1.wav
 	frame	data/chars/players/Axel/fs201.gif
-		attack2  48  60  59  35  3  0  1  0  0  15
+		attack2  48  60  59  35  5  0  1  0  0  15
 	frame	data/chars/players/Axel/fs202.gif
 		Attack1  0
 	Sound	data/chars/players/Axel/a2.wav
@@ -628,9 +663,9 @@ anim follow1
 	@cmd  spawn01  "AxelP02"  0  0  1
 	frame	data/chars/players/Axel/fs206.gif
 	Sound	data/chars/players/Axel/a3.wav
-		attack7  63  57  43  58  15  1  1  0  0  15
+		attack7  63  57  43  58  20  1  1  0  25  15
 	frame	data/chars/players/Axel/fs207.gif
-		attack1  48  28  59  101  15  1  1  0  0  15
+		attack1  48  28  59  101  20  1  1  0  25  15
 	frame	data/chars/players/Axel/fs208.gif
 	frame	data/chars/players/Axel/fs209.gif
 		Attack1  0

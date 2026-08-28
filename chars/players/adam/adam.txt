@@ -112,6 +112,20 @@ anim get
 	offset	74 92
 	frame	data/chars/players/Adam/Get.gif
 
+anim Follow10
+	loop	0
+	delay	20
+	offset	74 92
+        Sound	data/sounds/food.wav
+	frame	data/chars/players/Adam/Get.gif
+
+anim Follow11
+	loop	0
+	delay	20
+	offset	74 92
+        Sound	data/sounds/Coin.wav
+	frame	data/chars/players/Adam/Get.gif
+
 
 anim jump
 	loop	0
@@ -199,7 +213,7 @@ anim attack1
         Sound	data/sounds/golpes/Soco.wav
         hitfx	data/sounds/golpes/Fraco.wav
 	frame	data/chars/players/Adam/a100.gif
-		attack1  56  48  58  20  7  0  0  0  0  10
+		attack1  56  48  58  20  7  0  0  0  7  10
 		delay  7
 	frame	data/chars/players/Adam/a101.gif
 		delay  3
@@ -221,7 +235,7 @@ anim attack2
 		delay  7
 	frame	data/chars/players/Adam/a201.gif
 		delay  8
-		attack3  75  33  37  57  5  0  1  0  0  10
+		attack3  75  33  37  57  10  0  1  0  0  10
 	frame	data/chars/players/Adam/a202.gif
 		Attack1  0
 		delay  4
@@ -240,7 +254,7 @@ anim attack3
 		Attack1  0
 	frame	data/chars/players/Adam/a301.gif
 		delay  20
-		attack2  55  60  72  23  10  1  0  0  0  7
+		attack2  55  60  72  23  10  1  0  0  15  7
 	frame	data/chars/players/Adam/a302.gif
 		delay  6
 		Attack1  0
@@ -544,7 +558,7 @@ anim special2
 	frame	data/chars/players/Adam/Sp106.gif
 	frame	data/chars/players/Adam/a403.gif
 		delay  30
-		attack2  53  49  99  55  15  1  1  0  25  10
+		attack2  53  49  99  55  25  1  1  0  25  10
 	frame	data/chars/players/Adam/a404.gif
 		delay  8
 		Attack1  0
@@ -563,7 +577,7 @@ anim special
 	@cmd  spawn01  "AdamP01"  0  0  1
 		Attack1  0
 	frame	data/chars/players/Adam/Sp202.gif
-		attack1  22  63  103  63  20  1  1  0  25  20
+		attack2  22  63  103  63  35  1  1  0  25  20
 		delay  6
 	frame  data/chars/players/Adam/Sp203b.gif
 	frame	data/chars/players/Adam/Sp203.gif
@@ -572,7 +586,6 @@ anim special
 	frame	data/chars/players/Adam/Sp201b.gif
 	frame  data/chars/players/Adam/Sp201.gif
 		delay  12
-		attack1  22  63  103  63  25  1  1  0  10  20
 	frame	data/chars/players/Adam/Sp202.gif
 		delay  6
 	frame  data/chars/players/Adam/Sp203b.gif
