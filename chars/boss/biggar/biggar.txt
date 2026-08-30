@@ -397,7 +397,7 @@ anim follow2
 	@cmd	depost 0
 	@cmd	throw 45 5 -2 2 0 -1
 	@cmd	clearL
-	Sound	data/Sounds/efeitos/solo.wav
+	Sound	data/sounds/SLAM.wav
 	frame  data/chars/Boss/Biggar/ja103.gif
 		delay  30
 	frame  data/chars/Boss/Biggar/ja103.gif

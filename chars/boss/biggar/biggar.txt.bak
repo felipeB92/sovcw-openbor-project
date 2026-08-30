@@ -1,6 +1,6 @@
 name	Biggar
 health	300
-mp 30
+mp 60
 mprate 1
 #secret 1
 blockodds 2
@@ -254,12 +254,15 @@ anim freespecial3
 	frame	data/chars/Boss/Biggar/Ja101.gif
 		attack1  44  34  79  78  15  1  0  0  0  15
 		offset  77  100
+	Sound	data/Sounds/efeitos/solo.wav
 	frame	data/chars/Boss/Biggar/Ja102.gif
 		delay  45
 	frame	data/chars/Boss/Biggar/Ja103.gif
 
 anim Freespecial4
 	loop	0
+        energycost 50 1
+        MpOnly 1
 	delay	12
 	offset	78 139
                 Followcond 1
@@ -362,7 +365,7 @@ anim follow1
 	@cmd  spawn01  "Forte"  50  60  -1
 	@cmd	position 8 35 45 1 -1
 	@cmd	depost 0
-	@cmd	throw 1 5 -2 2 0 -1
+	@cmd	throw 10 5 -2 2 0 -1
 	@cmd	clearL
 	frame	data/chars/Boss/Biggar/a304.gif
 		delay  30
@@ -372,7 +375,8 @@ anim follow2
 	loop	0
 	offset	69 139
 	delay	1
-	jumpframe  3  6  1  0
+        quakeframe 5 2 2
+	jumpframe  3  5  1  0
         @cmd dasher 0 0 0
 	frame	data/chars/Boss/Biggar/a300.gif
 	delay	20
@@ -381,14 +385,19 @@ anim follow2
 	frame	data/chars/Boss/Biggar/a300.gif
 	@cmd	position 1 35 40 -1 -1
 	frame	data/chars/Boss/Biggar/a301.gif
+	@cmd	position 1 35 40 -1 -1
+	delay	37
 	frame  data/chars/Boss/Biggar/ja100.gif
+	@cmd	position 4 10 100  1 -1
 	frame  data/chars/Boss/Biggar/ja101.gif
 		offset  75  102
+	@cmd	position 5 35 5  1 -1
 	frame  data/chars/Boss/Biggar/ja102.gif
-	@cmd	position 10 35 45 1 -1
+	@cmd	position 10 35 1 1 -1
 	@cmd	depost 0
-	@cmd	throw 1 5 -2 2 0 -1
+	@cmd	throw 45 5 -2 2 0 -1
 	@cmd	clearL
+	Sound	data/Sounds/efeitos/solo.wav
 	frame  data/chars/Boss/Biggar/ja103.gif
 		delay  30
 	frame  data/chars/Boss/Biggar/ja103.gif

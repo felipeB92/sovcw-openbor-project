@@ -7,7 +7,7 @@ mprate 1
 Falldie 2
 Grabdistance 18
 riseinv				0.4 1
-speed	6
+speed	7
 type	player
 gfxshadow	1
 candamage			enemy obstacle
@@ -19,10 +19,10 @@ weapons Hawk_Knife Hawk_Sword Hawk_pipe Hawk_Kunai
 icon	data/chars/players/Hawk/icon.gif 1
 diesound data/chars/players/Hawk/Death.wav
 running	20	3	2	1	1
-onblockwscript	data/scripts/bounceF.c
-#animationscript 	data/scripts/ani0020.h
-animationscript		data/scripts/drago.c
-#ondrawscript 		data/scripts/player_ondrawscript.c
+
+animationscript		data/scripts/Felipe.c
+
+
 
 Com f f A freespecial6
 Com f f freespecial3
@@ -35,8 +35,8 @@ Load HawkP02
 Load HawkP03
 
 
-Load AXEL_
-LOAD BLaze_
+Load Boomer_
+LOAD Blood__
 
 Load Hawk_Knife
 Load Hawk_Pipe
@@ -48,6 +48,28 @@ remap data/chars/players/Hawk/idle00.gif data/chars/players/Hawk/MAp02.gif
 remap data/chars/players/Hawk/idle00.gif data/chars/players/Hawk/MAp03.gif
 remap data/chars/players/Hawk/idle00.gif data/chars/players/Hawk/MAp04.gif
 
+anim	waiting
+	loop	1
+	offset	1 -542
+	delay	25
+	frame   data/chars/players/Hawk/select01.gif
+	frame   data/chars/players/Hawk/select02.gif
+
+anim	Select
+	loop	0
+	offset	1 -542
+	delay	3
+	frame   data/chars/players/Hawk/select00.gif
+	frame   data/chars/players/Hawk/select02.gif
+	frame   data/chars/players/Hawk/select00.gif
+	frame   data/chars/players/Hawk/select02.gif
+	frame   data/chars/players/Hawk/select00.gif
+	frame   data/chars/players/Hawk/select02.gif
+	frame   data/chars/players/Hawk/select00.gif
+	frame   data/chars/players/Hawk/select02.gif
+	frame   data/chars/players/Hawk/select00.gif
+	frame   data/chars/players/Hawk/select02.gif
+
 anim Pain5
 	loop	0
 	delay	12
@@ -56,8 +78,8 @@ anim Pain5
         Rangez -10 10
 	bbox	58 41 24 79
 	frame   data/chars/players/Hawk/idle00.gif
-	@cmd  spawn01  "Blaze_"  -5  0  10
-	@cmd  spawn01  "AXEL_"  5  0  -10
+	@cmd  spawn01  "Boomer_"  -5  0  10
+	@cmd  spawn01  "Blood__"  5  0  -10
 	frame   data/chars/players/Hawk/idle01.gif
 
 anim idle
@@ -75,7 +97,7 @@ anim idle
 
 anim walk
 	loop	1
-	delay	12
+	delay	14
 	offset	72 116
 	bbox	63 25 28 77
 	frame	data/chars/players/Hawk/walk00.gif
@@ -177,7 +199,7 @@ anim attack1
         Sound	data/sounds/golpes/Soco.wav
         hitfx	data/sounds/golpes/Fraco.wav
 	frame	data/chars/players/Hawk/a100.gif
-		attack1  59  47  62  17  7  0  0  0  0  10
+		attack1  59  47  62  17  7  0  0  0  3  10
 		delay  7
 	frame	data/chars/players/Hawk/a101.gif
 		delay  3
@@ -195,11 +217,11 @@ anim attack2
         hitfx	data/sounds/golpes/MEdio.wav
 	Sound	data/chars/players/Hawk/a1.wav
 	frame	data/chars/players/Hawk/a200.gif
-		attack2  81  43  43  24  7  0  0  0  0  10
+		attack2  81  43  43  24  12  0  0  0  4  10
 		delay  7
 	frame	data/chars/players/Hawk/a201.gif
 		delay  8
-		attack2  66  46  61  33  7  0  0  0  0  10
+		attack2  66  46  61  33  12  0  0  0  4  10
 	frame	data/chars/players/Hawk/a202.gif
 
 anim attack3
@@ -214,7 +236,7 @@ anim attack3
 	frame	data/chars/players/Hawk/a300.gif
 		Attack1  0
 	frame	data/chars/players/Hawk/a301.gif
-		attack1  66  53  65  26  10  1  0  0  0  10
+		attack1  66  53  65  26  15  1  0  0  17  10
 		delay  25
 	frame	data/chars/players/Hawk/a302.gif
 
@@ -235,6 +257,7 @@ anim freespecial
        frame	data/chars/players/Hawk/T201.gif
 	@cmd	position 6 -60 5 -1 -1
 		attack1  -32  91  60  25  7  1  0  0  0  15
+		sound  data/sounds/SLAM.wav
        frame	data/chars/players/Hawk/T202.gif
 	Sound	data/Sounds/efeitos/solo.wav
 	@cmd	position 3 -60 0 -1 -1
@@ -251,11 +274,11 @@ anim freespecial
        frame	data/chars/players/Hawk/T206.gif
 	@cmd	position 6 60 5 -1 1
 		attack1  116  85  64  27  7  1  0  0  0  15
-	Sound	data/Sounds/efeitos/solo.wav
+	Sound	data/sounds/SLAM.wav
        frame	data/chars/players/Hawk/T207.gif
 	@cmd	position 9 60 0 1 1
 	@cmd	depost 0
-	@cmd	throw 18 5 1 1 0 -1
+	@cmd	throw 22 5 1 1 0 -1
 	@cmd	clearL
        frame	data/chars/players/Hawk/T207.gif
 
@@ -486,12 +509,12 @@ anim special2
 	frame	data/chars/players/Hawk/A300.gif
 	frame	data/chars/players/Hawk/A301.gif
         @cmd dasher 1 0 0
-		attack1  68  55  63  23  5  0  0  0  0  15
+		attack1  68  55  63  23  5  0  1  0  0  15
 	Sound	data/chars/players/Hawk/A1.wav
 	frame	data/chars/players/Hawk/A302.gif
 		Attack1  0
 	frame	data/chars/players/Hawk/A302.gif
-		attack1  68  55  63  24  5  0  0  0  0  15
+		attack1  68  55  63  24  5  0  1  0  0  15
 	frame	data/chars/players/Hawk/A302.gif
 		Attack1  0
 	frame	data/chars/players/Hawk/A302.gif
@@ -499,7 +522,7 @@ anim special2
 	frame	data/chars/players/Hawk/fs100.gif
 	@cmd  spawn01  "HawkP02"  0  0  -1
 	frame	data/chars/players/Hawk/fs101.gif
-		attack2  85  14  91  99  10  1  0  0  0  15
+		attack2  85  14  91  99  25  1  1  0  25  15
 		delay  25
 	frame	data/chars/players/Hawk/fs102.gif
 
@@ -518,12 +541,12 @@ anim special
 	Sound	data/chars/players/Hawk/A3.wav
 	frame	data/chars/players/Hawk/fs200.gif
 	@cmd  spawn01  "HawkP03"  0  0  -1
-		attack2  60  46  67  30  25  1  0  0  0  15
+		attack2  60  46  67  30  35  1  1  0  25  15
 	frame	data/chars/players/Hawk/fs201.gif
 	frame	data/chars/players/Hawk/fs202.gif
-		attack2  45  43  54  31  25  1  0  0  0  15
+		attack2  45  45  51  24  35  1  1  0  25  15
 	frame	data/chars/players/Hawk/fs203.gif
-		attack2  17  48  70  30  25  1  0  0  0  15
+		attack2  18  51  67  28  35  1  1  0  25  15
 	frame	data/chars/players/Hawk/fs204.gif
 
 
@@ -539,7 +562,9 @@ anim jumpspecial
 	Sound	data/chars/players/Hawk/a1.wav
 	frame	data/chars/players/Hawk/fs300.gif
 	@cmd  spawn01  "HawkP01"  0  0  -1
+		attack1  37  35  86  87  25  1  1  0  0  15
 	frame	data/chars/players/Hawk/fs301.gif
+		delay  12
 	frame	data/chars/players/Hawk/fs302.gif
 
 
@@ -557,7 +582,7 @@ anim Freespecial6
  	frame	data/chars/players/Hawk/Land.gif
  	frame	data/chars/players/Hawk/ra100.gif
         @cmd dasher 2 0 0
-		attack1  61  45  80  34  15  1  0  0  0  15
+		attack1  61  45  80  34  15  1  0  0  15  15
  	delay	25
  	frame	data/chars/players/Hawk/ra101.gif
 	delay	10
