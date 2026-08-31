@@ -129,49 +129,49 @@ anim RunAttack
 	jumpframe  1  2  3  0
 	frame   data/chars/players/Hannah/ra100.gif
 		delay  2
-		attack1  219  138  35  32  3  0  0  0  0  15
+		attack1  219  138  35  32  3  0  0  0  3  15
 	frame   data/chars/players/Hannah/ra101.gif
 		Attack1  0
 	frame   data/chars/players/Hannah/ra101.gif
 	Sound	data/chars/players/Hannah/a3.wav
-		attack1  219  138  35  32  3  0  0  0  0  15
+		attack1  219  138  35  32  3  0  0  0  3  15
 	frame   data/chars/players/Hannah/ra101.gif
 		Attack1  0
 	frame   data/chars/players/Hannah/ra101.gif
-		attack1  219  138  35  32  3  0  0  0  0  15
+		attack1  219  138  35  32  3  0  0  0  3  15
 	frame   data/chars/players/Hannah/ra101.gif
 		Attack1  0
 	frame   data/chars/players/Hannah/ra101.gif
-		attack1  219  138  35  32  3  0  0  0  0  15
+		attack1  219  138  35  32  3  0  0  0  3  15
 	frame   data/chars/players/Hannah/ra101.gif
 		Attack1  0
 	frame   data/chars/players/Hannah/ra101.gif
-		attack1  219  138  35  32  3  0  0  0  0  15
+		attack1  219  138  35  32  3  0  0  0  3  15
 	frame   data/chars/players/Hannah/ra101.gif
 		Attack1  0
 	frame   data/chars/players/Hannah/ra101.gif
-		attack1  148  113  54  45  5  1  0  0  0  15
+		attack1  148  113  54  45  5  1  0  0  15  15
 	frame   data/chars/players/Hannah/ra101.gif
 		Attack1  0
 	frame   data/chars/players/Hannah/ra101.gif
-		attack1  219  138  35  32  3  0  0  0  0  15
+		attack1  219  138  35  32  3  0  0  0  3  15
 	frame   data/chars/players/Hannah/ra101.gif
 		Attack1  0
 	frame   data/chars/players/Hannah/ra101.gif
-		attack1  219  138  35  32  3  0  0  0  0  15
+		attack1  219  138  35  32  3  0  0  0  3  15
 	frame   data/chars/players/Hannah/ra101.gif
 		Attack1  0
 	frame   data/chars/players/Hannah/ra101.gif
-		attack1  219  138  35  32  3  0  0  0  0  15
+		attack1  219  138  35  32  3  0  0  0  3  15
 	frame   data/chars/players/Hannah/ra101.gif
 		Attack1  0
 	frame   data/chars/players/Hannah/ra101.gif
-		attack1  219  138  35  32  3  0  0  0  0  15
+		attack1  219  138  35  32  3  0  0  0  3  15
 	frame   data/chars/players/Hannah/ra101.gif
 		Attack1  0
 	frame   data/chars/players/Hannah/ra101.gif
 		delay  10
-		attack1  174  113  96  57  5  1  0  0  0  15
+		attack1  174  113  96  57  5  1  0  0  15  15
 	frame   data/chars/players/Hannah/Land.gif
 
 

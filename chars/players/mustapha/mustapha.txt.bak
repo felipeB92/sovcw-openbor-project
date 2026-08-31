@@ -19,11 +19,9 @@ weapons Mustapha_Knife Adam_Sword Mustapha_pipe Adam_Kunai None Blaze
 icon	data/chars/players/Mustapha/icon.gif 1
 diesound data/chars/players/Mustapha/Death.wav
 running	22	3	2	1	1
-onblockwscript	data/scripts/bounceF.c
-onblockwscript	data/scripts/bounceF.c
-#animationscript 	data/scripts/ani0020.h
-animationscript		data/scripts/drago.c
-#ondrawscript 		data/scripts/player_ondrawscript.c
+
+animationscript		data/scripts/Felipe.c
+
 
 Load MustaphaP01
 Load MustaphaP02
@@ -31,7 +29,7 @@ Load MustaphaP03
 Load MustaphaP04
 
 
-Load Haggar_
+Load JAck__
 LOAD Hannah_
 
 Load Mustapha_Knife
@@ -78,7 +76,7 @@ anim Pain5
         Rangez -10 10
 	bbox	206 87 27 77
 	frame   data/chars/players/Mustapha/idle00.gif
-	@cmd  spawn01  "Haggar_"  -5  0  10
+	@cmd  spawn01  "JAck__"  -5  0  10
 	@cmd  spawn01  "HAnnah_"  5  0  -10
 		offset  214  165
 	frame   data/chars/players/Mustapha/idle00.gif
@@ -131,11 +129,11 @@ anim RunAttack
 	frame   data/chars/players/Mustapha/ra100.gif
 	Sound	data/chars/players/Mustapha/a3.wav
 		delay  6
-		attack1  211  96  30  34  15  1  1  0  0  15
+		attack1  211  96  30  34  20  1  1  0  0  15
 		offset  210  139
 		bbox  183  90  64  39
 	frame   data/chars/players/Mustapha/ra101.gif
-		Attack1  172  87  107  33  15  1  1  0  0  15
+		Attack1  172  87  107  33  20  1  1  0  15  15
 		delay  30
 	frame   data/chars/players/Mustapha/ra102.gif
 		delay  10
@@ -168,6 +166,21 @@ anim get
 	delay	20
 	offset	221 149
 	frame	data/chars/players/Mustapha/Get.gif
+
+anim Follow10
+	loop	0
+	delay	20
+	offset	221 149
+        Sound	data/sounds/food.wav
+	frame	data/chars/players/Mustapha/Get.gif
+
+anim Follow11
+	loop	0
+	delay	20
+	offset	221 149
+        Sound	data/sounds/Coin.wav
+	frame	data/chars/players/Mustapha/Get.gif
+
 
 
 anim jump
@@ -257,7 +270,7 @@ anim attack1
         Sound	data/sounds/golpes/Soco.wav
         hitfx	data/sounds/golpes/Fraco.wav
 	frame	data/chars/players/Mustapha/a100.gif
-		attack1  189  98  89  19  5  0  0  0  0  10
+		attack1  189  98  89  19  5  0  0  0  3  10
 		delay  7
 	frame	data/chars/players/Mustapha/a101.gif
 		delay  3
@@ -270,12 +283,12 @@ anim attack2
 	delay	6
 	offset	216 165
         hitflash	MEdio
-	bbox	223 94 29 74
+	bbox	190 95 27 69
 		Attack1  0
         hitfx	data/sounds/golpes/MEdio.wav
 	Sound	data/chars/players/Mustapha/a2.wav
 	frame	data/chars/players/Mustapha/a200.gif
-		attack2  208  113  70  19  5  0  1  0  0  10
+		attack2  208  113  70  19  8  0  1  0  5  10
 		delay  10
 		bbox  186  89  31  75
 	frame	data/chars/players/Mustapha/a201.gif
@@ -287,7 +300,7 @@ anim attack3
 	loop	0
 	delay	5
 	offset	214 165
-	bbox	229 104 36 41
+	bbox	186 98 32 39
         hitflash	Forte
         Sound	data/sounds/golpes/Chut.wav
         hitfx	data/sounds/golpes/Forte.wav
@@ -295,7 +308,7 @@ anim attack3
 	frame	data/chars/players/Mustapha/a300.gif
 		Attack1  0
 	frame	data/chars/players/Mustapha/a301.gif
-		attack2  183  91  92  38  12  1  0  0  0  15
+		attack2  183  91  92  38  15  1  0  0  15  15
 		delay  25
 	frame	data/chars/players/Mustapha/a302.gif
 		delay  10
@@ -453,7 +466,7 @@ anim fall6 #Shok
 
 anim fall7 #Burn
 	loop	0
-	offset	152 186
+	offset	61 99
 	delay	10
         hitfx	data/sounds/golpes/Forte.wav
 		attack  0
@@ -462,7 +475,7 @@ anim fall7 #Burn
 	frame	data/chars/players/Mustapha/FALL302.gif
 	frame	data/chars/players/Mustapha/FALL300.gif
 	frame	data/chars/players/Mustapha/FALL301.gif
-		offset  2220  133
+		offset  220  133
 	frame	data/chars/players/Mustapha/FALL02.gif
 
 
@@ -502,7 +515,7 @@ anim Special2
 	Sound	data/chars/players/Mustapha/a2.wav
 	frame	data/chars/players/Mustapha/FS202.gif
 	frame  data/chars/players/Mustapha/FS201.gif
-		attack3  227  69  69  122  10  0  0  0  0  15
+		attack3  227  69  69  122  15  0  0  0  10  15
 	frame  data/chars/players/Mustapha/FS202.gif
 		move  0
 		delay  6
@@ -536,7 +549,7 @@ anim fOLLOW1
 		delay  2
 	Sound	data/chars/players/Mustapha/a3.wav
 	frame	data/chars/players/Mustapha/FS201.gif
-		attack2  222  68  74  124  15  1  0  0  0  15
+		attack2  222  68  74  124  30  1  0  0  25  15
 	frame	data/chars/players/Mustapha/FS202.gif
 	frame  data/chars/players/Mustapha/FS201.gif
 	frame  data/chars/players/Mustapha/FS202.gif
@@ -567,27 +580,27 @@ anim Special
 	@cmd  spawn01  "MustaphaP03"  0  0  -1
 		delay  6
 	frame	data/chars/players/Mustapha/fs101.gif
-		attack2  188  118  63  26  10  0  1  0  0  15
+		attack2  188  118  63  26  20  0  1  0  15  15
 	frame	data/chars/players/Mustapha/fs102.gif
-		attack2  166  109  74  23  10  0  1  0  0  15
+		attack2  166  109  74  23  20  0  1  0  15  15
 	frame	data/chars/players/Mustapha/fs103.gif
-		attack2  205  102  39  29  20  1  1  0  0  15
+		attack2  205  102  39  29  20  1  1  0  15  15
 	frame	data/chars/players/Mustapha/fs104.gif
-		attack2  244  104  37  34  20  1  1  0  0  15
+		attack2  244  104  37  34  20  1  1  0  15  15
 	frame	data/chars/players/Mustapha/fs105.gif
 		Attack1  0
 	frame	data/chars/players/Mustapha/fs106.gif
-		attack2  188  115  52  26  15  1  1  0  0  15
+		attack2  188  115  52  26  15  1  1  0  15  15
 	frame	data/chars/players/Mustapha/fs107.gif
-		attack2  202  100  42  28  15  1  1  0  0  15
+		attack2  202  100  42  28  15  1  1  0  15  15
 	frame	data/chars/players/Mustapha/fs104.gif
-		attack2  241  101  42  30  15  1  1  0  0  15
+		attack2  241  101  42  30  15  1  1  0  15  15
 	frame	data/chars/players/Mustapha/fs105.gif
-		attack2  227  113  52  31  15  1  1  0  0  15
+		attack2  227  113  52  31  15  1  1  0  15  15
 	frame	data/chars/players/Mustapha/fs106.gif
-		attack2  190  114  53  30  15  1  1  0  0  15
+		attack2  190  114  53  30  15  1  1  0  15  15
 	frame	data/chars/players/Mustapha/fs107.gif
-		attack2  174  123  58  33  15  1  1  0  0  15
+		attack2  174  123  58  33  15  1  1  0  25  15
 	frame	data/chars/players/Mustapha/fs108.gif
 
 

@@ -202,6 +202,21 @@ anim get
 	offset	237 172
 	frame	data/chars/players/Hannah/Get.gif
 
+anim Follow10
+	loop	0
+	delay	20
+	offset	237 172
+        Sound	data/sounds/food.wav
+	frame	data/chars/players/Hannah/Get.gif
+
+anim Follow11
+	loop	0
+	delay	20
+	offset	237 172
+        Sound	data/sounds/Coin.wav
+	frame	data/chars/players/Hannah/Get.gif
+
+
 
 anim jump
 	loop	0
@@ -287,7 +302,7 @@ anim attack1
         Sound	data/sounds/golpes/Soco.wav
         hitfx	data/sounds/golpes/Fraco.wav
 	frame	data/chars/players/Hannah/a100.gif
-		attack1  223  110  71  13  5  0  0  0  0  10
+		attack1  223  110  71  13  5  0  0  0  3  10
 		delay  7
 	frame	data/chars/players/Hannah/a101.gif
 		delay  3
@@ -305,7 +320,7 @@ anim attack2
         hitfx	data/sounds/golpes/MEdio.wav
 	Sound	data/chars/players/Hannah/a2.wav
 	frame	data/chars/players/Hannah/a200.gif
-		attack2  235  123  47  25  5  0  1  0  0  10
+		attack2  235  123  47  25  10  0  1  0  5  10
 		delay  10
 	frame	data/chars/players/Hannah/a201.gif
 		delay  4
@@ -324,7 +339,7 @@ anim attack3
 	frame	data/chars/players/Hannah/a300.gif
 		Attack1  0
 	frame	data/chars/players/Hannah/a301.gif
-		attack2  221  120  96  26  10  1  0  0  0  15
+		attack2  221  120  96  26  15  1  0  0  15  15
 		delay  25
 	frame	data/chars/players/Hannah/a302.gif
 		Attack1  0
@@ -515,7 +530,7 @@ anim Special2
 		move  5
 	Sound	data/chars/players/Hannah/a2.wav
 	frame	data/chars/players/Hannah/FS201.gif
-		attack1  237  113  70  28  5  0  1  0  0  15
+		attack1  237  113  70  28  5  0  1  0  5  15
 	frame	data/chars/players/Hannah/FS202.gif
 		move  0
 	frame	data/chars/players/Hannah/FS203.gif
@@ -524,14 +539,14 @@ anim Special2
 		move  5
 	Sound	data/chars/players/Hannah/a1.wav
 	frame	data/chars/players/Hannah/FS205.gif
-		attack2  225  119  78  26  5  0  1  0  0  15
+		attack2  225  119  78  26  5  0  1  0  5  15
 	frame	data/chars/players/Hannah/FS206.gif
 		Attack1  0
 		move  0
 	frame	data/chars/players/Hannah/FS207.gif
 	Sound	data/chars/players/Hannah/a3.wav
 	frame	data/chars/players/Hannah/FS208.gif
-		attack2  225  108  76  65  15  1  1  0  0  15
+		attack2  225  108  76  65  25  1  1  0  25  15
 	frame	data/chars/players/Hannah/FS209.gif
 	frame	data/chars/players/Hannah/FS210.gif
 	frame	data/chars/players/Hannah/FS211.gif
@@ -555,14 +570,14 @@ anim Special
 	frame	data/chars/players/Hannah/fs100.gif
 	@cmd  spawn01  "HannahP02"  0  0  -1
 	frame	data/chars/players/Hannah/fs101.gif
-		attack2  218  114  88  36  20  1  1  0  0  15
+		attack2  218  114  88  36  30  1  1  0  25  15
 	frame	data/chars/players/Hannah/fs102.gif
 	frame	data/chars/players/Hannah/fs103.gif
-		attack2  212  115  46  34  20  1  1  0  0  15
+		attack2  212  115  46  34  30  1  1  0  25  15
 	frame	data/chars/players/Hannah/fs104.gif
 	frame	data/chars/players/Hannah/fs105.gif
 	frame	data/chars/players/Hannah/fs106.gif
-		attack2  163  106  75  35  20  1  1  0  0  15
+		attack2  163  106  75  35  30  1  1  0  25  15
 	frame	data/chars/players/Hannah/fs107.gif
 	frame	data/chars/players/Hannah/fs108.gif
 	frame	data/chars/players/Hannah/fs109.gif
