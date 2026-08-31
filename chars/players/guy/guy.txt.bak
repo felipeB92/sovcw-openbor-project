@@ -546,7 +546,7 @@ anim special2
 	frame	data/chars/players/Guy/FS100.gif
 	frame	data/chars/players/Guy/FS101.gif
 	@cmd  spawn01  "GuyP04"  0  0  1
-		attack2  224  103  118  43  20  1  1  0  0  20
+		attack2  224  103  118  43  20  1  1  0  25  20
 		delay  35
 	frame	data/chars/players/Guy/FS102.gif
 		delay  8
@@ -568,11 +568,11 @@ anim special
 		Attack1  0
 	frame	data/chars/players/Guy/Sp01.gif
 	@cmd  spawn01  "GuyP02"  0  0  -1
-		attack2  216  105  44  22  20  1  1  0  0  15
+		attack2  216  105  44  22  20  1  1  0  25  15
 	frame	data/chars/players/Guy/Sp02.gif
 	frame	data/chars/players/Guy/Sp03.gif
 	@cmd  spawn01  "GuyP03"  0  0  -1
-		attack2  181  103  52  24  20  1  1  0  0  15
+		attack2  181  103  52  24  20  1  1  0  25  15
 	frame	data/chars/players/Guy/Sp04.gif
 	frame	data/chars/players/Guy/Sp05.gif
 		Attack1  0

@@ -7,7 +7,7 @@ mprate 1
 Falldie 2
 Grabdistance 18
 riseinv				0.4 1
-speed	9
+speed	11
 type	player
 gfxshadow	1
 candamage			enemy obstacle
@@ -112,6 +112,20 @@ anim get
 	offset	224 168
 	frame	data/chars/players/Guy/Get.gif
 
+anim Follow10
+	loop	0
+	delay	20
+	offset	224 168
+        Sound	data/sounds/food.wav
+	frame	data/chars/players/Guy/Get.gif
+
+anim Follow11
+	loop	0
+	delay	20
+	offset	224 168
+        Sound	data/sounds/Coin.wav
+	frame	data/chars/players/Guy/Get.gif
+
 
 anim jump
 	loop	0
@@ -198,7 +212,7 @@ anim attack1
         Sound	data/sounds/golpes/Soco.wav
         hitfx	data/sounds/golpes/Fraco.wav
 	frame	data/chars/players/Guy/a100.gif
-		attack1  212  88  64  22  5  0  0  0  0  10
+		attack1  212  88  64  22  5  0  0  0  3  10
 		delay  7
 	frame	data/chars/players/Guy/a101.gif
 		delay  3
@@ -215,7 +229,7 @@ anim attack2
 		Attack1  0
         hitfx	data/sounds/golpes/MEdio.wav
 	frame	data/chars/players/Guy/a200.gif
-		attack2  212  100  70  24  5  0  1  0  0  10
+		attack2  212  100  70  24  5  0  1  0  3  10
 		delay  10
 	frame	data/chars/players/Guy/a201.gif
 		delay  8
@@ -232,7 +246,7 @@ anim attack3
         hitfx	data/sounds/golpes/Forte.wav
 	Sound	data/chars/players/Guy/a1.wav
 	frame	data/chars/players/Guy/a300.gif
-		Attack1  221  94  49  26  3  0  0  0  0  10
+		Attack1  221  94  49  26  5  0  0  0  3  10
 		delay  12
 	frame	data/chars/players/Guy/a301.gif
 
@@ -247,7 +261,7 @@ anim attack4
 	frame	data/chars/players/Guy/a400.gif
 		Attack1  0
 	frame	data/chars/players/Guy/a401.gif
-		attack2  227  82  45  88  7  1  0  0  0  10
+		attack2  227  82  45  88  15  1  0  0  15  10
 	frame	data/chars/players/Guy/a402.gif
 	frame	data/chars/players/Guy/a403.gif
 		Attack1  0
@@ -546,7 +560,7 @@ anim special2
 	frame	data/chars/players/Guy/FS100.gif
 	frame	data/chars/players/Guy/FS101.gif
 	@cmd  spawn01  "GuyP04"  0  0  1
-		attack2  224  103  118  43  20  1  1  0  25  20
+		attack2  224  103  118  43  30  1  1  0  25  20
 		delay  35
 	frame	data/chars/players/Guy/FS102.gif
 		delay  8
@@ -568,11 +582,11 @@ anim special
 		Attack1  0
 	frame	data/chars/players/Guy/Sp01.gif
 	@cmd  spawn01  "GuyP02"  0  0  -1
-		attack2  216  105  44  22  20  1  1  0  25  15
+		attack2  216  105  44  22  30  1  1  0  25  15
 	frame	data/chars/players/Guy/Sp02.gif
 	frame	data/chars/players/Guy/Sp03.gif
 	@cmd  spawn01  "GuyP03"  0  0  -1
-		attack2  181  103  52  24  20  1  1  0  25  15
+		attack2  181  103  52  24  30  1  1  0  25  15
 	frame	data/chars/players/Guy/Sp04.gif
 	frame	data/chars/players/Guy/Sp05.gif
 		Attack1  0

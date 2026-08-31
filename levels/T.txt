@@ -23,6 +23,16 @@ spawn3  	60 50 50
 group 1 1
 at 0
 
+
+
+spawn  	PIPE
+	coords  50 210 250
+	at  0
+
+spawn  	KNIFE
+	coords  50 210 250
+	at  0
+
 spawn  	Joe
 MAP    1
 health 10
@@ -31,13 +41,13 @@ health 10
 
 spawn  	galsia
 MAP    1
-health 10
+health 30
 	coords  200 210 250
 	at  0
 
 spawn  	galsia
-MAP    1
-health 10
+MAP    3
+health 30
 	coords  200 210 250
 	at  0
 

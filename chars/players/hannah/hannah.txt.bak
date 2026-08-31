@@ -19,11 +19,9 @@ weapons Hannah_Knife Adam_Sword Hannah_pipe Adam_Kunai None Blaze
 icon	data/chars/players/Hannah/icon.gif 1
 diesound data/chars/players/Hannah/Death.wav
 running	24	3	2	1	1
-onblockwscript	data/scripts/bounceF.c
-onblockwscript	data/scripts/bounceF.c
-#animationscript 	data/scripts/ani0020.h
-animationscript		data/scripts/drago.c
-#ondrawscript 		data/scripts/player_ondrawscript.c
+
+animationscript		data/scripts/Felipe.c
+
 
 Load HannaHP01
 Load HannaHP02
@@ -31,8 +29,8 @@ Load HannaHP03
 Load GuyP04
 
 
-Load Haggar_
-LOAD Hannah_
+Load Mustapha_
+LOAD JAck_
 
 Load Hannah_Knife
 Load Hannah_Pipe
@@ -82,8 +80,8 @@ anim Pain5
         Rangez -10 10
 	bbox	215 102 37 64
 	frame   data/chars/players/Hannah/idle00.gif
-	@cmd  spawn01  "Haggar_"  -5  0  10
-	@cmd  spawn01  "HAnnah_"  5  0  -10
+	@cmd  spawn01  "Mustapha_"  -5  0  10
+	@cmd  spawn01  "JAck_"  5  0  -10
 	frame   data/chars/players/Hannah/idle00.gif
 
 anim idle
@@ -357,18 +355,18 @@ anim throw
 		attack1  220  107  28  45  7  1  0  0  0  10
 	frame	data/chars/players/Hannah/T00.gif
 	@cmd	position 4 -10 35 0 -1
-		blast  196  104  44  25  7  0  0  10
+		attack1  204  96  42  26  7  1  0  0  0  10
 	frame  data/chars/players/Hannah/T01.gif
 	@cmd	position 8 -30 35 1 -1
 	@cmd	depost 0
 	@cmd	throw 15 5 2 2 0 -1
 	@cmd	clearL
 		delay  12
-		blast  162  97  40  36  7  0  1
+		attack1  162  97  40  36  7  1  1  0  0  10
 	frame	data/chars/players/Hannah/T02.gif
-		blast  141  99  52  32  7  1
+		attack1  141  99  52  32  7  1  0  0  0  10
 	frame	data/chars/players/Hannah/T02.gif
-		blast  115  106  39  28  7
+		attack1  115  106  39  28  7  1  0  0  0  10
 	frame  data/chars/players/Hannah/T01.gif
 
 
