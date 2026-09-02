@@ -532,7 +532,7 @@ anim Special2
 	Sound	data/chars/players/Commando/SP02.wav
 	frame	data/chars/players/Commando/FS202.gif
 		delay  35
-		attack7  227  105  193  27  20  1  1  0  0  15
+		attack7  227  105  193  27  20  1  1  0  25  15
 	frame  data/chars/players/Commando/FS203.gif
 		delay  10
 		Attack1  0
@@ -558,7 +558,7 @@ anim Special
 	frame	data/chars/players/Commando/fs102.gif
 	@cmd  spawn01  "CommandoP02"  0  0  1
                 delay  35
-		attack6  162  -4  154  172  20  1  1  0  0  20
+		attack6  162  -4  154  172  25  1  1  0  25  20
 	frame	data/chars/players/Commando/fs103.gif
 		Attack1  0
 	frame	data/chars/players/Commando/fs104.gif
