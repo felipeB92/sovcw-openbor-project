@@ -190,6 +190,20 @@ anim get
 	offset	224 151
 	frame	data/chars/players/Ginzo/Get.gif
 
+anim Follow10
+	loop	0
+	delay	20
+	offset	224 151
+        Sound	data/sounds/food.wav
+	frame	data/chars/players/Ginzo/Get.gif
+
+anim Follow11
+	loop	0
+	delay	20
+	offset	224 151
+        Sound	data/sounds/Coin.wav
+	frame	data/chars/players/Ginzo/Get.gif
+
 
 anim jump
 	loop	0

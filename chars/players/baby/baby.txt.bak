@@ -557,7 +557,7 @@ anim Special
 		move  0
 	frame	data/chars/players/Baby/fs100.gif
 	frame	data/chars/players/Baby/fs101.gif
-		attack7  157  45  151  129  25  1  1  0  0  20
+		attack7  157  45  151  129  25  1  1  0  25  20
 		delay  6
 	frame	data/chars/players/Baby/fs102.gif
 	Sound	data/chars/players/Baby/P01.wav
@@ -596,7 +596,7 @@ anim Special2
 		Attack1  0
 	frame	data/chars/players/Baby/fs200.gif
 		delay  6
-		attack2  191  105  102  32  20  1  1  0  0  20
+		attack2  191  105  102  32  20  1  1  0  25  20
 	Sound	data/chars/players/Baby/a3.wav
       @cmd dasher 1 0 0
 	frame	data/chars/players/Baby/fs201.gif

@@ -144,23 +144,23 @@ anim RunAttack
 		delay  5
 	frame   data/chars/players/Baby/ra100.gif
 	frame   data/chars/players/Baby/ra101.gif
-		attack1  186  112  118  26  3  0  0  0  0  15
+		attack1  186  112  118  26  3  0  0  0  3  15
 	frame   data/chars/players/Baby/ra102.gif
 		Attack1  0
 	frame   data/chars/players/Baby/ra103.gif
-		attack1  186  112  118  26  3  0  0  0  0  15
+		attack1  186  112  118  26  3  0  0  0  3  15
 	frame   data/chars/players/Baby/ra104.gif
 		Attack1  0
 	frame   data/chars/players/Baby/ra105.gif
-		attack1  186  112  118  26  3  0  0  0  0  15
+		attack1  186  112  118  26  3  0  0  0  3  15
 	frame   data/chars/players/Baby/ra106.gif
 		Attack1  0
 	frame   data/chars/players/Baby/ra107.gif
-		attack1  186  112  118  26  3  0  0  0  0  15
+		attack1  186  112  118  26  3  0  0  0  3  15
 	frame   data/chars/players/Baby/ra108.gif
 		Attack1  0
 	frame   data/chars/players/Baby/ra109.gif
-		attack2  186  112  118  26  3  1  0  0  0  15
+		attack2  186  112  118  26  10  1  0  0  10  15
 	frame   data/chars/players/Baby/ra110.gif
 
 anim walk
@@ -185,6 +185,20 @@ anim get
 	loop	0
 	delay	20
 	offset	233 158
+	frame	data/chars/players/Baby/Get.gif
+
+anim Follow10
+	loop	0
+	delay	20
+	offset	233 158
+        Sound	data/sounds/food.wav
+	frame	data/chars/players/Baby/Get.gif
+
+anim Follow11
+	loop	0
+	delay	20
+	offset	233 158
+        Sound	data/sounds/Coin.wav
 	frame	data/chars/players/Baby/Get.gif
 
 
@@ -283,7 +297,7 @@ anim attack1
         hitfx	data/sounds/golpes/Fraco.wav
 		Attack1  0
 	frame	data/chars/players/Baby/a100.gif
-		attack1  220  119  73  31  5  0  0  0  0  10
+		attack1  220  119  73  31  5  0  0  0  3  10
 		delay  7
 	frame	data/chars/players/Baby/a101.gif
 		delay  3
@@ -302,10 +316,11 @@ anim attack2
 	Sound	data/chars/players/Baby/a1.wav
 	frame	data/chars/players/Baby/a200.gif
 	frame	data/chars/players/Baby/a201.gif
-		attack2  249  126  40  26  3  0  0  0  0  15
+		attack2  249  126  40  26  5  0  0  0  2  15
 	frame	data/chars/players/Baby/a202.gif
-		attack2  226  101  60  46  3  0  0  0  0  10
+		attack2  226  101  60  46  5  0  0  0  3  10
 	frame	data/chars/players/Baby/a203.gif
+		attack2  226  101  60  46  5  0  0  0  2  10
 	frame	data/chars/players/Baby/a204.gif
 	frame	data/chars/players/Baby/a205.gif
 		bbox  214  107  29  66
@@ -326,12 +341,12 @@ anim attack3
 		Attack1  0
 	frame	data/chars/players/Baby/a301.gif
 		delay  5
-		attack1  220  98  67  74  5  0  0  0  0  15
+		attack1  220  98  67  74  10  0  0  0  3  15
 	frame	data/chars/players/Baby/a302.gif
 		delay  4
 		Attack1  0
 	frame	data/chars/players/Baby/a303.gif
-		attack1  246  84  37  95  3  0  0  0  0  15
+		attack1  246  84  37  95  10  0  0  0  3  15
 	frame	data/chars/players/Baby/a304.gif
 
 anim attack4
@@ -346,10 +361,10 @@ anim attack4
 	frame	data/chars/players/Baby/a400.gif
 		Attack1  0
 	frame	data/chars/players/Baby/a401.gif
-		attack2  198  119  111  20  10  1  0  0  0  15
+		attack2  198  119  111  20  15  1  0  0  15  15
 		delay  5
 	frame	data/chars/players/Baby/a402.gif
-		attack1  195  118  118  20  10  1  0  0  0  15
+		attack1  195  118  118  20  15  1  0  0  15  15
 		delay  20
 	frame	data/chars/players/Baby/a403.gif
 		Attack1  0
@@ -557,7 +572,7 @@ anim Special
 		move  0
 	frame	data/chars/players/Baby/fs100.gif
 	frame	data/chars/players/Baby/fs101.gif
-		attack7  157  45  151  129  25  1  1  0  25  20
+		attack7  157  45  151  129  30  1  1  0  25  20
 		delay  6
 	frame	data/chars/players/Baby/fs102.gif
 	Sound	data/chars/players/Baby/P01.wav
@@ -596,7 +611,7 @@ anim Special2
 		Attack1  0
 	frame	data/chars/players/Baby/fs200.gif
 		delay  6
-		attack2  191  105  102  32  20  1  1  0  25  20
+		attack2  191  105  102  32  30  1  1  0  25  20
 	Sound	data/chars/players/Baby/a3.wav
       @cmd dasher 1 0 0
 	frame	data/chars/players/Baby/fs201.gif
