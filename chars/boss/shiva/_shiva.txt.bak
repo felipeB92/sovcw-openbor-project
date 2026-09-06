@@ -15,25 +15,23 @@ JUMPHEIGHT 4
 #Jumpheight 3
 antigrab 2
 atchain   1 1 2 3 4 5
-weapons Blaze_Knife Blaze_Sword Blaze_pipe Blaze_Kunai
+weapons _Shiva_Knife Blaze_Sword _Shiva_pipe Blaze_Kunai
 icon	data/chars/Boss/Shiva/iconP.gif 1
-diesound data/chars/Boss/Shiva/Death.wav
+diesound data/Sounds/Die2.wav
 running	25	3	2	1	1
-onblockwscript	data/scripts/bounceF.c
-#animationscript 	data/scripts/ani0020.h
-animationscript		data/scripts/drago.c
-#ondrawscript 		data/scripts/player_ondrawscript.c
+
+animationscript		data/scripts/Felipe.c
 
 Load BlazeP01
 Load BlazeP02
 Load BlazeP03
 Load BlazeP04
 
-Load AXEL_
-Load ADAM__
+Load _Tiger
+Load _Hakuyo
 
-Load Blaze_Knife
-Load Blaze_Pipe
+Load _Shiva_Knife
+Load _Shiva_Pipe
 #Load Blaze_Kunai
 #Load Blaze_Sword
 
@@ -42,7 +40,31 @@ remap data/chars/Boss/Shiva/idle00.gif data/chars/Boss/Shiva/MAp02.gif
 remap data/chars/Boss/Shiva/idle00.gif data/chars/Boss/Shiva/MAp03.gif
 remap data/chars/Boss/Shiva/idle00.gif data/chars/Boss/Shiva/MAp04.gif
 
+anim	waiting
+	loop	1
+	offset	1 -542
+	delay	12
+	frame   data/chars/Boss/Shiva/Select01.gif
+	frame   data/chars/Boss/Shiva/Select02.gif
+	frame   data/chars/Boss/Shiva/Select03.gif
+	frame   data/chars/Boss/Shiva/Select02.gif
 
+
+
+anim	Select
+	loop	0
+	offset	1 -542
+	delay	3
+	frame   data/chars/Boss/Shiva/Select00.gif
+	frame   data/chars/Boss/Shiva/Select03.gif
+	frame   data/chars/Boss/Shiva/Select00.gif
+	frame   data/chars/Boss/Shiva/Select03.gif
+	frame   data/chars/Boss/Shiva/Select00.gif
+	frame   data/chars/Boss/Shiva/Select03.gif
+	frame   data/chars/Boss/Shiva/Select00.gif
+	frame   data/chars/Boss/Shiva/Select03.gif
+	frame   data/chars/Boss/Shiva/Select00.gif
+	frame   data/chars/Boss/Shiva/Select03.gif
 
 anim PAin5
 	loop	0
@@ -50,8 +72,8 @@ anim PAin5
 	offset	139 194
 	bbox	112 109 35 72
 	frame   data/chars/Boss/Shiva/idle00.gif
-	@cmd  spawn01  "AXEL_"  5  0  -10
-	@cmd  spawn01  "Adam__"  -5  0  10
+	@cmd  spawn01  "_Tiger"  5  0  -10
+	@cmd  spawn01  "_HAkuyo"  -5  0  10
 	frame   data/chars/Boss/Shiva/idle01.gif
 
 anim idle
@@ -166,7 +188,7 @@ anim attack1
         Sound	data/sounds/golpes/Soco.wav
         hitfx	data/sounds/golpes/Fraco.wav
 	frame	data/chars/Boss/Shiva/a100.gif
-		attack1  159  126  58  31  5  0  0  0  0  15
+		attack1  159  126  58  31  7  0  0  0  3  15
 		delay  7
 		bbox  145  118  27  76
 	frame	data/chars/Boss/Shiva/a101.gif
@@ -186,7 +208,7 @@ anim attack2
 	Sound	data/chars/Boss/Shiva/a1.wav
 	frame	data/chars/Boss/Shiva/a200.gif
 		delay  7
-		attack2  156  136  67  21  5  0  0  0  0  15
+		attack2  156  136  67  21  10  0  0  0  5  15
 		bbox  142  126  47  73
 	frame	data/chars/Boss/Shiva/a201.gif
 		delay  8
@@ -206,10 +228,10 @@ anim attack3
 		Attack1  0
 	frame	data/chars/Boss/Shiva/a301.gif
 		delay  6
-		attack2  147  104  49  75  10  1  1  0  0  15
+		attack2  147  104  49  75  15  1  1  0  15  15
 	frame	data/chars/Boss/Shiva/a302.gif
 		delay  25
-		attack2  147  86  49  108  10  1  1  0  0  15
+		attack2  147  86  49  108  15  1  1  0  15  15
 	frame  data/chars/Boss/Shiva/a303.gif
 		delay  8
 		Attack1  0
@@ -246,7 +268,7 @@ anim freespecial
 	@cmd	position 6 40 5 0 1
 		attack1  144  161  89  34  7  1  0  0  0  15
 	frame	data/chars/Boss/Shiva/Slam203.gif
-	@cmd	position 3 40 0 0 1
+	@cmd	position 10 40 0 0 1
         @cmd leaper 1 2 0
 		@cmd  depost  0
 		@cmd  throw  15  5  -1  1  0  1
@@ -296,7 +318,7 @@ anim throw
 	@cmd	position 6 -40 5 0 -1
 		attack1  72  160  69  35  7  1  0  0  0  15
 	frame	data/chars/Boss/Shiva/Slam03.gif
-	@cmd	position 3 -40 0 0 -1
+	@cmd	position 10 -40 0 0 -1
         @cmd leaper 1 2 0
 		@cmd  depost  0
 		@cmd  throw  15  5  1  1  0  11
@@ -445,20 +467,20 @@ anim special2
 		move  100
 	frame  data/chars/Boss/Shiva/00.gif
 		move  2
-		attack2  0  142  178  20  5  0  0  0  0  15
+		attack2  0  142  178  20  5  0  1  0  3  15
 	frame	data/chars/Boss/Shiva/fs100.gif
 		move  0
 		Attack1  0
 	frame	data/chars/Boss/Shiva/fs101.gif
-		attack1  -2  172  157  23  5  0  0  0  0  15
+		attack1  -2  172  157  23  5  0  1  0  3  15
 	frame	data/chars/Boss/Shiva/Wait00.gif
 		Attack1  0
 	frame  data/chars/Boss/Shiva/Wait00.gif
-		attack1  -32  138  186  20  5  0  0  0  0  15
+		attack1  -32  138  186  20  5  0  1  0  3  15
 	frame  data/chars/Boss/Shiva/Wait00.gif
 		Attack1  0
 	frame  data/chars/Boss/Shiva/Wait00.gif
-		attack2  0  110  152  29  5  1  0  0  0  15
+		attack2  0  110  152  29  20  1  1  0  15  15
 		delay  12
 	frame  data/chars/Boss/Shiva/Wait00.gif
 
@@ -476,7 +498,7 @@ anim special
 	Sound	data/chars/Boss/Shiva/a2.wav
 	frame	data/chars/Boss/Shiva/special00.gif
 	frame	data/chars/Boss/Shiva/special01.gif
-		attack1  81  82  116  112  20  1  0  0  0  15
+		attack2  81  82  116  112  30  1  1  0  25  15
 	frame	data/chars/Boss/Shiva/special02.gif
 	frame	data/chars/Boss/Shiva/special03.gif
 	frame	data/chars/Boss/Shiva/special04.gif

@@ -26,7 +26,6 @@ anim idle
 		delay  5
 		attack1  116  120  72  17  5  0  0  0  0  15
 	frame	data/chars/Boss/Shivas/a101.gif
-		attack1  116  120  72  17  10  0  0  0  15  15
 	frame	data/chars/Boss/Shivas/a101b.gif
 	frame	data/chars/Boss/Shivas/a101c.gif
         @cmd dasher 0 0 0
@@ -39,7 +38,6 @@ anim idle
         @cmd dasher 3 0 0
 		attack2  115  113  82  85  5  0  0  0  0  15
 	frame	data/chars/Boss/Shivas/a201.gif
-		attack1  115  113  82  85  10  0  0  0  15  15
 	frame	data/chars/Boss/Shivas/a201b.gif
 	frame	data/chars/Boss/Shivas/a201c.gif
         @cmd dasher 0 0 0
@@ -50,7 +48,7 @@ anim idle
 		move  0
 		delay  5
         @cmd dasher 3 0 0
-		attack3  118  90  67  108  5  0  0  0  15  15
+		attack3  118  90  67  108  5  0  0  0  0  15
 	frame	data/chars/Boss/Shivas/a300.gif
 	frame	data/chars/Boss/Shivas/a300b.gif
 	frame	data/chars/Boss/Shivas/a300c.gif

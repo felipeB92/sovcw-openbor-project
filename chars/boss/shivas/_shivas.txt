@@ -219,7 +219,7 @@ anim attack1
         Sound	data/sounds/golpes/Soco.wav
         hitfx	data/sounds/golpes/Fraco.wav
 	frame	data/chars/Boss/ShivaS/a100.gif
-		attack1  124  120  62  23  5  0  0  0  0  15
+		attack1  124  120  62  23  5  0  0  0  3  15
 		delay  7
 	frame	data/chars/Boss/ShivaS/a101.gif
 		delay  3
@@ -237,7 +237,7 @@ anim attack2
         Sound	data/sounds/golpes/Soco.wav
         hitfx	data/sounds/golpes/Fraco.wav
 	frame	data/chars/Boss/ShivaS/a100.gif
-		attack1  123  118  67  21  5  0  0  0  0  15
+		attack1  123  118  67  21  5  0  0  0  3  15
 		delay  7
 	frame	data/chars/Boss/ShivaS/a101.gif
 		delay  3
@@ -256,6 +256,7 @@ anim attack3
         hitfx	data/sounds/golpes/MEdio.wav
 	Sound	data/chars/Boss/ShivaS/a1.wav
 	frame	data/chars/Boss/ShivaS/b200.gif
+		attack1  104  127  58  64  5  0  0  0  3  15
 	frame	data/chars/Boss/ShivaS/b201.gif
 		attack2  107  128  54  66  5  0  0  0  0  15
 	frame	data/chars/Boss/ShivaS/b201b.gif
@@ -274,7 +275,7 @@ anim attack4
 	Sound	data/chars/Boss/ShivaS/a3.wav
 	frame	data/chars/Boss/ShivaS/a200a.gif
 	frame	data/chars/Boss/ShivaS/a200.gif
-		attack2  145  85  35  109  10  1  0  0  0  15
+		attack2  145  85  35  109  15  1  0  0  15  15
 		delay  25
 	frame	data/chars/Boss/ShivaS/a300.gif
 		Attack1  0
@@ -530,7 +531,7 @@ anim special2
 		delay  5
 	frame	data/chars/Boss/ShivaS/land.gif
 	frame	data/chars/Boss/ShivaS/JA100.gif
-		attack6  113  141  79  43  10  1  0  0  0  15
+		attack6  113  141  79  43  15  1  0  0  25  15
 		delay  40
 	frame	data/chars/Boss/ShivaS/JA300.gif
 
@@ -551,7 +552,7 @@ anim special
         hitfx	data/sounds/golpes/Forte.wav
         @cmd dasher 0 0 0
 	frame	data/chars/Boss/ShivaS/fs300.gif
-		attack7  136  103  52  93  15  1  0  0  0  15
+		attack7  136  103  52  93  30  1  0  0  25  15
 	frame	data/chars/Boss/ShivaS/fs301.gif
 	frame	data/chars/Boss/ShivaS/fs302.gif
 	frame	data/chars/Boss/ShivaS/fs303.gif
@@ -621,7 +622,7 @@ anim Follow1
 	frame	data/chars/Boss/ShivaS/fs205.gif
 		Attack1  0
 	frame	data/chars/Boss/ShivaS/fs206.gif
-		attack2  108  83  85  114  15  1  0  0  0  15
+		attack2  108  83  85  114  15  1  0  0  15  15
 		offset  138  203
 	frame	data/chars/Boss/ShivaS/fs207.gif
 		Attack1  0

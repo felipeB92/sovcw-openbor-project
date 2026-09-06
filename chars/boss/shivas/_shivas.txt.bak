@@ -19,13 +19,11 @@ weapons _ShivaS_Knife Blaze_Sword _ShivaS_Knife Blaze_Kunai
 icon	data/chars/Boss/ShivaS/iconP.gif 1
 diesound data/Sounds/Die2.wav
 running	25	3	2	1	1
-onblockwscript	data/scripts/bounceF.c
-#animationscript 	data/scripts/ani0020.h
-animationscript		data/scripts/drago.c
-#ondrawscript 		data/scripts/player_ondrawscript.c
+
+animationscript		data/scripts/Felipe.c
 
 Load ShivaSP01a
-Load ShivaSP02
+Load ShivaSP02_
 Load EX02
 
 Load _Shiva_
@@ -35,32 +33,58 @@ Load _ShivaS_Knife
 #Load Blaze_Kunai
 #Load Blaze_Sword
 
+Com d f A freespecial2
+
 remap data/chars/Boss/ShivaS/Map00.gif data/chars/Boss/ShivaS/MAp01.gif
 remap data/chars/Boss/ShivaS/Map00.gif data/chars/Boss/ShivaS/MAp02.gif
 remap data/chars/Boss/ShivaS/Map00.gif data/chars/Boss/ShivaS/MAp03.gif
 remap data/chars/Boss/ShivaS/MAp00.gif data/chars/Boss/ShivaS/MAp04.gif
 
 
+anim	waiting
+	loop	1
+	offset	1 -542
+	delay	12
+	frame   data/chars/Boss/ShivaS/Select01.gif
+	frame   data/chars/Boss/ShivaS/Select02.gif
+	frame   data/chars/Boss/ShivaS/Select03.gif
+	frame   data/chars/Boss/ShivaS/Select02.gif
+
+anim	Select
+	loop	0
+	offset	1 -542
+	delay	3
+	frame   data/chars/Boss/ShivaS/Select00.gif
+	frame   data/chars/Boss/ShivaS/Select03.gif
+	frame   data/chars/Boss/ShivaS/Select00.gif
+	frame   data/chars/Boss/ShivaS/Select03.gif
+	frame   data/chars/Boss/ShivaS/Select00.gif
+	frame   data/chars/Boss/ShivaS/Select03.gif
+	frame   data/chars/Boss/ShivaS/Select00.gif
+	frame   data/chars/Boss/ShivaS/Select03.gif
+	frame   data/chars/Boss/ShivaS/Select00.gif
+	frame   data/chars/Boss/ShivaS/Select03.gif
 
 anim PAin5
 	loop	0
 	delay	16
-	offset	139 194
-	bbox	112 109 35 72
+	offset	146 109
 	frame   data/chars/Boss/ShivaS/I19.gif
-	frame   data/chars/Boss/ShivaS/I20.gif
+	frame   data/chars/Boss/ShivaS/I17.gif
 	drawmethod tintmode 6
 	drawmethod tintcolor -255
 	frame   data/chars/Boss/ShivaS/I18.gif
 	@cmd  spawn01  "_Shiva_"  0  0  0
 	frame   data/chars/Boss/ShivaS/I19.gif
-	frame   data/chars/Boss/ShivaS/I20.gif
+	frame   data/chars/Boss/ShivaS/I17.gif
 	drawmethod tintmode 6
 	drawmethod tintcolor 255
 	frame   data/chars/Boss/ShivaS/I18.gif
 	@cmd  spawn01  "_Shiva__"  0  0  0
-	frame   data/chars/Boss/ShivaS/I19.gif
+	frame   data/chars/Boss/ShivaS/I17.gif
 	frame   data/chars/Boss/ShivaS/I20.gif
+		offset  139  194
+		bbox  0
 	frame   data/chars/Boss/ShivaS/idle01.gif
 
 anim idle
@@ -162,6 +186,26 @@ anim runjumpattack
 	frame	data/chars/Boss/ShivaS/JUmp01.gif
 		attack1  121  140  71  30  7  1  0  0  0  10
 	frame	data/chars/Boss/ShivaS/JA300.gif
+
+anim Freespecial2
+	loop	0
+	delay	8
+	offset	138 193
+        custknife ShivaSP02_
+        throwframe 3 0
+        hitflash	Forte
+        hitfx	data/sounds/golpes/Forte.wav
+        quakeframe 2 2 2
+	frame	data/chars/Boss/ShivaS/SP100.gif
+	frame	data/chars/Boss/ShivaS/SP101.gif
+	delay	20
+	Sound   data/Sounds/Fire.wav
+	frame	data/chars/Boss/ShivaS/SP102.gif
+		delay  80
+	frame	data/chars/Boss/ShivaS/SP103.gif
+		bbox  122  109  32  85
+		delay  30
+	frame	data/chars/Boss/ShivaS/a100.gif
 
 
 
@@ -269,7 +313,7 @@ anim freespecial
 	@cmd	position 6 40 5 0 1
 		attack1  144  161  89  34  7  1  0  0  0  15
 	frame	data/chars/Boss/ShivaS/Slam203.gif
-	@cmd	position 3 40 0 0 1
+	@cmd	position 10 40 0 0 1
         @cmd leaper 1 2 0
 		@cmd  depost  0
 		@cmd  throw  15  5  -1  1  0  1
@@ -321,7 +365,7 @@ anim throw
 	@cmd	position 6 -40 5 0 -1
 		attack1  72  160  69  35  7  1  0  0  0  15
 	frame	data/chars/Boss/ShivaS/Slam03.gif
-	@cmd	position 3 -40 0 0 -1
+	@cmd	position 10 -40 0 0 -1
         @cmd leaper 1 2 0
 		@cmd  depost  0
 		@cmd  throw  15  5  1  1  0  11
