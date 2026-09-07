@@ -20,34 +20,30 @@ spawn3  	60 50 50
 
 
 
-group 1 1
+group 2 2
 at 0
 
-
-
-spawn  	PIPE
-	coords  50 210 250
-	at  0
-
-spawn  	KNIFE
-	coords  50 210 250
-	at  0
-
-spawn  	Joe
+spawn  	Costa
 MAP    1
-health 10
+health 100
 	coords  200 210 250
 	at  0
 
-spawn  	galsia
+spawn  	crakito
 MAP    1
-health 30
+health 100
 	coords  200 210 250
 	at  0
 
-spawn  	galsia
+spawn  	Diga
+MAP    2
+health 100
+	coords  200 210 250
+	at  0
+
+spawn  	Electra
 MAP    3
-health 30
+health 100
 	coords  200 210 250
 	at  0
 

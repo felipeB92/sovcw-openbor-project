@@ -18,7 +18,7 @@ anim idle
         hitflash	Forte
         hitfx	data/sounds/golpes/Forte.wav
 		delay  6
-		attack7  0  1  35  38  15  1  0  0  15  15
+		attack7  0  1  35  38  15  1  0  0  0  15
 	frame	data/chars/Boss/Shivas/Fire/P00.gif
 	frame	data/chars/Boss/Shivas/Fire/P01.gif
 	frame	data/chars/Boss/Shivas/Fire/P02.gif

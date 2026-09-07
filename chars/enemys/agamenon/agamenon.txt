@@ -312,19 +312,22 @@ anim fall6 #Shok
 	frame	data/chars/Enemys/Agamenon/fall02.gif
 
 
-anim fall7 #Burn
+anim fall7 #burn
 	loop	0
-	offset	232 163
-	delay	10
+	offset	138 184
+	delay	20
         hitfx	data/sounds/golpes/Forte.wav
 		attack  0
-	frame	data/chars/Enemys/Agamenon/FALL300.gif
-	frame	data/chars/Enemys/Agamenon/FALL301.gif
-	frame	data/chars/Enemys/Agamenon/FALL302.gif
-	frame	data/chars/Enemys/Agamenon/FALL300.gif
-	frame	data/chars/Enemys/Agamenon/FALL301.gif
-		offset  134  152
-	frame	data/chars/Enemys/Agamenon/FALL02.gif
+	drawmethod tintmode 6
+	drawmethod tintcolor 255
+	frame	data/chars/Enemys/Agamenon/fall00.gif
+		Attack1  0
+	@cmd	bindSpawn "Burn01" 0 30 1 
+	frame	data/chars/Enemys/Agamenon/fall01.gif
+		delay  10
+		offset  134  158
+	Nodrawmethod
+	frame	data/chars/Enemys/Agamenon/fall02.gif
 
 
 anim rise

@@ -1,0 +1,23 @@
+name	Burn01
+type	none
+Alpha 1
+#subtype	noskip
+#setlayer -1
+setlayer 1000
+antigravity 100
+
+
+anim	idle
+	loop	0
+	offset	26 37
+		delay  6
+	frame	data/Chars/efeitos/Burn/B03.gif
+	frame  data/Chars/efeitos/Burn/B02.gif
+	frame	data/Chars/efeitos/Burn/B04.gif
+	frame  data/Chars/efeitos/Burn/B02.gif
+	frame	data/Chars/efeitos/Burn/B05.gif
+	frame  data/Chars/efeitos/Burn/B02.gif
+	frame	data/Chars/efeitos/Burn/B06.gif
+	@cmd killentity getlocalvar("self")
+	frame	data/Chars/efeitos/Burn/B02.gif
+

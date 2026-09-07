@@ -114,7 +114,7 @@ anim RunAttack
 	delay	12
 	offset	209 144
         Fastattack 1
-        hitflash	MEdio
+        hitflash	Burn
         hitfx	data/sounds/golpes/Medio.wav
 	bbox	181 86 42 44
       @cmd dasher 1 0 0
@@ -535,7 +535,7 @@ anim Special2
         MpOnly 1
 	loop	0
 	offset	233 165
-        hitflash	Forte
+        hitflash	Burn
         hitfx	data/sounds/golpes/Forte.wav
 		Attack1  0
 		delay  12
@@ -583,7 +583,7 @@ anim jumpspecial
         MpOnly 1
 	loop	0
 	offset	237 165
-        hitflash	fORTE
+        hitflash	Burn
         hitfx	data/sounds/golpes/forte.wav
 	Sound	data/chars/players/Commando/Sp02.wav
 		delay  3

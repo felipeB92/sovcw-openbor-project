@@ -26,13 +26,6 @@ Load ShivaSP01a
 Load ShivaSP02
 Load NAda
 
-Load _Tiger
-Load _Hakuyo
-
-Load _Shiva_Knife
-Load _Shiva_Pipe
-#Load Blaze_Kunai
-#Load Blaze_Sword
 
 remap data/chars/Boss/ShivaS/Map00.gif data/chars/Boss/ShivaS/MAp01.gif
 remap data/chars/Boss/ShivaS/Map00.gif data/chars/Boss/ShivaS/MAp02.gif
@@ -48,8 +41,8 @@ anim get
 	offset	145 109
         hitflash	MEdio
         hitfx	data/sounds/golpes/medio.wav
-        custknife NAda
-        throwframe 0 45
+        custknife Nada
+        throwframe 15 45
         quakeframe 2 2 2
 	frame	data/chars/Boss/ShivaS/I20.gif
 		attack2  34  4  229  122  15  1  0  0  0  15
@@ -70,5 +63,36 @@ anim get
 	frame	data/chars/Boss/ShivaS/I19.gif
 	frame	data/chars/Boss/ShivaS/I18.gif
 	frame	data/chars/Boss/ShivaS/I20.gif
+
+anim idle
+	loop	1
+	delay	16
+	offset	139 194
+	bbox	122 115 29 80
+        custknife Nada
+        throwframe 1 45
+	frame   data/chars/Boss/ShivaS/idle00.gif
+	@cmd	depost 0
+	@cmd	throw 15 0.7 0.7 1 0 -1
+	@cmd	clearL
+	frame   data/chars/Boss/ShivaS/idle01.gif
+	frame   data/chars/Boss/ShivaS/idle02.gif
+
+
+anim walk
+	loop	1
+	delay	12
+        custknife Nada
+        throwframe 1 45
+	offset	139 194
+	bbox	124 111 28 68
+	frame	data/chars/Boss/ShivaS/walk00.gif
+	frame	data/chars/Boss/ShivaS/walk01.gif
+	frame	data/chars/Boss/ShivaS/walk02.gif
+	frame	data/chars/Boss/ShivaS/walk03.gif
+	frame	data/chars/Boss/ShivaS/walk04.gif
+		bbox  115  105  35  76
+	frame	data/chars/Boss/ShivaS/walk05.gif
+
 
 

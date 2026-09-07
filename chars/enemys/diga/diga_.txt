@@ -232,17 +232,21 @@ anim fall6 #Shok
 
 anim fall7 #Burn
 	loop	0
-	offset	31 53
-	delay	10
+	offset	18 82
+	delay	20
         hitfx	data/sounds/golpes/Forte.wav
 		attack  0
-	frame	data/chars/Enemys/Diga/FALL300.gif
-	frame	data/chars/Enemys/Diga/FALL301.gif
-	frame	data/chars/Enemys/Diga/FALL302.gif
-	frame	data/chars/Enemys/Diga/FALL301.gif
-	frame	data/chars/Enemys/Diga/FALL302.gif
-		offset  47  32
-	frame	data/chars/Enemys/Diga/FALL02.gif
+	drawmethod tintmode 6
+	drawmethod tintcolor 255
+	frame	data/chars/Enemys/Diga/fall00.gif
+		Attack1  0
+		offset  47  78
+	@cmd	bindSpawn "Burn01" 0 30 1 
+	frame	data/chars/Enemys/Diga/fall01.gif
+		offset  52  33
+		delay  10
+	Nodrawmethod
+	frame	data/chars/Enemys/Diga/fall02.gif
 
 
 anim rise

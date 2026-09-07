@@ -15,7 +15,7 @@ JUMPHEIGHT 4
 #Jumpheight 3
 antigrab 2
 atchain   1 2 3 4 5
-weapons _ShivaS_Knife Blaze_Sword _ShivaS_Knife Blaze_Kunai
+weapons _ShivaS_Knife Blaze_Knife _ShivaS_Knife Blaze_knife
 icon	data/chars/Boss/ShivaS/iconP.gif 1
 diesound data/Sounds/Die2.wav
 running	25	3	2	1	1
@@ -119,6 +119,21 @@ anim get
 	delay	20
 	offset	139 194
 	frame	data/chars/Boss/ShivaS/Get.gif
+
+anim Follow10
+	loop	0
+	delay	20
+	offset	139 194
+        Sound	data/sounds/food.wav
+	frame	data/chars/Boss/ShivaS/Get.gif
+
+anim Follow11
+	loop	0
+	delay	20
+	offset	139 194
+        Sound	data/sounds/Coin.wav
+	frame	data/chars/Boss/ShivaS/Get.gif
+
 
 
 anim jump

@@ -468,6 +468,9 @@ Load	Medio	data/chars/Efeitos/Medio.txt
 Load	Forte	data/chars/Efeitos/Forte.txt
 Load	Shock	data/chars/Efeitos/Shock.txt
 Load	Corte	data/chars/Efeitos/Corte.txt
+Load	Burn	data/chars/Efeitos/Burn.txt
+Load	Burn01	data/chars/Efeitos/Burn01.txt
+Load	Burn02	data/chars/Efeitos/Burn02.txt
 know	eX	data/chars/Efeitos/EX.txt
 know	eX02	data/chars/Efeitos/EX02.txt
 know	tel00	data/chars/Efeitos/Tel00.txt
