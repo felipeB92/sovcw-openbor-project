@@ -10,14 +10,14 @@ antigravity 100
 anim	idle
 	loop	0
 	offset	26 37
-		delay  6
+		delay  9
 	frame	data/Chars/efeitos/Burn/B03.gif
-	frame  data/Chars/efeitos/Burn/B02.gif
 	frame	data/Chars/efeitos/Burn/B04.gif
-	frame  data/Chars/efeitos/Burn/B02.gif
 	frame	data/Chars/efeitos/Burn/B05.gif
-	frame  data/Chars/efeitos/Burn/B02.gif
 	frame	data/Chars/efeitos/Burn/B06.gif
+	frame  data/Chars/efeitos/Burn/B00.gif
+	frame  data/Chars/efeitos/Burn/B01.gif
+	frame  data/Chars/efeitos/Burn/B02.gif
 	@cmd killentity getlocalvar("self")
 	frame	data/Chars/efeitos/Burn/B02.gif
 

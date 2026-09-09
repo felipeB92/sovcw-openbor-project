@@ -10,7 +10,7 @@ antigravity 100
 anim	idle
 	loop	0
 	offset	26 37
-		delay  4
+		delay  6
 	frame	data/Chars/efeitos/Burn/B03.gif
 	frame  data/Chars/efeitos/Burn/B02.gif
 	frame	data/Chars/efeitos/Burn/B04.gif
