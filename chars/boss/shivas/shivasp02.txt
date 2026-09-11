@@ -15,7 +15,7 @@ animationscript		data/scripts/Felipe.c
 anim idle
 	loop	1
 	offset	-20 0
-        hitflash	Forte
+        hitflash	Burn
         hitfx	data/sounds/golpes/Forte.wav
 		delay  6
 		attack7  0  1  35  38  15  1  0  0  0  15

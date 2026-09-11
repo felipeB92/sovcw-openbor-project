@@ -493,7 +493,7 @@ anim Freespecial4
         Range 50 60
         RangeZ -10 10
 	offset	30 101
-        hitflash	fORTE
+        hitflash	Burn
         hitfx	data/sounds/golpes/forte.wav
 		delay  5
 		Attack1  0

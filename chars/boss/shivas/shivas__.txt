@@ -409,7 +409,7 @@ anim Upper
 	offset	138 193
         Range 0 100
         RangeZ -15 15
-        hitflash	forte
+        hitflash	Burn
 		Attack1  0
 	jumpframe  1  3 1  0
         hitfx	data/sounds/golpes/Forte.wav

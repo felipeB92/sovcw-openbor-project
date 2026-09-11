@@ -565,7 +565,7 @@ anim Special
         MpOnly 1
 	loop	0
 	offset	219 171
-        hitflash	Forte
+        hitflash	Burn
         hitfx	data/sounds/golpes/Forte.wav
 		Attack1  0
 		delay  12

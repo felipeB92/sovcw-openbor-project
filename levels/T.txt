@@ -23,25 +23,37 @@ spawn3  	60 50 50
 group 2 2
 at 0
 
-spawn  	maclean
+spawn  	Signal
 MAP    1
 health 100
 	coords  200 210 250
 	at  0
 
-spawn  	macleod
+spawn  	skiner
 MAP    1
 health 100
 	coords  200 210 250
 	at  0
 
-spawn  Nora
+spawn  slum
 MAP    2
 health 100
 	coords  200 210 250
 	at  0
 
-spawn  	P1
+spawn  	thug
+MAP    3
+health 100
+	coords  200 210 250
+	at  0
+
+spawn  Tiger
+MAP    2
+health 100
+	coords  200 210 250
+	at  0
+
+spawn  	vice
 MAP    3
 health 100
 	coords  200 210 250
