@@ -202,7 +202,7 @@ anim special2
 	offset	154 201
         Range 150 250
         RangeZ -50 -10
-        hitflash	Forte
+        hitflash	Burn
 	bbox	135 108 36 95
 		Attack1  0
         hitfx	data/sounds/golpes/Fire2.wav

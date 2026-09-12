@@ -188,7 +188,7 @@ anim Freespecial3
 	offset	154 201
         Range 150 250
         RangeZ -50 -10
-        hitflash	Forte
+        hitflash	Burn
 	bbox	135 108 36 95
 		Attack1  0
         hitfx	data/sounds/golpes/bURN.wav
@@ -245,7 +245,7 @@ anim Freespecial4
 	offset	154 201
         Range 150 250
         RangeZ 10 50
-        hitflash	Forte
+        hitflash	Burn
 	bbox	135 108 36 95
 		Attack1  0
         hitfx	data/sounds/golpes/bURN.wav
@@ -306,7 +306,7 @@ anim Freespecial5
         energycost 50 1
         MpOnly 1
         Sound  data/sounds/andore_salto.wav
-        hitflash	Forte
+        hitflash	Burn
         hitfx	data/sounds/golpes/bURN.wav
 		Attack1  0
 	drawmethod tintmode 6

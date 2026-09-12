@@ -20,10 +20,10 @@ spawn3  	60 50 50
 
 
 
-group 2 2
+group 1 1
 at 0
 
-spawn  	Signal
+spawn  	Bongo
 MAP    1
 health 100
 	coords  200 210 250
