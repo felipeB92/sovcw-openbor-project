@@ -457,17 +457,24 @@ anim fall6 #Shok
 
 anim fall7 #Burn
 	loop	0
-	offset	38 65
-	delay	10
+	offset	53 89
+	delay	20
         hitfx	data/sounds/golpes/Forte.wav
 		attack  0
-	frame	data/chars/players/Donatello/FALL300.gif
-	frame	data/chars/players/Donatello/FALL301.gif
-	frame	data/chars/players/Donatello/FALL302.gif
-	frame	data/chars/players/Donatello/FALL300.gif
-	frame	data/chars/players/Donatello/FALL301.gif
-		offset  56  26
-	frame	data/chars/players/Donatello/FALL03.gif
+	drawmethod tintmode 6
+	drawmethod tintcolor 255
+	frame	data/chars/players/Donatello/fall00.gif
+		Attack1  0
+		offset  38  69
+	@cmd	bindSpawn "Burn01" 0 30 1
+	frame	data/chars/players/Donatello/fall01.gif
+		delay  10
+		offset  28  59
+	frame	data/chars/players/Donatello/fall02.gif
+		offset  44  22
+	Nodrawmethod
+	frame	data/chars/players/Donatello/fall03.gif
+
 
 
 anim rise

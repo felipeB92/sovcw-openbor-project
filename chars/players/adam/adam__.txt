@@ -442,19 +442,23 @@ anim fall6 #Shok
 	frame	data/chars/players/Adam/fall02.gif
 
 
-anim fall7 #Burn
+anim fall7 #burn
 	loop	0
-	offset	65 97
-	delay	10
+	offset	69 113
+	delay	20
         hitfx	data/sounds/golpes/Forte.wav
 		attack  0
-	frame	data/chars/players/Adam/FALL300.gif
-	frame	data/chars/players/Adam/FALL301.gif
-	frame	data/chars/players/Adam/FALL302.gif
-	frame	data/chars/players/Adam/FALL300.gif
-	frame	data/chars/players/Adam/FALL301.gif
-		offset  69  89
-	frame	data/chars/players/Adam/FALL02.gif
+	drawmethod tintmode 6
+	drawmethod tintcolor 255
+	frame	data/chars/players/Adam/fall00.gif
+		Attack1  0
+		offset  52  120
+	@cmd	bindSpawn "Burn01" 0 30 1 
+	frame	data/chars/players/Adam/fall01.gif
+		offset  66  88
+		delay  10
+	Nodrawmethod
+	frame	data/chars/players/Adam/fall02.gif
 
 
 anim rise

@@ -396,19 +396,25 @@ anim fall6 #Shok
 	frame	data/chars/players/Ryu/fall03.gif
 
 
-anim fall7 #Burn
+anim fall7 #burn
 	loop	0
-	offset	38 65
-	delay	10
+	offset	49 73
+	delay	20
         hitfx	data/sounds/golpes/Forte.wav
 		attack  0
-	frame	data/chars/players/Ryu/FALL300.gif
-	frame	data/chars/players/Ryu/FALL301.gif
-	frame	data/chars/players/Ryu/FALL302.gif
-	frame	data/chars/players/Ryu/FALL300.gif
-	frame	data/chars/players/Ryu/FALL301.gif
-		offset  43  40
-	frame	data/chars/players/Ryu/FALL03.gif
+	drawmethod tintmode 6
+	drawmethod tintcolor 255
+	frame	data/chars/players/Ryu/fall00.gif
+		Attack1  0
+		offset  38  69
+	@cmd	bindSpawn "Burn01" 0 30 1
+	frame	data/chars/players/Ryu/fall01.gif
+		delay  10
+		offset  35  77
+	frame	data/chars/players/Ryu/fall02.gif
+		offset  42  40
+	Nodrawmethod
+	frame	data/chars/players/Ryu/fall03.gif
 
 
 anim rise
