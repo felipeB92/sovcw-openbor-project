@@ -643,19 +643,23 @@ anim fall6 #Shok
 	frame	data/chars/Boss/Kurt/fall02.gif
 
 
-anim fall7 #Burn
+anim fall7 #burn
 	loop	0
-	offset	233 164
-	delay	10
+	offset	75 115
+	delay	20
         hitfx	data/sounds/golpes/Forte.wav
 		attack  0
-	frame	data/chars/Boss/Kurt/FALL300.gif
-	frame	data/chars/Boss/Kurt/FALL301.gif
-	frame	data/chars/Boss/Kurt/FALL302.gif
-	frame	data/chars/Boss/Kurt/FALL300.gif
-	frame	data/chars/Boss/Kurt/FALL301.gif
-		offset  73  100
-	frame	data/chars/Boss/Kurt/FALL02.gif
+	drawmethod tintmode 6
+	drawmethod tintcolor 255
+	frame	data/chars/Boss/Kurt/fall00.gif
+		Attack1  0
+		offset  91  109
+	@cmd	bindSpawn "Burn01" 0 30 1 
+	frame	data/chars/Boss/Kurt/fall01.gif
+		delay  10
+		offset  71  101
+	Nodrawmethod 
+	frame	data/chars/Boss/Kurt/fall02.gif
 
 
 anim rise

@@ -150,7 +150,7 @@ anim special
 	offset	154 201
         custknife _BongoP01
         throwframe 3 0
-        hitflash	Forte
+        hitflash	Burn
 	bbox	133 111 29 90
 		Attack1  0
         Sound	data/sounds/golpes/Soco.wav
@@ -202,10 +202,10 @@ anim special2
 	offset	154 201
         Range 150 250
         RangeZ -50 -10
-        hitflash	Burn
+        hitflash	Furn
 	bbox	135 108 36 95
 		Attack1  0
-        hitfx	data/sounds/golpes/Fire2.wav
+        hitfx	data/sounds/golpes/Forte.wav
 	frame	data/chars/Boss/Bongo/fs100.gif
 	frame	data/chars/Boss/Bongo/fs101.gif
 	frame	data/chars/Boss/Bongo/fs102.gif
@@ -369,17 +369,21 @@ anim fall6 #Shok
 
 anim fall7 #Burn
 	loop	0
-	offset	91 121
-	delay	10
+	offset	80 133
+	delay	20
         hitfx	data/sounds/golpes/Forte.wav
 		attack  0
-	frame	data/chars/Boss/Bongo/FALL300.gif
-	frame	data/chars/Boss/Bongo/FALL301.gif
-	frame	data/chars/Boss/Bongo/FALL302.gif
-	frame	data/chars/Boss/Bongo/FALL300.gif
-	frame	data/chars/Boss/Bongo/FALL301.gif
-		offset  140  176
-	frame	data/chars/Boss/Bongo/FALL02.gif
+	drawmethod tintmode 6
+	drawmethod tintcolor 255
+	frame	data/chars/Boss/Bongo/fall00.gif
+		Attack1  0
+		offset  67  113
+	@cmd	bindSpawn "Burn01" 0 30 1 
+	frame	data/chars/Boss/Bongo/fall01.gif
+		offset  142  175
+		delay  10
+	Nodrawmethod
+	frame	data/chars/Boss/Bongo/fall02.gif
 
 
 anim rise

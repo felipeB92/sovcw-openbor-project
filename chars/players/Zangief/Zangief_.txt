@@ -14,7 +14,7 @@ hostile ENEMY
 subject_to_screen 1
 Grabdistance 18
 riseinv				0.4 1
-speed	7
+speed	10
 type	npc
 gfxshadow	1
 candamage			enemy obstacle

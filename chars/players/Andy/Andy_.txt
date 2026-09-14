@@ -14,7 +14,7 @@ lifebarstatus 126 5 1 1 0 -500 -500 1 -500
 hostile ENEMY
 subject_to_screen 1
 riseinv				0.4 1
-speed	9
+speed	12
 type	NPC
 gfxshadow	1
 candamage			enemy obstacle

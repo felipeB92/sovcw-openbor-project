@@ -7,7 +7,7 @@ mprate 1
 Falldie 2
 Grabdistance 18
 riseinv				0.4 1
-speed	9
+speed	12
 type	NPC
 Subtype Follow
 iconposition 322 4
@@ -514,19 +514,23 @@ anim fall6 #Shok
 	frame	data/chars/players/Ginzo/fall02.gif
 
 
-anim fall7 #Burn
+anim fall7 #BURN
 	loop	0
-	offset	61 99
-	delay	10
+	offset	228 156
+	delay	20
         hitfx	data/sounds/golpes/Forte.wav
 		attack  0
-	frame	data/chars/players/Ginzo/FALL300.gif
-	frame	data/chars/players/Ginzo/FALL301.gif
-	frame	data/chars/players/Ginzo/FALL302.gif
-	frame	data/chars/players/Ginzo/FALL300.gif
-	frame	data/chars/players/Ginzo/FALL301.gif
-		offset  215  138
-	frame	data/chars/players/Ginzo/FALL02.gif
+	drawmethod tintmode 6
+	drawmethod tintcolor 255
+	frame	data/chars/players/Ginzo/fall00.gif
+		Attack1  0
+		offset  234  151
+	@cmd	bindSpawn "Burn01" 0 30 1 
+	frame	data/chars/players/Ginzo/fall01.gif
+		delay  10
+		offset  220  137
+	Nodrawmethod
+	frame	data/chars/players/Ginzo/fall02.gif
 
 
 anim rise

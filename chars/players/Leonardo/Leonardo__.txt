@@ -6,7 +6,7 @@ mprate 1
 #secret 1
 Grabdistance 18
 riseinv				0.4 1
-speed	8
+speed	11
 type	NPC
 Falldie 2
 Subtype Follow

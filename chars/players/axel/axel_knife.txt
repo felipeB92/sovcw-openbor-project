@@ -8,7 +8,7 @@ mprate 1
 Falldie 2
 Grabdistance 18
 riseinv				0.4 1
-speed	9
+speed	11
 type	None
 gfxshadow	1
 candamage			enemy  obstacle

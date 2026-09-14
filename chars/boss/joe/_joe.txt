@@ -369,19 +369,22 @@ anim fall6 #Shok
 	frame	data/chars/Boss/Joe/fall02.gif
 
 
-anim fall7 #Burn
+anim fall7 #BURN
 	loop	0
-	offset	64 96
-	delay	10
+	offset	153 188
+	delay	20
         hitfx	data/sounds/golpes/Forte.wav
 		attack  0
-	frame	data/chars/Boss/Joe/FALL300.gif
-	frame	data/chars/Boss/Joe/FALL301.gif
-	frame	data/chars/Boss/Joe/FALL302.gif
-	frame	data/chars/Boss/Joe/FALL300.gif
-	frame	data/chars/Boss/Joe/FALL301.gif
-		offset  151  162
-	frame	data/chars/Boss/Joe/FALL02.gif
+	drawmethod tintmode 6
+	drawmethod tintcolor 255
+	frame	data/chars/Boss/Joe/fall00.gif
+		Attack1  0
+	@cmd	bindSpawn "Burn01" 0 30 1 
+	frame	data/chars/Boss/Joe/fall01.gif
+		delay  10
+		offset  146  164
+	Nodrawmethod
+	frame	data/chars/Boss/Joe/fall02.gif
 
 
 anim rise

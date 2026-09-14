@@ -16,7 +16,7 @@ subject_to_screen 1
 Falldie 2
 Grabdistance 18
 riseinv				0.4 1
-speed	6
+speed	11
 type	npc
 gfxshadow	1
 candamage			enemy obstacle

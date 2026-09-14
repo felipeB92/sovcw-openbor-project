@@ -23,37 +23,37 @@ spawn3  	60 50 50
 group 1 1
 at 0
 
-spawn  	Bongo
+spawn  	Harakiri
 MAP    1
 health 100
 	coords  200 210 250
 	at  0
 
-spawn  	skiner
+spawn  	Joe
 MAP    1
 health 100
 	coords  200 210 250
 	at  0
 
-spawn  slum
+spawn  Kurt
 MAP    2
 health 100
 	coords  200 210 250
 	at  0
 
-spawn  	thug
+spawn  	MrX
 MAP    3
 health 100
 	coords  200 210 250
 	at  0
 
-spawn  Tiger
+spawn  Shiva
 MAP    2
 health 100
 	coords  200 210 250
 	at  0
 
-spawn  	vice
+spawn  	ShivaS
 MAP    3
 health 100
 	coords  200 210 250

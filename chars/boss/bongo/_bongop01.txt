@@ -13,7 +13,7 @@ subject_to_gravity 0
 anim idle
 	loop	1
 	offset	12 57
-        hitflash	Burn
+        hitflash	Forte
         hitfx	data/sounds/golpes/Forte.wav
 		delay  3
 		attack7  10  37  57  29  15  1  0  0  0  15
