@@ -8,7 +8,7 @@ mprate 1
 Falldie 2
 Grabdistance 18
 riseinv				0.4 1
-speed	9
+speed	11
 type	player
 gfxshadow	1
 candamage			enemy obstacle
@@ -106,6 +106,11 @@ anim Follow10
 	delay	20
 	offset	61 130
         Sound	data/sounds/Food.wav
+        hitfx	data/sounds/sILENCIO.wav
+	@cmd	depost 0
+	@cmd	throw 15 0.7 0.7 1 0 -1
+	@cmd	clearL
+	attack1  60  51  33  61  0  1  0  0  0  15
 	frame	data/chars/players/Axel/Get.gif
 
 anim Follow11
@@ -113,6 +118,11 @@ anim Follow11
 	delay	20
 	offset	61 130
         Sound	data/sounds/Coin.wav
+        hitfx	data/sounds/sILENCIO.wav
+	@cmd	depost 0
+	@cmd	throw 15 0.7 0.7 1 0 -1
+	@cmd	clearL
+	attack1  60  51  33  61  0  1  0  0  0  15
 	frame	data/chars/players/Axel/Get.gif
 
 anim get
@@ -225,7 +235,7 @@ anim attack2
         hitfx	data/sounds/golpes/MEdio.wav
 	Sound	data/chars/players/Axel/a1.wav
 	frame	data/chars/players/Axel/a200.gif
-		attack2  62  58  55  22  5  0  0  0  7  10
+		attack2  62  58  55  22  5  0  0  0  4  10
 		delay  12
 	frame	data/chars/players/Axel/a201.gif
 		delay  8
@@ -498,19 +508,23 @@ anim fall6 #Shok
 	frame	data/chars/players/Axel/fall02.gif
 
 
-anim fall7 #Burn
+anim fall7 #burn
 	loop	0
-	offset	65 97
-	delay	10
+	offset	87 118
+	delay	20
         hitfx	data/sounds/golpes/Forte.wav
 		attack  0
-	frame	data/chars/players/Axel/FALL300.gif
-	frame	data/chars/players/Axel/FALL301.gif
-	frame	data/chars/players/Axel/FALL302.gif
-	frame	data/chars/players/Axel/FALL300.gif
-	frame	data/chars/players/Axel/FALL301.gif
-		offset  64  118
-	frame	data/chars/players/Axel/FALL02.gif
+	drawmethod tintmode 6
+	drawmethod tintcolor 255
+	frame	data/chars/players/Axel/fall00.gif
+		Attack1  0
+	@cmd	bindSpawn "Burn01" 0 30 1 
+	frame	data/chars/players/Axel/fall01.gif
+		delay  10
+		offset  63  120
+	Nodrawmethod 
+	frame	data/chars/players/Axel/fall02.gif
+
 
 
 anim rise

@@ -134,6 +134,11 @@ anim Follow10
 	delay	10
 	offset	36 70
         Sound	data/sounds/food.wav
+        hitfx	data/sounds/sILENCIO.wav
+	@cmd	depost 0
+	@cmd	throw 15 0.7 0.7 1 0 -1
+	@cmd	clearL
+	attack1  11  -2  50  72  0  1  0  0  0  15
 	frame	data/chars/players/Donatello/Get00.gif
 	frame	data/chars/players/Donatello/Get01.gif
 
@@ -143,6 +148,11 @@ anim Follow11
 	delay	10
 	offset	36 70
         Sound	data/sounds/Coin.wav
+        hitfx	data/sounds/sILENCIO.wav
+	@cmd	depost 0
+	@cmd	throw 15 0.7 0.7 1 0 -1
+	@cmd	clearL
+	attack1  15  0  43  70  0  1  0  0  0  15
 	frame	data/chars/players/Donatello/Get00.gif
 	frame	data/chars/players/Donatello/Get01.gif
 
@@ -472,7 +482,6 @@ anim fall7 #Burn
 		offset  28  59
 	frame	data/chars/players/Donatello/fall02.gif
 		offset  44  22
-	Nodrawmethod
 	frame	data/chars/players/Donatello/fall03.gif
 
 

@@ -7,7 +7,7 @@ mprate 1
 Falldie 2
 Grabdistance 18
 riseinv				0.4 1
-speed	8
+speed	11
 type	player
 gfxshadow	1
 candamage			enemy obstacle
@@ -117,6 +117,11 @@ anim Follow10
 	delay	20
 	offset	224 168
         Sound	data/sounds/food.wav
+        hitfx	data/sounds/sILENCIO.wav
+	@cmd	depost 0
+	@cmd	throw 15 0.7 0.7 1 0 -1
+	@cmd	clearL
+	attack1  60  51  33  61  0  1  0  0  0  15
 	frame	data/chars/players/Cody/Get01.gif
 
 anim Follow11
@@ -124,6 +129,11 @@ anim Follow11
 	delay	20
 	offset	224 168
         Sound	data/sounds/Coin.wav
+        hitfx	data/sounds/sILENCIO.wav
+	@cmd	depost 0
+	@cmd	throw 15 0.7 0.7 1 0 -1
+	@cmd	clearL
+	attack1  60  51  33  61  0  1  0  0  0  15
 	frame	data/chars/players/Cody/Get01.gif
 
 

@@ -120,6 +120,11 @@ anim Follow10
 	delay	10
 	offset	26 87
         Sound	data/sounds/food.wav
+        hitfx	data/sounds/sILENCIO.wav
+	@cmd	depost 0
+	@cmd	throw 15 0.7 0.7 1 0 -1
+	@cmd	clearL
+	attack1  10  15  35  72  0  1  0  0  0  15
 	frame	data/chars/players/Leonardo/Get00.gif
 	frame	data/chars/players/Leonardo/Get01.gif
 
@@ -128,6 +133,11 @@ anim Follow11
 	delay	10
 	offset	26 87
         Sound	data/sounds/Coin.wav
+        hitfx	data/sounds/sILENCIO.wav
+	@cmd	depost 0
+	@cmd	throw 15 0.7 0.7 1 0 -1
+	@cmd	clearL
+	attack1  10  18  33  69  0  1  0  0  0  15
 	frame	data/chars/players/Leonardo/Get00.gif
 	frame	data/chars/players/Leonardo/Get01.gif
 
@@ -416,7 +426,6 @@ anim fall7 #Burn
 		offset  48  84
 	frame	data/chars/players/Leonardo/fall02.gif
 		offset  44  22
-	Nodrawmethod
 	frame	data/chars/players/Leonardo/fall03.gif
 
 

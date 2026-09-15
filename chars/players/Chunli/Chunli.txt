@@ -126,6 +126,11 @@ anim Follow10
 	delay	10
 	offset	25 65
         Sound	data/sounds/food.wav
+        hitfx	data/sounds/sILENCIO.wav
+	@cmd	depost 0
+	@cmd	throw 15 0.7 0.7 1 0 -1
+	@cmd	clearL
+	attack1  8  -1  38  69  0  1  0  0  0  15
 	frame	data/chars/players/Chunli/Get00.gif
 	frame	data/chars/players/Chunli/Get01.gif
 
@@ -134,6 +139,11 @@ anim Follow11
 	delay	10
 	offset	25 65
         Sound	data/sounds/Coin.wav
+        hitfx	data/sounds/sILENCIO.wav
+	@cmd	depost 0
+	@cmd	throw 15 0.7 0.7 1 0 -1
+	@cmd	clearL
+	attack1  8  -2  35  66  0  1  0  0  0  15
 	frame	data/chars/players/Chunli/Get00.gif
 	frame	data/chars/players/Chunli/Get01.gif
 
@@ -443,7 +453,6 @@ anim fall7 #burn
 		offset  28  59
 	frame	data/chars/players/Chunli/fall02.gif
 		offset  44  53
-	Nodrawmethod
 	frame	data/chars/players/Chunli/fall03.gif
 
 

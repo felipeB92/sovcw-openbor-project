@@ -120,11 +120,17 @@ anim get
 	offset	139 194
 	frame	data/chars/Boss/ShivaS/Get.gif
 
+
 anim Follow10
 	loop	0
 	delay	20
 	offset	139 194
         Sound	data/sounds/food.wav
+        hitfx	data/sounds/sILENCIO.wav
+	@cmd	depost 0
+	@cmd	throw 15 0.7 0.7 1 0 -1
+	@cmd	clearL
+	attack1  120  134  44  60  0  1  0  0  0  15
 	frame	data/chars/Boss/ShivaS/Get.gif
 
 anim Follow11
@@ -132,6 +138,11 @@ anim Follow11
 	delay	20
 	offset	139 194
         Sound	data/sounds/Coin.wav
+        hitfx	data/sounds/sILENCIO.wav
+	@cmd	depost 0
+	@cmd	throw 15 0.7 0.7 1 0 -1
+	@cmd	clearL
+	attack1  114  142  49  52  0  1  0  0  0  15
 	frame	data/chars/Boss/ShivaS/Get.gif
 
 
@@ -503,11 +514,10 @@ anim fall7 #Burn
 	frame	data/chars/Boss/ShivaS/fall00.gif
 		Attack1  0
 		offset  136  181
-	@cmd	bindSpawn "Burn01" 0 30 1 
+	@cmd	bindSpawn "Burn01" 0 30 1
 	frame	data/chars/Boss/ShivaS/fall01.gif
 		delay  10
 		offset  136  159
-	Nodrawmethod
 	frame	data/chars/Boss/ShivaS/fall02.gif
 
 

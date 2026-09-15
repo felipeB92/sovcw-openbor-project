@@ -7,7 +7,7 @@ mprate 1
 Falldie 2
 Grabdistance 18
 riseinv				0.4 1
-speed	8
+speed	11
 type	player
 gfxshadow	1
 candamage			enemy obstacle
@@ -129,6 +129,32 @@ anim get
 	frame	data/chars/players/Donatello/Get00.gif
 	frame	data/chars/players/Donatello/Get01.gif
 
+anim Follow10
+	loop	0
+	delay	10
+	offset	36 70
+        Sound	data/sounds/food.wav
+        hitfx	data/sounds/sILENCIO.wav
+	@cmd	depost 0
+	@cmd	throw 15 0.7 0.7 1 0 -1
+	@cmd	clearL
+	attack1  60  51  33  61  0  1  0  0  0  15
+	frame	data/chars/players/Donatello/Get00.gif
+	frame	data/chars/players/Donatello/Get01.gif
+
+
+anim Follow11
+	loop	0
+	delay	10
+	offset	36 70
+        Sound	data/sounds/Coin.wav
+        hitfx	data/sounds/sILENCIO.wav
+	@cmd	depost 0
+	@cmd	throw 15 0.7 0.7 1 0 -1
+	@cmd	clearL
+	attack1  60  51  33  61  0  1  0  0  0  15
+	frame	data/chars/players/Donatello/Get00.gif
+	frame	data/chars/players/Donatello/Get01.gif
 
 anim jump
 	loop	0
@@ -213,12 +239,12 @@ anim attack1
 	frame	data/chars/players/Donatello/a102.gif
         Sound	data/sounds/whoosh.wav
 	frame  data/chars/players/Donatello/a101.gif
-		attack1  62  30  83  28  3  0  0  0  5  15
+		attack1  62  30  83  28  5  0  0  0  5  15
 	frame  data/chars/players/Donatello/a104.gif
 		Attack1  0
 		sound  data/sounds/whoosh.wav
 	frame	data/chars/players/Donatello/a105.gif
-		attack1  45  0  81  40  3  0  0  0  5  15
+		attack1  45  0  81  40  5  0  0  0  5  15
 	frame	data/chars/players/Donatello/a106.gif
 		sound  data/sounds/whoosh.wav
 	frame	data/chars/players/Donatello/a107.gif
@@ -259,7 +285,7 @@ anim attack3
 		sound  data/chars/players/Donatello/a2.wav
 	frame	data/chars/players/Donatello/a301.gif
 		delay  10
-		attack3  38  0  60  60  10  0  1  0  5  15
+		attack3  38  0  60  60  10  0  1  0  0  15
 		sound  data/sounds/golpes/Chut.wav
 	frame	data/chars/players/Donatello/a302.gif
 		attack1  38  0  60  60  7  0  1  0  0  15
@@ -441,17 +467,24 @@ anim fall6 #Shok
 
 anim fall7 #Burn
 	loop	0
-	offset	38 65
-	delay	10
+	offset	53 89
+	delay	20
         hitfx	data/sounds/golpes/Forte.wav
 		attack  0
-	frame	data/chars/players/Donatello/FALL300.gif
-	frame	data/chars/players/Donatello/FALL301.gif
-	frame	data/chars/players/Donatello/FALL302.gif
-	frame	data/chars/players/Donatello/FALL300.gif
-	frame	data/chars/players/Donatello/FALL301.gif
-		offset  56  26
-	frame	data/chars/players/Donatello/FALL03.gif
+	drawmethod tintmode 6
+	drawmethod tintcolor 255
+	frame	data/chars/players/Donatello/fall00.gif
+		Attack1  0
+		offset  38  69
+	@cmd	bindSpawn "Burn01" 0 30 1
+	frame	data/chars/players/Donatello/fall01.gif
+		delay  10
+		offset  28  59
+	frame	data/chars/players/Donatello/fall02.gif
+		offset  44  22
+	Nodrawmethod
+	frame	data/chars/players/Donatello/fall03.gif
+
 
 
 anim rise

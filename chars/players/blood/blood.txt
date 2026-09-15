@@ -116,6 +116,11 @@ anim Follow10
 	delay	20
 	offset	72 115
         Sound	data/sounds/food.wav
+        hitfx	data/sounds/sILENCIO.wav
+	@cmd	depost 0
+	@cmd	throw 15 0.7 0.7 1 0 -1
+	@cmd	clearL
+	attack1  58  54  35  63  0  1  0  0  0  15
 	frame	data/chars/players/blood/Get.gif
 
 anim Follow11
@@ -123,6 +128,11 @@ anim Follow11
 	delay	20
 	offset	72 115
         Sound	data/sounds/Coin.wav
+        hitfx	data/sounds/sILENCIO.wav
+	@cmd	depost 0
+	@cmd	throw 15 0.7 0.7 1 0 -1
+	@cmd	clearL
+	attack1  57  65  43  54  0  1  0  0  0  15
 	frame	data/chars/players/blood/Get.gif
 
 
@@ -490,10 +500,9 @@ anim fall7 #burn
 	drawmethod tintcolor 255
 	frame	data/chars/players/blood/fall00.gif
 		Attack1  0
-	@cmd	bindSpawn "Burn01" 0 30 1 
+	@cmd	bindSpawn "Burn01" 0 30 1
 	frame	data/chars/players/blood/fall01.gif
 		delay  10
-	Nodrawmethod
 	frame	data/chars/players/blood/fall02.gif
 
 

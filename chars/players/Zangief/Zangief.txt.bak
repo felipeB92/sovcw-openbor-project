@@ -7,7 +7,7 @@ mprate 1
 Falldie 2
 Grabdistance 18
 riseinv				0.4 1
-speed	7
+speed	10
 type	player
 gfxshadow	1
 candamage			enemy obstacle
@@ -114,6 +114,11 @@ anim Follow10
 	delay	10
 	offset	28 80
         Sound	data/sounds/food.wav
+        hitfx	data/sounds/sILENCIO.wav
+	@cmd	depost 0
+	@cmd	throw 15 0.7 0.7 1 0 -1
+	@cmd	clearL
+	attack1  60  51  33  61  0  1  0  0  0  15
 	frame	data/chars/players/Zangief/Get00.gif
 	frame	data/chars/players/Zangief/Get01.gif
 
@@ -122,6 +127,11 @@ anim Follow11
 	delay	10
 	offset	28 80
         Sound	data/sounds/Coin.wav
+        hitfx	data/sounds/sILENCIO.wav
+	@cmd	depost 0
+	@cmd	throw 15 0.7 0.7 1 0 -1
+	@cmd	clearL
+	attack1  60  51  33  61  0  1  0  0  0  15
 	frame	data/chars/players/Zangief/Get00.gif
 	frame	data/chars/players/Zangief/Get01.gif
 
@@ -218,7 +228,7 @@ anim attack1
         hitfx	data/sounds/golpes/mEDIO.wav
 	frame	data/chars/players/Zangief/a100.gif
 		delay  7
-		attack1  30  11  62  16  5  0  0  0  5  15
+		attack1  30  11  62  16  10  0  0  0  5  15
 	frame	data/chars/players/Zangief/a101.gif
 		delay  12
 		Attack1  0
@@ -239,7 +249,7 @@ anim attack2
 		delay  5
 	frame	data/chars/players/Zangief/a201.gif
 		delay  8
-		attack2  14  14  88  16  7  0  0  0  8  15
+		attack2  14  14  88  16  10  0  0  0  8  15
 	frame	data/chars/players/Zangief/a202.gif
 	frame	data/chars/players/Zangief/a203.gif
 
@@ -277,6 +287,7 @@ anim Freespecial2
 	bbox	52 33 47 53
         frame	data/chars/players/Zangief/Dash00.gif
         @cmd dasher 2 0 0
+		sound  data/sounds/DASH2.wav
         frame	data/chars/players/Zangief/Dash01.gif
         frame	data/chars/players/Zangief/Dash02.gif
         frame	data/chars/players/Zangief/Dash03.gif
@@ -436,19 +447,24 @@ anim fall6 #Shok
 	frame	data/chars/players/Zangief/fall04.gif
 
 
-anim fall7 #Burn
+anim fall7 #burn
 	loop	0
-	offset	29 64
-	delay	10
+	offset	33 82
+	delay	20
         hitfx	data/sounds/golpes/Forte.wav
 		attack  0
-	frame	data/chars/players/Zangief/FALL300.gif
-	frame	data/chars/players/Zangief/FALL301.gif
-	frame	data/chars/players/Zangief/FALL302.gif
-	frame	data/chars/players/Zangief/FALL300.gif
-	frame	data/chars/players/Zangief/FALL301.gif
-		offset  39  32
-	frame	data/chars/players/Zangief/FALL04.gif
+	drawmethod tintmode 6
+	drawmethod tintcolor 255
+	frame	data/chars/players/Zangief/fall00.gif
+		Attack1  0
+		offset  48  76
+	@cmd	bindSpawn "Burn01" 0 30 1
+	frame	data/chars/players/Zangief/fall01.gif
+		delay  10
+		offset  40  32
+	Nodrawmethod
+	frame	data/chars/players/Zangief/fall04.gif
+
 
 
 anim rise
@@ -523,7 +539,7 @@ anim Follow1
 		offset  28  93
 		delay  15
 		attack2  -5  77  96  17  25  1  1  0  25  20
-		sound  data/sounds/solo.wav
+		sound  data/sounds/SLAM.wav
 	frame	data/chars/players/Zangief/sp300.gif
 	@cmd	position 9 30 0 0 -1
 	@cmd	depost 0

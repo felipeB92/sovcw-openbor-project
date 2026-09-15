@@ -114,6 +114,11 @@ anim Follow10
 	delay	10
 	offset	28 80
         Sound	data/sounds/food.wav
+        hitfx	data/sounds/sILENCIO.wav
+	@cmd	depost 0
+	@cmd	throw 15 0.7 0.7 1 0 -1
+	@cmd	clearL
+	attack1  10  2  46  79  0  1  0  0  0  15
 	frame	data/chars/players/Zangief/Get00.gif
 	frame	data/chars/players/Zangief/Get01.gif
 
@@ -122,6 +127,11 @@ anim Follow11
 	delay	10
 	offset	28 80
         Sound	data/sounds/Coin.wav
+        hitfx	data/sounds/sILENCIO.wav
+	@cmd	depost 0
+	@cmd	throw 15 0.7 0.7 1 0 -1
+	@cmd	clearL
+	attack1  16  2  40  82  0  1  0  0  0  15
 	frame	data/chars/players/Zangief/Get00.gif
 	frame	data/chars/players/Zangief/Get01.gif
 
@@ -452,7 +462,6 @@ anim fall7 #burn
 	frame	data/chars/players/Zangief/fall01.gif
 		delay  10
 		offset  40  32
-	Nodrawmethod
 	frame	data/chars/players/Zangief/fall04.gif
 
 

@@ -7,7 +7,7 @@ mprate 1
 Falldie 2
 Grabdistance 18
 riseinv				0.4 1
-speed	8
+speed	11
 type	player
 gfxshadow	1
 candamage			enemy obstacle
@@ -120,6 +120,11 @@ anim Follow10
 	delay	10
 	offset	26 87
         Sound	data/sounds/food.wav
+        hitfx	data/sounds/sILENCIO.wav
+	@cmd	depost 0
+	@cmd	throw 15 0.7 0.7 1 0 -1
+	@cmd	clearL
+	attack1  60  51  33  61  0  1  0  0  0  15
 	frame	data/chars/players/Leonardo/Get00.gif
 	frame	data/chars/players/Leonardo/Get01.gif
 
@@ -128,6 +133,11 @@ anim Follow11
 	delay	10
 	offset	26 87
         Sound	data/sounds/Coin.wav
+        hitfx	data/sounds/sILENCIO.wav
+	@cmd	depost 0
+	@cmd	throw 15 0.7 0.7 1 0 -1
+	@cmd	clearL
+	attack1  60  51  33  61  0  1  0  0  0  15
 	frame	data/chars/players/Leonardo/Get00.gif
 	frame	data/chars/players/Leonardo/Get01.gif
 
@@ -402,17 +412,22 @@ anim fall6 #Shok
 
 anim fall7 #Burn
 	loop	0
-	offset	38 65
-	delay	10
+	offset	50 77
+	delay	20
         hitfx	data/sounds/golpes/Forte.wav
 		attack  0
-	frame	data/chars/players/Leonardo/FALL300.gif
-	frame	data/chars/players/Leonardo/FALL301.gif
-	frame	data/chars/players/Leonardo/FALL302.gif
-	frame	data/chars/players/Leonardo/FALL300.gif
-	frame	data/chars/players/Leonardo/FALL301.gif
-		offset  56  26
-	frame	data/chars/players/Leonardo/FALL03.gif
+	drawmethod tintmode 6
+	drawmethod tintcolor 255
+	frame	data/chars/players/Leonardo/fall00.gif
+		Attack1  0
+	@cmd	bindSpawn "Burn01" 0 30 1
+	frame	data/chars/players/Leonardo/fall01.gif
+		delay  10
+		offset  48  84
+	frame	data/chars/players/Leonardo/fall02.gif
+		offset  44  22
+	Nodrawmethod
+	frame	data/chars/players/Leonardo/fall03.gif
 
 
 anim rise
@@ -526,12 +541,14 @@ anim Freespecial2
         @cmd dasher 1 0 0
 	frame	data/chars/players/Leonardo/Dash00.gif
 		delay  12
+		sound  data/sounds/DASH2.wav
 	frame	data/chars/players/Leonardo/Dash01.gif
         @cmd dasher 2 0 0
 		delay  6
 	frame	data/chars/players/Leonardo/Dash02.gif
 	frame	data/chars/players/Leonardo/Dash03.gif
 		delay  12
+		sound  data/sounds/DASH2.wav
 	frame	data/chars/players/Leonardo/Dash04.gif
 		offset  69  85
 		delay  6

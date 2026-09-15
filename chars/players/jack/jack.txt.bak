@@ -7,7 +7,7 @@ mprate 1
 Falldie 2
 Grabdistance 18
 riseinv				0.4 1
-speed	8
+speed	11
 type	player
 gfxshadow	1
 candamage			enemy obstacle
@@ -200,6 +200,30 @@ anim get
 	offset	211 154
 	frame	data/chars/players/Jack/Get.gif
 
+anim Follow10
+	loop	0
+	delay	20
+	offset	211 154
+        Sound	data/sounds/food.wav
+        hitfx	data/sounds/sILENCIO.wav
+	@cmd	depost 0
+	@cmd	throw 15 0.7 0.7 1 0 -1
+	@cmd	clearL
+	attack1  60  51  33  61  0  1  0  0  0  15
+	frame	data/chars/players/Jack/Get.gif
+
+anim Follow11
+	loop	0
+	delay	20
+	offset	211 154
+        Sound	data/sounds/Coin.wav
+        hitfx	data/sounds/sILENCIO.wav
+	@cmd	depost 0
+	@cmd	throw 15 0.7 0.7 1 0 -1
+	@cmd	clearL
+	attack1  60  51  33  61  0  1  0  0  0  15
+	frame	data/chars/players/Jack/Get.gif
+
 
 anim jump
 	loop	0
@@ -330,7 +354,7 @@ anim attack3
 		attack2  190  95  56  21  15  1  0  0  15  15
 	frame	data/chars/players/Jack/a303.gif
 		attack2  180  94  96  25  15  1  0  0  15  15
-		delay  25
+		delay  15
 	frame	data/chars/players/Jack/a304.gif
 
 

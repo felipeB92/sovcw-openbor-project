@@ -81,6 +81,29 @@ anim get
 	offset	139 194
 	frame	data/chars/Boss/Shiva/Get00.gif
 
+anim Follow10
+	loop	0
+	delay	20
+	offset	139 194
+        Sound	data/sounds/food.wav
+        hitfx	data/sounds/sILENCIO.wav
+	@cmd	depost 0
+	@cmd	throw 15 0.7 0.7 1 0 -1
+	@cmd	clearL
+	attack1  219  112  52  52  0  1  0  0  0  15
+	frame	data/chars/Boss/Shiva/Get00.gif
+
+anim Follow11
+	loop	0
+	delay	20
+	offset	139 194
+        Sound	data/sounds/Coin.wav
+        hitfx	data/sounds/sILENCIO.wav
+	@cmd	depost 0
+	@cmd	throw 15 0.7 0.7 1 0 -1
+	@cmd	clearL
+	attack1  219  112  52  52  0  1  0  0  0  15
+	frame	data/chars/Boss/Shiva/Get00.gif
 
 anim jump
 	loop	0

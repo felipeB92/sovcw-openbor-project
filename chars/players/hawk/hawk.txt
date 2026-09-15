@@ -122,6 +122,11 @@ anim Follow10
 	delay	20
 	offset	72 115
         Sound	data/sounds/food.wav
+        hitfx	data/sounds/sILENCIO.wav
+	@cmd	depost 0
+	@cmd	throw 15 0.7 0.7 1 0 -1
+	@cmd	clearL
+	attack1  57  63  45  58  0  1  0  0  0  15
 	frame	data/chars/players/Hawk/Get.gif
 
 anim Follow11
@@ -129,6 +134,11 @@ anim Follow11
 	delay	20
 	offset	72 115
         Sound	data/sounds/Coin.wav
+        hitfx	data/sounds/sILENCIO.wav
+	@cmd	depost 0
+	@cmd	throw 15 0.7 0.7 1 0 -1
+	@cmd	clearL
+	attack1  57  63  46  54  0  1  0  0  0  15
 	frame	data/chars/players/Hawk/Get.gif
 
 
@@ -496,10 +506,9 @@ anim fall7 #burn
 	frame	data/chars/players/Hawk/fall00.gif
 		Attack1  0
 		offset  76  100
-	@cmd	bindSpawn "Burn01" 0 30 1 
+	@cmd	bindSpawn "Burn01" 0 30 1
 	frame	data/chars/players/Hawk/fall01.gif
 		delay  10
-	Nodrawmethod
 	frame	data/chars/players/Hawk/fall02.gif
 
 

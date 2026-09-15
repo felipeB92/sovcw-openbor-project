@@ -7,7 +7,7 @@ mprate 1
 Falldie 2
 Grabdistance 18
 riseinv				0.4 1
-speed	9
+speed	11
 type	player
 gfxshadow	1
 candamage			enemy obstacle
@@ -115,6 +115,30 @@ anim get
 	offset	72 115
 	frame	data/chars/players/Boomer/Get.gif
 
+anim Follow10
+	loop	0
+	delay	20
+	offset	72 115
+        Sound	data/sounds/food.wav
+        hitfx	data/sounds/sILENCIO.wav
+	@cmd	depost 0
+	@cmd	throw 15 0.7 0.7 1 0 -1
+	@cmd	clearL
+	attack1  60  51  33  61  0  1  0  0  0  15
+	frame	data/chars/players/Boomer/Get.gif
+
+anim Follow11
+	loop	0
+	delay	20
+	offset	72 115
+        Sound	data/sounds/Coin.wav
+        hitfx	data/sounds/sILENCIO.wav
+	@cmd	depost 0
+	@cmd	throw 15 0.7 0.7 1 0 -1
+	@cmd	clearL
+	attack1  60  51  33  61  0  1  0  0  0  15
+	frame	data/chars/players/Boomer/Get.gif
+
 
 anim jump
 	loop	0
@@ -205,7 +229,7 @@ anim attack1
         Sound	data/sounds/golpes/Soco.wav
         hitfx	data/sounds/golpes/Fraco.wav
 	frame	data/chars/players/Boomer/a100.gif
-		attack1  59  47  62  17  5  0  0  0  0  10
+		attack1  59  47  62  17  5  0  0  0  3  10
 		delay  7
 	frame	data/chars/players/Boomer/a101.gif
 		delay  3
@@ -223,11 +247,11 @@ anim attack2
         hitfx	data/sounds/golpes/MEdio.wav
 	Sound	data/chars/players/Boomer/a1.wav
 	frame	data/chars/players/Boomer/a200.gif
-		attack2  75  51  35  37  5  0  0  0  0  10
+		attack2  75  51  35  37  10  0  0  0  7  10
 		delay  7
 	frame	data/chars/players/Boomer/a201.gif
 		delay  12
-		attack2  64  52  70  22  5  0  0  0  0  10
+		attack2  64  52  70  22  10  0  0  0  7  10
 	frame	data/chars/players/Boomer/a202.gif
 		Attack1  0
 		delay  4
@@ -245,7 +269,7 @@ anim attack3
 	frame	data/chars/players/Boomer/a300.gif
 		Attack1  0
 	frame	data/chars/players/Boomer/a301.gif
-		attack1  72  48  64  34  5  1  0  0  0  10
+		attack1  72  48  64  34  13  1  0  0  15  10
 		delay  30
 	frame	data/chars/players/Boomer/a302.gif
 
@@ -441,19 +465,23 @@ anim fall6 #Shok
 	frame	data/chars/players/Boomer/fall02.gif
 
 
-anim fall7 #Burn
+anim fall7 #burn
 	loop	0
-	offset	65 97
-	delay	10
+	offset	72 111
+	delay	20
         hitfx	data/sounds/golpes/Forte.wav
 		attack  0
-	frame	data/chars/players/Boomer/FALL300.gif
-	frame	data/chars/players/Boomer/FALL301.gif
-	frame	data/chars/players/Boomer/FALL302.gif
-	frame	data/chars/players/Boomer/FALL300.gif
-	frame	data/chars/players/Boomer/FALL301.gif
-		offset  67  96
-	frame	data/chars/players/Boomer/FALL02.gif
+	drawmethod tintmode 6
+	drawmethod tintcolor 255
+	frame	data/chars/players/Boomer/fall00.gif
+		Attack1  0
+	@cmd	bindSpawn "Burn01" 0 30 1 
+	frame	data/chars/players/Boomer/fall01.gif
+		delay  10
+		offset  72  97
+	Nodrawmethod
+	frame	data/chars/players/Boomer/fall02.gif
+
 
 
 anim rise
@@ -490,7 +518,7 @@ anim special2
 		Attack1  0
 	frame  data/chars/players/Boomer/fs202.gif
 		delay  20
-		attack6  59  -3  93  118  10  1  1  0  0  15
+		attack6  59  -3  93  118  25  1  1  0  25  15
 	frame  data/chars/players/Boomer/fs202.gif
 
 
@@ -513,7 +541,7 @@ anim special
 		delay  35
 	frame	data/chars/players/Boomer/fs101.gif
 		delay  60
-		attack6  29  -45  89  167  20  1  1  0  0  20
+		attack6  29  -45  89  167  35  1  1  0  25  20
 	frame	data/chars/players/Boomer/FS101.gif
 
 

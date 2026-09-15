@@ -120,6 +120,11 @@ anim Follow10
 	delay	10
 	offset	32 76
         Sound	data/sounds/food.wav
+        hitfx	data/sounds/sILENCIO.wav
+	@cmd	depost 0
+	@cmd	throw 15 0.7 0.7 1 0 -1
+	@cmd	clearL
+	attack1  11  17  41  58  0  1  0  0  0  15
 	frame	data/chars/players/Ryu/Get00.gif
 	frame	data/chars/players/Ryu/Get01.gif
 
@@ -128,6 +133,11 @@ anim Follow11
 	delay	10
 	offset	32 76
         Sound	data/sounds/Coin.wav
+        hitfx	data/sounds/sILENCIO.wav
+	@cmd	depost 0
+	@cmd	throw 15 0.7 0.7 1 0 -1
+	@cmd	clearL
+	attack1  3  11  49  65  0  1  0  0  0  15
 	frame	data/chars/players/Ryu/Get00.gif
 	frame	data/chars/players/Ryu/Get01.gif
 
@@ -413,7 +423,6 @@ anim fall7 #burn
 		offset  35  77
 	frame	data/chars/players/Ryu/fall02.gif
 		offset  42  40
-	Nodrawmethod
 	frame	data/chars/players/Ryu/fall03.gif
 
 

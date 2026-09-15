@@ -195,6 +195,11 @@ anim Follow10
 	delay	20
 	offset	224 151
         Sound	data/sounds/food.wav
+        hitfx	data/sounds/sILENCIO.wav
+	@cmd	depost 0
+	@cmd	throw 15 0.7 0.7 1 0 -1
+	@cmd	clearL
+	attack1  208  101  35  51  0  1  0  0  0  15
 	frame	data/chars/players/Ginzo/Get.gif
 
 anim Follow11
@@ -202,6 +207,11 @@ anim Follow11
 	delay	20
 	offset	224 151
         Sound	data/sounds/Coin.wav
+        hitfx	data/sounds/sILENCIO.wav
+	@cmd	depost 0
+	@cmd	throw 15 0.7 0.7 1 0 -1
+	@cmd	clearL
+	attack1  207  101  38  51  0  1  0  0  0  15
 	frame	data/chars/players/Ginzo/Get.gif
 
 
@@ -534,11 +544,10 @@ anim fall7 #BURN
 	frame	data/chars/players/Ginzo/fall00.gif
 		Attack1  0
 		offset  234  151
-	@cmd	bindSpawn "Burn01" 0 30 1 
+	@cmd	bindSpawn "Burn01" 0 30 1
 	frame	data/chars/players/Ginzo/fall01.gif
 		delay  10
 		offset  220  137
-	Nodrawmethod
 	frame	data/chars/players/Ginzo/fall02.gif
 
 

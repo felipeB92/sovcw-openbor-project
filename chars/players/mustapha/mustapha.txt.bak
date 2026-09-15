@@ -7,7 +7,7 @@ mprate 1
 Falldie 2
 Grabdistance 18
 riseinv				0.4 1
-speed	8
+speed	11
 type	player
 gfxshadow	1
 candamage			enemy obstacle
@@ -172,6 +172,11 @@ anim Follow10
 	delay	20
 	offset	221 149
         Sound	data/sounds/food.wav
+        hitfx	data/sounds/sILENCIO.wav
+	@cmd	depost 0
+	@cmd	throw 15 0.7 0.7 1 0 -1
+	@cmd	clearL
+	attack1  60  51  33  61  0  1  0  0  0  15
 	frame	data/chars/players/Mustapha/Get.gif
 
 anim Follow11
@@ -179,6 +184,11 @@ anim Follow11
 	delay	20
 	offset	221 149
         Sound	data/sounds/Coin.wav
+        hitfx	data/sounds/sILENCIO.wav
+	@cmd	depost 0
+	@cmd	throw 15 0.7 0.7 1 0 -1
+	@cmd	clearL
+	attack1  60  51  33  61  0  1  0  0  0  15
 	frame	data/chars/players/Mustapha/Get.gif
 
 
@@ -309,7 +319,7 @@ anim attack3
 		Attack1  0
 	frame	data/chars/players/Mustapha/a301.gif
 		attack2  183  91  92  38  15  1  0  0  15  15
-		delay  25
+		delay  15
 	frame	data/chars/players/Mustapha/a302.gif
 		delay  10
 	frame	data/chars/players/Mustapha/a303.gif

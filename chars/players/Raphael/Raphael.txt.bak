@@ -7,7 +7,7 @@ mprate 1
 Falldie 2
 Grabdistance 18
 riseinv				0.4 1
-speed	8
+speed	10
 type	player
 gfxshadow	1
 candamage			enemy obstacle
@@ -119,6 +119,11 @@ anim Follow10
 	delay	10
 	offset	26 73
         Sound	data/sounds/food.wav
+        hitfx	data/sounds/sILENCIO.wav
+	@cmd	depost 0
+	@cmd	throw 15 0.7 0.7 1 0 -1
+	@cmd	clearL
+	attack1  60  51  33  61  0  1  0  0  0  15
 	frame	data/chars/players/Raphael/Get00.gif
 	frame	data/chars/players/Raphael/Get01.gif
 
@@ -127,6 +132,11 @@ anim Follow11
 	delay	10
 	offset	26 73
         Sound	data/sounds/Coin.wav
+        hitfx	data/sounds/sILENCIO.wav
+	@cmd	depost 0
+	@cmd	throw 15 0.7 0.7 1 0 -1
+	@cmd	clearL
+	attack1  60  51  33  61  0  1  0  0  0  15
 	frame	data/chars/players/Raphael/Get00.gif
 	frame	data/chars/players/Raphael/Get01.gif
 
@@ -225,7 +235,7 @@ anim attack2
 		delay  6
 	frame	data/chars/players/Raphael/a200.gif
 	frame	data/chars/players/Raphael/a201.gif
-		attack2  37  25  56  35  10  0  0  0  10  15
+		attack2  19  29  73  16  10  0  0  0  10  15
 		delay  8
         @cmd dasher 1 0 0
 	frame	data/chars/players/Raphael/a202.gif
@@ -399,19 +409,24 @@ anim fall6 #Shok
 	frame	data/chars/players/Raphael/fall03.gif
 
 
-anim fall7 #Burn
+anim fall7 #burn
 	loop	0
-	offset	38 65
-	delay	10
+	offset	54 107
+	delay	20
         hitfx	data/sounds/golpes/Forte.wav
 		attack  0
-	frame	data/chars/players/Raphael/FALL300.gif
-	frame	data/chars/players/Raphael/FALL301.gif
-	frame	data/chars/players/Raphael/FALL302.gif
-	frame	data/chars/players/Raphael/FALL300.gif
-	frame	data/chars/players/Raphael/FALL301.gif
-		offset  56  26
-	frame	data/chars/players/Raphael/FALL03.gif
+	drawmethod tintmode 6
+	drawmethod tintcolor 255
+	frame	data/chars/players/Raphael/fall00.gif
+		Attack1  0
+	@cmd	bindSpawn "Burn01" 0 30 1
+	frame	data/chars/players/Raphael/fall01.gif
+		delay  10
+		offset  48  84
+	frame	data/chars/players/Raphael/fall02.gif
+		offset  44  22
+	Nodrawmethod
+	frame	data/chars/players/Raphael/fall03.gif
 
 
 anim rise
@@ -481,7 +496,7 @@ anim special
         MpOnly 1
 	loop	0
 	offset	30 101
-        hitflash	fORTE
+        hitflash	Burn
         hitfx	data/sounds/golpes/bURN.wav
 		delay  5
 		Attack1  0
@@ -546,6 +561,7 @@ anim Freespecial2
         @cmd dasher 1 0 0
 	frame	data/chars/players/Raphael/Dash00.gif
 		delay  12
+		sound  data/sounds/DASH2.wav
 	frame	data/chars/players/Raphael/Dash01.gif
         @cmd dasher 2 0 0
 		delay  6

@@ -7,7 +7,7 @@ mprate 1
 Falldie 2
 Grabdistance 18
 riseinv				0.4 1
-speed	9
+speed	12
 type	player
 gfxshadow	1
 candamage			enemy obstacle
@@ -129,49 +129,49 @@ anim RunAttack
 	jumpframe  1  2  3  0
 	frame   data/chars/players/Hannah/ra100.gif
 		delay  2
-		attack1  219  138  35  32  3  0  0  0  0  15
+		attack1  219  138  35  32  3  0  0  0  3  15
 	frame   data/chars/players/Hannah/ra101.gif
 		Attack1  0
 	frame   data/chars/players/Hannah/ra101.gif
 	Sound	data/chars/players/Hannah/a3.wav
-		attack1  219  138  35  32  3  0  0  0  0  15
+		attack1  219  138  35  32  3  0  0  0  3  15
 	frame   data/chars/players/Hannah/ra101.gif
 		Attack1  0
 	frame   data/chars/players/Hannah/ra101.gif
-		attack1  219  138  35  32  3  0  0  0  0  15
+		attack1  219  138  35  32  3  0  0  0  3  15
 	frame   data/chars/players/Hannah/ra101.gif
 		Attack1  0
 	frame   data/chars/players/Hannah/ra101.gif
-		attack1  219  138  35  32  3  0  0  0  0  15
+		attack1  219  138  35  32  3  0  0  0  3  15
 	frame   data/chars/players/Hannah/ra101.gif
 		Attack1  0
 	frame   data/chars/players/Hannah/ra101.gif
-		attack1  219  138  35  32  3  0  0  0  0  15
+		attack1  219  138  35  32  3  0  0  0  3  15
 	frame   data/chars/players/Hannah/ra101.gif
 		Attack1  0
 	frame   data/chars/players/Hannah/ra101.gif
-		attack1  148  113  54  45  5  1  0  0  0  15
+		attack1  148  113  54  45  5  1  0  0  15  15
 	frame   data/chars/players/Hannah/ra101.gif
 		Attack1  0
 	frame   data/chars/players/Hannah/ra101.gif
-		attack1  219  138  35  32  3  0  0  0  0  15
+		attack1  219  138  35  32  3  0  0  0  3  15
 	frame   data/chars/players/Hannah/ra101.gif
 		Attack1  0
 	frame   data/chars/players/Hannah/ra101.gif
-		attack1  219  138  35  32  3  0  0  0  0  15
+		attack1  219  138  35  32  3  0  0  0  3  15
 	frame   data/chars/players/Hannah/ra101.gif
 		Attack1  0
 	frame   data/chars/players/Hannah/ra101.gif
-		attack1  219  138  35  32  3  0  0  0  0  15
+		attack1  219  138  35  32  3  0  0  0  3  15
 	frame   data/chars/players/Hannah/ra101.gif
 		Attack1  0
 	frame   data/chars/players/Hannah/ra101.gif
-		attack1  219  138  35  32  3  0  0  0  0  15
+		attack1  219  138  35  32  3  0  0  0  3  15
 	frame   data/chars/players/Hannah/ra101.gif
 		Attack1  0
 	frame   data/chars/players/Hannah/ra101.gif
 		delay  10
-		attack1  174  113  96  57  5  1  0  0  0  15
+		attack1  174  113  96  57  5  1  0  0  15  15
 	frame   data/chars/players/Hannah/Land.gif
 
 
@@ -207,6 +207,11 @@ anim Follow10
 	delay	20
 	offset	237 172
         Sound	data/sounds/food.wav
+        hitfx	data/sounds/sILENCIO.wav
+	@cmd	depost 0
+	@cmd	throw 15 0.7 0.7 1 0 -1
+	@cmd	clearL
+	attack1  60  51  33  61  0  1  0  0  0  15
 	frame	data/chars/players/Hannah/Get.gif
 
 anim Follow11
@@ -214,6 +219,11 @@ anim Follow11
 	delay	20
 	offset	237 172
         Sound	data/sounds/Coin.wav
+        hitfx	data/sounds/sILENCIO.wav
+	@cmd	depost 0
+	@cmd	throw 15 0.7 0.7 1 0 -1
+	@cmd	clearL
+	attack1  60  51  33  61  0  1  0  0  0  15
 	frame	data/chars/players/Hannah/Get.gif
 
 

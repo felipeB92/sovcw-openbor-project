@@ -7,7 +7,7 @@ mprate 1
 Falldie 2
 Grabdistance 18
 riseinv				0.4 1
-speed	9
+speed	12
 type	player
 gfxshadow	1
 candamage			enemy obstacle
@@ -126,6 +126,11 @@ anim Follow10
 	delay	10
 	offset	25 65
         Sound	data/sounds/food.wav
+        hitfx	data/sounds/sILENCIO.wav
+	@cmd	depost 0
+	@cmd	throw 15 0.7 0.7 1 0 -1
+	@cmd	clearL
+	attack1  60  51  33  61  0  1  0  0  0  15
 	frame	data/chars/players/Chunli/Get00.gif
 	frame	data/chars/players/Chunli/Get01.gif
 
@@ -134,6 +139,11 @@ anim Follow11
 	delay	10
 	offset	25 65
         Sound	data/sounds/Coin.wav
+        hitfx	data/sounds/sILENCIO.wav
+	@cmd	depost 0
+	@cmd	throw 15 0.7 0.7 1 0 -1
+	@cmd	clearL
+	attack1  60  51  33  61  0  1  0  0  0  15
 	frame	data/chars/players/Chunli/Get00.gif
 	frame	data/chars/players/Chunli/Get01.gif
 
@@ -426,19 +436,25 @@ anim fall6 #Shok
 	frame	data/chars/players/Chunli/fall03.gif
 
 
-anim fall7 #Burn
+anim fall7 #burn
 	loop	0
-	offset	38 65
-	delay	10
+	offset	49 73
+	delay	20
         hitfx	data/sounds/golpes/Forte.wav
 		attack  0
-	frame	data/chars/players/Chunli/FALL300.gif
-	frame	data/chars/players/Chunli/FALL301.gif
-	frame	data/chars/players/Chunli/FALL302.gif
-	frame	data/chars/players/Chunli/FALL300.gif
-	frame	data/chars/players/Chunli/FALL301.gif
-		offset  34  54
-	frame	data/chars/players/Chunli/FALL03.gif
+	drawmethod tintmode 6
+	drawmethod tintcolor 255
+	frame	data/chars/players/Chunli/fall00.gif
+		Attack1  0
+		offset  38  69
+	@cmd	bindSpawn "Burn01" 0 30 1
+	frame	data/chars/players/Chunli/fall01.gif
+		delay  10
+		offset  28  59
+	frame	data/chars/players/Chunli/fall02.gif
+		offset  44  53
+	Nodrawmethod
+	frame	data/chars/players/Chunli/fall03.gif
 
 
 anim rise
@@ -591,6 +607,7 @@ anim Freespecial2
 	frame	data/chars/players/Chunli/Dash07.gif
         @cmd dasher 2 0 0
 		delay  8
+		sound  data/sounds/DASH1.wav
 	frame	data/chars/players/Chunli/Dash00.gif
 	frame	data/chars/players/Chunli/Dash00.gif
         @cmd dasher 1 0 0

@@ -7,7 +7,7 @@ mprate 1
 Falldie 2
 Grabdistance 18
 riseinv				0.4 1
-speed	10
+speed	12
 type	player
 gfxshadow	1
 candamage			enemy obstacle
@@ -134,6 +134,30 @@ anim get
 	offset	127 180
 	frame	data/chars/players/Blaze/Get.gif
 
+anim Follow10
+	loop	0
+	delay	20
+	offset	127 180
+        Sound	data/sounds/food.wav
+        hitfx	data/sounds/sILENCIO.wav
+	@cmd	depost 0
+	@cmd	throw 15 0.7 0.7 1 0 -1
+	@cmd	clearL
+	attack1  60  51  33  61  0  1  0  0  0  15
+	frame	data/chars/players/Blaze/Get.gif
+
+anim Follow11
+	loop	0
+	delay	20
+	offset	127 180
+        Sound	data/sounds/Coin.wav
+        hitfx	data/sounds/sILENCIO.wav
+	@cmd	depost 0
+	@cmd	throw 15 0.7 0.7 1 0 -1
+	@cmd	clearL
+	attack1  60  51  33  61  0  1  0  0  0  15
+	frame	data/chars/players/Blaze/Get.gif
+
 
 anim jump
 	loop	0
@@ -221,7 +245,7 @@ anim attack1
         Sound	data/sounds/golpes/Soco.wav
         hitfx	data/sounds/golpes/Fraco.wav
 	frame	data/chars/players/Blaze/a100.gif
-		attack1  126  126  48  19  5  0  0  0  0  10
+		attack1  126  126  48  19  5  0  0  0  5  10
 		delay  7
 	frame	data/chars/players/Blaze/a101.gif
 		delay  3
@@ -242,7 +266,7 @@ anim attack2
 		delay  7
 	frame	data/chars/players/Blaze/a201.gif
 		delay  8
-		attack2  135  123  50  15  4  0  0  0  0  10
+		attack2  135  123  50  15  7  0  0  0  7  10
 	frame	data/chars/players/Blaze/a202.gif
 		Attack1  0
 		delay  4
@@ -261,7 +285,7 @@ anim attack3
 		Attack1  0
 	frame	data/chars/players/Blaze/a301.gif
 		delay  20
-		attack3  147  104  49  75  5  0  0  0  0  10
+		attack3  147  104  49  75  7  0  0  0  7  10
 	frame	data/chars/players/Blaze/a302.gif
 		delay  6
 		Attack1  0
@@ -277,7 +301,7 @@ anim attack4
         hitfx	data/sounds/golpes/Forte.wav
 	Sound	data/chars/players/Blaze/a2.wav
 	frame	data/chars/players/Blaze/a303.gif
-		Attack1  146  88  56  64  7  1  0  0  0  15
+		Attack1  146  88  56  64  10  1  0  0  15  15
 	frame	data/chars/players/Blaze/a304.gif
 		delay  20
 	frame	data/chars/players/Blaze/a301.gif
@@ -517,18 +541,21 @@ anim fall6 #Shok
 	frame	data/chars/players/Blaze/fall02.gif
 
 
-anim fall7 #Burn
+anim fall7 #burn
 	loop	0
 	offset	127 180
-	delay	10
+	delay	20
         hitfx	data/sounds/golpes/Forte.wav
 		attack  0
-	frame	data/chars/players/Blaze/FALL300.gif
-	frame	data/chars/players/Blaze/FALL301.gif
-	frame	data/chars/players/Blaze/FALL302.gif
-	frame	data/chars/players/Blaze/FALL300.gif
-	frame	data/chars/players/Blaze/FALL301.gif
-	frame	data/chars/players/Blaze/FALL02.gif
+	drawmethod tintmode 6
+	drawmethod tintcolor 255
+	frame	data/chars/players/Blaze/fall00.gif
+		Attack1  0
+	@cmd	bindSpawn "Burn01" 0 30 1 
+	frame	data/chars/players/Blaze/fall01.gif
+		delay  10
+	Nodrawmethod
+	frame	data/chars/players/Blaze/fall02.gif
 
 
 anim rise
@@ -549,7 +576,7 @@ anim special2
 	offset  154  179
         hitflash	fORTE
         hitfx	data/sounds/golpes/forte.wav
-		attack2  129  112  61  69  20  10  1  0  15  15
+		attack2  129  112  61  69  30  10  1  0  25  15
 		delay  8
 	Sound	data/chars/players/Blaze/Sp02.wav
 	frame	data/chars/players/Blaze/Special203.gif
@@ -557,7 +584,7 @@ anim special2
 	frame	data/chars/players/Blaze/Special203.gif
 	frame	data/chars/players/Blaze/Special204.gif
 	frame	data/chars/players/Blaze/Special205.gif
-		attack2  129  111  128  68  20  10  1  0  15  15
+		attack2  129  111  128  68  30  10  1  0  25  15
 	frame	data/chars/players/Blaze/Special206B.gif
 	frame	data/chars/players/Blaze/Special207B.gif
 	frame	data/chars/players/Blaze/Special208B.gif
@@ -580,9 +607,9 @@ anim special
 		delay  12
 	frame	data/chars/players/Blaze/special02.gif
 	@cmd  spawn01  "BlazeP01"  0  0  1
-		attack2  86  98  86  86  15  1  1  0  0  15
+		attack2  86  98  86  86  30  1  1  0  25  15
 	frame	data/chars/players/Blaze/special03.gif
-		attack2  69  79  144  101  15  1  1  0  0  15
+		attack2  69  79  144  101  30  1  1  0  25  15
 	frame	data/chars/players/Blaze/special04.gif
 	frame	data/chars/players/Blaze/special05.gif
 	frame	data/chars/players/Blaze/special06.gif
@@ -601,7 +628,7 @@ anim jumpspecial
         hitfx	data/sounds/golpes/forte.wav
 		Attack1  0
 	Sound	data/chars/players/Blaze/Sp02.wav
-	@cmd  spawn01  "BlazeP03"  0  0  1		
+	@cmd  spawn01  "BlazeP03"  0  0  1
 	frame	data/chars/players/Blaze/ra104.gif
 		attack2  79  58  106  146  15  1  1  0  0  15
 	frame	data/chars/players/Blaze/ra105.gif

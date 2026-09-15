@@ -7,7 +7,7 @@ mprate 1
 Falldie 2
 Grabdistance 18
 riseinv				0.4 1
-speed	8
+speed	11
 type	player
 gfxshadow	1
 candamage			enemy obstacle
@@ -111,6 +111,30 @@ anim get
 	offset	72 115
 	frame	data/chars/players/blood/Get.gif
 
+anim Follow10
+	loop	0
+	delay	20
+	offset	72 115
+        Sound	data/sounds/food.wav
+        hitfx	data/sounds/sILENCIO.wav
+	@cmd	depost 0
+	@cmd	throw 15 0.7 0.7 1 0 -1
+	@cmd	clearL
+	attack1  60  51  33  61  0  1  0  0  0  15
+	frame	data/chars/players/blood/Get.gif
+
+anim Follow11
+	loop	0
+	delay	20
+	offset	72 115
+        Sound	data/sounds/Coin.wav
+        hitfx	data/sounds/sILENCIO.wav
+	@cmd	depost 0
+	@cmd	throw 15 0.7 0.7 1 0 -1
+	@cmd	clearL
+	attack1  60  51  33  61  0  1  0  0  0  15
+	frame	data/chars/players/blood/Get.gif
+
 
 anim jump
 	loop	0
@@ -198,7 +222,7 @@ anim attack1
         Sound	data/sounds/golpes/Soco.wav
         hitfx	data/sounds/golpes/Fraco.wav
 	frame	data/chars/players/blood/a100.gif
-		attack1  59  47  62  17  5  0  0  0  0  10
+		attack1  59  47  62  17  5  0  0  0  3  10
 		delay  7
 	frame	data/chars/players/blood/a101.gif
 		delay  3
@@ -220,7 +244,7 @@ anim attack2
 		delay  7
 	frame	data/chars/players/blood/a201.gif
 		delay  8
-		attack2  62  60  71  19  5  0  0  0  0  10
+		attack2  62  60  71  19  5  0  0  0  5  10
 	frame	data/chars/players/blood/a202.gif
 		Attack1  0
 		delay  4
@@ -242,7 +266,7 @@ anim attack3
 		delay  8
 	frame	data/chars/players/blood/a302.gif
 		delay  20
-		attack1  78  31  40  57  5  0  0  0  0  10
+		attack1  78  31  40  57  5  0  0  0  3  10
 	frame  data/chars/players/blood/a303.gif
 
 anim attack4
@@ -257,7 +281,7 @@ anim attack4
 	frame	data/chars/players/blood/a400.gif
 	frame	data/chars/players/blood/a401.gif
 		delay  25
-		attack2  78  55  47  29  7  1  0  0  0  10
+		attack2  78  55  47  29  17  1  0  0  25  10
 		offset  72  117
 	frame	data/chars/players/blood/a402.gif
 		Attack1  0
@@ -466,19 +490,22 @@ anim fall6 #Shok
 	frame	data/chars/players/blood/fall02.gif
 
 
-anim fall7 #Burn
+anim fall7 #burn
 	loop	0
-	offset	65 97
-	delay	10
+	offset	72 115
+	delay	20
         hitfx	data/sounds/golpes/Forte.wav
 		attack  0
-	frame	data/chars/players/blood/FALL300.gif
-	frame	data/chars/players/blood/FALL301.gif
-	frame	data/chars/players/blood/FALL302.gif
-	frame	data/chars/players/blood/FALL300.gif
-	frame	data/chars/players/blood/FALL301.gif
-		offset  67  115
-	frame	data/chars/players/blood/FALL02.gif
+	drawmethod tintmode 6
+	drawmethod tintcolor 255
+	frame	data/chars/players/blood/fall00.gif
+		Attack1  0
+	@cmd	bindSpawn "Burn01" 0 30 1 
+	frame	data/chars/players/blood/fall01.gif
+		delay  10
+	Nodrawmethod
+	frame	data/chars/players/blood/fall02.gif
+
 
 
 anim rise
@@ -517,7 +544,7 @@ anim special2
 	frame  data/chars/players/blood/a303.gif
 		Attack1  0
 	frame	data/chars/players/blood/a303.gif
-		attack2  99  -1  78  117  15  1  1  0  0  20
+		attack2  99  -1  78  117  25  1  1  0  25  20
 	frame  data/chars/players/blood/a303.gif
 	frame  data/chars/players/blood/a303.gif
 
@@ -537,7 +564,7 @@ anim special
 		Attack1  0
 	frame	data/chars/players/blood/SP100.gif
 		delay  60
-		attack2  30  -44  72  166  20  1  1  0  0  20
+		attack2  30  -44  72  166  30  1  1  0  25  20
 	frame	data/chars/players/blood/SP101.gif
 
 

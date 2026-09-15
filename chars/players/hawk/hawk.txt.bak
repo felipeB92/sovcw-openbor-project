@@ -7,7 +7,7 @@ mprate 1
 Falldie 2
 Grabdistance 18
 riseinv				0.4 1
-speed	7
+speed	10
 type	player
 gfxshadow	1
 candamage			enemy obstacle
@@ -97,7 +97,7 @@ anim idle
 
 anim walk
 	loop	1
-	delay	14
+	delay	11
 	offset	72 116
 	bbox	63 25 28 77
 	frame	data/chars/players/Hawk/walk00.gif
@@ -117,14 +117,39 @@ anim get
 	frame	data/chars/players/Hawk/Get.gif
 
 
+anim Follow10
+	loop	0
+	delay	20
+	offset	72 115
+        Sound	data/sounds/food.wav
+        hitfx	data/sounds/sILENCIO.wav
+	@cmd	depost 0
+	@cmd	throw 15 0.7 0.7 1 0 -1
+	@cmd	clearL
+	attack1  60  51  33  61  0  1  0  0  0  15
+	frame	data/chars/players/Hawk/Get.gif
+
+anim Follow11
+	loop	0
+	delay	20
+	offset	72 115
+        Sound	data/sounds/Coin.wav
+        hitfx	data/sounds/sILENCIO.wav
+	@cmd	depost 0
+	@cmd	throw 15 0.7 0.7 1 0 -1
+	@cmd	clearL
+	attack1  60  51  33  61  0  1  0  0  0  15
+	frame	data/chars/players/Hawk/Get.gif
+
+
 anim jump
 	loop	0
 	delay	15
 	offset	74 115
 	bbox	62 35 36 74
 	frame	data/chars/players/Hawk/Jump00.gif
-	frame	data/chars/players/Hawk/Jump00.gif
-	frame	data/chars/players/Hawk/Jump00.gif
+	frame	data/chars/players/Hawk/Jump01.gif
+	frame	data/chars/players/Hawk/Jump01.gif
 
 
 anim jumpattack
@@ -470,19 +495,22 @@ anim fall6 #Shok
 	frame	data/chars/players/Hawk/fall02.gif
 
 
-anim fall7 #Burn
+anim fall7 #burn
 	loop	0
-	offset	65 97
-	delay	10
+	offset	72 115
+	delay	20
         hitfx	data/sounds/golpes/Forte.wav
 		attack  0
-	frame	data/chars/players/Hawk/FALL300.gif
-	frame	data/chars/players/Hawk/FALL301.gif
-	frame	data/chars/players/Hawk/FALL302.gif
-	frame	data/chars/players/Hawk/FALL300.gif
-	frame	data/chars/players/Hawk/FALL301.gif
-		offset  83  100
-	frame	data/chars/players/Hawk/FALL02.gif
+	drawmethod tintmode 6
+	drawmethod tintcolor 255
+	frame	data/chars/players/Hawk/fall00.gif
+		Attack1  0
+		offset  76  100
+	@cmd	bindSpawn "Burn01" 0 30 1 
+	frame	data/chars/players/Hawk/fall01.gif
+		delay  10
+	Nodrawmethod
+	frame	data/chars/players/Hawk/fall02.gif
 
 
 anim rise
