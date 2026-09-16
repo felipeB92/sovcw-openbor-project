@@ -46,7 +46,7 @@ spawn  Lixo02
 
 spawn  Slum_
 MAp 4
-health 70
+health 45
 	coords  378 175
 	at  0
 
@@ -56,13 +56,13 @@ spawn  Act
 
 spawn  Vice__
 MAp 3
-health 70
+health 45
 	coords  474 152
 	at  0
 
 spawn  Garnet
 MAp 3
-health 70
+health 45
 	coords  600 220
 	at  150
 
@@ -74,49 +74,49 @@ at 244
 
 spawn  Balu
 MAp 3
-health 50
+health 35
 	coords  600 220
 	at  244
 
 
 spawn  Donovan
 MAp 3
-health 50
+health 35
 	coords  -100 250
 	at  244
 
 
 spawn  Galsia
 MAp 3
-health 50
+health 35
 	coords  600 250
 	at  244
 
 
 spawn  Signal
 MAp 3
-health 70
+health 45
 	coords  -100 220
 	at  244
 
 
 spawn  Balu
 MAp 3
-health 50
+health 35
 	coords  600 220
 	at  244
 
 
 spawn  Donovan
 MAp 2
-health 50
+health 35
 	coords  -100 250
 	at  244
 
 
 spawn  Galsia
 MAp 2
-health 50
+health 35
 	coords  600 250
 	at  244
 
@@ -126,13 +126,13 @@ spawn  Knife
 
 spawn  Galsia
 MAp 1
-health 50
+health 35
 	coords  -100 220
 	at  244
 
 spawn  Signal
 MAp 4
-health 70
+health 45
 	coords  -100 220
 	at  244
 
@@ -156,7 +156,7 @@ Item Gold
 
 
 spawn  Skiner_B
-health 70
+health 45
 	coords  600 205
 	at  400
 
@@ -173,7 +173,7 @@ Map 2
 	at  500
 
 spawn  Fog_B
-health 70
+health 45
 	coords  -100 220
 	at  500
 
@@ -192,7 +192,7 @@ Map 1
 	at  500
 
 spawn  Fog_B
-health 70
+health 45
 	coords  600 220
 	at  500
 
@@ -215,24 +215,24 @@ group 6 6
 at 501
 
 spawn  Vice__
-health 70
+health 45
 	coords  563 152
 	at  501
 
 spawn  Slum_
-health 70
+health 45
 	coords  608 176
 	at  501
 
 spawn  Fog__
 MAp 1
-health 70
+health 45
 	coords  680 160
 	at  501
 
 spawn  Garnet_
 MAp 1
-health 70
+health 45
 	coords  740 159
 	at  501
 
@@ -245,14 +245,14 @@ at 1000
 
 spawn  Ruy
 MAp 1
-health 150
+health 100
 	coords  -100 250
 	at  1000
 
 spawn  Ruy
 Alias Kenny
 MAp 2
-health 150
+health 100
 	coords  600 220
 	at  1000
 
@@ -261,25 +261,25 @@ Coords 160 165
 	at  1000
 
 spawn  Garnet
-health 70
+health 45
 	coords  -100 250
 	at  1000
 
 spawn  Slum
 MAp 1
-health 70
+health 45
 	coords  -100 220
 	at  1000
 
 spawn  Vice
 MAp 1
-health 70
+health 45
 	coords  600 220
 	at  1000
 
 spawn  Balu
 MAp 4
-health 70
+health 45
 	coords  600 250
 	at  1000
 
@@ -306,25 +306,25 @@ Item Apple
 
 spawn  Costa
 MAp 1
-health 70
+health 45
 	coords  600 220
 	at  1300
 
 spawn  Costa
 MAp 2
-health 70
+health 45
 	coords  600 220
 	at  1350
 
 spawn  Chan
 MAp 1
-health 70
+health 45
 	coords  600 220
 	at  1400
 
 spawn  Chan
 MAp 2
-health 70
+health 45
 	coords  600 220
 	at  1450
 
@@ -341,13 +341,13 @@ spawn  Pipe
 
 spawn  Fog
 MAp 2
-health 70
+health 45
 	coords  -100 220
 	at  1550
 
 spawn  Jhonny
 MAp 2
-health 70
+health 45
 	coords  600 250
 	at  1550
 
@@ -358,7 +358,7 @@ spawn  Knife
 
 spawn  Galsia
 MAp 2
-health 50
+health 35
 	coords  -100 250
 	at  1550
 
@@ -369,26 +369,26 @@ spawn  Pipe
 
 spawn  Donovan
 MAp 2
-health 50
+health 35
 	coords  600 250
 	at  1550
 
 
 spawn  Fog_b
-health 70
+health 45
 	coords  600 250
 	at  1550
 
 
 spawn  Signal
 MAp 2
-health 70
+health 45
 	coords  600 250
 	at  1550
 
 spawn  Ralf
 MAp 2
-health 70
+health 45
 	coords  600 250
 	at  1550
 
@@ -412,27 +412,27 @@ Item Cash
 
 spawn  Garnet__
 MAp 1
-health 70
+health 45
 	coords  670 167
 	at  1551
 
 spawn  Garnet__
 Flip 1
 MAp 2
-health 70
+health 45
 	coords  735 178
 	at  1551
 
 spawn  Garnet__
 Flip 1
 MAp 3
-health 150
+health 100
 	coords  794 167
 	at  1551
 
 spawn  Nora_
 MAp 2
-health 150
+health 100
 	coords  904 213
 	at  1551
 
@@ -442,7 +442,7 @@ spawn  Act
 
 spawn  Electra_
 MAp 2
-health 70
+health 45
 	coords  886 241
 	at  1551
 
@@ -454,7 +454,7 @@ at 2100
 
 spawn  Garnet
 MAp 2
-health 70
+health 45
 	coords  600 241
 	at  2100
 
@@ -464,19 +464,19 @@ spawn  Act
 
 spawn  Balu
 MAp 2
-health 70
+health 45
 	coords  -100 241
 	at  2100
 
 spawn  Garnet
 MAp 2
-health 70
+health 45
 	coords  -100 221
 	at  2100
 
 spawn  Balu
 MAp 2
-health 70
+health 45
 	coords  600 220
 	at  2100
 
@@ -486,19 +486,6 @@ spawn  ActE
 
 spawn  ActN
 	coords  250 250
-	at  2101
-
-spawn  Slum_
-Flip 1
-MAp 2
-health 70
-	coords  565 178
-	at  2101
-
-spawn  Slum_
-MAp 3
-health 70
-	coords  640 178
 	at  2101
 
 
@@ -515,19 +502,19 @@ spawn  ActE
 
 spawn  Galsia
 MAp 2
-health 50
+health 35
 	coords  600 250
 	at  2500
 
 spawn  Skiner
 MAp 1
-health 50
+health 35
 	coords  600 220
 	at  2500
 
 spawn  Galsia
 MAp 2
-health 50
+health 35
 	coords  -100 250
 	at  2500
 
@@ -537,33 +524,33 @@ spawn  Act
 
 spawn  Vice
 MAp 2
-health 50
+health 35
 	coords  -100 220
 	at  2500
 
 
 spawn  Galsia
 MAp 2
-health 50
+health 35
 	coords  600 250
 	at  2500
 
 spawn  Skiner
 MAp 1
-health 50
+health 35
 	coords  600 220
 	at  2500
 
 spawn  Galsia
 MAp 2
-health 50
+health 35
 	coords  -100 250
 	at  2500
 
 
 spawn  Vice
 MAp 2
-health 50
+health 35
 	coords  -100 220
 	at  2500
 
@@ -597,14 +584,14 @@ at 2600
 
 spawn  Abadede__
 MAp 4
-health 250
+health 300
 Boss 1
 	coords  550 205
 	at  2600
 
 spawn  Abadede__
 MAp 3
-health 250
+health 300
 Flip 1
 Boss 1
 	coords  -150 240
@@ -612,74 +599,74 @@ Boss 1
 
 spawn  Vice
 MAp 2
-health 50
+health 35
 	coords  -100 250
 	at  2600
 
 spawn  Slum
 MAp 1
-health 50
+health 35
 	coords  -100 220
 	at  2600
 
 spawn  Signal
 MAp 2
-health 50
+health 35
 	coords  550 250
 	at  2600
 
 spawn  GArnet
 MAp 1
-health 50
+health 35
 	coords  550 220
 	at  2600
 
 
 spawn  Nora
 MAp 3
-health 50
+health 35
 	coords  -100 250
 	at  2600
 
 spawn  Electra
 MAp 1
-health 50
+health 35
 	coords  -100 220
 	at  2600
 
 spawn  Balu
 MAp 2
-health 50
+health 35
 	coords  550 250
 	at  2600
 
 spawn  Fog
 MAp 1
-health 50
+health 35
 	coords  550 220
 	at  2600
 
 spawn  Donovan
 MAp 3
-health 50
+health 35
 	coords  -100 250
 	at  2600
 
 spawn  Galsia
 MAp 1
-health 50
+health 35
 	coords  -100 220
 	at  2600
 
 spawn  Jhonny
 MAp 2
-health 50
+health 35
 	coords  550 250
 	at  2600
 
 spawn  Costa
 MAp 1
-health 50
+health 35
 	coords  550 220
 	at  2600
 

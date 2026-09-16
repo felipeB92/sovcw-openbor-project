@@ -264,7 +264,7 @@ anim attack3
 		Attack1  0
 	frame	data/chars/players/Adam/a301.gif
 		delay  20
-		attack2  55  60  72  23  10  1  0  0  15  7
+		attack2  55  60  72  23  10  1  0  0  15  12
 	frame	data/chars/players/Adam/a302.gif
 		delay  6
 		Attack1  0

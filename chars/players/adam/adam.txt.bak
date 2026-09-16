@@ -121,7 +121,7 @@ anim Follow10
 	@cmd	depost 0
 	@cmd	throw 15 0.7 0.7 1 0 -1
 	@cmd	clearL
-	attack1  60  51  33  61  0  1  0  0  0  15
+	attack1  55  30  39  60  0  1  0  0  0  15
 	frame	data/chars/players/Adam/Get.gif
 
 anim Follow11
@@ -133,7 +133,7 @@ anim Follow11
 	@cmd	depost 0
 	@cmd	throw 15 0.7 0.7 1 0 -1
 	@cmd	clearL
-	attack1  60  51  33  61  0  1  0  0  0  15
+	attack1  59  31  33  61  0  1  0  0  0  15
 	frame	data/chars/players/Adam/Get.gif
 
 
@@ -531,11 +531,10 @@ anim fall7 #burn
 	frame	data/chars/players/Adam/fall00.gif
 		Attack1  0
 		offset  52  120
-	@cmd	bindSpawn "Burn01" 0 30 1 
+	@cmd	bindSpawn "Burn01" 0 30 1
 	frame	data/chars/players/Adam/fall01.gif
 		offset  66  88
 		delay  10
-	Nodrawmethod
 	frame	data/chars/players/Adam/fall02.gif
 
 
