@@ -104,7 +104,7 @@ custfade 100
 
 z 190 270
 
-file	data/levels/Coop/03a.txt
+file	data/levels/t.txt
 #-------------------
 
 set	    Arcade
