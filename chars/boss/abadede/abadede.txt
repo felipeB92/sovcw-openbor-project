@@ -420,6 +420,7 @@ anim Follow4
 	offset	152 202
 		Attack1  0
         @cmd dasher 0 0 0
+	jumpframe  24  3  2  0
 	frame	data/chars/Boss/Abadede/fs100.gif
 	frame	data/chars/Boss/Abadede/fs101.gif
 	frame	data/chars/Boss/Abadede/fs102.gif
@@ -429,19 +430,46 @@ anim Follow4
 	frame	data/chars/Boss/Abadede/Slam01.gif
 	frame	data/chars/Boss/Abadede/Slam02.gif
 	frame	data/chars/Boss/Abadede/Slam03.gif
+		offset  116  202
+		move  -10
 	frame	data/chars/Boss/Abadede/Slam05.gif
+		offset  66  202
 	frame	data/chars/Boss/Abadede/Slam06.gif
+		offset  149  200
+		move  0
 	frame	data/chars/Boss/Abadede/Slam00.gif
 	frame	data/chars/Boss/Abadede/Slam01.gif
 	frame	data/chars/Boss/Abadede/Slam02.gif
 	frame	data/chars/Boss/Abadede/Slam03.gif
+		offset  110  202
+		move  -10
 	frame	data/chars/Boss/Abadede/Slam05.gif
 	frame	data/chars/Boss/Abadede/Slam06.gif
+		offset  149  200
+		move  0
+		delay  10
 	frame	data/chars/Boss/Abadede/Slam00.gif
-	frame	data/chars/Boss/Abadede/throw00.gif
-	frame	data/chars/Boss/Abadede/throw00.gif
-	frame	data/chars/Boss/Abadede/throw02.gif
-	frame	data/chars/Boss/Abadede/throw02.gif
+	frame	data/chars/Boss/Abadede/upper00.gif
+	frame	data/chars/Boss/Abadede/upper01.gif
+	frame	data/chars/Boss/Abadede/upper02.gif
+	frame	data/chars/Boss/Abadede/upper02.gif
+	frame	data/chars/Boss/Abadede/upper02.gif
+	frame	data/chars/Boss/Abadede/upper02.gif
+	frame	data/chars/Boss/Abadede/Ja100.gif
+	frame	data/chars/Boss/Abadede/Sp00.gif
+		delay  4
+	frame	data/chars/Boss/Abadede/Sp01.gif
+	frame	data/chars/Boss/Abadede/Sp02.gif
+	frame	data/chars/Boss/Abadede/Sp03.gif
+	frame	data/chars/Boss/Abadede/Sp04.gif
+	frame	data/chars/Boss/Abadede/Sp01.gif
+	frame	data/chars/Boss/Abadede/Sp02.gif
+	frame	data/chars/Boss/Abadede/Sp03.gif
+	frame	data/chars/Boss/Abadede/Sp04.gif
+		delay  20
+	frame	data/chars/Boss/Abadede/Sp05.gif
+	frame	data/chars/Boss/Abadede/Sp06.gif
+
 
 
 anim Special
