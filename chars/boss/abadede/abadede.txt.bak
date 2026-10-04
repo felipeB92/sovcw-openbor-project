@@ -350,7 +350,7 @@ anim Freespecial6
 		Followcond  1
 		followanim  4
         hitflash	Forte
-		attack2  117  115  77  49  0  0  0  0  40  15
+		attack2  117  115  77  49  0  0  0  0  0  15
         hitfx	data/sounds/golpes/Forte.wav
 	frame	data/chars/Boss/Abadede/special00.gif
 	frame	data/chars/Boss/Abadede/special01.gif
@@ -393,75 +393,98 @@ anim Freespecial6
 	frame	data/chars/Boss/Abadede/Run03.gif
 	frame	data/chars/Boss/Abadede/Run04.gif
         @cmd dasher 1 -5 0
-		Attack1  0
 	frame	data/chars/Boss/Abadede/Run00.gif
 	frame	data/chars/Boss/Abadede/Run01.gif
 	frame	data/chars/Boss/Abadede/Run02.gif
 	frame	data/chars/Boss/Abadede/Run03.gif
 	frame	data/chars/Boss/Abadede/Run04.gif
 	offset	146 200
-	Attack1  0
         Sound	data/sounds/golpes/Soco.wav
         hitfx	data/sounds/golpes/Forte.wav
         @cmd dasher 0 0 0
 	frame	data/chars/Boss/Abadede/fs100.gif
 	sound	data/Sounds/Abadede1.wav
 	frame	data/chars/Boss/Abadede/fs101.gif
-		attack1  146  98  72  90  5  0  0  0  0  15
 	frame	data/chars/Boss/Abadede/fs102.gif
-		Attack1  0
+		attack1  141  101  75  52  0  0  0  0  0  15
 	frame	data/chars/Boss/Abadede/fs103.gif
-		attack2  146  98  72  90  15  1  0  0  0  15
 	frame	data/chars/Boss/Abadede/fs104.gif
 
 anim Follow4
 	loop	0
-	delay	20
+	delay	1
 	offset	152 202
-		Attack1  0
         @cmd dasher 0 0 0
-	frame	data/chars/Boss/Abadede/fs100.gif
-	frame	data/chars/Boss/Abadede/fs101.gif
-	frame	data/chars/Boss/Abadede/fs102.gif
-	frame	data/chars/Boss/Abadede/fs103.gif
-	frame	data/chars/Boss/Abadede/fs104.gif
-	frame	data/chars/Boss/Abadede/Slam00.gif
-	frame	data/chars/Boss/Abadede/Slam01.gif
-	frame	data/chars/Boss/Abadede/Slam02.gif
-	frame	data/chars/Boss/Abadede/Slam03.gif
-		offset  116  202
-		move  -10
-	frame	data/chars/Boss/Abadede/Slam05.gif
-		offset  66  202
-	frame	data/chars/Boss/Abadede/Slam06.gif
-		offset  149  200
-		move  0
-	frame	data/chars/Boss/Abadede/Slam00.gif
-	frame	data/chars/Boss/Abadede/Slam01.gif
-	frame	data/chars/Boss/Abadede/Slam02.gif
-	frame	data/chars/Boss/Abadede/Slam03.gif
-		offset  110  202
-		move  -10
-	frame	data/chars/Boss/Abadede/Slam05.gif
-	frame	data/chars/Boss/Abadede/Slam06.gif
-		offset  149  200
-		move  0
-	frame	data/chars/Boss/Abadede/Slam00.gif
-	frame	data/chars/Boss/Abadede/upper00.gif
-	frame	data/chars/Boss/Abadede/upper01.gif
-	frame	data/chars/Boss/Abadede/upper02.gif
-	frame	data/chars/Boss/Abadede/Jump100.gif
-	frame	data/chars/Boss/Abadede/Sp00.gif
-	frame	data/chars/Boss/Abadede/Sp01.gif
-	frame	data/chars/Boss/Abadede/Sp02.gif
-	frame	data/chars/Boss/Abadede/Sp03.gif
-	frame	data/chars/Boss/Abadede/Sp04.gif
-	frame	data/chars/Boss/Abadede/Sp01.gif
-	frame	data/chars/Boss/Abadede/Sp02.gif
-	frame	data/chars/Boss/Abadede/Sp03.gif
-	frame	data/chars/Boss/Abadede/Sp04.gif
-	frame	data/chars/Boss/Abadede/Sp05.gif
-	frame	data/chars/Boss/Abadede/Sp06.gif
+	jumpframe  24  3  2  0
+	frame	data/chars/Boss/Abadede/sp200.gif
+	@cmd	slamstart
+	delay	10
+	@cmd	position 1 0 0 1 -1
+	frame	data/chars/Boss/Abadede/sp200.gif
+	@cmd	position 0 0 0 1 -1
+	frame	data/chars/Boss/Abadede/sp201.gif
+	@cmd	position 2 0 0 1 -1
+	frame	data/chars/Boss/Abadede/sp202.gif
+	frame	data/chars/Boss/Abadede/sp203.gif
+	frame	data/chars/Boss/Abadede/sp204.gif
+	@cmd	position 2 0 0 1 -1
+	frame	data/chars/Boss/Abadede/sp205.gif
+	@cmd	position 4 0 0 1 -1
+	frame	data/chars/Boss/Abadede/sp206.gif
+	frame	data/chars/Boss/Abadede/sp207.gif
+	@cmd	position 5 0 0 1 -1
+	frame	data/chars/Boss/Abadede/sp208.gif
+	@cmd	position 3 0 0 1 -1
+	frame	data/chars/Boss/Abadede/sp209.gif
+	frame	data/chars/Boss/Abadede/sp210.gif
+	@cmd	position 1 0 0 1 -1
+	frame	data/chars/Boss/Abadede/sp211.gif
+	@cmd	position 4 0 0 1 -1
+	frame	data/chars/Boss/Abadede/sp212.gif
+	@cmd	position 4 0 0 1 -1
+	frame	data/chars/Boss/Abadede/sp213.gif
+	@cmd	position 5 0 0 1 -1
+	frame	data/chars/Boss/Abadede/sp214.gif
+	@cmd	position 3 0 0 1 -1
+	frame	data/chars/Boss/Abadede/sp215.gif
+	frame	data/chars/Boss/Abadede/sp216.gif
+	@cmd	position 1 0 0 1 -1
+	frame	data/chars/Boss/Abadede/sp217.gif
+	@cmd	position 1 0 0 1 -1
+	frame	data/chars/Boss/Abadede/sp218.gif
+	@cmd	position 1 0 0 1 -1
+	frame	data/chars/Boss/Abadede/sp219.gif
+	@cmd	position 1 0 0 1 -1
+	frame	data/chars/Boss/Abadede/sp220.gif
+	@cmd	position 1 0 0 1 -1
+	frame	data/chars/Boss/Abadede/sp220.gif
+	@cmd	position 1 0 0 1 -1
+	frame	data/chars/Boss/Abadede/sp220.gif
+	sound  data/sounds/golpes/Grab.wav
+	@cmd	position 1 0 0 1 -1
+	frame	data/chars/Boss/Abadede/sp221.gif
+	@cmd	position 6 0 0 1 -1
+	frame	data/chars/Boss/Abadede/sp222.gif
+	@cmd	position 8 0 0 1 -1
+	frame	data/chars/Boss/Abadede/sp223.gif
+	@cmd	position 1 0 0 1 -1
+	frame	data/chars/Boss/Abadede/sp224.gif
+	@cmd	position 1 0 0 1 -1
+	frame	data/chars/Boss/Abadede/sp221.gif
+	@cmd	position 6 0 0 1 -1
+	frame	data/chars/Boss/Abadede/sp222.gif
+	@cmd	position 8 0 0 1 -1
+	frame	data/chars/Boss/Abadede/sp223.gif
+	@cmd	position 1 0 0 1 -1
+	frame	data/chars/Boss/Abadede/sp224.gif
+	@cmd	depost 0
+	@cmd	throw 20 5 2 2 0 -1
+	@cmd  clearL
+		delay  20
+		sound  data/sounds/SLAM.wav
+	sound  data/sounds/golpes/Grab.wav
+	frame	data/chars/Boss/Abadede/sp225.gif
+	frame	data/chars/Boss/Abadede/sp226.gif
 
 
 
