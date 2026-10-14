@@ -1,6 +1,6 @@
 name	Kurt
 health	300
-mp 30
+mp 60
 mprate 1
 #secret 1
 blockodds 1
@@ -19,17 +19,23 @@ weapons Kurt_Knife Kurt_Sword Kurt_pipe Kurt_Kunai
 icon	data/chars/Boss/Kurt/icon.gif 1
 diesound data/Sounds/Die4.wav
 running	20	3	2	1	1
-onblockwscript	data/scripts/bounceF.c
-#animationscript 	data/scripts/ani0020.h
-animationscript		data/scripts/drago.c
-ondrawscript 		data/scripts/Enemy_ondrawscript.c
 
+animationscript		data/scripts/Felipe.c
+
+Load Super3
 
 
 remap data/chars/Boss/Kurt/idle00.gif data/chars/Boss/Kurt/MAp01.gif
 remap data/chars/Boss/Kurt/idle00.gif data/chars/Boss/Kurt/MAp02.gif
 remap data/chars/Boss/Kurt/idle00.gif data/chars/Boss/Kurt/MAp03.gif
 remap data/chars/Boss/Kurt/idle00.gif data/chars/Boss/Kurt/MAp04.gif
+
+anim Pain5
+	loop	0
+	delay	12
+	offset	74 115
+	bbox	65 33 28 83
+	frame   data/chars/Boss/Kurt/idle00.gif
 
 anim idle
 	loop	1
@@ -87,7 +93,6 @@ anim attack1
         hitflash	Fraco
 	bbox	53 31 34 90
 		Attack1  0
-        Sound	data/chars/Boss/Kurt/A1.WAV
         hitfx	data/sounds/golpes/Fraco.wav
 	frame	data/chars/Boss/Kurt/a100.gif
 		delay  6
@@ -103,11 +108,12 @@ anim attack1
 
 anim attack2
 	loop	0
-	delay	25
+	delay	15
 	offset	74 115
         hitflash	MEdio
 		Attack1  0
         Sound	data/sounds/golpes/Soco.wav
+	Sound  data/chars/Boss/Kurt/a1.wav
         hitfx	data/sounds/golpes/Medio.wav
 	frame	data/chars/Boss/Kurt/a200.gif
 		attack2  72  38  66  34  10  0  0  0  0  10
@@ -121,7 +127,7 @@ anim attack3
 	loop	0
 	delay	8
 	offset	78 115
-        Sound	data/chars/Boss/Kurt/A3.WAV
+        Sound	data/chars/Boss/Kurt/A2.WAV
         hitflash	Forte
         hitfx	data/sounds/golpes/Forte.wav
 		Attack1  0
@@ -169,6 +175,7 @@ anim Freespecial
         hitflash	Forte
 		Attack1  0
         Sound	data/sounds/golpes/Soco.wav
+	Sound  data/chars/Boss/Kurt/a2.wav
         hitfx	data/sounds/golpes/Forte.wav
 	frame	data/chars/Boss/Kurt/a200.gif
 		attack1  72  38  66  34  10  1  0  0  0  10
@@ -232,6 +239,7 @@ anim Freespecial3
 	frame	data/chars/Boss/Kurt/ja100.gif
 	frame	data/chars/Boss/Kurt/ja101.gif
 		attack1  64  32  83  81  15  1  0  0  0  15
+	Sound  data/chars/Boss/Kurt/a3.wav
 	frame	data/chars/Boss/Kurt/ja102.gif
 		attack1  63  55  91  60  15  1  0  0  0  15
 	frame	data/chars/Boss/Kurt/a305.gif
@@ -255,6 +263,7 @@ anim special2
         hitflash	Forte
         hitfx	data/sounds/golpes/Forte.wav
 		Attack1  0
+	Sound  data/chars/Boss/Kurt/a3.wav
 	frame	data/chars/Boss/Kurt/a401.gif
 		delay  8
 	frame	data/chars/Boss/Kurt/a402.gif
@@ -281,6 +290,7 @@ anim special
         hitflash	Forte
         hitfx	data/sounds/golpes/Forte.wav
 		Attack1  0
+	Sound  data/chars/Boss/Kurt/a3.wav
 	frame	data/chars/Boss/Kurt/a401.gif
 		delay  8
 	frame	data/chars/Boss/Kurt/a402.gif
@@ -310,6 +320,7 @@ anim Freespecial4
 		move  5
         hitflash	Forte
         hitfx	data/sounds/golpes/Forte.wav
+	Sound  data/chars/Boss/Kurt/a3.wav
 	frame	data/chars/Boss/Kurt/a401.gif
 	frame	data/chars/Boss/Kurt/a402.gif
 		attack1  57  55  92  33  15  1  0  0  0  20
@@ -332,6 +343,8 @@ anim Freespecial4
 
 anim Freespecial5
 	loop	0
+        energycost 10 1
+        MpOnly 1
         Range 200 300
         RangeZ -30 -1
 		offset  72  118
@@ -348,6 +361,7 @@ anim Freespecial5
 		delay  6
 	frame  data/chars/Boss/Kurt/a401.gif
 	frame  data/chars/Boss/Kurt/a401.gif
+	Sound  data/chars/Boss/Kurt/Sp.wav
 	frame	data/chars/Boss/Kurt/a402.gif
 		attack1  57  55  92  33  15  1  0  0  0  20
 	frame	data/chars/Boss/Kurt/a403.gif
@@ -437,6 +451,8 @@ anim Freespecial6
 	loop	0
         Range 200 300
         RangeZ 0 30
+        energycost 10 1
+        MpOnly 1
 		offset  72  118
 		delay  6
 		move  0
@@ -449,6 +465,7 @@ anim Freespecial6
 		delay  50
 	frame  data/chars/Boss/Kurt/a302.gif
 		delay  6
+	Sound  data/chars/Boss/Kurt/Sp.wav
 	frame  data/chars/Boss/Kurt/a401.gif
 	frame  data/chars/Boss/Kurt/a401.gif
 	frame	data/chars/Boss/Kurt/a402.gif
@@ -537,6 +554,105 @@ anim Freespecial6
 	frame	data/chars/Boss/Kurt/a411.gif
 
 
+anim Freespecial7
+	loop	0
+        Range -25 35
+        RangeZ -25 25
+        energycost 10 1
+        MpOnly 1
+		offset  72  118
+		delay  6
+		move  0
+        hitflash	Forte
+        hitfx	data/sounds/golpes/Forte.wav
+	frame	data/chars/Boss/Kurt/a300.gif
+		hitflash  Forte
+		hitfx  data/sounds/golpes/Forte.wav
+	frame  data/chars/Boss/Kurt/a301.gif
+		delay  5
+	drawmethod tintmode 6
+	drawmethod tintcolor 255
+	@cmd  spawn01  "Super3"  0  30  1
+	frame  data/chars/Boss/Kurt/a302.gif
+		delay  6
+	Sound  data/chars/Boss/Kurt/Sp.wav
+	frame  data/chars/Boss/Kurt/a401.gif
+	frame  data/chars/Boss/Kurt/a401.gif
+	frame	data/chars/Boss/Kurt/a402.gif
+		attack2  54  52  136  36  50  1  0  0  25  25
+	frame	data/chars/Boss/Kurt/a403.gif
+	frame	data/chars/Boss/Kurt/a404.gif
+		attack2  -13  50  116  38  50  1  0  0  25  25
+	frame	data/chars/Boss/Kurt/a405.gif
+        Sound	data/sounds/whoosh2.wav
+	frame	data/chars/Boss/Kurt/a406.gif
+	frame	data/chars/Boss/Kurt/a407.gif
+		delay  3
+		attack2  -2  57  161  28  50  1  0  0  25  25
+	frame	data/chars/Boss/Kurt/a408.gif
+        Sound	data/sounds/whoosh2.wav
+	frame	data/chars/Boss/Kurt/a409.gif
+	frame	data/chars/Boss/Kurt/a410.gif
+	frame	data/chars/Boss/Kurt/a405.gif
+        Sound	data/sounds/whoosh2.wav
+	frame	data/chars/Boss/Kurt/a406.gif
+	frame	data/chars/Boss/Kurt/a407.gif
+	frame	data/chars/Boss/Kurt/a408.gif
+        Sound	data/sounds/whoosh2.wav
+	frame	data/chars/Boss/Kurt/a409.gif
+	frame	data/chars/Boss/Kurt/a410.gif
+	frame	data/chars/Boss/Kurt/a405.gif
+	frame	data/chars/Boss/Kurt/a408.gif
+        Sound	data/sounds/whoosh2.wav
+	frame	data/chars/Boss/Kurt/a409.gif
+		Attack1  0
+	frame	data/chars/Boss/Kurt/a410.gif
+		attack2  -2  57  161  28  50  1  0  0  25  25
+	frame	data/chars/Boss/Kurt/a406.gif
+	frame	data/chars/Boss/Kurt/a407.gif
+	frame	data/chars/Boss/Kurt/a408.gif
+        Sound	data/sounds/whoosh2.wav
+	frame	data/chars/Boss/Kurt/a409.gif
+	frame	data/chars/Boss/Kurt/a410.gif
+	frame	data/chars/Boss/Kurt/a405.gif
+        Sound	data/sounds/whoosh2.wav
+	frame	data/chars/Boss/Kurt/a406.gif
+	frame	data/chars/Boss/Kurt/a407.gif
+	frame	data/chars/Boss/Kurt/a408.gif
+        Sound	data/sounds/whoosh2.wav
+	frame	data/chars/Boss/Kurt/a409.gif
+	frame	data/chars/Boss/Kurt/a410.gif
+	frame	data/chars/Boss/Kurt/a405.gif
+	frame	data/chars/Boss/Kurt/a406.gif
+	frame	data/chars/Boss/Kurt/a407.gif
+	frame	data/chars/Boss/Kurt/a408.gif
+        Sound	data/sounds/whoosh2.wav
+	frame	data/chars/Boss/Kurt/a409.gif
+	frame	data/chars/Boss/Kurt/a410.gif
+	frame	data/chars/Boss/Kurt/a405.gif
+        Sound	data/sounds/whoosh2.wav
+	frame	data/chars/Boss/Kurt/a406.gif
+		delay  6
+	frame	data/chars/Boss/Kurt/a407.gif
+	frame	data/chars/Boss/Kurt/a408.gif
+        Sound	data/sounds/whoosh2.wav
+	frame	data/chars/Boss/Kurt/a409.gif
+	frame	data/chars/Boss/Kurt/a410.gif
+	frame	data/chars/Boss/Kurt/a405.gif
+        Sound	data/sounds/whoosh2.wav
+	frame	data/chars/Boss/Kurt/a406.gif
+		delay  9
+	frame	data/chars/Boss/Kurt/a407.gif
+	frame	data/chars/Boss/Kurt/a408.gif
+        Sound	data/sounds/whoosh2.wav
+	frame	data/chars/Boss/Kurt/a409.gif
+	frame	data/chars/Boss/Kurt/a410.gif
+		Attack1  0
+	Nodrawmethod
+	frame	data/chars/Boss/Kurt/a411.gif
+
+
+
 
 
 
@@ -568,7 +684,7 @@ anim pain4
 	delay	5
 	frame	data/chars/Boss/Kurt/pain01.gif
 		delay  900
-		offset  70  112
+		offset  71  112
 	frame	data/chars/Boss/Kurt/pain01.gif
 
 
@@ -588,7 +704,7 @@ anim pain2
 	delay	5
 	frame	data/chars/Boss/Kurt/pain02.gif
 		delay  25
-		offset  152  187
+		offset  70  111
 	frame	data/chars/Boss/Kurt/pain02.gif
 
 
@@ -641,19 +757,22 @@ anim fall6 #Shok
 	frame	data/chars/Boss/Kurt/fall02.gif
 
 
-anim fall7 #Burn
+anim fall7 #burn
 	loop	0
-	offset	233 164
-	delay	10
+	offset	75 115
+	delay	20
         hitfx	data/sounds/golpes/Forte.wav
 		attack  0
-	frame	data/chars/Boss/Kurt/FALL300.gif
-	frame	data/chars/Boss/Kurt/FALL301.gif
-	frame	data/chars/Boss/Kurt/FALL302.gif
-	frame	data/chars/Boss/Kurt/FALL300.gif
-	frame	data/chars/Boss/Kurt/FALL301.gif
-		offset  73  100
-	frame	data/chars/Boss/Kurt/FALL02.gif
+	drawmethod tintmode 6
+	drawmethod tintcolor 255
+	frame	data/chars/Boss/Kurt/fall00.gif
+		Attack1  0
+		offset  91  109
+	@cmd	bindSpawn "Burn01" 0 30 1
+	frame	data/chars/Boss/Kurt/fall01.gif
+		delay  10
+		offset  71  101
+	frame	data/chars/Boss/Kurt/fall02.gif
 
 
 anim rise

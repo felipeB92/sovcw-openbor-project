@@ -23,6 +23,8 @@ running	20	3	2	1	1
 animationscript		data/scripts/Felipe.c
 
 Load Super3
+Load abadedeP01
+Load abadedeP02
 
 
 remap data/chars/Boss/Abadede/idle00.gif data/chars/Boss/Abadede/MAp01.gif
@@ -349,37 +351,65 @@ anim Freespecial6
 	@cmd dasher 5 0 0
 	delay	4
 	frame	data/chars/Boss/Abadede/Run00.gif
+	@cmd  spawn01  "abadedeP01"  0  0  -1
 	sound	data/Sounds/Abadede1.wav
 	frame	data/chars/Boss/Abadede/Run01.gif
+	@cmd  spawn01  "abadedeP01"  0  0  -1
 	frame	data/chars/Boss/Abadede/Run02.gif
+	@cmd  spawn01  "abadedeP01"  0  0  -1
 	frame	data/chars/Boss/Abadede/Run03.gif
+	@cmd  spawn01  "abadedeP01"  0  0  -1
 	frame	data/chars/Boss/Abadede/Run04.gif
+	@cmd  spawn01  "abadedeP01"  0  0  -1
 	frame	data/chars/Boss/Abadede/Run00.gif
+	@cmd  spawn01  "abadedeP01"  0  0  -1
 	frame	data/chars/Boss/Abadede/Run01.gif
+	@cmd  spawn01  "abadedeP01"  0  0  -1
 	frame	data/chars/Boss/Abadede/Run02.gif
+	@cmd  spawn01  "abadedeP01"  0  0  -1
 	frame	data/chars/Boss/Abadede/Run03.gif
+	@cmd  spawn01  "abadedeP01"  0  0  -1
 	frame	data/chars/Boss/Abadede/Run04.gif
+	@cmd  spawn01  "abadedeP01"  0  0  -1
 	frame	data/chars/Boss/Abadede/Run00.gif
+	@cmd  spawn01  "abadedeP01"  0  0  -1
 	frame	data/chars/Boss/Abadede/Run01.gif
+	@cmd  spawn01  "abadedeP01"  0  0  -1
 	frame	data/chars/Boss/Abadede/Run02.gif
+	@cmd  spawn01  "abadedeP01"  0  0  -1
 	frame	data/chars/Boss/Abadede/Run03.gif
+	@cmd  spawn01  "abadedeP01"  0  0  -1
 	frame	data/chars/Boss/Abadede/Run04.gif
+	@cmd  spawn01  "abadedeP01"  0  0  -1
 	frame	data/chars/Boss/Abadede/Run00.gif
+	@cmd  spawn01  "abadedeP01"  0  0  -1
 	frame	data/chars/Boss/Abadede/Run01.gif
+	@cmd  spawn01  "abadedeP01"  0  0  -1
 	frame	data/chars/Boss/Abadede/Run02.gif
+	@cmd  spawn01  "abadedeP01"  0  0  -1
 	frame	data/chars/Boss/Abadede/Run03.gif
+	@cmd  spawn01  "abadedeP01"  0  0  -1
 	frame	data/chars/Boss/Abadede/Run04.gif
+	@cmd  spawn01  "abadedeP01"  0  0  -1
 	frame	data/chars/Boss/Abadede/Run00.gif
+	@cmd  spawn01  "abadedeP01"  0  0  -1
 	frame	data/chars/Boss/Abadede/Run01.gif
+	@cmd  spawn01  "abadedeP01"  0  0  -1
 	frame	data/chars/Boss/Abadede/Run02.gif
+	@cmd  spawn01  "abadedeP01"  0  0  -1
 	frame	data/chars/Boss/Abadede/Run03.gif
+	@cmd  spawn01  "abadedeP01"  0  0  -1
 	frame	data/chars/Boss/Abadede/Run04.gif
+	@cmd  spawn01  "abadedeP01"  0  0  -1
 	frame	data/chars/Boss/Abadede/Run00.gif
+	@cmd  spawn01  "abadedeP01"  0  0  -1
 	frame	data/chars/Boss/Abadede/Run01.gif
+	@cmd  spawn01  "abadedeP01"  0  0  -1
 	frame	data/chars/Boss/Abadede/Run02.gif
+	@cmd  spawn01  "abadedeP01"  0  0  -1
 	frame	data/chars/Boss/Abadede/Run03.gif
+	@cmd  spawn01  "abadedeP01"  0  0  -1
 	frame	data/chars/Boss/Abadede/Run04.gif
-	@cmd dasher 1 -5 0
 	frame	data/chars/Boss/Abadede/Run00.gif
 	frame	data/chars/Boss/Abadede/Run01.gif
 	frame	data/chars/Boss/Abadede/Run02.gif
@@ -409,6 +439,7 @@ anim Follow4
 	@cmd dasher 0 0 0
 	@cmd	slamstart
 	@cmd	position 1 0 0 1 -1
+	@cmd  spawn01  "abadedeP02"  0  0  -1
 	frame	data/chars/Boss/Abadede/sp201.gif
 	@cmd	position 0 25 35 -1 -1
 	frame	data/chars/Boss/Abadede/sp202.gif

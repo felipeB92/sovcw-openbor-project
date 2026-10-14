@@ -32,10 +32,10 @@ anim idle
 	loop	1
 	delay	6
 	offset	145 179
-	bbox 	119 99 44 34
+	bbox 	119 94 48 74
         hitflash	Forte
         hitfx	data/sounds/golpes/Forte.wav
-	attack3 169 148 31 33 15 1 1 0 0 12
+	attack3 168 150 35 34 15 1 1 0 0 12
 	frame	data/chars/Enemys/fog/mounted00.gif
 	frame	data/chars/Enemys/fog/mounted01.gif
 

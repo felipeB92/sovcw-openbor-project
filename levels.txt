@@ -101,7 +101,6 @@ custfade 100
 
 #------------------
 
-
 z 190 270
 
 file	data/levels/t.txt

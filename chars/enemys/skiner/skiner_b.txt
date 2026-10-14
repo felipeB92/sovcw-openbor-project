@@ -27,7 +27,7 @@ anim idle
 	loop	1
 	delay	6
 	offset	86 121
-	bbox 	53 43 30 52
+	bbox 	53 35 39 87
         hitflash	Forte
         hitfx	data/sounds/golpes/Forte.wav
 	attack3 107 85 37 40 15 1 1 0 0 12
@@ -44,7 +44,7 @@ anim idle
 	frame	data/chars/Enemys/Skiner/Bike/Idle00.gif
 	frame	data/chars/Enemys/Skiner/Bike/Idle01.gif
 	delay	70
-		bbox  11  25  48  69
+		bbox  8  22  71  97
 		attack3  86  30  41  44  15  1  1  0  0  12
 	frame	data/chars/Enemys/Skiner/Bike/Idle02.gif
 

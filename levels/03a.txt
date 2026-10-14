@@ -4,8 +4,8 @@ scrollspeed 0.5#1
 #direction Left
 stagenumber 4
 background	data/bgs/03/baCK01D.gif 	1 1 0 0 0 0 -1 1 1
-bglayer		data/bgs/03/bAck01C.gif 	0.800 1 0 0 0 0 -1 1 1
-bglayer		data/bgs/03/bAck01b.gif 	0.750 1 0 0 0 0 -1 1 1
+bglayer		data/bgs/03/bAck01C.gif 	0.9 1 0 0 0 0 -1 1 1 0 1 3 10 0.3
+bglayer		data/bgs/03/bAck01b.gif 	0.8 1 0 0 0 0 -1 1 1 0 1 3 10 0.3
 bglayer		data/bgs/03/BAck01a.gif	        0.700 1 0 0 0 0 -1 1 1
 #water		data/bgs/01/Mar01.gif		0.5
 #fglayer         data/bgs/00/FOG.gif              0.5 1 0 0 0 0 -1 1 1 0 1 3 10 0.3

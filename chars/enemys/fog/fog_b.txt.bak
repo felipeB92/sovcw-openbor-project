@@ -10,10 +10,10 @@ candamage			enemy player npc obstacle
 icon				data/chars/Enemys/fog/icon.gif 1
 
 ##REMAPS
-remap				data/chars/Enemys/fog/idle00.gif data/chars/Enemys/fog/MAp01.gif
-remap				data/chars/Enemys/fog/idle00.gif data/chars/Enemys/fog/Map02.gif
-remap				data/chars/Enemys/fog/idle00.gif data/chars/Enemys/fog/Map03.gif
-remap				data/chars/Enemys/fog/idle00.gif data/chars/Enemys/fog/Map04.gif
+remap				data/chars/Enemys/fog/mounted00.gif data/chars/Enemys/fog/Bike/MAp01.gif
+remap				data/chars/Enemys/fog/mounted00.gif data/chars/Enemys/fog/Bike/MAp02.gif
+remap				data/chars/Enemys/fog/mounted00.gif data/chars/Enemys/fog/Bike/MAp03.gif
+remap				data/chars/Enemys/fog/mounted00.gif data/chars/Enemys/fog/Bike/MAp04.gif
 
 ##LOADS
 load				fog
@@ -32,7 +32,7 @@ anim idle
 	loop	1
 	delay	6
 	offset	145 179
-	bbox 	123 101 47 80
+	bbox 	119 99 44 34
         hitflash	Forte
         hitfx	data/sounds/golpes/Forte.wav
 	attack3 169 148 31 33 15 1 1 0 0 12

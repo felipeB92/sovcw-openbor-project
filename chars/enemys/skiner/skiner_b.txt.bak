@@ -19,18 +19,18 @@ rider				Skiner
 anim spawn
 	loop	0
 	delay	1
-	offset	145 179
+	offset	86 121
 	frame	data/chars/Enemys/Skiner/Bike/Idle00.gif
 
 anim idle
 	fastattack 1
 	loop	1
 	delay	6
-	offset	145 179
-	bbox 	119 99 44 34
+	offset	86 121
+	bbox 	53 43 30 52
         hitflash	Forte
         hitfx	data/sounds/golpes/Forte.wav
-	attack3 169 148 31 33 15 1 1 0 0 12
+	attack3 107 85 37 40 15 1 1 0 0 12
 	frame	data/chars/Enemys/Skiner/Bike/Idle00.gif
 	frame	data/chars/Enemys/Skiner/Bike/Idle01.gif
 	frame	data/chars/Enemys/Skiner/Bike/Idle00.gif
@@ -43,17 +43,19 @@ anim idle
 	frame	data/chars/Enemys/Skiner/Bike/Idle01.gif
 	frame	data/chars/Enemys/Skiner/Bike/Idle00.gif
 	frame	data/chars/Enemys/Skiner/Bike/Idle01.gif
-	delay	40
+	delay	70
+		bbox  11  25  48  69
+		attack3  86  30  41  44  15  1  1  0  0  12
 	frame	data/chars/Enemys/Skiner/Bike/Idle02.gif
 
 anim pain
 	loop	1
 	delay	8
-	offset	145 179
+	offset	82 116
         hitflash	Forte
         hitfx	data/sounds/golpes/Forte.wav
-	attack1 167 150 35 30 24 1 1 0 0 12
+	attack1 95 104 58 41 10 1 1 1 0 15
 	frame	data/chars/Enemys/Skiner/Bike/Fall00.gif
 	frame	data/chars/Enemys/Skiner/Bike/Fall01.gif
-	frame	data/chars/Enemys/Skiner/Bike/Idle00.gif
+	frame	data/chars/Enemys/Skiner/Bike/fall02.gif
 

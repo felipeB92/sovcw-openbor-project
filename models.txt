@@ -247,6 +247,8 @@ know	JoeP03 data/chars/Boss/Joe/JoeP03.txt
 know	JoeP04 data/chars/Boss/Joe/JoeP04.txt
 
 know	Abadede data/chars/Boss/Abadede/Abadede.txt
+know	AbadedeP01 data/chars/Boss/Abadede/AbadedeP01.txt
+know	AbadedeP02 data/chars/Boss/Abadede/AbadedeP02.txt
 know	Abadede_ data/chars/Boss/Abadede/Abadede_.txt
 know	Abadede__ data/chars/Boss/Abadede/Abadede__.txt
 
