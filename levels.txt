@@ -101,6 +101,15 @@ custfade 100
 
 #------------------
 
+z 204 270
+
+file	data/levels/COOP/04a.txt
+
+
+z 204 270
+
+file	data/levels/04a.txt
+
 z 190 270
 
 file	data/levels/t.txt
@@ -120,6 +129,7 @@ custfade 100
 
 
 #------------------
+
 
 
 z 207 270

@@ -5,7 +5,7 @@ Speed 0
 #noquake 	1 1
 #offscreenkill	1000
 #Alpha 1
-animationscript		data/scripts/drago.c
+animationscript		data/scripts/Felipe.c
 
 
 Load JAke

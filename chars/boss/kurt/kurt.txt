@@ -23,6 +23,7 @@ running	20	3	2	1	1
 animationscript		data/scripts/Felipe.c
 
 Load Super3
+Load Tati
 
 
 remap data/chars/Boss/Kurt/idle00.gif data/chars/Boss/Kurt/MAp01.gif
@@ -561,7 +562,8 @@ anim Freespecial7
 	loop	0
         Range -25 35
         RangeZ -25 25
-        energycost 10 1
+        energycost 25 1
+	fastattack 1
         MpOnly 1
 		offset  72  118
 		delay  6
@@ -582,71 +584,113 @@ anim Freespecial7
 	frame  data/chars/Boss/Kurt/a401.gif
 	frame  data/chars/Boss/Kurt/a401.gif
 	frame	data/chars/Boss/Kurt/a402.gif
-		attack2  54  52  136  36  50  1  0  0  25  25
+		attack2  0  55  151  30  5  0  0  0  5  25
 	frame	data/chars/Boss/Kurt/a403.gif
+		Attack1  0
 	frame	data/chars/Boss/Kurt/a404.gif
-		attack2  -13  50  116  38  50  1  0  0  25  25
+	@cmd  spawn01  "TATI"  0  0  -1
 	frame	data/chars/Boss/Kurt/a405.gif
+		attack2  0  55  151  30  5  0  0  0  5  25
         Sound	data/sounds/whoosh2.wav
 	frame	data/chars/Boss/Kurt/a406.gif
+		Attack1  0
 	frame	data/chars/Boss/Kurt/a407.gif
 		delay  3
-		attack2  -2  57  161  28  50  1  0  0  25  25
+		attack2  0  55  151  30  5  0  0  0  5  25
 	frame	data/chars/Boss/Kurt/a408.gif
-        Sound	data/sounds/whoosh2.wav
-	frame	data/chars/Boss/Kurt/a409.gif
-	frame	data/chars/Boss/Kurt/a410.gif
-	frame	data/chars/Boss/Kurt/a405.gif
-        Sound	data/sounds/whoosh2.wav
-	frame	data/chars/Boss/Kurt/a406.gif
-	frame	data/chars/Boss/Kurt/a407.gif
-	frame	data/chars/Boss/Kurt/a408.gif
-        Sound	data/sounds/whoosh2.wav
-	frame	data/chars/Boss/Kurt/a409.gif
-	frame	data/chars/Boss/Kurt/a410.gif
-	frame	data/chars/Boss/Kurt/a405.gif
-	frame	data/chars/Boss/Kurt/a408.gif
-        Sound	data/sounds/whoosh2.wav
-	frame	data/chars/Boss/Kurt/a409.gif
 		Attack1  0
+        Sound	data/sounds/whoosh2.wav
+	frame	data/chars/Boss/Kurt/a409.gif
 	frame	data/chars/Boss/Kurt/a410.gif
-		attack2  -2  57  161  28  50  1  0  0  25  25
+	@cmd  spawn01  "TATI"  0  0  -1
+	frame	data/chars/Boss/Kurt/a405.gif
+		attack2  0  55  151  30  5  0  0  0  5  25
+        Sound	data/sounds/whoosh2.wav
+	frame	data/chars/Boss/Kurt/a406.gif
+		Attack1  0
+	frame	data/chars/Boss/Kurt/a407.gif
+		delay  3
+		attack2  0  55  151  30  5  0  0  0  5  25
+	frame	data/chars/Boss/Kurt/a408.gif
+		Attack1  0
+        Sound	data/sounds/whoosh2.wav
+	frame	data/chars/Boss/Kurt/a409.gif
+	frame	data/chars/Boss/Kurt/a410.gif
+	@cmd  spawn01  "TATI"  0  0  -1
+	frame	data/chars/Boss/Kurt/a405.gif
+		attack2  0  55  151  30  5  0  0  0  5  25
+        Sound	data/sounds/whoosh2.wav
+	frame	data/chars/Boss/Kurt/a406.gif
+		Attack1  0
+	frame	data/chars/Boss/Kurt/a407.gif
+		delay  3
+		attack2  0  55  151  30  5  0  0  0  5  25
+	frame	data/chars/Boss/Kurt/a408.gif
+		Attack1  0
+        Sound	data/sounds/whoosh2.wav
+	frame	data/chars/Boss/Kurt/a409.gif
+	frame	data/chars/Boss/Kurt/a410.gif
+		attack2  -2  57  161  28  5  0  0  0  5  25
+	@cmd  spawn01  "TATI"  0  0  -1
 	frame	data/chars/Boss/Kurt/a406.gif
 	frame	data/chars/Boss/Kurt/a407.gif
 	frame	data/chars/Boss/Kurt/a408.gif
         Sound	data/sounds/whoosh2.wav
 	frame	data/chars/Boss/Kurt/a409.gif
 	frame	data/chars/Boss/Kurt/a410.gif
+	@cmd  spawn01  "TATI"  0  0  -1
 	frame	data/chars/Boss/Kurt/a405.gif
+		attack2  0  55  151  30  5  0  0  0  5  25
         Sound	data/sounds/whoosh2.wav
 	frame	data/chars/Boss/Kurt/a406.gif
+		Attack1  0
 	frame	data/chars/Boss/Kurt/a407.gif
+		delay  3
+		attack2  0  55  151  30  5  0  0  0  5  25
 	frame	data/chars/Boss/Kurt/a408.gif
+		Attack1  0
         Sound	data/sounds/whoosh2.wav
 	frame	data/chars/Boss/Kurt/a409.gif
 	frame	data/chars/Boss/Kurt/a410.gif
+	@cmd  spawn01  "TATI"  0  0  -1
 	frame	data/chars/Boss/Kurt/a405.gif
+		attack2  0  55  151  30  5  0  0  0  5  25
+        Sound	data/sounds/whoosh2.wav
 	frame	data/chars/Boss/Kurt/a406.gif
+		Attack1  0
 	frame	data/chars/Boss/Kurt/a407.gif
+		delay  3
+		attack2  0  55  151  30  5  0  0  0  5  25
 	frame	data/chars/Boss/Kurt/a408.gif
+		Attack1  0
         Sound	data/sounds/whoosh2.wav
 	frame	data/chars/Boss/Kurt/a409.gif
 	frame	data/chars/Boss/Kurt/a410.gif
+	@cmd  spawn01  "TATI"  0  0  -1
 	frame	data/chars/Boss/Kurt/a405.gif
+		attack2  0  55  151  30  5  0  0  0  5  25
         Sound	data/sounds/whoosh2.wav
 	frame	data/chars/Boss/Kurt/a406.gif
-		delay  6
+		Attack1  0
 	frame	data/chars/Boss/Kurt/a407.gif
+		delay  3
+		attack2  0  55  151  30  5  0  0  0  5  25
 	frame	data/chars/Boss/Kurt/a408.gif
+		Attack1  0
         Sound	data/sounds/whoosh2.wav
 	frame	data/chars/Boss/Kurt/a409.gif
 	frame	data/chars/Boss/Kurt/a410.gif
+	@cmd  spawn01  "TATI"  0  0  -1
 	frame	data/chars/Boss/Kurt/a405.gif
+		attack2  0  55  151  30  5  0  0  0  5  25
         Sound	data/sounds/whoosh2.wav
 	frame	data/chars/Boss/Kurt/a406.gif
-		delay  9
+		Attack1  0
 	frame	data/chars/Boss/Kurt/a407.gif
+		delay  3
+		attack2  0  55  151  30  10  1  0  0  25  25
 	frame	data/chars/Boss/Kurt/a408.gif
+		Attack1  0
         Sound	data/sounds/whoosh2.wav
 	frame	data/chars/Boss/Kurt/a409.gif
 	frame	data/chars/Boss/Kurt/a410.gif

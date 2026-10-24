@@ -321,6 +321,7 @@ anim Freespecial4
         hitflash	Forte
         hitfx	data/sounds/golpes/Forte.wav
 	Sound  data/chars/Boss/Kurt/a3.wav
+		bbox  63  31  22  87
 	frame	data/chars/Boss/Kurt/a401.gif
 	frame	data/chars/Boss/Kurt/a402.gif
 		attack1  57  55  92  33  15  1  0  0  0  20
@@ -352,6 +353,7 @@ anim Freespecial5
 		move  0
         hitflash	Forte
         hitfx	data/sounds/golpes/Forte.wav
+		bbox  64  29  32  90
 	frame	data/chars/Boss/Kurt/a300.gif
 		hitflash  Forte
 		hitfx  data/sounds/golpes/Forte.wav
@@ -458,6 +460,7 @@ anim Freespecial6
 		move  0
         hitflash	Forte
         hitfx	data/sounds/golpes/Forte.wav
+		bbox  63  30  33  89
 	frame	data/chars/Boss/Kurt/a300.gif
 		hitflash  Forte
 		hitfx  data/sounds/golpes/Forte.wav
@@ -559,6 +562,7 @@ anim Freespecial7
         Range -25 35
         RangeZ -25 25
         energycost 10 1
+	fastattack 1
         MpOnly 1
 		offset  72  118
 		delay  6
@@ -579,76 +583,109 @@ anim Freespecial7
 	frame  data/chars/Boss/Kurt/a401.gif
 	frame  data/chars/Boss/Kurt/a401.gif
 	frame	data/chars/Boss/Kurt/a402.gif
-		attack2  54  52  136  36  50  1  0  0  25  25
+		attack2  0  55  151  30  5  0  0  0  5  25
 	frame	data/chars/Boss/Kurt/a403.gif
+		Attack1  0
 	frame	data/chars/Boss/Kurt/a404.gif
-		attack2  -13  50  116  38  50  1  0  0  25  25
 	frame	data/chars/Boss/Kurt/a405.gif
+		attack2  0  55  151  30  5  0  0  0  5  25
         Sound	data/sounds/whoosh2.wav
 	frame	data/chars/Boss/Kurt/a406.gif
+		Attack1  0
 	frame	data/chars/Boss/Kurt/a407.gif
 		delay  3
-		attack2  -2  57  161  28  50  1  0  0  25  25
+		attack2  0  55  151  30  5  0  0  0  5  25
 	frame	data/chars/Boss/Kurt/a408.gif
-        Sound	data/sounds/whoosh2.wav
-	frame	data/chars/Boss/Kurt/a409.gif
-	frame	data/chars/Boss/Kurt/a410.gif
-	frame	data/chars/Boss/Kurt/a405.gif
-        Sound	data/sounds/whoosh2.wav
-	frame	data/chars/Boss/Kurt/a406.gif
-	frame	data/chars/Boss/Kurt/a407.gif
-	frame	data/chars/Boss/Kurt/a408.gif
-        Sound	data/sounds/whoosh2.wav
-	frame	data/chars/Boss/Kurt/a409.gif
-	frame	data/chars/Boss/Kurt/a410.gif
-	frame	data/chars/Boss/Kurt/a405.gif
-	frame	data/chars/Boss/Kurt/a408.gif
-        Sound	data/sounds/whoosh2.wav
-	frame	data/chars/Boss/Kurt/a409.gif
 		Attack1  0
+        Sound	data/sounds/whoosh2.wav
+	frame	data/chars/Boss/Kurt/a409.gif
 	frame	data/chars/Boss/Kurt/a410.gif
-		attack2  -2  57  161  28  50  1  0  0  25  25
+	frame	data/chars/Boss/Kurt/a405.gif
+		attack2  0  55  151  30  5  0  0  0  5  25
+        Sound	data/sounds/whoosh2.wav
+	frame	data/chars/Boss/Kurt/a406.gif
+		Attack1  0
+	frame	data/chars/Boss/Kurt/a407.gif
+		delay  3
+		attack2  0  55  151  30  5  0  0  0  5  25
+	frame	data/chars/Boss/Kurt/a408.gif
+		Attack1  0
+        Sound	data/sounds/whoosh2.wav
+	frame	data/chars/Boss/Kurt/a409.gif
+	frame	data/chars/Boss/Kurt/a410.gif
+	frame	data/chars/Boss/Kurt/a405.gif
+		attack2  0  55  151  30  5  0  0  0  5  25
+        Sound	data/sounds/whoosh2.wav
+	frame	data/chars/Boss/Kurt/a406.gif
+		Attack1  0
+	frame	data/chars/Boss/Kurt/a407.gif
+		delay  3
+		attack2  0  55  151  30  5  0  0  0  25  25
+	frame	data/chars/Boss/Kurt/a408.gif
+		Attack1  0
+        Sound	data/sounds/whoosh2.wav
+	frame	data/chars/Boss/Kurt/a409.gif
+	frame	data/chars/Boss/Kurt/a410.gif
+		attack2  -2  57  161  28  5  0  0  0  5  25
 	frame	data/chars/Boss/Kurt/a406.gif
 	frame	data/chars/Boss/Kurt/a407.gif
 	frame	data/chars/Boss/Kurt/a408.gif
         Sound	data/sounds/whoosh2.wav
 	frame	data/chars/Boss/Kurt/a409.gif
 	frame	data/chars/Boss/Kurt/a410.gif
-	frame	data/chars/Boss/Kurt/a405.gif
+		frame	data/chars/Boss/Kurt/a405.gif
+		attack2  0  55  151  30  5  0  0  0  5  25
         Sound	data/sounds/whoosh2.wav
 	frame	data/chars/Boss/Kurt/a406.gif
+		Attack1  0
 	frame	data/chars/Boss/Kurt/a407.gif
+		delay  3
+		attack2  0  55  151  30  5  0  0  0  5  25
 	frame	data/chars/Boss/Kurt/a408.gif
+		Attack1  0
         Sound	data/sounds/whoosh2.wav
 	frame	data/chars/Boss/Kurt/a409.gif
 	frame	data/chars/Boss/Kurt/a410.gif
 	frame	data/chars/Boss/Kurt/a405.gif
+		attack2  0  55  151  30  5  0  0  0  5  25
+        Sound	data/sounds/whoosh2.wav
 	frame	data/chars/Boss/Kurt/a406.gif
+		Attack1  0
 	frame	data/chars/Boss/Kurt/a407.gif
+		delay  3
+		attack2  0  55  151  30  5  0  0  0  5  25
 	frame	data/chars/Boss/Kurt/a408.gif
+		Attack1  0
         Sound	data/sounds/whoosh2.wav
 	frame	data/chars/Boss/Kurt/a409.gif
 	frame	data/chars/Boss/Kurt/a410.gif
 	frame	data/chars/Boss/Kurt/a405.gif
+		attack2  0  55  151  30  5  0  0  0  5  25
         Sound	data/sounds/whoosh2.wav
 	frame	data/chars/Boss/Kurt/a406.gif
-		delay  6
+		Attack1  0
 	frame	data/chars/Boss/Kurt/a407.gif
+		delay  3
+		attack2  0  55  151  30  5  0  0  0  5  25
 	frame	data/chars/Boss/Kurt/a408.gif
+		Attack1  0
         Sound	data/sounds/whoosh2.wav
 	frame	data/chars/Boss/Kurt/a409.gif
 	frame	data/chars/Boss/Kurt/a410.gif
 	frame	data/chars/Boss/Kurt/a405.gif
+		attack2  0  55  151  30  5  0  0  0  5  25
         Sound	data/sounds/whoosh2.wav
 	frame	data/chars/Boss/Kurt/a406.gif
-		delay  9
+		Attack1  0
 	frame	data/chars/Boss/Kurt/a407.gif
+		delay  3
+		attack2  0  55  151  30  15  1  0  0  25  25
 	frame	data/chars/Boss/Kurt/a408.gif
+		Attack1  0
         Sound	data/sounds/whoosh2.wav
 	frame	data/chars/Boss/Kurt/a409.gif
 	frame	data/chars/Boss/Kurt/a410.gif
 		Attack1  0
-	Nodrawmethod
 	frame	data/chars/Boss/Kurt/a411.gif
 
 
