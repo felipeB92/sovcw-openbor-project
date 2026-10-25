@@ -41,12 +41,12 @@ group 5 5
 at 0
 
 spawn  MAcLean_
-health 75
+health 45
 	coords  440 220
 	at  0
 
 spawn  MAcLeod_
-health 75
+health 45
 	coords  439 208
 	at  0
 
@@ -55,38 +55,38 @@ spawn  Act
 	at  0
 
 spawn  MAcBride_
-health 75
+health 45
 	coords  439 257
 	at  0
 
 spawn  MAcLeod_
 MAp 4
-health 110
+health 50
 	coords  440 236
 	at  0
 
 spawn  Galsia
 MAp 4
-health 50
+health 35
 	coords  -100 236
 	at  0
 
 spawn  Vice
 MAp 4
-health 50
+health 35
 	coords  -100 220
 	at  0
 
 
 spawn  Donovan
 MAp 4
-health 50
+health 35
 	coords  -100 236
 	at  0
 
 spawn  Slum
 MAp 4
-health 50
+health 35
 	coords  -100 220
 	at  0
 
@@ -130,52 +130,52 @@ at 475
 
 spawn  gARNET
 MAp 4
-health 50
+health 35
 	coords  250 180 300
 	at  475
 
 
 spawn  dONOVAN
 MAp 4
-health 50
+health 35
 	coords  -100 250
 	at  475
 
 
 spawn  gALSIA
 MAp 4
-health 50
+health 35
 	coords  600 190
 	at  475
 
 spawn  sIGNAL
 MAp 4
-health 50
+health 35
 	coords  600 190
 	at  475
 
 
 spawn  dONOVAN_E01
 Flip 1
-health 50
+health 35
 	coords  -50 190
 	at  475
 
 spawn  Costa
 MAp 4
-health 50
+health 35
 	coords  -100 250
 	at  475
 
 
 spawn  Donovan_E00
-health 50
+health 35
 	coords  550 275
 	at  475
 
 spawn  sIGNAL
 MAp 4
-health 50
+health 35
 	coords  600 190
 	at  475
 
@@ -200,23 +200,23 @@ at 1030
 
 spawn  dONOVAN_E01
 Flip 1
-health 50
+health 35
 	coords  -50 190
 	at  1030
 
 spawn  dONOVAN_E01
 Flip 1
-health 50
+health 35
 	coords  -40 275
 	at  1030
 
 spawn  dONOVAN_E01
-health 50
+health 35
 	coords  550 275
 	at  475
 
 spawn  dONOVAN_E01
-health 50
+health 35
 	coords  575 190
 	at  475
 
@@ -267,51 +267,51 @@ at 1500
 
 spawn  MAcLean
 Map 1
-health 75
+health 45
 	coords  550 240
 	at  1500
 
 spawn  MAcLeod
 MAp 2
-health 75
+health 45
 	coords  550 190
 	at  1500
 
 
 spawn  MAcBride
 Map 3
-health 75
+health 45
 	coords  -200 180
 	at  1500
 
 spawn  MAcLeod
 MAp 3
-health 110
+health 55
 	coords  -200 250
 	at  1500
 
 spawn  MAcLean
 Map 2
-health 75
+health 45
 	coords  550 240
 	at  1500
 
 spawn  MAcLeod
 MAp 1
-health 75
+health 45
 	coords  550 190
 	at  1500
 
 
 spawn  MAcBride
 Map 2
-health 75
+health 45
 	coords  -100 180
 	at  1500
 
 spawn  MAcLeod
 MAp 4
-health 110
+health 50
 	coords  -100 250
 	at  1500
 

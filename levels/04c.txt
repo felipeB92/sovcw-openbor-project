@@ -74,20 +74,20 @@ Map 3
 	at  360
 
 spawn  Bigben
-health 70
+health 45
 Map 3
 	coords  550 250
 	at  500
 
 spawn  GAlsia
-health 50
+health 30
 Map 3
 	coords  550 250
 	at  500
 
 
 spawn  Costa
-health 70
+health 45
 Map 4
 	coords  -100 250
 	at  500
@@ -97,82 +97,82 @@ spawn  Act
 	at  500
 
 spawn  Donovan
-health 50
+health 30
 Map 3
 	coords  -100 210
 	at  500
 
 spawn  Bigben
-health 70
+health 45
 Map 3
 	coords  550 250
 	at  500
 
 spawn  Slum
-health 50
+health 30
 Map 3
 	coords  550 250
 	at  500
 
 
 spawn  Vice
-health 70
+health 45
 Map 3
 	coords  -100 250
 	at  500
 
 spawn  Garnet
-health 50
+health 30
 Map 3
 	coords  -100 210
 	at  500
 
 spawn  Bigben
-health 70
+health 45
 Map 4
 	coords  550 250
 	at  500
 
 spawn  Signal
-health 50
+health 30
 Map 3
 	coords  550 250
 	at  500
 
 
 spawn  Chan
-health 70
+health 45
 Map 4
 	coords  -100 250
 	at  500
 
 spawn  Jhonny
-health 50
+health 30
 Map 3
 	coords  -100 210
 	at  500
 
 spawn  Bigben
-health 70
+health 45
 Map 1
 	coords  550 250
 	at  500
 
 spawn  Ralf
-health 50
+health 30
 Map 3
 	coords  550 250
 	at  500
 
 
 spawn  GAlsia
-health 70
+health 45
 Map 4
 	coords  -100 250
 	at  500
 
 spawn  Donovan
-health 50
+health 30
 Map 4
 	coords  -100 210
 	at  500
