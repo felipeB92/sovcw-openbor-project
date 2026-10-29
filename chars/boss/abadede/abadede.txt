@@ -342,6 +342,9 @@ anim Freespecial6
 	attack2  117  115  77  49  0  0  0  0  0  15
 	hitfx	data/sounds/golpes/Forte.wav
 	frame	data/chars/Boss/Abadede/special00.gif
+	drawmethod tintmode 6
+	drawmethod tintcolor 255
+	@cmd  spawn01  "Super3"  0  30  1
 	frame	data/chars/Boss/Abadede/special01.gif
 	frame	data/chars/Boss/Abadede/special02.gif
 	drawmethod tintmode 6
