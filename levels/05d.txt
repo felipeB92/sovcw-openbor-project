@@ -90,20 +90,20 @@ Boss 1
 
 spawn  Raven
 MAp 3
-health 70
+health 45
 	coords  550 260 0
 	at  400
 
 spawn  Signal
 MAp 3
-health 70
+health 45
 	coords  -100 260 0
 	at  400
 
 
 spawn  Fog
 MAp 3
-health 70
+health 45
 	coords  550 210 0
 	at  400
 
@@ -134,32 +134,32 @@ health 60
 
 spawn  GArnet
 MAp 3
-health 70
+health 45
 	coords  -100 210 0
 	at  400
 
 spawn  Jhonny
 MAp 3
-health 70
+health 45
 	coords  550 260 0
 	at  400
 
 spawn  Ralf
 MAp 3
-health 70
+health 45
 	coords  -100 260 0
 	at  400
 
 
 spawn  Nora
 MAp 3
-health 70
+health 45
 	coords  550 210 0
 	at  400
 
 spawn  Electra
 MAp 3
-health 70
+health 45
 	coords  -100 210 0
 	at  400
 
@@ -167,7 +167,7 @@ health 70
 
 spawn  Bigben
 MAp 3
-health 70
+health 45
 	coords  -100 210 0
 	at  400
 

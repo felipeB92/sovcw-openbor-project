@@ -46,7 +46,7 @@ spawn  Act
 
 spawn  Donovan_
 MAp 3
-health 50
+health 35
 	coords  300 240 0
 	at  0
 spawn  Pipe
@@ -55,20 +55,20 @@ spawn  Pipe
 
 spawn  Bigben_
 MAp 4
-health 70
+health 50
 	coords  370 260 0
 	at  0
 
 spawn  Bigben_
 MAp 3
-health 70
+health 50
 	coords  400 210 0
 	at  0
 
 spawn  Signal
 Flip 1
 MAp 3
-health 70
+health 50
 	coords  37 210 1
 	at  0
 
@@ -80,14 +80,14 @@ spawn  Knife
 spawn  Galsia
 Flip 1
 MAp 3
-health 50
+health 35
 	coords  37 210 1
 	at  0
 
 
 spawn  Thug
 MAp 3
-health 50
+health 35
 	coords  -100 240
 	at  0
 
@@ -98,14 +98,14 @@ spawn  Chicken
 
 spawn  Garnet
 MAp 3
-health 50
+health 35
 	coords  -100 240
 	at  0
 
 spawn  Bigben
 Flip 1
 MAp 2
-health 70
+health 50
 	coords  37 210 1
 	at  0
 
@@ -115,7 +115,7 @@ spawn  Knife
 
 spawn  Galsia
 MAp 1
-health 50
+health 35
 	coords  -100 236
 	at  0
 
@@ -125,7 +125,7 @@ spawn  Knife
 
 spawn  Galsia
 MAp 2
-health 50
+health 35
 	coords  -100 260
 	at  0
 
@@ -135,7 +135,7 @@ spawn  Knife
 
 spawn  Galsia
 MAp 3
-health 50
+health 35
 	coords  550 260
 	at  0
 
@@ -145,7 +145,7 @@ spawn  Knife
 
 spawn  Galsia
 MAp 4
-health 50
+health 35
 	coords  550 236
 	at  0
 
@@ -189,7 +189,7 @@ spawn  Knife
 
 spawn  Galsia
 MAp 3
-health 50
+health 35
 	coords  -100 260
 	at  268
 
@@ -199,44 +199,44 @@ spawn  Knife
 
 spawn  Galsia
 MAp 4
-health 50
+health 35
 	coords  -100 236
 	at  268
 
 spawn  Donovan
 MAp 3
-health 50
+health 35
 	coords  -100 260
 	at  268
 
 spawn  Donovan
 MAp 4
-health 50
+health 35
 	coords  -100 236
 	at  268
 
 
 spawn  Signal
 MAp 3
-health 70
+health 50
 	coords  -100 260
 	at  268
 
 spawn  Signal
 MAp 4
-health 70
+health 50
 	coords  -100 236
 	at  268
 
 spawn  Garnet
 MAp 3
-health 70
+health 50
 	coords  -100 260
 	at  268
 
 spawn  Garnet
 MAp 4
-health 70
+health 50
 	coords  -100 236
 	at  268
 

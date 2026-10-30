@@ -1,6 +1,6 @@
 name	Harakiri_
 health	300
-mp 10
+mp 60
 mprate 1
 #secret 1
 blockodds 1
@@ -27,6 +27,7 @@ Load HarakiriP02
 Load HarakiriP03
 Load HarakiriP04
 Load HarakiriP05
+Load Super3
 
 remap data/chars/Boss/Harakiri/idle00.gif data/chars/Boss/Harakiri/MAp01.gif
 remap data/chars/Boss/Harakiri/idle00.gif data/chars/Boss/Harakiri/MAp02.gif
@@ -159,6 +160,22 @@ anim jump
 	frame	data/chars/Boss/Harakiri/Jump00.gif
 	frame	data/chars/Boss/Harakiri/Jump00.gif
 
+anim jumpAttack
+	loop	0
+	delay	15
+	offset	158 203
+	bbox	152 105 56 91
+        hitflash	Corte
+        hitfx	data/sounds/golpes/Corte.wav
+	frame	data/chars/Boss/Harakiri/JA100.gif
+		attack1  154  111  134  64  7  1  0  0  0  10
+		delay  5
+	frame	data/chars/Boss/Harakiri/Ja101.gif
+	frame	data/chars/Boss/Harakiri/ja102.gif
+	frame  data/chars/Boss/Harakiri/ja101.gif
+		delay  20
+	frame  data/chars/Boss/Harakiri/ja102.gif
+
 anim jumpLanD
 	loop	0
 	delay	15
@@ -176,9 +193,9 @@ anim attack1
         Range 0 80
         RangeZ -10 10
         hitflash	Corte
+        hitfx	data/sounds/golpes/Corte.wav
 	bbox	146 125 55 81
 		Attack1  0
-        hitfx	data/sounds/golpes/Corte.wav
 	Sound  data/chars/Boss/Harakiri/a2.wav
 	frame	data/chars/Boss/Harakiri/a100.gif
 		delay  6
@@ -333,6 +350,303 @@ anim Freespecial5
 		Attack1  0
 		delay  25
 	frame	data/chars/Boss/Harakiri/A102.gif
+
+anim Freespecial7
+	loop	0
+        Range 250 400
+        RangeZ -20 20
+	delay	25
+	offset	158 203
+        energycost 50 1
+        MpOnly 1
+        hitflash	Shock
+		Attack1  0
+        Sound	data/sounds/golpes/Soco.wav
+        hitfx	data/sounds/golpes/Forte.wav
+	frame	data/chars/Boss/Harakiri/Block00.gif
+		delay  5
+	frame	data/chars/Boss/Harakiri/Block01.gif
+	frame  data/chars/Boss/Harakiri/Block02.gif
+		move  230
+	frame	data/chars/Boss/Harakiri/00.gif
+		move  0
+	frame  data/chars/Boss/Harakiri/00.gif
+	drawmethod tintmode 6
+	drawmethod tintcolor 255
+	@cmd  spawn01  "Super3"  0  200  1
+		offset  158  350
+	frame  data/chars/Boss/Harakiri/ja100.gif
+	Nodrawmethod
+	frame  data/chars/Boss/Harakiri/a400.gif
+	frame  data/chars/Boss/Harakiri/a401.gif
+		delay  1
+		attack1  187  -6  101  223  55  1  0  0  30  25
+	frame  data/chars/Boss/Harakiri/a402.gif
+		offset  158  340
+	frame  data/chars/Boss/Harakiri/a402.gif
+		offset  158  330
+	frame  data/chars/Boss/Harakiri/a402.gif
+		offset  158  310
+	frame  data/chars/Boss/Harakiri/a402.gif
+		offset  158  300
+	frame  data/chars/Boss/Harakiri/a402.gif
+		offset  158  290
+	frame  data/chars/Boss/Harakiri/a402.gif
+		offset  158  280
+	frame  data/chars/Boss/Harakiri/a402.gif
+		offset  158  270
+	frame  data/chars/Boss/Harakiri/a402.gif
+		offset  158  260
+	frame  data/chars/Boss/Harakiri/a402.gif
+		offset  158  250
+	frame  data/chars/Boss/Harakiri/a402.gif
+		offset  158  240
+	frame  data/chars/Boss/Harakiri/a402.gif
+		offset  158  230
+	frame  data/chars/Boss/Harakiri/a402.gif
+		offset  158  220
+		sound  data/chars/Boss/Harakiri/P5.wav
+	frame  data/chars/Boss/Harakiri/a402.gif
+	@cmd  spawn01  "HArakiriP05"  100  0  1
+		offset  158  209
+	frame  data/chars/Boss/Harakiri/a201.gif
+		delay  50
+		Attack1  0
+	frame  data/chars/Boss/Harakiri/a202.gif
+		delay  5
+	frame  data/chars/Boss/Harakiri/a300.gif
+	frame  data/chars/Boss/Harakiri/a300b.gif
+		move  -200
+		movez  100
+	frame	data/chars/Boss/Harakiri/00.gif
+		move  0
+		movez  0
+	frame  data/chars/Boss/Harakiri/00.gif
+		offset  158  350
+	frame  data/chars/Boss/Harakiri/a400.gif
+	frame  data/chars/Boss/Harakiri/a401.gif
+		delay  1
+		attack1  187  -6  101  223  55  1  0  0  30  25
+	frame  data/chars/Boss/Harakiri/a402.gif
+		offset  158  340
+	frame  data/chars/Boss/Harakiri/a402.gif
+		offset  158  330
+	frame  data/chars/Boss/Harakiri/a402.gif
+		offset  158  310
+	frame  data/chars/Boss/Harakiri/a402.gif
+		offset  158  300
+	frame  data/chars/Boss/Harakiri/a402.gif
+		offset  158  290
+	frame  data/chars/Boss/Harakiri/a402.gif
+		offset  158  280
+	frame  data/chars/Boss/Harakiri/a402.gif
+		offset  158  270
+	frame  data/chars/Boss/Harakiri/a402.gif
+		offset  158  260
+	frame  data/chars/Boss/Harakiri/a402.gif
+		offset  158  250
+	frame  data/chars/Boss/Harakiri/a402.gif
+		offset  158  240
+	frame  data/chars/Boss/Harakiri/a402.gif
+		offset  158  230
+	frame  data/chars/Boss/Harakiri/a402.gif
+		offset  158  220
+		sound  data/chars/Boss/Harakiri/P5.wav
+	frame  data/chars/Boss/Harakiri/a402.gif
+	@cmd  spawn01  "HArakiriP05"  100  0  1
+		offset  158  209
+	frame  data/chars/Boss/Harakiri/a201.gif
+		delay  50
+		attack1  187  -6  101  223  55  1  0  0  30  25
+	frame  data/chars/Boss/Harakiri/a202.gif
+		delay  5
+		Attack1  0
+	frame  data/chars/Boss/Harakiri/a300.gif
+	frame  data/chars/Boss/Harakiri/a300b.gif
+		move  150
+		movez  -250
+	frame	data/chars/Boss/Harakiri/00.gif
+		movez  0
+		move  0
+	frame  data/chars/Boss/Harakiri/00.gif
+		offset  158  350
+		attack1  187  -6  101  223  55  1  0  0  30  25
+	frame  data/chars/Boss/Harakiri/a400.gif
+	frame  data/chars/Boss/Harakiri/a401.gif
+		delay  1
+	frame  data/chars/Boss/Harakiri/a402.gif
+		offset  158  340
+	frame  data/chars/Boss/Harakiri/a402.gif
+		offset  158  330
+	frame  data/chars/Boss/Harakiri/a402.gif
+		offset  158  310
+	frame  data/chars/Boss/Harakiri/a402.gif
+		offset  158  300
+	frame  data/chars/Boss/Harakiri/a402.gif
+		offset  158  290
+	frame  data/chars/Boss/Harakiri/a402.gif
+		offset  158  280
+	frame  data/chars/Boss/Harakiri/a402.gif
+		offset  158  270
+	frame  data/chars/Boss/Harakiri/a402.gif
+		offset  158  260
+	frame  data/chars/Boss/Harakiri/a402.gif
+		offset  158  250
+	frame  data/chars/Boss/Harakiri/a402.gif
+		offset  158  240
+	frame  data/chars/Boss/Harakiri/a402.gif
+		offset  158  230
+	frame  data/chars/Boss/Harakiri/a402.gif
+		offset  158  220
+		sound  data/chars/Boss/Harakiri/P5.wav
+	frame  data/chars/Boss/Harakiri/a402.gif
+	@cmd  spawn01  "HArakiriP05"  100  0  1
+		offset  158  209
+	frame  data/chars/Boss/Harakiri/a201.gif
+		delay  50
+		Attack1  0
+	frame  data/chars/Boss/Harakiri/a202.gif
+		delay  5
+	frame  data/chars/Boss/Harakiri/a300.gif
+	frame  data/chars/Boss/Harakiri/a300b.gif
+		movez  -100
+		move  -250
+	frame	data/chars/Boss/Harakiri/00.gif
+		movez  0
+		move  0
+	frame  data/chars/Boss/Harakiri/00.gif
+		offset  158  350
+		attack1  187  -6  101  223  55  1  0  0  30  25
+	frame  data/chars/Boss/Harakiri/a400.gif
+	frame  data/chars/Boss/Harakiri/a401.gif
+		delay  1
+	frame  data/chars/Boss/Harakiri/a402.gif
+		offset  158  340
+	frame  data/chars/Boss/Harakiri/a402.gif
+		offset  158  330
+	frame  data/chars/Boss/Harakiri/a402.gif
+		offset  158  310
+	frame  data/chars/Boss/Harakiri/a402.gif
+		offset  158  300
+	frame  data/chars/Boss/Harakiri/a402.gif
+		offset  158  290
+	frame  data/chars/Boss/Harakiri/a402.gif
+		offset  158  280
+	frame  data/chars/Boss/Harakiri/a402.gif
+		offset  158  270
+	frame  data/chars/Boss/Harakiri/a402.gif
+		offset  158  260
+	frame  data/chars/Boss/Harakiri/a402.gif
+		offset  158  250
+	frame  data/chars/Boss/Harakiri/a402.gif
+		offset  158  240
+	frame  data/chars/Boss/Harakiri/a402.gif
+		offset  158  230
+	frame  data/chars/Boss/Harakiri/a402.gif
+		offset  158  220
+		sound  data/chars/Boss/Harakiri/P5.wav
+	frame  data/chars/Boss/Harakiri/a402.gif
+	@cmd  spawn01  "HArakiriP05"  100  0  1
+		offset  158  209
+	frame  data/chars/Boss/Harakiri/a201.gif
+		delay  50
+		attack1  187  -6  101  223  55  1  0  0  30  25
+	frame  data/chars/Boss/Harakiri/a202.gif
+		delay  5
+		Attack1  0
+	frame  data/chars/Boss/Harakiri/a300.gif
+	frame  data/chars/Boss/Harakiri/a300b.gif
+		move  270
+		movez  100
+	frame	data/chars/Boss/Harakiri/00.gif
+		movez  0
+		move  0
+	frame  data/chars/Boss/Harakiri/00.gif
+		offset  158  350
+		attack1  187  -6  101  223  55  1  0  0  30  25
+	frame  data/chars/Boss/Harakiri/a400.gif
+	frame  data/chars/Boss/Harakiri/a401.gif
+		delay  1
+	frame  data/chars/Boss/Harakiri/a402.gif
+		offset  158  340
+	frame  data/chars/Boss/Harakiri/a402.gif
+		offset  158  330
+	frame  data/chars/Boss/Harakiri/a402.gif
+		offset  158  310
+	frame  data/chars/Boss/Harakiri/a402.gif
+		offset  158  300
+	frame  data/chars/Boss/Harakiri/a402.gif
+		offset  158  290
+	frame  data/chars/Boss/Harakiri/a402.gif
+		offset  158  280
+	frame  data/chars/Boss/Harakiri/a402.gif
+		offset  158  270
+	frame  data/chars/Boss/Harakiri/a402.gif
+		offset  158  260
+	frame  data/chars/Boss/Harakiri/a402.gif
+		offset  158  250
+	frame  data/chars/Boss/Harakiri/a402.gif
+		offset  158  240
+	frame  data/chars/Boss/Harakiri/a402.gif
+		offset  158  230
+	frame  data/chars/Boss/Harakiri/a402.gif
+		offset  158  220
+		sound  data/chars/Boss/Harakiri/P5.wav
+	frame  data/chars/Boss/Harakiri/a402.gif
+	@cmd  spawn01  "HArakiriP05"  100  0  1
+		offset  158  209
+	frame  data/chars/Boss/Harakiri/a201.gif
+		delay  50
+		Attack1  0
+	frame  data/chars/Boss/Harakiri/a202.gif
+		delay  5
+	frame  data/chars/Boss/Harakiri/a300.gif
+	frame  data/chars/Boss/Harakiri/a300b.gif
+		move  -350
+		movez  -200
+	frame	data/chars/Boss/Harakiri/00.gif
+		move  0
+		movez  0
+	frame  data/chars/Boss/Harakiri/00.gif
+		offset  158  350
+		attack1  187  -6  101  223  55  1  0  0  30  25
+	frame  data/chars/Boss/Harakiri/a400.gif
+	frame  data/chars/Boss/Harakiri/a401.gif
+		delay  1
+	frame  data/chars/Boss/Harakiri/a402.gif
+		offset  158  340
+	frame  data/chars/Boss/Harakiri/a402.gif
+		offset  158  330
+	frame  data/chars/Boss/Harakiri/a402.gif
+		offset  158  310
+	frame  data/chars/Boss/Harakiri/a402.gif
+		offset  158  300
+	frame  data/chars/Boss/Harakiri/a402.gif
+		offset  158  290
+	frame  data/chars/Boss/Harakiri/a402.gif
+		offset  158  280
+	frame  data/chars/Boss/Harakiri/a402.gif
+		offset  158  270
+	frame  data/chars/Boss/Harakiri/a402.gif
+		offset  158  260
+	frame  data/chars/Boss/Harakiri/a402.gif
+		offset  158  250
+	frame  data/chars/Boss/Harakiri/a402.gif
+		offset  158  240
+	frame  data/chars/Boss/Harakiri/a402.gif
+		offset  158  230
+	frame  data/chars/Boss/Harakiri/a402.gif
+		offset  158  220
+	frame  data/chars/Boss/Harakiri/a402.gif
+	@cmd  spawn01  "HArakiriP05"  100  0  1
+		offset  158  209
+		sound  data/chars/Boss/Harakiri/P5.wav
+	frame  data/chars/Boss/Harakiri/a201.gif
+		delay  50
+		Attack1  0
+	frame  data/chars/Boss/Harakiri/a202.gif
+		delay  5
+	frame  data/chars/Boss/Harakiri/a300.gif
 
 
 anim Special
@@ -508,12 +822,10 @@ anim fall7 #BURN
 	drawmethod tintcolor 255
 	frame	data/chars/Boss/Harakiri/fall00.gif
 		Attack1  0
-	@cmd	bindSpawn "Burn01" 0 30 1 
+	@cmd	bindSpawn "Burn01" 0 30 1
 	frame	data/chars/Boss/Harakiri/fall01.gif
 		delay  10
-	Nodrawmethod
 	frame	data/chars/Boss/Harakiri/fall02.gif
-
 
 
 anim rise
@@ -578,4 +890,6 @@ anim Fall5
 	frame	data/chars/Boss/Harakiri/fall01.gif #0
 	delay	15
 	frame	data/chars/Boss/Harakiri/fall02.gif #1
+
+
 

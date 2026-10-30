@@ -82,7 +82,7 @@ at  0
 spawn  Slum_
 Map 1
 Flip 1
-health 70
+health 50
 	coords  290 200
 	at  0
 
@@ -112,13 +112,13 @@ health 100
 
 spawn  Fog
 MAp 1
-health 70
+health 50
 	coords  600 180
 	at  0
 
 spawn  Signal
 MAp 1
-health 70
+health 50
 	coords  -100 230
 	at  0
 
@@ -128,13 +128,13 @@ spawn  Act
 
 spawn  Raven
 MAp 1
-health 70
+health 50
 	coords  600 180
 	at  0
 
 spawn  Raven
 MAp 2
-health 70
+health 50
 	coords  -100 230
 	at  0
 
@@ -194,49 +194,49 @@ at  360
 
 spawn  Galsia
 Map 1
-health 50
+health 35
 	coords  -100 260
 	at  360
 
 spawn  Donovan
 Map 1
-health 50
+health 35
 	coords  600 195
 	at  360
 
 spawn  Slum
 Map 1
-health 50
+health 35
 	coords  600 260
 	at  360
 
 spawn  Vice
 Map 1
-health 50
+health 35
 	coords  -100 195
 	at  360
 
 spawn  Signal
 Map 1
-health 70
+health 50
 	coords  600 230
 	at  360
 
 spawn  Jhonny
 Map 1
-health 70
+health 50
 	coords  -100 230
 	at  360
 
 spawn  Ralf
 Map 1
-health 70
+health 50
 	coords  -100 260
 	at  360
 
 spawn  Garnet
 Map 1
-health 70
+health 50
 	coords  600 195
 	at  360
 
@@ -254,7 +254,7 @@ health 75
 
 spawn  Fog
 Map 2
-health 50
+health 35
 	coords  600 230
 	at  360
 
@@ -307,31 +307,31 @@ at  1000
 
 spawn  Garnet
 Map 1
-health 50
+health 35
 	coords  -100 195
 	at  1000
 
 spawn  Garnet
 Map 2
-health 70
+health 50
 	coords  600 230
 	at  1000
 
 spawn  Garnet
 Map 3
-health 70
+health 50
 	coords  -100 230
 	at  1000
 
 spawn  Garnet
 Map 4
-health 70
+health 50
 	coords  600 260
 	at  1000
 
 spawn  Nora
 Map 1
-health 70
+health 50
 	coords  600 195
 	at  1000
 
@@ -349,13 +349,13 @@ health 75
 
 spawn  Nora
 Map 4
-health 50
+health 35
 	coords  -100 230
 	at  1000
 
 spawn  Electra
 Map 1
-health 70
+health 50
 	coords  600 195
 	at  1000
 
@@ -373,7 +373,7 @@ health 75
 
 spawn  Electra
 Map 4
-health 50
+health 35
 	coords  -100 230
 	at  1000
 
@@ -393,7 +393,7 @@ at  1200
 
 spawn  Bigben
 Map 1
-health 70
+health 50
 	coords  600 195
 	at  1200
 
@@ -411,7 +411,7 @@ health 75
 
 spawn  Howk
 Map 4
-health 70
+health 50
 	coords  -100 230
 	at  1200
 

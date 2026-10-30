@@ -75,7 +75,7 @@ Flip 1
 	at  0
 
 spawn  Vice_
-health 50
+health 35
 	coords  320 280 88
 	at  0
 
@@ -84,7 +84,7 @@ spawn  Act
 	at  0
 
 spawn  Donovan_
-health 50
+health 35
 	coords  268 290 88
 	at  0
 
@@ -93,17 +93,17 @@ spawn  Act
 	at  0
 
 spawn  galsia_
-health 50
+health 35
 	coords  372 275 88
 	at  0
 
 spawn  Bigben_
-health 70
+health 45
 	coords  457 276 88
 	at  0
 
 spawn  Slum__
-health 50
+health 35
 	coords  645 276 0
 	at  0
 
@@ -112,7 +112,7 @@ spawn  Act
 	at  0
 
 spawn  Signal_
-health 70
+health 45
 	coords  700 265 0
 	at  0
 
@@ -121,7 +121,7 @@ spawn  Act
 	at  0
 
 spawn  Raven_
-health 70
+health 45
 	coords  850 285 0
 	at  0
 
@@ -144,13 +144,13 @@ at  675
 
 spawn  Raven
 MAp 1
-health 70
+health 45
 	coords  600 265 0
 	at  675
 
 spawn  Raven
 MAp 2
-health 70
+health 45
 	coords  -100 265 0
 	at  675
 
@@ -161,26 +161,26 @@ Flip 1
 
 spawn  Diga
 MAp 3
-health 50
+health 35
 	coords  85 246 89
 	at  675
 
 
 spawn  Crakito
 MAp 3
-health 50
+health 35
 	coords  85 246 89
 	at  675
 
 spawn  Garnet
 MAp 2
-health 70
+health 45
 	coords  -100 265 0
 	at  675
 
 spawn  Thug
 MAp 2
-health 70
+health 45
 	coords  600 265 0
 	at  675
 
@@ -194,7 +194,7 @@ spawn  ActN
 
 spawn  Raven_
 MAp 1
-health 100
+health 70
 	coords  680 240 0
 	at  676
 
@@ -204,7 +204,7 @@ spawn  Act
 
 spawn  Howk_
 MAp 2
-health 150
+health 100
 	coords  714 265 0
 	at  676
 
@@ -212,7 +212,7 @@ health 150
 
 spawn  Raven_
 MAp 3
-health 100
+health 70
 	coords  690 280 0
 	at  676
 
@@ -224,7 +224,7 @@ at  900
 
 spawn  Galsia
 MAp 3
-health 50
+health 35
 	coords  -100 280 0
 	at  900
 
@@ -234,7 +234,7 @@ spawn  Knife
 
 spawn  Donovan
 MAp 3
-health 50
+health 35
 	coords  -100 260 0
 	at  900
 

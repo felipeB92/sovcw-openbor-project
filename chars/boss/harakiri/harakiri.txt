@@ -1,6 +1,6 @@
 name	Harakiri
 health	300
-mp 10
+mp 60
 mprate 1
 #secret 1
 blockodds 1
@@ -269,10 +269,12 @@ anim Freespecial5
 
 anim Freespecial7
 	loop	0
-        Range 350 400
+        Range 250 400
         RangeZ -20 20
 	delay	25
 	offset	158 203
+        energycost 50 1
+        MpOnly 1
         hitflash	Shock
 		Attack1  0
         Sound	data/sounds/golpes/Soco.wav
@@ -281,7 +283,7 @@ anim Freespecial7
 		delay  5
 	frame	data/chars/Boss/Harakiri/Block01.gif
 	frame  data/chars/Boss/Harakiri/Block02.gif
-		move  350
+		move  230
 	frame	data/chars/Boss/Harakiri/00.gif
 		move  0
 	frame  data/chars/Boss/Harakiri/00.gif
