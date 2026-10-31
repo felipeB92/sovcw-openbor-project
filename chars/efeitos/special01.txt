@@ -3,10 +3,7 @@ type			None
 Speed 10
 Alpha 1
 candamage			Enemy 
-onblockwscript	data/scripts/bounceF.c
-#animationscript 	data/scripts/ani0020.h
-animationscript		data/scripts/drago.c
-ondrawscript 		data/scripts/Enemy_ondrawscript.c
+animationscript		data/scripts/Felipe.c
 
 Load special00
 

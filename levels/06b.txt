@@ -55,27 +55,27 @@ at  100
 spawn  Ruy
 Alias Roy
 MAp    4
-health 100
+health 70
 	coords  -100 260
 	at  100
 
 spawn  Ruy
 Map 1
-health 100
+health 70
 	coords  -100 220
 	at  100
 
 spawn  Ruy
 Alias Kenny
 Map 2
-health 100
+health 70
 	coords  600 260
 	at  100
 
 spawn  Ruy
 Alias B.Belt
 Map 3
-health 150
+health 70
 	coords  550 220
 	at  100
 
@@ -91,25 +91,25 @@ at  150
 
 spawn  P1__
 MAp    1
-health 100
+health 70
 Flip 1
 	coords  150 260
 	at  150
 
 spawn  P1__
-health 100
+health 70
 Flip 1
 	coords  170 220
 	at  150
 
 spawn  PArticle__
 Map 1
-health 100
+health 70
 	coords  400 260
 	at  150
 
 spawn  Particle__
-health 100
+health 70
 	coords  380 220
 	at  150
 
@@ -131,49 +131,49 @@ health 200
 	at  151
 
 spawn  Crakito
-health 50
+health 35
 	coords  700 220
 	at  151
 
 spawn  Balu
-health 50
+health 35
 	coords  -200 220
 	at  151
 
 spawn  Diga
-health 50
+health 35
 	coords  500 220
 	at  151
 
 
 spawn  Thug
-health 50
+health 35
 	coords  -200 220
 	at  151
 
 
 spawn  Crakito
 Map 1
-health 50
+health 35
 	coords  500 220
 	at  151
 
 spawn  Balu
 Map 1
-health 50
+health 35
 	coords  -200 220
 	at  151
 
 spawn  Diga
 Map 1
-health 50
+health 35
 	coords  500 220
 	at  151
 
 
 spawn  Thug
 Map 1
-health 50
+health 35
 	coords  -200 220
 	at  151
 
@@ -204,19 +204,19 @@ spawn  ActE
 
 spawn  Macleod
 Map 1
-health 70
+health 50
 	coords  600 220
 	at  200
 
 spawn  Maclean
 Map 1
-health 70
+health 50
 	coords  600 260
 	at  300
 
 spawn  MacBride
 Map 1
-health 70
+health 50
 	coords  600 240
 	at  300
 
@@ -229,7 +229,7 @@ at  500
 
 spawn  MacLeod
 Map 2
-health 70
+health 50
 	coords  600 240
 	at  500
 
@@ -328,13 +328,13 @@ Item   Apple
 
 spawn  RAven
 Map 2
-health 70
+health 40
 	coords  600 240
 	at  550
 
 spawn  Fog
 Map 2
-health 70
+health 50
 	coords  600 200
 	at  650
 
@@ -346,26 +346,26 @@ at  700
 
 spawn  Howk
 Map 1
-health 100
+health 70
 	coords  -200 220
 	at  700
 
 spawn  Howk
 Map 2
-health 100
+health 70
 	coords  500 200
 	at  700
 
 
 spawn  Howk
 Map 3
-health 100
+health 70
 	coords  -200 260
 	at  700
 
 spawn  Howk
 Map 4
-health 100
+health 70
 	coords  -100 200
 	at  700
 
@@ -390,33 +390,33 @@ at  900
 
 spawn  Jhonny
 Map 1
-health 70
+health 50
 	coords  -200 220
 	at  900
 
 spawn  Ralf
 Map 2
-health 60
+health 40
 	coords  500 200
 	at  900
 
 
 spawn  Raven
 Map 3
-health 70
+health 50
 	coords  -200 260
 	at  900
 
 spawn  Signal
 Map 4
-health 70
+health 50
 	coords  -100 200
 	at  900
 
 
 spawn  Donovan
 Map 1
-health 70
+health 50
 	coords  -200 220
 	at  900
 
@@ -426,26 +426,26 @@ spawn  Knife
 
 spawn  Galsia
 Map 2
-health 60
+health 40
 	coords  550 200
 	at  900
 
 
 spawn  Fog
 Map 3
-health 70
+health 40
 	coords  -200 260
 	at  900
 
 spawn  Vice
 Map 4
-health 70
+health 50
 	coords  -100 200
 	at  900
 
 spawn  Slum
 Map 4
-health 70
+health 40
 	coords  -100 200
 	at  900
 

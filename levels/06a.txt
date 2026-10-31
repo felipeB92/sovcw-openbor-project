@@ -140,7 +140,7 @@ health 150
 
 spawn  Fog__
 Map  2
-health 50
+health 30
 	coords  311 225
 	at  0
 
@@ -199,14 +199,14 @@ health 50
 
 spawn  Fog
 Map  3
-health 70
+health 50
 	coords  -100 225
 	at  150
 
 
 spawn  Ralf
 MAp 3
-health 70
+health 40
 	coords  -50 200
 	at  150
 
@@ -249,7 +249,7 @@ at  650
 
 spawn  Ralf
 MAp 3
-health 70
+health 40
 	coords  -100 220
 	at  650
 
@@ -261,13 +261,13 @@ health 50
 
 spawn  Signal
 MAp 3
-health 70
+health 40
 	coords  -100 270
 	at  650
 
 spawn  Galsia
 MAp 3
-health 50
+health 30
 	coords  -100 270
 	at  650
 
@@ -280,19 +280,19 @@ health 50
 
 spawn  Jhonny
 MAp 3
-health 70
+health 40
 	coords  600 220
 	at  650
 
 spawn  Slum
 MAp 3
-health 60
+health 30
 	coords  -100 270
 	at  650
 
 spawn  Vice
 MAp 3
-health 60
+health 40
 	coords  -100 270
 	at  650
 
@@ -358,14 +358,14 @@ health 50
 
 spawn  RAven
 Map  3
-health 70
+health 50
 	coords  -100 225
 	at  651
 
 
 spawn  RAven
 MAp 4
-health 70
+health 50
 	coords  -50 200
 	at  651
 
@@ -390,7 +390,7 @@ at  652
 
 
 spawn  Fog_B
-health 70
+health 40
 	coords  -100 220
 	at  652
 
@@ -402,7 +402,7 @@ health 50
 
 spawn  RAven
 MAp 3
-health 70
+health 40
 	coords  -100 270
 	at  652
 
@@ -425,7 +425,7 @@ health 50
 
 spawn  Chan
 MAp 3
-health 70
+health 40
 	coords  -100 270
 	at  652
 
@@ -501,14 +501,14 @@ health 50
 
 spawn  Donovan
 Map  3
-health 70
+health 30
 	coords  -100 225
 	at  653
 
 
 spawn  Galsia
 MAp 4
-health 70
+health 30
 	coords  -50 200
 	at  653
 
@@ -559,7 +559,7 @@ Flip 1
 
 spawn  Agamenon_
 MAp 4
-health 100
+health 75
 	coords  650 235
 	at  655
 
@@ -569,7 +569,7 @@ spawn  Act
 
 spawn  Agamenon_
 MAp 3
-health 100
+health 75
 	coords  680 268
 	at  655
 
@@ -585,42 +585,42 @@ health 70
 	at  943
 
 spawn  Donovan
-health 50
+health 30
 	coords  600 270
 	at  943
 
 spawn  Galsia
-health 50
+health 30
 	coords  600 220
 	at  943
 
 spawn  Slum
-health 50
+health 30
 	coords  -100 270
 	at  943
 
 spawn  Vice
-health 50
+health 30
 	coords  -100 220
 	at  943
 
 spawn  Crakito
-health 50
+health 30
 	coords  600 270
 	at  943
 
 spawn  Balu
-health 50
+health 30
 	coords  600 220
 	at  943
 
 spawn  Garnet
-health 50
+health 40
 	coords  -100 270
 	at  943
 
 spawn  Electra
-health 70
+health 40
 	coords  -100 220
 	at  943
 
@@ -637,12 +637,12 @@ health 70
 	at  943
 
 spawn  Raven
-health 70
+health 50
 	coords  -100 270
 	at  943
 
 spawn  Signal
-health 70
+health 40
 	coords  -100 220
 	at  943
 

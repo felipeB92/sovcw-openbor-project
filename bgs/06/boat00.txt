@@ -4,11 +4,7 @@ Speed .5
 setlayer -10
 noquake 	1 1
 offscreenkill	1000
-#Alpha 1
-onblockwscript	data/scripts/bounceF.c
-#animationscript 	data/scripts/ani0020.h
-animationscript		data/scripts/drago.c
-ondrawscript 		data/scripts/Enemy_ondrawscript.c
+animationscript		data/scripts/Felipe.c
 
 Load Boat01
 

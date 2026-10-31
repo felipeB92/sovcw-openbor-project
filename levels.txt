@@ -102,21 +102,23 @@ custfade 100
 #------------------
 
 
-z 250 292
+z 220 274
 
-file	data/levels/COOP/05a.txt
+file	data/levels/06a.txt
 
-z 210 275
 
-file	data/levels/COOP/05b.txt
+z 200 274
 
-z 180 295
+file	data/levels/06b.txt
 
-file	data/levels/COOP/05c.txt
+z 210 274
 
-z 200 292
+file	data/levels/06c.txt
 
-file	data/levels/COOP/05D.txt
+
+z 210 274
+
+file	data/levels/06D.txt
 
 
 z 190 270

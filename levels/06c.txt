@@ -59,51 +59,51 @@ at       100
 
 
 spawn  p1
-health 50
+health 35
 	coords  600 220
 	at  100
 
 spawn  p1
 Map 2
-health 50
+health 35
 	coords  600 260
 	at  100
 
 
 spawn  p1
 Map 3
-health 50
+health 35
 	coords  -100 260
 	at  100
 
 spawn  p1
 Map 4
-health 50
+health 35
 	coords  -100 220
 	at  100
 
 
 spawn  p1__
 map 1
-health 50
+health 35
 	coords  400 220
 	at  100
 
 spawn  p1__
-health 50
+health 35
 	coords  300 260
 	at  100
 
 
 spawn  p1__
 Map 2
-health 50
+health 35
 	coords  250 260
 	at  100
 
 spawn  p1__
 Map 3
-health 50
+health 35
 	coords  100 220
 	at  100
 
@@ -149,20 +149,20 @@ Item Knife
 
 spawn  p1__
 Map 3
-health 50
+health 35
 	coords  300 220
 	at  200
 
 
 spawn  Particle
 Map 3
-health 70
+health 45
 	coords  600 220
 	at  300
 
 spawn  p1
 Map 4
-health 50
+health 35
 	coords  600 220
 	at  400
 
@@ -176,34 +176,34 @@ at       500
 
 spawn  Particle__
 Map 4
-health 100
+health 60
 	coords  300 220
 	at  500
 
 
 spawn  Particle
 Map 3
-health 70
+health 45
 	coords  600 220
 	at  500
 
 spawn  p1
 Map 4
-health 50
+health 35
 	coords  600 220
 	at  500
 
 
 spawn  Particle__
 Map 1
-health 70
+health 45
 	coords  450 240
 	at  500
 
 
 
 spawn  Particle__
-health 100
+health 60
 	coords  100 210
 	at  500
 
@@ -211,19 +211,19 @@ health 100
 
 spawn  P1__
 Map 1
-health 50
+health 35
 	coords  450 240
 	at  500
 
 
 
 spawn  P1__
-health 50
+health 35
 	coords  100 210
 	at  500
 
 spawn  Particle
-health 70
+health 45
 	coords  600 220
 	at  500
 
@@ -243,53 +243,53 @@ wait
 at       550
 
 spawn  Costa
-health 70
+health 45
 	coords  -100 210
 	at  550
 
 spawn  Chan
-health 70
+health 45
 	coords  600 260
 	at  550
 
 spawn  Signal
 Map 1
-health 70
+health 45
 	coords  -100 260
 	at  550
 
 spawn  Slum
 Map 1
-health 70
+health 45
 	coords  600 210
 	at  550
 
 
 spawn  Bigben
-health 70
+health 45
 	coords  -100 210
 	at  550
 
 spawn  Fog
-health 70
+health 45
 	coords  600 260
 	at  550
 
 spawn  Raven
 Map 1
-health 70
+health 45
 	coords  -100 260
 	at  550
 
 spawn  Garnet
 Map 1
-health 70
+health 45
 	coords  600 210
 	at  550
 
 spawn  Nora
 Map 1
-health 70
+health 45
 	coords  600 210
 	at  550
 
@@ -319,26 +319,26 @@ at       700
 
 spawn  Nora
 Map 3
-health 70
+health 45
 	coords  600 260
 	at  700
 
 spawn  Nora
 Map 4
-health 70
+health 45
 	coords  600 210
 	at  700
 
 
 spawn  Electra
 Map 3
-health 70
+health 45
 	coords  -100 260
 	at  700
 
 spawn  Electra
 Map 4
-health 70
+health 45
 	coords  -100 210
 	at  700
 
@@ -394,13 +394,13 @@ at  900
 
 spawn  Slum
 Map 3
-health 70
+health 45
 	coords  -100 260
 	at  900
 
 spawn  vice
 Map 4
-health 70
+health 45
 	coords  -100 210
 	at  900
 
