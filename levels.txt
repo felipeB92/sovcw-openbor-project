@@ -102,24 +102,6 @@ custfade 100
 #------------------
 
 
-z 220 274
-
-file	data/levels/06a.txt
-
-
-z 200 274
-
-file	data/levels/06b.txt
-
-z 210 274
-
-file	data/levels/06c.txt
-
-
-z 210 274
-
-file	data/levels/06D.txt
-
 
 z 190 270
 
