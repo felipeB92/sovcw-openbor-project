@@ -143,7 +143,35 @@ anim Block
 	frame  data/chars/Boss/MRX/Block.gif
 
 
+
+
 anim Freespecial
+	loop	0
+	delay	12
+	offset	148 199
+        Range 200 300
+		RangeZ  -10  10
+        hitflash	Fraco
+		Attack1  0
+	jumpframe  5  2  -2  0
+	frame	data/chars/Boss/MRX/sp00.gif
+	frame  data/chars/Boss/MRX/sp00.gif
+	frame	data/chars/Boss/MRX/sp01.gif
+		delay  25
+	frame	data/chars/Boss/MRX/sp02.gif
+		delay  5
+	frame	data/chars/Boss/MRX/sp03.gif
+	frame	data/chars/Boss/MRX/sp04.gif
+		delay  35
+	frame	data/chars/Boss/MRX/fALL01.gif
+		delay  25
+	frame	data/chars/Boss/MRX/fALL02.gif
+	frame	data/chars/Boss/MRX/RISE00.gif
+	frame	data/chars/Boss/MRX/RISE01.gif
+	frame	data/chars/Boss/MRX/RISE02.gif
+
+
+anim Freespecial5
 	loop	0
 	delay	12
 	offset	140 200
@@ -346,6 +374,10 @@ anim Follow1
 
 
 
+
+
+
+
 anim pain
 	loop	0
 	offset	140 200
@@ -451,10 +483,9 @@ anim fall7 #burn
 	drawmethod tintcolor 255
 	frame	data/chars/Boss/MRX/fall00.gif
 		Attack1  0
-	@cmd	bindSpawn "Burn01" 0 30 1 
+	@cmd	bindSpawn "Burn01" 0 30 1
 	frame	data/chars/Boss/MRX/fall01.gif
 		delay  10
-	Nodrawmethod
 	frame	data/chars/Boss/MRX/fall02.gif
 
 

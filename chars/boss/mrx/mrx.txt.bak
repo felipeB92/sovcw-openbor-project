@@ -4,6 +4,8 @@ mp 10
 mprate 1
 #secret 1
 blockodds 1
+Noblink 1
+nodieblink 3
 Falldie 2
 Grabdistance 18
 riseinv				0.4 1
@@ -17,12 +19,10 @@ hostile Player NPC
 atchain    1 2 3 4 5
 weapons MRX_Knife MRX_Sword MRX_pipe MRX_Kunai
 icon	data/chars/Boss/MRX/icon.gif 1
-diesound data/Sounds/Die4.wav
+diesound data/Sounds/DieG.wav
 running	20	3	2	1	1
-onblockwscript	data/scripts/bounceF.c
-#animationscript 	data/scripts/ani0020.h
-animationscript		data/scripts/drago.c
-ondrawscript 		data/scripts/Enemy_ondrawscript.c
+
+animationscript		data/scripts/Felipe.c
 
 Load ShotX00
 Load ShotX01
@@ -36,6 +36,24 @@ remap data/chars/Boss/MRX/laugh00.gif data/chars/Boss/MRX/MAp01.gif
 remap data/chars/Boss/MRX/laugh00.gif data/chars/Boss/MRX/MAp02.gif
 remap data/chars/Boss/MRX/laugh00.gif data/chars/Boss/MRX/MAp03.gif
 remap data/chars/Boss/MRX/laugh00.gif data/chars/Boss/MRX/MAp04.gif
+
+
+anim Death
+	loop	0
+	delay	25
+	offset	140 200
+	bbox	120 109 41 92
+	frame   data/chars/Boss/MRX/Rise02.gif
+	frame   data/chars/Boss/MRX/Rise00.gif
+	frame   data/chars/Boss/MRX/Rise01.gif
+
+
+anim Pain5
+	loop	0
+	delay	80
+	offset	140 200
+	bbox	120 109 41 92
+	frame   data/chars/Boss/MRX/idle00.gif
 
 anim idle
 	loop	0
@@ -125,7 +143,34 @@ anim Block
 	frame  data/chars/Boss/MRX/Block.gif
 
 
+
+
 anim Freespecial
+	loop	0
+	delay	12
+	offset	148 199
+        Range 200 300
+		RangeZ  -10  10
+        hitflash	Fraco
+		Attack1  0
+	jumpframe  5  2  -2  0
+	frame	data/chars/Boss/MRX/sp00.gif
+	frame  data/chars/Boss/MRX/sp00.gif
+	frame	data/chars/Boss/MRX/sp01.gif
+		delay  25
+	frame	data/chars/Boss/MRX/sp02.gif
+		delay  5
+	frame	data/chars/Boss/MRX/sp03.gif
+	frame	data/chars/Boss/MRX/sp04.gif
+	frame	data/chars/Boss/MRX/fALL01.gif
+		delay  20
+	frame	data/chars/Boss/MRX/fALL02.gif
+	frame	data/chars/Boss/MRX/RISE00.gif
+	frame	data/chars/Boss/MRX/RISE01.gif
+	frame	data/chars/Boss/MRX/RISE02.gif
+
+
+anim Freespecial5
 	loop	0
 	delay	12
 	offset	140 200
@@ -203,8 +248,11 @@ anim Freespecial2
 	@cmd  spawn01  "ShotX01"  0  0  1
 	frame	data/chars/Boss/MRX/Shot01.gif
         Sound	data/sounds/Reload.wav
+		delay  16
+		bbox  136  113  36  82
 	frame	data/chars/Boss/MRX/Reload00.gif
 	frame	data/chars/Boss/MRX/Reload01.gif
+	frame  data/chars/Boss/MRX/Reload00.gif
 
 anim Freespecial3
 	loop	0
@@ -265,6 +313,13 @@ anim Freespecial3
 	@cmd  spawn01  "ShotX06"  27  70  3
 	@cmd  spawn01  "ShotX01"  0  0  1
 	frame	data/chars/Boss/MRX/Shot01.gif
+        Sound	data/sounds/Reload.wav
+		delay  16
+		bbox  136  113  36  82
+	frame	data/chars/Boss/MRX/Reload00.gif
+	frame	data/chars/Boss/MRX/Reload01.gif
+	frame  data/chars/Boss/MRX/Reload00.gif
+
 
 
 anim Freespecial4
@@ -311,6 +366,10 @@ anim Follow1
 	frame	data/chars/Boss/MRX/a102.gif
 	frame	data/chars/Boss/MRX/a103.gif
 	frame	data/chars/Boss/MRX/a104.gif
+
+
+
+
 
 
 
@@ -413,19 +472,20 @@ anim fall6 #Shok
 	frame	data/chars/Boss/MRX/fall02.gif
 
 
-anim fall7 #Burn
+anim fall7 #burn
 	loop	0
-	offset	137 183
-	delay	10
+	offset	140 200
+	delay	20
         hitfx	data/sounds/golpes/Forte.wav
 		attack  0
-	frame	data/chars/Boss/MRX/FALL300.gif
-	frame	data/chars/Boss/MRX/FALL301.gif
-	frame	data/chars/Boss/MRX/FALL302.gif
-	frame	data/chars/Boss/MRX/FALL300.gif
-	frame	data/chars/Boss/MRX/FALL301.gif
-		offset  146  198
-	frame	data/chars/Boss/MRX/FALL02.gif
+	drawmethod tintmode 6
+	drawmethod tintcolor 255
+	frame	data/chars/Boss/MRX/fall00.gif
+		Attack1  0
+	@cmd	bindSpawn "Burn01" 0 30 1
+	frame	data/chars/Boss/MRX/fall01.gif
+		delay  10
+	frame	data/chars/Boss/MRX/fall02.gif
 
 
 anim rise

@@ -280,6 +280,8 @@ know	ShotX03 data/chars/Boss/MRX/ShotX03.txt
 know	ShotX04 data/chars/Boss/MRX/ShotX04.txt
 know	ShotX05 data/chars/Boss/MRX/ShotX05.txt
 know	ShotX06 data/chars/Boss/MRX/ShotX06.txt
+know	BazukaX data/chars/Boss/MRX/BazukaX.txt
+know	BazukaXP data/chars/Boss/MRX/BazukaXP.txt
 
 know	Faust data/chars/Boss/Faust/faust.txt
 know	Faust_ data/chars/Boss/Faust/faust_.txt
