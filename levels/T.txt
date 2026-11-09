@@ -24,7 +24,7 @@ group 1 1
 at 0
 
 
-spawn  	MrX
+spawn  	faust
 MAP    3
 health 100
 	coords  200 210 250

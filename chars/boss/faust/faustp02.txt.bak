@@ -1,0 +1,71 @@
+name			FaustP02
+type			none
+speed 15
+candamage			Player
+alpha 1
+nolife			1
+lifespan		4
+remove			1
+gfxshadow		1 1
+flash			Burn
+subject_to_gravity 0
+antigravity 100
+
+anim idle
+	loop	1
+        hitflash	Burn
+	fasattack 1
+        hitfx	data/sounds/golpes/Forte.wav
+		delay  3
+		offset  0  169
+	frame	data/chars/Boss/Faust/Fire/P00.gif
+		attack7  11  91  114  67  2  0  0  0  0  25
+	frame	data/chars/Boss/Faust/Fire/P01.gif
+	frame	data/chars/Boss/Faust/Fire/P02.gif
+		attack7  11  91  114  67  2  0  0  0  0  25
+	frame	data/chars/Boss/Faust/Fire/P03.gif
+	frame	data/chars/Boss/Faust/Fire/P04.gif
+		attack7  11  91  114  67  2  0  0  0  0  25
+	frame	data/chars/Boss/Faust/Fire/P05.gif
+	frame	data/chars/Boss/Faust/Fire/P06.gif
+		attack7  11  91  114  67  2  0  0  0  0  25
+	frame	data/chars/Boss/Faust/Fire/P07.gif
+	frame	data/chars/Boss/Faust/Fire/P08.gif
+		attack7  11  91  114  67  2  0  0  0  0  25
+	frame	data/chars/Boss/Faust/Fire/P09.gif
+	frame	data/chars/Boss/Faust/Fire/P10.gif
+		attack7  11  91  114  67  2  0  0  0  0  25
+	frame	data/chars/Boss/Faust/Fire/P11.gif
+	frame	data/chars/Boss/Faust/Fire/P12.gif
+		attack7  11  91  114  67  2  0  0  0  0  25
+	frame	data/chars/Boss/Faust/Fire/P13.gif
+	frame	data/chars/Boss/Faust/Fire/P14.gif
+		attack7  11  91  114  67  2  0  0  0  0  25
+	frame	data/chars/Boss/Faust/Fire/P15.gif
+	frame	data/chars/Boss/Faust/Fire/P16.gif
+		attack7  11  91  114  67  2  0  0  0  0  25
+	frame	data/chars/Boss/Faust/Fire/P17.gif
+	frame	data/chars/Boss/Faust/Fire/P18.gif
+		attack7  11  91  114  67  2  0  0  0  0  25
+	frame	data/chars/Boss/Faust/Fire/P19.gif
+	frame	data/chars/Boss/Faust/Fire/P20.gif
+		attack7  11  91  114  67  2  0  0  0  0  25
+	frame	data/chars/Boss/Faust/Fire/P21.gif
+	frame	data/chars/Boss/Faust/Fire/P22.gif
+		attack7  11  91  114  67  2  0  0  0  0  25
+	frame	data/chars/Boss/Faust/Fire/P23.gif
+	frame	data/chars/Boss/Faust/Fire/P24.gif
+		offset  0  164
+		attack7  11  91  114  67  25  0  0  0  0  25
+	frame	data/chars/Boss/Faust/Fire/P200.gif
+	frame	data/chars/Boss/Faust/Fire/P201.gif
+	frame	data/chars/Boss/Faust/Fire/P202.gif
+	frame	data/chars/Boss/Faust/Fire/P203.gif
+	frame	data/chars/Boss/Faust/Fire/P204.gif
+	frame	data/chars/Boss/Faust/Fire/P205.gif
+	frame	data/chars/Boss/Faust/Fire/P206.gif
+	frame	data/chars/Boss/Faust/Fire/P207.gif
+	frame	data/chars/Boss/Faust/Fire/P208.gif
+	@cmd killentity getlocalvar("self")
+	frame	data/chars/Boss/Faust/p06.gif
+

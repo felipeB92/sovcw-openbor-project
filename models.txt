@@ -286,6 +286,7 @@ know	BazukaXP data/chars/Boss/MRX/BazukaXP.txt
 know	Faust data/chars/Boss/Faust/faust.txt
 know	Faust_ data/chars/Boss/Faust/faust_.txt
 know	Faustp01 data/chars/Boss/Faust/faustp01.txt
+know	Faustp02 data/chars/Boss/Faust/faustp02.txt
 
 know	Shiva data/chars/Boss/Shiva/Shiva.txt
 know	ShivaR data/chars/Boss/ShivaR/ShivaR.txt

@@ -1,6 +1,6 @@
 name	Faust
 health	300
-mp 10
+mp 60
 mprate 1
 #secret 1
 blockodds 1
@@ -32,6 +32,8 @@ Load ShotX04
 Load ShotX05
 Load ShotX06
 Load FaustP01
+Load FaustP02
+Load Super3
 
 remap data/chars/Boss/Faust/IDle00.gif data/chars/Boss/Faust/MAp01.gif
 remap data/chars/Boss/Faust/IDle00.gif data/chars/Boss/Faust/MAp02.gif
@@ -165,7 +167,7 @@ anim Freespecial
 	offset	140 200
         Range 100 200
         RangeZ -5 5
-        hitflash	Forte
+        hitflash	Burn
 		Attack1  0
         Sound	data/sounds/golpes/Soco.wav
 	Sound  data/chars/Boss/Faust/a2.wav
@@ -194,7 +196,7 @@ anim Freespecial2
         energycost 10 1
         MpOnly 1
 	offset	140 200
-        Range 60 150
+        Range 100 150
         RangeZ 1 30
 	frame	data/chars/Boss/Faust/Run00.gif
 	frame	data/chars/Boss/Faust/Run01.gif
@@ -281,6 +283,34 @@ anim Freespecial2
 
 
 
+anim Freespecial3
+	loop	0
+	delay	12
+        energycost 40 1
+        MpOnly 1
+	offset	140 200
+        Range 60 100
+        RangeZ -15 15
+        hitflash	Forte
+		Attack1  0
+        Sound	data/sounds/golpes/Soco.wav
+	Sound  data/chars/Boss/Faust/a2.wav
+        hitfx	data/sounds/golpes/Forte.wav
+	frame	data/chars/Boss/Faust/a400.gif
+		delay  25
+	frame	data/chars/Boss/Faust/a401.gif
+		delay  12
+	@cmd  spawn01  "Super3"  0  75  1
+	drawmethod tintmode 6
+	drawmethod tintcolor 255
+	frame	data/chars/Boss/Faust/a402.gif
+		delay  105
+	@cmd  spawn01  "FaustP02"  0  25  1
+		bbox  0
+	frame	data/chars/Boss/Faust/a403.gif
+		delay  10
+		Attack1  0
+	frame  data/chars/Boss/Faust/a403.gif
 
 
 anim Freespecial4
@@ -438,11 +468,10 @@ anim fall7 #burn
 	drawmethod tintcolor 255
 	frame	data/chars/Boss/Faust/fall00.gif
 		Attack1  0
-	@cmd	bindSpawn "Burn01" 0 30 1 
+	@cmd	bindSpawn "Burn01" 0 30 1
 	frame	data/chars/Boss/Faust/fall01.gif
 		delay  10
 		offset  130  175
-	Nodrawmethod
 	frame	data/chars/Boss/Faust/fall02.gif
 
 

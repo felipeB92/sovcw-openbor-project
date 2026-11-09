@@ -14,8 +14,8 @@ BazukaXP
 
 anim idle
 	loop	0
-	delay	4
-	offset	25 28
+	delay	2
+	offset	49 79
 	frame	data/chars/Boss/mrx/BAZUKA/B00.gif
 	frame	data/chars/Boss/mrx/BAZUKA/B01.gif
 	frame	data/chars/Boss/mrx/BAZUKA/B02.gif
@@ -28,6 +28,7 @@ anim idle
 	frame	data/chars/Boss/mrx/BAZUKA/B09.gif
 	frame	data/chars/Boss/mrx/BAZUKA/B10.gif
 	frame	data/chars/Boss/mrx/BAZUKA/B11.gif
+		offset  51  53
 	frame	data/chars/Boss/mrx/BAZUKA/B12.gif
 	delay	5
 	frame	data/chars/Boss/mrx/00.gif

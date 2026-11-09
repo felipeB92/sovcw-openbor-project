@@ -1,0 +1,31 @@
+name			BazukaXP
+type			none
+health			1
+nolife			1
+lifespan		2
+candamage			Player npc obstacle
+remove			1
+shadow			0
+antigravity		100
+
+animationscript		data/scripts/Felipe.c
+
+Load Ex02
+
+anim idle
+	loop	0
+	delay	4
+	offset	37 46
+	hitflash	Ex02
+        Followcond 1
+        followanim 1
+	frame	data/chars/Boss/mrx/BAZUKA/P00.gif
+	frame	data/chars/Boss/mrx/BAZUKA/P01.gif
+	frame	data/chars/Boss/mrx/BAZUKA/P02.gif
+
+
+anim Follow1
+	frame	data/chars/Boss/mrx/00.gif
+	@cmd killentity getlocalvar("self")
+	frame	data/chars/Boss/mrx/00.gif
+

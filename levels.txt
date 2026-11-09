@@ -101,7 +101,9 @@ custfade 100
 
 #------------------
 
+z 210 274
 
+file	data/levels/COOP/06D.txt
 
 z 190 270
 

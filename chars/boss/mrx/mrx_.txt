@@ -1,6 +1,6 @@
 name	MRX_
 health	300
-mp 10
+mp 60
 mprate 1
 #secret 1
 blockodds 1
@@ -31,6 +31,9 @@ Load ShotX03
 Load ShotX04
 Load ShotX05
 Load ShotX06
+Load BazukaX
+Load BazukaXP
+Load Super3
 
 remap data/chars/Boss/MRX/laugh00.gif data/chars/Boss/MRX/MAp01.gif
 remap data/chars/Boss/MRX/laugh00.gif data/chars/Boss/MRX/MAp02.gif
@@ -57,15 +60,6 @@ anim Spawn
 	frame  data/chars/Boss/MRX/laugh01.gif
 		delay  25
 	frame  data/chars/Boss/MRX/laugh02.gif
-
-anim Death
-	loop	0
-	delay	25
-	offset	140 200
-	bbox	120 109 41 92
-	frame   data/chars/Boss/MRX/Rise02.gif
-	frame   data/chars/Boss/MRX/Rise00.gif
-	frame   data/chars/Boss/MRX/Rise01.gif
 
 anim idle
 	loop	0
@@ -155,7 +149,42 @@ anim Block
 	frame  data/chars/Boss/MRX/Block.gif
 
 
+
+
 anim Freespecial
+	loop	0
+	delay	12
+        energycost 40 1
+	offset	148 199
+        Range 200 300
+		RangeZ  -10  10
+        hitflash	Fraco
+		Attack1  0
+	jumpframe  5  2  -2  0
+	frame	data/chars/Boss/MRX/sp00.gif
+	frame  data/chars/Boss/MRX/sp00.gif
+	frame	data/chars/Boss/MRX/sp01.gif
+		delay  25
+	drawmethod tintmode 6
+	drawmethod tintcolor 255
+	@cmd  spawn01  "Super3" 0  50  1
+	frame	data/chars/Boss/MRX/sp02.gif
+	Nodrawmethod
+		delay  5
+	frame	data/chars/Boss/MRX/sp03.gif
+	frame	data/chars/Boss/MRX/sp04.gif
+	@cmd  spawn01  "BazukaX"  0  25  1
+	@cmd  spawn01  "BazukaXP"  25  50  1
+		delay  35
+	frame	data/chars/Boss/MRX/fALL01.gif
+		delay  25
+	frame	data/chars/Boss/MRX/fALL02.gif
+	frame	data/chars/Boss/MRX/RISE00.gif
+	frame	data/chars/Boss/MRX/RISE01.gif
+	frame	data/chars/Boss/MRX/RISE02.gif
+
+
+anim Freespecial5
 	loop	0
 	delay	12
 	offset	140 200
@@ -358,6 +387,10 @@ anim Follow1
 
 
 
+
+
+
+
 anim pain
 	loop	0
 	offset	140 200
@@ -463,10 +496,9 @@ anim fall7 #burn
 	drawmethod tintcolor 255
 	frame	data/chars/Boss/MRX/fall00.gif
 		Attack1  0
-	@cmd	bindSpawn "Burn01" 0 30 1 
+	@cmd	bindSpawn "Burn01" 0 30 1
 	frame	data/chars/Boss/MRX/fall01.gif
 		delay  10
-	Nodrawmethod
 	frame	data/chars/Boss/MRX/fall02.gif
 
 
