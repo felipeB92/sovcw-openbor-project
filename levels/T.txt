@@ -24,17 +24,7 @@ group 1 1
 at 0
 
 
-spawn  	faust
-MAP    3
-health 100
-	coords  200 210 250
-	at  0
 
-spawn  Shiva
-MAP    2
-health 100
-	coords  200 210 250
-	at  0
 
 spawn  	ShivaS
 MAP    3

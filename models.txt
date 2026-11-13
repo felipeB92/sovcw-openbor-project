@@ -298,6 +298,12 @@ know	ShivaS__ data/chars/Boss/ShivaS/ShivaS__.txt
 know	ShivaSP01 data/chars/Boss/ShivaS/ShivaSP01.txt
 know	ShivaSP01a data/chars/Boss/ShivaS/ShivaSP01a.txt
 know	ShivaSP02 data/chars/Boss/ShivaS/ShivaSP02.txt
+know	ShivaSP03 data/chars/Boss/ShivaS/ShivaSP03.txt
+know	ShivaSP04 data/chars/Boss/ShivaS/ShivaSP04.txt
+know	ShivaSP05 data/chars/Boss/ShivaS/ShivaSP05.txt
+know	ShivaSP06 data/chars/Boss/ShivaS/ShivaSP06.txt
+know	ShivaSP07 data/chars/Boss/ShivaS/ShivaSP07.txt
+know	ShivaSP08 data/chars/Boss/ShivaS/ShivaSP08.txt
 know	ShivaSP02_ data/chars/Boss/ShivaS/ShivaSP02_.txt
 
 #Secret_Players

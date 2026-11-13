@@ -1,0 +1,46 @@
+name			ShivaSP08
+type			none
+speed 15
+candamage			Player NPC
+alpha 1
+nolife			1
+lifespan		4
+remove			1
+gfxshadow		1 1
+flash			Forte
+subject_to_gravity 0
+
+animationscript		data/scripts/Felipe.c
+
+anim idle
+	loop	1
+	offset	62 336
+        hitflash	Shock
+        hitfx	data/sounds/golpes/Forte.wav
+		delay  2
+	frame	data/chars/Boss/Shivas/P/P500.gif
+	frame	data/chars/Boss/Shivas/P/P501.gif
+	frame	data/chars/Boss/Shivas/P/P502.gif
+		attack2  4  10  60  323  60  1  0  0  30  30
+	frame	data/chars/Boss/Shivas/P/P503.gif
+	frame	data/chars/Boss/Shivas/P/P504.gif
+	frame	data/chars/Boss/Shivas/P/P505.gif
+	frame	data/chars/Boss/Shivas/P/P506.gif
+	frame	data/chars/Boss/Shivas/P/P507.gif
+	frame	data/chars/Boss/Shivas/P/P508.gif
+	frame	data/chars/Boss/Shivas/P/P509.gif
+	frame	data/chars/Boss/Shivas/P/P510.gif
+	frame	data/chars/Boss/Shivas/P/P511.gif
+	frame	data/chars/Boss/Shivas/P/P512.gif
+	frame	data/chars/Boss/Shivas/P/P513.gif
+	frame	data/chars/Boss/Shivas/P/P514.gif
+	frame	data/chars/Boss/Shivas/P/P515.gif
+	frame	data/chars/Boss/Shivas/P/P516.gif
+	frame	data/chars/Boss/Shivas/P/P517.gif
+	frame	data/chars/Boss/Shivas/P/P518.gif
+	frame	data/chars/Boss/Shivas/P/P519.gif
+	frame	data/chars/Boss/Shivas/P/P520.gif
+	frame	data/chars/Boss/Shivas/P/P521.gif
+	@cmd killentity getlocalvar("self")
+	frame	data/chars/Boss/Shivas/P/P521.gif
+
