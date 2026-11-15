@@ -289,6 +289,7 @@ know	Faustp01 data/chars/Boss/Faust/faustp01.txt
 know	Faustp02 data/chars/Boss/Faust/faustp02.txt
 
 know	Shiva data/chars/Boss/Shiva/Shiva.txt
+know	ShivaP01 data/chars/Boss/Shiva/ShivaP01.txt
 know	ShivaR data/chars/Boss/ShivaR/ShivaR.txt
 know	Shiva_ data/chars/Boss/Shiva/Shiva_.txt
 know	Shiva__ data/chars/Boss/Shiva/Shiva__.txt

@@ -1,6 +1,6 @@
 name	Shiva
 health	300
-mp 10
+mp 60
 mprate 1
 #secret 1
 blockodds 1
@@ -21,6 +21,9 @@ diesound data/Sounds/Die4.wav
 running	20	3	2	1	1
 
 animationscript		data/scripts/Felipe.c
+
+Load Shivap01
+Load Super3
 
 
 
@@ -263,7 +266,7 @@ anim Freespecial5
 	loop	0
 	delay	8
 	offset	138 193
-        Range 150 300
+        Range 250 400
         RangeZ -30 30
         hitflash	Forte
         hitfx	data/sounds/golpes/Forte.wav
@@ -275,6 +278,29 @@ anim Freespecial5
 	frame	data/chars/Boss/Shiva/Run00.gif
         @cmd dasher 0 0 0
 	frame	data/chars/Boss/Shiva/Run01.gif
+
+anim Freespecial6
+	loop	0
+	delay	25
+        energycost 40 1
+	Mponly 1
+	offset	138 193
+        Range 150 250
+        RangeZ -15 15
+        hitflash	Forte
+        hitfx	data/sounds/golpes/Forte.wav
+	drawmethod tintmode 6
+	drawmethod tintcolor 255
+	@cmd  spawn01  "Super3" 0  50  1
+	frame	data/chars/Boss/Shiva/A200.gif
+	Nodrawmethod
+        @cmd dasher 4 0 0
+	@cmd	bindSpawn "ShivaP01" 0 30 1 
+	delay	130
+	Sound  data/chars/Boss/Shiva/a2.wav
+	frame	data/chars/Boss/Shiva/A201.gif
+
+
 
 
 
