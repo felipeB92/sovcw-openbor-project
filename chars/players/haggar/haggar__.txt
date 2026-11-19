@@ -432,16 +432,20 @@ anim fall6 #Shok
 
 anim fall7 #Burn
 	loop	0
-	offset	225 166
-	delay	10
+	offset	266 166
+	delay	20
         hitfx	data/sounds/golpes/Forte.wav
 		attack  0
-	frame	data/chars/players/HAggar/FALL300.gif
-	frame	data/chars/players/HAggar/FALL301.gif
-	frame	data/chars/players/HAggar/FALL302.gif
-	frame	data/chars/players/HAggar/FALL300.gif
-	frame	data/chars/players/HAggar/FALL301.gif
-	frame	data/chars/players/HAggar/FALL02.gif
+	drawmethod tintmode 6
+	drawmethod tintcolor 255
+	frame	data/chars/players/HAggar/fall00.gif
+		Attack1  0
+		offset  225  166
+	@cmd	bindSpawn "Burn01" 0 30 1
+	frame	data/chars/players/HAggar/fall01.gif
+		delay  10
+	frame	data/chars/players/HAggar/fall02.gif
+
 
 
 anim rise

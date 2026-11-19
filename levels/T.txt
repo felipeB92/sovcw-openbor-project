@@ -26,7 +26,7 @@ at 0
 
 
 
-spawn  	Shiva
+spawn  	thug
 MAP    3
 health 100
 	coords  200 210 250

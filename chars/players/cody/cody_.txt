@@ -428,17 +428,21 @@ anim fall6 #Shok
 
 anim fall7 #Burn
 	loop	0
-	offset	198 168
-	delay	10
+	offset	267 165
+	delay	20
         hitfx	data/sounds/golpes/Forte.wav
 		attack  0
-	frame	data/chars/players/Cody/FALL300.gif
-	frame	data/chars/players/Cody/FALL301.gif
-	frame	data/chars/players/Cody/FALL302.gif
-	frame	data/chars/players/Cody/FALL300.gif
-	frame	data/chars/players/Cody/FALL301.gif
-		offset  224  168
-	frame	data/chars/players/Cody/FALL02.gif
+	drawmethod tintmode 6
+	drawmethod tintcolor 255
+	frame	data/chars/players/Cody/fall00.gif
+		Attack1  0
+		offset  210  156
+	@cmd	bindSpawn "Burn01" 0 30 1
+	frame	data/chars/players/Cody/fall01.gif
+		delay  10
+		offset  210  168
+	frame	data/chars/players/Cody/fall02.gif
+
 
 
 anim rise
