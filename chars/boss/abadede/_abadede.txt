@@ -58,6 +58,25 @@ anim get
 	bbox	132 110 38 91
 	frame   data/chars/Boss/Abadede/Rise02.gif
 
+anim Follow10
+	loop	0
+	delay	20
+	offset	149 202
+        Sound	data/sounds/Coin.wav
+        hitfx	data/sounds/sILENCIO.wav
+	@cmd	depost 0
+	@cmd	throw 15 0.7 0.7 1 0 -1
+	@cmd	clearL
+	attack1  119  134  71  70  0  1  0  0  0  15
+	frame   data/chars/Boss/Abadede/Rise02.gif
+
+anim Follow11
+	loop	0
+	delay	12
+	offset	149 201
+		attack1  120  141  69  62  0  1  0  0  0  15
+	frame   data/chars/Boss/Abadede/Rise02.gif
+
 anim Pain5
 	loop	0
 	delay	12
@@ -480,11 +499,10 @@ anim fall7 #burn
 	drawmethod tintcolor 255
 	frame	data/chars/Boss/Abadede/fall00.gif
 		Attack1  0
-	@cmd	bindSpawn "Burn01" 0 30 1 
+	@cmd	bindSpawn "Burn01" 0 30 1
 	frame	data/chars/Boss/Abadede/fall01.gif
 		delay  10
 		offset  146  201
-	Nodrawmethod
 	frame	data/chars/Boss/Abadede/fall02.gif
 
 

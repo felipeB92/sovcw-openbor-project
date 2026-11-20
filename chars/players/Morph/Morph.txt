@@ -125,7 +125,7 @@ anim idle
 
 anim Freespecial2
 	loop	0
-	delay	4
+	delay	2
 	offset	21 97
 	bbox	14 36 18 62
         cancel	0 3 0 A freespecial
@@ -133,6 +133,7 @@ anim Freespecial2
 	frame   data/chars/players/Morph/dash01.gif
         @cmd dasher 2 0 0
 		bbox  0
+		delay  4
 	frame   data/chars/players/Morph/dash02.gif
 		bbox  8  67  26  27
 	frame   data/chars/players/Morph/dash03.gif
@@ -141,7 +142,7 @@ anim Freespecial2
 	frame   data/chars/players/Morph/dash03.gif
 	frame   data/chars/players/Morph/dash04.gif
 	frame   data/chars/players/Morph/dash05.gif
-		delay  4
+		delay  1
         @cmd dasher 0 0 0
 	frame   data/chars/players/Morph/dash06.gif
 	frame   data/chars/players/Morph/dash07.gif
@@ -221,6 +222,32 @@ anim get
 	loop	0
 	delay	10
 	offset	18 67
+	frame	data/chars/players/Morph/Get00.gif
+	frame	data/chars/players/Morph/Get01.gif
+
+anim Follow10
+	loop	0
+	delay	10
+	offset	18 67
+        Sound	data/sounds/food.wav
+        hitfx	data/sounds/sILENCIO.wav
+	@cmd	depost 0
+	@cmd	throw 15 0.7 0.7 1 0 -1
+	@cmd	clearL
+	attack1  -5  -5  47  74  0  1  0  0  0  15
+	frame	data/chars/players/Morph/Get00.gif
+	frame	data/chars/players/Morph/Get01.gif
+
+anim Follow11
+	loop	0
+	delay	10
+	offset	18 67
+        Sound	data/sounds/Coin.wav
+        hitfx	data/sounds/sILENCIO.wav
+	@cmd	depost 0
+	@cmd	throw 15 0.7 0.7 1 0 -1
+	@cmd	clearL
+	attack1  -2  -5  40  74  0  1  0  0  0  15
 	frame	data/chars/players/Morph/Get00.gif
 	frame	data/chars/players/Morph/Get01.gif
 

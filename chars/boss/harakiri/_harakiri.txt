@@ -68,6 +68,30 @@ anim get
 	bbox	140 99 50 107
 	frame   data/chars/Boss/Harakiri/Rise02.gif
 
+anim Follow10
+	loop	0
+	delay	20
+	offset	158 203
+        Sound	data/sounds/food.wav
+        hitfx	data/sounds/sILENCIO.wav
+	@cmd	depost 0
+	@cmd	throw 15 0.7 0.7 1 0 -1
+	@cmd	clearL
+	attack1  123  142  112  64  0  1  0  0  0  15
+	frame   data/chars/Boss/Harakiri/Rise02.gif
+
+anim Follow11
+	loop	0
+	delay	20
+	offset	158 203
+        Sound	data/sounds/Coin.wav
+        hitfx	data/sounds/sILENCIO.wav
+	@cmd	depost 0
+	@cmd	throw 15 0.7 0.7 1 0 -1
+	@cmd	clearL
+	attack1  118  135  113  68  0  1  0  0  0  15
+	frame   data/chars/Boss/Harakiri/Rise02.gif
+
 anim Pain5
 	loop	0
 	delay	20
@@ -430,10 +454,9 @@ anim fall7 #BURN
 	drawmethod tintcolor 255
 	frame	data/chars/Boss/Harakiri/fall00.gif
 		Attack1  0
-	@cmd	bindSpawn "Burn01" 0 30 1 
+	@cmd	bindSpawn "Burn01" 0 30 1
 	frame	data/chars/Boss/Harakiri/fall01.gif
 		delay  10
-	Nodrawmethod
 	frame	data/chars/Boss/Harakiri/fall02.gif
 
 

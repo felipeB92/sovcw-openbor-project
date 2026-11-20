@@ -59,6 +59,32 @@ anim Get
 	bbox	65 33 28 83
 	frame   data/chars/Boss/Kurt/Rise02.gif
 
+anim Follow10
+	loop	0
+	delay	20
+	offset	74 115
+        Sound	data/sounds/food.wav
+        hitfx	data/sounds/sILENCIO.wav
+	@cmd	depost 0
+	@cmd	throw 15 0.7 0.7 1 0 -1
+	@cmd	clearL
+	attack1  46  52  60  63  0  1  0  0  0  15
+	frame   data/chars/Boss/Kurt/Rise02.gif
+
+
+anim Follow11
+	loop	0
+	delay	20
+	offset	74 115
+        Sound	data/sounds/Coin.wav
+        hitfx	data/sounds/sILENCIO.wav
+	@cmd	depost 0
+	@cmd	throw 15 0.7 0.7 1 0 -1
+	@cmd	clearL
+	attack1  46  49  58  67  0  1  0  0  0  15
+	frame   data/chars/Boss/Kurt/Rise02.gif
+
+
 anim Pain5
 	loop	0
 	delay	12
@@ -654,11 +680,10 @@ anim fall7 #burn
 	frame	data/chars/Boss/Kurt/fall00.gif
 		Attack1  0
 		offset  91  109
-	@cmd	bindSpawn "Burn01" 0 30 1 
+	@cmd	bindSpawn "Burn01" 0 30 1
 	frame	data/chars/Boss/Kurt/fall01.gif
 		delay  10
 		offset  71  101
-	Nodrawmethod 
 	frame	data/chars/Boss/Kurt/fall02.gif
 
 

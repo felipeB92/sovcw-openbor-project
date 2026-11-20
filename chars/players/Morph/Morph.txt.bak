@@ -7,7 +7,7 @@ mprate 1
 Falldie 2
 Grabdistance 18
 riseinv				0.4 1
-speed	8
+speed	12
 type	player
 gfxshadow	1
 candamage			enemy obstacle
@@ -19,10 +19,8 @@ atchain   1 1 2 3 4 5
 icon	data/chars/players/Morph/icon.gif 1
 diesound data/chars/players/Morph/Death.wav
 running	20	3	2	1	1
-onblockwscript	data/scripts/bounceF.c
-#animationscript 	data/scripts/ani0020.h
-animationscript		data/scripts/drago.c
-#ondrawscript 		data/scripts/player_ondrawscript.c
+
+animationscript		data/scripts/felipe.c
 
 Load AdamP01
 Load AdamP02
@@ -223,6 +221,32 @@ anim get
 	loop	0
 	delay	10
 	offset	18 67
+	frame	data/chars/players/Morph/Get00.gif
+	frame	data/chars/players/Morph/Get01.gif
+
+anim Follow10
+	loop	0
+	delay	10
+	offset	18 67
+        Sound	data/sounds/food.wav
+        hitfx	data/sounds/sILENCIO.wav
+	@cmd	depost 0
+	@cmd	throw 15 0.7 0.7 1 0 -1
+	@cmd	clearL
+	attack1  55  30  39  60  0  1  0  0  0  15
+	frame	data/chars/players/Morph/Get00.gif
+	frame	data/chars/players/Morph/Get01.gif
+
+anim Follow11
+	loop	0
+	delay	10
+	offset	18 67
+        Sound	data/sounds/Coin.wav
+        hitfx	data/sounds/sILENCIO.wav
+	@cmd	depost 0
+	@cmd	throw 15 0.7 0.7 1 0 -1
+	@cmd	clearL
+	attack1  59  31  33  61  0  1  0  0  0  15
 	frame	data/chars/players/Morph/Get00.gif
 	frame	data/chars/players/Morph/Get01.gif
 
@@ -588,7 +612,7 @@ anim special2
 	frame	data/chars/players/Morph/sp201.gif
 	frame	data/chars/players/Morph/sp202.gif
 	frame	data/chars/players/Morph/sp203.gif
-		attack7  8  14  140  33  25  1  0  0  0  15
+		attack7  8  14  140  33  25  1  1  0  0  15
 		delay  4
         @cmd dasher 2 0 0
 	frame	data/chars/players/Morph/sp204.gif
@@ -633,7 +657,7 @@ anim special
 	frame	data/chars/players/Morph/Sp100.gif
 	frame	data/chars/players/Morph/Sp101.gif
 	@cmd  spawn01  "MorphP01"  0  0  1
-		attack1  15  24  88  90  25  1  0  0  0  15
+		attack1  15  24  88  90  25  1  1  0  0  15
 	frame	data/chars/players/Morph/Sp102.gif
 	frame	data/chars/players/Morph/Sp103.gif
 	frame	data/chars/players/Morph/Sp104.gif
@@ -648,12 +672,12 @@ anim special
 anim jumpspecial
         energycost 10 1
         MpOnly 1
+	loop	0
 	delay	1
 	offset	39 93
 	frame	data/chars/players/Morph/00.gif
 	frame	data/chars/players/Morph/01.gif
 	frame	data/chars/players/Morph/02.gif
-	loop	0
 	offset	61 119
         hitflash	CORTE
         hitfx	data/sounds/golpes/Corte.wav
@@ -697,20 +721,20 @@ anim grabattack
 	frame	data/chars/players/Morph/ga04.gif
 	Sound	data/chars/players/Morph/a1.wav
 	frame	data/chars/players/Morph/ga05.gif
-		attack1  27  39  52  37  2  0  0  0  0  10
+		attack1  27  39  52  37  3  0  0  0  0  10
 	frame	data/chars/players/Morph/ga06.gif
 		Attack1  0
 	frame	data/chars/players/Morph/ga07.gif
 	Sound	data/chars/players/Morph/a1.wav
 	frame	data/chars/players/Morph/ga08.gif
-		attack1  31  35  46  41  2  0  0  0  0  10
+		attack1  31  35  46  41  3  0  0  0  0  10
 	frame	data/chars/players/Morph/ga09.gif
 		Attack1  0
 	frame	data/chars/players/Morph/ga10.gif
 	frame	data/chars/players/Morph/ga11.gif
 	Sound	data/chars/players/Morph/a1.wav
 	frame	data/chars/players/Morph/ga12.gif
-		attack1  36  46  42  29  2  1  0  0  0  10
+		attack1  36  46  42  29  5  1  0  0  0  10
 	frame	data/chars/players/Morph/ga13.gif
 		Attack1  0
 		offset  35  107
